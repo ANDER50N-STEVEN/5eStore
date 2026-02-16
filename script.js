@@ -1,4 +1,4 @@
-        // Item database from the provided CSV
+// Item database from the provided CSV
         const officialItemDatabase = [
 		
             {name: "Club", cost: 0.1, type: "Weapon", rarity: "Mundane", description: "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage."},
@@ -5891,6 +5891,9 @@
 				if (tabName === 'itemlist') {
 					shopContent.style.display = 'none';
 					populateItemList();
+				} else if (tabName === 'homebrew') {
+					shopContent.style.display = 'none';
+					populateHomebrewList();
 				} else {
 					shopContent.style.display = 'block';
 				}
@@ -5898,6 +5901,8 @@
 			// If switching to item list, populate it
 			if (tabName === 'itemlist') {
 				populateItemList();
+			} else if (tabName === 'homebrew') {
+				populateHomebrewList();
 			}
 		}
 		
@@ -6435,3 +6440,115 @@
 			html += '</div>';
 			document.getElementById('shop-content').innerHTML = html;
 		}
+
+// ===== HOMEBREW TAB FUNCTIONS =====
+
+// Populate the homebrew item list table
+function populateHomebrewList(filteredItems = null) {
+	const tbody = document.getElementById('homebrew-table-body');
+	const items = filteredItems || homebrewItemDatabase;
+	
+	tbody.innerHTML = '';
+	
+	items.forEach((item, index) => {
+		const row = document.createElement('tr');
+		row.id = `homebrew-row-${index}`;
+		
+		const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+		
+		row.innerHTML = `
+			<td>${item.name}</td>
+			<td>${item.cost}</td>
+			<td>${item.type}</td>
+			<td class="${rarityClass}">${item.rarity}</td>
+			<td style="max-width: 400px;">${item.description || 'No description'}</td>
+			<td>
+				<button class="edit-btn" onclick="editHomebrewItem(${index})">Edit</button>
+			</td>
+		`;
+		
+		tbody.appendChild(row);
+	});
+}
+
+// Edit a homebrew item
+let currentlyEditingHomebrewIndex = null;
+
+function editHomebrewItem(index) {
+	if (currentlyEditingHomebrewIndex !== null && currentlyEditingHomebrewIndex !== index) {
+		cancelHomebrewEdit(currentlyEditingHomebrewIndex);
+	}
+	
+	currentlyEditingHomebrewIndex = index;
+	const item = homebrewItemDatabase[index];
+	const row = document.getElementById('homebrew-row-' + index);
+	
+	const rarityOptions = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
+	const typeOptions = ['Weapon', 'Armor', 'Ammunition', 'Apperal', 'Jewelry', 'Misc'];
+	
+	const typeOptionsHtml = typeOptions.map(function(type) {
+		return '<option value="' + type + '" ' + (item.type === type ? 'selected' : '') + '>' + type + '</option>';
+	}).join('');
+	
+	const rarityOptionsHtml = rarityOptions.map(function(rarity) {
+		return '<option value="' + rarity + '" ' + (item.rarity === rarity ? 'selected' : '') + '>' + rarity + '</option>';
+	}).join('');
+	
+	row.innerHTML = 
+		'<td><input type="text" class="item-edit-input" id="edit-homebrew-name-' + index + '" value="' + item.name + '"></td>' +
+		'<td><input type="number" class="item-edit-input" id="edit-homebrew-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
+		'<td><select class="item-edit-select" id="edit-homebrew-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
+		'<td><select class="item-edit-select" id="edit-homebrew-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
+		'<td><textarea class="item-edit-textarea" id="edit-homebrew-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
+		'<td><button class="save-btn" onclick="saveHomebrewItem(' + index + ')">Save</button>' +
+		'<button class="cancel-btn" onclick="cancelHomebrewEdit(' + index + ')">Cancel</button></td>';
+}
+
+// Save edited homebrew item
+function saveHomebrewItem(index) {
+	const item = homebrewItemDatabase[index];
+	
+	item.name = document.getElementById(`edit-homebrew-name-${index}`).value;
+	item.cost = parseFloat(document.getElementById(`edit-homebrew-cost-${index}`).value);
+	item.type = document.getElementById(`edit-homebrew-type-${index}`).value;
+	item.rarity = document.getElementById(`edit-homebrew-rarity-${index}`).value;
+	item.description = document.getElementById(`edit-homebrew-desc-${index}`).value;
+	
+	currentlyEditingHomebrewIndex = null;
+	populateHomebrewList();
+	
+	// Update main item database if homebrew is enabled
+	updateItemDatabase();
+}
+
+// Cancel homebrew edit
+function cancelHomebrewEdit(index) {
+	currentlyEditingHomebrewIndex = null;
+	populateHomebrewList();
+}
+
+// Apply filters to homebrew list
+function applyHomebrewFilters() {
+	const searchTerm = document.getElementById('homebrew-search').value.toLowerCase();
+	const filterType = document.getElementById('homebrew-filter-type').value;
+	const filterRarity = document.getElementById('homebrew-filter-rarity').value;
+	
+	let filtered = homebrewItemDatabase.filter(function(item) {
+		const matchesSearch = item.name.toLowerCase().includes(searchTerm) || 
+							(item.description && item.description.toLowerCase().includes(searchTerm));
+		const matchesType = !filterType || item.type === filterType;
+		const matchesRarity = !filterRarity || item.rarity === filterRarity;
+		
+		return matchesSearch && matchesType && matchesRarity;
+	});
+	
+	populateHomebrewList(filtered);
+}
+
+// Reset homebrew filters
+function resetHomebrewFilters() {
+	document.getElementById('homebrew-search').value = '';
+	document.getElementById('homebrew-filter-type').value = '';
+	document.getElementById('homebrew-filter-rarity').value = '';
+	populateHomebrewList();
+}
