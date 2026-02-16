@@ -6644,8 +6644,19 @@ function loadItemEditsFromLocalStorage() {
 
 // Save current shop inventory
 function saveCurrentStore() {
+	console.log('saveCurrentStore called');
+	
+	// Debug: check what's in shop-content
+	const shopContent = document.getElementById('shop-content');
+	console.log('shopContent element:', shopContent);
+	console.log('shopContent innerHTML:', shopContent ? shopContent.innerHTML.substring(0, 200) : 'null');
+	
 	// Check if there's actually inventory items in the DOM
 	const inventoryDiv = document.querySelector('#shop-content .inventory');
+	console.log('inventoryDiv found:', inventoryDiv);
+	
+	const itemElements = document.querySelectorAll('#shop-content .item');
+	console.log('Number of items found:', itemElements.length);
 	
 	if (!inventoryDiv) {
 		alert('Please generate a shop first before saving!');
@@ -6664,9 +6675,9 @@ function saveCurrentStore() {
 	
 	// Get current inventory from the DOM
 	const inventory = [];
-	const itemElements = document.querySelectorAll('#shop-content .item');
+	const itemElements2 = document.querySelectorAll('#shop-content .item');
 	
-	itemElements.forEach(itemEl => {
+	itemElements2.forEach(itemEl => {
 		const nameEl = itemEl.querySelector('.item-name');
 		const priceEl = itemEl.querySelector('.item-price');
 		const rarityEl = itemEl.querySelector('.item-rarity');
@@ -6690,6 +6701,8 @@ function saveCurrentStore() {
 			}
 		}
 	});
+	
+	console.log('Inventory collected:', inventory.length, 'items');
 	
 	if (inventory.length === 0) {
 		alert('No items found in the current shop!');
@@ -6716,26 +6729,7 @@ function saveCurrentStore() {
 	alert(`Store "${storeName}" saved successfully!`);
 }
 	
-	const savedStore = {
-		name: storeName.trim(),
-		timestamp: new Date().toISOString(),
-		storeType: storeType,
-		settlementSize: settlementSize,
-		maxModifier: maxModifier,
-		maxRarity: maxRarity,
-		inventory: inventory
-	};
 	
-	// Get existing saved stores
-	const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
-	savedStores.push(savedStore);
-	
-	// Save to localStorage
-	localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
-	
-	alert(`Store "${storeName}" saved successfully!`);
-	displaySavedStores();
-}
 
 // Display saved stores list
 function displaySavedStores() {
