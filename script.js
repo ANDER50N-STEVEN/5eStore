@@ -6445,8 +6445,17 @@
 
 // Populate the homebrew item list table
 function populateHomebrewList(filteredItems = null) {
+	console.log('populateHomebrewList called');
 	const tbody = document.getElementById('homebrew-table-body');
+	console.log('tbody element:', tbody);
+	
+	if (!tbody) {
+		console.error('Homebrew table body not found');
+		return;
+	}
+	
 	const items = filteredItems || homebrewItemDatabase;
+	console.log('Items to display:', items.length);
 	
 	tbody.innerHTML = '';
 	
@@ -6469,6 +6478,8 @@ function populateHomebrewList(filteredItems = null) {
 		
 		tbody.appendChild(row);
 	});
+	
+	console.log('Rows added:', tbody.children.length);
 }
 
 // Edit a homebrew item
