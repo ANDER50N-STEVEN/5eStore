@@ -14,8 +14,8 @@
 		<!-- Tab Navigation -->
 		<div class="tabs">
 			<div class="tab active" onclick="switchTab('generator')">Shop Generator</div>
-			<div class="tab" onclick="switchTab('itemlist')">Item Database</div>
-			<div class="tab" onclick="switchTab('itemlist')">Item Database</div>
+			<div class="tab" onclick="switchTab('itemlist')">Official Items</div>
+			<div class="tab" onclick="switchTab('homebrew')">Homebrew Items</div>
 
 		</div>
 
@@ -153,6 +153,51 @@
                 </thead>
                 <tbody id="item-table-body">
                     <!-- Items will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+	 <!-- Homebrew Item List Tab -->
+    <div id="homebrew-tab" class="tab-content">
+        <div class="search-filter-bar">
+            <input type="text" id="homebrew-search" placeholder="Search homebrew items..." style="flex: 1; min-width: 200px;">
+            <select id="homebrew-filter-type">
+                <option value="">All Types</option>
+                <option value="Weapon">Weapons</option>
+                <option value="Armor">Armor</option>
+                <option value="Ammunition">Ammunition</option>
+                <option value="Apperal">Apparel</option>
+                <option value="Jewelry">Jewelry</option>
+                <option value="Misc">Misc</option>
+            </select>
+            <select id="homebrew-filter-rarity">
+                <option value="">All Rarities</option>
+                <option value="Mundane">Mundane</option>
+                <option value="Common">Common</option>
+                <option value="Uncommon">Uncommon</option>
+                <option value="Rare">Rare</option>
+                <option value="Very Rare">Very Rare</option>
+                <option value="Legendary">Legendary</option>
+            </select>
+            <button onclick="applyHomebrewFilters()">Filter</button>
+            <button onclick="resetHomebrewFilters()">Reset</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table class="item-list-table" id="homebrew-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Cost (gp)</th>
+                        <th>Type</th>
+                        <th>Rarity</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="homebrew-table-body">
+                    <!-- Homebrew items will be populated here -->
                 </tbody>
             </table>
         </div>
