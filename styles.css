@@ -431,3 +431,17 @@
 			outline: none;
 			border-color: #d4af37;
 		}
+
+		.homebrew-badge {
+		    display: inline-block;
+		    background: linear-gradient(135deg, #6b4d8b 0%, #4a2c6b 100%);
+		    color: #e0d0ff;
+		    padding: 2px 8px;
+		    border-radius: 4px;
+		    font-size: 0.75em;
+		    font-weight: bold;
+		    margin-left: 8px;
+		    border: 1px solid #8b6fc7;
+		    text-transform: uppercase;
+		    letter-spacing: 0.5px;
+		}
