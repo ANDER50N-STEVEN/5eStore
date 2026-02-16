@@ -6314,31 +6314,33 @@
         }
 		
 		function generateItemHTML(item, maxModifier) {
-
-		
-			const quantity = getItemQuantity(item);
-			const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
-			const formattedPrice = formatPrice(price);
-			const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-			const luckyFindStar = item.isLuckyFind ? ' ⭐' : '';
-			const quantityDisplay = quantity > 1 ? ` (×${quantity})` : '';
-			
-			return `
-				<div class="item">
-					<div class="item-header">
-						<div>
-							<span class="item-name">${item.name}${quantityDisplay}${luckyFindStar}</span>
-							<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
-						</div>
-						<div>
-							<span class="item-price">${formattedPrice}</span>
-							<span class="price-modifier-display">(${modifier}%)</span>
-						</div>
-					</div>
-					<div class="item-description">${item.description || 'No description available.'}</div>
+	const quantity = getItemQuantity(item);
+	const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
+	const formattedPrice = formatPrice(price);
+	const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+	const luckyFindStar = item.isLuckyFind ? ' ⭐' : '';
+	const quantityDisplay = quantity > 1 ? ` (×${quantity})` : '';
+	
+	// Check if item is homebrew
+	const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+	const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+	
+	return `
+		<div class="item">
+			<div class="item-header">
+				<div>
+					<span class="item-name">${item.name}${quantityDisplay}${luckyFindStar}${homebrewBadge}</span>
+					<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
 				</div>
-			`;
-		}
+				<div>
+					<span class="item-price">${formattedPrice}</span>
+					<span class="price-modifier-display">(${modifier}%)</span>
+				</div>
+			</div>
+			<div class="item-description">${item.description || 'No description available.'}</div>
+		</div>
+	`;
+}
 
        function generateShop() {
 			const storeType = document.getElementById('store-type').value;
