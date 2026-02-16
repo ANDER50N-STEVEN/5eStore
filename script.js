@@ -6645,13 +6645,11 @@ function loadItemEditsFromLocalStorage() {
 // Save current shop inventory
 function saveCurrentStore() {
 	const shopContent = document.getElementById('shop-content');
-	if (!shopContent || shopContent.classList.contains('empty-state')) {
-		alert('Please generate a shop first before saving!');
-		return;
-	}
+	const hasEmptyState = shopContent.querySelector('.empty-state');
+	const hasInventory = shopContent.querySelector('.inventory');
 	
-	const storeName = prompt('Enter a name for this store:');
-	if (!storeName || storeName.trim() === '') {
+	if (!shopContent || hasEmptyState || !hasInventory) {
+		alert('Please generate a shop first before saving!');
 		return;
 	}
 	
