@@ -6469,6 +6469,7 @@
 			document.getElementById('shop-content').innerHTML = html;
 		}
 
+
 // ===== HOMEBREW TAB FUNCTIONS =====
 
 // Populate the homebrew item list table
@@ -6728,6 +6729,7 @@ function saveCurrentStore() {
 	
 	alert(`Store "${storeName}" saved successfully!`);
 }
+
 	
 	
 
