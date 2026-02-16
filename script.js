@@ -6652,6 +6652,11 @@ function saveCurrentStore() {
 		alert('Please generate a shop first before saving!');
 		return;
 	}
+
+		const storeName = prompt('Enter a name for this store:');
+	if (!storeName || storeName.trim() === '') {
+		return;
+	}
 	
 	const storeType = document.getElementById('store-type').value;
 	const settlementSize = document.getElementById('settlement-size').value;
