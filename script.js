@@ -5970,7 +5970,7 @@
 		}
 		
 		
-				// Save edited item
+			// Save edited item
 		function saveItem(index) {
 			const item = itemDatabase[index];
 			
@@ -5984,7 +5984,7 @@
 			populateItemList();
 			
 			// Save to localStorage
-			localStorage.setItem('dnd-items', JSON.stringify(itemDatabase));
+			saveItemEditsToLocalStorage();
 		}
 
 				// Cancel editing
@@ -6552,6 +6552,9 @@ function saveHomebrewItem(index) {
 	
 	// Update main item database if homebrew is enabled
 	updateItemDatabase();
+	
+	// Save to localStorage
+	saveItemEditsToLocalStorage();
 }
 
 // Cancel homebrew edit
@@ -6585,3 +6588,358 @@ function resetHomebrewFilters() {
 	document.getElementById('homebrew-filter-rarity').value = '';
 	populateHomebrewList();
 }
+
+// ===== LOCALSTORAGE FUNCTIONS =====
+
+// Save item edits to localStorage
+function saveItemEditsToLocalStorage() {
+	const edits = {
+		officialItems: officialItemDatabase,
+		homebrewItems: homebrewItemDatabase
+	};
+	localStorage.setItem('dnd-item-edits', JSON.stringify(edits));
+	console.log('Item edits saved to localStorage');
+}
+
+// Load item edits from localStorage
+function loadItemEditsFromLocalStorage() {
+	const savedEdits = localStorage.getItem('dnd-item-edits');
+	if (savedEdits) {
+		try {
+			const edits = JSON.parse(savedEdits);
+			
+			// Apply edits to official items
+			if (edits.officialItems && edits.officialItems.length > 0) {
+				edits.officialItems.forEach((editedItem, index) => {
+					if (officialItemDatabase[index]) {
+						Object.assign(officialItemDatabase[index], editedItem);
+					}
+				});
+			}
+			
+			// Apply edits to homebrew items
+			if (edits.homebrewItems && edits.homebrewItems.length > 0) {
+				edits.homebrewItems.forEach((editedItem, index) => {
+					if (homebrewItemDatabase[index]) {
+						Object.assign(homebrewItemDatabase[index], editedItem);
+					}
+				});
+			}
+			
+			console.log('Item edits loaded from localStorage');
+			updateItemDatabase();
+		} catch (e) {
+			console.error('Error loading item edits:', e);
+		}
+	}
+}
+
+// ===== SAVED STORES FUNCTIONS =====
+
+// Save current shop inventory
+function saveCurrentStore() {
+	const shopContent = document.getElementById('shop-content');
+	if (!shopContent || shopContent.classList.contains('empty-state')) {
+		alert('Please generate a shop first before saving!');
+		return;
+	}
+	
+	const storeName = prompt('Enter a name for this store:');
+	if (!storeName || storeName.trim() === '') {
+		return;
+	}
+	
+	const storeType = document.getElementById('store-type').value;
+	const settlementSize = document.getElementById('settlement-size').value;
+	const maxModifier = parseFloat(document.getElementById('price-modifier').value);
+	const maxRarity = document.getElementById('max-rarity').value;
+	
+	// Get current inventory from the DOM
+	const inventory = [];
+	const itemElements = document.querySelectorAll('#shop-content .item');
+	
+	itemElements.forEach(itemEl => {
+		const nameEl = itemEl.querySelector('.item-name');
+		const priceEl = itemEl.querySelector('.item-price');
+		const rarityEl = itemEl.querySelector('.item-rarity');
+		const descEl = itemEl.querySelector('.item-description');
+		
+		if (nameEl && priceEl) {
+			// Extract item name (without quantity or stars)
+			let itemName = nameEl.textContent.trim();
+			itemName = itemName.replace(/\s*\(×\d+\)\s*/g, ''); // Remove quantity
+			itemName = itemName.replace(/\s*⭐\s*/g, ''); // Remove lucky find star
+			itemName = itemName.replace(/\s*🔮 Homebrew\s*/g, ''); // Remove homebrew badge
+			
+			// Find the original item from database
+			const originalItem = itemDatabase.find(item => item.name === itemName);
+			
+			if (originalItem) {
+				inventory.push({
+					...originalItem,
+					displayPrice: priceEl.textContent.trim()
+				});
+			}
+		}
+	});
+	
+	const savedStore = {
+		name: storeName.trim(),
+		timestamp: new Date().toISOString(),
+		storeType: storeType,
+		settlementSize: settlementSize,
+		maxModifier: maxModifier,
+		maxRarity: maxRarity,
+		inventory: inventory
+	};
+	
+	// Get existing saved stores
+	const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+	savedStores.push(savedStore);
+	
+	// Save to localStorage
+	localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
+	
+	alert(`Store "${storeName}" saved successfully!`);
+	displaySavedStores();
+}
+
+// Display saved stores list
+function displaySavedStores() {
+	const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+	
+	if (savedStores.length === 0) {
+		return '<div class="empty-state"><p>No saved stores yet. Generate and save a store to see it here!</p></div>';
+	}
+	
+	let html = '<div class="saved-stores-container">';
+	html += '<h3 style="color: #d4af37; margin-bottom: 20px;">📚 Saved Stores</h3>';
+	
+	savedStores.forEach((store, index) => {
+		const date = new Date(store.timestamp);
+		const formattedDate = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+		
+		const storeNames = {
+			'general': 'General Store',
+			'weaponsmith': 'Weaponsmith',
+			'outfitter': 'Outfitter',
+			'apothecary': 'Apothecary',
+			'armorer': 'Armorer',
+			'magic': 'Magic Shop',
+			'clothier': 'Clothier',
+			'curiosities': 'Curiosities Shop'
+		};
+		
+		html += `
+			<div class="saved-store-card">
+				<div class="saved-store-header">
+					<h4>${store.name}</h4>
+					<div class="saved-store-actions">
+						<button class="load-btn" onclick="loadSavedStore(${index})">Load</button>
+						<button class="delete-btn" onclick="deleteSavedStore(${index})">Delete</button>
+					</div>
+				</div>
+				<div class="saved-store-info">
+					<p><strong>Type:</strong> ${storeNames[store.storeType]}</p>
+					<p><strong>Settlement:</strong> ${store.settlementSize}</p>
+					<p><strong>Items:</strong> ${store.inventory.length}</p>
+					<p><strong>Saved:</strong> ${formattedDate}</p>
+				</div>
+			</div>
+		`;
+	});
+	
+	html += '</div>';
+	return html;
+}
+
+// Load a saved store
+function loadSavedStore(index) {
+	const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+	const store = savedStores[index];
+	
+	if (!store) {
+		alert('Store not found!');
+		return;
+	}
+	
+	// Switch to generator tab
+	switchTab('generator');
+	
+	// Rebuild the shop display
+	const storeNames = {
+		'general': 'General Store',
+		'weaponsmith': 'Weaponsmith',
+		'outfitter': 'Outfitter',
+		'apothecary': 'Apothecary',
+		'armorer': 'Armorer',
+		'magic': 'Magic Shop',
+		'clothier': 'Clothier',
+		'curiosities': 'Curiosities Shop'
+	};
+	
+	const storeIcons = {
+		'general': '🏪',
+		'weaponsmith': '⚔️',
+		'outfitter': '💼',
+		'apothecary': '⚗️',
+		'armorer': '🛡️',
+		'magic': '🔮',
+		'clothier': '👔',
+		'curiosities': '🎭'
+	};
+	
+	const rarityNames = ['Mundane','Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
+	const rarityLevels = {
+		'mundane': -1,
+		'common': 0,
+		'uncommon': 1,
+		'rare': 2,
+		'veryrare': 3,
+		'legendary': 4
+	};
+	
+	let html = `
+		<div class="shop-info">
+			<h2>${storeIcons[store.storeType]} ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
+			<p><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> ${store.inventory.length} | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[store.maxRarity]]}</p>
+		</div>
+		<div class="inventory">
+	`;
+	
+	// Group items by type
+	const grouped = {};
+	for (const item of store.inventory) {
+		if (!grouped[item.type]) {
+			grouped[item.type] = [];
+		}
+		grouped[item.type].push(item);
+	}
+	
+	for (const [type, items] of Object.entries(grouped).sort()) {
+		const categoryId = `category-${type.replace(/\s+/g, '-')}`;
+		
+		// Separate items into mundane and magic
+		const mundaneItems = items.filter(item => item.rarity === 'Mundane');
+		const magicItems = items.filter(item => item.rarity !== 'Mundane');
+		
+		html += `
+			<div class="category" id="${categoryId}">
+				<div class="category-header" onclick="toggleCategory('${categoryId}')">
+					<h3>📦 ${type}</h3>
+					<span class="category-count">${items.length} items <span class="collapse-icon">▼</span></span>
+				</div>
+				<div class="items">
+		`;
+		
+		// Mundane subcategory
+		if (mundaneItems.length > 0) {
+			const mundaneSubcategoryId = `${categoryId}-mundane`;
+			html += `
+				<div class="subcategory" id="${mundaneSubcategoryId}">
+					<div class="subcategory-header" onclick="toggleCategory('${mundaneSubcategoryId}')">
+						<h4>⚒️ Mundane Items</h4>
+						<span class="subcategory-count">${mundaneItems.length} items <span class="collapse-icon">▼</span></span>
+					</div>
+					<div class="subcategory-items">
+			`;
+			
+			mundaneItems.sort((a, b) => a.name.localeCompare(b.name));
+			for (const item of mundaneItems) {
+				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+				const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+				const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+				
+				html += `
+					<div class="item">
+						<div class="item-header">
+							<div>
+								<span class="item-name">${item.name}${homebrewBadge}</span>
+								<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
+							</div>
+							<div>
+								<span class="item-price">${item.displayPrice}</span>
+							</div>
+						</div>
+						<div class="item-description">${item.description || 'No description available.'}</div>
+					</div>
+				`;
+			}
+			
+			html += `
+					</div>
+				</div>
+			`;
+		}
+		
+		// Magic subcategory
+		if (magicItems.length > 0) {
+			const magicSubcategoryId = `${categoryId}-magic`;
+			html += `
+				<div class="subcategory" id="${magicSubcategoryId}">
+					<div class="subcategory-header" onclick="toggleCategory('${magicSubcategoryId}')">
+						<h4>✨ Magic Items</h4>
+						<span class="subcategory-count">${magicItems.length} items <span class="collapse-icon">▼</span></span>
+					</div>
+					<div class="subcategory-items">
+			`;
+			
+			magicItems.sort((a, b) => a.name.localeCompare(b.name));
+			for (const item of magicItems) {
+				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+				const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+				const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+				
+				html += `
+					<div class="item">
+						<div class="item-header">
+							<div>
+								<span class="item-name">${item.name}${homebrewBadge}</span>
+								<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
+							</div>
+							<div>
+								<span class="item-price">${item.displayPrice}</span>
+							</div>
+						</div>
+						<div class="item-description">${item.description || 'No description available.'}</div>
+					</div>
+				`;
+			}
+			
+			html += `
+					</div>
+				</div>
+			`;
+		}
+		
+		html += `
+				</div>
+			</div>
+		`;
+	}
+	
+	html += `</div>`;
+	
+	document.getElementById('shop-content').innerHTML = html;
+}
+
+// Delete a saved store
+function deleteSavedStore(index) {
+	if (!confirm('Are you sure you want to delete this saved store?')) {
+		return;
+	}
+	
+	const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+	savedStores.splice(index, 1);
+	localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
+	
+	// Refresh the saved stores tab if we're on it
+	if (document.getElementById('savedstores-tab').classList.contains('active')) {
+		document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
+	}
+}
+
+// Initialize - Load edits on page load
+window.addEventListener('DOMContentLoaded', function() {
+	loadItemEditsFromLocalStorage();
+});
