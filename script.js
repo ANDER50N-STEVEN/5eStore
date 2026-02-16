@@ -5989,8 +5989,8 @@
 			currentlyEditingIndex = null;
 			populateItemList();
 			
-			// Save to localStorage
-			saveItemEditsToLocalStorage();
+			// Save only this item's edit
+			saveIndividualItemEdit(index, false);
 		}
 
 				// Cancel editing
@@ -6544,25 +6544,25 @@ function editHomebrewItem(index) {
 		'<button class="cancel-btn" onclick="cancelHomebrewEdit(' + index + ')">Cancel</button></td>';
 }
 
-// Save edited homebrew item
-function saveHomebrewItem(index) {
-	const item = homebrewItemDatabase[index];
-	
-	item.name = document.getElementById(`edit-homebrew-name-${index}`).value;
-	item.cost = parseFloat(document.getElementById(`edit-homebrew-cost-${index}`).value);
-	item.type = document.getElementById(`edit-homebrew-type-${index}`).value;
-	item.rarity = document.getElementById(`edit-homebrew-rarity-${index}`).value;
-	item.description = document.getElementById(`edit-homebrew-desc-${index}`).value;
-	
-	currentlyEditingHomebrewIndex = null;
-	populateHomebrewList();
-	
-	// Update main item database if homebrew is enabled
-	updateItemDatabase();
-	
-	// Save to localStorage
-	saveItemEditsToLocalStorage();
-}
+		// Save edited homebrew item
+		function saveHomebrewItem(index) {
+			const item = homebrewItemDatabase[index];
+			
+			item.name = document.getElementById(`edit-homebrew-name-${index}`).value;
+			item.cost = parseFloat(document.getElementById(`edit-homebrew-cost-${index}`).value);
+			item.type = document.getElementById(`edit-homebrew-type-${index}`).value;
+			item.rarity = document.getElementById(`edit-homebrew-rarity-${index}`).value;
+			item.description = document.getElementById(`edit-homebrew-desc-${index}`).value;
+			
+			currentlyEditingHomebrewIndex = null;
+			populateHomebrewList();
+			
+			// Update main item database if homebrew is enabled
+			updateItemDatabase();
+			
+			// Save only this item's edit
+			saveIndividualItemEdit(index, true);
+		}
 
 // Cancel homebrew edit
 function cancelHomebrewEdit(index) {
@@ -6595,16 +6595,12 @@ function resetHomebrewFilters() {
 	document.getElementById('homebrew-filter-rarity').value = '';
 	populateHomebrewList();
 }
-
 // ===== LOCALSTORAGE FUNCTIONS =====
 
-// Save item edits to localStorage
+// Save item edits to localStorage (only save changes, not entire database)
 function saveItemEditsToLocalStorage() {
-	const edits = {
-		officialItems: officialItemDatabase,
-		homebrewItems: homebrewItemDatabase
-	};
-	localStorage.setItem('dnd-item-edits', JSON.stringify(edits));
+	// We don't save the entire databases anymore
+	// Edits are tracked separately
 	console.log('Item edits saved to localStorage');
 }
 
@@ -6616,19 +6612,19 @@ function loadItemEditsFromLocalStorage() {
 			const edits = JSON.parse(savedEdits);
 			
 			// Apply edits to official items
-			if (edits.officialItems && edits.officialItems.length > 0) {
-				edits.officialItems.forEach((editedItem, index) => {
+			if (edits.officialItems) {
+				Object.entries(edits.officialItems).forEach(([index, changes]) => {
 					if (officialItemDatabase[index]) {
-						Object.assign(officialItemDatabase[index], editedItem);
+						Object.assign(officialItemDatabase[index], changes);
 					}
 				});
 			}
 			
 			// Apply edits to homebrew items
-			if (edits.homebrewItems && edits.homebrewItems.length > 0) {
-				edits.homebrewItems.forEach((editedItem, index) => {
+			if (edits.homebrewItems) {
+				Object.entries(edits.homebrewItems).forEach(([index, changes]) => {
 					if (homebrewItemDatabase[index]) {
-						Object.assign(homebrewItemDatabase[index], editedItem);
+						Object.assign(homebrewItemDatabase[index], changes);
 					}
 				});
 			}
@@ -6639,6 +6635,20 @@ function loadItemEditsFromLocalStorage() {
 			console.error('Error loading item edits:', e);
 		}
 	}
+}
+
+// Helper function to save individual item edit
+function saveIndividualItemEdit(index, isHomebrew = false) {
+	const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
+	
+	if (isHomebrew) {
+		savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
+	} else {
+		savedEdits.officialItems[index] = {...itemDatabase[index]};
+	}
+	
+	localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
+	console.log('Individual item edit saved');
 }
 
 // ===== SAVED STORES FUNCTIONS =====
