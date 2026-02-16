@@ -5874,6 +5874,7 @@
 		}
 		
 				// Tab switching
+		// Tab switching
 		function switchTab(tabName) {
 			// Hide all tabs
 			document.querySelectorAll('.tab-content').forEach(tab => {
@@ -5888,21 +5889,26 @@
 			event.target.classList.add('active');
 			
 			const shopContent = document.getElementById('shop-content');
-				if (tabName === 'itemlist') {
-					shopContent.style.display = 'none';
-					populateItemList();
-				} else if (tabName === 'homebrew') {
-					shopContent.style.display = 'none';
-					populateHomebrewList();
-				} else {
-					shopContent.style.display = 'block';
-				}
+			if (tabName === 'itemlist') {
+				shopContent.style.display = 'none';
+				populateItemList();
+			} else if (tabName === 'homebrew') {
+				shopContent.style.display = 'none';
+				populateHomebrewList();
+			} else if (tabName === 'savedstores') {
+				shopContent.style.display = 'none';
+				document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
+			} else {
+				shopContent.style.display = 'block';
+			}
 			
 			// If switching to item list, populate it
 			if (tabName === 'itemlist') {
 				populateItemList();
 			} else if (tabName === 'homebrew') {
 				populateHomebrewList();
+			} else if (tabName === 'savedstores') {
+				document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
 			}
 		}
 		
