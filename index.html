@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shop Generator</h1>
+        <!--<p class="subtitle">Create dynamic merchant inventories for your campaign</p> -->
+
+		<!-- Tab Navigation -->
+		<div class="tabs">
+			<div class="tab active" onclick="switchTab('generator')">Shop Generator</div>
+			<div class="tab" onclick="switchTab('itemlist')">Item Database</div>
+			<div class="tab" onclick="switchTab('itemlist')">Item Database</div>
+
+		</div>
+
+		<div id="generator-tab" class="tab-content active">
+			<div class="controls">
+				<div class="control-group">
+					<label for="store-type">Store Type</label>
+					<select id="store-type">
+						<option value="general">General Store (Everything)</option>
+						<option value="weaponsmith">Weaponsmith (Weapons, Armor, Ammunition)</option>
+						<option value="outfitter">Outfitter (Common Adventuring Gear)</option>
+						<option value="armorer">Armorer (Armor, Apparel) </option>
+						<option value="magic">Magic Shop (Wands, Scrolls, Enchantments)</option>
+						<option value="apothecary">Apothecary (Potions & Elixirs)</option>
+						<option value="clothier">Clothier (Apparel & Accessories)</option>
+						<option value="curiosities">Curiosities (Magical Oddities)</option>
+					</select>
+				</div>
+
+				<div class="control-group">
+					<label for="settlement-size">Settlement Size</label>
+					<select id="settlement-size" onchange="updateRarityDefaults()">
+						<option value="village">Village (Small Selection)</option>
+						<option value="town" selected>Town (Medium Selection)</option>
+						<option value="city">City (Large Selection)</option>
+						<option value="metropolis">Metropolis (Extra Rare Selection)</option>
+
+					</select>
+				</div>
+
+				<div class="control-group">
+					<label for="price-modifier">Max Price Modifier (%)</label>
+					<input type="number" id="price-modifier" min="100" max="200" value="125" step="5">
+				</div>
+
+				<div class="control-group">
+					<label>Maximum Rarity</label>
+					<select id="max-rarity">
+						<option value="mundane">Mundane</option>
+						<option value="common">Common</option>
+						<option value="uncommon">Uncommon</option>
+						<option value="rare" selected>Rare</option>
+						<option value="veryrare">Very Rare</option>
+						<option value="legendary">Legendary</option>
+					</select>
+				</div>
+			
+
+				<div class="control-group">
+					<label for="max-mundane">Max Mundane Items</label>
+					<input type="number" id="max-mundane" min="0" max="100" value="25" step="1">
+				</div>
+
+				<div class="control-group">
+					<label for="max-common">Max Common Items</label>
+					<input type="number" id="max-common" min="0" max="50" value="15" step="1">
+				</div>
+
+				<div class="control-group">
+					<label for="max-uncommon">Max Uncommon Items</label>
+					<input type="number" id="max-uncommon" min="0" max="50" value="10" step="1">
+				</div>
+
+				<div class="control-group">
+					<label for="max-rare">Max Rare Items</label>
+					<input type="number" id="max-rare" min="0" max="50" value="5" step="1">
+				</div>
+
+				<div class="control-group">
+					<label for="max-veryrare">Max Very Rare Items</label>
+					<input type="number" id="max-veryrare" min="0" max="50" value="3" step="1">
+				</div>
+
+				<div class="control-group">
+					<label for="max-legendary">Max Legendary Items</label>
+					<input type="number" id="max-legendary" min="0" max="50" value="1" step="1">
+				</div>
+
+				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
+					<label style="opacity: 0;">Generate</label>
+					<button onclick="generateShop()">Generate Shop</button>
+				</div>
+				<div class="control-group">
+					<label for="allow-homebrew">Allow Homebrew Items</label>
+					<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
+				</div>
+
+			</div>
+		</div>
+		
+
+
+
+        <div id="shop-content" class="empty-state">
+            <p>Click "Generate Shop" to create your merchant's inventory!</p>
+        </div>
+    </div>
+	 <!-- Item List Tab -->
+    <div id="itemlist-tab" class="tab-content">
+        <div class="search-filter-bar">
+            <input type="text" id="item-search" placeholder="Search items..." style="flex: 1; min-width: 200px;">
+            <select id="filter-type">
+                <option value="">All Types</option>
+                <option value="Weapon">Weapons</option>
+                <option value="Armor">Armor</option>
+                <option value="Ammunition">Ammunition</option>
+                <option value="Apperal">Apparel</option>
+                <option value="Jewelry">Jewelry</option>
+                <option value="Misc">Misc</option>
+            </select>
+            <select id="filter-rarity">
+                <option value="">All Rarities</option>
+                <option value="Mundane">Mundane</option>
+                <option value="Common">Common</option>
+                <option value="Uncommon">Uncommon</option>
+                <option value="Rare">Rare</option>
+                <option value="Very Rare">Very Rare</option>
+                <option value="Legendary">Legendary</option>
+            </select>
+            <button onclick="applyItemFilters()">Filter</button>
+            <button onclick="resetItemFilters()">Reset</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table class="item-list-table" id="item-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Cost (gp)</th>
+                        <th>Type</th>
+                        <th>Rarity</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="item-table-body">
+                    <!-- Items will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
