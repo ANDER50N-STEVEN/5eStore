@@ -94,6 +94,11 @@
 					<input type="number" id="max-legendary" min="0" max="50" value="1" step="1">
 				</div>
 
+				<div class="control-group">
+					<label for="allow-homebrew">Allow Homebrew Items</label>
+					<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
+				</div>
+
 				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
 					<label style="opacity: 0;">Generate</label>
 					<button onclick="generateShop()">Generate Shop</button>
@@ -102,11 +107,6 @@
 				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
 					<label style="opacity: 0;">Save Store</label>
 					<button onclick="saveCurrentStore()" style="background: linear-gradient(135deg, #2c6b4f 0%, #1a4a37 100%);">💾 Save Store</button>
-				</div>
-				
-				<div class="control-group">
-					<label for="allow-homebrew">Allow Homebrew Items</label>
-					<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
 				</div>
 
 			</div>
