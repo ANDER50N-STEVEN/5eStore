@@ -11,13 +11,13 @@
         <h1>Shop Generator</h1>
         <!--<p class="subtitle">Create dynamic merchant inventories for your campaign</p> -->
 
-		<!-- Tab Navigation -->
-		<div class="tabs">
-			<div class="tab active" onclick="switchTab('generator')">Shop Generator</div>
-			<div class="tab" onclick="switchTab('itemlist')">Official Items</div>
-			<div class="tab" onclick="switchTab('homebrew')">Homebrew Items</div>
-
-		</div>
+<!-- Tab Navigation -->
+<div class="tabs">
+	<div class="tab active" onclick="switchTab('generator')">Shop Generator</div>
+	<div class="tab" onclick="switchTab('itemlist')">Official Items</div>
+	<div class="tab" onclick="switchTab('homebrew')">Homebrew Items</div>
+	<div class="tab" onclick="switchTab('savedstores')">Saved Stores</div>
+</div>
 
 		<div id="generator-tab" class="tab-content active">
 			<div class="controls">
@@ -97,7 +97,13 @@
 				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
 					<label style="opacity: 0;">Generate</label>
 					<button onclick="generateShop()">Generate Shop</button>
+
 				</div>
+				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
+					<label style="opacity: 0;">Save Store</label>
+					<button onclick="saveCurrentStore()" style="background: linear-gradient(135deg, #2c6b4f 0%, #1a4a37 100%);">💾 Save Store</button>
+				</div>
+				
 				<div class="control-group">
 					<label for="allow-homebrew">Allow Homebrew Items</label>
 					<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
@@ -207,6 +213,11 @@
         </div>
     </div>
 
+	<!-- Saved Stores Tab -->
+	<div id="savedstores-tab" class="tab-content">
+		<!-- Content will be populated by JavaScript -->
+	</div>
+	
     <script src="script.js"></script>
 </body>
 </html>
