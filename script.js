@@ -6644,16 +6644,15 @@ function loadItemEditsFromLocalStorage() {
 
 // Save current shop inventory
 function saveCurrentStore() {
-	const shopContent = document.getElementById('shop-content');
-	const hasEmptyState = shopContent.querySelector('.empty-state');
-	const hasInventory = shopContent.querySelector('.inventory');
+	// Check if there's actually inventory items in the DOM
+	const inventoryDiv = document.querySelector('#shop-content .inventory');
 	
-	if (!shopContent || hasEmptyState || !hasInventory) {
+	if (!inventoryDiv) {
 		alert('Please generate a shop first before saving!');
 		return;
 	}
-
-		const storeName = prompt('Enter a name for this store:');
+	
+	const storeName = prompt('Enter a name for this store:');
 	if (!storeName || storeName.trim() === '') {
 		return;
 	}
@@ -6691,6 +6690,31 @@ function saveCurrentStore() {
 			}
 		}
 	});
+	
+	if (inventory.length === 0) {
+		alert('No items found in the current shop!');
+		return;
+	}
+	
+	const savedStore = {
+		name: storeName.trim(),
+		timestamp: new Date().toISOString(),
+		storeType: storeType,
+		settlementSize: settlementSize,
+		maxModifier: maxModifier,
+		maxRarity: maxRarity,
+		inventory: inventory
+	};
+	
+	// Get existing saved stores
+	const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+	savedStores.push(savedStore);
+	
+	// Save to localStorage
+	localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
+	
+	alert(`Store "${storeName}" saved successfully!`);
+}
 	
 	const savedStore = {
 		name: storeName.trim(),
