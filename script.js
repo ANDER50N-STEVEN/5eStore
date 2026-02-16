@@ -6105,47 +6105,67 @@
 
 
 		function filterByStoreType(items, storeType) {
-			if (storeType === 'general') {
-				return items;
+	if (storeType === 'general') {
+		return items;
+	}
+
+	const filters = {
+		'weaponsmith': (item) => 
+			item.type === 'Weapon' || 
+			item.type === 'Ammunition' || 
+			item.type === 'Armor' ||
+			item.type === 'Shield',
+			
+		'armorer': (item) => 
+			item.type === 'Apparel' || 
+			item.type === 'Armor' ||
+			item.type === 'Shield' ||
+			item.type === 'Cloak' ||
+			item.type === 'Boots' ||
+			item.type === 'Gloves' ||
+			item.type === 'Headwear' ||
+			item.type === 'Clothing',
+			
+		'outfitter': (item) => 
+			(item.type === 'Misc' && (item.rarity === 'Common' || item.rarity === 'Mundane') ) ||
+			(item.type === 'Potion' && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
+			item.rarity === 'Common',
+			
+		'magic': (item) => 
+			item.type === 'Wand/Staff/Rod' ||
+			item.type === 'Book' || 
+			item.type === 'Scroll' ||
+			item.type === 'Amulet' ||
+			item.type === 'Ring' ||
+			(item.type === 'Jewelry' && item.rarity !== 'Mundane') ||
+			(item.type === 'Potion' && item.rarity !== 'Mundane') ||
+			(item.type === 'Cloak' && item.rarity !== 'Mundane') ||
+			(item.type === 'Boots' && item.rarity !== 'Mundane') ||
+			(item.type === 'Gloves' && item.rarity !== 'Mundane') ||
+			(item.type === 'Headwear' && item.rarity !== 'Mundane'),
+			
+		'clothier': (item) => 
+			item.type === 'Apparel' ||
+			item.type === 'Clothing' ||
+			item.type === 'Cloak' ||
+			item.type === 'Boots' ||
+			item.type === 'Gloves' ||
+			item.type === 'Headwear',
+			
+		'apothecary': (item) => 
+			item.type === 'Potion',
+			
+		'curiosities': (item) => {
+			if ((item.type === 'Misc' && item.rarity !== 'Mundane') ||
+			item.type === 'Jewelry' ||
+			item.type === 'Amulet' ||
+			item.type === 'Ring') return true;
+			return Math.random() < 0.05;
 			}
+	};
 
-			const filters = {
-				'weaponsmith': (item) => 
-					item.type === 'Weapon' || 
-					item.type === 'Ammunition' || 
-					item.type === 'Armor',
-					
-				'armorer': (item) => 
-					item.type === 'Apparel' || 
-					item.type === 'Armor',
-					
-				'outfitter': (item) => 
-					(item.type === 'Misc' && (item.rarity === 'Common' || item.rarity === 'Mundane') ) ||
-					(item.type === 'Potion' && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
-					item.rarity === 'Common',
-					
-				'magic': (item) => 
-					item.type === 'Wand/Staff/Rod' ||
-					item.type === 'Book' || item.type === 'Scroll' ||
-					(item.type === 'Jewelry' && item.rarity !== 'Mundane') ||
-					(item.type === 'Potion' && item.rarity !== 'Mundane'),
-					
-				'clothier': (item) => 
-					item.type === 'Apparel',
-					
-				'apothecary': (item) => 
-					item.type === 'Potion',
-					
-				'curiosities': (item) => {
-					if ((item.type === 'Misc' && item.rarity !== 'Mundane') ||
-					item.type === 'Jewelry') return true;
-					return Math.random() < 0.05;
-					}
-			};
-
-			return items.filter(filters[storeType] || (() => true));
-		}
-
+	return items.filter(filters[storeType] || (() => true));
+}
 		function selectInventory(settlementSize, storeType, maxRarity) {
 			const probabilities = getInventorySize(settlementSize);
 			const maxRarityLevel = rarityLevels[maxRarity];
