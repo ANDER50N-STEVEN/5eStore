@@ -1778,7 +1778,7 @@
 { "name": "Flame Tongue (Trident)", "cost": 4000, "type": "Weapon", "rarity": "Rare", "description": "A three-pronged spear. Versatile and thrown (20/60) weapon dealing 1d6 (1d8 two-handed) piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet." },
 { "name": "Flame Tongue (War Pick)", "cost": 4050, "type": "Weapon", "rarity": "Rare", "description": "A military pick with a pointed head. Weapon dealing 1d8 piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet." },
 { "name": "Flame Tongue (Warhammer)", "cost": 4050, "type": "Weapon", "rarity": "Rare", "description": "A heavy-headed hammer. Versatile weapon dealing 1d8 (1d10 two-handed) bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet." },
-{ "name": "Flame Tongue (Whip)", "cost": 3900, "type": "Weapon", "rarity": "Rare", "description": "A long flexible lash. Finesse and reach weapon dealing 1d4 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet." }
+{ "name": "Flame Tongue (Whip)", "cost": 3900, "type": "Weapon", "rarity": "Rare", "description": "A long flexible lash. Finesse and reach weapon dealing 1d4 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet." },
 
 	
   {"name": "Frost Brand (Longsword)", "cost": 5231, "type": "Weapon", "rarity": "Very Rare", "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. A +3 sword in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet."},
@@ -1917,5 +1917,6 @@
 
 
 		]
+
 
 
