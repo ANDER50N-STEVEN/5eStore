@@ -2713,7 +2713,7 @@
     "cost": 4032,
     "type": "Shield",
     "rarity": "Very Rare",
-    "description": "While wielding this shield, at the start of each of your turns, your next weapon attack before the end of your turn deals an extra 1d6 force damage. This effect lasts for 2 rounds and can stack. When a creature hits you with a melee attack, you can use your reaction to force the attacker to make a DC 16 Dexterity saving throw. On a failed save, the attacker is knocked prone. This item requires attunement."
+    "description": "While wielding this shield, when a creature hits you with a melee attack, you can use your reaction to force the attacker to make a DC 16 Dexterity saving throw. On a failed save, the attacker is knocked prone. This item requires attunement."
   },
   {
     "name": "Swiresy Shoes",
@@ -2734,7 +2734,7 @@
     "cost": 1042,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. Shadowsoaked Blow. Once on each of your turns when you hit a creature with this weapon, you can shroud yourself in shadow. Your next attack with this weapon before the end of your next turn is made with advantage and deals an extra 1d6 necrotic damage on a hit. This item requires attunement."
+    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. Shadowsoaked Blow. Once on each of your turns when you hit a creature with this weapon, you can shroud yourself in shadow. The next attack against you is done at disadvantage. This item requires attunement."
   },
   {
     "name": "Sword of Justice (Greatsword)",
@@ -2744,29 +2744,22 @@
     "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 slashing damage. The sword you can use a bonus action to cast shield of faith. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
-    "name": "Sword of Life Stealing (Shortsword)",
-    "cost": 10212,
-    "type": "Weapon",
-    "rarity": "Very Rare",
-    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you score a critical hit against a creature that isn't a construct or undead, you gain 10 temporary hit points and the target takes an extra 1d10 necrotic damage. This item requires attunement."
-  },
-  {
     "name": "Sword of Screams (Rapier)",
-    "cost": 700,
+    "cost": 1700,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. Deals an additional 1d4 Psychic damage.  A blade of flawless craft. As it parts the air, you fancy you can hear a faint, whispering shriek..."
   },
   {
     "name": "Sword of the Emperor (Longsword)",
-    "cost": 2202,
+    "cost": 3202,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon, and a +2 bonus to saving throws against spells while wielding it. You deal an extra 1d4 damage with this weapon against shapechangers and creatures under the effect of a polymorph spell. This item requires attunement."
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with it. You deal an extra 1d4 damage with this weapon against shapechangers and creatures under the effect of a polymorph spell. This item requires attunement."
   },
   {
     "name": "Swordmaster Gloves",
-    "cost": 575,
+    "cost": 3575,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, you are proficient with shortswords, longswords, and greatswords, and you gain a +1 bonus to melee attack rolls. This item requires attunement."
@@ -2776,18 +2769,18 @@
     "cost": 700,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. You can use your spellcasting ability modifier instead of your Dexterity modifier for attack and damage rolls with this magic weapon. This item requires attunement."
+    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. You can use your spellcasting ability modifier instead of your Dexterity modifier for attack and damage rolls with this magic weapon."
   },
   {
     "name": "Tarnished Charm",
     "cost": 375,
     "type": "Amulet",
     "rarity": "Uncommon",
-    "description": "While wearing this amulet, the DC for your death saving throws is reduced to 5 instead of 10. This item requires attunement."
+    "description": "While wearing this amulet, the DC for your death saving throws is reduced to 5 instead of 10."
   },
   {
     "name": "The Amulet of Lost Voices",
-    "cost": 530,
+    "cost": 954,
     "type": "Amulet",
     "rarity": "Rare",
     "description": "While wearing this amulet, you can use an action to cast speak with dead. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
@@ -2801,7 +2794,7 @@
   },
   {
     "name": "The Blood of Lathander (Mace)",
-    "cost": 107955,
+    "cost": 97955,
     "type": "Weapon",
     "rarity": "Legendary",
     "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. This weapon sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Fiends and undead standing in the light during combat must succeed on a DC 18 Constitution saving throw at the start of their turn or be blinded until the start of their next turn. The mace has 2 charges and regains 1d2 expended charges daily at dawn. When you are reduced to 0 hit points while holding this mace, you can expend 1 charge (no action required). If you do, you and each ally within 30 feet regains 1d6 hit points. You can also expend 1 charge to cast sunbeam (save DC 18). This item requires attunement."
@@ -2829,28 +2822,28 @@
   },
   {
     "name": "The Ever-Seeing Eye",
-    "cost": 2788,
+    "cost": 1788,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "This amulet has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this amulet, you can use an action to expend 1 charge to cast protection from evil and good."
   },
   {
     "name": "The Graceful Cloth (Araj)",
-    "cost": 20282,
+    "cost": 10282,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this garment, your Dexterity score increases by 2, to a maximum of 20. You gain a +1 bonus to unarmed strike attack rolls and damage. This item requires attunement."
   },
   {
     "name": "The Graceful Cloth (Esther)",
-    "cost": 30622,
+    "cost": 10622,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this garment, your Dexterity score increases by 2, to a maximum of 20. You gain a +1 bonus to Dexterity saving throws, and your jump distance increases by 5 feet. This item requires attunement."
   },
   {
     "name": "The Joltshooter (Longbow)",
-    "cost": 1425,
+    "cost": 3425,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial ranged weapon with ammunition (range 150/600), heavy, and two-handed properties, dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you deal damage with this weapon, you deal an additional 1d4 lightning damage. This item requires attunement."
@@ -2864,7 +2857,7 @@
   },
   {
     "name": "The Mighty Cloth",
-    "cost": 27072,
+    "cost": 11072,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this garment, your Strength score increases by 2, to a maximum of 20. You are immune to being pushed by spells or effects, and you have advantage on saving throws against being restrained. This item requires attunement."
@@ -2878,7 +2871,7 @@
   },
   {
     "name": "The Real Sparky Sparkswall",
-    "cost": 5460,
+    "cost": 2460,
     "type": "Shield",
     "rarity": "Uncommon",
     "description": "This item has 3 charges and regains 1d4 charges at dawn.  While wielding this shield you can use an action to expend a charge and each creature within 10 feet of you takes 1d4 lightning damage. This item requires attunement."
@@ -2892,14 +2885,14 @@
   },
   {
     "name": "The Sacred Star (Morningstar)",
-    "cost": 9512,
+    "cost": 7512,
     "type": "Weapon",
     "rarity": "Very Rare",
     "description": "Martial melee weapon dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit an undead creature with this weapon, it must succeed on a DC 16 Wisdom saving throw or be turned for 1 minute. This item requires attunement."
   },
   {
     "name": "The Shadespell Circlet",
-    "cost": 4375,
+    "cost": 2375,
     "type": "Headwear",
     "rarity": "Uncommon",
     "description": "While wearing this circlet and you are in dim light or darkness, your spell save DC increases by 1. This item requires attunement."
@@ -2920,35 +2913,35 @@
   },
   {
     "name": "The Sparkswall",
-    "cost": 1910,
+    "cost": 5910,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you are immune to being paralyzed by lightning effects and have resistance to lightning damage."
   },
   {
     "name": "The Sparky Points (Trident)",
-    "cost": 4380,
+    "cost": 3380,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. You deal an extra 1d6 lightning damage. This item requires attunement."
   },
   {
     "name": "The Spectator Eyes",
-    "cost": 3640,
+    "cost": 4640,
     "type": "Amulet",
     "rarity": "Very Rare",
     "description": "This amulet has 2 charges and regains 1d2 expended charges daily at dawn. While wearing this amulet, you can expend charges to activate the following effects: Ray of Fear (1 charge). As an action, you can target one creature within 60 feet. The target must succeed on a DC 16 Wisdom saving throw or be frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. Wounding Ray (1 charge). As an action, make a ranged spell attack (+8 to hit) against one creature within 60 feet. On a hit, the target takes 3d10 necrotic damage. This item requires attunement."
   },
   {
     "name": "The Speedy Lightfeet",
-    "cost": 1575,
+    "cost": 2575,
     "type": "Boots",
     "rarity": "Rare",
     "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. When you take the Dash action your movement speed is doubled. This item requires attunement."
   },
   {
     "name": "The Spellsparkler (Quarterstaff)",
-    "cost": 4975,
+    "cost": 3975,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell attack rolls while holding this staff. When you deal lighting damage with a spell or cantrip while holding this staff, you deal an extra 1d6 damage. This item requires attunement."
@@ -2962,7 +2955,7 @@
   },
   {
     "name": "The Watcher's Guide (Spear)",
-    "cost": 688,
+    "cost": 988,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. When you miss a creature with an attack using this magic weapon, the next attack roll against that creature before the end of your next turn has advantage. This item requires attunement."
@@ -3046,14 +3039,14 @@
   },
   {
     "name": "Uncovered Mysteries",
-    "cost": 3470,
+    "cost": 1470,
     "type": "Amulet",
     "rarity": "Rare",
     "description": "While wearing this amulet, you can use an action to cast detect thoughts (save DC 14). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Unflinching Protector Amulet",
-    "cost": 14000,
+    "cost": 21470,
     "type": "Amulet",
     "rarity": "Very Rare",
     "description": "This amulet has 3 charges and regains 1d4 expended charges daily at dawn. While wearing this amulet, when an ally within 30 feet of you is targeted by an attack, you can use your reaction to expend 1 charge to cause that attack to automatically miss. This item requires attunement."
@@ -3123,7 +3116,7 @@
   },
   {
     "name": "Vision of the Absolute (Spear)",
-    "cost": 1941,
+    "cost": 2941,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. When you hit a creature with this weapon, it must succeed on a DC 12 Dexterity saving throw or be blinded until the end of your next turn. You deal an extra 2d6 damage with this weapon to creatures that have multiple sets of eyes (such as beholders or spiders). This item requires attunement."
@@ -3140,7 +3133,7 @@
     "cost": 3910,
     "type": "Cloak",
     "rarity": "Rare",
-    "description": "While wearing this cloak, when you cast a spell while you are within 5 feet of a hostile creature, you gain 7 temporary hit points."
+    "description": "While wearing this cloak, when you cast a spell while you are within 5 feet of a hostile creature, you gain 7 temporary hit points.  Requires attunment"
   },
   {
     "name": "Voss' Silver Sword (Longsword)",
@@ -3162,13 +3155,6 @@
     "type": "Headwear",
     "rarity": "Uncommon",
     "description": "Your Intelligence score is 17 while you wear this headband. It has no effect if your Intelligence is already 17 or higher. This item requires attunement."
-  },
-  {
-    "name": "Watcher's Shield",
-    "cost": 472,
-    "type": "Shield",
-    "rarity": "Uncommon",
-    "description": "While wielding this shield, you have advantage on Wisdom (Perception) checks."
   },
   {
     "name": "Wavemother's Cloak",
@@ -3200,7 +3186,7 @@
   },
   {
     "name": "Winter's Clutches",
-    "cost": 3075,
+    "cost": 2075,
     "type": "Gloves",
     "rarity": "Uncommon",
     "description": "While wearing these gloves, once per turn when you deal cold damage to a creature, its movement speed is reduced by 10 feet until the end of its next turn. This item requires attunement."
@@ -3214,14 +3200,14 @@
   },
   {
     "name": "Woe (Quarterstaff)",
-    "cost": 29350,
+    "cost": 19350,
     "type": "Weapon",
     "rarity": "Very Rare",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell save DC and spell attack rolls while holding this staff. When a creature fails a saving throw against one of your spells while you hold this staff, you regain 1d4 hit points. Using the staff you can use an action to cast blight (save DC 16). Once you use this property, you can\\'t use it again until the next dawn. Bound Weapon. This item requires attunement."
   },
   {
     "name": "Wondrous Gloves",
-    "cost": 4620,
+    "cost": 6620,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, you gain one additional use of your Bardic Inspiration feature. This item requires attunement."
@@ -3858,4 +3844,5 @@
   }
 
 ]
+
 
