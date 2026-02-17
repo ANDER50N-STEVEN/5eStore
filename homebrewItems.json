@@ -2755,7 +2755,7 @@
     "cost": 700,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. This magic rapier is imbued with dark energies but has no additional mechanical benefits beyond being a magic weapon."
+    "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. Deals an additional 1d4 Psychic damage.  A blade of flawless craft. As it parts the air, you fancy you can hear a faint, whispering shriek..."
   },
   {
     "name": "Sword of the Emperor (Longsword)",
@@ -2790,35 +2790,28 @@
     "cost": 530,
     "type": "Amulet",
     "rarity": "Rare",
-    "description": "This amulet While wearing this amulet, you can use an action to cast speak with dead. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
+    "description": "While wearing this amulet, you can use an action to cast speak with dead. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "The Baneful (Shortsword)",
-    "cost": 1385,
+    "cost": 3385,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. This weapon only functions if it is your pact weapon as a warlock. You are always proficient with this weapon. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, it must succeed on a DC 14 Charisma saving throw or suffer the effects of the bane spell until the end of your next turn. This item requires attunement."
-  },
-  {
-    "name": "The Blast Pendant",
-    "cost": 375,
-    "type": "Amulet",
-    "rarity": "Uncommon",
-    "description": "This amulet While wearing this amulet, when you have accumulated lightning charges (from other items or effects), you can use a bonus action to expend the charge and consume all lightning charges. Your next lightning spell or cantrip before the end of your turn deals extra lightning damage equal to the number of charges consumed. This item requires attunement."
   },
   {
     "name": "The Blood of Lathander (Mace)",
     "cost": 107955,
     "type": "Weapon",
     "rarity": "Legendary",
-    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. This weapon sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Fiends and undead standing in the light during combat must succeed on a DC 18 Constitution saving throw at the start of their turn or be blinded until the start of their next turn. The mace has 2 charges and regains 1d2 expended charges daily at dawn. When you are reduced to 0 hit points while holding this mace, you can expend 1 charge (no action required). If you do, you instead drop to half your hit point maximum (rounded down), and each ally within 30 feet regains 1d6 hit points. You can also expend 1 charge to cast sunbeam (save DC 18). This item requires attunement."
+    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. This weapon sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Fiends and undead standing in the light during combat must succeed on a DC 18 Constitution saving throw at the start of their turn or be blinded until the start of their next turn. The mace has 2 charges and regains 1d2 expended charges daily at dawn. When you are reduced to 0 hit points while holding this mace, you can expend 1 charge (no action required). If you do, you and each ally within 30 feet regains 1d6 hit points. You can also expend 1 charge to cast sunbeam (save DC 18). This item requires attunement."
   },
   {
     "name": "The Dancing Breeze (Glaive)",
     "cost": 8970,
     "type": "Weapon",
     "rarity": "Very Rare",
-    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. This item requires attunement."
+    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon.  This item has 3 charges and recovers 1d4 charges at dawn.  As an action you may expend a charge and make a seperate attack against each creature within 5 feet. This item requires attunement."
   },
   {
     "name": "The Dead Shot (Longbow)",
@@ -2829,28 +2822,28 @@
   },
   {
     "name": "The Deathstalker Mantle",
-    "cost": 440,
+    "cost": 6440,
     "type": "Cloak",
     "rarity": "Rare",
-    "description": "While wearing this cloak, once on each of your turns when you reduce a creature to 0 hit points, you can become invisible for 2 rounds or until you make an attack or cast a spell. This item requires attunement."
+    "description": "While wearing this cloak, once on each of your turns when you reduce a creature to 0 hit points, you can become invisible until the start of your next turn or until you make an attack or cast a spell. This item requires attunement."
   },
   {
     "name": "The Ever-Seeing Eye",
-    "cost": 788,
+    "cost": 2788,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "This amulet has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this amulet, you can use an action to expend 1 charge to cast protection from evil and good."
   },
   {
     "name": "The Graceful Cloth (Araj)",
-    "cost": 2282,
+    "cost": 20282,
     "type": "Clothing",
     "rarity": "Rare",
-    "description": "While wearing this garment, your Dexterity score increases by 2, to a maximum of 20. You gain a +1 bonus to unarmed strike attack rolls, and your unarmed strikes deal an extra 1 damage. This item requires attunement."
+    "description": "While wearing this garment, your Dexterity score increases by 2, to a maximum of 20. You gain a +1 bonus to unarmed strike attack rolls and damage. This item requires attunement."
   },
   {
     "name": "The Graceful Cloth (Esther)",
-    "cost": 5622,
+    "cost": 30622,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this garment, your Dexterity score increases by 2, to a maximum of 20. You gain a +1 bonus to Dexterity saving throws, and your jump distance increases by 5 feet. This item requires attunement."
@@ -2860,84 +2853,70 @@
     "cost": 1425,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial ranged weapon with ammunition (range 150/600), heavy, and two-handed properties, dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you deal damage with this weapon, you gain 2 lightning charges. (Lightning charges are typically tracked separately and can be consumed by other items or effects in the campaign.) This item requires attunement."
-  },
-  {
-    "name": "The Lifebringer",
-    "cost": 391,
-    "type": "Headwear",
-    "rarity": "Uncommon",
-    "description": "While wearing this helm, when you gain lightning charges (from other items or effects), you gain 3 temporary hit points. This item requires attunement."
+    "description": "Martial ranged weapon with ammunition (range 150/600), heavy, and two-handed properties, dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you deal damage with this weapon, you deal an additional 1d4 lightning damage. This item requires attunement."
   },
   {
     "name": "The Long Arm of the Gur (Heavy Crossbow)",
-    "cost": 1425,
+    "cost": 4425,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial ranged weapon with ammunition (range 100/400), heavy, loading, and two-handed properties, dealing 1d10 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. You gain a 1d4 bonus to attack and damage rolls with this weapon when attacking undead creatures. This item requires attunement."
   },
   {
     "name": "The Mighty Cloth",
-    "cost": 2772,
+    "cost": 27072,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this garment, your Strength score increases by 2, to a maximum of 20. You are immune to being pushed by spells or effects, and you have advantage on saving throws against being restrained. This item requires attunement."
   },
   {
     "name": "The Pointy Hat",
-    "cost": 462,
+    "cost": 762,
     "type": "Headwear",
     "rarity": "Rare",
     "description": "While wearing this hat, you add your Intelligence modifier to Charisma (Persuasion) checks. This item requires attunement."
   },
   {
-    "name": "The Protecty Sparkswall",
-    "cost": 1700,
-    "type": "Clothing",
-    "rarity": "Rare",
-    "description": "While wearing this garment, your spell save DC increases by 1. While you have lightning charges (from other items or effects), you gain a +1 bonus to AC and saving throws. This item requires attunement."
-  },
-  {
     "name": "The Real Sparky Sparkswall",
-    "cost": 460,
+    "cost": 5460,
     "type": "Shield",
     "rarity": "Uncommon",
-    "description": "This shield While wielding this shield and you have at least 3 lightning charges (from other items or effects), you can use an action to expend the charge and consume 3 lightning charges. Each creature within 10 feet of you takes 1d4 lightning damage. This item requires attunement."
+    "description": "This item has 3 charges and regains 1d4 charges at dawn.  While wielding this shield you can use an action to expend a charge and each creature within 10 feet of you takes 1d4 lightning damage. This item requires attunement."
   },
   {
     "name": "The Reviving Hands",
     "cost": 7420,
     "type": "Gloves",
     "rarity": "Very Rare",
-    "description": "While wearing these gauntlets, you gain a +1 bonus to Strength saving throws. When you restore hit points to a creature, that creature gains resistance to bludgeoning, piercing, and slashing damage until the start of your next turn. When you restore a creature to life, that creature gains the benefit of the death ward spell for 8 hours. The gauntlets you can use an action to cast revivify. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
+    "description": "While wearing these gauntlets, you gain a +1 bonus to Strength saving throws. When you restore hit points to a creature, that creature gains resistance to bludgeoning, piercing, and slashing damage until the start of your next turn. This item requires attunement."
   },
   {
     "name": "The Sacred Star (Morningstar)",
     "cost": 9512,
     "type": "Weapon",
     "rarity": "Very Rare",
-    "description": "Martial melee weapon dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time it takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. When you hit an undead creature with this weapon, it must succeed on a DC 16 Wisdom saving throw or be turned for 1 minute. This item requires attunement."
+    "description": "Martial melee weapon dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit an undead creature with this weapon, it must succeed on a DC 16 Wisdom saving throw or be turned for 1 minute. This item requires attunement."
   },
   {
     "name": "The Shadespell Circlet",
-    "cost": 375,
+    "cost": 4375,
     "type": "Headwear",
     "rarity": "Uncommon",
     "description": "While wearing this circlet and you are in dim light or darkness, your spell save DC increases by 1. This item requires attunement."
   },
   {
     "name": "The Skinburster (Halberd)",
-    "cost": 411,
+    "cost": 2411,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. When you hit a creature with this magic weapon, your next weapon attack before the end of your next turn deals an extra 1d6 force damage. This effect lasts for 2 rounds and can stack. This item requires attunement."
+    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. When you hit a creature with this magic weapon, you deal an extra 1d6 force damage. This item requires attunement."
   },
   {
     "name": "The Sparkle Hands",
-    "cost": 785,
+    "cost": 1785,
     "type": "Gloves",
     "rarity": "Rare",
-    "description": "While wearing these gloves, when you hit a creature with an unarmed strike, you gain 2 lightning charges (typically tracked separately for use with other items). While you have lightning charges, you have advantage on attack rolls against creatures wearing metal armor or constructs made of metal. This item requires attunement."
+    "description": "While wearing these gloves, when you hit a creature with an unarmed strike, you have advantage on attack rolls against creatures wearing metal armor or constructs made of metal. This item requires attunement."
   },
   {
     "name": "The Sparkswall",
@@ -2948,10 +2927,10 @@
   },
   {
     "name": "The Sparky Points (Trident)",
-    "cost": 1380,
+    "cost": 4380,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you deal damage with this weapon, you gain 2 lightning charges (typically tracked separately for use with other items). This item requires attunement."
+    "description": "Martial melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. You deal an extra 1d6 lightning damage. This item requires attunement."
   },
   {
     "name": "The Spectator Eyes",
@@ -2962,21 +2941,21 @@
   },
   {
     "name": "The Speedy Lightfeet",
-    "cost": 575,
+    "cost": 1575,
     "type": "Boots",
     "rarity": "Rare",
-    "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. When you take the Dash action or use a similar feature, you gain 3 lightning charges (typically tracked separately for use with other items). This item requires attunement."
+    "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. When you take the Dash action your movement speed is doubled. This item requires attunement."
   },
   {
     "name": "The Spellsparkler (Quarterstaff)",
-    "cost": 975,
+    "cost": 4975,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell attack rolls while holding this staff. When you deal damage with a spell or cantrip while holding this staff, you gain 2 lightning charges (typically tracked separately for use with other items). This item requires attunement."
+    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell attack rolls while holding this staff. When you deal lighting damage with a spell or cantrip while holding this staff, you deal an extra 1d6 damage. This item requires attunement."
   },
   {
     "name": "The Undead Bane (Greataxe)",
-    "cost": 731,
+    "cost": 3731,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with heavy and two-handed properties, dealing 1d12 slashing damage. This weapon deals an extra 1d6 radiant damage to undead."
@@ -2989,39 +2968,32 @@
     "description": "Simple melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. When you miss a creature with an attack using this magic weapon, the next attack roll against that creature before the end of your next turn has advantage. This item requires attunement."
   },
   {
-    "name": "The Watersparkers",
-    "cost": 350,
-    "type": "Boots",
-    "rarity": "Rare",
-    "description": "While wearing these boots, water within 10 feet of you becomes electrified during combat. When you start your turn standing on an electrified water surface, you gain 3 lightning charges (typically tracked separately for use with other items). This item requires attunement."
-  },
-  {
     "name": "The Whispering Promise",
-    "cost": 375,
+    "cost": 6375,
     "type": "Ring",
-    "rarity": "Uncommon",
-    "description": "While wearing this ring, when you restore hit points to a creature, that creature gains the benefit of the bless spell for 1 minute (no concentration required). This item requires attunement."
+    "rarity": "Rare",
+    "description": "While wearing this ring, when you restore hit points to a creature, that creature gains the benefit of the bless spell until the start of your next turn (no concentration required). This item requires attunement."
   },
   {
     "name": "Thermoarcanic Gloves",
-    "cost": 403,
+    "cost": 2403,
     "type": "Gloves",
     "rarity": "Uncommon",
-    "description": "While wearing these gloves, when you deal fire damage, your next weapon attack before the end of your next turn deals an extra 1d4 fire damage. This item requires attunement."
+    "description": "While wearing these gloves, when you deal fire damage, you deal an extra 1d4 fire damage. This item requires attunement."
   },
   {
     "name": "Thermodynamo Axe (Battleaxe)",
-    "cost": 897,
+    "cost": 2897,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. When you deal damage with this weapon, your next weapon attack before the end of your next turn deals an extra 1d4 fire damage. This item requires attunement."
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. When you deal damage with this weapon you deal an extra 1d4 fire damage."
   },
   {
     "name": "Thorn Blade (Scimitar)",
-    "cost": 947,
+    "cost": 3947,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. While concentrating on a spell, you deal an extra 1d4 poison damage with this weapon. The scimitar you can use a bonus action to cast ensnaring strike. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
+    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. While concentrating on a spell, you deal an extra 1d4 poison damage with this weapon. You can use a bonus action to cast ensnaring strike. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Thunderpalm Strikers",
@@ -3056,7 +3028,7 @@
     "cost": 8955,
     "type": "Weapon",
     "rarity": "Very Rare",
-    "description": "Martial melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, the ground in a 10-foot radius around that creature becomes flooded with water (difficult terrain) until the start of your next turn. This item requires attunement."
+    "description": "Martial melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, the ground in a 10-foot radius around that creature becomes difficult terrain as it becomes flooded with water until the start of your next turn. This item requires attunement."
   },
   {
     "name": "Twist of Fortune (Morningstar)",
@@ -3077,7 +3049,7 @@
     "cost": 3470,
     "type": "Amulet",
     "rarity": "Rare",
-    "description": "This amulet While wearing this amulet, you can use an action to cast detect thoughts (save DC 14). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
+    "description": "While wearing this amulet, you can use an action to cast detect thoughts (save DC 14). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Unflinching Protector Amulet",
@@ -3095,7 +3067,7 @@
   },
   {
     "name": "Unseen Menace (Pike)",
-    "cost": 2180,
+    "cost": 5180,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 piercing damage. This weapon is invisible while you wield it. You can't be disarmed of this weapon, you have advantage on attack rolls with it, and you score a critical hit on a roll of 19 or 20. When you miss with an attack using this weapon, it becomes visible until the end of your next turn."
@@ -3109,7 +3081,7 @@
   },
   {
     "name": "Unwanted Masterwork Greaves",
-    "cost": 575,
+    "cost": 2575,
     "type": "Boots",
     "rarity": "Rare",
     "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks."
@@ -3123,7 +3095,7 @@
   },
   {
     "name": "Veil of the Morning",
-    "cost": 6475,
+    "cost": 16475,
     "type": "Clothing",
     "rarity": "Very Rare",
     "description": "While wearing this garment, undead creatures have disadvantage on attack rolls against you, and you have advantage on saving throws against their actions and spells.  This item requires attunement."
@@ -3221,7 +3193,7 @@
   },
   {
     "name": "Winkling Gloves",
-    "cost": 1875,
+    "cost": 4875,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, you gain a +1 bonus to attack rolls and a +1 bonus to Dexterity (Sleight of Hand) checks."
@@ -3231,7 +3203,7 @@
     "cost": 3075,
     "type": "Gloves",
     "rarity": "Uncommon",
-    "description": "While wearing these gloves, when you deal cold damage to a creature, its movement speed is reduced by 10 feet until the end of its next turn. This item requires attunement."
+    "description": "While wearing these gloves, once per turn when you deal cold damage to a creature, its movement speed is reduced by 10 feet until the end of its next turn. This item requires attunement."
   },
   {
     "name": "Witchbreaker (Battleaxe)",
@@ -3242,7 +3214,7 @@
   },
   {
     "name": "Woe (Quarterstaff)",
-    "cost": 9350,
+    "cost": 29350,
     "type": "Weapon",
     "rarity": "Very Rare",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell save DC and spell attack rolls while holding this staff. When a creature fails a saving throw against one of your spells while you hold this staff, you regain 1d4 hit points. Using the staff you can use an action to cast blight (save DC 16). Once you use this property, you can\\'t use it again until the next dawn. Bound Weapon. This item requires attunement."
@@ -3382,31 +3354,31 @@
   },
   {
     "name": "Armor of Persistence (Ring Mail)",
-    "cost": 8950,
+    "cost": 13950,
     "type": "Armor",
     "rarity": "Very Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and you have resistance to nonmagical bludgeoning, piercing, and slashing damage.  This item requires attunement."
   },
   {
     "name": "Armor of Persistence (Chain Mail)",
-    "cost": 8950,
+    "cost": 14950,
     "type": "Armor",
     "rarity": "Very Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and you have resistance to nonmagical bludgeoning, piercing, and slashing damage.  This item requires attunement."
   },
   {
     "name": "Armor of Persistence (Splint Armor)",
-    "cost": 9150,
+    "cost": 15150,
     "type": "Armor",
     "rarity": "Very Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and you have resistance to nonmagical bludgeoning, piercing, and slashing damage. This item requires attunement."
   },
   {
     "name": "Armor of Persistence (Plate Armor)",
-    "cost": 10450,
+    "cost": 16450,
     "type": "Armor",
     "rarity": "Very Rare",
-    "description": "While wearing this armor, you gain a +1 bonus to AC and you have resistance to nonmagical bludgeoning, piercing, and slashing damage. . This item requires attunement."
+    "description": "While wearing this armor, you gain a +1 bonus to AC and you have resistance to nonmagical bludgeoning, piercing, and slashing damage. This item requires attunement."
   },
   {
     "name": "Barkskin Armor (Hide Armor)",
@@ -3438,14 +3410,14 @@
   },
   {
     "name": "Blackguard's Plate (Plate Armor)",
-    "cost": 12700,
+    "cost": 9700,
     "type": "Armor",
     "rarity": "Very Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and have advantage on Wisdom saving throws. This item requires attunement."
   },
   {
     "name": "Drow Studded Leather Armor (Studded Leather Armor)",
-    "cost": 1910,
+    "cost": 4910,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and a +1 bonus to Dexterity (Stealth) checks."
@@ -3508,63 +3480,63 @@
   },
   {
     "name": "Flawed Helldusk Armor (Ring Mail)",
-    "cost": 2000,
+    "cost": 6547,
     "type": "Armor",
     "rarity": "Rare",
-    "description": "While wearing this armor, you gain a +1 bonus to AC, and all piercing damage you take is reduced by 1 (minimum of 1 damage). When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
+    "description": "While wearing this armor, you gain a +1 bonus to AC. When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
   },
   {
     "name": "Flawed Helldusk Armor (Chain Mail)",
-    "cost": 2000,
+    "cost": 7000,
     "type": "Armor",
     "rarity": "Rare",
-    "description": "While wearing this armor, you gain a +1 bonus to AC, and all piercing damage you take is reduced by 1 (minimum of 1 damage). When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
+    "description": "While wearing this armor, you gain a +1 bonus to AC. When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
   },
   {
     "name": "Flawed Helldusk Armor (Splint Armor)",
-    "cost": 2200,
+    "cost": 7200,
     "type": "Armor",
     "rarity": "Rare",
-    "description": "While wearing this armor, you gain a +1 bonus to AC, and all piercing damage you take is reduced by 1 (minimum of 1 damage). When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
+    "description": "While wearing this armor, you gain a +1 bonus to AC. When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
   },
   {
     "name": "Flawed Helldusk Armor (Plate Armor)",
-    "cost": 3500,
+    "cost": 7500,
     "type": "Armor",
     "rarity": "Rare",
-    "description": "While wearing this armor, you gain a +1 bonus to AC, and all piercing damage you take is reduced by 1 (minimum of 1 damage). When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
+    "description": "While wearing this armor, you gain a +1 bonus to AC. When a creature within 10 feet hits you with a melee attack, that creature takes 1d4 fire damage. This item requires attunement."
   },
   {
     "name": "Hedge Wanderer Armor (Hide Armor)",
-    "cost": 780,
+    "cost": 1780,
     "type": "Armor",
     "rarity": "Uncommon",
     "description": "While wearing this armor, you gain a +1 bonus to Dexterity saving throws, Dexterity checks, and Intelligence (Nature) checks."
   },
   {
     "name": "Hedge Wanderer Armor (Chain Shirt)",
-    "cost": 770,
+    "cost": 1770,
     "type": "Armor",
     "rarity": "Uncommon",
     "description": "While wearing this armor, you gain a +1 bonus to Dexterity saving throws, Dexterity checks, and Intelligence (Nature) checks."
   },
   {
     "name": "Hedge Wanderer Armor (Scale Mail)",
-    "cost": 770,
+    "cost": 1770,
     "type": "Armor",
     "rarity": "Uncommon",
     "description": "While wearing this armor, you gain a +1 bonus to Dexterity saving throws, Dexterity checks, and Intelligence (Nature) checks."
   },
   {
     "name": "Hedge Wanderer Armor (Breastplate)",
-    "cost": 770,
+    "cost": 2170,
     "type": "Armor",
     "rarity": "Uncommon",
     "description": "While wearing this armor, you gain a +1 bonus to Dexterity saving throws, Dexterity checks, and Intelligence (Nature) checks."
   },
   {
     "name": "Hedge Wanderer Armor (Half Plate)",
-    "cost": 770,
+    "cost": 1770,
     "type": "Armor",
     "rarity": "Uncommon",
     "description": "While wearing this armor, you gain a +1 bonus to Dexterity saving throws, Dexterity checks, and Intelligence (Nature) checks."
@@ -3599,98 +3571,98 @@
   },
   {
     "name": "Luminous Armor (Hide Armor)",
-    "cost": 1563,
+    "cost": 2563,
     "type": "Armor",
     "rarity": "Uncommon",
-    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time such a creature takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. This item requires attunement."
+    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Luminous Armor (Chain Shirt)",
-    "cost": 2553,
-    "type": "Armor",
-    "rarity": "Uncommon",
-    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time such a creature takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. This item requires attunement."
-  },
-  {
-    "name": "Luminous Armor (Scale Mail)",
     "cost": 3553,
     "type": "Armor",
     "rarity": "Uncommon",
-    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time such a creature takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. This item requires attunement."
+    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement."
+  },
+  {
+    "name": "Luminous Armor (Scale Mail)",
+    "cost": 4153,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Luminous Armor (Breastplate)",
-    "cost": 4553,
+    "cost": 4853,
     "type": "Armor",
     "rarity": "Uncommon",
-    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time such a creature takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. This item requires attunement."
+    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Luminous Armor (Half Plate)",
     "cost": 5530,
     "type": "Armor",
     "rarity": "Uncommon",
-    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time such a creature takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. This item requires attunement."
+    "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Penumbral Armor (Padded Armor)",
-    "cost": 2355,
+    "cost": 4355,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and a +3 bonus to Dexterity (Stealth) checks while you are in dim light or darkness. This item requires attunement."
   },
   {
     "name": "Penumbral Armor (Leather Armor)",
-    "cost": 2360,
+    "cost": 4360,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and a +3 bonus to Dexterity (Stealth) checks while you are in dim light or darkness. This item requires attunement."
   },
   {
     "name": "Penumbral Armor (Studded Leather Armor)",
-    "cost": 2360,
+    "cost": 4360,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, you gain a +1 bonus to AC and a +3 bonus to Dexterity (Stealth) checks while you are in dim light or darkness. This item requires attunement."
   },
   {
     "name": "Protective Plate (Plate Armor)",
-    "cost": 2262,
+    "cost": 6262,
     "type": "Armor",
     "rarity": "Uncommon",
     "description": "While wearing this armor, you have resistance to necrotic damage."
   },
   {
     "name": "Psionic Ward Armor (Hide Armor)",
-    "cost": 1192,
+    "cost": 3192,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, when you succeed on a saving throw against a spell, you regain 1d4 hit points. If you are a githyanki, you also have resistance to psychic damage while wearing this armor. This item requires attunement."
   },
   {
     "name": "Psionic Ward Armor (Chain Shirt)",
-    "cost": 1282,
+    "cost": 3282,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, when you succeed on a saving throw against a spell, you regain 1d4 hit points. If you are a githyanki, you also have resistance to psychic damage while wearing this armor. This item requires attunement."
   },
   {
     "name": "Psionic Ward Armor (Scale Mail)",
-    "cost": 1382,
+    "cost": 3382,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, when you succeed on a saving throw against a spell, you regain 1d4 hit points. If you are a githyanki, you also have resistance to psychic damage while wearing this armor. This item requires attunement."
   },
   {
     "name": "Psionic Ward Armor (Breastplate)",
-    "cost": 1482,
+    "cost": 3482,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, when you succeed on a saving throw against a spell, you regain 1d4 hit points. If you are a githyanki, you also have resistance to psychic damage while wearing this armor. This item requires attunement."
   },
   {
     "name": "Psionic Ward Armor (Half Plate)",
-    "cost": 1682,
+    "cost": 3682,
     "type": "Armor",
     "rarity": "Rare",
     "description": "While wearing this armor, when you succeed on a saving throw against a spell, you regain 1d4 hit points. If you are a githyanki, you also have resistance to psychic damage while wearing this armor. This item requires attunement."
@@ -3886,3 +3858,4 @@
   }
 
 ]
+
