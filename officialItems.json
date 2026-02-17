@@ -393,7 +393,7 @@
     {"name": "Spell Scroll (Lightning Bolt)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Lightning Bolt (3rd level). 100-foot long, 5-foot wide line. Creatures make Dexterity save or take 8d6 lightning damage (half on success). If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
     {"name": "Spell Scroll (Major Image)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Major Image (3rd level). Create image up to 20-foot cube. Seems real including sounds, smells, temperature. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
     {"name": "Spell Scroll (Mass Healing Word)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Mass Healing Word (3rd level). Up to six creatures regain 1d4 + spellcasting modifier HP. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
-    {"name": "Spell Scroll (Protection from Energy)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Protection from Energy (3rd level). Touch willing creature. Gains resistance to one damage "type": acid, cold, fire, lightning, or thunder. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
+    {"name": "Spell Scroll (Protection from Energy)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Protection from Energy (3rd level). Touch willing creature. Gains resistance to one damage type: acid, cold, fire, lightning, or thunder. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
     {"name": "Spell Scroll (Remove Curse)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Remove Curse (3rd level). Touch removes all curses from creature/object. Cursed magic item's curse remains but breaks attunement. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
     {"name": "Spell Scroll (Revivify)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Revivify (3rd level). Touch creature dead within last minute. Returns to life with 1 HP. Can't restore missing body parts or those who died of old age. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
     {"name": "Spell Scroll (Speak with Dead)", "cost": 299, "type": "Scroll", "rarity": "Uncommon", "description": "Contains Speak with Dead (3rd level). Grant semblance of life to corpse. Ask up to five questions. Corpse knows only what it knew in life. If on your class list, cast normally. Otherwise DC 13 ability check required. Single use."},
@@ -1917,4 +1917,5 @@
 
 
 		]
+
 
