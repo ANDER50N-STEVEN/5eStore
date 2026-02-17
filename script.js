@@ -90,17 +90,15 @@ window.addEventListener('DOMContentLoaded', async function() {
 			const allowHomebrew = document.getElementById('allow-homebrew').checked;
 			
 			if (allowHomebrew) {
-				// Merge official and homebrew items
+				// Merge official and homebrew items for shop generation
 				itemDatabase = [...officialItemDatabase, ...homebrewItemDatabase];
 			} else {
-				// Use only official items
+				// Use only official items for shop generation
 				itemDatabase = [...officialItemDatabase];
 			}
 			
-			// If on item list tab, refresh the display
-			if (document.getElementById('itemlist-tab').classList.contains('active')) {
-				populateItemList();
-			}
+			// Official Items tab always shows only officialItemDatabase - no refresh needed
+			// Homebrew tab always shows only homebrewItemDatabase - no refresh needed
 		}
 		
 				// Tab switching
@@ -145,7 +143,8 @@ window.addEventListener('DOMContentLoaded', async function() {
 				// Populate the item list table
 		function populateItemList(filteredItems = null) {
 			const tbody = document.getElementById('item-table-body');
-			const items = filteredItems || itemDatabase;
+			// Always use officialItemDatabase only - never mix in homebrew here
+			const items = filteredItems || officialItemDatabase;
 			
 			tbody.innerHTML = '';
 			
@@ -181,7 +180,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			}
 			
 			currentlyEditingIndex = index;
-			const item = itemDatabase[index];
+			const item = officialItemDatabase[index];
 			const row = document.getElementById('item-row-' + index);
 			
 			const rarityOptions = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
@@ -208,7 +207,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 		
 			// Save edited item
 		function saveItem(index) {
-			const item = itemDatabase[index];
+			const item = officialItemDatabase[index];
 			
 			item.name = document.getElementById(`edit-name-${index}`).value;
 			item.cost = parseFloat(document.getElementById(`edit-cost-${index}`).value);
@@ -235,7 +234,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			const filterType = document.getElementById('filter-type').value;
 			const filterRarity = document.getElementById('filter-rarity').value;
 			
-			const filtered = itemDatabase.filter(item => {
+			const filtered = officialItemDatabase.filter(item => {
 				const matchesSearch = item.name.toLowerCase().includes(searchTerm) || 
 									(item.description && item.description.toLowerCase().includes(searchTerm));
 				const matchesType = !filterType || item.type === filterType;
