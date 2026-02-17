@@ -1,84 +1,90 @@
 // At the start of script.js
 let officialItemDatabase = [];
 let homebrewItemDatabase = [];
+let itemDatabase = []; // Initialize as empty
 
 async function loadItemDatabases() {
-    const [officialResponse, homebrewResponse] = await Promise.all([
-        fetch('officialItems.json'),
-        fetch('homebrewItems.json')
-    ]);
-    
-    officialItemDatabase = await officialResponse.json();
-    homebrewItemDatabase = await homebrewResponse.json();
-    
-    // Initialize after loading
-    itemDatabase = [...officialItemDatabase];
-    updateItemDatabase();
+    try {
+        const [officialResponse, homebrewResponse] = await Promise.all([
+            fetch('officialItems.json'),
+            fetch('homebrewItems.json')
+        ]);
+        
+        officialItemDatabase = await officialResponse.json();
+        homebrewItemDatabase = await homebrewResponse.json();
+        
+        console.log('Loaded official items:', officialItemDatabase.length);
+        console.log('Loaded homebrew items:', homebrewItemDatabase.length);
+        
+        // Initialize after loading
+        itemDatabase = [...officialItemDatabase];
+        updateItemDatabase();
+        
+    } catch (error) {
+        console.error('Error loading item databases:', error);
+        alert('Failed to load item databases. Please refresh the page.');
+    }
+}
+
+const cityDefaults = {
+  village: {
+    mundane: 15,
+    common: 10,
+    uncommon: 5,
+    rare: 1,
+    veryRare: 0,
+    legendary: 0
+  },
+  town: {
+    mundane: 20,
+    common: 15,
+    uncommon: 10,
+    rare: 5,
+    veryRare: 1,
+    legendary: 1
+  },
+  city: {
+    mundane: 25,
+    common: 20,
+    uncommon: 15,
+    rare: 10,
+    veryRare: 5,
+    legendary: 2
+  },
+  metropolis: {
+    mundane: 30,
+    common: 25,
+    uncommon: 20,
+    rare: 15,
+    veryRare: 10,
+    legendary: 5
+  }
+};
+
+function applyCityDefaults(size) {
+  const config = cityDefaults[size];
+  if (!config) return;
+
+  document.getElementById("max-mundane").value = config.mundane;
+  document.getElementById("max-common").value = config.common;
+  document.getElementById("max-uncommon").value = config.uncommon;
+  document.getElementById("max-rare").value = config.rare;
+  document.getElementById("max-veryrare").value = config.veryRare;
+  document.getElementById("max-legendary").value = config.legendary;
 }
 
 // Call on page load
 window.addEventListener('DOMContentLoaded', async function() {
     await loadItemDatabases();
     loadItemEditsFromLocalStorage();
+    
+    // Set up city select event listener after DOM is ready
+    const citySelect = document.getElementById("settlement-size");
+    citySelect.addEventListener("change", (e) => {
+      applyCityDefaults(e.target.value);
+    });
+    applyCityDefaults(citySelect.value);
 });
-		
-				const cityDefaults = {
-		  village: {
-			mundane: 15,
-			common: 10,
-			uncommon: 5,
-			rare: 1,
-			veryRare: 0,
-			legendary: 0
-		  },
-		  town: {
-			mundane: 20,
-			common: 15,
-			uncommon: 10,
-			rare: 5,
-			veryRare: 1,
-			legendary: 1
-		  },
-		  city: {
-			mundane: 25,
-			common: 20,
-			uncommon: 15,
-			rare: 10,
-			veryRare: 5,
-			legendary: 2
-		  },
-		  metropolis: {
-			mundane: 30,
-			common: 25,
-			uncommon: 20,
-			rare: 15,
-			veryRare: 10,
-			legendary: 5
-		  }
-		};
-
-		function applyCityDefaults(size) {
-		  const config = cityDefaults[size];
-		  if (!config) return;
-
-		  document.getElementById("max-mundane").value = config.mundane;
-		  document.getElementById("max-common").value = config.common;
-		  document.getElementById("max-uncommon").value = config.uncommon;
-		  document.getElementById("max-rare").value = config.rare;
-		  document.getElementById("max-veryrare").value = config.veryRare;
-		  document.getElementById("max-legendary").value = config.legendary;
-		}
-
-				const citySelect = document.getElementById("settlement-size");
-
-		citySelect.addEventListener("change", (e) => {
-		  applyCityDefaults(e.target.value);
-		});
-
-		applyCityDefaults(citySelect.value);
-
-		// Initialize itemDatabase
-		let itemDatabase = [...officialItemDatabase];
 
 		function updateItemDatabase() {
 			const allowHomebrew = document.getElementById('allow-homebrew').checked;
