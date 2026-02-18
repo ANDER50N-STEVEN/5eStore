@@ -721,13 +721,6 @@
     "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Your Charisma score increases by 2, to a maximum of 20, while you wield this sword. When you reduce a creature to 0 hit points with this weapon, each ally within 30 feet of you gains temporary hit points equal to your Charisma modifier (minimum of 1). The sword has 3 charges and regains 1d3 expended charges daily at dawn. When an ally you can see within 30 feet is about to make an attack, you can use your reaction and expend 1 charge to direct them. That ally can make one weapon attack as part of the same reaction. This item requires attunement."
   },
   {
-    "name": "Dwarven Thrower (Warhammer)",
-    "cost": 14717,
-    "type": "Weapon",
-    "rarity": "Very Rare",
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. This weapon has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you throw this weapon, it returns to your hand immediately after the attack. If you are a dwarf and you throw this weapon, it deals an extra 1d8 bludgeoning damage on a hit. If the target is a Large, Huge, or Gargantuan creature, it takes an additional 2d8 bludgeoning damage. This item requires attunement."
-  },
-  {
     "name": "Enraging Heart Garb",
     "cost": 2085,
     "type": "Clothing",
@@ -1019,7 +1012,7 @@
     "cost": 11560,
     "type": "Gloves",
     "rarity": "Very Rare",
-    "description": "Your Dexterity score is 18 while you wear these gloves. They have no effect if your Dexterity is already 18 or higher. You gain a +1 bonus to attack rolls while wearing these gloves. This item requires attunement."
+    "description": "Your Dexterity score is 17 while you wear these gloves. They have no effect if your Dexterity is already 18 or higher. You gain a +1 bonus to attack rolls while wearing these gloves. This item requires attunement."
   },
   {
     "name": "Gloves of Hail of Thorns",
@@ -1034,13 +1027,6 @@
     "type": "Gloves",
     "rarity": "Uncommon",
     "description": "While wearing these gloves, you gain a +1 bonus to Strength saving throws. When you use a Channel Divinity option from your Sacred Oath, you gain the benefit of the heroism spell for 1 minute (no concentration required). This item requires attunement."
-  },
-  {
-    "name": "Gloves of Missile Snaring",
-    "cost": 350,
-    "type": "Gloves",
-    "rarity": "Rare",
-    "description": "While wearing these gloves, when you are hit by a ranged weapon attack, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier. If you reduce the damage to 0, you catch the missile. This item requires attunement."
   },
   {
     "name": "Gloves of Power",
@@ -1083,13 +1069,6 @@
     "type": "Gloves",
     "rarity": "Uncommon",
     "description": "While wearing these gloves, you gain a +1 bonus to Strength saving throws. When you are within 5 feet of two or more hostile creatures, you have advantage on melee weapon attack rolls. This item requires attunement."
-  },
-  {
-    "name": "Gloves of Thievery",
-    "cost": 387,
-    "type": "Gloves",
-    "rarity": "Uncommon",
-    "description": "While wearing these gloves, you have advantage on Dexterity (Sleight of Hand) checks and checks to pick locks."
   },
   {
     "name": "Gloves of Uninhibited Kushigo",
@@ -2016,13 +1995,6 @@
     "description": "While wearing this ring, you gain a 1d4 bonus to damage rolls with thrown weapons."
   },
   {
-    "name": "Ring of Free Action",
-    "cost": 1812,
-    "type": "Ring",
-    "rarity": "Rare",
-    "description": "While wearing this ring, difficult terrain doesn't cost you extra movement, and you can't be paralyzed or restrained. This item requires attunement."
-  },
-  {
     "name": "Ring of Geniality",
     "cost": 395,
     "type": "Ring",
@@ -2121,13 +2093,6 @@
     "description": "While wearing this robe, your spell save DC increases by 1. This item requires attunement."
   },
   {
-    "name": "Robe of Summer",
-    "cost": 612,
-    "type": "Clothing",
-    "rarity": "Uncommon",
-    "description": "While wearing this robe, you have resistance to cold damage."
-  },
-  {
     "name": "Robe of Supreme Defences",
     "cost": 8500,
     "type": "Clothing",
@@ -2196,13 +2161,6 @@
     "type": "Amulet",
     "rarity": "Very Rare",
     "description": "This amulet has 5 charges and regains 1d4+1 expended charges daily at dawn. While wearing this amulet, you can expend charges to cast the following spells: shatter (2 charges, save DC 16), or as a bonus action, you can expend 5 charges to regain one expended use of your Ki feature. Curse. This amulet houses a trapped sentient being. The DM determines the risks and consequences of using this item. This item requires attunement."
-  },
-  {
-    "name": "Sentinel Shield",
-    "cost": 1900,
-    "type": "Shield",
-    "rarity": "Rare",
-    "description": "While wielding this shield, you gain a +3 bonus to initiative rolls and advantage on Wisdom (Perception) checks. When a creature hits you with a melee attack, you can use your reaction to force the attacker to make a DC 14 Dexterity saving throw. On a failed save, the attacker is knocked prone. This item requires attunement."
   },
   {
     "name": "Seraphic Pugilist Gloves",
@@ -3795,6 +3753,7 @@
   }
 
 ]
+
 
 
 
