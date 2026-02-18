@@ -1841,13 +1841,6 @@
     "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. You have advantage on attack rolls against undead creatures. This item requires attunement."
   },
   {
-    "name": "Periapt of Wound Closure",
-    "cost": 1287,
-    "type": "Amulet",
-    "rarity": "Rare",
-    "description": "While wearing this amulet, you stabilize automatically whenever you are dying at the start of your turn. Whenever you regain hit points while wearing this amulet, you regain the maximum number of hit points possible. This item requires attunement."
-  },
-  {
     "name": "Phalar Aluve (Longsword)",
     "cost": 6445,
     "type": "Weapon",
@@ -2000,13 +1993,6 @@
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, when you deal acid, cold, fire, lightning, or thunder damage with a spell or cantrip, your next weapon attack before the end of your next turn deals an extra 1d4 damage of that type. This item requires attunement."
-  },
-  {
-    "name": "Ring of Evasion",
-    "cost": 2650,
-    "type": "Ring",
-    "rarity": "Very Rare",
-    "description": "This ring While wearing this ring, when you fail a Dexterity saving throw, you can use your reaction to succeed instead. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Ring of Exalted Marrow",
@@ -3809,6 +3795,7 @@
   }
 
 ]
+
 
 
 
