@@ -2044,46 +2044,11 @@
     "description": "While wearing this ring, you gain a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
   },
   {
-    "name": "Ring of Jumping",
-    "cost": 608,
-    "type": "Ring",
-    "rarity": "Uncommon",
-    "description": "This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this ring, you can use a bonus action to expend 1 charge to triple your jump distance until the end of your turn."
-  },
-  {
     "name": "Ring of Mental Inhibition",
     "cost": 387,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, when a creature fails a saving throw against one of your spells or features, that creature has disadvantage on its next attack roll or ability check before the end of its next turn. This item requires attunement."
-  },
-  {
-    "name": "Ring of Mind-Shielding",
-    "cost": 1535,
-    "type": "Ring",
-    "rarity": "Rare",
-    "description": "While wearing this ring, you have advantage on saving throws against being charmed, and you are immune to magic that allows other creatures to read your thoughts or determine if you are lying. This item requires attunement."
-  },
-  {
-    "name": "Ring of Poison Resistance",
-    "cost": 785,
-    "type": "Ring",
-    "rarity": "Rare",
-    "description": "While wearing this ring, you have resistance to poison damage. This item requires attunement."
-  },
-  {
-    "name": "Ring of Protection",
-    "cost": 1700,
-    "type": "Ring",
-    "rarity": "Rare",
-    "description": "While wearing this ring, you gain a +1 bonus to AC and saving throws. This item requires attunement."
-  },
-  {
-    "name": "Ring of Regeneration",
-    "cost": 4475,
-    "type": "Ring",
-    "rarity": "Very Rare",
-    "description": "While wearing this ring, you regain 1d4 hit points at the start of each of your turns if you have at least 1 hit point. This item requires attunement."
   },
   {
     "name": "Ring of Restorative Gravity",
@@ -3844,5 +3809,6 @@
   }
 
 ]
+
 
 
