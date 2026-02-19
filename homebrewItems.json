@@ -2108,35 +2108,35 @@
   },
   {
     "name": "Safeguard Shield",
-    "cost": 1195,
+    "cost": 1950,
     "type": "Shield",
     "rarity": "Uncommon",
     "description": "While wielding this shield, you gain a +1 bonus to saving throws in addition to the shield's normal bonus to AC."
   },
   {
     "name": "Sarevok's Horned Helmet",
-    "cost": 23080,
+    "cost": 28080,
     "type": "Headwear",
     "rarity": "Very Rare",
     "description": "While wearing this helm, you gain a +1 bonus to Constitution saving throws. You have darkvision out to a range of 50 feet. If you already have darkvision, its range increases by 10 feet. The number you need to roll for a critical hit with weapon attacks is reduced by 1 (this effect stacks with similar effects). You are immune to being frightened and can't be affected by other emotion-altering conditions (such as charm person or fear). This item requires attunement."
   },
   {
     "name": "Scabby Pugilist Circlet",
-    "cost": 370,
+    "cost": 970,
     "type": "Headwear",
     "rarity": "Rare",
     "description": "While wearing this circlet and you are within 5 feet of two or more hostile creatures, you deal an extra 2 damage with weapon attacks and unarmed strikes. This item requires attunement."
   },
   {
     "name": "Seemingly Gleaming Ring",
-    "cost": 620,
+    "cost": 920,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you gain a +1 bonus to Charisma saving throws but suffer a -1 penalty to Wisdom saving throws."
   },
   {
     "name": "Selûne's Spear of Night (Spear)",
-    "cost": 315301,
+    "cost": 215301,
     "type": "Weapon",
     "rarity": "Legendary",
     "description": "Simple melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. While wielding this spear, you have advantage on Wisdom saving throws and Wisdom (Perception) checks. You have darkvision out to a range of 40 feet. If you already have darkvision, its range increases by 40 feet. The spear has 3 charges and regains 1d3 expended charges daily at dawn. You can expend charges to cast the following spells: moonbeam (1 charge, save DC 18), or as an action, you can expend 2 charges to create three motes of moonlight that orbit you for 1 minute. When a creature you can see within 30 feet makes an attack roll, you can use your reaction to expend one mote to grant advantage or impose disadvantage on that roll. This item requires attunement."
@@ -2150,14 +2150,14 @@
   },
   {
     "name": "Seraphic Pugilist Gloves",
-    "cost": 487,
+    "cost": 2487,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, your unarmed strikes deal an extra 1d4 radiant damage. In addition you can use an action to cast guiding bolt. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Servitor of the Black Hand Gloves",
-    "cost": 667,
+    "cost": 1667,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, your unarmed strikes deal an extra 1d4 force damage. In addition you can use an action to cast fear (save DC 14). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
@@ -2171,49 +2171,49 @@
   },
   {
     "name": "Shade-Slayer Cloak",
-    "cost": 8050,
+    "cost": 15050,
     "type": "Cloak",
     "rarity": "Very Rare",
     "description": "While wearing this cloak and you are hidden, the number you need to roll for a critical hit with weapon attacks is reduced by 1 (this effect stacks with similar effects). This item requires attunement."
   },
   {
     "name": "Shadow Blade Ring",
-    "cost": 968,
+    "cost": 1968,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "This ring has 3 charges and regains 1d2+1 expended charges daily at dawn. While wearing this ring, you can use a bonus action to expend 1 charge to cast shadow blade."
   },
   {
     "name": "Shadow Lantern (Club)",
-    "cost": 1555,
+    "cost": 5555,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Simple melee weapon dealing 1d4 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. You can use an action to summon a wraith bound to the lantern. Once you use this property, you can\\'t use it again until the next dawn. The wraith appears in an unoccupied space within 10 feet of you, acts on its own initiative, obeys your verbal commands, and can't be turned. It remains for 1 minute, until it is reduced to 0 hit points, or until you dismiss it as an action. This item requires attunement."
   },
   {
     "name": "Shadow of Menzoberranzan",
-    "cost": 440,
+    "cost": 1440,
     "type": "Headwear",
     "rarity": "Rare",
     "description": "While wearing this hood, you can use an action to become invisible until the end of your next turn or until you make an attack or cast a spell. Once you use this property, you can\\'t use it again until you take a short or long rest. This item requires attunement."
   },
   {
     "name": "Shadow-Cloaked Ring",
-    "cost": 403,
+    "cost": 1403,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you deal an extra 1d4 force damage with weapon and unarmed attacks against creatures that are lightly or heavily obscured, or creatures who are incorporial."
   },
   {
     "name": "Shapeshifter Hat",
-    "cost": 3775,
+    "cost": 7775,
     "type": "Headwear",
     "rarity": "Very Rare",
     "description": "While wearing this hat, you gain one additional use of your Wild Shape feature. This item requires attunement."
   },
   {
     "name": "Shapeshifter's Boon Ring",
-    "cost": 375,
+    "cost": 1375,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring and you are under the effect of a polymorph spell, Wild Shape, or disguise self, you gain a 1d4 bonus to all ability checks."
@@ -2227,14 +2227,14 @@
   },
   {
     "name": "Shar's Temptation",
-    "cost": 788,
+    "cost": 1788,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "This amulet has 3 charges and regains 1d2+1 expended charges daily at dawn. While wearing this amulet, you can use an action to expend 1 charge to cast charm person (save DC 12).  This item requires attunement"
   },
   {
     "name": "Shattered Flail (Mace)",
-    "cost": 1246,
+    "cost": 3246,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, you regain 1d6 hit points. 
@@ -2242,7 +2242,7 @@
   },
   {
     "name": "Shelter of Athkatla",
-    "cost": 1205,
+    "cost": 5205,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this garment, you have advantage on saving throws against spells. In addition you can use an action to cast mirror image. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
@@ -2256,7 +2256,7 @@
   },
   {
     "name": "Shield of Devotion",
-    "cost": 19910,
+    "cost": 22910,
     "type": "Shield",
     "rarity": "Very Rare",
     "description": "While wielding this shield, you gain a +1 bonus to AC in addition to the shield's normal bonus, and you gain one additional 1st-level spell slot. When a creature hits you with a melee attack, you can use your reaction to force the attacker to make a DC 16 Dexterity saving throw. On a failed save, the attacker is knocked prone. You can use an action to cast aid at 3rd level. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
@@ -2270,21 +2270,21 @@
   },
   {
     "name": "Shield of Shielding",
-    "cost": 520,
+    "cost": 2250,
     "type": "Shield",
     "rarity": "Rare",
     "description": "This shield has 2 charges and regains 1d2 expended charges daily at dawn.  While wielding this shield, you can use a reaction to expend a charge when you are hit by an attack to cast shield. This item requires attunement."
   },
   {
     "name": "Shield of the Undevout",
-    "cost": 17930,
+    "cost": 27930,
     "type": "Shield",
     "rarity": "Very Rare",
     "description": "While wielding this shield, you gain a +1 bonus to AC in addition to the shield's normal bonus, and you gain one additional 1st-level spell slot. Creatures have disadvantage on saving throws against your spells and effects that would frighten them. When a creature hits you with a melee attack, you can use your reaction to force the attacker to make a DC 16 Dexterity saving throw. On a failed save, the attacker is knocked prone. This item requires attunement."
   },
   {
     "name": "Shifting Corpus Ring",
-    "cost": 650,
+    "cost": 2650,
     "type": "Ring",
     "rarity": "Rare",
     "description": "This ring has 2 charges and regains 1d2 expended charges daily at dawn. While wearing this ring, you can expend charges to cast the following spells: invisibility (1 charge), blur (1 charge). This item requires attunement."
@@ -2298,14 +2298,14 @@
   },
   {
     "name": "Shortsword of First Blood (Shortsword)",
-    "cost": 728,
+    "cost": 1728,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. When you hit a creature that has all its hit points with this magic weapon, the target takes an extra 1d8 piercing damage."
   },
   {
     "name": "Silver Pendant",
-    "cost": 407,
+    "cost": 707,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "While wearing this amulet, you can cast guidance at will."
@@ -2319,77 +2319,77 @@
   },
   {
     "name": "Skybreaker (Light Hammer)",
-    "cost": 1033,
+    "cost": 3033,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with light and thrown (range 20/60) properties, dealing 1d4 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon.  Attacks you make deal an extra 1d6 fire damage."
   },
   {
     "name": "Slicing Shortsword (Shortsword)",
-    "cost": 895,
+    "cost": 1895,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. When you attack with advantage using this weapon and hit, you deal an additional 1d4 slashing damage.  This item requires attunement."
   },
   {
     "name": "Slinging Shoes",
-    "cost": 1037,
+    "cost": 2037,
     "type": "Boots",
     "rarity": "Rare",
     "description": "While wearing these boots, you gain a +1 bonus to Dexterity saving throws. When you throw your boots (improvised weapon), they deal an extra 2d4 psychic damage and return to your feet immediately after the attack. This item requires attunement."
   },
   {
     "name": "Smuggler's Ring",
-    "cost": 415,
+    "cost": 815,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you gain a +2 bonus to Dexterity (Stealth) and Dexterity (Sleight of Hand) checks, but you suffer a -1 penalty to Charisma ability checks and saving throws."
   },
   {
     "name": "Snow-Dusted Monastery Gloves",
-    "cost": 547,
+    "cost": 1547,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, your unarmed strikes deal an extra 1d4 cold damage.  In addition you can use an action to cast ice knife (save DC 14). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Snowburst Ring",
-    "cost": 375,
+    "cost": 1375,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, when you deal cold damage to a creature, the ground in a 15-foot radius around that creature becomes covered in ice (difficult terrain) until the start of your next turn. This item requires attunement."
   },
   {
     "name": "Sorrow (Glaive)",
-    "cost": 860,
+    "cost": 2860,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. Once on each of your turns when you hit a creature with this weapon, you can cause spectral chains to lash out. The target must succeed on a DC 14 Strength saving throw or be restrained until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Soulbreaker Greatsword (Greatsword)",
-    "cost": 1787,
+    "cost": 2787,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 slashing damage. You gain a +2 bonus to initiative rolls while this weapon is on your person. If you are a githyanki, you deal an extra 1d4 psychic damage with this weapon. This item requires attunement."
   },
   {
     "name": "Spaceshunt Boots",
-    "cost": 650,
+    "cost": 4650,
     "type": "Boots",
     "rarity": "Rare",
     "description": "While wearing these boots, you can use an action to cast dimension door. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Speedy Reply (Scimitar)",
-    "cost": 775,
+    "cost": 1775,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. When you hit a creature with this weapon, your walking speed increases by 10 feet until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Spell Savant Amulet",
-    "cost": 1287,
+    "cost": 3287,
     "type": "Amulet",
     "rarity": "Rare",
     "description": "While wearing this amulet, you gain one additional 2nd-level spell slot. This item requires attunement."
@@ -2399,74 +2399,74 @@
     "cost": 6925,
     "type": "Amulet",
     "rarity": "Very Rare",
-    "description": "While wearing this amulet, you can use a bonus action to regain one expended spell slot of any level. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
+    "description": "While wearing this amulet, you can use a bonus action to regain one expended spell slot up to level 5. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Spellmight Gloves",
-    "cost": 3842,
+    "cost": 5842,
     "type": "Gloves",
     "rarity": "Very Rare",
     "description": "While wearing these gloves, when you make a spell attack roll, you can choose to take a -5 penalty to the attack roll. If the attack hits, you deal an extra 1d8 damage. This item requires attunement."
   },
   {
     "name": "Spellseeking Gloves",
-    "cost": 485,
+    "cost": 1485,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, when you make a spell attack roll, you can expend sorcery points to gain advantage on the roll. Cantrips cost 1 sorcery point, and spells cost sorcery points equal to the spell's level. This item requires attunement."
   },
   {
     "name": "Spellthief (Longbow)",
-    "cost": 1205,
+    "cost": 3205,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial ranged weapon with ammunition (range 150/600), heavy, and two-handed properties, dealing 1d8 piercing damage. When you score a critical hit with this weapon, you can regain one expended 1st-level spell slot (no action required).  This item requires attunement."
   },
   {
     "name": "Spiderstep Boots",
-    "cost": 443,
+    "cost": 1443,
     "type": "Boots",
     "rarity": "Uncommon",
     "description": "While wearing these boots, you are immune to being restrained by webs or the web spell, and your movement isn't reduced by webbed surfaces."
   },
   {
     "name": "Spineshudder Amulet",
-    "cost": 1080,
+    "cost": 2080,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "While wearing this amulet, when you deal damage with a ranged spell attack, the target becomes vulnerable to thunder damage until the end of your next turn (unless it has resistance or immunity to thunder damage). This item requires attunement."
   },
   {
     "name": "Springstep Boots",
-    "cost": 450,
+    "cost": 1450,
     "type": "Boots",
     "rarity": "Rare",
     "description": "While wearing these boots, when you take the Dash action or use a similar feature that increases your movement, your walking speed increases by 10 feet. This item requires attunement."
   },
   {
     "name": "Spurred Band",
-    "cost": 460,
+    "cost": 1160,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring and you have half your hit points or fewer, your walking speed increases by 10 feet. This item requires attunement."
   },
   {
     "name": "Staff of a Mumbling Wizard (Quarterstaff)",
-    "cost": 713,
+    "cost": 1713,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. While holding this staff, you can cast fire bolt at will. You may use your Intelligence, Wisdom, or Charisma ability for the spell."
   },
   {
     "name": "Staff of Arcane Blessing (Quarterstaff)",
-    "cost": 750,
+    "cost": 2750,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. While holding this staff, as an action you can cast a special version of bless called Mystra's Blessing. When you cast this version, targets gain a d4 bonus to weapon attack rolls and saving throws, and a 2d4 bonus to spell attack rolls.  Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Staff of Cherished Necromancy (Quarterstaff)",
-    "cost": 5770,
+    "cost": 9770,
     "type": "Weapon",
     "rarity": "Very Rare",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. Creatures have disadvantage on saving throws against your necromancy spells while you hold this staff. When you reduce a creature to 0 hit points with a spell while holding this staff, you gain 10 temporary hit points.  This item requires attunement."
@@ -2480,7 +2480,7 @@
   },
   {
     "name": "Staff of Interruption (Quarterstaff)",
-    "cost": 1155,
+    "cost": 5155,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell save DC and spell attack rolls while holding this staff. You can use your reaction to cast counterspell. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
@@ -2494,7 +2494,7 @@
   },
   {
     "name": "Staff of the Emperor (Quarterstaff)",
-    "cost": 1425,
+    "cost": 5425,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell save DC and spell attack rolls while holding this staff. When a creature succeeds on a saving throw against a spell you cast while holding this staff, that creature must make a DC 14 Intelligence saving throw or be stunned until the end of your next turn. This item requires attunement."
@@ -2508,7 +2508,7 @@
   },
   {
     "name": "Stalker Gloves",
-    "cost": 912,
+    "cost": 2912,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, you gain a +1 bonus to initiative rolls. When you deal Sneak Attack damage while wearing these gloves, you deal an extra 1d4 force damage. This item requires attunement."
@@ -2522,7 +2522,7 @@
   },
   {
     "name": "Steelwatcher Helmet",
-    "cost": 1250,
+    "cost": 2250,
     "type": "Headwear",
     "rarity": "Rare",
     "description": "While wearing this helm, you are immune to being blinded."
@@ -2536,28 +2536,28 @@
   },
   {
     "name": "Strange Conduit Ring",
-    "cost": 403,
+    "cost": 1403,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring and concentrating on a spell, your weapon attacks deal an extra 1d4 psychic damage. This item requires attunement."
   },
   {
     "name": "Strange Tendril Amulet",
-    "cost": 650,
+    "cost": 1650,
     "type": "Amulet",
     "rarity": "Rare",
     "description": "While wearing this amulet, you can use an action to cast Evard's black tentacles (save DC 14). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement"
   },
   {
     "name": "Sunwalker's Gift",
-    "cost": 520,
+    "cost": 1220,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you have darkvision out to a range of 60 feet."
   },
   {
     "name": "Surgeon's Subjugation Amulet",
-    "cost": 8350,
+    "cost": 14350,
     "type": "Amulet",
     "rarity": "Rare",
     "description": "While wearing this amulet, when you score a critical hit against a humanoid, they make a DC 14 Constitution save, on a failure they become Paralyzed. The target can repeat the saving throw (DC 14 Constitution) at the end of each of its turns, ending the effect on a success. This item requires attunement."
@@ -2585,7 +2585,7 @@
   },
   {
     "name": "Svartlebee's Woundseeker (Greatsword)",
-    "cost": 4725,
+    "cost": 3725,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 slashing damage. When you attack a creature with this weapon that has taken damage, you gain a 1d4 bonus to the attack roll. This item requires attunement."
@@ -2599,7 +2599,7 @@
   },
   {
     "name": "Swiresy Shoes",
-    "cost": 3725,
+    "cost": 2725,
     "type": "Boots",
     "rarity": "Rare",
     "description": "While wearing these boots, you gain a +1 bonus to Dexterity (Acrobatics) checks and your jump distance increases by 5 feet."
@@ -2613,21 +2613,21 @@
   },
   {
     "name": "Sword of Clutching Umbra (Shortsword)",
-    "cost": 1042,
+    "cost": 3042,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. Once on each of your turns when you hit a creature with this weapon, you can shroud yourself in shadow. Until the start of your next turn the next attack against you is done at disadvantage. This item requires attunement."
   },
   {
     "name": "Sword of Justice (Greatsword)",
-    "cost": 815,
+    "cost": 1815,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 slashing damage. The sword you can use a bonus action to cast shield of faith. Once you use this property, you can\\'t use it again until the next dawn."
   },
   {
     "name": "Sword of Screams (Rapier)",
-    "cost": 1700,
+    "cost": 2700,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. Deals an additional 1d4 Psychic damage.  A blade of flawless craft. As it parts the air, you fancy you can hear a faint, whispering shriek..."
@@ -2648,7 +2648,7 @@
   },
   {
     "name": "Sylvan Scimitar (Scimitar)",
-    "cost": 1200,
+    "cost": 2200,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. You can use your spellcasting ability modifier instead of your Dexterity modifier for attack and damage rolls with this weapon."
@@ -3726,6 +3726,7 @@
   }
 
 ]
+
 
 
 
