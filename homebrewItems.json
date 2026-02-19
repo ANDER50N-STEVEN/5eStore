@@ -2237,8 +2237,7 @@
     "cost": 3246,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, you regain 1d6 hit points. 
-    Curse. This weapon is cursed. While in Combat, at the end of each of your turns, if you didn't hit a creature with this weapon on that turn, you must succeed on a DC 14 Wisdom saving throw or use your action on your next turn to make one melee attack against a random creature within reach. This item requires attunement."
+    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, you regain 1d6 hit points. Curse. This weapon is cursed. While in Combat, at the end of each of your turns, if you didn't hit a creature with this weapon on that turn, you must succeed on a DC 14 Wisdom saving throw or use your action on your next turn to make one melee attack against a random creature within reach. This item requires attunement."
   },
   {
     "name": "Shelter of Athkatla",
@@ -3726,6 +3725,7 @@
   }
 
 ]
+
 
 
 
