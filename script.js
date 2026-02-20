@@ -78,33 +78,49 @@ async function loadItemDatabases() {
 }
 
 const cityDefaults = {
+	hamlet: {
+    mundane: 10,
+    common: 5,
+    uncommon: 2,
+    rare: 0,
+    veryRare: 0,
+    legendary: 0
+  },
   village: {
-    mundane: 15,
-    common: 10,
+    mundane: 13,
+    common: 8,
     uncommon: 5,
     rare: 1,
     veryRare: 0,
     legendary: 0
   },
   town: {
-    mundane: 20,
-    common: 15,
-    uncommon: 10,
+    mundane: 16,
+    common: 11,
+    uncommon: 8,
     rare: 5,
     veryRare: 1,
     legendary: 1
   },
+	stronghold: {
+    mundane: 20,
+    common: 15,
+    uncommon: 12,
+    rare: 8,
+    veryRare: 3,
+    legendary: 2
+  },
   city: {
-    mundane: 25,
-    common: 20,
+    mundane: 22,
+    common: 18,
     uncommon: 15,
-    rare: 10,
-    veryRare: 5,
+    rare: 11,
+    veryRare: 6,
     legendary: 2
   },
   metropolis: {
-    mundane: 30,
-    common: 25,
+    mundane: 25,
+    common: 20,
     uncommon: 20,
     rare: 15,
     veryRare: 10,
@@ -364,9 +380,11 @@ window.addEventListener('DOMContentLoaded', async function() {
 
         function getInventorySize(settlementSize) {
             const sizes = {
+                'hamlet': { common: 0.04, uncommon: 0.008, rare: 0.0015, veryRare: 0.001, legendary: 0.0005 },				
                 'village': { common: 0.06, uncommon: 0.01, rare: 0.002, veryRare: 0.001, legendary: 0.0005 },
                 'town': { common: 0.12, uncommon: 0.06, rare: 0.01, veryRare: 0.002, legendary: 0.001 },
-                'city': { common: 0.25, uncommon: 0.12, rare: 0.06, veryRare: 0.03, legendary: 0.005 },
+                'stronghold': { common: 0.20, uncommon: 0.1, rare: 0.03, veryRare: 0.015, legendary: 0.005 },
+                'city': { common: 0.25, uncommon: 0.15, rare: 0.06, veryRare: 0.03, legendary: 0.005 },
 				'metropolis': { common: 0.25, uncommon: 0.2, rare: 0.1, veryRare: 0.05, legendary: 0.005 }
             };
             return sizes[settlementSize];
@@ -389,8 +407,10 @@ window.addEventListener('DOMContentLoaded', async function() {
             
             // Set default max rarity based on settlement
             const defaults = {
+                'hamlet': 'uncommon',
                 'village': 'uncommon',
                 'town': 'rare',
+                'stronghold': 'veryrare',
                 'city': 'veryrare',
 				'metropolis': 'legendary'
 
