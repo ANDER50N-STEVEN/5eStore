@@ -252,6 +252,8 @@ window.addEventListener('DOMContentLoaded', async function() {
 		let currentlyEditingIndex = null;
 
 		function editItem(index) {
+			const isExcluded = isItemExcluded(index, false);
+
 			// If already editing another item, cancel that first
 			if (currentlyEditingIndex !== null && currentlyEditingIndex !== index) {
 				cancelEdit(currentlyEditingIndex);
@@ -273,6 +275,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			}).join('');
 			
 			row.innerHTML = 
+				'<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
 				'<td><input type="text" class="item-edit-input" id="edit-name-' + index + '" value="' + item.name + '"></td>' +
 				'<td><input type="number" class="item-edit-input" id="edit-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
 				'<td><select class="item-edit-select" id="edit-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
@@ -830,6 +833,8 @@ function populateHomebrewList(filteredItems = null) {
 let currentlyEditingHomebrewIndex = null;
 
 function editHomebrewItem(index) {
+	const isExcluded = isItemExcluded(index, true);
+
 	if (currentlyEditingHomebrewIndex !== null && currentlyEditingHomebrewIndex !== index) {
 		cancelHomebrewEdit(currentlyEditingHomebrewIndex);
 	}
@@ -850,6 +855,7 @@ function editHomebrewItem(index) {
 	}).join('');
 	
 	row.innerHTML = 
+		'<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', true);" title="Include in shop generation"></td>' +
 		'<td><input type="text" class="item-edit-input" id="edit-homebrew-name-' + index + '" value="' + item.name + '"></td>' +
 		'<td><input type="number" class="item-edit-input" id="edit-homebrew-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
 		'<td><select class="item-edit-select" id="edit-homebrew-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
