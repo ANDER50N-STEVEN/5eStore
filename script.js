@@ -3,6 +3,11 @@ let officialItemDatabase = [];
 let homebrewItemDatabase = [];
 let itemDatabase = []; // Initialize as empty
 
+let officialSortColumn = 'name';
+let officialSortDirection = 'asc';
+let homebrewSortColumn = 'name';
+let homebrewSortDirection = 'asc';
+
 // Track excluded items
 let excludedOfficialItems = new Set();
 let excludedHomebrewItems = new Set();
@@ -213,12 +218,49 @@ window.addEventListener('DOMContentLoaded', async function() {
 				document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
 			}
 		}
+
+		function sortItemList(column) {
+		    if (officialSortColumn === column) {
+		        officialSortDirection = officialSortDirection === 'asc' ? 'desc' : 'asc';
+		    } else {
+		        officialSortColumn = column;
+		        officialSortDirection = 'asc';
+		    }
+		    populateItemList();
+		}
 		
+		function sortHomebrewList(column) {
+		    if (homebrewSortColumn === column) {
+		        homebrewSortDirection = homebrewSortDirection === 'asc' ? 'desc' : 'asc';
+		    } else {
+		        homebrewSortColumn = column;
+		        homebrewSortDirection = 'asc';
+		    }
+		    populateHomebrewList();
+		}
+
+
+
 				// Populate the item list table
 		function populateItemList(filteredItems = null) {
 			const tbody = document.getElementById('item-table-body');
 			// Always use officialItemDatabase only - never mix in homebrew here
-			const items = (filteredItems || officialItemDatabase).slice().sort((a, b) => a.name.localeCompare(b.name));
+			const items = (filteredItems || officialItemDatabase).slice().sort((a, b) => {
+			    let aVal, bVal;
+			    if (officialSortColumn === 'cost') {
+			        aVal = a.cost;
+			        bVal = b.cost;
+			    } else {
+			        aVal = (a[officialSortColumn] || '').toString().toLowerCase();
+			        bVal = (b[officialSortColumn] || '').toString().toLowerCase();
+			    }
+			    
+			    if (officialSortColumn === 'cost') {
+			        return officialSortDirection === 'asc' ? aVal - bVal : bVal - aVal;
+			    } else {
+			        return officialSortDirection === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+			    }
+			});
 			
 			tbody.innerHTML = '';
 			
@@ -797,7 +839,22 @@ function populateHomebrewList(filteredItems = null) {
 		return;
 	}
 	
-	const items = (filteredItems || homebrewItemDatabase).slice().sort((a, b) => a.name.localeCompare(b.name));
+	const items = (filteredItems || homebrewItemDatabase).slice().sort((a, b) => {
+	    let aVal, bVal;
+	    if (homebrewSortColumn === 'cost') {
+	        aVal = a.cost;
+	        bVal = b.cost;
+	    } else {
+	        aVal = (a[homebrewSortColumn] || '').toString().toLowerCase();
+	        bVal = (b[homebrewSortColumn] || '').toString().toLowerCase();
+	    }
+	    
+	    if (homebrewSortColumn === 'cost') {
+	        return homebrewSortDirection === 'asc' ? aVal - bVal : bVal - aVal;
+	    } else {
+	        return homebrewSortDirection === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+	    }
+	});
 	console.log('Items to display:', items.length);
 	
 	tbody.innerHTML = '';
