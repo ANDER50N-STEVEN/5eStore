@@ -797,7 +797,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			}
 			
 		// Add 20-70% of mundane items (with individual limit) - more variation
-		const mundanePercentage = 0.2 + (Math.random() * 0.5);
+		const mundanePercentage = (Math.random() * 0.5);
 			for (const item of mundaneItems) {
 				if (rarityCount['mundane'] >= maxLimits['mundane']) break;
 				if (Math.random() < mundanePercentage) {
@@ -826,7 +826,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			const prob = probabilities[rarityKey];
 			
 			// Add randomization factor - multiply base probability by 0.2 to 1.5
-			const randomFactor = 0.2 + (Math.random() * .8);
+			const randomFactor = (Math.random() * .8);
 			const adjustedProb = isHealingPotion(item) ? prob * 3 * randomFactor : prob * randomFactor;
 			
 			if (adjustedProb && Math.random() < adjustedProb) {
