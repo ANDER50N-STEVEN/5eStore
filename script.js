@@ -407,9 +407,9 @@ window.addEventListener('DOMContentLoaded', async function() {
             
             // Set default max rarity based on settlement
             const defaults = {
-                'hamlet': 'mundane',
-                'village': 'common',
-                'town': 'uncommon',
+                'hamlet': 'common',
+                'village': 'uncommon',
+                'town': 'rare',
                 'stronghold': 'rare',
                 'city': 'veryrare',
 				'metropolis': 'legendary'
