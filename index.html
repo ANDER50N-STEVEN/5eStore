@@ -147,19 +147,21 @@
             <button onclick="resetItemFilters()">Reset</button>
         </div>
 
+		
+		
         <div style="overflow-x: auto;">
             <table class="item-list-table" id="item-table">
                 <thead>
-                    <tr>
-						<th style="width: 60px;">Include</th>
-                        <th>Name</th>
-                        <th>Cost (gp)</th>
-                        <th>Type</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
+				    <tr>
+				        <th style="width: 60px;">Include</th>
+				        <th style="cursor: pointer;" onclick="sortItemList('name')">Name ▲▼</th>
+				        <th style="cursor: pointer;" onclick="sortItemList('cost')">Cost (gp) ▲▼</th>
+				        <th style="cursor: pointer;" onclick="sortItemList('type')">Type ▲▼</th>
+				        <th style="cursor: pointer;" onclick="sortItemList('rarity')">Rarity ▲▼</th>
+				        <th>Description</th>
+				        <th>Actions</th>
+				    </tr>
+				</thead>
                 <tbody id="item-table-body">
                     <!-- Items will be populated here -->
                 </tbody>
@@ -199,17 +201,17 @@
 
         <div style="overflow-x: auto;">
             <table class="item-list-table" id="homebrew-table">
-                <thead>
-                    <tr>
-						<th style="width: 60px;">Include</th>
-                        <th>Name</th>
-                        <th>Cost (gp)</th>
-                        <th>Type</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
+				<thead>
+				    <tr>
+				        <th style="width: 60px;">Include</th>
+				        <th style="cursor: pointer;" onclick="sortHomebrewList('name')">Name ▲▼</th>
+				        <th style="cursor: pointer;" onclick="sortHomebrewList('cost')">Cost (gp) ▲▼</th>
+				        <th style="cursor: pointer;" onclick="sortHomebrewList('type')">Type ▲▼</th>
+				        <th style="cursor: pointer;" onclick="sortHomebrewList('rarity')">Rarity ▲▼</th>
+				        <th>Description</th>
+				        <th>Actions</th>
+				    </tr>
+				</thead>
                 <tbody id="homebrew-table-body">
                     <!-- Homebrew items will be populated here -->
                 </tbody>
