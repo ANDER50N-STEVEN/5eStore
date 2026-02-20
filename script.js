@@ -165,7 +165,7 @@ const shopkeeperData = {
     }
 };
 
-function generateShopkeeper(storeType, settlementSize) {
+function generateShopkeeper(storeType, settlementSize, wealthLevel = 'common') {
     // Pick random race
     const race = shopkeeperData.races[Math.floor(Math.random() * shopkeeperData.races.length)];
     
@@ -1250,6 +1250,8 @@ function saveIndividualItemEdit(index, isHomebrew = false) {
 // Save current shop inventory
 function saveCurrentStore() {
 	console.log('saveCurrentStore called');
+
+	const wealthLevel = document.getElementById('wealth-level').value;
 	
 	// Debug: check what's in shop-content
 	const shopContent = document.getElementById('shop-content');
@@ -1315,13 +1317,14 @@ function saveCurrentStore() {
 	}
 	
 	const savedStore = {
-		name: storeName.trim(),
-		timestamp: new Date().toISOString(),
-		storeType: storeType,
-		settlementSize: settlementSize,
-		maxModifier: maxModifier,
-		maxRarity: maxRarity,
-		inventory: inventory
+	    name: storeName.trim(),
+	    timestamp: new Date().toISOString(),
+	    storeType: storeType,
+	    settlementSize: settlementSize,
+	    maxModifier: maxModifier,
+	    maxRarity: maxRarity,
+	    wealthLevel: wealthLevel,  // Add this line
+	    inventory: inventory
 	};
 	
 	// Get existing saved stores
@@ -1431,14 +1434,22 @@ function loadSavedStore(index) {
 		'veryrare': 3,
 		'legendary': 4
 	};
+
+	const shopkeeper = generateShopkeeper(store.storeType, store.settlementSize, store.wealthLevel || 'common');
 	
-	let html = `
-		<div class="shop-info">
-			<h2>${storeIcons[store.storeType]} ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
-			<p><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> ${store.inventory.length} | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[store.maxRarity]]}</p>
-		</div>
-		<div class="inventory">
-	`;
+let html = `
+    <div class="shop-info">
+        <h2>${storeIcons[store.storeType]} ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
+        <div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
+            <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
+            <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp <span style="color: #a89968; font-size: 0.9em;">(${wealthLevels[shopkeeper.wealthLevel].label} - buys at ${Math.round(shopkeeper.sellModifier * 100)}%)</span></p>
+            <p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
+            <p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
+        </div>
+        <p style="margin-top: 15px;"><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> ${store.inventory.length} | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[store.maxRarity]]}</p>
+    </div>
+    <div class="inventory">
+`;
 	
 	// Group items by type
 	const grouped = {};
