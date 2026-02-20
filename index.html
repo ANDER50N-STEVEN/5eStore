@@ -50,12 +50,12 @@
 
 				<div class="control-group">
 				    <label for="wealth-level">Shop Wealth</label>
-				    <select id="wealth-level">
-				        <option value="squalid">Squalid (80% sell, 100-500g)</option>
-				        <option value="common" selected>Common (100% sell, 500-2000g)</option>
-				        <option value="respectable">Respectable (110% sell, 2000-5000g)</option>
-				        <option value="prosperous">Prosperous (120% sell, 5000-15000g)</option>
-				        <option value="fortunate">Fortunate (130% sell, 15000-50000g)</option>
+					<select id="wealth-level" onchange="updatePriceModifierFromWealth()">
+				        <option value="squalid">Squalid (100-500g)</option>
+				        <option value="common" selected>Common (500-2000g)</option>
+				        <option value="respectable">Respectable (2000-5000g)</option>
+				        <option value="prosperous">Prosperous (5000-15000g)</option>
+				        <option value="fortunate">Fortunate (15000-50000g)</option>
 				    </select>
 				</div>
 
