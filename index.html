@@ -204,10 +204,10 @@
 				<thead>
 				    <tr>
 				        <th style="width: 60px;">Include</th>
-				        <th style="cursor: pointer;" onclick="sortHomebrewList('name')">Name ▲▼</th>
-				        <th style="cursor: pointer;" onclick="sortHomebrewList('cost')">Cost (gp) ▲▼</th>
-				        <th style="cursor: pointer;" onclick="sortHomebrewList('type')">Type ▲▼</th>
-				        <th style="cursor: pointer;" onclick="sortHomebrewList('rarity')">Rarity ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortHomebrewList === 'function') sortHomebrewList('name')">Name ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortHomebrewList === 'function') sortHomebrewList('cost')">Cost (gp) ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortHomebrewList === 'function') sortHomebrewList('type')">Type ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortHomebrewList === 'function') sortHomebrewList('rarity')">Rarity ▲▼</th>
 				        <th>Description</th>
 				        <th>Actions</th>
 				    </tr>
