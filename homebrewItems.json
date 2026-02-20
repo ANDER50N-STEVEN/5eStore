@@ -1558,7 +1558,7 @@
     "cost": 1390,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Razor Gale. Once on each of your turns when you attack with this weapon, you can unleash a cutting wind. Each creature in a 15-foot cone must make a DC 14 Dexterity saving throw, taking 2d6 slashing damage on a failed save, or half as much damage on a successful one. This item requires attunement."
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon.  This item has 3 charges and regains 1d2+1 expended charges daily at dawn. You can use an action to expend a charge to unleash a cutting wind. Each creature in a 15-foot cone must make a DC 14 Dexterity saving throw, taking 2d6 slashing damage on a failed save, or half as much damage on a successful one. This item requires attunement."
   },
   {
     "name": "Least Expected (Shortbow)",
@@ -1579,7 +1579,7 @@
     "cost": 713,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. This magic halberd is designed for constructs. When a creature that is not a construct makes an attack with this weapon, it must succeed on a DC 12 Constitution saving throw or be stunned until the end of its next turn. This item requires attunement."
+    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage.  You gain a +1 bonus to attack and damage rolls made with this magic weapon. You deal an addition 1d6 lightning damage with is weapon.  This magic halberd is designed for constructs. When a creature that is not a construct makes an attack with this weapon, it must succeed on a DC 12 Constitution saving throw or be stunned until the end of its next turn. This item requires attunement."
   },
   {
     "name": "Lightning Jabber (Spear)",
@@ -1593,151 +1593,137 @@
     "cost": 487,
     "type": "Boots",
     "rarity": "Rare",
-    "description": "While wearing these boots, when you take the Dash action or use a similar feature that increases your movement, your melee weapon attacks deal an extra 1d4 damage for 2 rounds. This item requires attunement."
+    "description": "While wearing these boots, when you take the Dash action or use a similar feature that increases your movement, your melee weapon attacks deal an extra 1d4 damage until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Loviatar's Scourge (Mace)",
     "cost": 917,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. While wielding this magic weapon, you have resistance to necrotic damage. When you hit a creature with this weapon, each creature within 5 feet of you (including you) takes 1d6 necrotic damage. This item requires attunement."
+    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. While wielding this magic weapon, you have resistance to necrotic damage. When you hit a creature with this weapon, each creature within 5 feet of you (including you) takes 1d6 necrotic damage."
   },
   {
     "name": "Luminous Gloves",
     "cost": 648,
     "type": "Gloves",
     "rarity": "Uncommon",
-    "description": "While wearing these gloves, you gain a +1 bonus to Strength saving throws. When you deal radiant damage to a creature, that creature becomes more vulnerable to radiant damage until the end of your next turn. The next time it takes radiant damage before the end of your next turn, it takes an extra 1d4 radiant damage. This item requires attunement."
+    "description": "While wearing these gloves, you gain a +1 bonus to Strength saving throws. Attacks you make deal an extra 1d4 radiant damage. This item requires attunement."
   },
   {
     "name": "Mage's Friend",
-    "cost": 395,
+    "cost": 1395,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you gain a +1 bonus to Intelligence (Arcana) and Intelligence (Religion) checks."
   },
   {
-    "name": "Magic Amulet",
-    "cost": 485,
-    "type": "Amulet",
-    "rarity": "Rare",
-    "description": "While wearing this amulet, you can gain advantage on one attack roll or saving throw of your choice(no action required). Once you use this property, you can\\'t use it again until the next dawn."
-  },
-  {
     "name": "Mantle of the Holy Warrior",
-    "cost": 3175,
+    "cost": 4175,
     "type": "Cloak",
     "rarity": "Very Rare",
-    "description": "While wearing this cloak, you can use an action to cast crusader's mantle. Once you use this property, you can\\'t use it again until the next dawn."
+    "description": "While wearing this cloak, you can use an action to cast crusader's mantle. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement"
   },
   {
     "name": "Markoheshkir (Quarterstaff)",
     "cost": 61312,
     "type": "Weapon",
     "rarity": "Legendary",
-    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +3 bonus to spell save DC and spell attack rolls while holding this staff. The staff has 5 charges and regains 1d4+1 expended charges daily at dawn. You can use an action to expend charges to cast one of the following spells: (1 charge) choose acid, cold, fire, lightning, or thunder—your spells of that damage type deal an extra 1d8 damage for 1 minute; (3 charges) as a bonus action, regain one expended spell slot of 5th level or lower. This item requires attunement."
+    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +3 bonus to spell save DC and spell attack rolls while holding this staff. The staff has 5 charges and regains 1d4+1 expended charges daily at dawn. You can use an action to expend charges to cast one of the following abilities: (1 charge) choose acid, cold, fire, lightning, or thunder—your spells of that damage type deal an extra 1d8 damage for 1 minute; (3 charges) as a bonus action, regain one expended spell slot of 3rd level or lower. This item requires attunement."
   },
   {
     "name": "Marksmanship Hat",
-    "cost": 395,
+    "cost": 2395,
     "type": "Headwear",
     "rarity": "Uncommon",
     "description": "While wearing this hat, you gain a +1 bonus to ranged attack rolls (including ranged weapon attacks and ranged spell attacks)."
   },
   {
     "name": "Martial Exertion Gloves",
-    "cost": 642,
+    "cost": 2642,
     "type": "Gloves",
     "rarity": "Rare",
-    "description": "These gloves have 3 charges and regain 1d3 expended charges daily at dawn. While wearing these gloves, when you make a weapon attack, you can expend 1 charge to gain advantage on the attack roll. If the attack hits, it deals an extra 1d8 damage. This item requires attunement."
+    "description": "These gloves have 3 charges and regain 1d2+1 expended charges daily at dawn. While wearing these gloves, when you make a weapon attack, you can expend 1 charge to gain advantage on the attack roll. If the attack hits, it deals an extra 1d8 damage. This item requires attunement."
   },
   {
     "name": "Mask of Soul Perception",
-    "cost": 12820,
+    "cost": 16820,
     "type": "Headwear",
     "rarity": "Very Rare",
-    "description": "While wearing this mask, you gain a +2 bonus to attack rolls, initiative rolls, and Wisdom (Perception) checks. The mask has 3 charges and regains 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast detect thoughts (save DC 16). This item requires attunement."
-  },
-  {
-    "name": "Mask of the Shapeshifter",
-    "cost": 26650,
-    "type": "Headwear",
-    "rarity": "Legendary",
-    "description": "While wearing this mask, you can cast disguise self at will. This item requires attunement."
+    "description": "While wearing this mask, you gain a +2 bonus to attack rolls, initiative rolls, and Wisdom (Perception) checks. The mask has 3 charges and regains 1d2+1 expended charges daily at dawn. You can use an action to expend 1 charge to cast detect thoughts (save DC 16). This item requires attunement."
   },
   {
     "name": "Melf's First Staff (Quarterstaff)",
-    "cost": 695,
+    "cost": 2695,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to spell save DC and spell attack rolls while holding this staff. In addition you can use an action to cast Melf's acid arrow. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Merregon Halberd (Halberd)",
-    "cost": 375,
+    "cost": 875,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. This magic halberd is well-crafted but has no additional magical properties beyond being a magic weapon for purposes of overcoming resistance."
   },
   {
     "name": "Monster Slayer Glaive (Glaive)",
-    "cost": 1532,
+    "cost": 2532,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Your jump distance increases by 5 feet. When you hit a monstrosity with this weapon, the target takes an extra 1d4 slashing damage. This item requires attunement."
+    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Your jump distance increases by 10 feet. When you hit a monstrosity with this weapon, the target takes an extra 1d4 slashing damage. This item requires attunement."
   },
   {
     "name": "Moon Devotion Robe",
-    "cost": 16664,
+    "cost": 26664,
     "type": "Clothing",
     "rarity": "Very Rare",
-    "description": "While wearing this robe, you gain a +1 bonus to saving throws and advantage on Constitution saving throws. While you are under the effect of mage armor, when you succeed on a saving throw against a spell cast by a creature you can see, that creature takes 1d4 radiant damage. While wearing this robe, you can cast produce flame at will. The robe You can use an action to create a 10-foot-radius sphere of spectral moonlight centered on you for 1 minute. Once you use this property, you can\\'t use it again until the next dawn. The sphere moves with you, and creatures of your choice within the sphere gain 1d8 temporary hit points at the start of each of their turns. This item requires attunement."
+    "description": "While wearing this robe, you gain a +1 bonus to saving throws. When you succeed on a saving throw against a spell cast by a creature you can see, that creature takes 1d4 radiant damage. While wearing this robe, you can cast produce flame at will.  You can use an action to create a 10-foot-radius sphere of bright spectral moonlight centered on you for 1 minute. Once you use this property, you can\\'t use it again until the next dawn. The sphere moves with you.  As a bonus action, a creature of your choice within the sphere gains 1d8 temporary hit points. This item requires attunement."
   },
   {
     "name": "Moondrop Pendant",
-    "cost": 375,
+    "cost": 1375,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "While wearing this amulet and you have half your hit points or fewer, you don't provoke opportunity attacks. This item requires attunement."
   },
   {
     "name": "Moonlight Glaive (Glaive)",
-    "cost": 1395,
+    "cost": 3395,
     "type": "Weapon",
     "rarity": "Rare",
     "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. This weapon sheds bright light in a 20-foot radius and dim light for an additional 20 feet. This item requires attunement."
   },
   {
     "name": "Mourning Frost (Quarterstaff)",
-    "cost": 3310,
+    "cost": 8310,
     "type": "Weapon",
     "rarity": "Very Rare",
-    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. While holding this staff, you can cast ray of frost at will. When you deal cold damage with a spell or this weapon, you deal an extra 1 cold damage. When you deal cold damage to a creature, its movement speed is reduced by 10 feet until the end of its next turn (this effect doesn't stack with multiple applications). This item requires attunement."
+    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage.  You deal an additional 1d6 cold damage with this weapon. While holding this staff, you can cast ray of frost at will. When you deal cold damage with a spell or this weapon, you deal an extra 1 cold damage. When you deal cold damage to a creature, its movement speed is reduced by 10 feet until the end of its next turn (this effect doesn't stack with multiple applications). This item requires attunement."
   },
   {
     "name": "Murderous Cut (Dagger)",
-    "cost": 705,
+    "cost": 1705,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. When you hit a creature that has half its hit points or fewer with this magic dagger, the target takes an extra 1d4 piercing damage."
   },
   {
     "name": "Myrkulite Scourge (Flail)",
-    "cost": 704,
+    "cost": 1704,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon dealing 1d8 bludgeoning damage. This weapon deals an extra 1d4 necrotic damage on a hit."
   },
   {
     "name": "Mystra's Grace",
-    "cost": 430,
+    "cost": 1430,
     "type": "Boots",
     "rarity": "Uncommon",
     "description": "While wearing these boots, you can cast feather fall at will."
   },
   {
     "name": "Nature's Snare (Quarterstaff)",
-    "cost": 743,
+    "cost": 1743,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. When you hit a creature that is not a plant or beast with this magic weapon, it must succeed on a DC 12 Strength saving throw or be restrained by magical vines until the start of your next turn. This item requires attunement."
@@ -1747,63 +1733,63 @@
     "cost": 4705,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial ranged weapon with ammunition (range 30/120), light, and loading properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The crossbow has 3 charges and regains 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast magic missile at 1st level. This item requires attunement."
+    "description": "Martial ranged weapon with ammunition (range 30/120), light, and loading properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The crossbow has 3 charges and regains 1d2+1 expended charges daily at dawn. You can use an action to expend 1 charge to cast magic missile at 1st level. This item requires attunement."
   },
   {
     "name": "Necklace of Elemental Augmentation",
-    "cost": 375,
+    "cost": 3375,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "While wearing this amulet, when you deal acid, cold, fire, lightning, or thunder damage with a cantrip, you add your spellcasting ability modifier to the damage dealt. This item requires attunement."
   },
   {
     "name": "Nimblefinger Gloves",
-    "cost": 1767,
+    "cost": 4767,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, you gain a +1 bonus to Dexterity (Sleight of Hand) checks. If you are a gnome, your Dexterity score increases by 2, to a maximum of 20. If you are a halfling or dwarf, your Dexterity score increases by 1, to a maximum of 20. This item requires attunement."
   },
   {
     "name": "Nymph Cloak",
-    "cost": 3175,
+    "cost": 8175,
     "type": "Cloak",
     "rarity": "Very Rare",
     "description": "While wearing this cloak, you can use an action to cast dominate person (save DC 16). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
   },
   {
     "name": "Nyrulna (Trident)",
-    "cost": 42755,
+    "cost": 62755,
     "type": "Weapon",
     "rarity": "Legendary",
-    "description": "Martial melee weapon with thrown (range 20/60) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. This weapon has the thrown property with a normal range of 60 feet and a long range of 120 feet. When you throw this weapon, it returns to your hand immediately after the attack. You can't be disarmed of this weapon. Your walking speed and jump distance increase by 10 feet. You are immune to falling damage. This weapon sheds bright light in a 20-foot radius and dim light for an additional 20 feet. When you throw this weapon and hit a target, each creature within 20 feet of the target must make a DC 18 Dexterity saving throw, taking 3d4 thunder damage on a failed save, or half as much damage on a successful one. This item requires attunement."
+    "description": "Martial melee weapon with thrown (range 60/120) and versatile (1d8) properties, dealing 1d6 piercing damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon.  When you throw this weapon, it returns to your hand immediately after the attack. You can't be disarmed of this weapon. Your walking speed and jump distance increase by 10 feet. You are immune to falling damage. This weapon sheds bright light in a 20-foot radius and dim light for an additional 20 feet. When you throw this weapon and hit a target, each creature within 20 feet of the target must make a DC 18 Dexterity saving throw, taking 3d4 thunder damage on a failed save, or half as much damage on a successful one. This item requires attunement."
   },
   {
     "name": "Obsidian Laced Robe",
-    "cost": 785,
+    "cost": 5785,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this robe, you have resistance to fire damage. When a creature succeeds on a saving throw against a spell you cast, that creature takes 1d4+4 fire damage. This item requires attunement."
   },
   {
     "name": "Orphic Hammer (Warhammer)",
-    "cost": 39765,
+    "cost": 59765,
     "type": "Weapon",
     "rarity": "Legendary",
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. While wielding this weapon, you have advantage on saving throws against spells. Unshackling Strike. Once per long rest, when you hit a creature with this weapon, you can attempt to break magical bonds. The target must make a DC 18 Charisma saving throw. On a failed save, one magical effect restraining, controlling, or binding the creature (such as dominate person, hold person, or geas) immediately ends. This item requires attunement."
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. While wielding this weapon, you have advantage on saving throws against spells.  The Warhammer has 3 charges and regains 1d2+1 expended charges daily at dawn. You can use an action to expend charges to activate the following effect.  When you hit a creature with this weapon, you can attempt to dispel magical effects. The target must make a DC 18 Charisma saving throw. On a failed save, you dispel one magical effect on the creature.   This item requires attunement."
   },
   {
     "name": "Orphic Ring",
-    "cost": 2650,
+    "cost": 3650,
     "type": "Ring",
     "rarity": "Very Rare",
     "description": "While wearing this ring, you can use an action to cast confusion (save DC 16). Once you use this property, you can\\'t use it again until the next dawn."
   },
   {
     "name": "Pale Oak (Quarterstaff)",
-    "cost": 840,
+    "cost": 2840,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. While holding this staff, you are immune to being restrained by magical vines or plant-based effects. The staff You can use an action to create grasping spectral vines in a 15-foot radius centered on you. Once you use this property, you can\\'t use it again until the next dawn. The area becomes difficult terrain for 1 minute. When a creature enters the area or starts its turn there, it must succeed on a DC 14 Strength saving throw or be restrained by the vines until the start of its next turn. This item requires attunement."
+    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. While holding this staff, you are immune to being restrained by magical vines or plant-based effects. You can use an action to cast Grasping Vines (save DC 16). Once you use this property, you can\\'t use it again until the next dawn.  This item requires attunement."
   },
   {
     "name": "Pelorsun Blade (Rapier)",
@@ -1817,32 +1803,32 @@
     "cost": 6445,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While this weapon is on your person, you gain a +1 bonus to Charisma (Performance) checks. The sword has 6 charges and regains 1d6 expended charges daily at dawn. You can use an action to expend charges to activate one of the following effects: Shriek (3 charges). Each creature within 15 feet of you must make a DC 14 Constitution saving throw, taking 3d6 thunder damage on a failed save, or half as much damage on a successful one. Sing (3 charges). For 1 minute, you and allies within 10 feet of you deal an extra 1d4 damage with weapon attacks. This item requires attunement."
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While this weapon is on your person, you gain a +1 bonus to Charisma (Performance) checks. The sword has 6 charges and regains 1d6+1 expended charges daily at dawn. You can use an action to expend charges to activate one of the following effects: Shriek (3 charges). Each creature within 15 feet of you must make a DC 14 Constitution saving throw, taking 3d6 thunder damage on a failed save, or half as much damage on a successful one. Sing (3 charges). For 1 minute, you and allies within 30 feet of you deal an extra 1d4 damage with weapon attacks. This item requires attunement."
   },
   {
     "name": "Poisoner's Gloves",
-    "cost": 800,
+    "cost": 1800,
     "type": "Gloves",
     "rarity": "Rare",
     "description": "While wearing these gloves, when you deal poison damage to a creature, it must succeed on a DC 14 Constitution saving throw or be poisoned until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Poisoner's Robe",
-    "cost": 403,
+    "cost": 1403,
     "type": "Clothing",
     "rarity": "Uncommon",
-    "description": "While wearing this robe, when you cast a spell that deals poison damage, you deal an extra 1d4 poison damage. This item requires attunement."
+    "description": "While wearing this robe, when you cast a spell that deals poison damage, you deal an extra 2d4 poison damage. This item requires attunement."
   },
   {
     "name": "Potent Robe",
-    "cost": 2650,
+    "cost": 12650,
     "type": "Clothing",
     "rarity": "Very Rare",
     "description": "While wearing this robe, when you deal damage with a cantrip, you add your Charisma modifier to the damage dealt. At the start of each of your turns, you gain temporary hit points equal to your Charisma modifier (minimum of 1). This item requires attunement."
   },
   {
     "name": "Psychic Spark",
-    "cost": 436,
+    "cost": 2436,
     "type": "Amulet",
     "rarity": "Uncommon",
     "description": "While wearing this amulet, when you cast magic missile, you create one additional dart. In addition you can use an action to cast magic missile. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement."
@@ -1852,28 +1838,28 @@
     "cost": 1635,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Simple melee weapon dealing 1d4 bludgeoning damage. While you are poisoned (such as from alcohol), you have advantage on attack rolls with this weapon, and when you hit with this weapon, each creature within 10 feet of the target takes 1d4 thunder damage. This item requires attunement."
+    "description": "Simple melee weapon dealing 1d4 bludgeoning damage. While you are poisoned or under the effects of alcohol, you have advantage on attack rolls with this weapon, and when you hit with this weapon, each creature within 10 feet of the target takes 1d4 thunder damage. This item requires attunement."
   },
   {
     "name": "Pyroquickness Hat",
     "cost": 13225,
     "type": "Headwear",
     "rarity": "Very Rare",
-    "description": "While wearing this hat, when you deal fire damage with a spell of 1st level or higher (not a cantrip), you catch fire (taking 1d6 fire damage at the start of each of your turns until you or another creature uses an action to put out the flames) and gain an additional bonus action on that turn. This item requires attunement."
+    "description": "While wearing this hat, when you deal fire damage with a spell of 1st level or higher, you catch fire taking 1d6 fire damage at the start of each of your turns until you or another creature uses an action to put out the flames.  While on fire you gain an additional bonus action. This item requires attunement."
   },
   {
     "name": "Quickspell Gloves",
-    "cost": 2650,
+    "cost": 26500,
     "type": "Gloves",
     "rarity": "Very Rare",
-    "description": "While wearing these gloves, you can cast a cantrip that normally requires an action as a bonus action instead (no action required). This item requires attunement."
+    "description": "While wearing these gloves, you can cast a cantrip that normally requires an action as a bonus action instead. This item requires attunement."
   },
   {
     "name": "Rain Dancer (Quarterstaff)",
     "cost": 1988,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. The quarterstaff has 3 charges and regains 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast create or destroy water (create water only). This item requires attunement."
+    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. The quarterstaff has 3 charges and regains 1d2+1 expended charges daily at dawn. You can use an action to expend 1 charge to cast create or destroy water (create water only). This item requires attunement."
   },
   {
     "name": "Rat Bat (Greatclub)",
@@ -1884,35 +1870,35 @@
   },
   {
     "name": "Raven Gloves",
-    "cost": 530,
+    "cost": 1530,
     "type": "Gloves",
     "rarity": "Rare",
-    "description": "While wearing these gloves, you can use an action to summon a spectral raven (use raven statistics) that appears in an unoccupied space within 30 feet of you. Once you use this property, you can\\'t use it again until the next dawn. The raven is under your control and acts on your initiative. It disappears after 1 hour or when reduced to 0 hit points."
+    "description": "While wearing these gloves, you can use an action to summon a spectral raven (use raven statistics) that appears in an unoccupied space within 30 feet of you. Once you use this property, you can\\'t use it again until the next dawn. It obeys any verbal commands that you issue to them (no action required by you) and takes its turn immediatly following you in initiative. It disappears after 1 hour or when reduced to 0 hit points."
   },
   {
     "name": "Ravengard's Scourger (Morningstar)",
-    "cost": 2565,
+    "cost": 3565,
     "type": "Weapon",
     "rarity": "Rare",
-    "description": "Martial melee weapon dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The morningstar has 3 charges and regains 1d3 expended charges daily at dawn. When an ally you can see is about to make an attack, you can use your reaction and expend 1 charge to direct them. That ally can make one weapon attack as part of the same reaction, adding 1d8 to the damage roll. This item requires attunement."
+    "description": "Martial melee weapon dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The morningstar has 3 charges and regains 1d2+1 expended charges daily at dawn. When an ally you can see hits with an attack, you can use your reaction and expend 1 charge to direct them. That ally adds 1d8 to the damage roll. This item requires attunement."
   },
   {
     "name": "Reason's Grasp",
-    "cost": 418,
+    "cost": 1418,
     "type": "Gloves",
     "rarity": "Uncommon",
     "description": "While wearing these gloves, when your rage ends, you gain 15 temporary hit points. This item requires attunement."
   },
   {
     "name": "Render of Mind and Body (Shortsword)",
-    "cost": 740,
+    "cost": 1740,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. When you attack with advantage using this magic weapon and hit, the target takes an extra 1d8 psychic damage. This item requires attunement."
   },
   {
     "name": "Returning Pike (Pike)",
-    "cost": 680,
+    "cost": 1680,
     "type": "Weapon",
     "rarity": "Uncommon",
     "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 piercing damage. This magic weapon has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you throw this weapon, it returns to your hand immediately after the attack."
@@ -1922,46 +1908,46 @@
     "cost": 600,
     "type": "Cloak",
     "rarity": "Uncommon",
-    "description": "Curse. This cloak is cursed. While wearing it, you are constantly drenched, giving you vulnerability to lightning and cold damage but resistance to fire damage. This item requires attunement."
+    "description": "While wearing it, you are constantly drenched, giving you resistance to fire damage but vulnerability to lightning and cold damage."
   },
   {
     "name": "Rhapsody (Dagger)",
-    "cost": 6687,
+    "cost": 9687,
     "type": "Weapon",
     "rarity": "Very Rare",
-    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you reduce a creature to 0 hit points with any attack or spell, you gain 1 charge (maximum 3 charges). While you have charges, you gain a +1 bonus to attack rolls and your spell save DC for each charge you have. All charges are lost when combat ends. When you hit a creature with this weapon while you are hidden or invisible, the target begins bleeding, taking 1d4 slashing damage at the start of each of its turns. A creature can use an action to stanch the bleeding with a DC 14 Wisdom (Medicine) check. This item requires attunement."
+    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you reduce a creature to 0 hit points with any attack with this weapon, this item gains 1 charge (maximum 3 charges). While it has charges, it gains a +1 bonus to attack and damage rolls. All charges are lost when combat ends. This item requires attunement."
   },
   {
     "name": "Ring of Absolute Force",
-    "cost": 788,
+    "cost": 1788,
     "type": "Ring",
     "rarity": "Uncommon",
-    "description": "This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this ring, you can use an action to expend 1 charge to cast thunderwave (save DC 12)."
+    "description": "This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this ring, you can use an action to expend 1 charge to cast thunderwave (save DC 12).  This item requires attunement"
   },
   {
     "name": "Ring of Arcane Synergy",
-    "cost": 350,
+    "cost": 3500,
     "type": "Ring",
     "rarity": "Rare",
-    "description": "While wearing this ring, when you deal damage with a cantrip, your spell save DC increases by 1 for 2 rounds. This item requires attunement."
+    "description": "While wearing this ring, when you deal damage with a cantrip, your spell save DC increases by 1 until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Ring of Blink",
-    "cost": 350,
+    "cost": 2500,
     "type": "Ring",
     "rarity": "Rare",
     "description": "While wearing this ring, you can use an action to cast blink. Once you use this property, you can\\'t use it again until the next dawn."
   },
   {
     "name": "Ring of Colour Spray",
-    "cost": 420,
+    "cost": 1420,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you can use an action to cast color spray (save DC 12). Once you use this property, you can\\'t use it again until the next dawn."
   },
   {
     "name": "Ring of Elemental Infusion",
-    "cost": 403,
+    "cost": 903,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, when you deal acid, cold, fire, lightning, or thunder damage with a spell or cantrip, your next weapon attack before the end of your next turn deals an extra 1d4 damage of that type. This item requires attunement."
@@ -1971,105 +1957,105 @@
     "cost": 5690,
     "type": "Ring",
     "rarity": "Rare",
-    "description": "This ring has 2 charges and regains 1d2 expended charges daily at dawn. While wearing this ring, you can expend charges to cast the following spells: Ghoulish Touch (1 charge). As an action, make a melee spell attack (+6 to hit) against one creature within 5 feet. On a hit, the target takes 2d8 necrotic damage and is paralyzed until the end of your next turn. Exhort the Risen (2 charges). As a bonus action, you can command all undead creatures within 30 feet of you that are under your control to move up to their speed and make one melee attack. This item requires attunement."
+    "description": "This ring has 2 charges and regains 1d2 expended charges daily at dawn. While wearing this ring, you can expend charges to cast the following spells: Ghoulish Touch (1 charge). As an action, make a melee spell attack (+6 to hit) against one creature within 5 feet. On a hit, the target takes 2d8 necrotic damage and is paralyzed until the end of your next turn. Exhort the Risen (2 charges). As a bonus action, you can command all undead creatures within 30 feet of you to move up to their speed and make one melee attack. This item requires attunement."
   },
   {
     "name": "Ring of Feywild Sparks",
     "cost": 4900,
     "type": "Ring",
     "rarity": "Very Rare",
-    "description": "While wearing this ring and your Tides of Chaos feature is active (sorcerer feature), whenever you cast a spell of 1st level or higher, you automatically trigger a Wild Magic Surge. This item requires attunement."
+    "description": "While wearing this ring, whenever you cast a spell of 1st level or higher, you automatically trigger a Wild Magic Surge."
   },
   {
     "name": "Ring of Flinging",
-    "cost": 375,
+    "cost": 875,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you gain a 1d4 bonus to damage rolls with thrown weapons."
   },
   {
     "name": "Ring of Geniality",
-    "cost": 395,
+    "cost": 895,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you gain a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
   },
   {
     "name": "Ring of Mental Inhibition",
-    "cost": 387,
+    "cost": 1387,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, when a creature fails a saving throw against one of your spells or features, that creature has disadvantage on its next attack roll or ability check before the end of its next turn. This item requires attunement."
   },
   {
     "name": "Ring of Restorative Gravity",
-    "cost": 385,
+    "cost": 885,
     "type": "Ring",
     "rarity": "Uncommon",
-    "description": "While wearing this ring, when you restore hit points to a creature, that creature is pulled up to 10 feet toward you. This item requires attunement."
+    "description": "While wearing this ring, when you restore hit points to another creature, that creature is pulled up to 10 feet toward you.  Movement this way does not trigger opportunity attacks"
   },
   {
     "name": "Ring of Salving",
-    "cost": 401,
+    "cost": 2401,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, when you restore hit points to another creature, you regain 2 hit points."
   },
   {
     "name": "Ring of Self Immolation",
-    "cost": 693,
+    "cost": 1693,
     "type": "Ring",
     "rarity": "Uncommon",
-    "description": "This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this ring, you can use a bonus action to expend 1 charge to set yourself on fire. You take 1d6 fire damage at the start of each of your turns, but your next weapon attack before the end of your next turn deals an extra 1d4 fire damage. This effect lasts for 2 rounds or until you or another creature uses an action to put out the flames. This item requires attunement."
+    "description": "This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing this ring, you can use a bonus action to expend 1 charge to set yourself on fire, until you or another creature uses an action to put out the flames. You take 1d6 fire damage at the start of each of your turns while on fire.  While you are on fire your weapon attacks deal an extra 2d6 fire damage. "
   },
   {
     "name": "Ring of Shadows",
-    "cost": 465,
+    "cost": 2465,
     "type": "Ring",
     "rarity": "Uncommon",
     "description": "While wearing this ring, you can use an action to cast pass without trace. Once you use this property, you can\\'t use it again until the next dawn."
   },
   {
     "name": "Ring of Spiteful Thunder",
-    "cost": 713,
+    "cost": 1713,
     "type": "Ring",
     "rarity": "Uncommon",
-    "description": "While wearing this ring, when you deal thunder damage to a creature that is vulnerable to thunder damage, that creature must succeed on a DC 12 Constitution saving throw or be stunned until the end of your next turn. This item requires attunement."
+    "description": "While wearing this ring, when you deal thunder damage to a creature that isn't resistant to thunder damage, that creature must succeed on a DC 12 Constitution saving throw or be stunned until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Ring of Truthfulness",
-    "cost": 485,
+    "cost": 2850,
     "type": "Ring",
     "rarity": "Rare",
     "description": "While wearing this ring, you have advantage on Wisdom (Insight) checks."
   },
   {
     "name": "Ring of Twilight",
-    "cost": 1700,
+    "cost": 2700,
     "type": "Ring",
     "rarity": "Rare",
     "description": "While wearing this ring and you are in dim light or darkness, you gain a +1 bonus to AC. This item requires attunement."
   },
   {
     "name": "Risky Ring",
-    "cost": 2720,
+    "cost": 3720,
     "type": "Ring",
     "rarity": "Rare",
     "description": "While wearing this ring, you have advantage on attack rolls but disadvantage on saving throws. This item requires attunement."
   },
   {
     "name": "Ritual Axe (Handaxe)",
-    "cost": 680,
+    "cost": 1680,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Simple melee weapon with light and thrown (range 20/60) properties, dealing 1d6 slashing damage. When you hit a creature with this magic weapon, it must succeed on a DC 12 Wisdom saving throw or suffer a 1d4 penalty to attack rolls and saving throws until the end of your next turn. Curse. If you have more than 25% of your hit points remaining when you hit a creature with this weapon, you take 1d6 piercing damage. This item requires attunement."
+    "description": "Simple melee weapon with light and thrown (range 20/60) properties, dealing 1d6 slashing damage. When you hit a creature with this magic weapon, it must succeed on a DC 12 Wisdom saving throw or suffer a 1d4 penalty to attack rolls and saving throws until the end of your next turn. Curse. If you have more than 50% of your hit points remaining when you hit a creature with this weapon, you take 1d6 piercing damage. This item requires attunement."
   },
   {
     "name": "Ritual Dagger (Dagger)",
-    "cost": 677,
+    "cost": 1677,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. When you hit a creature with this magic weapon, you gain a 1d4 bonus to attack rolls and saving throws until the end of your next turn. As a bonus action, you can take 1d4 slashing damage to gain a 1d4 bonus to attack rolls and saving throws until the end of your next turn. This item requires attunement."
+    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage.  As a bonus action, you can take 1d4 slashing damage to gain a 1d4 bonus to attack rolls and saving throws until the end of your next turn. This item requires attunement."
   },
   {
     "name": "Ritual Dagger of Shar (Dagger)",
@@ -2080,31 +2066,31 @@
   },
   {
     "name": "Robe of Exquisite Focus",
-    "cost": 350,
+    "cost": 5300,
     "type": "Clothing",
     "rarity": "Rare",
     "description": "While wearing this robe, your spell save DC increases by 1. This item requires attunement."
   },
   {
     "name": "Robe of Supreme Defences",
-    "cost": 8500,
+    "cost": 12500,
     "type": "Clothing",
     "rarity": "Very Rare",
     "description": "While wearing this robe and concentrating on a spell, you gain a +1 bonus to AC and add your spellcasting ability modifier to your saving throws. This item requires attunement."
   },
   {
     "name": "Robe of the Weave",
-    "cost": 6736,
+    "cost": 16736,
     "type": "Clothing",
     "rarity": "Very Rare",
     "description": "While wearing this robe, you gain a +1 bonus to spell save DC and spell attack rolls. When you succeed on a saving throw against a spell, you regain 1d6 hit points. This item requires attunement."
   },
   {
     "name": "Rupturing Blade (Rapier)",
-    "cost": 736,
+    "cost": 1736,
     "type": "Weapon",
     "rarity": "Uncommon",
-    "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. Searing Blood. Once on each of your turns when you hit a creature with this weapon, you can cause the wound to bleed profusely. The target takes an extra 1d6 slashing damage and must succeed on a DC 12 Constitution saving throw or take 1d4 slashing damage at the start of each of its turns. A creature can use an action to stanch the bleeding with a DC 12 Wisdom (Medicine) check. This item requires attunement."
+    "description": "Martial melee weapon with finesse property, dealing 1d8 piercing damage. Once on each of your turns when you hit a creature with this weapon, you can cause the wound to bleed profusely. The target takes an extra 1d6 slashing damage. This item requires attunement."
   },
   {
     "name": "Safeguard Shield",
@@ -3725,6 +3711,7 @@
   }
 
 ]
+
 
 
 
