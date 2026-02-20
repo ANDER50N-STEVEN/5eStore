@@ -3,6 +3,54 @@ let officialItemDatabase = [];
 let homebrewItemDatabase = [];
 let itemDatabase = []; // Initialize as empty
 
+// Track excluded items
+let excludedOfficialItems = new Set();
+let excludedHomebrewItems = new Set();
+
+// Load excluded items from localStorage
+function loadExcludedItems() {
+	const saved = localStorage.getItem('dnd-excluded-items');
+	if (saved) {
+		try {
+			const data = JSON.parse(saved);
+			excludedOfficialItems = new Set(data.official || []);
+			excludedHomebrewItems = new Set(data.homebrew || []);
+		} catch (e) {
+			console.error('Error loading excluded items:', e);
+		}
+	}
+}
+
+// Save excluded items to localStorage
+function saveExcludedItems() {
+	const data = {
+		official: Array.from(excludedOfficialItems),
+		homebrew: Array.from(excludedHomebrewItems)
+	};
+	localStorage.setItem('dnd-excluded-items', JSON.stringify(data));
+}
+
+// Toggle item exclusion
+function toggleItemExclusion(index, isHomebrew) {
+	const excludedSet = isHomebrew ? excludedHomebrewItems : excludedOfficialItems;
+	
+	if (excludedSet.has(index)) {
+		excludedSet.delete(index);
+	} else {
+		excludedSet.add(index);
+	}
+	
+	saveExcludedItems();
+}
+
+// Check if item is excluded
+function isItemExcluded(index, isHomebrew) {
+	const excludedSet = isHomebrew ? excludedHomebrewItems : excludedOfficialItems;
+	return excludedSet.has(index);
+}
+
+
+
 async function loadItemDatabases() {
     try {
         const [officialResponse, homebrewResponse] = await Promise.all([
@@ -15,6 +63,9 @@ async function loadItemDatabases() {
         
         console.log('Loaded official items:', officialItemDatabase.length);
         console.log('Loaded homebrew items:', homebrewItemDatabase.length);
+
+		        // Load excluded items
+        loadExcludedItems();
         
         // Initialize after loading
         itemDatabase = [...officialItemDatabase];
@@ -88,13 +139,20 @@ window.addEventListener('DOMContentLoaded', async function() {
 
 		function updateItemDatabase() {
 			const allowHomebrew = document.getElementById('allow-homebrew').checked;
+
+
+						// Filter out excluded items from official database
+			const includedOfficialItems = officialItemDatabase.filter((item, index) => !isItemExcluded(index, false));
+
 			
 			if (allowHomebrew) {
+				// Filter out excluded items from homebrew database
+				const includedHomebrewItems = homebrewItemDatabase.filter((item, index) => !isItemExcluded(index, true));
 				// Merge official and homebrew items for shop generation
-				itemDatabase = [...officialItemDatabase, ...homebrewItemDatabase];
+				itemDatabase = [...includedOfficialItems, ...includedHomebrewItems];
 			} else {
 				// Use only official items for shop generation
-				itemDatabase = [...officialItemDatabase];
+				itemDatabase = [...includedOfficialItems];
 			}
 			
 			// Official Items tab always shows only officialItemDatabase - no refresh needed
@@ -144,24 +202,28 @@ window.addEventListener('DOMContentLoaded', async function() {
 		function populateItemList(filteredItems = null) {
 			const tbody = document.getElementById('item-table-body');
 			// Always use officialItemDatabase only - never mix in homebrew here
-			const items = filteredItems || officialItemDatabase;
+			const items = (filteredItems || officialItemDatabase).slice().sort((a, b) => a.name.localeCompare(b.name));
 			
 			tbody.innerHTML = '';
 			
 			items.forEach((item, index) => {
+				// Find the original index in officialItemDatabase
+				const originalIndex = officialItemDatabase.findIndex(i => i.name === item.name);
+				const isExcluded = isItemExcluded(originalIndex, false);
 				const row = document.createElement('tr');
-				row.id = `item-row-${index}`;
-				
+				row.id = `item-row-${originalIndex}`;
+						
 				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
 				
 				row.innerHTML = `
+					<td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateItemList();" title="Include in shop generation"></td>
 					<td>${item.name}</td>
 					<td>${item.cost}</td>
 					<td>${item.type}</td>
 					<td class="${rarityClass}">${item.rarity}</td>
 					<td style="max-width: 400px;">${item.description || 'No description'}</td>
 					<td>
-						<button class="edit-btn" onclick="editItem(${index})">Edit</button>
+						<button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
 					</td>
 				`;
 				
@@ -712,25 +774,29 @@ function populateHomebrewList(filteredItems = null) {
 		return;
 	}
 	
-	const items = filteredItems || homebrewItemDatabase;
+	const items = (filteredItems || homebrewItemDatabase).slice().sort((a, b) => a.name.localeCompare(b.name));
 	console.log('Items to display:', items.length);
 	
 	tbody.innerHTML = '';
 	
 	items.forEach((item, index) => {
+		// Find the original index in homebrewItemDatabase
+		const originalIndex = homebrewItemDatabase.findIndex(i => i.name === item.name);
+		const isExcluded = isItemExcluded(originalIndex, true);
 		const row = document.createElement('tr');
-		row.id = `homebrew-row-${index}`;
+		row.id = `homebrew-row-${originalIndex}`;
 		
 		const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
 		
 		row.innerHTML = `
+			<td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, true); populateHomebrewList();" title="Include in shop generation"></td>
 			<td>${item.name}</td>
 			<td>${item.cost}</td>
 			<td>${item.type}</td>
 			<td class="${rarityClass}">${item.rarity}</td>
 			<td style="max-width: 400px;">${item.description || 'No description'}</td>
 			<td>
-				<button class="edit-btn" onclick="editHomebrewItem(${index})">Edit</button>
+				<button class="edit-btn" onclick="editHomebrewItem(${originalIndex})">Edit</button>
 			</td>
 		`;
 		
