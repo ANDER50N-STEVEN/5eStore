@@ -4,14 +4,14 @@
             {"name": "Dagger", "cost": 2, "type": "Weapon", "rarity": "Mundane", "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage."},
             {"name": "Greatclub", "cost": 0.2, "type": "Weapon", "rarity": "Mundane", "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage."},
             {"name": "Handaxe", "cost": 5, "type": "Weapon", "rarity": "Mundane", "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage."},
-            {"name": "Javelin", "cost": 0.5, "type": "Weapon", "rarity": "Mundane", "description": "A light spear designed for throwing. Can be used as both melee and ranged weapon, dealing 1d6 piercing damage."},
+            {"name": "Javelin", "cost": 0.5, "type": "Ammunition", "rarity": "Mundane", "description": "A light spear designed for throwing. Can be used as both melee and ranged weapon, dealing 1d6 piercing damage."},
             {"name": "Light hammer", "cost": 2, "type": "Weapon", "rarity": "Mundane", "description": "A small hammer that can be wielded or thrown. Light weapon dealing 1d4 bludgeoning damage."},
             {"name": "Mace", "cost": 5, "type": "Weapon", "rarity": "Mundane", "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage."},
             {"name": "Quarterstaff", "cost": 0.2, "type": "Weapon", "rarity": "Mundane", "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage."},
             {"name": "Sickle", "cost": 1, "type": "Weapon", "rarity": "Mundane", "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage."},
             {"name": "Spear", "cost": 1, "type": "Weapon", "rarity": "Mundane", "description": "A shaft with a pointed head. Versatile and can be thrown, dealing 1d6 (1d8 two-handed) piercing damage."},
             {"name": "Crossbow, light", "cost": 25, "type": "Weapon", "rarity": "Mundane", "description": "A small crossbow that can be fired with one hand. Ranged weapon dealing 1d8 piercing damage. Range 80/320."},
-            {"name": "Dart", "cost": 0.05, "type": "Weapon", "rarity": "Mundane", "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60."},
+            {"name": "Dart", "cost": 0.05, "type": "Ammunition", "rarity": "Mundane", "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60."},
             {"name": "Shortbow", "cost": 25, "type": "Weapon", "rarity": "Mundane", "description": "A compact bow for ranged attacks. Two-handed weapon dealing 1d6 piercing damage. Range 80/320."},
             {"name": "Sling", "cost": 0.1, "type": "Weapon", "rarity": "Mundane", "description": "A strap used to hurl stones or bullets. Ranged weapon dealing 1d4 bludgeoning damage. Range 30/120."},
             {"name": "Battleaxe", "cost": 10, "type": "Weapon", "rarity": "Mundane", "description": "A large single-bladed axe. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage."},
@@ -973,21 +973,21 @@
   {
     "name": "Spear +1",
     "cost": 2161,
-    "type": "Weapon",
+    "type": "Ammunition",
     "rarity": "Uncommon",
     "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon."
   },
   {
     "name": "Spear +2",
     "cost": 11638,
-    "type": "Weapon",
+    "type": "Ammunition",
     "rarity": "Rare",
     "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon."
   },
   {
     "name": "Spear +3",
     "cost": 34901,
-    "type": "Weapon",
+    "type": "Ammunition",
     "rarity": "Very Rare",
     "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon."
   },
@@ -1434,21 +1434,21 @@
   {
     "name": "Dart +1",
     "cost": 2161,
-    "type": "Weapon",
+    "type": "Ammunition",
     "rarity": "Uncommon",
     "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60. You gain a +1 bonus to attack and damage rolls made with this weapon."
   },
   {
     "name": "Dart +2",
     "cost": 11638,
-    "type": "Weapon",
+    "type": "Ammunition",
     "rarity": "Rare",
     "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60. You gain a +2 bonus to attack and damage rolls made with this weapon."
   },
   {
     "name": "Dart +3",
     "cost": 34901,
-    "type": "Weapon",
+    "type": "Ammunition",
     "rarity": "Very Rare",
     "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60. You gain a +3 bonus to attack and damage rolls made with this weapon."
   },
@@ -1917,6 +1917,7 @@
 
 
 		]
+
 
 
 
