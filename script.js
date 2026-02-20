@@ -583,8 +583,8 @@ window.addEventListener('DOMContentLoaded', async function() {
 				}
 			}
 			
-			// Add 50-100% of mundane items (with individual limit)
-			const mundanePercentage = 0.1 + (Math.random() * 0.5);
+		// Add 20-70% of mundane items (with individual limit) - more variation
+		const mundanePercentage = 0.2 + (Math.random() * 0.5);
 			for (const item of mundaneItems) {
 				if (rarityCount['mundane'] >= maxLimits['mundane']) break;
 				if (Math.random() < mundanePercentage) {
@@ -610,15 +610,17 @@ window.addEventListener('DOMContentLoaded', async function() {
 				// Check if we've hit the individual limit for this rarity
 				if (rarityCount[rarityKey] >= maxLimits[rarityKey]) continue;
 				
-				const prob = probabilities[rarityKey];
+			const prob = probabilities[rarityKey];
+			
+			// Add randomization factor - multiply base probability by 0.2 to 1.5
+			const randomFactor = 0.2 + (Math.random() * 1.2);
+			const adjustedProb = isHealingPotion(item) ? prob * 3 * randomFactor : prob * randomFactor;
+			
+			if (adjustedProb && Math.random() < adjustedProb) {
+			    inventory.push(item);
+			    rarityCount[rarityKey]++;
+			}
 				
-				// Boost healing potion probability by 3x
-				const adjustedProb = isHealingPotion(item) ? prob * 3 : prob;
-				
-				if (adjustedProb && Math.random() < adjustedProb) {
-					inventory.push(item);
-					rarityCount[rarityKey]++;
-				}
 			}
 			
 			// 5% chance to add ONE lucky find item (one rarity above max)
