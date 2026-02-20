@@ -216,6 +216,15 @@ function generateShopkeeper(storeType, settlementSize, wealthLevel = 'common') {
     };
 }
 
+function updatePriceModifierFromWealth() {
+    const wealthLevel = document.getElementById('wealth-level').value;
+    const sellModifier = wealthLevels[wealthLevel].sellModifier;
+    const priceModifierInput = document.getElementById('price-modifier');
+    
+    // Convert sell modifier to percentage (e.g., 0.80 → 80, 1.30 → 130)
+    priceModifierInput.value = Math.round(sellModifier * 100);
+}
+
 // Load excluded items from localStorage
 function loadExcludedItems() {
 	const saved = localStorage.getItem('dnd-excluded-items');
@@ -960,7 +969,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 					<h2>${storeIcons[storeType]} ${storeNames[storeType]} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
 					<div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
-						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp <span style="color: #a89968; font-size: 0.9em;">(${wealthLevels[shopkeeper.wealthLevel].label} - buys at ${Math.round(shopkeeper.sellModifier * 100)}%)</span></p>
+						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
 						<p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
 						<p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
 					</div>
@@ -1442,7 +1451,7 @@ let html = `
         <h2>${storeIcons[store.storeType]} ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
         <div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
             <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
-            <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp <span style="color: #a89968; font-size: 0.9em;">(${wealthLevels[shopkeeper.wealthLevel].label} - buys at ${Math.round(shopkeeper.sellModifier * 100)}%)</span></p>
+            <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
             <p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
             <p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
         </div>
