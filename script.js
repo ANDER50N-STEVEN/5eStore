@@ -12,6 +12,210 @@ let homebrewSortDirection = 'asc';
 let excludedOfficialItems = new Set();
 let excludedHomebrewItems = new Set();
 
+const wealthLevels = {
+    'squalid': { gold: [100, 500], sellModifier: 0.80, label: 'Squalid' },
+    'common': { gold: [500, 2000], sellModifier: 1.00, label: 'Common' },
+    'respectable': { gold: [2000, 5000], sellModifier: 1.10, label: 'Respectable' },
+    'prosperous': { gold: [5000, 15000], sellModifier: 1.20, label: 'Prosperous' },
+    'fortunate': { gold: [15000, 50000], sellModifier: 1.30, label: 'Fortunate' }
+};
+
+const shopkeeperData = {
+    races: [
+        'Human', 'Elf', 'Dwarf', 'Halfling', 'Gnome', 'Half-Elf', 'Half-Orc', 
+        'Tiefling', 'Dragonborn', 'Tabaxi', 'Goliath', 'Firbolg', 'Kenku'
+    ],
+    
+    namesByRace: {
+		'Human': { 
+		    first: ['Aldric', 'Brenna', 'Cedric', 'Delia', 'Edric', 'Fiona', 'Gareth', 'Helena', 'Alaric', 'Lyanna', 'Thaddeus', 'Rowena', 'Magnus', 'Isolde', 'Percival', 'Elspeth'], 
+		    last: ['Ashwood', 'Blackthorn', 'Stormwind', 'Riverstone', 'Ironwood', 'Goldleaf', 'Whitehall', 'Ravencraft', 'Silverhand', 'Thornfield', 'Stonebridge', 'Fairwind'] 
+		},        
+		'Elf': { first: ['Elara', 'Theren', 'Silaqui', 'Laeroth', 'Isilme', 'Faelyn', 'Aerendyl', 'Miriel'], last: ['Moonwhisper', 'Starweaver', 'Silverleaf', 'Nightbreeze', 'Sunblade', 'Forestwarden'] },
+        'Dwarf': { first: ['Thorin', 'Brunhilde', 'Balin', 'Nori', 'Helga', 'Gimli', 'Bombur', 'Dagna'], last: ['Ironforge', 'Stonehelm', 'Oakenshield', 'Firebeard', 'Bronzehammer', 'Golddelver'] },
+        'Halfling': { first: ['Bilbo', 'Rosie', 'Merric', 'Portia', 'Willow', 'Finnan', 'Lidda', 'Osborn'], last: ['Goodbarrel', 'Tealeaf', 'Thorngage', 'Tosscobble', 'Underbough', 'Hilltopple'] },
+        'Gnome': { first: ['Zook', 'Nissa', 'Boddynock', 'Caramip', 'Warryn', 'Bimpnottin', 'Kellen', 'Turen'], last: ['Tinkertop', 'Fizzlebang', 'Sparklegem', 'Nackle', 'Beren', 'Daergel'] },
+        'Half-Elf': { first: ['Aramil', 'Liara', 'Davian', 'Seraphina', 'Kaelen', 'Melodia', 'Tharion', 'Sylvara'], last: ['Greywood', 'Ravenwood', 'Swiftbrook', 'Dawntracker', 'Shadowend', 'Brightwater'] },
+        'Half-Orc': { first: ['Grak', 'Sharag', 'Korg', 'Mara', 'Thokk', 'Grisha', 'Dench', 'Ovak'], last: ['Strongarm', 'Ironfang', 'Bonecrusher', 'Steelgrip', 'Warhide', 'Stonefist'] },
+        'Tiefling': { first: ['Crimson', 'Sorrow', 'Ash', 'Despair', 'Glory', 'Mercy', 'Torment', 'Hope'], last: ['Shadowflame', 'Nighthorn', 'Emberheart', 'Duskbane', 'Hellspark', 'Voidcaller'] },
+        'Dragonborn': { first: ['Balasar', 'Akra', 'Torinn', 'Nala', 'Ghesh', 'Mishann', 'Donaar', 'Farideh'], last: ['Clethtinthiallor', 'Daardendrian', 'Delmirev', 'Drachedandion', 'Fenkenkabradon', 'Kerrhylon'] },
+        'Tabaxi': { first: ['Cloud', 'River', 'Mist', 'Shadow', 'Rain', 'Storm', 'Wind', 'Star'], last: ['on Mountain', 'in Forest', 'at Dawn', 'in Night', 'on Water', 'at Dusk'] },
+        'Goliath': { first: ['Aukan', 'Ilikan', 'Keothi', 'Kuori', 'Manneo', 'Maveith', 'Nalla', 'Uthal'], last: ['Thuunlakalaga', 'Katho-Olavi', 'Elanithino', 'Gathakanathi', 'Kalagiano', 'Kolae-Gileana'] },
+        'Firbolg': { first: ['Autumn', 'Blaze', 'Dew', 'Ember', 'Flint', 'Grove', 'Heath', 'Oak'], last: ['Leafwhisper', 'Rootwalker', 'Mossbeard', 'Treestrider', 'Fernheart', 'Branchbender'] },
+        'Kenku': { first: ['Caw', 'Scratch', 'Whistle', 'Click', 'Rustle', 'Chime', 'Screech', 'Rattle'], last: ['Mimicsong', 'Echovoice', 'Copycall', 'Soundstealer', 'Repeatcry', 'Borrowword'] }
+    },
+    
+    quirks: {
+        general: [
+            'Has a pet {animal} that sleeps on the counter',
+            'Only speaks in rhymes on {day}s',
+            'Collects unusual {item}s and displays them proudly',
+            'Has an uncanny memory for every customer\'s face',
+            'Never stops humming old tavern songs',
+            'Insists on bartering before revealing prices',
+            'Has lived in {count} different cities',
+            'Was once an adventurer until {injury}',
+            'Reads palms for free with every purchase',
+            'Can\'t remember names but never forgets a face'
+        ],
+        weaponsmith: [
+            'Tests every weapon personally before selling it',
+            'Lost {bodypart} in a legendary duel',
+            'Names every weapon they forge',
+            'Has weapon diagrams tattooed on their arms',
+            'Forged a blade for a famous {hero}',
+            'Can identify any weapon by sound alone',
+            'Only sells to those who can lift the {item}',
+            'Sleeps in the forge to "keep it warm"',
+            'Collects the first coin from every sale',
+            'Refuses to sell weapons on {day}s'
+        ],
+        armorer: [
+            'Wears armor made from {material} at all times',
+            'Can size armor by sight alone',
+            'Once armored an entire army in three days',
+            'Has a superstition about {color} armor',
+            'Polish obsessed - armor must shine',
+            'Taps every piece three times for luck',
+            'Only uses {metal} from a specific mine',
+            'Was saved by their armor during {event}',
+            'Keeps a piece of every armor set made',
+            'Refuses to repair cursed equipment'
+        ],
+        magic: [
+            'Eyes glow faintly when examining magical items',
+            'Speaks to their familiar {animal} constantly',
+            'Once accidentally turned themselves {color}',
+            'Can sense magical auras within {distance} feet',
+            'Collects stories about every magical item',
+            'Uses only {material} for spell components',
+            'Had an apprentice who became {title}',
+            'Can\'t resist investigating any magical anomaly',
+            'Keeps a journal of every spell they\'ve seen cast',
+            'Refuses to sell items on nights of the full moon'
+        ],
+        apothecary: [
+            'Taste-tests every potion personally',
+            'Has {color} stains on their fingers permanently',
+            'Grows rare herbs in a secret garden',
+            'Once cured a {creature} of {disease}',
+            'Can identify any plant by smell alone',
+            'Labels everything in elaborate handwriting',
+            'Has survived {count} poisonings',
+            'Keeps antidotes for poisons that don\'t exist yet',
+            'Talks to their plants and swears they grow better',
+            'Has a superstition about mixing on {day}s'
+        ],
+        clothier: [
+            'Never wears the same outfit twice in a week',
+            'Can measure by eye with perfect accuracy',
+            'Has a {color} thread always tucked behind their ear',
+            'Once dressed {title} for a royal ball',
+            'Sews a secret symbol into every garment',
+            'Only works with fabrics from {location}',
+            'Can tell your entire story from your clothes',
+            'Keeps the first garment they ever made',
+            'Refuses to make anything in {color}',
+            'Hums different songs while working different fabrics'
+        ],
+        outfitter: [
+            'Has personally tested every rope, torch, and bedroll',
+            'Can pack a bag with perfect weight distribution',
+            'Once survived {count} days with only basic supplies',
+            'Gives {item}s to first-time adventurers for luck',
+            'Has maps tattooed on their {bodypart}',
+            'Keeps a log of what adventurers buy before their quests',
+            'Was a {profession} before opening the shop',
+            'Only sells torches they\'ve tested personally',
+            'Can tie {count} different types of knots',
+            'Has a sixth sense for what adventurers need'
+        ],
+        curiosities: [
+            'Claims every item has a curse (but won\'t say what)',
+            'Whispers to the items when no one is looking',
+            'Has {count} eyes tattooed on their skin',
+            'Can sense if an item "wants" to be sold',
+            'Once traded a curiosity for a {title}\'s crown',
+            'Knows the history of every item in the shop',
+            'Only accepts payment in {item}s or gold',
+            'Has been cursed {count} times',
+            'Reads fortunes in the patterns of dust on items',
+            'Never sells the same item to family members'
+        ]
+    },
+    
+    replacements: {
+        animal: ['cat', 'crow', 'rat', 'parrot', 'ferret', 'toad', 'snake', 'owl'],
+        day: ['Moonday', 'Godsday', 'Waterday', 'Earthday', 'Freeday'],
+        item: ['spoons', 'buttons', 'bells', 'keys', 'coins', 'feathers', 'stones'],
+        count: ['three', 'five', 'seven', 'ten', 'twelve', 'twenty'],
+        injury: ['an arrow to the knee', 'a dragon attack', 'a curse', 'retirement'],
+        bodypart: ['an eye', 'a finger', 'an arm', 'three fingers'],
+        hero: ['king', 'hero', 'dragon slayer', 'champion'],
+        material: ['dragon scales', 'adamantine', 'mithral', 'obsidian', 'iron'],
+        color: ['blue', 'purple', 'green', 'silver', 'golden', 'crimson'],
+        metal: ['iron', 'steel', 'silver', 'bronze', 'copper'],
+        event: ['a siege', 'an ambush', 'a dragon attack', 'a cave-in'],
+        distance: ['30', '20', '15', '10'],
+        title: ['a noble', 'an archmage', 'a king', 'a hero', 'the villain'],
+        creature: ['noble', 'king', 'dragon', 'demon', 'angel'],
+        disease: ['lycanthropy', 'a curse', 'petrification', 'madness'],
+        location: ['the East', 'across the sea', 'the mountains', 'a distant land'],
+        profession: ['sailor', 'soldier', 'adventurer', 'merchant', 'scout']
+    }
+};
+
+function generateShopkeeper(storeType, settlementSize) {
+    // Pick random race
+    const race = shopkeeperData.races[Math.floor(Math.random() * shopkeeperData.races.length)];
+    
+    // Get name based on race
+    const names = shopkeeperData.namesByRace[race];
+    const firstName = names.first[Math.floor(Math.random() * names.first.length)];
+    const lastName = names.last[Math.floor(Math.random() * names.last.length)];
+    const fullName = `${firstName} ${lastName}`;
+    
+    // Get quirk based on store type
+    const quirks = shopkeeperData.quirks[storeType] || shopkeeperData.quirks.general;
+    let quirk = quirks[Math.floor(Math.random() * quirks.length)];
+    
+    // Replace placeholders in quirk
+    quirk = quirk.replace(/\{(\w+)\}/g, (match, key) => {
+        const options = shopkeeperData.replacements[key];
+        if (options) {
+            return options[Math.floor(Math.random() * options.length)];
+        }
+        return match;
+    });
+    
+    // Generate description based on settlement size
+    const descriptions = {
+        hamlet: ['runs this small shop alone', 'knows everyone in the hamlet', 'has been here for generations'],
+        village: ['is well-known in the village', 'takes pride in serving the community', 'has many regular customers'],
+        town: ['has built a solid reputation in town', 'trains a young apprentice', 'competes with a rival shop'],
+        stronghold: ['supplies the local garrison', 'has connections throughout the stronghold', 'deals in bulk orders regularly'],
+        city: ['runs one of many shops in the city', 'has connections to merchant guilds', 'sees hundreds of customers weekly'],
+        metropolis: ['operates in the busiest district', 'is part of a merchant consortium', 'deals with customers from across the realm']
+    };
+    
+    const descOptions = descriptions[settlementSize] || descriptions.town;
+    const description = descOptions[Math.floor(Math.random() * descOptions.length)];
+    
+  // Generate gold based on wealth level
+    const wealthData = wealthLevels[wealthLevel];
+    const goldAvailable = Math.floor(Math.random() * (wealthData.gold[1] - wealthData.gold[0] + 1)) + wealthData.gold[0];
+    
+    return {
+        race: race,
+        name: fullName,
+        description: description,
+        quirk: quirk,
+        wealthLevel: wealthLevel,
+        goldAvailable: goldAvailable,
+        sellModifier: wealthData.sellModifier
+    };
+}
+
 // Load excluded items from localStorage
 function loadExcludedItems() {
 	const saved = localStorage.getItem('dnd-excluded-items');
@@ -746,11 +950,21 @@ window.addEventListener('DOMContentLoaded', async function() {
 				'clothier': '👔',
 				'curiosities': '🎭'
 			};
+
+			// Generate shopkeeper
+			const wealthLevel = document.getElementById('wealth-level').value;
+			const shopkeeper = generateShopkeeper(storeType, settlementSize, wealthLevel);
 			
 			let html = `
 				<div class="shop-info">
 					<h2>${storeIcons[storeType]} ${storeNames[storeType]} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
-					<p><strong>Total Items:</strong> ${inventory.length} | <strong>Price Variance:</strong> 100% - ${maxModifier}% | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[maxRarity]]}</p>
+					<div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
+						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
+						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp <span style="color: #a89968; font-size: 0.9em;">(${wealthLevels[shopkeeper.wealthLevel].label} - buys at ${Math.round(shopkeeper.sellModifier * 100)}%)</span></p>
+						<p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
+						<p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
+					</div>
+					<p style="margin-top: 15px;"><strong>Total Items:</strong> ${inventory.length} | <strong>Price Variance:</strong> 100% - ${maxModifier}% | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[maxRarity]]}</p>
 				</div>
 				<div class="inventory">
 			`;
