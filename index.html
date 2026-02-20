@@ -154,10 +154,10 @@
                 <thead>
 				    <tr>
 				        <th style="width: 60px;">Include</th>
-				        <th style="cursor: pointer;" onclick="sortItemList('name')">Name ▲▼</th>
-				        <th style="cursor: pointer;" onclick="sortItemList('cost')">Cost (gp) ▲▼</th>
-				        <th style="cursor: pointer;" onclick="sortItemList('type')">Type ▲▼</th>
-				        <th style="cursor: pointer;" onclick="sortItemList('rarity')">Rarity ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortItemList === 'function') sortItemList('name')">Name ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortItemList === 'function') sortItemList('cost')">Cost (gp) ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortItemList === 'function') sortItemList('type')">Type ▲▼</th>
+				        <th style="cursor: pointer;" onclick="if(typeof sortItemList === 'function') sortItemList('rarity')">Rarity ▲▼</th>
 				        <th>Description</th>
 				        <th>Actions</th>
 				    </tr>
