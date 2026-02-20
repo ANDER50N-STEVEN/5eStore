@@ -613,7 +613,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			const prob = probabilities[rarityKey];
 			
 			// Add randomization factor - multiply base probability by 0.2 to 1.5
-			const randomFactor = 0.2 + (Math.random() * 1.2);
+			const randomFactor = 0.2 + (Math.random() * .8);
 			const adjustedProb = isHealingPotion(item) ? prob * 3 * randomFactor : prob * randomFactor;
 			
 			if (adjustedProb && Math.random() < adjustedProb) {
