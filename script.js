@@ -2014,49 +2014,50 @@ function displayLoot(loot, title) {
         html += `</div></div>`;
     }
     
-    // Magic Items
-    if (loot.magicItems && loot.magicItems.length > 0) {
+   // Magic Items
+if (loot.magicItems && loot.magicItems.length > 0) {
+    html += `
+        <div class="loot-category" id="cat-magic">
+            <div class="loot-category-header" onclick="toggleLootCategory('cat-magic')">
+                <h3>✨ Magic Items (${loot.magicItems.length})</h3>
+                <span class="collapse-icon">▼</span>
+            </div>
+            <div class="loot-items">
+    `;
+    
+    // Consolidate magic items
+    const magicCounts = {};
+    loot.magicItems.forEach(item => {
+        const key = item.name;
+        if (!magicCounts[key]) {
+            magicCounts[key] = { count: 0, item: item };
+        }
+        magicCounts[key].count++;
+    });
+    
+    Object.entries(magicCounts).forEach(([name, data]) => {
+        const { count, item } = data;
+        const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+        const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
+        const bossTag = item.isBossLoot ? ' ⭐' : '';
+        
         html += `
-            <div class="loot-category" id="cat-magic">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-magic')">
-                    <h3>✨ Magic Items (${loot.magicItems.length})</h3>
-                    <span class="collapse-icon">▼</span>
-                </div>
-                <div class="loot-items">
-        `;
-        
-        // Consolidate magic items
-        const magicCounts = {};
-        loot.magicItems.forEach(item => {
-            const key = item.name;
-            if (!magicCounts[key]) {
-                magicCounts[key] = { count: 0, item: item };
-            }
-            magicCounts[key].count++;
-        });
-        
-        Object.entries(magicCounts).forEach(([name, data]) => {
-            const { count, item } = data;
-            const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-            const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
-            const bossTag = item.isBossLoot ? ' ⭐' : '';
-            
-            html += `
-                <div class="loot-item" style="grid-column: span 2;">
-                    <div>
-                        <div class="loot-item-name">${displayName}${bossTag}</div>
-                        <div style="color: #c4b591; font-size: 0.85em; margin-top: 3px;">${item.description || ''}</div>
-                    </div>
+            <div class="loot-item">
+                <div class="loot-item-header">
+                    <div class="loot-item-name">${displayName}${bossTag}</div>
                     <div class="loot-item-value">
                         <span class="${rarityClass}">${item.rarity}</span>
                     </div>
                 </div>
-            `;
-        });
-        
-        html += `</div></div>`;
-    }
+                <div class="loot-item-description">${item.description || ''}</div>
+            </div>
+        `;
+    });
     
+    html += `</div></div>`;
+}
+
+	
 // Regular Items
 if (loot.items && loot.items.length > 0) {
     html += `
@@ -2083,12 +2084,12 @@ if (loot.items && loot.items.length > 0) {
         const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
         
         html += `
-            <div class="loot-item" style="grid-column: span 2;">
-                <div>
+            <div class="loot-item">
+                <div class="loot-item-header">
                     <div class="loot-item-name">${displayName}</div>
-                    <div style="color: #c4b591; font-size: 0.85em; margin-top: 3px;">${item.description || ''}</div>
+                    <div class="loot-item-value">${item.cost} gp</div>
                 </div>
-                <div class="loot-item-value">${item.cost} gp</div>
+                <div class="loot-item-description">${item.description || ''}</div>
             </div>
         `;
     });
