@@ -193,7 +193,7 @@ function generateShopkeeper(storeType, settlementSize, wealthLevel = 'common') {
         hamlet: ['runs this small shop alone', 'knows everyone in the hamlet', 'has been here for generations'],
         village: ['is well-known in the village', 'takes pride in serving the community', 'has many regular customers'],
         town: ['has built a solid reputation in town', 'trains a young apprentice', 'competes with a rival shop'],
-        stronghold: ['supplies the local garrison', 'has connections throughout the stronghold', 'deals in bulk orders regularly'],
+        smallcity: ['supplies the local garrison', 'has connections throughout the city', 'deals in bulk orders regularly'],
         city: ['runs one of many shops in the city', 'has connections to merchant guilds', 'sees hundreds of customers weekly'],
         metropolis: ['operates in the busiest district', 'is part of a merchant consortium', 'deals with customers from across the realm']
     };
@@ -320,7 +320,7 @@ const cityDefaults = {
     veryRare: 1,
     legendary: 1
   },
-	stronghold: {
+	smallcity: {
     mundane: 20,
     common: 15,
     uncommon: 12,
@@ -641,7 +641,7 @@ window.addEventListener('DOMContentLoaded', async function() {
                 'hamlet': { common: 0.04, uncommon: 0.008, rare: 0.0015, veryRare: 0.001, legendary: 0.0005 },				
                 'village': { common: 0.06, uncommon: 0.01, rare: 0.002, veryRare: 0.001, legendary: 0.0005 },
                 'town': { common: 0.12, uncommon: 0.06, rare: 0.01, veryRare: 0.002, legendary: 0.001 },
-                'stronghold': { common: 0.20, uncommon: 0.1, rare: 0.03, veryRare: 0.015, legendary: 0.005 },
+                'smallcity': { common: 0.20, uncommon: 0.1, rare: 0.03, veryRare: 0.015, legendary: 0.005 },
                 'city': { common: 0.25, uncommon: 0.15, rare: 0.06, veryRare: 0.03, legendary: 0.005 },
 				'metropolis': { common: 0.25, uncommon: 0.2, rare: 0.1, veryRare: 0.05, legendary: 0.005 }
             };
@@ -668,7 +668,7 @@ window.addEventListener('DOMContentLoaded', async function() {
                 'hamlet': 'common',
                 'village': 'uncommon',
                 'town': 'rare',
-                'stronghold': 'rare',
+                'smallcity': 'rare',
                 'city': 'veryrare',
 				'metropolis': 'legendary'
 
