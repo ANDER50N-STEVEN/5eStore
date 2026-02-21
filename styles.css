@@ -597,6 +597,7 @@
 
 .loot-items {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
@@ -605,35 +606,47 @@
     padding: 12px;
     border-radius: 5px;
     border-left: 3px solid #d4af37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .loot-item-name {
     font-weight: bold;
     color: #d4af37;
-    margin-bottom: 5px;
+    flex: 1;
 }
 
 .loot-item-value {
     color: #8b6f47;
     font-size: 0.9em;
+    margin-left: 10px;
+    white-space: nowrap;
 }
 
-.loot-summary {
-    background: rgba(212, 175, 55, 0.15);
-    border: 2px solid #d4af37;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+.loot-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(139, 111, 71, 0.3);
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-.loot-summary h3 {
-    color: #d4af37;
-    margin-top: 0;
+.loot-category-header:hover {
+    background: rgba(139, 111, 71, 0.4);
 }
 
-.loot-total {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #d4af37;
-    margin-top: 10px;
+.loot-category.collapsed .loot-items {
+    display: none;
+}
+
+.collapse-icon {
+    transition: transform 0.3s ease;
+}
+
+.loot-category.collapsed .collapse-icon {
+    transform: rotate(-90deg);
 }
