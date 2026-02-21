@@ -532,3 +532,108 @@
 .saved-store-info strong {
     color: #d4af37;
 }
+
+/* Loot subtabs */
+.loot-subtabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 10px;
+}
+
+.loot-subtab {
+    padding: 10px 20px;
+    background: rgba(139, 111, 71, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 5px 5px 0 0;
+    color: #d4af37;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.loot-subtab:hover {
+    background: rgba(139, 111, 71, 0.5);
+}
+
+.loot-subtab.active {
+    background: rgba(212, 175, 55, 0.4);
+    border-bottom: 2px solid #d4af37;
+}
+
+.loot-section {
+    display: none;
+}
+
+.loot-section.active {
+    display: block;
+}
+
+/* Loot display styles */
+.loot-category {
+    background: rgba(139, 111, 71, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.loot-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(139, 111, 71, 0.3);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.loot-category-header h3 {
+    color: #d4af37;
+    margin: 0;
+}
+
+.loot-items {
+    display: grid;
+    gap: 10px;
+}
+
+.loot-item {
+    background: rgba(34, 34, 34, 0.5);
+    padding: 12px;
+    border-radius: 5px;
+    border-left: 3px solid #d4af37;
+}
+
+.loot-item-name {
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+.loot-item-value {
+    color: #8b6f47;
+    font-size: 0.9em;
+}
+
+.loot-summary {
+    background: rgba(212, 175, 55, 0.15);
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.loot-summary h3 {
+    color: #d4af37;
+    margin-top: 0;
+}
+
+.loot-total {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d4af37;
+    margin-top: 10px;
+}
