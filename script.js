@@ -1661,6 +1661,8 @@ function generateCombatLoot() {
     const numCreatures = parseInt(document.getElementById('num-creatures').value);
     const creatureType = document.getElementById('creature-type').value;
     const includeBoss = document.getElementById('boss-loot').checked;
+    const includeMagic = document.getElementById('combat-include-magic').checked;
+    const includeHomebrew = document.getElementById('combat-include-homebrew').checked;
     
     // Determine CR tier
     let crTier = '0-4';
@@ -1669,8 +1671,9 @@ function generateCombatLoot() {
     else if (encounterCR >= 5) crTier = '5-10';
     
     const loot = {
-        currency: generateCurrency(crTier, numCreatures, 0.3), // 30% of hoard value
+        currency: generateCurrency(crTier, numCreatures, 0.3),
         items: [],
+        magicItems: [],
         specialDrops: []
     };
     
@@ -1691,9 +1694,14 @@ function generateCombatLoot() {
         }
     }
     
+    // Add magic items if enabled
+    if (includeMagic) {
+        loot.magicItems.push(...generateMagicItems(crTier, 0.5, includeHomebrew));
+    }
+    
     // Boss loot
     if (includeBoss) {
-        loot.items.push(...generateBossLoot(encounterCR));
+        loot.magicItems.push(...generateBossLoot(encounterCR, includeHomebrew));
     }
     
     displayLoot(loot, 'Combat Loot');
@@ -1772,12 +1780,11 @@ function generateArtObjects(crTier, sizeMultiplier) {
     return artObjects;
 }
 
-function generateMagicItems(crTier, sizeMultiplier) {
+function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false) {
     const items = [];
     const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
     const numItems = Math.floor((Math.random() * 2 + crIndex) * sizeMultiplier);
     
-    // Filter items by rarity based on CR tier
     const rarities = [
         ['Common', 'Uncommon'],
         ['Uncommon', 'Rare'],
@@ -1786,7 +1793,14 @@ function generateMagicItems(crTier, sizeMultiplier) {
     ];
     
     const allowedRarities = rarities[crIndex];
-    const availableItems = [...officialItemDatabase, ...homebrewItemDatabase].filter(item => 
+    
+    // Build item pool based on homebrew setting
+    let itemPool = [...officialItemDatabase];
+    if (includeHomebrew) {
+        itemPool = [...itemPool, ...homebrewItemDatabase];
+    }
+    
+    const availableItems = itemPool.filter(item => 
         allowedRarities.includes(item.rarity) && item.rarity !== 'Mundane'
     );
     
@@ -1866,13 +1880,19 @@ function generateThemeItem(theme, creatureType) {
     return items[theme] || 'Strange item';
 }
 
-function generateBossLoot(cr) {
+function generateBossLoot(cr, includeHomebrew = false) {
     const items = [];
     const numItems = Math.max(1, Math.floor(cr / 5));
     
     const rarities = cr < 5 ? ['Uncommon'] : cr < 11 ? ['Uncommon', 'Rare'] : cr < 17 ? ['Rare', 'Very Rare'] : ['Very Rare', 'Legendary'];
     
-    const availableItems = [...officialItemDatabase, ...homebrewItemDatabase].filter(item => 
+    // Build item pool based on homebrew setting
+    let itemPool = [...officialItemDatabase];
+    if (includeHomebrew) {
+        itemPool = [...itemPool, ...homebrewItemDatabase];
+    }
+    
+    const availableItems = itemPool.filter(item => 
         rarities.includes(item.rarity)
     );
     
@@ -1911,11 +1931,12 @@ function displayLoot(loot, title) {
     // Currency
     if (loot.currency && Object.keys(loot.currency).length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-currency')">
+            <div class="loot-category" id="cat-currency">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-currency')">
                     <h3>💰 Currency</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-currency">
+                <div class="loot-items">
         `;
         
         for (const [type, amount] of Object.entries(loot.currency)) {
@@ -1932,19 +1953,28 @@ function displayLoot(loot, title) {
     // Gems
     if (loot.gems && loot.gems.length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-gems')">
-                    <h3>💎 Gems</h3>
-                    <span>${loot.gems.length} gems</span>
+            <div class="loot-category" id="cat-gems">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-gems')">
+                    <h3>💎 Gems (${loot.gems.length})</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-gems">
+                <div class="loot-items">
         `;
         
+        // Consolidate gems
+        const gemCounts = {};
         loot.gems.forEach(gem => {
+            const key = `${gem.name}|${gem.value}`;
+            gemCounts[key] = (gemCounts[key] || 0) + 1;
+        });
+        
+        Object.entries(gemCounts).forEach(([key, count]) => {
+            const [name, value] = key.split('|');
+            const displayName = count > 1 ? `${name} (×${count})` : name;
             html += `
                 <div class="loot-item">
-                    <div class="loot-item-name">${gem.name}</div>
-                    <div class="loot-item-value">Worth ${gem.value}</div>
+                    <div class="loot-item-name">${displayName}</div>
+                    <div class="loot-item-value">${value}</div>
                 </div>
             `;
         });
@@ -1955,19 +1985,28 @@ function displayLoot(loot, title) {
     // Art Objects
     if (loot.artObjects && loot.artObjects.length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-art')">
-                    <h3>🎨 Art Objects</h3>
-                    <span>${loot.artObjects.length} objects</span>
+            <div class="loot-category" id="cat-art">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-art')">
+                    <h3>🎨 Art Objects (${loot.artObjects.length})</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-art">
+                <div class="loot-items">
         `;
         
+        // Consolidate art objects
+        const artCounts = {};
         loot.artObjects.forEach(obj => {
+            const key = `${obj.name}|${obj.value}`;
+            artCounts[key] = (artCounts[key] || 0) + 1;
+        });
+        
+        Object.entries(artCounts).forEach(([key, count]) => {
+            const [name, value] = key.split('|');
+            const displayName = count > 1 ? `${name} (×${count})` : name;
             html += `
                 <div class="loot-item">
-                    <div class="loot-item-name">${obj.name}</div>
-                    <div class="loot-item-value">Worth ${obj.value}</div>
+                    <div class="loot-item-name">${displayName}</div>
+                    <div class="loot-item-value">${value}</div>
                 </div>
             `;
         });
@@ -1978,24 +2017,39 @@ function displayLoot(loot, title) {
     // Magic Items
     if (loot.magicItems && loot.magicItems.length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-magic')">
-                    <h3>✨ Magic Items</h3>
-                    <span>${loot.magicItems.length} items</span>
+            <div class="loot-category" id="cat-magic">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-magic')">
+                    <h3>✨ Magic Items (${loot.magicItems.length})</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-magic">
+                <div class="loot-items">
         `;
         
+        // Consolidate magic items
+        const magicCounts = {};
         loot.magicItems.forEach(item => {
+            const key = item.name;
+            if (!magicCounts[key]) {
+                magicCounts[key] = { count: 0, item: item };
+            }
+            magicCounts[key].count++;
+        });
+        
+        Object.entries(magicCounts).forEach(([name, data]) => {
+            const { count, item } = data;
             const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+            const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
+            const bossTag = item.isBossLoot ? ' ⭐' : '';
+            
             html += `
-                <div class="loot-item">
-                    <div class="loot-item-name">${item.name}</div>
+                <div class="loot-item" style="grid-column: span 2;">
+                    <div>
+                        <div class="loot-item-name">${displayName}${bossTag}</div>
+                        <div style="color: #c4b591; font-size: 0.85em; margin-top: 3px;">${item.description || ''}</div>
+                    </div>
                     <div class="loot-item-value">
                         <span class="${rarityClass}">${item.rarity}</span>
-                        ${item.isBossLoot ? ' ⭐ Boss Drop' : ''}
                     </div>
-                    <div style="color: #c4b591; font-size: 0.9em; margin-top: 5px;">${item.description || ''}</div>
                 </div>
             `;
         });
@@ -2006,18 +2060,31 @@ function displayLoot(loot, title) {
     // Regular Items
     if (loot.items && loot.items.length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-items')">
-                    <h3>⚔️ Equipment & Items</h3>
-                    <span>${loot.items.length} items</span>
+            <div class="loot-category" id="cat-items">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-items')">
+                    <h3>⚔️ Equipment & Items (${loot.items.length})</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-items">
+                <div class="loot-items">
         `;
         
+        // Consolidate items
+        const itemCounts = {};
         loot.items.forEach(item => {
+            const key = item.name;
+            if (!itemCounts[key]) {
+                itemCounts[key] = { count: 0, item: item };
+            }
+            itemCounts[key].count++;
+        });
+        
+        Object.entries(itemCounts).forEach(([name, data]) => {
+            const { count, item } = data;
+            const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
+            
             html += `
                 <div class="loot-item">
-                    <div class="loot-item-name">${item.name}</div>
+                    <div class="loot-item-name">${displayName}</div>
                     <div class="loot-item-value">${item.cost} gp</div>
                 </div>
             `;
@@ -2029,18 +2096,25 @@ function displayLoot(loot, title) {
     // Special Drops
     if (loot.specialDrops && loot.specialDrops.length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-special')">
-                    <h3>🎁 Special Drops</h3>
-                    <span>${loot.specialDrops.length} items</span>
+            <div class="loot-category" id="cat-special">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-special')">
+                    <h3>🎁 Special Drops (${loot.specialDrops.length})</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-special">
+                <div class="loot-items">
         `;
         
+        // Consolidate special drops
+        const specialCounts = {};
         loot.specialDrops.forEach(item => {
+            specialCounts[item] = (specialCounts[item] || 0) + 1;
+        });
+        
+        Object.entries(specialCounts).forEach(([item, count]) => {
+            const displayName = count > 1 ? `${item} (×${count})` : item;
             html += `
                 <div class="loot-item">
-                    <div class="loot-item-name">${item}</div>
+                    <div class="loot-item-name">${displayName}</div>
                 </div>
             `;
         });
@@ -2051,18 +2125,25 @@ function displayLoot(loot, title) {
     // Theme Items
     if (loot.themeItems && loot.themeItems.length > 0) {
         html += `
-            <div class="loot-category">
-                <div class="loot-category-header" onclick="toggleCategory('loot-theme')">
-                    <h3>🏺 Themed Treasures</h3>
-                    <span>${loot.themeItems.length} items</span>
+            <div class="loot-category" id="cat-theme">
+                <div class="loot-category-header" onclick="toggleLootCategory('cat-theme')">
+                    <h3>🏺 Themed Treasures (${loot.themeItems.length})</h3>
+                    <span class="collapse-icon">▼</span>
                 </div>
-                <div class="loot-items" id="loot-theme">
+                <div class="loot-items">
         `;
         
+        // Consolidate themed items
+        const themeCounts = {};
         loot.themeItems.forEach(item => {
+            themeCounts[item] = (themeCounts[item] || 0) + 1;
+        });
+        
+        Object.entries(themeCounts).forEach(([item, count]) => {
+            const displayName = count > 1 ? `${item} (×${count})` : item;
             html += `
                 <div class="loot-item">
-                    <div class="loot-item-name">${item}</div>
+                    <div class="loot-item-name">${displayName}</div>
                 </div>
             `;
         });
@@ -2071,4 +2152,9 @@ function displayLoot(loot, title) {
     }
     
     document.getElementById('loot-content').innerHTML = html;
+}
+
+function toggleLootCategory(categoryId) {
+    const category = document.getElementById(categoryId);
+    category.classList.toggle('collapsed');
 }
