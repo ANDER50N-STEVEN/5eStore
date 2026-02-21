@@ -2057,41 +2057,44 @@ function displayLoot(loot, title) {
         html += `</div></div>`;
     }
     
-    // Regular Items
-    if (loot.items && loot.items.length > 0) {
+// Regular Items
+if (loot.items && loot.items.length > 0) {
+    html += `
+        <div class="loot-category" id="cat-items">
+            <div class="loot-category-header" onclick="toggleLootCategory('cat-items')">
+                <h3>⚔️ Equipment & Items (${loot.items.length})</h3>
+                <span class="collapse-icon">▼</span>
+            </div>
+            <div class="loot-items">
+    `;
+    
+    // Consolidate items
+    const itemCounts = {};
+    loot.items.forEach(item => {
+        const key = item.name;
+        if (!itemCounts[key]) {
+            itemCounts[key] = { count: 0, item: item };
+        }
+        itemCounts[key].count++;
+    });
+    
+    Object.entries(itemCounts).forEach(([name, data]) => {
+        const { count, item } = data;
+        const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
+        
         html += `
-            <div class="loot-category" id="cat-items">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-items')">
-                    <h3>⚔️ Equipment & Items (${loot.items.length})</h3>
-                    <span class="collapse-icon">▼</span>
-                </div>
-                <div class="loot-items">
-        `;
-        
-        // Consolidate items
-        const itemCounts = {};
-        loot.items.forEach(item => {
-            const key = item.name;
-            if (!itemCounts[key]) {
-                itemCounts[key] = { count: 0, item: item };
-            }
-            itemCounts[key].count++;
-        });
-        
-        Object.entries(itemCounts).forEach(([name, data]) => {
-            const { count, item } = data;
-            const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
-            
-            html += `
-                <div class="loot-item">
+            <div class="loot-item" style="grid-column: span 2;">
+                <div>
                     <div class="loot-item-name">${displayName}</div>
-                    <div class="loot-item-value">${item.cost} gp</div>
+                    <div style="color: #c4b591; font-size: 0.85em; margin-top: 3px;">${item.description || ''}</div>
                 </div>
-            `;
-        });
-        
-        html += `</div></div>`;
-    }
+                <div class="loot-item-value">${item.cost} gp</div>
+            </div>
+        `;
+    });
+    
+    html += `</div></div>`;
+}
     
     // Special Drops
     if (loot.specialDrops && loot.specialDrops.length > 0) {
