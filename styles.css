@@ -601,14 +601,20 @@
     gap: 10px;
 }
 
-.loot-item {
+	.loot-item {
     background: rgba(34, 34, 34, 0.5);
     padding: 12px;
     border-radius: 5px;
     border-left: 3px solid #d4af37;
     display: flex;
+    flex-direction: column;
+}
+
+.loot-item-header {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 5px;
 }
 
 .loot-item-name {
@@ -622,6 +628,12 @@
     font-size: 0.9em;
     margin-left: 10px;
     white-space: nowrap;
+}
+
+.loot-item-description {
+    color: #c4b591;
+    font-size: 0.85em;
+    margin-top: 3px;
 }
 
 .loot-category-header {
