@@ -1596,3 +1596,479 @@ function deleteSavedStore(index) {
 window.addEventListener('DOMContentLoaded', function() {
 	loadItemEditsFromLocalStorage();
 });
+
+// ===== LOOT GENERATOR FUNCTIONS =====
+
+function switchLootTab(tabName) {
+    // Hide all loot sections
+    document.querySelectorAll('.loot-section').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.querySelectorAll('.loot-subtab').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Show selected section
+    document.getElementById(tabName + '-loot').classList.add('active');
+    event.target.classList.add('active');
+}
+
+// Loot data tables
+const lootTables = {
+    currency: {
+        '0-4': { cp: [0, 100], sp: [0, 100], gp: [2, 20], pp: [0, 0] },
+        '5-10': { cp: [0, 0], sp: [100, 1000], gp: [50, 500], pp: [1, 10] },
+        '11-16': { cp: [0, 0], sp: [0, 0], gp: [500, 5000], pp: [50, 500] },
+        '17+': { cp: [0, 0], sp: [0, 0], gp: [5000, 50000], pp: [500, 5000] }
+    },
+    
+    gems: {
+        '10gp': ['Azurite', 'Banded agate', 'Blue quartz', 'Eye agate', 'Hematite', 'Lapis lazuli', 'Malachite', 'Moss agate', 'Obsidian', 'Rhodochrosite', 'Tiger eye', 'Turquoise'],
+        '50gp': ['Bloodstone', 'Carnelian', 'Chalcedony', 'Chrysoprase', 'Citrine', 'Jasper', 'Moonstone', 'Onyx', 'Quartz', 'Sardonyx', 'Star rose quartz', 'Zircon'],
+        '100gp': ['Amber', 'Amethyst', 'Chrysoberyl', 'Coral', 'Garnet', 'Jade', 'Jet', 'Pearl', 'Spinel', 'Tourmaline'],
+        '500gp': ['Alexandrite', 'Aquamarine', 'Black pearl', 'Blue spinel', 'Peridot', 'Topaz'],
+        '1000gp': ['Black opal', 'Blue sapphire', 'Emerald', 'Fire opal', 'Opal', 'Star ruby', 'Star sapphire', 'Yellow sapphire'],
+        '5000gp': ['Black sapphire', 'Diamond', 'Jacinth', 'Ruby']
+    },
+    
+    artObjects: {
+        '25gp': ['Silver ewer', 'Carved bone statuette', 'Small gold bracelet', 'Cloth-of-gold vestments'],
+        '250gp': ['Gold ring set with bloodstones', 'Carved ivory statuette', 'Large gold bracelet', 'Silver necklace with a gemstone pendant'],
+        '750gp': ['Silver chalice with moonstones', 'Silver-plated steel longsword', 'Carved harp of exotic wood', 'Small gold idol'],
+        '2500gp': ['Gold ring set with diamonds', 'Gold music box', 'Gold circlet with gems', 'Jeweled gold crown'],
+        '7500gp': ['Jeweled platinum ring', 'Small mithral statue', 'Gold cup set with emeralds', 'Gold jewelry box with platinum filigree']
+    },
+    
+    creatureThemes: {
+        humanoid: ['weapons', 'armor', 'coins', 'trinkets'],
+        beast: ['pelts', 'teeth', 'claws'],
+        dragon: ['scales', 'hoarded treasure', 'magic items'],
+        undead: ['cursed items', 'ancient coins', 'burial goods'],
+        fiend: ['infernal contracts', 'soul gems', 'corrupted items'],
+        celestial: ['holy relics', 'blessed items', 'divine artifacts'],
+        fey: ['glamoured items', 'nature treasures', 'enchanted baubles'],
+        elemental: ['elemental essence', 'prismatic gems', 'raw materials'],
+        aberration: ['strange organs', 'alien artifacts', 'mind-warping trinkets'],
+        monstrosity: ['exotic parts', 'rare components', 'monster trophies'],
+        giant: ['oversized items', 'crude treasures', 'tribal artifacts'],
+        construct: ['mechanical parts', 'arcane components', 'power cores']
+    }
+};
+
+function generateCombatLoot() {
+    const partyLevel = parseInt(document.getElementById('party-level').value);
+    const encounterCR = parseFloat(document.getElementById('encounter-cr').value);
+    const numCreatures = parseInt(document.getElementById('num-creatures').value);
+    const creatureType = document.getElementById('creature-type').value;
+    const includeBoss = document.getElementById('boss-loot').checked;
+    
+    // Determine CR tier
+    let crTier = '0-4';
+    if (encounterCR >= 17) crTier = '17+';
+    else if (encounterCR >= 11) crTier = '11-16';
+    else if (encounterCR >= 5) crTier = '5-10';
+    
+    const loot = {
+        currency: generateCurrency(crTier, numCreatures, 0.3), // 30% of hoard value
+        items: [],
+        specialDrops: []
+    };
+    
+    // Add creature-specific drops
+    const themes = lootTables.creatureThemes[creatureType] || [];
+    themes.forEach(theme => {
+        if (Math.random() < 0.4) {
+            loot.specialDrops.push(generateThemeItem(theme, creatureType));
+        }
+    });
+    
+    // Add equipment from humanoids
+    if (creatureType === 'humanoid') {
+        const numWeapons = Math.floor(numCreatures * 0.6);
+        for (let i = 0; i < numWeapons; i++) {
+            const weapon = getRandomWeapon();
+            if (weapon) loot.items.push(weapon);
+        }
+    }
+    
+    // Boss loot
+    if (includeBoss) {
+        loot.items.push(...generateBossLoot(encounterCR));
+    }
+    
+    displayLoot(loot, 'Combat Loot');
+}
+
+function generateTreasureHoard() {
+    const crTier = document.getElementById('hoard-cr-tier').value;
+    const hoardSize = document.getElementById('hoard-size').value;
+    const theme = document.getElementById('hoard-theme').value;
+    
+    const sizeMultiplier = {
+        'small': 0.5,
+        'medium': 1,
+        'large': 2,
+        'legendary': 4
+    };
+    
+    const loot = {
+        currency: generateCurrency(crTier, 1, sizeMultiplier[hoardSize]),
+        gems: generateGems(crTier, sizeMultiplier[hoardSize]),
+        artObjects: generateArtObjects(crTier, sizeMultiplier[hoardSize]),
+        magicItems: generateMagicItems(crTier, sizeMultiplier[hoardSize]),
+        themeItems: generateThemedTreasure(theme, sizeMultiplier[hoardSize])
+    };
+    
+    displayLoot(loot, `${theme.charAt(0).toUpperCase() + theme.slice(1)} Treasure Hoard`);
+}
+
+function generateCurrency(crTier, multiplier = 1, sizeMultiplier = 1) {
+    const ranges = lootTables.currency[crTier];
+    const currency = {};
+    
+    for (const [type, range] of Object.entries(ranges)) {
+        if (range[1] > 0) {
+            const amount = Math.floor((Math.random() * (range[1] - range[0]) + range[0]) * multiplier * sizeMultiplier);
+            if (amount > 0) currency[type] = amount;
+        }
+    }
+    
+    return currency;
+}
+
+function generateGems(crTier, sizeMultiplier) {
+    const gems = [];
+    const numGems = Math.floor((Math.random() * 5 + 2) * sizeMultiplier);
+    
+    const valueOptions = ['10gp', '50gp', '100gp', '500gp', '1000gp', '5000gp'];
+    const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
+    const maxValueIndex = Math.min(crIndex + 2, valueOptions.length - 1);
+    
+    for (let i = 0; i < numGems; i++) {
+        const valueType = valueOptions[Math.floor(Math.random() * (maxValueIndex + 1))];
+        const gemList = lootTables.gems[valueType];
+        const gemName = gemList[Math.floor(Math.random() * gemList.length)];
+        gems.push({ name: gemName, value: valueType });
+    }
+    
+    return gems;
+}
+
+function generateArtObjects(crTier, sizeMultiplier) {
+    const artObjects = [];
+    const numObjects = Math.floor((Math.random() * 3 + 1) * sizeMultiplier);
+    
+    const valueOptions = ['25gp', '250gp', '750gp', '2500gp', '7500gp'];
+    const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
+    const maxValueIndex = Math.min(crIndex + 1, valueOptions.length - 1);
+    
+    for (let i = 0; i < numObjects; i++) {
+        const valueType = valueOptions[Math.floor(Math.random() * (maxValueIndex + 1))];
+        const objList = lootTables.artObjects[valueType];
+        const objName = objList[Math.floor(Math.random() * objList.length)];
+        artObjects.push({ name: objName, value: valueType });
+    }
+    
+    return artObjects;
+}
+
+function generateMagicItems(crTier, sizeMultiplier) {
+    const items = [];
+    const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
+    const numItems = Math.floor((Math.random() * 2 + crIndex) * sizeMultiplier);
+    
+    // Filter items by rarity based on CR tier
+    const rarities = [
+        ['Common', 'Uncommon'],
+        ['Uncommon', 'Rare'],
+        ['Rare', 'Very Rare'],
+        ['Very Rare', 'Legendary']
+    ];
+    
+    const allowedRarities = rarities[crIndex];
+    const availableItems = [...officialItemDatabase, ...homebrewItemDatabase].filter(item => 
+        allowedRarities.includes(item.rarity) && item.rarity !== 'Mundane'
+    );
+    
+    for (let i = 0; i < numItems && availableItems.length > 0; i++) {
+        const randomItem = availableItems[Math.floor(Math.random() * availableItems.length)];
+        items.push(randomItem);
+    }
+    
+    return items;
+}
+
+function generateThemedTreasure(theme, sizeMultiplier) {
+    const themedItems = {
+        dragon: ['Ancient dragon scale', 'Hoarded gold statue', 'Gem-encrusted skull'],
+        undead: ['Cursed burial shroud', 'Ancient burial urn', 'Necromantic tome fragment'],
+        fey: ['Pixie dust vial', 'Enchanted flower crown', 'Fey-touched mirror'],
+        elemental: ['Elemental core shard', 'Prismatic crystal', 'Bottled storm'],
+        planar: ['Planar tuning fork', 'Astral compass', 'Void-touched amulet'],
+        pirate: ['Treasure map fragment', 'Barnacle-covered chest', 'Captain\'s spyglass'],
+        noble: ['Family seal ring', 'Ornate portrait', 'Deed to property'],
+        ancient: ['Crumbling scroll', 'Worn statue fragment', 'Ancient coins'],
+        generic: ['Mysterious trinket', 'Ornate key', 'Faded letter']
+    };
+    
+    const items = themedItems[theme] || themedItems.generic;
+    const numItems = Math.floor((Math.random() * 3 + 1) * sizeMultiplier);
+    const selected = [];
+    
+    for (let i = 0; i < numItems; i++) {
+        selected.push(items[Math.floor(Math.random() * items.length)]);
+    }
+    
+    return selected;
+}
+
+function generateThemeItem(theme, creatureType) {
+    const items = {
+        weapons: 'Worn weapon',
+        armor: 'Damaged armor piece',
+        coins: 'Handful of coins',
+        trinkets: 'Personal trinket',
+        pelts: `${creatureType} pelt`,
+        teeth: `${creatureType} teeth`,
+        claws: `${creatureType} claws`,
+        scales: `${creatureType} scales`,
+        'hoarded treasure': 'Small piece of hoard',
+        'magic items': 'Minor magical trinket',
+        'cursed items': 'Cursed token',
+        'ancient coins': 'Ancient currency',
+        'burial goods': 'Burial offering',
+        'infernal contracts': 'Contract fragment',
+        'soul gems': 'Soul shard',
+        'corrupted items': 'Tainted object',
+        'holy relics': 'Sacred symbol',
+        'blessed items': 'Blessed charm',
+        'divine artifacts': 'Divine fragment',
+        'glamoured items': 'Glamoured bauble',
+        'nature treasures': 'Nature token',
+        'enchanted baubles': 'Enchanted trinket',
+        'elemental essence': 'Elemental essence vial',
+        'prismatic gems': 'Prismatic shard',
+        'raw materials': 'Raw elemental material',
+        'strange organs': 'Aberrant organ',
+        'alien artifacts': 'Strange artifact',
+        'mind-warping trinkets': 'Psychic trinket',
+        'exotic parts': 'Exotic monster part',
+        'rare components': 'Rare crafting component',
+        'monster trophies': 'Monster trophy',
+        'oversized items': 'Giant-sized item',
+        'crude treasures': 'Crude treasure',
+        'tribal artifacts': 'Tribal artifact',
+        'mechanical parts': 'Mechanical component',
+        'arcane components': 'Arcane component',
+        'power cores': 'Power core fragment'
+    };
+    
+    return items[theme] || 'Strange item';
+}
+
+function generateBossLoot(cr) {
+    const items = [];
+    const numItems = Math.max(1, Math.floor(cr / 5));
+    
+    const rarities = cr < 5 ? ['Uncommon'] : cr < 11 ? ['Uncommon', 'Rare'] : cr < 17 ? ['Rare', 'Very Rare'] : ['Very Rare', 'Legendary'];
+    
+    const availableItems = [...officialItemDatabase, ...homebrewItemDatabase].filter(item => 
+        rarities.includes(item.rarity)
+    );
+    
+    for (let i = 0; i < numItems && availableItems.length > 0; i++) {
+        const randomItem = availableItems[Math.floor(Math.random() * availableItems.length)];
+        items.push({ ...randomItem, isBossLoot: true });
+    }
+    
+    return items;
+}
+
+function getRandomWeapon() {
+    const weapons = officialItemDatabase.filter(item => item.type === 'Weapon' && item.rarity === 'Mundane');
+    if (weapons.length === 0) return null;
+    return weapons[Math.floor(Math.random() * weapons.length)];
+}
+
+function displayLoot(loot, title) {
+    let html = `
+        <div class="loot-summary">
+            <h2>${title}</h2>
+    `;
+    
+    // Calculate total value
+    let totalValue = 0;
+    if (loot.currency) {
+        const currencyValues = { cp: 0.01, sp: 0.1, gp: 1, pp: 10 };
+        for (const [type, amount] of Object.entries(loot.currency)) {
+            totalValue += amount * currencyValues[type];
+        }
+    }
+    
+    html += `<div class="loot-total">Estimated Total Value: ${Math.round(totalValue)} gp</div>`;
+    html += `</div>`;
+    
+    // Currency
+    if (loot.currency && Object.keys(loot.currency).length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-currency')">
+                    <h3>💰 Currency</h3>
+                </div>
+                <div class="loot-items" id="loot-currency">
+        `;
+        
+        for (const [type, amount] of Object.entries(loot.currency)) {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${amount} ${type.toUpperCase()}</div>
+                </div>
+            `;
+        }
+        
+        html += `</div></div>`;
+    }
+    
+    // Gems
+    if (loot.gems && loot.gems.length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-gems')">
+                    <h3>💎 Gems</h3>
+                    <span>${loot.gems.length} gems</span>
+                </div>
+                <div class="loot-items" id="loot-gems">
+        `;
+        
+        loot.gems.forEach(gem => {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${gem.name}</div>
+                    <div class="loot-item-value">Worth ${gem.value}</div>
+                </div>
+            `;
+        });
+        
+        html += `</div></div>`;
+    }
+    
+    // Art Objects
+    if (loot.artObjects && loot.artObjects.length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-art')">
+                    <h3>🎨 Art Objects</h3>
+                    <span>${loot.artObjects.length} objects</span>
+                </div>
+                <div class="loot-items" id="loot-art">
+        `;
+        
+        loot.artObjects.forEach(obj => {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${obj.name}</div>
+                    <div class="loot-item-value">Worth ${obj.value}</div>
+                </div>
+            `;
+        });
+        
+        html += `</div></div>`;
+    }
+    
+    // Magic Items
+    if (loot.magicItems && loot.magicItems.length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-magic')">
+                    <h3>✨ Magic Items</h3>
+                    <span>${loot.magicItems.length} items</span>
+                </div>
+                <div class="loot-items" id="loot-magic">
+        `;
+        
+        loot.magicItems.forEach(item => {
+            const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${item.name}</div>
+                    <div class="loot-item-value">
+                        <span class="${rarityClass}">${item.rarity}</span>
+                        ${item.isBossLoot ? ' ⭐ Boss Drop' : ''}
+                    </div>
+                    <div style="color: #c4b591; font-size: 0.9em; margin-top: 5px;">${item.description || ''}</div>
+                </div>
+            `;
+        });
+        
+        html += `</div></div>`;
+    }
+    
+    // Regular Items
+    if (loot.items && loot.items.length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-items')">
+                    <h3>⚔️ Equipment & Items</h3>
+                    <span>${loot.items.length} items</span>
+                </div>
+                <div class="loot-items" id="loot-items">
+        `;
+        
+        loot.items.forEach(item => {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${item.name}</div>
+                    <div class="loot-item-value">${item.cost} gp</div>
+                </div>
+            `;
+        });
+        
+        html += `</div></div>`;
+    }
+    
+    // Special Drops
+    if (loot.specialDrops && loot.specialDrops.length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-special')">
+                    <h3>🎁 Special Drops</h3>
+                    <span>${loot.specialDrops.length} items</span>
+                </div>
+                <div class="loot-items" id="loot-special">
+        `;
+        
+        loot.specialDrops.forEach(item => {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${item}</div>
+                </div>
+            `;
+        });
+        
+        html += `</div></div>`;
+    }
+    
+    // Theme Items
+    if (loot.themeItems && loot.themeItems.length > 0) {
+        html += `
+            <div class="loot-category">
+                <div class="loot-category-header" onclick="toggleCategory('loot-theme')">
+                    <h3>🏺 Themed Treasures</h3>
+                    <span>${loot.themeItems.length} items</span>
+                </div>
+                <div class="loot-items" id="loot-theme">
+        `;
+        
+        loot.themeItems.forEach(item => {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-name">${item}</div>
+                </div>
+            `;
+        });
+        
+        html += `</div></div>`;
+    }
+    
+    document.getElementById('loot-content').innerHTML = html;
+}
