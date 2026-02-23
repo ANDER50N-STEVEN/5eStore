@@ -1817,14 +1817,50 @@ function generateCombatLoot() {
         }
     });
     
-    // Add equipment from humanoids
-    if (creatureType === 'humanoid') {
-        const numWeapons = Math.floor(numCreatures * 0.6);
-        for (let i = 0; i < numWeapons; i++) {
-            const weapon = getRandomWeapon();
-            if (weapon) loot.items.push(weapon);
-        }
-    }
+	// Add equipment from humanoids
+	if (creatureType === 'humanoid') {
+	    const numCreatures = parseInt(document.getElementById('num-creatures').value);
+	    
+	    // Calculate variety: square root of enemies + 1, minimum 1
+	    const weaponVariety = Math.max(1, Math.floor(Math.sqrt(numCreatures)) + 1);
+	    const armorVariety = Math.max(1, Math.floor(Math.sqrt(numCreatures)) + 1);
+	    
+	    // Get all available weapons and armor
+	    const allWeapons = officialItemDatabase.filter(item => item.type === 'Weapon' && item.rarity === 'Mundane');
+	    const allArmor = officialItemDatabase.filter(item => item.type === 'Armor' && item.rarity === 'Mundane');
+	    
+	    // Pick random weapon types (limited variety)
+	    const weaponTypes = [];
+	    for (let i = 0; i < Math.min(weaponVariety, allWeapons.length); i++) {
+	        const randomWeapon = allWeapons[Math.floor(Math.random() * allWeapons.length)];
+	        if (!weaponTypes.find(w => w.name === randomWeapon.name)) {
+	            weaponTypes.push(randomWeapon);
+	        }
+	    }
+	    
+	    // Pick random armor types (limited variety)
+	    const armorTypes = [];
+	    for (let i = 0; i < Math.min(armorVariety, allArmor.length); i++) {
+	        const randomArmor = allArmor[Math.floor(Math.random() * allArmor.length)];
+	        if (!armorTypes.find(a => a.name === randomArmor.name)) {
+	            armorTypes.push(randomArmor);
+	        }
+	    }
+	    
+	    // Distribute weapons among enemies (60% of enemies have weapons)
+	    const numWeapons = Math.floor(numCreatures * 0.6);
+	    for (let i = 0; i < numWeapons; i++) {
+	        const weapon = weaponTypes[Math.floor(Math.random() * weaponTypes.length)];
+	        loot.items.push({...weapon});
+	    }
+	    
+	    // Distribute armor among enemies (40% of enemies have armor worth taking)
+	    const numArmor = Math.floor(numCreatures * 0.4);
+	    for (let i = 0; i < numArmor; i++) {
+	        const armor = armorTypes[Math.floor(Math.random() * armorTypes.length)];
+	        loot.items.push({...armor});
+	    }
+	}
     
     // Add magic items if enabled
     if (includeMagic) {
