@@ -1865,11 +1865,11 @@ function generateTreasureHoard() {
 function generateCurrency(crTier, multiplier = 1, sizeMultiplier = 1) {
     const ranges = lootTables.currency[crTier];
     const currency = {};
-    console.log('Range00:', range[0].value);
+   // console.log('Range00:', range[0].value);
     for (const [type, range] of Object.entries(ranges)) {
         if (range[1] > 0) {
-			        console.log('Range0:', range[0].value);
-			console.log('Range1:', range[1].value);
+//			        console.log('Range0:', range[0].value);
+	//		console.log('Range1:', range[1].value);
             const amount = Math.floor((Math.random() * (range[1] - range[0]) + range[0]) * multiplier * sizeMultiplier);
             if (amount > 0) currency[type] = amount;
         }
