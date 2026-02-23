@@ -1616,10 +1616,10 @@ function switchLootTab(tabName) {
 // Loot data tables
 const lootTables = {
     currency: {
-        '0-4': { cp: [0, 100], sp: [0, 100], gp: [2, 20], pp: [0, 0] },
-        '5-10': { cp: [0, 0], sp: [100, 1000], gp: [50, 500], pp: [1, 10] },
-        '11-16': { cp: [0, 0], sp: [0, 0], gp: [500, 5000], pp: [50, 500] },
-        '17+': { cp: [0, 0], sp: [0, 0], gp: [5000, 50000], pp: [500, 5000] }
+        '0-4': { cp: [0, 50], sp: [0, 50], gp: [2, 10], pp: [0, 0] },
+        '5-10': { cp: [0, 0], sp: [10, 100], gp: [10, 50], pp: [1, 10] },
+        '11-16': { cp: [0, 0], sp: [0, 0], gp: [50, 500], pp: [5, 50] },
+        '17+': { cp: [0, 0], sp: [0, 0], gp: [500, 5000], pp: [50, 500] }
     },
     
     gems: {
@@ -1639,20 +1639,152 @@ const lootTables = {
         '7500gp': ['Jeweled platinum ring', 'Small mithral statue', 'Gold cup set with emeralds', 'Gold jewelry box with platinum filigree']
     },
     
-    creatureThemes: {
-        humanoid: ['weapons', 'armor', 'coins', 'trinkets'],
-        beast: ['pelts', 'teeth', 'claws'],
-        dragon: ['scales', 'hoarded treasure', 'magic items'],
-        undead: ['cursed items', 'ancient coins', 'burial goods'],
-        fiend: ['infernal contracts', 'soul gems', 'corrupted items'],
-        celestial: ['holy relics', 'blessed items', 'divine artifacts'],
-        fey: ['glamoured items', 'nature treasures', 'enchanted baubles'],
-        elemental: ['elemental essence', 'prismatic gems', 'raw materials'],
-        aberration: ['strange organs', 'alien artifacts', 'mind-warping trinkets'],
-        monstrosity: ['exotic parts', 'rare components', 'monster trophies'],
-        giant: ['oversized items', 'crude treasures', 'tribal artifacts'],
-        construct: ['mechanical parts', 'arcane components', 'power cores']
-    }
+creatureThemes: {
+    humanoid: [
+        { name: 'Worn leather pouch', value: '1-5 sp', description: 'Contains a few copper coins, lint, and a brass button' },
+        { name: 'Silver signet ring', value: '10 gp', description: 'Bears an unfamiliar family crest' },
+        { name: 'Love letter', value: '0 gp', description: 'Reveals a tragic romance or useful blackmail material' },
+        { name: 'Wanted poster', value: '0 gp', description: 'Shows a bounty for someone the party might know' },
+        { name: 'Iron rations (3 days)', value: '3 gp', description: 'Dried meat, hardtack, and stale cheese' },
+        { name: 'Thieves\' tools', value: '25 gp', description: 'Well-used but functional lockpicks' },
+        { name: 'Half-empty flask of cheap whiskey', value: '5 cp', description: 'Burns on the way down' },
+        { name: 'Jade gambling die', value: '15 gp', description: 'Weighted - grants advantage on deception checks about gambling' },
+        { name: 'Treasure map fragment', value: '??? gp', description: 'Shows 1/3 of a larger map to unknown riches' },
+        { name: 'Identification papers', value: '0 gp', description: 'Could be useful for disguises or forging documents' }
+    ],
+    beast: [
+        { name: 'Pristine wolf pelt', value: '5 gp', description: 'Can be sold to a furrier or worn as a cloak' },
+        { name: 'Bear claws (4)', value: '8 gp', description: 'Trophy or crafting component for weapons' },
+        { name: 'Dire boar tusks (pair)', value: '15 gp', description: 'Large enough to craft into daggers or decorations' },
+        { name: 'Giant eagle feather', value: '10 gp', description: 'Sought by druids and arrow-crafters' },
+        { name: 'Venomous snake fangs', value: '20 gp', description: 'Can be sold to alchemists or poisoners' },
+        { name: 'Owl bear beak', value: '25 gp', description: 'Impressive trophy, intimidating when displayed' },
+        { name: 'Phase spider silk gland', value: '50 gp', description: 'Valuable to wizards studying planar magic' },
+        { name: 'Displacer beast tentacle', value: '75 gp', description: 'Still twitches occasionally, used in illusion magic' },
+        { name: 'Basilisk eye', value: '100 gp', description: 'Intact and unpetrified - extremely valuable to alchemists' },
+        { name: 'Perfectly preserved pelt', value: '30 gp', description: 'No damage, can fetch premium price' }
+    ],
+    dragon: [
+        { name: 'Dragon scale (small)', value: '50 gp', description: 'Size of a dinner plate, shimmers in light' },
+        { name: 'Dragon tooth', value: '75 gp', description: 'As long as a shortsword, can be carved into a weapon' },
+        { name: 'Vial of dragon blood', value: '100 gp', description: 'Still warm, powerful potion ingredient' },
+        { name: 'Broken dragon egg shell', value: '200 gp', description: 'Collectors and scholars pay well for these' },
+        { name: 'Dragon claw', value: '150 gp', description: 'Could be mounted as a trophy or crafted into a weapon' },
+        { name: 'Prismatic dragon scale', value: '500 gp', description: 'Shimmers with all colors, extremely rare' },
+        { name: 'Ancient coin hoard (small)', value: '3d10×10 gp', description: 'Mix of old currencies from forgotten kingdoms' },
+        { name: 'Gem-encrusted goblet', value: '250 gp', description: 'Part of a dragon\'s collected treasure' },
+        { name: 'Dragon bone shard', value: '80 gp', description: 'Dense and magically resonant, crafting material' },
+        { name: 'Scorched noble\'s crown', value: '300 gp', description: 'Melted gold with embedded rubies, sad trophy' }
+    ],
+    undead: [
+        { name: 'Burial shroud', value: '5 gp', description: 'Ancient but intact, faint necromantic aura' },
+        { name: 'Tarnished silver pendant', value: '15 gp', description: 'Shows a face the deceased loved in life' },
+        { name: 'Funerary coins (2)', value: '10 gp', description: 'Placed over the eyes, from a forgotten civilization' },
+        { name: 'Cracked burial urn', value: '20 gp', description: 'Contains ancient ash and bone fragments' },
+        { name: 'Faded death certificate', value: '0 gp', description: 'Dated centuries ago, strange cause of death listed' },
+        { name: 'Grave dust pouch', value: '25 gp', description: 'Valuable to necromancers and certain clerics' },
+        { name: 'Cursed locket', value: '50 gp', description: 'Shows a different person each time it opens' },
+        { name: 'Bone fragments', value: '15 gp', description: 'Can be used as necromancy components' },
+        { name: 'Ancient burial jewelry', value: '75 gp', description: 'Corroded copper with semi-precious stones' },
+        { name: 'Phylactery shard', value: '200 gp', description: 'Fragment of a destroyed lich\'s soul vessel' }
+    ],
+    fiend: [
+        { name: 'Infernal contract', value: '0 gp', description: 'Names someone\'s sold soul, might be used to free them' },
+        { name: 'Sulfur crystal', value: '25 gp', description: 'Smells terrible, component for summoning magic' },
+        { name: 'Demon ichor vial', value: '75 gp', description: 'Corrosive black liquid, valuable and dangerous' },
+        { name: 'Hellish coin', value: '50 gp', description: 'Burns to touch without protection, cursed currency' },
+        { name: 'Soul gem shard', value: '100 gp', description: 'Whispers can be heard from within' },
+        { name: 'Infernal iron spike', value: '40 gp', description: 'Always uncomfortably warm to touch' },
+        { name: 'Scorched brimstone', value: '20 gp', description: 'Permanent ember glow, component for fire magic' },
+        { name: 'Devil\'s tongue', value: '150 gp', description: 'Preserved, grants one who eats it the ability to speak Infernal' },
+        { name: 'Corrupted holy symbol', value: '60 gp', description: 'Twisted mockery of a good deity\'s symbol' },
+        { name: 'Contract fragment', value: '0 gp', description: 'Partial terms of a dark bargain, could be valuable information' }
+    ],
+    celestial: [
+        { name: 'Angel feather', value: '100 gp', description: 'Pure white, provides light when held by the righteous' },
+        { name: 'Holy water (2 vials)', value: '50 gp', description: 'Blessed in the Upper Planes' },
+        { name: 'Sacred hymn sheet', value: '25 gp', description: 'Music that soothes the soul and repels undead' },
+        { name: 'Celestial copper', value: '75 gp', description: 'Never tarnishes, warm to touch' },
+        { name: 'Blessed chain links', value: '40 gp', description: 'From broken celestial chains, radiates goodness' },
+        { name: 'Divinity shard', value: '200 gp', description: 'Crystallized fragment of divine essence' },
+        { name: 'Halo fragment', value: '150 gp', description: 'Glows faintly, provides comfort to good creatures' },
+        { name: 'Trumpet mouthpiece', value: '80 gp', description: 'From a celestial herald\'s horn' },
+        { name: 'Blessed bandages', value: '30 gp', description: 'Provide advantage on Medicine checks' },
+        { name: 'Prayer beads', value: '50 gp', description: 'Carved from celestial wood, enhance divine magic' }
+    ],
+    fey: [
+        { name: 'Pixie dust pouch', value: '75 gp', description: 'Causes uncontrollable laughter when inhaled' },
+        { name: 'Enchanted acorn', value: '25 gp', description: 'Grows into a full oak tree in 1 hour, lasts 1 day' },
+        { name: 'Fey flower crown', value: '50 gp', description: 'Never wilts, makes wearer appear charming' },
+        { name: 'Glamoured mirror shard', value: '100 gp', description: 'Shows your idealized reflection' },
+        { name: 'Sprite wings (pair)', value: '60 gp', description: 'Iridescent, valuable to fey scholars' },
+        { name: 'Moonlight captured in a bottle', value: '150 gp', description: 'Glows with silvery light, doesn\'t expire' },
+        { name: 'Satyr\'s pipes', value: '80 gp', description: 'Cracked but playable, music causes dancing' },
+        { name: 'Wild fey honey', value: '40 gp', description: 'Tastes of dreams, mild psychedelic effect' },
+        { name: 'Dryad\'s bark piece', value: '35 gp', description: 'Still living, speaks to druids' },
+        { name: 'Fey pact token', value: '??? gp', description: 'Bearer is owed a favor by a powerful fey' }
+    ],
+    elemental: [
+        { name: 'Fire elemental ember', value: '50 gp', description: 'Never goes out, provides heat and light' },
+        { name: 'Bottled storm', value: '75 gp', description: 'Vial of swirling clouds, lightning flickers inside' },
+        { name: 'Earth elemental core', value: '100 gp', description: 'Dense stone that feels alive' },
+        { name: 'Frozen wind sample', value: '60 gp', description: 'Solid air that gradually sublimates' },
+        { name: 'Living water flask', value: '45 gp', description: 'Water that moves on its own' },
+        { name: 'Magma glass', value: '80 gp', description: 'Obsidian that\'s still warm from the Plane of Fire' },
+        { name: 'Solidified smoke', value: '40 gp', description: 'Wispy but tangible, used in illusion magic' },
+        { name: 'Lightning in a bottle', value: '150 gp', description: 'Crackles constantly, dangerous to open' },
+        { name: 'Elemental salt', value: '30 gp', description: 'From the Plane of Earth, enhances transmutation magic' },
+        { name: 'Prismatic dust', value: '200 gp', description: 'Contains essence from all elemental planes' }
+    ],
+    aberration: [
+        { name: 'Mind flayer tentacle', value: '100 gp', description: 'Preserved, still psychically active' },
+        { name: 'Beholder eye stalk', value: '150 gp', description: 'Retains a trace of its antimagic properties' },
+        { name: 'Gibbering mouther tooth', value: '25 gp', description: 'Whispers nonsense when held' },
+        { name: 'Void crystal', value: '200 gp', description: 'Hurts to look at, from the Far Realm' },
+        { name: 'Aberrant brain matter', value: '75 gp', description: 'Still thinking terrible thoughts' },
+        { name: 'Alien metal fragment', value: '80 gp', description: 'Not from this plane, impossibly light' },
+        { name: 'Psychic residue', value: '50 gp', description: 'Crystallized nightmare, component for mind magic' },
+        { name: 'Star spawn ichor', value: '120 gp', description: 'Glows with unnatural light, corrupting influence' },
+        { name: 'Impossible geometry diagram', value: '0 gp', description: 'Studying it grants insight into alien mathematics' },
+        { name: 'Madness stone', value: '60 gp', description: 'Whispers secrets that shouldn\'t be known' }
+    ],
+    monstrosity: [
+        { name: 'Chimera horn', value: '80 gp', description: 'From the goat head, spiraled and impressive' },
+        { name: 'Gorgon plate', value: '100 gp', description: 'Metallic scale, extremely durable' },
+        { name: 'Manticore tail spike', value: '25 gp', description: 'Poisonous, can be used as an arrow' },
+        { name: 'Hydra tooth', value: '50 gp', description: 'Constantly trying to regenerate' },
+        { name: 'Cockatrice beak', value: '75 gp', description: 'Retains petrification magic residue' },
+        { name: 'Griffin feather', value: '40 gp', description: 'Sought by nobles for decorations' },
+        { name: 'Wyvern stinger', value: '90 gp', description: 'Size of a shortsword, extremely toxic' },
+        { name: 'Roper tentacle', value: '60 gp', description: 'Sticky even in death' },
+        { name: 'Rust monster antenna', value: '150 gp', description: 'Ironically valuable despite rusting metal' },
+        { name: 'Behir scale', value: '120 gp', description: 'Crackles with residual lightning' }
+    ],
+    giant: [
+        { name: 'Giant\'s tooth', value: '30 gp', description: 'Size of a fist, can be carved into dice' },
+        { name: 'Oversized ring', value: '50 gp', description: 'Sized for a giant, worth melting down' },
+        { name: 'Crude tribal necklace', value: '40 gp', description: 'Bones, stones, and scrap metal' },
+        { name: 'Giant\'s belt', value: '25 gp', description: 'Can be cut into high-quality leather straps' },
+        { name: 'Stone-tipped spear', value: '15 gp', description: 'Giant-sized, crude but effective' },
+        { name: 'Tribal banner', value: '20 gp', description: 'Shows allegiance, intelligence gathering' },
+        { name: 'Mammoth tusk carving', value: '75 gp', description: 'Giant art, depicts their history' },
+        { name: 'Giant beer mug', value: '10 gp', description: 'Holds 2 gallons, poorly crafted' },
+        { name: 'Cloud giant silk scarf', value: '200 gp', description: 'Massive but incredibly fine' },
+        { name: 'Rune-carved stone', value: '100 gp', description: 'Giant language, might contain magic' }
+    ],
+    construct: [
+        { name: 'Clockwork gears (set)', value: '50 gp', description: 'Precision-made, valuable to tinkers' },
+        { name: 'Arcane battery', value: '100 gp', description: 'Holds residual magical charge' },
+        { name: 'Mithral spring', value: '150 gp', description: 'From a destroyed construct\'s core' },
+        { name: 'Runic circuitry', value: '80 gp', description: 'Magical wiring, can be studied or repurposed' },
+        { name: 'Animation crystal', value: '200 gp', description: 'Cracked but still resonating with magic' },
+        { name: 'Golem clay', value: '60 gp', description: 'Enchanted, never fully hardens' },
+        { name: 'Mechanical eye lens', value: '75 gp', description: 'See-through crystal with perfect clarity' },
+        { name: 'Animated armor plates', value: '90 gp', description: 'Still trying to move on their own' },
+        { name: 'Homunculus wing', value: '40 gp', description: 'Delicate mechanical marvel' },
+        { name: 'Core gem fragment', value: '250 gp', description: 'Contains the construct\'s former consciousness' }
+    ]
+}
 };
 
 function generateCombatLoot() {
@@ -1839,47 +1971,13 @@ function generateThemedTreasure(theme, sizeMultiplier) {
 }
 
 function generateThemeItem(theme, creatureType) {
-    const items = {
-        weapons: 'Worn weapon',
-        armor: 'Damaged armor piece',
-        coins: 'Handful of coins',
-        trinkets: 'Personal trinket',
-        pelts: `${creatureType} pelt`,
-        teeth: `${creatureType} teeth`,
-        claws: `${creatureType} claws`,
-        scales: `${creatureType} scales`,
-        'hoarded treasure': 'Small piece of hoard',
-        'magic items': 'Minor magical trinket',
-        'cursed items': 'Cursed token',
-        'ancient coins': 'Ancient currency',
-        'burial goods': 'Burial offering',
-        'infernal contracts': 'Contract fragment',
-        'soul gems': 'Soul shard',
-        'corrupted items': 'Tainted object',
-        'holy relics': 'Sacred symbol',
-        'blessed items': 'Blessed charm',
-        'divine artifacts': 'Divine fragment',
-        'glamoured items': 'Glamoured bauble',
-        'nature treasures': 'Nature token',
-        'enchanted baubles': 'Enchanted trinket',
-        'elemental essence': 'Elemental essence vial',
-        'prismatic gems': 'Prismatic shard',
-        'raw materials': 'Raw elemental material',
-        'strange organs': 'Aberrant organ',
-        'alien artifacts': 'Strange artifact',
-        'mind-warping trinkets': 'Psychic trinket',
-        'exotic parts': 'Exotic monster part',
-        'rare components': 'Rare crafting component',
-        'monster trophies': 'Monster trophy',
-        'oversized items': 'Giant-sized item',
-        'crude treasures': 'Crude treasure',
-        'tribal artifacts': 'Tribal artifact',
-        'mechanical parts': 'Mechanical component',
-        'arcane components': 'Arcane component',
-        'power cores': 'Power core fragment'
-    };
+    const themeItems = lootTables.creatureThemes[creatureType];
+    if (!themeItems || themeItems.length === 0) {
+        return 'Strange item';
+    }
     
-    return items[theme] || 'Strange item';
+    const item = themeItems[Math.floor(Math.random() * themeItems.length)];
+    return item; // Return the full object with name, value, and description
 }
 
 function generateBossLoot(cr, includeHomebrew = false) {
@@ -2099,34 +2197,52 @@ if (loot.items && loot.items.length > 0) {
     html += `</div></div>`;
 }
     
-    // Special Drops
-    if (loot.specialDrops && loot.specialDrops.length > 0) {
-        html += `
-            <div class="loot-category" id="cat-special">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-special')">
-                    <h3>🎁 Special Drops (${loot.specialDrops.length})</h3>
-                    <span class="collapse-icon">▼</span>
+// Special Drops
+if (loot.specialDrops && loot.specialDrops.length > 0) {
+    html += `
+        <div class="loot-category" id="cat-special">
+            <div class="loot-category-header" onclick="toggleLootCategory('cat-special')">
+                <h3>🎁 Special Drops (${loot.specialDrops.length})</h3>
+                <span class="collapse-icon">▼</span>
+            </div>
+            <div class="loot-items">
+    `;
+    
+    // Consolidate special drops
+    const specialCounts = {};
+    loot.specialDrops.forEach(item => {
+        const key = typeof item === 'string' ? item : item.name;
+        if (!specialCounts[key]) {
+            specialCounts[key] = { count: 0, item: item };
+        }
+        specialCounts[key].count++;
+    });
+    
+    Object.entries(specialCounts).forEach(([key, data]) => {
+        const { count, item } = data;
+        const displayName = count > 1 ? `${key} (×${count})` : key;
+        
+        if (typeof item === 'object') {
+            html += `
+                <div class="loot-item">
+                    <div class="loot-item-header">
+                        <div class="loot-item-name">${displayName}</div>
+                        <div class="loot-item-value">${item.value}</div>
+                    </div>
+                    <div class="loot-item-description">${item.description}</div>
                 </div>
-                <div class="loot-items">
-        `;
-        
-        // Consolidate special drops
-        const specialCounts = {};
-        loot.specialDrops.forEach(item => {
-            specialCounts[item] = (specialCounts[item] || 0) + 1;
-        });
-        
-        Object.entries(specialCounts).forEach(([item, count]) => {
-            const displayName = count > 1 ? `${item} (×${count})` : item;
+            `;
+        } else {
             html += `
                 <div class="loot-item">
                     <div class="loot-item-name">${displayName}</div>
                 </div>
             `;
-        });
-        
-        html += `</div></div>`;
-    }
+        }
+    });
+    
+    html += `</div></div>`;
+}
     
     // Theme Items
     if (loot.themeItems && loot.themeItems.length > 0) {
