@@ -3271,51 +3271,6 @@
         ]
     },
     {
-        "name": "Plate Armor +1",
-        "cost": 3660,
-        "type": "Armor",
-        "rarity": "Rare",
-        "description": "Full plate armor that grants AC 19 (18 base + 1 enhancement). Provides comprehensive protection with interlocking metal plates covering the entire body.",
-        "descriptors": [
-            "masterwork plate armor with fine engravings, the joints moving smoothly",
-            "enhanced full plate with superior metallurgy, the finish immaculate",
-            "quality plate mail with perfect articulation, each piece precisely fitted",
-            "superior armor of polished steel, the craftsmanship exceptional",
-            "well-made plate with reinforced joints, the metal gleaming",
-            "expertly crafted full plate, the surface showing master-level detail"
-        ]
-    },
-    {
-        "name": "Plate Armor +2",
-        "cost": 13137,
-        "type": "Armor",
-        "rarity": "Very Rare",
-        "description": "Exceptional plate armor that grants AC 20 (18 base + 2 enhancement). Superior craftsmanship provides excellent protection.",
-        "descriptors": [
-            "exceptional plate armor with mithral inlay, the metal impossibly smooth",
-            "superior full plate with perfect weight distribution, expertly balanced",
-            "mastercraft armor with flawless articulation, the joints silent",
-            "elite plate mail of the finest steel, every detail perfect",
-            "superlative armor with seamless construction, the finish mirror-like",
-            "legendary-quality plate with runic reinforcement, the metal singing"
-        ]
-    },
-    {
-        "name": "Plate Armor +3",
-        "cost": 36400,
-        "type": "Armor",
-        "rarity": "Legendary",
-        "description": "Legendary plate armor that grants AC 21 (18 base + 3 enhancement). The pinnacle of armored protection.",
-        "descriptors": [
-            "legendary plate armor with divine blessing visible in the metal, glowing faintly",
-            "ultimate full plate of adamantine alloy, the construction flawless",
-            "god-forged armor with celestial metallurgy, the surface pristine",
-            "perfect plate mail that seems to anticipate movement, alive with magic",
-            "supreme armor of unknown alloy, the protection absolute",
-            "mythical plate with reality-defying construction, impossibly light yet strong"
-        ]
-    },
-    {
         "name": "Portable Hole",
         "cost": 5213,
         "type": "Misc",
@@ -8455,6 +8410,1053 @@
             "glass vial with cork",
             "small bottle with stopper",
             "container for liquids"
+        ]
+    },
+    {
+        "name": "Padded Armor +1",
+        "cost": 2165,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "quilted layers with reinforced stitching throughout",
+            "padded armor showing quality materials and craftsmanship",
+            "cloth armor with even padding distribution"
+        ]
+    },
+    {
+        "name": "Padded Armor +2",
+        "cost": 11642,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork quilted armor with exceptional padding",
+            "padded armor with silver-threaded stitching patterns",
+            "cloth armor showing superior construction techniques"
+        ]
+    },
+    {
+        "name": "Padded Armor +3",
+        "cost": 34905,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary quilted armor with impossibly perfect padding",
+            "padded armor with gold-threaded patterns and symbols",
+            "cloth armor of supreme quality and construction"
+        ]
+    },
+    {
+        "name": "Leather Armor +1",
+        "cost": 2170,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "hardened leather with quality tanning and treatment",
+            "leather cuirass showing expert tooling",
+            "tough leather armor with reinforced seams"
+        ]
+    },
+    {
+        "name": "Leather Armor +2",
+        "cost": 11647,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork leather with exceptional hardening process",
+            "leather cuirass with decorative embossing",
+            "tough leather armor showing superior materials"
+        ]
+    },
+    {
+        "name": "Leather Armor +3",
+        "cost": 34910,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary leather armor of perfect hardness",
+            "leather cuirass with intricate carved designs",
+            "tough leather armor of supreme quality"
+        ]
+    },
+    {
+        "name": "Studded Leather Armor +1",
+        "cost": 2205,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "leather armor with evenly-spaced metal studs",
+            "studded leather showing quality rivet work",
+            "reinforced leather with close-set studs"
+        ]
+    },
+    {
+        "name": "Studded Leather Armor +2",
+        "cost": 11682,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork studded leather with perfect stud placement",
+            "studded armor with silver or brass reinforcements",
+            "reinforced leather with exceptional rivet quality"
+        ]
+    },
+    {
+        "name": "Studded Leather Armor +3",
+        "cost": 34945,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary studded leather with perfectly placed reinforcements",
+            "studded armor with gold or mithral studs",
+            "reinforced leather of supreme construction"
+        ]
+    },
+    {
+        "name": "Hide Armor +1",
+        "cost": 2170,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "thick fur armor with quality pelts",
+            "hide armor showing expert skinning and preparation",
+            "fur armor with reinforced leather backing"
+        ]
+    },
+    {
+        "name": "Hide Armor +2",
+        "cost": 11647,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork hide armor with exotic pelts",
+            "fur armor showing superior layering technique",
+            "hide armor with exceptional thickness and quality"
+        ]
+    },
+    {
+        "name": "Hide Armor +3",
+        "cost": 34910,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary hide armor with rare creature pelts",
+            "fur armor with impossibly thick protection",
+            "hide armor of supreme craftsmanship"
+        ]
+    },
+    {
+        "name": "Chain Shirt +1",
+        "cost": 2210,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "mail shirt with tight-linked rings",
+            "chain shirt showing quality forging",
+            "metal rings interlocked with precision"
+        ]
+    },
+    {
+        "name": "Chain Shirt +2",
+        "cost": 11687,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork mail with perfectly sized rings",
+            "chain shirt with silver or steel rings",
+            "metal rings showing superior riveting"
+        ]
+    },
+    {
+        "name": "Chain Shirt +3",
+        "cost": 34950,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary mail with flawless ring construction",
+            "chain shirt with mithral or adamantine rings",
+            "metal rings of supreme quality and linking"
+        ]
+    },
+    {
+        "name": "Scale Mail +1",
+        "cost": 2210,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "metal scales overlapping like fish",
+            "scale armor with quality metal plates",
+            "overlapping scales on reinforced backing"
+        ]
+    },
+    {
+        "name": "Scale Mail +2",
+        "cost": 11687,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork scale armor with perfect overlap",
+            "metal scales showing superior attachment",
+            "overlapping plates of exceptional quality"
+        ]
+    },
+    {
+        "name": "Scale Mail +3",
+        "cost": 34950,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary scale armor with flawless construction",
+            "metal scales of rare alloys perfectly placed",
+            "overlapping plates of supreme craftsmanship"
+        ]
+    },
+    {
+        "name": "Breastplate +1",
+        "cost": 2560,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "fitted metal plate over quality leather",
+            "breastplate showing expert metalworking",
+            "chest armor with custom fit and finish"
+        ]
+    },
+    {
+        "name": "Breastplate +2",
+        "cost": 12037,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork breastplate with perfect contouring",
+            "chest armor with decorative engravings",
+            "fitted plate showing superior materials"
+        ]
+    },
+    {
+        "name": "Breastplate +3",
+        "cost": 35300,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary breastplate of perfect fit and protection",
+            "chest armor with elaborate artistic detail",
+            "fitted plate of supreme quality and craft"
+        ]
+    },
+    {
+        "name": "Half Plate +1",
+        "cost": 2910,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "plate armor covering torso and limbs",
+            "half plate showing quality construction",
+            "partial plate armor with reinforced joints"
+        ]
+    },
+    {
+        "name": "Half Plate +2",
+        "cost": 12387,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork half plate with perfect articulation",
+            "partial plate armor with decorative elements",
+            "plate covering with superior metalwork"
+        ]
+    },
+    {
+        "name": "Half Plate +3",
+        "cost": 35650,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary half plate with flawless construction",
+            "partial plate armor of exceptional beauty",
+            "plate covering of supreme quality and protection"
+        ]
+    },
+    {
+        "name": "Ring Mail +1",
+        "cost": 2190,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "leather armor with metal rings sewn throughout",
+            "ring mail showing quality ring attachment",
+            "heavy rings affixed to thick leather backing"
+        ]
+    },
+    {
+        "name": "Ring Mail +2",
+        "cost": 11667,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork ring mail with perfect ring placement",
+            "leather armor with rings of superior metal",
+            "heavy rings expertly sewn into reinforced backing"
+        ]
+    },
+    {
+        "name": "Ring Mail +3",
+        "cost": 34930,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary ring mail with flawless construction",
+            "leather armor with rare metal rings throughout",
+            "heavy rings of supreme quality and attachment"
+        ]
+    },
+    {
+        "name": "Chain Mail +1",
+        "cost": 2235,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "full mail coat with coif and leggings",
+            "chain mail showing expert ring linking",
+            "interlocked rings covering entire body"
+        ]
+    },
+    {
+        "name": "Chain Mail +2",
+        "cost": 11712,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork chain mail with perfect ring size",
+            "full mail showing superior riveting technique",
+            "interlocked rings of exceptional quality"
+        ]
+    },
+    {
+        "name": "Chain Mail +3",
+        "cost": 34975,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary chain mail of flawless construction",
+            "full mail with rings of rare alloys",
+            "interlocked rings of supreme craftsmanship"
+        ]
+    },
+    {
+        "name": "Splint Armor +1",
+        "cost": 2360,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "vertical metal strips on leather backing",
+            "splint armor with quality riveting",
+            "narrow plates overlapping for flexibility"
+        ]
+    },
+    {
+        "name": "Splint Armor +2",
+        "cost": 11837,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork splint with perfect strip alignment",
+            "metal strips showing superior attachment",
+            "narrow plates with exceptional craftsmanship"
+        ]
+    },
+    {
+        "name": "Splint Armor +3",
+        "cost": 35100,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary splint armor of flawless construction",
+            "metal strips of rare alloys perfectly placed",
+            "narrow plates of supreme quality and protection"
+        ]
+    },
+    {
+        "name": "Plate Armor +1",
+        "cost": 3660,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. You have a +1 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "full plate armor with helmet and greaves",
+            "interlocking plates showing expert fitting",
+            "complete metal protection from head to toe"
+        ]
+    },
+    {
+        "name": "Plate Armor +2",
+        "cost": 13137,
+        "type": "Armor",
+        "rarity": "Very Rare",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. You have a +2 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "masterwork plate with perfect articulation",
+            "full plate showing decorative engravings",
+            "complete armor suit of superior quality"
+        ]
+    },
+    {
+        "name": "Plate Armor +3",
+        "cost": 36400,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. You have a +3 bonus to AC while wearing this armor.",
+        "descriptors": [
+            "legendary plate armor of flawless construction",
+            "full plate with elaborate artistic details",
+            "complete armor suit of supreme craftsmanship"
+        ]
+    },
+    {
+        "name": "Club +1",
+        "cost": 2160.1,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "ironwood club that hums with deep resonance when swung",
+            "gnarled oak branch still bearing patches of silvery bark",
+            "dense ebony wood surprisingly warm to the touch",
+            "club wrapped in worn leather that molds perfectly to the grip",
+            "blackthorn wood with natural thorns filed smooth but visible",
+            "hickory club with grain so tight it appears almost metallic"
+        ]
+    },
+    {
+        "name": "Club +2",
+        "cost": 11637.1,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "petrified wood club as heavy as iron and ringing like a bell",
+            "ancient yew carved with spiraling patterns that catch the light",
+            "club of bone-white ash that vibrates subtly in the hand",
+            "bloodwood club with deep crimson streaks throughout",
+            "lignum vitae so dense it sinks in water, polished to glass smoothness",
+            "root-wood club twisted into natural knots and whorls"
+        ]
+    },
+    {
+        "name": "Club +3",
+        "cost": 34900.1,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "heartwood from a thousand-year oak that pulses with ancient life",
+            "club carved from a lightning-struck tree, faint scorch marks still visible",
+            "ironbark wood darker than midnight, impossibly heavy yet perfectly balanced",
+            "club of crystallized amber with insects forever frozen within",
+            "fossilized wood harder than steel with rainbow mineral veins",
+            "living wood that still smells of sap and forest rain"
+        ]
+    },
+    {
+        "name": "Dagger +1",
+        "cost": 2162,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from meteoric iron with tiny star-metal flecks",
+            "dagger with bone handle that feels alive in the hand",
+            "steel that whispers softly when drawn from its sheath",
+            "blade with a faint blue sheen like moonlight on water",
+            "handle wrapped in ray-skin that never slips even when wet",
+            "Damascus steel showing oil-on-water patterns in the light"
+        ]
+    },
+    {
+        "name": "Dagger +2",
+        "cost": 11639,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of folded steel showing hundreds of delicate layers",
+            "handle carved from narwhal ivory, smooth as silk",
+            "steel that rings like crystal when tapped",
+            "blade with a mirror finish that reflects no imperfections",
+            "grip wrapped in braided dragon-scale leather",
+            "blade etched with flowing water patterns that seem to move"
+        ]
+    },
+    {
+        "name": "Dagger +3",
+        "cost": 34902,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of star-metal that never needs sharpening, cold as ice",
+            "handle of petrified dragonbone etched with ancient runes",
+            "steel so pure it appears almost translucent at the edge",
+            "blade that hums at a pitch only the wielder can hear",
+            "grip made from basilisk hide that shimmers with scales",
+            "blade forged in volcanic heat showing phoenix-feather patterns"
+        ]
+    },
+    {
+        "name": "Greatclub +1",
+        "cost": 2160.2,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "massive ironwood trunk that creaks ominously when lifted",
+            "club carved from a ship's mast, still smelling of salt and tar",
+            "fossilized tree limb heavy enough to crack stone",
+            "mahogany club banded with iron rings that clang together",
+            "club still bearing natural knots that serve as brutal striking points",
+            "ash wood treated with oils until hard as stone"
+        ]
+    },
+    {
+        "name": "Greatclub +2",
+        "cost": 11637.2,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "ancient bog oak black as coal and dense as iron",
+            "club carved with bear-claw marks that feel rough under fingers",
+            "heartwood from a giant's walking stick, still impossibly straight",
+            "club studded with steel rivets that jingle slightly when swung",
+            "petrified bone of some massive beast, smooth from centuries",
+            "club wrapped in mammoth hide still bearing coarse hair"
+        ]
+    },
+    {
+        "name": "Greatclub +3",
+        "cost": 34900.2,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "club carved from world-tree root, thrumming with primal energy",
+            "obsidian-infused wood that glitters like a starry night",
+            "club of compressed amber containing a perfectly preserved wasp nest",
+            "petrified dragon femur that radiates ancient heat",
+            "club from the core of a meteor-struck oak, streaked with metal",
+            "living wood that grows new bark to repair any damage"
+        ]
+    },
+    {
+        "name": "Handaxe +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "axe with blade of blue-tinged steel that stays perpetually cool",
+            "handle of deer antler with natural ridges for perfect grip",
+            "head forged from iron salvaged from a fallen star",
+            "blade that sings a low note when cutting through air",
+            "handle wrapped in wolf-hide leather still bearing fur",
+            "steel showing wave patterns like wind across wheat fields"
+        ]
+    },
+    {
+        "name": "Handaxe +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "axe blade of folded steel showing tree-ring patterns",
+            "handle of compressed coral that never rots or splinters",
+            "head etched with frost patterns that seem to shift",
+            "blade with a mirror polish showing no scratches despite age",
+            "handle carved from oak struck by lightning, charred but solid",
+            "steel that sparkles with embedded diamond dust"
+        ]
+    },
+    {
+        "name": "Handaxe +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from a dragon's tooth, warm to touch and ivory-white",
+            "handle of crystallized bone that rings like a bell",
+            "head of meteoric iron with natural platinum veins",
+            "blade so sharp it leaves a trail of displaced air when swung",
+            "handle wrapped in phoenix down that never burns",
+            "steel folded ten thousand times, showing impossible detail"
+        ]
+    },
+    {
+        "name": "Longsword +1",
+        "cost": 2175,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade with a subtle blue sheen like deep water",
+            "crossguard shaped like spread wings with delicate feather details",
+            "steel that whispers when cutting through air",
+            "pommel weighted with lead wrapped in silk that molds to the hand",
+            "fuller groove that catches and holds the light",
+            "grip wrapped in sea-serpent leather, scaled and textured"
+        ]
+    },
+    {
+        "name": "Longsword +2",
+        "cost": 11652,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade showing oil-rainbow patterns in folded steel",
+            "crossguard of twisted steel and silver intertwined",
+            "steel that hums at different pitches as it moves",
+            "pommel containing a perfect sphere of polished obsidian",
+            "blade with cloud patterns etched so fine they seem to drift",
+            "grip wrapped in silk over shark skin that grips without slipping"
+        ]
+    },
+    {
+        "name": "Longsword +3",
+        "cost": 34915,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of star-metal showing constellation patterns along its length",
+            "crossguard carved from a single piece of ancient ivory",
+            "steel so pure it appears silver-white in moonlight",
+            "pommel set with a gem that pulses in rhythm with the bearer's heart",
+            "blade inscribed with text so small it can only be read in perfect light",
+            "grip wrapped in thread spun from spider silk, impossibly strong"
+        ]
+    },
+    {
+        "name": "Greatsword +1",
+        "cost": 2210,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "massive blade that resonates like a gong when struck",
+            "fuller running the blade's length deep enough to hold water",
+            "crossguard wide enough to rest on forearms during guard",
+            "pommel of lead-filled bronze heavy as an apple",
+            "blade showing hammer marks from the forge still visible",
+            "grip long enough for four hands wrapped in thick leather"
+        ]
+    },
+    {
+        "name": "Greatsword +2",
+        "cost": 11687,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade rippling with Damascus patterns like wood grain",
+            "fuller inlaid with silver wire forming intricate knotwork",
+            "crossguard carved with scenes of ancient battles",
+            "pommel of crystal that refracts light into rainbows",
+            "blade that produces a low musical tone when swung properly",
+            "grip wrapped in drake leather showing faint scale patterns"
+        ]
+    },
+    {
+        "name": "Greatsword +3",
+        "cost": 34950,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from a falling star, still cold as ice",
+            "fuller channels glowing with faint light like distant lightning",
+            "crossguard made from tusks of some extinct beast",
+            "pommel containing liquid mercury that shifts with movement",
+            "blade inscribed with an epic poem in microscopic script",
+            "grip wrapped in fabric woven from hair of a storm giant"
+        ]
+    },
+    {
+        "name": "Rapier +1",
+        "cost": 2185,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "needle-thin blade that flexes like a diving board",
+            "swept hilt decorated with vine patterns that spiral gracefully",
+            "steel so polished it acts as a mirror",
+            "grip wrapped in silver wire over crimson leather",
+            "blade that whistles shrilly when thrust",
+            "pommel shaped like a rose in bloom, petals spread"
+        ]
+    },
+    {
+        "name": "Rapier +2",
+        "cost": 11662,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade so thin it seems to vanish when viewed edge-on",
+            "swept hilt pierced with delicate holes forming lace patterns",
+            "steel showing blue temper lines along its length",
+            "grip of braided gold and silver wire",
+            "blade that hums at perfect concert pitch when moved",
+            "pommel set with a sapphire cut with seventy facets"
+        ]
+    },
+    {
+        "name": "Rapier +3",
+        "cost": 34925,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of crystallized moonlight, translucent at the edges",
+            "swept hilt carved from a single narwhal tusk",
+            "steel folded so many times it shows rainbows in bright light",
+            "grip wrapped in platinum wire over sea-silk",
+            "blade that produces no sound at all when thrust",
+            "pommel containing a tiny perfect pearl that glows faintly"
+        ]
+    },
+    {
+        "name": "Longbow +1",
+        "cost": 2210,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "yew limbs with sapwood and heartwood visible in layers",
+            "bow that creaks pleasantly when drawn like an old tree",
+            "string made from silk that never stretches or frays",
+            "limbs showing natural grain flowing unbroken end to end",
+            "grip wrapped in soft doeskin worn smooth from use",
+            "bow with tips carved like swan heads looking away from each other"
+        ]
+    },
+    {
+        "name": "Longbow +2",
+        "cost": 11687,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "bow of laminated horn and wood that flexes impossibly far",
+            "limbs inlaid with mother-of-pearl showing hunting scenes",
+            "string that thrums with perfect resonance when plucked",
+            "bow made from a single piece of ancient yew, no joints",
+            "grip carved with geometric patterns that fit the hand perfectly",
+            "limbs tipped with silver caps engraved with flying birds"
+        ]
+    },
+    {
+        "name": "Longbow +3",
+        "cost": 34950,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "bow carved from a unicorn's horn, pearlescent and spiraling",
+            "limbs made from dragon wing-bone, light yet unbreakable",
+            "string woven from the hair of a celestial being",
+            "bow showing wood grain that flows like liquid gold",
+            "grip wrapped in phoenix feather down that never wears",
+            "limbs that sing different notes depending on draw strength"
+        ]
+    },
+    {
+        "name": "Mace +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "flanged head of dark iron that rings like a bell when struck",
+            "shaft of ash wood that never splinters",
+            "head showing six ridges that focus the impact",
+            "grip wrapped in cord that absorbs sweat",
+            "mace that produces a deep bass note when swung",
+            "head oxidized to a deep blue-black patina"
+        ]
+    },
+    {
+        "name": "Mace +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of bronze inlaid with copper showing sunburst patterns",
+            "shaft of ironwood that resonates when the head strikes",
+            "flanges sharp enough to cut yet blunt enough to crush",
+            "grip carved with prayer texts in a dozen languages",
+            "mace that hums at a pitch that makes teeth ache",
+            "head carved with geometric patterns that mesmerize"
+        ]
+    },
+    {
+        "name": "Mace +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of meteoric iron with natural star-metal patterns",
+            "shaft carved from a single piece of petrified lightning-struck oak",
+            "flanges that seem to warp the air around them",
+            "grip wrapped in cloth woven from golden thread",
+            "mace that produces a perfect note when striking anything",
+            "head engraved with scenes visible only when in motion"
+        ]
+    },
+    {
+        "name": "Quarterstaff +1",
+        "cost": 2160.2,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "staff of bamboo that bends but never breaks",
+            "wood so smooth it feels like polished stone",
+            "staff that crackles faintly when spun quickly",
+            "ends capped with brass that's been worn to gold color",
+            "staff with natural knots providing perfect hand positions",
+            "wood that smells faintly of sandalwood even after years"
+        ]
+    },
+    {
+        "name": "Quarterstaff +2",
+        "cost": 11637.2,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "staff of black walnut with silver grain running its length",
+            "wood that produces different tones when struck at different points",
+            "staff carved with spiraling grooves that guide the hands",
+            "ends shod with steel showing not a single scratch",
+            "staff that vibrates pleasantly when held",
+            "wood inlaid with mother-of-pearl forming constellation maps"
+        ]
+    },
+    {
+        "name": "Quarterstaff +3",
+        "cost": 34900.2,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "staff carved from a branch of the world tree itself",
+            "wood that seems to bend time, leaving afterimages when moved",
+            "staff whose surface ripples like water when touched",
+            "ends capped with crystallized amber containing ancient insects",
+            "staff that sings in harmony with the wielder's breathing",
+            "wood that shifts color based on the surrounding light"
+        ]
+    },
+    {
+        "name": "Sickle +1",
+        "cost": 2161,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of blue-tinged steel that never rusts",
+            "handle of ash wood still smelling of wheat fields",
+            "curve perfect for both harvesting and combat",
+            "blade that whistles softly when swung",
+            "handle wrapped in braided straw, surprisingly comfortable",
+            "steel showing ripples like windblown grain"
+        ]
+    },
+    {
+        "name": "Sickle +2",
+        "cost": 11638,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged during harvest moon, showing lunar patterns",
+            "handle of rowan wood carved with fertility symbols",
+            "edge sharp enough to cut morning mist",
+            "blade that rings like a bell when striking",
+            "handle bound with grapevine that never withers",
+            "steel etched with scenes of abundant harvests"
+        ]
+    },
+    {
+        "name": "Sickle +3",
+        "cost": 34901,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from a meteor that fell during harvest",
+            "handle grown from a sacred tree, still living",
+            "edge that can sever the very air it passes through",
+            "blade that produces no sound despite its sharpness",
+            "handle wrapped in golden wheat that never decays",
+            "steel showing patterns of the changing seasons"
+        ]
+    },
+    {
+        "name": "Spear +1",
+        "cost": 2161,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "ash shaft so straight it could have been drawn with a ruler",
+            "leaf-shaped blade that catches light like water",
+            "spear that whistles when thrown through air",
+            "shaft wrapped at intervals with leather for better grip",
+            "blade showing blue temper lines from proper heat treatment",
+            "spear perfectly balanced at the midpoint for throwing"
+        ]
+    },
+    {
+        "name": "Spear +2",
+        "cost": 11638,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft of ironwood that never warps or bends",
+            "blade with channels that make wounds bleed freely",
+            "spear that produces a shriek when thrust forcefully",
+            "shaft carved with spiral grooves that improve flight",
+            "blade forged from layered steel showing wave patterns",
+            "crossguard beneath blade carved like spread wings"
+        ]
+    },
+    {
+        "name": "Spear +3",
+        "cost": 34901,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft carved from a single dragon bone, hollow but unbreakable",
+            "blade of star-metal that never loses its edge",
+            "spear that returns to the hand like a loyal hound",
+            "shaft inscribed with the names of all it has slain",
+            "blade so sharp it parts flesh before touching it",
+            "spear that flies so true it seems to guide itself"
+        ]
+    },
+    {
+        "name": "Flail +1",
+        "cost": 2170,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "chain that clinks musically with each swing",
+            "spiked ball of dark iron pitted from use",
+            "handle wrapped in shark-skin that never slips",
+            "chain length perfect for one-handed control",
+            "spikes showing wear marks at the tips",
+            "flail that produces a low whooshing sound when spun"
+        ]
+    },
+    {
+        "name": "Flail +2",
+        "cost": 11647,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "chain of interlocking steel rosettes that flow like water",
+            "spiked ball with each spike individually sharpened",
+            "handle of horn with natural ridges for perfect grip",
+            "chain that never tangles no matter how wildly swung",
+            "spikes carved with barbs that catch and tear",
+            "flail that screams through the air when spun properly"
+        ]
+    },
+    {
+        "name": "Flail +3",
+        "cost": 34910,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "chain forged from links of silver and cold iron alternating",
+            "spiked ball carved from a single piece of meteoric iron",
+            "handle wrapped in thread spun from spider silk",
+            "chain that produces sparks when the ball strikes stone",
+            "spikes that seem to grow longer when swung",
+            "flail that roars like distant thunder in motion"
+        ]
+    },
+    {
+        "name": "Glaive +1",
+        "cost": 2180,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "curved blade that gleams like polished silver",
+            "pole of bamboo reinforced with steel bands",
+            "blade with a single groove running its length for blood",
+            "pole wrapped where the hands naturally fall",
+            "blade showing hammer marks from careful forging",
+            "weapon that produces a distinctive whoosh when swung"
+        ]
+    },
+    {
+        "name": "Glaive +2",
+        "cost": 11657,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade showing waves of pattern-welded steel",
+            "pole of ash that bends slightly without breaking",
+            "blade etched with flowing script in an ancient tongue",
+            "pole inlaid with wire forming geometric patterns",
+            "blade sharp enough to cut silk dropped on it",
+            "weapon that hums at different pitches when spun"
         ]
     }
 ]
