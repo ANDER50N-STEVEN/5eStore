@@ -13160,5 +13160,386 @@
             "weapon producing gentle radiance in shadow",
             "staff blessed by moon's illuminating power"
         ]
-    }
-]
+    },
+{
+    "name": "Manual of Golems, Clay",
+    "cost": 19168,
+    "type": "Book",
+    "rarity": "Very Rare",
+    "description": "Contains instructions and components for creating a clay golem. Reading it (80 hours over 10 days) grants knowledge to build the construct. You must provide materials costing 65,000 gp. Book consumed in process.",
+    "descriptors": [
+      "massive tome bound in fired clay tablets",
+      "book smelling of wet earth and potter's workshop",
+      "pages showing diagrams of clay shaping techniques",
+      "cover decorated with cuneiform-style writing",
+      "tome that feels heavy as if made of earth itself",
+      "book with actual clay samples between pages"
+    ]
+  },
+  {
+    "name": "Manual of Golems, Flesh",
+    "cost": 13228,
+    "type": "Book",
+    "rarity": "Very Rare",
+    "description": "Contains instructions for creating a flesh golem. Reading (48 hours over 6 days) grants construction knowledge. Requires 50,000 gp in materials. Book consumed in process. Requires humanoid body parts.",
+    "descriptors": [
+      "tome bound in preserved leather of questionable origin",
+      "book smelling of formaldehyde and surgical spirits",
+      "pages showing anatomical diagrams in disturbing detail",
+      "cover stitched together from various materials",
+      "tome that feels unsettlingly warm to touch",
+      "book with surgical illustrations and suturing patterns"
+    ]
+  },
+  {
+    "name": "Manual of Golems, Iron",
+    "cost": 24613,
+    "type": "Book",
+    "rarity": "Very Rare",
+    "description": "Contains instructions for creating an iron golem. Reading (120 hours over 15 days) grants construction knowledge. Requires 100,000 gp in materials. Book consumed in process. Most powerful construct.",
+    "descriptors": [
+      "enormous tome with iron plates as covers",
+      "book smelling of forge smoke and hot metal",
+      "pages showing metallurgical formulae and smithing techniques",
+      "cover showing hammer-and-anvil embossing",
+      "tome incredibly heavy requiring both hands",
+      "book with actual metal samples riveted inside"
+    ]
+  },
+  {
+    "name": "Manual of Golems, Stone",
+    "cost": 21890,
+    "type": "Book",
+    "rarity": "Very Rare",
+    "description": "Contains instructions for creating a stone golem. Reading (96 hours over 12 days) grants construction knowledge. Requires 80,000 gp in materials. Book consumed in process. Durable guardian.",
+    "descriptors": [
+      "heavy tome with covers of polished marble",
+      "book smelling of quarry dust and carved stone",
+      "pages showing masonry techniques and rune placement",
+      "cover carved with architectural diagrams",
+      "tome solid and unyielding as stone itself",
+      "book with geological charts and stone samples"
+    ]
+  },
+  {
+    "name": "Mariner's Armor",
+    "cost": 1293,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "While wearing this armor, you have a swimming speed equal to your walking speed. Can be worn under normal clothes. Doesn't slow you in water or impose disadvantage on checks.",
+    "descriptors": [
+      "armor treated with oil that repels water",
+      "leather smelling of salt spray and ocean",
+      "armor with fish scale patterns embossed",
+      "material that remains light even when wet",
+      "armor with barnacle and seaweed decorations",
+      "leather showing water-smoothed texture"
+    ]
+  },
+  {
+    "name": "Mithral Breastplate",
+    "cost": 1187,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Breastplate made of mithral that doesn't impose disadvantage on Stealth checks. AC 14 + Dex modifier (max 2). Lighter than normal breastplate.",
+    "descriptors": [
+      "silvery metal impossibly light yet strong",
+      "breastplate that produces no sound when moving",
+      "mithral with faint rainbow sheen in light"
+    ]
+  },
+  {
+    "name": "Mithral Chain Mail",
+    "cost": 1008,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Chain mail made of mithral that doesn't impose disadvantage on Stealth checks and doesn't have a Strength requirement. AC 16. Light and flexible metal.",
+    "descriptors": [
+      "silvery links impossibly light and silent",
+      "chain mail that flows like silk cloth",
+      "mithral with soft metallic whisper when moving"
+    ]
+  },
+  {
+    "name": "Mithral Chain Shirt",
+    "cost": 994,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Chain shirt made of mithral. AC 13 + Dex modifier (max 2), doesn't impose disadvantage on Stealth checks. Light and quiet armor.",
+    "descriptors": [
+      "silvery shirt weighing less than leather",
+      "links so fine they seem like woven fabric",
+      "mithral producing no metallic sound"
+    ]
+  },
+  {
+    "name": "Mithral Half Plate",
+    "cost": 1379,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Half plate made of mithral that doesn't impose disadvantage on Stealth checks. AC 15 + Dex modifier (max 2). No Strength requirement. Remarkably quiet.",
+    "descriptors": [
+      "silvery plates impossibly light for their size",
+      "half plate that allows silent movement",
+      "mithral with joints that produce no sound"
+    ]
+  },
+  {
+    "name": "Mithral Plate",
+    "cost": 1792,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Plate armor made of mithral that doesn't impose disadvantage on Stealth checks and doesn't have a Strength requirement. AC 18. Remarkably light full plate.",
+    "descriptors": [
+      "silvery full plate impossibly light as chain",
+      "armor that allows completely silent movement",
+      "mithral gleaming softly without any noise"
+    ]
+  },
+  {
+    "name": "Mithral Ring Mail",
+    "cost": 983,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Ring mail made of mithral that doesn't impose disadvantage on Stealth checks. AC 14. Lighter and quieter than standard ring mail.",
+    "descriptors": [
+      "silvery rings sewn onto leather silently",
+      "ring mail surprisingly light and quiet",
+      "mithral rings that produce no metallic clink"
+    ]
+  },
+  {
+    "name": "Mithral Scale Mail",
+    "cost": 994,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Scale mail made of mithral that doesn't impose disadvantage on Stealth checks. AC 14 + Dex modifier (max 2). Light and flexible.",
+    "descriptors": [
+      "silvery scales flowing silently like water",
+      "scale mail impossibly light and quiet",
+      "mithral overlapping without any sound"
+    ]
+  },
+  {
+    "name": "Mithral Splint",
+    "cost": 1077,
+    "type": "Armor",
+    "rarity": "Uncommon",
+    "description": "Splint armor made of mithral that doesn't impose disadvantage on Stealth checks and has no Strength requirement. AC 17. Quiet heavy armor.",
+    "descriptors": [
+      "silvery strips impossibly light yet protective",
+      "splint armor that allows silent movement",
+      "mithral bands producing no metallic noise"
+    ]
+  },
+  {
+    "name": "Plate Armor of Etherealness",
+    "cost": 43167,
+    "type": "Armor",
+    "rarity": "Legendary",
+    "description": "Plate armor (AC 18) that allows you to use an action to become ethereal for 10 minutes. Can move through solid objects and see into Ethereal Plane. Usable once per day.",
+    "descriptors": [
+      "full plate with ghostly translucent quality",
+      "armor that seems slightly out of phase with reality",
+      "plate showing scenes of ethereal realm etched",
+      "metal that feels both solid and insubstantial",
+      "armor with misty wisps trailing from edges",
+      "plate that shifts between visible and faint"
+    ]
+  },
+  {
+    "name": "Quaal's Feather Token, Anchor",
+    "cost": 1083,
+    "type": "Misc",
+    "rarity": "Rare",
+    "description": "A tiny object that transforms into an anchor when activated on a boat, immediately stopping the vessel's movement. The ship cannot move until the token is removed.",
+    "descriptors": [
+      "feather carved with anchor symbol",
+      "token feeling impossibly heavy for its size",
+      "feather showing nautical imagery in detail",
+      "token that seems to resist movement when held",
+      "feather with iron-gray coloration",
+      "token smelling faintly of sea and metal"
+    ]
+  },
+  {
+    "name": "Quaal's Feather Token, Bird",
+    "cost": 2543,
+    "type": "Misc",
+    "rarity": "Rare",
+    "description": "Transforms into a Large roc-like bird that can carry a message to a specified location within 300 miles. Travels 50 miles per hour for 24 hours.",
+    "descriptors": [
+      "feather from massive bird of prey",
+      "token showing intricate wing patterns",
+      "feather that seems to flutter despite being still",
+      "token smelling of high altitude winds",
+      "feather in browns and golds of roc",
+      "token that feels warm as living bird"
+    ]
+  },
+  {
+    "name": "Quaal's Feather Token, Fan",
+    "cost": 549,
+    "type": "Misc",
+    "rarity": "Rare",
+    "description": "Creates a strong wind in a 30-foot cone, pushing creatures and objects. Can be used to propel a vessel or clear away gas. Lasts 1 round.",
+    "descriptors": [
+      "feather carved with swirling wind patterns",
+      "token that produces faint breeze when held",
+      "feather in whites and pale blues",
+      "token feeling perpetually cool to touch",
+      "feather that seems to move in non-existent wind",
+      "token smelling of fresh mountain air"
+    ]
+  },
+  {
+    "name": "Quaal's Feather Token, Swan Boat",
+    "cost": 1553,
+    "type": "Misc",
+    "rarity": "Rare",
+    "description": "Transforms into a swan-shaped boat (50 feet long, 20 feet wide) that moves at 6 miles per hour and can carry 32 Medium creatures. Lasts 24 hours.",
+    "descriptors": [
+      "pure white feather of magnificent swan",
+      "token carved with graceful boat design",
+      "feather that floats when dropped in water",
+      "token smelling of lakes and peaceful waters",
+      "feather impossibly pristine and clean",
+      "token that seems to glide when moved"
+    ]
+  },
+  {
+    "name": "Quaal's Feather Token, Tree",
+    "cost": 1553,
+    "type": "Misc",
+    "rarity": "Rare",
+    "description": "Creates a 60-foot tall, 5-foot diameter oak tree with a 20-foot branch spread. The tree is permanent and rooted in soil or similar material.",
+    "descriptors": [
+      "feather carved with oak leaf patterns",
+      "token smelling of forest and growing wood",
+      "feather in browns and greens of living tree",
+      "token that feels solid as wood despite being feather",
+      "feather showing acorn and bark designs",
+      "token warm as sun-dappled forest floor"
+    ]
+  },
+  {
+    "name": "Quaal's Feather Token, Whip",
+    "cost": 549,
+    "type": "Misc",
+    "rarity": "Rare",
+    "description": "Transforms into a spectral whip that makes a melee attack against a creature within 10 feet (+10 to hit, 1d6+4 force damage). Single use.",
+    "descriptors": [
+      "feather carved with coiled whip design",
+      "token that seems to crack like whip when moved quickly",
+      "feather showing force energy patterns",
+      "token feeling taut as stretched leather",
+      "feather in blacks and silvers of spectral magic",
+      "token that produces faint snapping sound"
+    ]
+  },
+  {
+    "name": "Quiver of Ehlonna",
+    "cost": 582,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "This quiver has three compartments: 60 arrows, 18 javelins, or 6 bows/staffs. Weighs only 2 pounds regardless of contents. Reaching for items is automatic.",
+    "descriptors": [
+      "quiver showing nature goddess symbols",
+      "container that seems larger inside than outside",
+      "quiver with three distinct compartments visible",
+      "leather smelling of forest and bowstring wax",
+      "quiver impossibly light despite contents",
+      "container with items appearing instantly when reached for"
+    ]
+  },
+  {
+    "name": "Rod of Resurrection",
+    "cost": 72475,
+    "type": "Wand/Staff/Rod",
+    "rarity": "Legendary",
+    "description": "Has 5 charges. Use 1 charge to cast Heal, 5 charges to cast Resurrection. Regains 1 charge daily at dawn. Powerful restorative magic. Only divine spellcasters can attune.",
+    "descriptors": [
+      "rod of purest silver showing life symbols",
+      "staff that pulses with divine healing energy",
+      "rod warm as living flesh to touch",
+      "staff carved with resurrection imagery throughout",
+      "rod that glows softly with restorative light",
+      "staff smelling of incense and sacred oils"
+    ]
+  },
+  {
+    "name": "Rod of the Pact Keeper, +1",
+    "cost": 4953,
+    "type": "Wand/Staff/Rod",
+    "rarity": "Uncommon",
+    "description": "Requires warlock. Grants +1 to spell attack rolls and spell save DC. Can regain one warlock spell slot of 5th level or lower once per long rest.",
+    "descriptors": [
+      "rod carved with eldritch pact symbols",
+      "staff that whispers of bargains made",
+      "rod feeling unnaturally warm to warlock's touch",
+      "staff showing patron's mark prominently",
+      "rod that pulses in rhythm with bearer's heart",
+      "staff smelling faintly of brimstone or otherworldly scents"
+    ]
+  },
+  {
+    "name": "Rod of the Pact Keeper, +2",
+    "cost": 9627,
+    "type": "Wand/Staff/Rod",
+    "rarity": "Rare",
+    "description": "Requires warlock. Grants +2 to spell attack rolls and spell save DC. Can regain one warlock spell slot of 5th level or lower once per long rest.",
+    "descriptors": [
+      "rod intricately carved with powerful pact runes",
+      "staff that resonates with otherworldly power",
+      "rod growing warmer when patron's magic flows",
+      "staff showing detailed patron imagery",
+      "rod pulsing stronger with arcane energy",
+      "staff emanating faint eldritch presence"
+    ]
+  },
+  {
+    "name": "Rod of the Pact Keeper, +3",
+    "cost": 22640,
+    "type": "Wand/Staff/Rod",
+    "rarity": "Very Rare",
+    "description": "Requires warlock. Grants +3 to spell attack rolls and spell save DC. Can regain one warlock spell slot of 5th level or lower once per long rest.",
+    "descriptors": [
+      "rod covered in elaborate eldritch contract text",
+      "staff thrumming with tremendous otherworldly power",
+      "rod that burns with patron's invested energy",
+      "staff showing patron's true form in carvings",
+      "rod pulsing with visible magical aura",
+      "staff that seems alive with pact magic"
+    ]
+  },
+  {
+    "name": "Saddle of the Cavalier",
+    "cost": 1740,
+    "type": "Misc",
+    "rarity": "Uncommon",
+    "description": "While mounted on this saddle, you can't be dismounted against your will if conscious. You also have advantage on saves to avoid falling off your mount.",
+    "descriptors": [
+      "saddle showing cavalry emblems and insignia",
+      "leather that seems to grip rider securely",
+      "saddle with stirrups that position feet perfectly",
+      "leather smelling of horses and riding trails",
+      "saddle showing wear from countless battles",
+      "leather that molds to both rider and mount"
+    ]
+  },
+  {
+    "name": "Scroll of Protection",
+    "cost": 1271,
+    "type": "Scroll",
+    "rarity": "Rare",
+    "description": "Creates a 5-foot radius magical barrier around you for 5 minutes. Choose aberrations, beasts, celestials, elementals, fey, fiends, or undead. Those types can't enter or affect anyone inside. Single use.",
+    "descriptors": [
+      "scroll showing protective circle diagrams",
+      "parchment smelling of warding incense",
+      "scroll sealed with protective sigils",
+      "vellum with barrier illustrations",
+      "scroll that feels warm with protective energy",
+      "parchment showing various creature-type symbols"
+    ]
+  },
+
