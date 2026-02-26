@@ -10718,5 +10718,2447 @@
             "weapon that produces no sound when firing",
             "compact crossbow whose bolts fly impossibly far"
         ]
+    },
+{
+    "name": "Light Crossbow +1",
+    "cost": 2185,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A small crossbow that can be fired with one hand. Ranged weapon dealing 1d8 piercing damage. Range 80/320. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "crossbow with smooth cocking mechanism",
+      "weapon showing wear from countless shots",
+      "stock carved to fit comfortably against shoulder",
+      "crossbow with sights filed for perfect accuracy",
+      "weapon that produces satisfying click when ready",
+      "bow with prod showing even tension throughout"
+    ]
+  },
+  {
+    "name": "Light Crossbow +2",
+    "cost": 11662,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A small crossbow that can be fired with one hand. Ranged weapon dealing 1d8 piercing damage. Range 80/320. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "crossbow with mechanical advantage making cocking effortless",
+      "stock of hardwood inlaid with silver wire",
+      "weapon with adjustable sights for any range",
+      "bow with prod of composite materials",
+      "weapon that never misfires despite complexity",
+      "crossbow balanced perfectly for quick aiming"
+    ]
+  },
+  {
+    "name": "Light Crossbow +3",
+    "cost": 34925,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A small crossbow that can be fired with one hand. Ranged weapon dealing 1d8 piercing damage. Range 80/320. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "crossbow that cocks itself with captured kinetic energy",
+      "stock carved from single piece of ancient oak",
+      "weapon with sights that track moving targets",
+      "bow with prod of adamantine that never loses power",
+      "weapon that compensates for wind and gravity",
+      "crossbow that places bolts with surgical precision"
+    ]
+  },
+  {
+    "name": "Heavy Crossbow +1",
+    "cost": 2210,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A powerful crossbow requiring two hands. Heavy ranged weapon dealing 1d10 piercing damage. Range 100/400. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "massive crossbow requiring stirrup to cock",
+      "weapon with prod thick as thumb producing immense force",
+      "stock reinforced to handle powerful recoil",
+      "crossbow that produces bass note when string releases",
+      "weapon heavy enough to serve as club if needed",
+      "bow showing marks where string has grooved the stock"
+    ]
+  },
+  {
+    "name": "Heavy Crossbow +2",
+    "cost": 11687,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A powerful crossbow requiring two hands. Heavy ranged weapon dealing 1d10 piercing damage. Range 100/400. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "crossbow with windlass cocking mechanism, highly efficient",
+      "weapon with stock showing decorative metalwork",
+      "bow with prod of laminated horn and steel",
+      "crossbow that produces crack like thunder when fired",
+      "weapon accurate enough to thread a needle at range",
+      "bow that seems to enhance user's strength when cocking"
+    ]
+  },
+  {
+    "name": "Heavy Crossbow +3",
+    "cost": 34950,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A powerful crossbow requiring two hands. Heavy ranged weapon dealing 1d10 piercing damage. Range 100/400. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "crossbow with mechanism that stores and releases power incrementally",
+      "stock of ironwood that absorbs recoil completely",
+      "bow with prod of dragon sinew, flexible yet unbreakable",
+      "crossbow that fires bolts with ballista force",
+      "weapon whose string glows with contained energy",
+      "bow that can pierce castle walls at maximum range"
+    ]
+  },
+  {
+    "name": "Shortbow +1",
+    "cost": 2185,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A compact bow for ranged attacks. Two-handed weapon dealing 1d6 piercing damage. Range 80/320. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "bow small enough to use while mounted",
+      "limbs that flex deeply without stress",
+      "weapon wrapped at grip with soft leather",
+      "bow producing soft thrum when string released",
+      "shortbow balanced for rapid fire",
+      "weapon showing natural grain in the wood"
+    ]
+  },
+  {
+    "name": "Shortbow +2",
+    "cost": 11662,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A compact bow for ranged attacks. Two-handed weapon dealing 1d6 piercing damage. Range 80/320. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "bow of composite horn and wood, incredibly powerful",
+      "limbs showing decorative carving that doesn't weaken structure",
+      "weapon with string that never stretches or breaks",
+      "bow that produces clear musical note when shot",
+      "shortbow that draws smoothly to any length",
+      "weapon with limbs tipped in precious metal"
+    ]
+  },
+  {
+    "name": "Shortbow +3",
+    "cost": 34925,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A compact bow for ranged attacks. Two-handed weapon dealing 1d6 piercing damage. Range 80/320. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "bow carved from single piece of world-tree branch",
+      "limbs that seem to extend impossibly far when drawn",
+      "weapon with string woven from unicorn tail hair",
+      "bow that produces harmony of notes when fired rapidly",
+      "shortbow that feels weightless yet shoots like longbow",
+      "weapon whose arrows fly true despite wind or rain"
+    ]
+  },
+  {
+    "name": "Sling +1",
+    "cost": 2160,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A strap used to hurl stones or bullets. Ranged weapon dealing 1d4 bludgeoning damage. Range 30/120. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "braided leather worn smooth from use",
+      "sling with pouch perfectly sized for stones",
+      "weapon that produces distinctive whir when spun",
+      "braids showing different colored leather strips",
+      "sling with release point marked by wear",
+      "weapon light enough to carry anywhere"
+    ]
+  },
+  {
+    "name": "Sling +2",
+    "cost": 11637,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A strap used to hurl stones or bullets. Ranged weapon dealing 1d4 bludgeoning damage. Range 30/120. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "braided sinew that never weakens or breaks",
+      "sling with pouch of silk that grips projectiles perfectly",
+      "weapon that hums at perfect pitch when spun",
+      "braiding showing masterwork knotwork throughout",
+      "sling that releases at ideal moment automatically",
+      "weapon that extends range beyond belief"
+    ]
+  },
+  {
+    "name": "Sling +3",
+    "cost": 34900,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A strap used to hurl stones or bullets. Ranged weapon dealing 1d4 bludgeoning damage. Range 30/120. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "braided from hair of giant, impossibly strong",
+      "sling with pouch woven from spider silk",
+      "weapon that produces sonic boom when releasing",
+      "braiding that glows faintly with contained force",
+      "sling that never misses despite seeming simplicity",
+      "weapon that makes stones fly like ballista bolts"
+    ]
+  },
+  {
+    "name": "Dart +1",
+    "cost": 2161,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "weighted dart balanced for accuracy",
+      "flights of real feather dyed bright colors",
+      "dart with needle-sharp steel tip",
+      "projectile that feels natural in throwing grip",
+      "dart with perfect weight distribution",
+      "weapon spinning true through air"
+    ]
+  },
+  {
+    "name": "Dart +2",
+    "cost": 11638,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "dart weighted with lead core for penetration",
+      "flights of exotic bird feathers that never fray",
+      "tip of folded steel sharp as surgical blade",
+      "projectile that seems to find its target",
+      "dart balanced with mathematical precision",
+      "weapon that produces distinctive whistle in flight"
+    ]
+  },
+  {
+    "name": "Dart +3",
+    "cost": 34901,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A small throwing projectile. Finesse ranged weapon dealing 1d4 piercing damage. Range 20/60. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "dart balanced with impossible precision",
+      "flights of phoenix feather that guide flight",
+      "tip of adamantine that punches through armor",
+      "projectile that corrects its own trajectory",
+      "dart that seems alive in the hand",
+      "weapon that never misses its mark"
+    ]
+  },
+  {
+    "name": "Net +1",
+    "cost": 2161,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A weighted net for restraining enemies. No damage; on a hit the target is restrained. Range 5/15. You gain a +1 bonus to attack rolls made with this weapon.",
+    "descriptors": [
+      "woven net with lead weights at edges",
+      "mesh tight enough to hold but loose enough to throw",
+      "net that produces distinctive whistle when cast",
+      "weapon that spreads perfectly in flight",
+      "net with rope that never tangles",
+      "weights that pull the mesh taut on impact"
+    ]
+  },
+  {
+    "name": "Net +2",
+    "cost": 11638,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A weighted net for restraining enemies. No damage; on a hit the target is restrained. Range 5/15. You gain a +2 bonus to attack rolls made with this weapon.",
+    "descriptors": [
+      "net woven from silk-steel thread blend",
+      "mesh with weights of polished bronze",
+      "net that seems to anticipate target movement",
+      "weapon that opens like flower in flight",
+      "net with rope showing complex knotwork",
+      "weights arranged for optimal spread pattern"
+    ]
+  },
+  {
+    "name": "Net +3",
+    "cost": 34901,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A weighted net for restraining enemies. No damage; on a hit the target is restrained. Range 5/15. You gain a +3 bonus to attack rolls made with this weapon.",
+    "descriptors": [
+      "net woven from mithral wire, unbreakable",
+      "mesh with weights of star-metal",
+      "net that constricts tighter when struggled against",
+      "weapon that flies true despite complex shape",
+      "net glowing faintly with binding magic",
+      "weights that seek targets like lodestones"
+    ]
+  },
+  {
+    "name": "Javelin +1",
+    "cost": 2161,
+    "type": "Weapon",
+    "rarity": "Uncommon",
+    "description": "A light spear designed for throwing. Can be used as melee or ranged weapon dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "light spear balanced at throwing point",
+      "shaft wrapped with leather at grip",
+      "javelin that whistles when thrown hard",
+      "weapon with leaf-shaped iron head",
+      "spear light enough for one-handed throwing",
+      "javelin showing wear from repeated retrieval"
+    ]
+  },
+  {
+    "name": "Javelin +2",
+    "cost": 11638,
+    "type": "Weapon",
+    "rarity": "Rare",
+    "description": "A light spear designed for throwing. Can be used as melee or ranged weapon dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "spear of ash with perfect straightness",
+      "shaft with spiral grooves that improve flight",
+      "javelin that produces shriek when thrown",
+      "weapon with head of pattern-welded steel",
+      "spear weighted for maximum distance",
+      "javelin that seems eager to be thrown"
+    ]
+  },
+  {
+    "name": "Javelin +3",
+    "cost": 34901,
+    "type": "Weapon",
+    "rarity": "Very Rare",
+    "description": "A light spear designed for throwing. Can be used as melee or ranged weapon dealing 1d6 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+    "descriptors": [
+      "spear of hollow dragon bone impossibly light",
+      "shaft that hums with barely contained energy",
+      "javelin that returns to hand when thrown",
+      "weapon with head that never dulls or chips",
+      "spear that flies farther than seems possible",
+      "javelin that guides itself to targets"
+    ]
+  },
+  {
+    "name": "Arrows (20) +1",
+    "cost": 43,
+    "type": "Ammunition",
+    "rarity": "Uncommon",
+    "description": "A bundle of arrows for use with bows. Standard ammunition. Magically enhanced ammunition. Grants +1 bonus to attack and damage rolls.",
+    "descriptors": [
+      "arrows with shafts of straight ash fletched with goose feathers",
+      "heads of steel showing faint blue magical shimmer",
+      "bundle bound with enchanted cord that glows softly"
+    ]
+  },
+  {
+    "name": "Arrows (20) +2",
+    "cost": 162,
+    "type": "Ammunition",
+    "rarity": "Rare",
+    "description": "A bundle of arrows for use with bows. Standard ammunition. Powerfully enchanted ammunition. Grants +2 bonus to attack and damage rolls.",
+    "descriptors": [
+      "arrows with shafts of ironwood fletched with hawk feathers",
+      "heads glowing with stronger magical aura visible in dim light",
+      "bundle wrapped in silver-threaded leather"
+    ]
+  },
+  {
+    "name": "Arrows (20) +3",
+    "cost": 1100,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "A bundle of arrows for use with bows. Standard ammunition. Masterfully enchanted ammunition. Grants +3 bonus to attack and damage rolls.",
+    "descriptors": [
+      "arrows with shafts of dragon bone fletched with phoenix feathers",
+      "heads of star-metal radiating power visibly",
+      "bundle that feels lighter than air despite solid weight"
+    ]
+  },
+  {
+    "name": "Crossbow Bolts (20) +1",
+    "cost": 43,
+    "type": "Ammunition",
+    "rarity": "Uncommon",
+    "description": "A bundle of bolts for crossbows. Standard ammunition. Magically enhanced ammunition. Grants +1 bonus to attack and damage rolls.",
+    "descriptors": [
+      "bolts with oak shafts and steel heads showing faint shimmer",
+      "flights of stiff leather dyed in matching colors",
+      "bundle tied with cord that pulses with gentle magic"
+    ]
+  },
+  {
+    "name": "Crossbow Bolts (20) +2",
+    "cost": 162,
+    "type": "Ammunition",
+    "rarity": "Rare",
+    "description": "A bundle of bolts for crossbows. Standard ammunition. Powerfully enchanted ammunition. Grants +2 bonus to attack and damage rolls.",
+    "descriptors": [
+      "bolts of hardwood with heads of folded steel",
+      "flights reinforced with metal strips showing enchantment",
+      "bundle wrapped in silk that crackles with energy"
+    ]
+  },
+  {
+    "name": "Crossbow Bolts (20) +3",
+    "cost": 1100,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "A bundle of bolts for crossbows. Standard ammunition. Masterfully enchanted ammunition. Grants +3 bonus to attack and damage rolls.",
+    "descriptors": [
+      "bolts of petrified wood with adamantine heads",
+      "flights that seem to guide themselves in flight",
+      "bundle radiating visible magical power"
+    ]
+  },
+  {
+    "name": "Sling Bullets (20) +1",
+    "cost": 43,
+    "type": "Ammunition",
+    "rarity": "Uncommon",
+    "description": "A pouch of smooth stones or lead bullets for slings. Pack of 20 bullets. Magically enhanced ammunition. Grants +1 bonus to attack and damage rolls.",
+    "descriptors": [
+      "smooth river stones each marked with glowing rune",
+      "lead bullets perfectly spherical and balanced",
+      "leather pouch warm to touch with contained magic"
+    ]
+  },
+  {
+    "name": "Sling Bullets (20) +2",
+    "cost": 162,
+    "type": "Ammunition",
+    "rarity": "Rare",
+    "description": "A pouch of smooth stones or lead bullets for slings. Pack of 20 bullets. Powerfully enchanted ammunition. Grants +2 bonus to attack and damage rolls.",
+    "descriptors": [
+      "bullets of silver alloy with complex runes etched",
+      "stones that pulse with blue magical light",
+      "pouch of silk that never wears or tears"
+    ]
+  },
+  {
+    "name": "Sling Bullets (20) +3",
+    "cost": 1100,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "A pouch of smooth stones or lead bullets for slings. Pack of 20 bullets. Masterfully enchanted ammunition. Grants +3 bonus to attack and damage rolls.",
+    "descriptors": [
+      "bullets of meteoric iron glowing with power",
+      "stones carved from crystal that never chips",
+      "pouch that produces bullets endlessly until empty"
+    ]
+  },
+  {
+    "name": "Blowgun Needles (50) +1",
+    "cost": 43,
+    "type": "Ammunition",
+    "rarity": "Uncommon",
+    "description": "Tiny needles for blowguns, often coated with poison. Pack of 50 needles. Magically enhanced ammunition. Grants +1 bonus to attack and damage rolls.",
+    "descriptors": [
+      "needles of steel showing faint magical shimmer",
+      "tips sharp enough to pierce leather effortlessly",
+      "case that keeps needles organized and accessible"
+    ]
+  },
+  {
+    "name": "Blowgun Needles (50) +2",
+    "cost": 162,
+    "type": "Ammunition",
+    "rarity": "Rare",
+    "description": "Tiny needles for blowguns, often coated with poison. Pack of 50 needles. Powerfully enchanted ammunition. Grants +2 bonus to attack and damage rolls.",
+    "descriptors": [
+      "needles with magical enhancement visible as blue glow",
+      "tips that never bend or break despite thinness",
+      "bamboo case with individual slots for each needle"
+    ]
+  },
+  {
+    "name": "Blowgun Needles (50) +3",
+    "cost": 1100,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "Tiny needles for blowguns, often coated with poison. Pack of 50 needles. Masterfully enchanted ammunition. Grants +3 bonus to attack and damage rolls.",
+    "descriptors": [
+      "needles of mithral impossibly thin yet unbreakable",
+      "tips that glow with potent magical energy",
+      "crystal case that displays each needle perfectly"
+    ]
+  },
+  {
+    "name": "Arrow of Aberration Slaying",
+    "cost": 750,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay aberrations. On a hit against an aberration, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with head carved with twisting non-euclidean patterns",
+      "shaft that feels wrong to hold, slightly slippery despite being dry",
+      "fletching made from feathers with too many eyes"
+    ]
+  },
+  {
+    "name": "Arrow of Beast Slaying",
+    "cost": 550,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay beasts. On a hit against a beast, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with broad hunting head etched with predator silhouettes",
+      "shaft of ash showing carved claw marks and tooth patterns",
+      "fletching dyed in camouflage patterns of forest and field"
+    ]
+  },
+  {
+    "name": "Arrow of Celestial Slaying",
+    "cost": 1200,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay celestials. On a hit against a celestial, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with blackened iron head that absorbs light",
+      "shaft wrapped in dark cloth inscribed with binding runes",
+      "fletching of crow feathers that seem to repel radiance"
+    ]
+  },
+  {
+    "name": "Arrow of Construct Slaying",
+    "cost": 850,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay constructs. On a hit against a construct, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with adamantine head shaped like a chisel",
+      "shaft reinforced with metal bands at stress points",
+      "fletching of hammered copper that rings softly"
+    ]
+  },
+  {
+    "name": "Arrow of Dragon Slaying",
+    "cost": 2000,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay dragons. On a hit against a dragon, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with head forged from dragon's own tooth or claw",
+      "shaft carved with scales and wyrm-bane symbols",
+      "fletching of drake hide showing iridescent scales"
+    ]
+  },
+  {
+    "name": "Arrow of Elemental Slaying",
+    "cost": 800,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay elementals. On a hit against an elemental, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with crystalline head showing all four elements trapped within",
+      "shaft that feels simultaneously hot, cold, wet, and solid",
+      "fletching that shifts between burning, freezing, flowing, and stone"
+    ]
+  },
+  {
+    "name": "Arrow of Fey Slaying",
+    "cost": 700,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay fey. On a hit against a fey, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with head of cold iron that never rusts or tarnishes",
+      "shaft of rowan wood wrapped in iron wire",
+      "fletching deliberately plain and unadorned, rejecting beauty"
+    ]
+  },
+  {
+    "name": "Arrow of Fiend Slaying",
+    "cost": 1100,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay fiends. On a hit against a fiend, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with silver head blessed in holy water",
+      "shaft carved with prayers and divine symbols",
+      "fletching of white dove feathers radiating purity"
+    ]
+  },
+  {
+    "name": "Arrow of Giant Slaying",
+    "cost": 900,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay giants. On a hit against a giant, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow unusually heavy for its size with dense metal head",
+      "shaft showing David and Goliath imagery carved along length",
+      "fletching sized for human hands yet pierces giant flesh"
+    ]
+  },
+  {
+    "name": "Arrow of Humanoid Slaying",
+    "cost": 600,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay humanoids. On a hit against a humanoid, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with bodkin point designed to pierce armor and flesh",
+      "shaft painted in war colors with kill-marks notched",
+      "fletching of common goose feathers, unpretentious and deadly"
+    ]
+  },
+  {
+    "name": "Arrow of Monstrosity Slaying",
+    "cost": 950,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay monstrosities. On a hit against a monstrosity, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with barbed head designed to lodge deep and tear",
+      "shaft showing carved chimeric beasts and hybrid horrors",
+      "fletching of mixed creature parts, feather and scale combined"
+    ]
+  },
+  {
+    "name": "Arrow of Ooze Slaying",
+    "cost": 700,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay oozes. On a hit against an ooze, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with crystalline head that repels moisture",
+      "shaft sealed with resin that never becomes sticky",
+      "fletching treated with alchemical compounds that resist acid"
+    ]
+  },
+  {
+    "name": "Arrow of Plant Slaying",
+    "cost": 650,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay plant creatures. On a hit against a plant, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with head shaped like a gardener's pruning blade",
+      "shaft of dead wood that never rots or grows",
+      "fletching of dried autumn leaves permanently preserved"
+    ]
+  },
+  {
+    "name": "Arrow of Undead Slaying",
+    "cost": 1000,
+    "type": "Ammunition",
+    "rarity": "Very Rare",
+    "description": "An arrow designed to slay undead. On a hit against an undead creature, the creature must make a DC 17 Constitution save or take an extra 6d10 piercing damage.",
+    "descriptors": [
+      "arrow with silver head glowing faintly with radiant energy",
+      "shaft carved with holy symbols and life affirmations",
+      "fletching of white feathers that smell of incense and sanctity"
+    ]
+  },
+    {
+        "name": "Armor of Invulnerability (Padded Armor)",
+        "cost": 42672,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "quilted armor with shimmering golden threads throughout",
+            "padding that hardens like steel when struck",
+            "cloth that pulses with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Leather Armor)",
+        "cost": 42677,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "leather cuirass with shimmering golden threads woven in",
+            "hide that hardens like steel when struck",
+            "leather pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Studded Leather Armor)",
+        "cost": 42712,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "studded leather with golden rivets that shimmer with power",
+            "armor that hardens like steel when struck",
+            "leather pulsing with protective ward energy between studs"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Hide Armor)",
+        "cost": 42677,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "hide armor with shimmering golden fur strands",
+            "pelts that harden like steel when struck",
+            "fur pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Chain Shirt)",
+        "cost": 42717,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "chain shirt with rings glowing golden when threatened",
+            "mail that hardens impossibly when struck",
+            "links pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Scale Mail)",
+        "cost": 42717,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "scale mail with golden shimmer across scales",
+            "overlapping plates that harden impossibly when struck",
+            "scales pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Spiked Armor)",
+        "cost": 42742,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Leather armor with metal spikes. Medium armor, AC 14 + Dex modifier (max 2), deals 1d4 piercing damage to grapplers. Disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "spiked armor with golden glow emanating from spikes",
+            "leather and spikes that harden impossibly when struck",
+            "armor pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Breastplate)",
+        "cost": 43067,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "breastplate with golden shimmer across surface",
+            "chest armor that hardens impossibly when struck",
+            "plate pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Halfplate)",
+        "cost": 43417,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "half plate with golden radiance across all pieces",
+            "armor that hardens beyond diamond when struck",
+            "plate sections pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Ring Mail)",
+        "cost": 42697,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "ring mail with golden-glowing sewn rings",
+            "leather and rings that harden impossibly when struck",
+            "armor pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Chain Mail)",
+        "cost": 42742,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "full chain mail with golden shimmer through every link",
+            "mail coat that hardens beyond diamond when struck",
+            "links pulsing with protective ward energy throughout"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Splint)",
+        "cost": 42867,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "splint armor with golden radiance between strips",
+            "metal strips that harden beyond diamond when struck",
+            "armor pulsing with protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Invulnerability (Plate)",
+        "cost": 44167,
+        "type": "Armor",
+        "rarity": "Legendary",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. You can use an action to become immune to nonmagical damage for 10 minutes. Once used, this property can't be used again until the next dawn.",
+        "descriptors": [
+            "full plate with golden radiance across every surface",
+            "armor that hardens to absolute invulnerability when struck",
+            "plate pulsing with legendary protective ward energy"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Padded Armor)",
+        "cost": 4205,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "quilted armor with subtle elemental patterns woven throughout",
+            "padding that seems to absorb and dissipate energy",
+            "cloth showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Leather Armor)",
+        "cost": 4210,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "leather with subtle elemental patterns tooled into surface",
+            "hide that seems to absorb and dissipate energy",
+            "cuirass showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Studded Leather Armor)",
+        "cost": 4245,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "studded leather with elemental symbols on each rivet",
+            "armor that seems to absorb and dissipate energy",
+            "leather showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Hide Armor)",
+        "cost": 4210,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "hide with subtle elemental patterns in the fur",
+            "pelts that seem to absorb and dissipate energy",
+            "fur showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Chain Shirt)",
+        "cost": 4250,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "chain shirt with elemental symbols etched on links",
+            "mail that seems to absorb and dissipate energy",
+            "rings showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Scale Mail)",
+        "cost": 4250,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "scale mail with elemental symbols on each scale",
+            "scales that seem to absorb and dissipate energy",
+            "armor showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Spiked Armor)",
+        "cost": 4275,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Leather armor with metal spikes. Medium armor, AC 14 + Dex modifier (max 2), deals 1d4 piercing damage to grapplers. Disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "spiked armor with elemental symbols on spikes and leather",
+            "armor that seems to absorb and dissipate energy",
+            "spikes showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Breastplate)",
+        "cost": 4600,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "breastplate with subtle elemental patterns etched across surface",
+            "chest armor that seems to absorb and dissipate energy",
+            "plate showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Halfplate)",
+        "cost": 4950,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "half plate with elemental patterns across all pieces",
+            "armor that seems to absorb and dissipate energy",
+            "plate sections showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Ring Mail)",
+        "cost": 4230,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "ring mail with elemental symbols on sewn rings",
+            "armor that seems to absorb and dissipate energy",
+            "rings showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Chain Mail)",
+        "cost": 4275,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "full chain with elemental symbols throughout links",
+            "mail that seems to absorb and dissipate energy",
+            "links showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Splint)",
+        "cost": 4400,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "splint with elemental patterns between metal strips",
+            "armor that seems to absorb and dissipate energy",
+            "strips showing faint protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Resistance (Plate)",
+        "cost": 5700,
+        "type": "Armor",
+        "rarity": "Rare",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly.",
+        "descriptors": [
+            "full plate with elemental patterns across every surface",
+            "armor that seems to absorb and dissipate energy perfectly",
+            "plate showing strong protective aura against specific forces"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Padded Armor)",
+        "cost": 335,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "quilted armor that repels dirt and grime magically",
+            "padding always appearing freshly laundered",
+            "cloth that sheds dust and stains instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Leather Armor)",
+        "cost": 340,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "leather that repels dirt and grime magically",
+            "cuirass always appearing freshly oiled",
+            "hide that sheds dust and stains instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Studded Leather Armor)",
+        "cost": 375,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "studded leather that repels dirt magically",
+            "armor with rivets always polished to shine",
+            "leather that sheds dust and stains instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Hide Armor)",
+        "cost": 340,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "hide that repels dirt and blood magically",
+            "fur always appearing freshly brushed",
+            "pelts that shed dust and debris instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Chain Shirt)",
+        "cost": 380,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "chain shirt that repels rust and grime magically",
+            "mail always gleaming as if freshly polished",
+            "links that shed dirt and blood instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Scale Mail)",
+        "cost": 380,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "scale mail that repels rust and grime magically",
+            "scales always gleaming like new",
+            "armor that sheds dirt instantly from every plate"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Spiked Armor)",
+        "cost": 405,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather armor with metal spikes. Medium armor, AC 14 + Dex modifier (max 2), deals 1d4 piercing damage to grapplers. Disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "spiked armor that repels blood and grime magically",
+            "spikes and leather always appearing pristine",
+            "armor that sheds gore instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Breastplate)",
+        "cost": 730,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "breastplate that repels rust and grime magically",
+            "chest armor always mirror-polished",
+            "plate that sheds dirt and blood instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Halfplate)",
+        "cost": 1080,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "half plate that repels rust and grime magically",
+            "armor always gleaming as if parade-ready",
+            "plate sections that shed dirt instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Ring Mail)",
+        "cost": 360,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "ring mail that repels rust and grime magically",
+            "rings always polished bright on clean leather",
+            "armor that sheds dirt instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Chain Mail)",
+        "cost": 405,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "full chain that repels rust and grime magically",
+            "mail coat always gleaming throughout",
+            "links that shed dirt and blood instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Splint)",
+        "cost": 530,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "splint armor that repels rust and grime magically",
+            "metal strips always polished bright",
+            "armor that sheds dirt from every surface instantly"
+        ]
+    },
+    {
+        "name": "Armor of Gleaming (Plate)",
+        "cost": 1830,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. This armor never gets dirty. Standard armor that magically cleans itself and always appears polished and well-maintained. Cosmetic but useful for maintaining appearance.",
+        "descriptors": [
+            "full plate that repels rust and grime magically",
+            "armor always mirror-polished across every surface",
+            "plate that sheds battle grime instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Padded Armor)",
+        "cost": 335,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "quilted armor with quick-release buckles and straps",
+            "padding that practically falls away when commanded",
+            "cloth with enchanted fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Leather Armor)",
+        "cost": 340,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "leather with quick-release buckles and straps",
+            "cuirass that practically falls away when commanded",
+            "hide with enchanted fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Studded Leather Armor)",
+        "cost": 375,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "studded leather with quick-release mechanisms",
+            "armor that practically falls away when commanded",
+            "leather with enchanted straps that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Hide Armor)",
+        "cost": 340,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "hide with quick-release ties and buckles",
+            "pelts that practically fall away when commanded",
+            "fur with enchanted bindings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Chain Shirt)",
+        "cost": 380,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "chain shirt with enchanted quick-release closure",
+            "mail that practically falls away when commanded",
+            "links with magical fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Scale Mail)",
+        "cost": 380,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "scale mail with enchanted quick-release straps",
+            "armor that practically falls away when commanded",
+            "scales with magical fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Spiked Armor)",
+        "cost": 405,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather armor with metal spikes. Medium armor, AC 14 + Dex modifier (max 2), deals 1d4 piercing damage to grapplers. Disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "spiked armor with enchanted quick-release buckles",
+            "armor that practically falls away when commanded",
+            "spikes and leather with fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Breastplate)",
+        "cost": 730,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "breastplate with enchanted quick-release mechanism",
+            "chest armor that practically falls away when commanded",
+            "plate with magical fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Halfplate)",
+        "cost": 1080,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "half plate with enchanted quick-release at every joint",
+            "armor that practically falls away when commanded",
+            "plate sections with fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Ring Mail)",
+        "cost": 360,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "ring mail with enchanted quick-release closures",
+            "armor that practically falls away when commanded",
+            "rings and leather with fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Chain Mail)",
+        "cost": 405,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "full chain with enchanted quick-release mechanisms",
+            "mail coat that practically falls away when commanded",
+            "links with magical closures that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Splint)",
+        "cost": 530,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "splint armor with enchanted quick-release at joints",
+            "armor that practically falls away when commanded",
+            "strips with magical fastenings that open instantly"
+        ]
+    },
+    {
+        "name": "Cast-Off Armor (Plate)",
+        "cost": 1830,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. You can doff this armor as an action instead of taking several minutes. Standard armor with quick-release enchantment.",
+        "descriptors": [
+            "full plate with enchanted quick-release throughout",
+            "armor that practically falls away when commanded",
+            "plate with magical fastenings that open instantly everywhere"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Padded Armor)",
+        "cost": 335,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Quilted layers of cloth and batting. Light armor, AC 11 + Dex modifier, disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "quilted armor trailing thin wisps of harmless smoke",
+            "padding that seems perpetually smoldering without burning",
+            "cloth producing gentle smoke that never stains or damages"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Leather Armor)",
+        "cost": 340,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Chest protection made of tough, hardened leather. Light armor, AC 11 + Dex modifier. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "leather trailing thin wisps of harmless smoke",
+            "cuirass that seems perpetually smoldering without burning",
+            "hide producing gentle smoke that never damages material"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Studded Leather Armor)",
+        "cost": 375,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather reinforced with close-set rivets or spikes. Light armor, AC 12 + Dex modifier. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "studded leather trailing smoke from rivets and leather",
+            "armor that seems perpetually smoldering without burning",
+            "leather producing gentle smoke around each stud"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Hide Armor)",
+        "cost": 340,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Crude armor made from thick furs and pelts. Medium armor, AC 12 + Dex modifier (max 2). Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "hide trailing thin wisps of harmless smoke",
+            "fur that seems perpetually smoldering without singing",
+            "pelts producing gentle smoke that never damages hair"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Chain Shirt)",
+        "cost": 380,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "A shirt made of interlocking metal rings. Medium armor, AC 13 + Dex modifier (max 2). Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "chain shirt trailing smoke through the links",
+            "mail that seems perpetually smoldering without heating",
+            "rings producing gentle smoke without any warmth"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Scale Mail)",
+        "cost": 380,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Overlapping pieces of metal affixed to a backing. Medium armor, AC 14 + Dex modifier (max 2), disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "scale mail trailing smoke from between scales",
+            "armor that seems perpetually smoldering without heating",
+            "scales producing gentle smoke from every edge"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Spiked Armor)",
+        "cost": 405,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather armor with metal spikes. Medium armor, AC 14 + Dex modifier (max 2), deals 1d4 piercing damage to grapplers. Disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "spiked armor trailing smoke from spikes and leather",
+            "armor that seems perpetually smoldering without burning",
+            "spikes producing thin wisps of harmless smoke"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Breastplate)",
+        "cost": 730,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Fitted metal chest plate worn over flexible leather. Medium armor, AC 14 + Dex modifier (max 2). Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "breastplate trailing thin wisps of harmless smoke",
+            "chest armor that seems perpetually smoldering without heating",
+            "plate producing gentle smoke from all edges"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Halfplate)",
+        "cost": 1080,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Plate armor covering most of the body. Medium armor, AC 15 + Dex modifier (max 2), disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "half plate trailing smoke from every joint",
+            "armor that seems perpetually smoldering without heating",
+            "plate sections producing gentle smoke throughout"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Ring Mail)",
+        "cost": 360,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Leather armor with heavy rings sewn into it. Heavy armor, AC 14, disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "ring mail trailing smoke from rings and leather",
+            "armor that seems perpetually smoldering without burning",
+            "rings producing gentle wisps of harmless smoke"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Chain Mail)",
+        "cost": 405,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Interlocking metal rings covering the entire body. Heavy armor, AC 16, requires Str 13, disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "full chain trailing smoke throughout every link",
+            "mail that seems perpetually smoldering without heating",
+            "links producing gentle smoke across entire surface"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Splint)",
+        "cost": 530,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Narrow vertical metal strips riveted to a backing. Heavy armor, AC 17, requires Str 15, disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "splint armor trailing smoke between metal strips",
+            "armor that seems perpetually smoldering without heating",
+            "strips producing gentle smoke from every gap"
+        ]
+    },
+    {
+        "name": "Smoldering Armor (Plate)",
+        "cost": 1830,
+        "type": "Armor",
+        "rarity": "Common",
+        "description": "Interlocking metal plates covering the entire body. Heavy armor, AC 18, requires Str 15, disadvantage on Stealth. Wisps of smoke rise from this armor while it's worn. The smoke is harmless and doesn't obscure vision. Purely cosmetic visual effect.",
+        "descriptors": [
+            "full plate trailing smoke from every surface",
+            "armor that seems perpetually smoldering dramatically",
+            "plate producing impressive wisps of harmless smoke"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Longsword)",
+        "cost": 4017,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. A sword that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "blade etched with flame patterns that glow when ignited",
+            "sword that grows pleasantly warm when held",
+            "steel showing orange-red temper lines along edge",
+            "crossguard shaped like stylized tongues of fire",
+            "weapon that crackles softly when activated",
+            "blade wreathed in dancing flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Shortsword)",
+        "cost": 3927,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A short blade ideal for quick strikes. Finesse and light weapon dealing 1d6 piercing damage. A sword that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "blade etched with flame patterns that glow when ignited",
+            "sword that grows pleasantly warm when held",
+            "steel showing orange-red temper lines along edge",
+            "pommel shaped like stylized fire",
+            "weapon that crackles softly when activated",
+            "blade wreathed in dancing flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Greatsword)",
+        "cost": 4362,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. A sword that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "massive blade etched with flame patterns that glow when ignited",
+            "sword that grows pleasantly warm when gripped",
+            "steel showing orange-red temper lines throughout",
+            "crossguard shaped like spreading wildfire",
+            "weapon that roars softly when activated",
+            "blade wreathed in towering flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Rapier)",
+        "cost": 3892,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. A sword that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "slender blade etched with delicate flame patterns",
+            "sword that grows pleasantly warm when held",
+            "steel showing orange-red temper lines along length",
+            "swept hilt shaped like curling flames",
+            "weapon that hisses softly when activated",
+            "blade wreathed in elegant flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Scimitar)",
+        "cost": 3892,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A curved single-edged blade. Finesse and light weapon dealing 1d6 slashing damage. A sword that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "curved blade etched with flowing flame patterns",
+            "sword that grows pleasantly warm when wielded",
+            "steel showing orange-red temper curve",
+            "handle wrapped in heat-resistant material",
+            "weapon that crackles like desert fire when activated",
+            "blade wreathed in curving flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Club)",
+        "cost": 3867,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple wooden club. Light weapon dealing 1d4 bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "club carved with flame patterns that glow when ignited",
+            "wood that grows pleasantly warm when held",
+            "grain showing orange-red fire veins",
+            "head wrapped in fireproof bands",
+            "weapon that smokes softly when activated",
+            "club wreathed in roaring flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Dagger)",
+        "cost": 3869,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A small, easily concealed blade. Finesse, light, and thrown (20/60) weapon dealing 1d4 piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "small blade etched with tiny flame patterns",
+            "dagger that grows pleasantly warm in hand",
+            "steel showing orange-red edge",
+            "pommel carved like a flame tip",
+            "weapon that sparks softly when activated",
+            "blade wreathed in fierce flames despite small size"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Greatclub)",
+        "cost": 3850,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A heavy two-handed club. Two-handed weapon dealing 1d8 bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "massive club carved with flame symbols",
+            "wood that grows warm when gripped with both hands",
+            "grain showing orange-red patterns throughout",
+            "head reinforced with heat-resistant metal",
+            "weapon that smolders when activated",
+            "club wreathed in huge flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Handaxe)",
+        "cost": 3900,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A balanced throwing axe. Light and thrown (20/60) weapon dealing 1d6 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "axe head etched with flame motifs",
+            "weapon that grows warm when wielded",
+            "blade showing orange-red temper",
+            "handle wrapped in fireproof leather",
+            "axe that sizzles when activated",
+            "blade wreathed in trailing flames when thrown"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Javelin)",
+        "cost": 3900,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple throwing spear. Thrown (30/120) weapon dealing 1d6 piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "spear shaft carved with flame symbols",
+            "javelin that grows warm when gripped",
+            "head showing orange-red metal",
+            "shaft treated with fireproof oils",
+            "weapon that crackles when activated",
+            "spear wreathed in streaming flames when thrown"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Light Hammer)",
+        "cost": 3850,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A small throwing hammer. Light and thrown (20/60) weapon dealing 1d4 bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "hammer head etched with fire patterns",
+            "weapon that grows warm in hand",
+            "metal showing orange-red glow potential",
+            "handle wrapped in heat-resistant cord",
+            "hammer that smokes when activated",
+            "head wreathed in bright flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Mace)",
+        "cost": 3950,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A sturdy metal-headed weapon. Weapon dealing 1d6 bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "mace head carved with flame symbols between flanges",
+            "weapon that grows warm when wielded",
+            "metal showing orange-red potential",
+            "shaft wrapped in fireproof material",
+            "mace that crackles when activated",
+            "head wreathed in fierce flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Quarterstaff)",
+        "cost": 3900,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A versatile wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "staff carved with spiraling flame patterns",
+            "wood that grows warm when gripped",
+            "grain showing orange-red veins along length",
+            "ends wrapped in fireproof bands",
+            "staff that smolders when activated",
+            "both ends wreathed in flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Sickle)",
+        "cost": 3800,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A curved harvesting blade. Light weapon dealing 1d4 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "curved blade etched with flame harvest symbols",
+            "sickle that grows warm when held",
+            "steel showing orange-red curve",
+            "handle wrapped in heat-resistant leather",
+            "weapon that hisses when activated",
+            "blade wreathed in curving flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Spear)",
+        "cost": 3950,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple pole weapon. Versatile and thrown (20/60) weapon dealing 1d6 (1d8 two-handed) piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "spear shaft carved with flame motifs",
+            "weapon that grows warm when gripped",
+            "head showing orange-red metal",
+            "shaft treated with fireproof finish",
+            "spear that crackles when activated",
+            "head wreathed in streaming flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Battleaxe)",
+        "cost": 4000,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A heavy bladed axe. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "axe blade etched with roaring flame patterns",
+            "weapon that grows warm when wielded",
+            "steel showing orange-red temper lines",
+            "haft wrapped in fireproof leather",
+            "axe that roars when activated",
+            "blade wreathed in fierce flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Flail)",
+        "cost": 4050,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A spiked head attached by chain. Weapon dealing 1d8 bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "spiked head carved with flame symbols",
+            "weapon that grows warm when swung",
+            "metal showing orange-red potential",
+            "chain treated to resist heat",
+            "flail that crackles when activated",
+            "head wreathed in whirling flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Glaive)",
+        "cost": 4200,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A long polearm with a curved blade. Heavy, reach, two-handed weapon dealing 1d10 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "blade etched with sweeping flame patterns",
+            "polearm that grows warm when gripped",
+            "steel showing orange-red temper curve",
+            "pole wrapped in fireproof material at grip",
+            "glaive that roars when activated",
+            "blade wreathed in towering flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Greataxe)",
+        "cost": 4300,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A massive two-handed axe. Heavy, two-handed weapon dealing 1d12 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "massive blade etched with roaring flame imagery",
+            "axe that grows warm when wielded",
+            "steel showing orange-red throughout",
+            "haft wrapped in thick fireproof hide",
+            "greataxe that thunders when activated",
+            "blade wreathed in immense flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Halberd)",
+        "cost": 4200,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A polearm with axe blade and spike. Heavy, reach, two-handed weapon dealing 1d10 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "multi-blade head etched with flame patterns",
+            "polearm that grows warm when gripped",
+            "steel showing orange-red on all edges",
+            "pole treated with fireproof finish",
+            "halberd that roars when activated",
+            "all blades wreathed in flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Lance)",
+        "cost": 4100,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A long cavalry weapon. Reach weapon dealing 1d12 piercing damage (disadvantage within 5 feet, requires two hands when not mounted). A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "lance head etched with streaming flame patterns",
+            "weapon that grows warm when couched",
+            "point showing orange-red metal",
+            "shaft treated with fireproof oils",
+            "lance that roars when activated at charge",
+            "point wreathed in streaming flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Maul)",
+        "cost": 4300,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A heavy two-handed hammer. Heavy, two-handed weapon dealing 2d6 bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "massive hammer head carved with flame symbols",
+            "maul that grows warm when lifted",
+            "metal showing orange-red throughout",
+            "haft wrapped in thick fireproof leather",
+            "weapon that rumbles when activated",
+            "head wreathed in immense flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Morningstar)",
+        "cost": 4050,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A spiked metal mace. Weapon dealing 1d8 piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "spiked head carved with flame patterns between spikes",
+            "morningstar that grows warm when wielded",
+            "metal showing orange-red glow potential",
+            "shaft wrapped in fireproof material",
+            "weapon that crackles when activated",
+            "spikes wreathed in flames like a burning star"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Pike)",
+        "cost": 4200,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "An extremely long polearm. Heavy, reach, two-handed weapon dealing 1d10 piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "long pike head etched with flame motifs",
+            "polearm that grows warm when braced",
+            "point showing orange-red metal",
+            "shaft treated with fireproof finish throughout",
+            "pike that hisses when activated",
+            "point wreathed in bright flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Trident)",
+        "cost": 4000,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A three-pronged spear. Versatile and thrown (20/60) weapon dealing 1d6 (1d8 two-handed) piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "three prongs etched with flame patterns",
+            "trident that grows warm when wielded",
+            "metal showing orange-red on all tines",
+            "shaft wrapped in heat-resistant material",
+            "weapon that crackles when activated",
+            "all prongs wreathed in flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (War Pick)",
+        "cost": 4050,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A military pick with a pointed head. Weapon dealing 1d8 piercing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "pick head carved with flame symbols",
+            "weapon that grows warm when gripped",
+            "spike showing orange-red metal",
+            "shaft wrapped in fireproof leather",
+            "pick that hisses when activated",
+            "point wreathed in concentrated flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Warhammer)",
+        "cost": 4050,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A heavy-headed hammer. Versatile weapon dealing 1d8 (1d10 two-handed) bludgeoning damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "hammer head etched with flame patterns",
+            "weapon that grows warm when wielded",
+            "metal showing orange-red throughout",
+            "shaft wrapped in heat-resistant cord",
+            "warhammer that rumbles when activated",
+            "head wreathed in roaring flames on command"
+        ]
+    },
+    {
+        "name": "Flame Tongue (Whip)",
+        "cost": 3900,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A long flexible lash. Finesse and reach weapon dealing 1d4 slashing damage. A weapon that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
+        "descriptors": [
+            "braided leather treated with alchemical fire oils",
+            "whip that grows warm when coiled",
+            "tip showing orange-red potential",
+            "handle wrapped in fireproof material",
+            "weapon that crackles when snapped",
+            "entire length wreathed in flames when activated"
+        ]
+    },
+    {
+        "name": "Frost Brand (Longsword)",
+        "cost": 5231,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "blade etched with frost patterns that glisten with ice",
+            "blade that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along blade",
+            "blade carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "blade sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand (Shortsword)",
+        "cost": 5228,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "blade etched with frost patterns that glisten with ice",
+            "blade that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along blade",
+            "blade carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "blade sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand (Greatsword)",
+        "cost": 15405,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "massive blade etched with frost patterns that glisten with ice",
+            "massive blade that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along massive blade",
+            "massive blade carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "massive blade sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand (Rapier)",
+        "cost": 5219,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "slender blade etched with frost patterns that glisten with ice",
+            "slender blade that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along slender blade",
+            "slender blade carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "slender blade sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand (Scimitar)",
+        "cost": 5219,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "curved blade etched with frost patterns that glisten with ice",
+            "curved blade that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along curved blade",
+            "curved blade carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "curved blade sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand Club",
+        "cost": 5214.1,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "club etched with frost patterns that glisten with ice",
+            "club that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along club",
+            "club carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "club sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand Dagger",
+        "cost": 5216,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "small blade etched with frost patterns that glisten with ice",
+            "small blade that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along small blade",
+            "small blade carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "small blade sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand Greatclub",
+        "cost": 5214.2,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "massive club etched with frost patterns that glisten with ice",
+            "massive club that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along massive club",
+            "massive club carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "massive club sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand Handaxe",
+        "cost": 5219,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "axe head etched with frost patterns that glisten with ice",
+            "axe head that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along axe head",
+            "axe head carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "axe head sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand Light Hammer",
+        "cost": 5216,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "hammer head etched with frost patterns that glisten with ice",
+            "hammer head that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along hammer head",
+            "hammer head carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "hammer head sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Frost Brand Quarterstaff",
+        "cost": 5214.2,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A +3 weapon in freezing temperatures (otherwise +1) that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
+        "descriptors": [
+            "staff etched with frost patterns that glisten with ice",
+            "staff that feels perpetually cold to the touch",
+            "steel showing blue-white frost lines along staff",
+            "staff carved with snowflake and icicle imagery",
+            "weapon that produces faint mist when drawn",
+            "staff sheathed in crackling frost on command"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Club)",
+        "cost": 1633.1,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "club with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "club designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "club that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Dagger)",
+        "cost": 1635,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "blade with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "blade designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "blade that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Greatclub)",
+        "cost": 1633.2,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "massive club with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "massive club designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "massive club that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Handaxe)",
+        "cost": 1643,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "axe head with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "axe head designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "axe head that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Javelin)",
+        "cost": 1640.5,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "spear point with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "spear point designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "spear point that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Light hammer)",
+        "cost": 1640,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "hammer head with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "hammer head designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "hammer head that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Mace)",
+        "cost": 1643,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "mace head with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "mace head designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "mace head that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Quarterstaff)",
+        "cost": 1633.2,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "staff with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "staff designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "staff that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Sickle)",
+        "cost": 1640,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "curved blade with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "curved blade designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "curved blade that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Vicious Weapon (Spear)",
+        "cost": 1640,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "When you roll a 20 on an attack roll with this weapon, the target takes an extra 7 damage of the weapon's type. Especially devastating on critical hits.",
+        "descriptors": [
+            "spear point with cruel barbs and serrated edges",
+            "weapon that seems eager to cause suffering",
+            "steel showing marks of violent intent",
+            "spear point designed to inflict maximum trauma",
+            "weapon that produces ominous sound when swung",
+            "spear point that leaves devastating wounds on critical strikes"
+        ]
+    },
+    {
+        "name": "Weapon of Warning (Club)",
+        "cost": 8534.1,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "club that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "club carved with open eye symbols",
+            "club that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "club pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Weapon of Warning (Dagger)",
+        "cost": 8535,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "blade that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "blade carved with open eye symbols",
+            "blade that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "blade pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Weapon of Warning (Greatclub)",
+        "cost": 8534.2,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "greatclub that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "greatclub carved with open eye symbols",
+            "greatclub that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "greatclub pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Weapon of Warning (Handaxe)",
+        "cost": 8543,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "axe that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "axe carved with open eye symbols",
+            "axe that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "axe pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Weapon of Warning (Javelin)",
+        "cost": 8540.5,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "javelin that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "javelin carved with open eye symbols",
+            "javelin that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "javelin pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Light Hammer of Warning",
+        "cost": 18540.5,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "hammer that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "hammer carved with open eye symbols",
+            "hammer that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "hammer pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Mace of Warning",
+        "cost": 18540.5,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "mace that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "mace carved with open eye symbols",
+            "mace that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "mace pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Quarterstaff of Warning",
+        "cost": 18540.2,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "While this weapon is on your person, you and allies within 30 feet can't be surprised and the weapon awakens you if combat begins while you're sleeping. You all have advantage on Initiative rolls.",
+        "descriptors": [
+            "staff that vibrates softly when danger approaches",
+            "weapon thrumming with protective awareness",
+            "staff carved with open eye symbols",
+            "staff that seems alert even when sheathed",
+            "weapon that awakens bearer from deepest sleep",
+            "staff pulsing with sentinel magic"
+        ]
+    },
+    {
+        "name": "Moon-Touched Sword (Longsword)",
+        "cost": 675,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "blade that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "blade carved with lunar phases and stars",
+            "blade that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "blade blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Sword (Shortsword)",
+        "cost": 670,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "blade that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "blade carved with lunar phases and stars",
+            "blade that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "blade blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Sword (Greatsword)",
+        "cost": 1710,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "blade that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "blade carved with lunar phases and stars",
+            "blade that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "blade blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Sword (Rapier)",
+        "cost": 685,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "blade that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "blade carved with lunar phases and stars",
+            "blade that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "blade blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Sword (Scimitar)",
+        "cost": 685,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "blade that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "blade carved with lunar phases and stars",
+            "blade that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "blade blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Club",
+        "cost": 660.1,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "club that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "club carved with lunar phases and stars",
+            "club that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "club blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Dagger",
+        "cost": 662,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "blade that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "blade carved with lunar phases and stars",
+            "blade that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "blade blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Greatclub",
+        "cost": 660.2,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "greatclub that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "greatclub carved with lunar phases and stars",
+            "greatclub that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "greatclub blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Handaxe",
+        "cost": 662,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "axe that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "axe carved with lunar phases and stars",
+            "axe that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "axe blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Light Hammer",
+        "cost": 662,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "hammer that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "hammer carved with lunar phases and stars",
+            "hammer that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "hammer blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Mace",
+        "cost": 665,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "mace that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "mace carved with lunar phases and stars",
+            "mace that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "mace blessed by moon's illuminating power"
+        ]
+    },
+    {
+        "name": "Moon-Touched Quarterstaff",
+        "cost": 660.2,
+        "type": "Weapon",
+        "rarity": "Common",
+        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal weapon.",
+        "descriptors": [
+            "staff that glows softly with pale moonlight in darkness",
+            "weapon showing silver-white sheen",
+            "staff carved with lunar phases and stars",
+            "staff that feels cool like moonlit stone",
+            "weapon producing gentle radiance in shadow",
+            "staff blessed by moon's illuminating power"
+        ]
     }
 ]
