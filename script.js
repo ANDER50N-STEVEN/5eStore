@@ -397,8 +397,6 @@ window.addEventListener('DOMContentLoaded', async function() {
 				itemDatabase = [...includedOfficialItems];
 			}
 			
-			// Official Items tab always shows only officialItemDatabase - no refresh needed
-			// Homebrew tab always shows only homebrewItemDatabase - no refresh needed
 		}
 		
 				// Tab switching
