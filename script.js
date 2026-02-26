@@ -165,6 +165,14 @@ const shopkeeperData = {
     }
 };
 
+// Get random descriptor for an item
+function getRandomDescriptor(item) {
+    if (!item.descriptors || item.descriptors.length === 0) {
+        return null;
+    }
+    return item.descriptors[Math.floor(Math.random() * item.descriptors.length)];
+}
+
 function generateShopkeeper(storeType, settlementSize, wealthLevel = 'common') {
     // Pick random race
     const race = shopkeeperData.races[Math.floor(Math.random() * shopkeeperData.races.length)];
@@ -890,33 +898,37 @@ window.addEventListener('DOMContentLoaded', async function() {
             category.classList.toggle('collapsed');
         }
 		
-		function generateItemHTML(item, maxModifier) {
-	const quantity = getItemQuantity(item);
-	const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
-	const formattedPrice = formatPrice(price);
-	const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-	const luckyFindStar = item.isLuckyFind ? ' ⭐' : '';
-	const quantityDisplay = quantity > 1 ? ` (×${quantity})` : '';
-	
-	// Check if item is homebrew
-	const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
-	const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
-	
-	return `
-		<div class="item">
-			<div class="item-header">
-				<div>
-					<span class="item-name">${item.name}${quantityDisplay}${luckyFindStar}${homebrewBadge}</span>
-					<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
-				</div>
-				<div>
-					<span class="item-price">${formattedPrice}</span>
-					<span class="price-modifier-display">(${modifier}%)</span>
-				</div>
-			</div>
-			<div class="item-description">${item.description || 'No description available.'}</div>
-		</div>
-	`;
+function generateItemHTML(item, maxModifier) {
+    const quantity = getItemQuantity(item);
+    const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
+    const formattedPrice = formatPrice(price);
+    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+    const luckyFindStar = item.isLuckyFind ? ' ⭐' : '';
+    const quantityDisplay = quantity > 1 ? ` (×${quantity})` : '';
+    
+    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+    
+    // ADD THESE LINES:
+    const descriptor = getRandomDescriptor(item);
+    const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
+    
+    return `
+        <div class="item">
+            <div class="item-header">
+                <div>
+                    <span class="item-name">${item.name}${quantityDisplay}${luckyFindStar}${homebrewBadge}</span>
+                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
+                </div>
+                <div>
+                    <span class="item-price">${formattedPrice}</span>
+                    <span class="price-modifier-display">(${modifier}%)</span>
+                </div>
+            </div>
+            <div class="item-description">${item.description || 'No description available.'}</div>
+            ${descriptorHTML}  <!-- ADD THIS LINE -->
+        </div>
+    `;
 }
 
        function generateShop() {
@@ -1293,30 +1305,30 @@ function saveCurrentStore() {
 	const inventory = [];
 	const itemElements2 = document.querySelectorAll('#shop-content .item');
 	
-	itemElements2.forEach(itemEl => {
-		const nameEl = itemEl.querySelector('.item-name');
-		const priceEl = itemEl.querySelector('.item-price');
-		const rarityEl = itemEl.querySelector('.item-rarity');
-		const descEl = itemEl.querySelector('.item-description');
-		
-		if (nameEl && priceEl) {
-			// Extract item name (without quantity or stars)
-			let itemName = nameEl.textContent.trim();
-			itemName = itemName.replace(/\s*\(×\d+\)\s*/g, ''); // Remove quantity
-			itemName = itemName.replace(/\s*⭐\s*/g, ''); // Remove lucky find star
-			itemName = itemName.replace(/\s*🔮 Homebrew\s*/g, ''); // Remove homebrew badge
-			
-			// Find the original item from database
-			const originalItem = itemDatabase.find(item => item.name === itemName);
-			
-			if (originalItem) {
-				inventory.push({
-					...originalItem,
-					displayPrice: priceEl.textContent.trim()
-				});
-			}
-		}
-	});
+itemElements2.forEach(itemEl => {
+    const nameEl = itemEl.querySelector('.item-name');
+    const priceEl = itemEl.querySelector('.item-price');
+    const rarityEl = itemEl.querySelector('.item-rarity');
+    const descEl = itemEl.querySelector('.item-description');
+    const descriptorEl = itemEl.querySelector('.item-descriptor'); // ADD THIS LINE
+    
+    if (nameEl && priceEl) {
+        let itemName = nameEl.textContent.trim();
+        itemName = itemName.replace(/\s*\(×\d+\)\s*/g, '');
+        itemName = itemName.replace(/\s*⭐\s*/g, '');
+        itemName = itemName.replace(/\s*🔮 Homebrew\s*/g, '');
+        
+        const originalItem = itemDatabase.find(item => item.name === itemName);
+        
+        if (originalItem) {
+            inventory.push({
+                ...originalItem,
+                displayPrice: priceEl.textContent.trim(),
+                savedDescriptor: descriptorEl ? descriptorEl.textContent.trim() : null  // ADD THIS LINE
+            });
+        }
+    }
+});
 	
 	console.log('Inventory collected:', inventory.length, 'items');
 	
@@ -1497,26 +1509,29 @@ let html = `
 					<div class="subcategory-items">
 			`;
 			
+			// For Mundane Items:
 			mundaneItems.sort((a, b) => a.name.localeCompare(b.name));
 			for (const item of mundaneItems) {
-				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-				const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
-				const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
-				
-				html += `
-					<div class="item">
-						<div class="item-header">
-							<div>
-								<span class="item-name">${item.name}${homebrewBadge}</span>
-								<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
-							</div>
-							<div>
-								<span class="item-price">${item.displayPrice}</span>
-							</div>
-						</div>
-						<div class="item-description">${item.description || 'No description available.'}</div>
-					</div>
-				`;
+			    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+			    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+			    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+			    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';  // ADD THIS
+			    
+			    html += `
+			        <div class="item">
+			            <div class="item-header">
+			                <div>
+			                    <span class="item-name">${item.name}${homebrewBadge}</span>
+			                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
+			                </div>
+			                <div>
+			                    <span class="item-price">${item.displayPrice}</span>
+			                </div>
+			            </div>
+			            <div class="item-description">${item.description || 'No description available.'}</div>
+			            ${descriptorHTML}  <!-- ADD THIS LINE -->
+			        </div>
+			    `;
 			}
 			
 			html += `
@@ -1537,26 +1552,29 @@ let html = `
 					<div class="subcategory-items">
 			`;
 			
+			// For Magic Items (same pattern):
 			magicItems.sort((a, b) => a.name.localeCompare(b.name));
 			for (const item of magicItems) {
-				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-				const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
-				const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
-				
-				html += `
-					<div class="item">
-						<div class="item-header">
-							<div>
-								<span class="item-name">${item.name}${homebrewBadge}</span>
-								<span class="item-rarity ${rarityClass}">(${item.rarity})</span>
-							</div>
-							<div>
-								<span class="item-price">${item.displayPrice}</span>
-							</div>
-						</div>
-						<div class="item-description">${item.description || 'No description available.'}</div>
-					</div>
-				`;
+			    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+			    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+			    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+			    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';  // ADD THIS
+			    
+			    html += `
+			        <div class="item">
+			            <div class="item-header">
+			                <div>
+			                    <span class="item-name">${item.name}${homebrewBadge}</span>
+			                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
+			                </div>
+			                <div>
+			                    <span class="item-price">${item.displayPrice}</span>
+			                </div>
+			            </div>
+			            <div class="item-description">${item.description || 'No description available.'}</div>
+			            ${descriptorHTML}  <!-- ADD THIS LINE -->
+			        </div>
+			    `;
 			}
 			
 			html += `
@@ -2171,24 +2189,29 @@ if (loot.magicItems && loot.magicItems.length > 0) {
         magicCounts[key].count++;
     });
     
-    Object.entries(magicCounts).forEach(([name, data]) => {
-        const { count, item } = data;
-        const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-        const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
-        const bossTag = item.isBossLoot ? ' ⭐' : '';
-        
-        html += `
-            <div class="loot-item">
-                <div class="loot-item-header">
-                    <div class="loot-item-name">${displayName}${bossTag}</div>
-                    <div class="loot-item-value">
-                        <span class="${rarityClass}">${item.rarity}</span>
-                    </div>
-                </div>
-                <div class="loot-item-description">${item.description || ''}</div>
-            </div>
-        `;
-    });
+		Object.entries(magicCounts).forEach(([name, data]) => {
+		    const { count, item } = data;
+		    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+		    const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
+		    const bossTag = item.isBossLoot ? ' ⭐' : '';
+		    
+		    // ADD THESE LINES:
+		    const descriptor = getRandomDescriptor(item);
+		    const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
+		    
+		    html += `
+		        <div class="loot-item">
+		            <div class="loot-item-header">
+		                <div class="loot-item-name">${displayName}${bossTag}</div>
+		                <div class="loot-item-value">
+		                    <span class="${rarityClass}">${item.rarity}</span>
+		                </div>
+		            </div>
+		            <div class="loot-item-description">${item.description || ''}</div>
+		            ${descriptorHTML}  <!-- ADD THIS LINE -->
+		        </div>
+		    `;
+		});
     
     html += `</div></div>`;
 }
@@ -2215,20 +2238,25 @@ if (loot.items && loot.items.length > 0) {
         itemCounts[key].count++;
     });
     
-    Object.entries(itemCounts).forEach(([name, data]) => {
-        const { count, item } = data;
-        const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
-        
-        html += `
-            <div class="loot-item">
-                <div class="loot-item-header">
-                    <div class="loot-item-name">${displayName}</div>
-                    <div class="loot-item-value">${item.cost} gp</div>
-                </div>
-                <div class="loot-item-description">${item.description || ''}</div>
+Object.entries(itemCounts).forEach(([name, data]) => {
+    const { count, item } = data;
+    const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
+    
+    // ADD THESE LINES:
+    const descriptor = getRandomDescriptor(item);
+    const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
+    
+    html += `
+        <div class="loot-item">
+            <div class="loot-item-header">
+                <div class="loot-item-name">${displayName}</div>
+                <div class="loot-item-value">${item.cost} gp</div>
             </div>
-        `;
-    });
+            <div class="loot-item-description">${item.description || ''}</div>
+            ${descriptorHTML}  <!-- ADD THIS LINE -->
+        </div>
+    `;
+});
     
     html += `</div></div>`;
 }
