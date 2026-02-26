@@ -9458,5 +9458,1265 @@
             "blade sharp enough to cut silk dropped on it",
             "weapon that hums at different pitches when spun"
         ]
+    },
+    {
+        "name": "Club +1",
+        "cost": 2160.1,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "ironwood club that hums with deep resonance when swung",
+            "gnarled oak branch still bearing patches of silvery bark",
+            "dense ebony wood surprisingly warm to the touch",
+            "club wrapped in worn leather that molds perfectly to the grip",
+            "blackthorn wood with natural thorns filed smooth but visible",
+            "hickory club with grain so tight it appears almost metallic"
+        ]
+    },
+    {
+        "name": "Club +2",
+        "cost": 11637.1,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "petrified wood club as heavy as iron and ringing like a bell",
+            "ancient yew carved with spiraling patterns that catch the light",
+            "club of bone-white ash that vibrates subtly in the hand",
+            "bloodwood club with deep crimson streaks throughout",
+            "lignum vitae so dense it sinks in water, polished to glass smoothness",
+            "root-wood club twisted into natural knots and whorls"
+        ]
+    },
+    {
+        "name": "Club +3",
+        "cost": 34900.1,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A simple wooden club, often fashioned from a sturdy branch. Deals 1d4 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "heartwood from a thousand-year oak that pulses with ancient life",
+            "club carved from a lightning-struck tree, faint scorch marks still visible",
+            "ironbark wood darker than midnight, impossibly heavy yet perfectly balanced",
+            "club of crystallized amber with insects forever frozen within",
+            "fossilized wood harder than steel with rainbow mineral veins",
+            "living wood that still smells of sap and forest rain"
+        ]
+    },
+    {
+        "name": "Dagger +1",
+        "cost": 2162,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from meteoric iron with tiny star-metal flecks",
+            "dagger with bone handle that feels alive in the hand",
+            "steel that whispers softly when drawn from its sheath",
+            "blade with a faint blue sheen like moonlight on water",
+            "handle wrapped in ray-skin that never slips even when wet",
+            "Damascus steel showing oil-on-water patterns in the light"
+        ]
+    },
+    {
+        "name": "Dagger +2",
+        "cost": 11639,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of folded steel showing hundreds of delicate layers",
+            "handle carved from narwhal ivory, smooth as silk",
+            "steel that rings like crystal when tapped",
+            "blade with a mirror finish that reflects no imperfections",
+            "grip wrapped in braided dragon-scale leather",
+            "blade etched with flowing water patterns that seem to move"
+        ]
+    },
+    {
+        "name": "Dagger +3",
+        "cost": 34902,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A short blade used for close combat or throwing. Light and finesse weapon dealing 1d4 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of star-metal that never needs sharpening, cold as ice",
+            "handle of petrified dragonbone etched with ancient runes",
+            "steel so pure it appears almost translucent at the edge",
+            "blade that hums at a pitch only the wielder can hear",
+            "grip made from basilisk hide that shimmers with scales",
+            "blade forged in volcanic heat showing phoenix-feather patterns"
+        ]
+    },
+    {
+        "name": "Greatclub +1",
+        "cost": 2160.2,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "massive ironwood trunk that creaks ominously when lifted",
+            "club carved from a ship's mast, still smelling of salt and tar",
+            "fossilized tree limb heavy enough to crack stone",
+            "mahogany club banded with iron rings that clang together",
+            "club still bearing natural knots that serve as brutal striking points",
+            "ash wood treated with oils until hard as stone"
+        ]
+    },
+    {
+        "name": "Greatclub +2",
+        "cost": 11637.2,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "ancient bog oak black as coal and dense as iron",
+            "club carved with bear-claw marks that feel rough under fingers",
+            "heartwood from a giant's walking stick, still impossibly straight",
+            "club studded with steel rivets that jingle slightly when swung",
+            "petrified bone of some massive beast, smooth from centuries",
+            "club wrapped in mammoth hide still bearing coarse hair"
+        ]
+    },
+    {
+        "name": "Greatclub +3",
+        "cost": 34900.2,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A larger, heavier version of a club. Two-handed weapon dealing 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "club carved from world-tree root, thrumming with primal energy",
+            "obsidian-infused wood that glitters like a starry night",
+            "club of compressed amber containing a perfectly preserved wasp nest",
+            "petrified dragon femur that radiates ancient heat",
+            "club from the core of a meteor-struck oak, streaked with metal",
+            "living wood that grows new bark to repair any damage"
+        ]
+    },
+    {
+        "name": "Handaxe +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "axe with blade of blue-tinged steel that stays perpetually cool",
+            "handle of deer antler with natural ridges for perfect grip",
+            "head forged from iron salvaged from a fallen star",
+            "blade that sings a low note when cutting through air",
+            "handle wrapped in wolf-hide leather still bearing fur",
+            "steel showing wave patterns like wind across wheat fields"
+        ]
+    },
+    {
+        "name": "Handaxe +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "axe blade of folded steel showing tree-ring patterns",
+            "handle of compressed coral that never rots or splinters",
+            "head etched with frost patterns that seem to shift",
+            "blade with a mirror polish showing no scratches despite age",
+            "handle carved from oak struck by lightning, charred but solid",
+            "steel that sparkles with embedded diamond dust"
+        ]
+    },
+    {
+        "name": "Handaxe +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from a dragon's tooth, warm to touch and ivory-white",
+            "handle of crystallized bone that rings like a bell",
+            "head of meteoric iron with natural platinum veins",
+            "blade so sharp it leaves a trail of displaced air when swung",
+            "handle wrapped in phoenix down that never burns",
+            "steel folded ten thousand times, showing impossible detail"
+        ]
+    },
+    {
+        "name": "Longsword +1",
+        "cost": 2175,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade with a subtle blue sheen like deep water",
+            "crossguard shaped like spread wings with delicate feather details",
+            "steel that whispers when cutting through air",
+            "pommel weighted with lead wrapped in silk that molds to the hand",
+            "fuller groove that catches and holds the light",
+            "grip wrapped in sea-serpent leather, scaled and textured"
+        ]
+    },
+    {
+        "name": "Longsword +2",
+        "cost": 11652,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade showing oil-rainbow patterns in folded steel",
+            "crossguard of twisted steel and silver intertwined",
+            "steel that hums at different pitches as it moves",
+            "pommel containing a perfect sphere of polished obsidian",
+            "blade with cloud patterns etched so fine they seem to drift",
+            "grip wrapped in silk over shark skin that grips without slipping"
+        ]
+    },
+    {
+        "name": "Longsword +3",
+        "cost": 34915,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of star-metal showing constellation patterns along its length",
+            "crossguard carved from a single piece of ancient ivory",
+            "steel so pure it appears silver-white in moonlight",
+            "pommel set with a gem that pulses in rhythm with the bearer's heart",
+            "blade inscribed with text so small it can only be read in perfect light",
+            "grip wrapped in thread spun from spider silk, impossibly strong"
+        ]
+    },
+    {
+        "name": "Greatsword +1",
+        "cost": 2210,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "massive blade that resonates like a gong when struck",
+            "fuller running the blade's length deep enough to hold water",
+            "crossguard wide enough to rest on forearms during guard",
+            "pommel of lead-filled bronze heavy as an apple",
+            "blade showing hammer marks from the forge still visible",
+            "grip long enough for four hands wrapped in thick leather"
+        ]
+    },
+    {
+        "name": "Greatsword +2",
+        "cost": 11687,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade rippling with Damascus patterns like wood grain",
+            "fuller inlaid with silver wire forming intricate knotwork",
+            "crossguard carved with scenes of ancient battles",
+            "pommel of crystal that refracts light into rainbows",
+            "blade that produces a low musical tone when swung properly",
+            "grip wrapped in drake leather showing faint scale patterns"
+        ]
+    },
+    {
+        "name": "Greatsword +3",
+        "cost": 34950,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from a falling star, still cold as ice",
+            "fuller channels glowing with faint light like distant lightning",
+            "crossguard made from tusks of some extinct beast",
+            "pommel containing liquid mercury that shifts with movement",
+            "blade inscribed with an epic poem in microscopic script",
+            "grip wrapped in fabric woven from hair of a storm giant"
+        ]
+    },
+    {
+        "name": "Rapier +1",
+        "cost": 2185,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "needle-thin blade that flexes like a diving board",
+            "swept hilt decorated with vine patterns that spiral gracefully",
+            "steel so polished it acts as a mirror",
+            "grip wrapped in silver wire over crimson leather",
+            "blade that whistles shrilly when thrust",
+            "pommel shaped like a rose in bloom, petals spread"
+        ]
+    },
+    {
+        "name": "Rapier +2",
+        "cost": 11662,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade so thin it seems to vanish when viewed edge-on",
+            "swept hilt pierced with delicate holes forming lace patterns",
+            "steel showing blue temper lines along its length",
+            "grip of braided gold and silver wire",
+            "blade that hums at perfect concert pitch when moved",
+            "pommel set with a sapphire cut with seventy facets"
+        ]
+    },
+    {
+        "name": "Rapier +3",
+        "cost": 34925,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of crystallized moonlight, translucent at the edges",
+            "swept hilt carved from a single narwhal tusk",
+            "steel folded so many times it shows rainbows in bright light",
+            "grip wrapped in platinum wire over sea-silk",
+            "blade that produces no sound at all when thrust",
+            "pommel containing a tiny perfect pearl that glows faintly"
+        ]
+    },
+    {
+        "name": "Longbow +1",
+        "cost": 2210,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "yew limbs with sapwood and heartwood visible in layers",
+            "bow that creaks pleasantly when drawn like an old tree",
+            "string made from silk that never stretches or frays",
+            "limbs showing natural grain flowing unbroken end to end",
+            "grip wrapped in soft doeskin worn smooth from use",
+            "bow with tips carved like swan heads looking away from each other"
+        ]
+    },
+    {
+        "name": "Longbow +2",
+        "cost": 11687,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "bow of laminated horn and wood that flexes impossibly far",
+            "limbs inlaid with mother-of-pearl showing hunting scenes",
+            "string that thrums with perfect resonance when plucked",
+            "bow made from a single piece of ancient yew, no joints",
+            "grip carved with geometric patterns that fit the hand perfectly",
+            "limbs tipped with silver caps engraved with flying birds"
+        ]
+    },
+    {
+        "name": "Longbow +3",
+        "cost": 34950,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "bow carved from a unicorn's horn, pearlescent and spiraling",
+            "limbs made from dragon wing-bone, light yet unbreakable",
+            "string woven from the hair of a celestial being",
+            "bow showing wood grain that flows like liquid gold",
+            "grip wrapped in phoenix feather down that never wears",
+            "limbs that sing different notes depending on draw strength"
+        ]
+    },
+    {
+        "name": "Mace +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "flanged head of dark iron that rings like a bell when struck",
+            "shaft of ash wood that never splinters",
+            "head showing six ridges that focus the impact",
+            "grip wrapped in cord that absorbs sweat",
+            "mace that produces a deep bass note when swung",
+            "head oxidized to a deep blue-black patina"
+        ]
+    },
+    {
+        "name": "Mace +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of bronze inlaid with copper showing sunburst patterns",
+            "shaft of ironwood that resonates when the head strikes",
+            "flanges sharp enough to cut yet blunt enough to crush",
+            "grip carved with prayer texts in a dozen languages",
+            "mace that hums at a pitch that makes teeth ache",
+            "head carved with geometric patterns that mesmerize"
+        ]
+    },
+    {
+        "name": "Mace +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of meteoric iron with natural star-metal patterns",
+            "shaft carved from a single piece of petrified lightning-struck oak",
+            "flanges that seem to warp the air around them",
+            "grip wrapped in cloth woven from golden thread",
+            "mace that produces a perfect note when striking anything",
+            "head engraved with scenes visible only when in motion"
+        ]
+    },
+    {
+        "name": "Quarterstaff +1",
+        "cost": 2160.2,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "staff of bamboo that bends but never breaks",
+            "wood so smooth it feels like polished stone",
+            "staff that crackles faintly when spun quickly",
+            "ends capped with brass that's been worn to gold color",
+            "staff with natural knots providing perfect hand positions",
+            "wood that smells faintly of sandalwood even after years"
+        ]
+    },
+    {
+        "name": "Quarterstaff +2",
+        "cost": 11637.2,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "staff of black walnut with silver grain running its length",
+            "wood that produces different tones when struck at different points",
+            "staff carved with spiraling grooves that guide the hands",
+            "ends shod with steel showing not a single scratch",
+            "staff that vibrates pleasantly when held",
+            "wood inlaid with mother-of-pearl forming constellation maps"
+        ]
+    },
+    {
+        "name": "Quarterstaff +3",
+        "cost": 34900.2,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "staff carved from a branch of the world tree itself",
+            "wood that seems to bend time, leaving afterimages when moved",
+            "staff whose surface ripples like water when touched",
+            "ends capped with crystallized amber containing ancient insects",
+            "staff that sings in harmony with the wielder's breathing",
+            "wood that shifts color based on the surrounding light"
+        ]
+    },
+    {
+        "name": "Sickle +1",
+        "cost": 2161,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of blue-tinged steel that never rusts",
+            "handle of ash wood still smelling of wheat fields",
+            "curve perfect for both harvesting and combat",
+            "blade that whistles softly when swung",
+            "handle wrapped in braided straw, surprisingly comfortable",
+            "steel showing ripples like windblown grain"
+        ]
+    },
+    {
+        "name": "Sickle +2",
+        "cost": 11638,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged during harvest moon, showing lunar patterns",
+            "handle of rowan wood carved with fertility symbols",
+            "edge sharp enough to cut morning mist",
+            "blade that rings like a bell when striking",
+            "handle bound with grapevine that never withers",
+            "steel etched with scenes of abundant harvests"
+        ]
+    },
+    {
+        "name": "Sickle +3",
+        "cost": 34901,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from a meteor that fell during harvest",
+            "handle grown from a sacred tree, still living",
+            "edge that can sever the very air it passes through",
+            "blade that produces no sound despite its sharpness",
+            "handle wrapped in golden wheat that never decays",
+            "steel showing patterns of the changing seasons"
+        ]
+    },
+    {
+        "name": "Spear +1",
+        "cost": 2161,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "ash shaft so straight it could have been drawn with a ruler",
+            "leaf-shaped blade that catches light like water",
+            "spear that whistles when thrown through air",
+            "shaft wrapped at intervals with leather for better grip",
+            "blade showing blue temper lines from proper heat treatment",
+            "spear perfectly balanced at the midpoint for throwing"
+        ]
+    },
+    {
+        "name": "Spear +2",
+        "cost": 11638,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft of ironwood that never warps or bends",
+            "blade with channels that make wounds bleed freely",
+            "spear that produces a shriek when thrust forcefully",
+            "shaft carved with spiral grooves that improve flight",
+            "blade forged from layered steel showing wave patterns",
+            "crossguard beneath blade carved like spread wings"
+        ]
+    },
+    {
+        "name": "Spear +3",
+        "cost": 34901,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft carved from a single dragon bone, hollow but unbreakable",
+            "blade of star-metal that never loses its edge",
+            "spear that returns to the hand like a loyal hound",
+            "shaft inscribed with the names of all it has slain",
+            "blade so sharp it parts flesh before touching it",
+            "spear that flies so true it seems to guide itself"
+        ]
+    },
+    {
+        "name": "Flail +1",
+        "cost": 2170,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "chain that clinks musically with each swing",
+            "spiked ball of dark iron pitted from use",
+            "handle wrapped in shark-skin that never slips",
+            "chain length perfect for one-handed control",
+            "spikes showing wear marks at the tips",
+            "flail that produces a low whooshing sound when spun"
+        ]
+    },
+    {
+        "name": "Flail +2",
+        "cost": 11647,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "chain of interlocking steel rosettes that flow like water",
+            "spiked ball with each spike individually sharpened",
+            "handle of horn with natural ridges for perfect grip",
+            "chain that never tangles no matter how wildly swung",
+            "spikes carved with barbs that catch and tear",
+            "flail that screams through the air when spun properly"
+        ]
+    },
+    {
+        "name": "Flail +3",
+        "cost": 34910,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "chain forged from links of silver and cold iron alternating",
+            "spiked ball carved from a single piece of meteoric iron",
+            "handle wrapped in thread spun from spider silk",
+            "chain that produces sparks when the ball strikes stone",
+            "spikes that seem to grow longer when swung",
+            "flail that roars like distant thunder in motion"
+        ]
+    },
+    {
+        "name": "Glaive +1",
+        "cost": 2180,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "curved blade that gleams like polished silver",
+            "pole of bamboo reinforced with steel bands",
+            "blade with a single groove running its length for blood",
+            "pole wrapped where the hands naturally fall",
+            "blade showing hammer marks from careful forging",
+            "weapon that produces a distinctive whoosh when swung"
+        ]
+    },
+    {
+        "name": "Glaive +2",
+        "cost": 11657,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade showing waves of pattern-welded steel",
+            "pole of ash that bends slightly without breaking",
+            "blade etched with flowing script in an ancient tongue",
+            "pole inlaid with wire forming geometric patterns",
+            "blade sharp enough to cut silk dropped on it",
+            "weapon that hums at different pitches when spun"
+        ]
+    },
+    {
+        "name": "Glaive +3",
+        "cost": 34920,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of moonsilver that glows faintly in darkness",
+            "pole carved from the mast of a legendary ghost ship",
+            "edge so keen it leaves a shimmer in the air",
+            "pole wrapped in silk that changes color with temperature",
+            "blade etched with a poem that can only be read when spinning",
+            "weapon that sings a war-chant in ancient tongues when swung"
+        ]
+    },
+    {
+        "name": "Greataxe +1",
+        "cost": 2190,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A massive double-bladed axe. Heavy two-handed weapon dealing 1d12 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "twin blades that ring like bells when they meet",
+            "haft of ironwood wrapped in bear hide",
+            "blades showing the ripple patterns of folded steel",
+            "axe that produces a deep whooshing roar when swung",
+            "weapon heavy enough to embed itself in stone",
+            "blades with notches that whistle eerily in motion"
+        ]
+    },
+    {
+        "name": "Greataxe +2",
+        "cost": 11667,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A massive double-bladed axe. Heavy two-handed weapon dealing 1d12 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "twin blades of blue steel that never tarnish",
+            "haft of petrified mammoth bone wrapped in mammoth hide",
+            "blades etched with scenes of ancient battles",
+            "axe that howls like a winter storm when swung",
+            "weapon balanced despite its impossible weight",
+            "blades showing damascus patterns like turbulent water"
+        ]
+    },
+    {
+        "name": "Greataxe +3",
+        "cost": 34930,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A massive double-bladed axe. Heavy two-handed weapon dealing 1d12 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "twin blades forged from a fallen meteor's core",
+            "haft of dragon bone that thrums with contained power",
+            "blades that glow red when they taste blood",
+            "axe that screams with the voices of defeated foes",
+            "weapon that seems lighter than air despite crushing weight",
+            "blades inscribed with the true names of giants"
+        ]
+    },
+    {
+        "name": "Halberd +1",
+        "cost": 2180,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A combination of axe and spear mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "multi-purpose head showing three different cutting surfaces",
+            "pole of ash with iron bands at intervals",
+            "weapon that clinks softly with each movement",
+            "head showing individual forge marks on each component",
+            "pole wrapped where hands naturally fall during use",
+            "weapon balanced perfectly at the quarter-point"
+        ]
+    },
+    {
+        "name": "Halberd +2",
+        "cost": 11657,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A combination of axe and spear mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head components fitted so precisely they seem one piece",
+            "pole of ironwood inlaid with silver wire patterns",
+            "weapon that produces three distinct tones when striking",
+            "each edge showing different pattern-welding techniques",
+            "pole wrapped in drake leather showing scale patterns",
+            "weapon whose parts move in perfect harmony"
+        ]
+    },
+    {
+        "name": "Halberd +3",
+        "cost": 34920,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A combination of axe and spear mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head forged from star-metal showing constellation patterns",
+            "pole carved from world-tree wood, still growing",
+            "weapon that resonates with the wielder's heartbeat",
+            "each edge inscribed with different killing techniques",
+            "pole wrapped in cloth woven from phoenix feathers",
+            "weapon whose combined parts exceed the sum"
+        ]
+    },
+    {
+        "name": "Lance +1",
+        "cost": 2170,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A long spear designed for mounted combat. Reach weapon dealing 1d12 piercing damage, disadvantage when used against targets within 5 feet. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft that extends a full rider's height beyond the vamplate",
+            "point designed to punch through plate armor",
+            "lance painted in tournament colors, chipped from use",
+            "shaft of ash that flexes slightly without breaking",
+            "vamplate showing dents from deflected strikes",
+            "weapon that produces a distinctive whistle when couched"
+        ]
+    },
+    {
+        "name": "Lance +2",
+        "cost": 11647,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A long spear designed for mounted combat. Reach weapon dealing 1d12 piercing damage, disadvantage when used against targets within 5 feet. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft reinforced with steel core, perfectly straight",
+            "point of folded steel showing ripple patterns",
+            "lance with pennant that never tears or fades",
+            "shaft of ironwood wrapped in leather at grip",
+            "vamplate engraved with charging knight imagery",
+            "weapon that sings when riding at full gallop"
+        ]
+    },
+    {
+        "name": "Lance +3",
+        "cost": 34910,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A long spear designed for mounted combat. Reach weapon dealing 1d12 piercing damage, disadvantage when used against targets within 5 feet. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft of dragon bone that never splinters or breaks",
+            "point forged from a unicorn's horn, spiraling",
+            "lance with pennant woven from pegasus mane",
+            "shaft that feels alive, responding to mounted movement",
+            "vamplate of mithral carved with heroic deeds",
+            "weapon that roars like thunder when striking"
+        ]
+    },
+    {
+        "name": "Maul +1",
+        "cost": 2170,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A massive two-handed hammer. Heavy weapon dealing 2d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of solid iron that rings like an anvil",
+            "haft thick as a forearm wrapped in leather",
+            "weapon showing cracks in stone it's struck",
+            "head leaving behind iron scent after each strike",
+            "maul that produces deep bass note when swung",
+            "weapon heavy enough to require both hands to lift"
+        ]
+    },
+    {
+        "name": "Maul +2",
+        "cost": 11647,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A massive two-handed hammer. Heavy weapon dealing 2d6 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of dense steel inlaid with copper runes",
+            "haft of ancient oak reinforced with iron bands",
+            "weapon whose strikes echo long after impact",
+            "head carved with geometric patterns that mesmerize",
+            "maul that hums at a frequency felt in bones",
+            "weapon perfectly balanced despite brutal weight"
+        ]
+    },
+    {
+        "name": "Maul +3",
+        "cost": 34910,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A massive two-handed hammer. Heavy weapon dealing 2d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head forged from core of a meteor, crater-scarred",
+            "haft carved from petrified giant's club",
+            "weapon that creates shockwaves when striking ground",
+            "head etched with scenes visible only in motion",
+            "maul that produces earthquake rumble when swung",
+            "weapon lighter than should be possible for its mass"
+        ]
+    },
+    {
+        "name": "Morningstar +1",
+        "cost": 2175,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A club with a spiked metal head. Deals 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "spiked head of dark iron with twelve points",
+            "haft wrapped in cord that absorbs blood",
+            "weapon that chimes softly when the spikes move",
+            "head showing rust that never worsens",
+            "morningstar balanced for devastating overhand strikes",
+            "spikes arranged in star pattern around sphere"
+        ]
+    },
+    {
+        "name": "Morningstar +2",
+        "cost": 11652,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A club with a spiked metal head. Deals 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "spiked head of steel with each spike individually honed",
+            "haft of rowan wood carved with protection symbols",
+            "weapon that produces screaming whistle when swung",
+            "head polished to mirror finish between spikes",
+            "morningstar weighted to crush and pierce simultaneously",
+            "spikes that catch light like morning stars indeed"
+        ]
+    },
+    {
+        "name": "Morningstar +3",
+        "cost": 34915,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A club with a spiked metal head. Deals 1d8 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "spiked head of star-metal that never dulls",
+            "haft carved from lightning-struck oak, charred black",
+            "weapon that howls like a banshee in flight",
+            "head that seems to have more spikes each time you look",
+            "morningstar that ignores armor as if it weren't there",
+            "spikes that glow faintly like distant stars at night"
+        ]
+    },
+    {
+        "name": "Pike +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A very long spear. Two-handed weapon with reach dealing 1d10 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft extending fifteen feet of straight ash",
+            "point designed for formations, long and narrow",
+            "pike with counterweight at butt for balance",
+            "shaft reinforced at stress points with metal bands",
+            "weapon that whistles when thrust in unison",
+            "pike showing wear from countless drills"
+        ]
+    },
+    {
+        "name": "Pike +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A very long spear. Two-handed weapon with reach dealing 1d10 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft of ironwood that never warps despite length",
+            "point of folded steel with armor-piercing diamond cross-section",
+            "pike with regimental colors painted near the head",
+            "shaft carved with unit markings and battle honors",
+            "weapon that produces distinct tone when presented",
+            "pike whose length seems impossible to wield yet handles perfectly"
+        ]
+    },
+    {
+        "name": "Pike +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A very long spear. Two-handed weapon with reach dealing 1d10 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "shaft of bone from a colossal beast, hollow but unbreakable",
+            "point forged from dragon's tooth, serrated and deadly",
+            "pike with banner that rallies allies who see it",
+            "shaft inscribed with names of famous pikemen",
+            "weapon that extends reach beyond physical possibility",
+            "pike that leads formations as if guided by unseen hand"
+        ]
+    },
+    {
+        "name": "Scimitar +1",
+        "cost": 2185,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A curved single-edged blade. Finesse and light weapon dealing 1d6 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "curved blade that catches light like flowing water",
+            "handle wrapped in silk over shark-skin grip",
+            "scimitar that sings softly when drawn",
+            "blade showing blue temper line along the curve",
+            "weapon balanced for cavalry charges and mounted combat",
+            "curved steel that smells faintly of desert winds"
+        ]
+    },
+    {
+        "name": "Scimitar +2",
+        "cost": 11662,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A curved single-edged blade. Finesse and light weapon dealing 1d6 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade showing wave patterns like wind across sand",
+            "handle of carved ivory with gold wire inlay",
+            "scimitar that whistles hymns when swung",
+            "curve so perfect it seems impossible to have been forged",
+            "weapon that feels like extension of arm when wielded",
+            "steel etched with desert poetry in flowing script"
+        ]
+    },
+    {
+        "name": "Scimitar +3",
+        "cost": 34925,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A curved single-edged blade. Finesse and light weapon dealing 1d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from glass from the desert of eternal sun",
+            "handle wrapped in cloth from a djinn's turban",
+            "scimitar that produces mirages when swung in sunlight",
+            "curve that defies geometry yet cuts with surgical precision",
+            "weapon that seems to dance on its own in combat",
+            "steel showing patterns like oases seen from above"
+        ]
+    },
+    {
+        "name": "Shortsword +1",
+        "cost": 2170,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A short blade ideal for quick strikes. Finesse and light weapon dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "compact blade perfect for confined spaces",
+            "gladius-style short sword with blood groove",
+            "weapon that feels alive and eager in the hand",
+            "blade showing wear only at the very tip",
+            "shortsword balanced for lightning-quick strikes",
+            "steel that produces soft ringing when tapped"
+        ]
+    },
+    {
+        "name": "Shortsword +2",
+        "cost": 11647,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A short blade ideal for quick strikes. Finesse and light weapon dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade of folded steel showing tiger-stripe patterns",
+            "handle wrapped in silver wire over ray-skin",
+            "weapon that seems to anticipate the wielder's moves",
+            "edge sharp enough to cut falling silk",
+            "shortsword that produces musical notes when cutting air",
+            "steel showing blue-purple temper colors"
+        ]
+    },
+    {
+        "name": "Shortsword +3",
+        "cost": 34910,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A short blade ideal for quick strikes. Finesse and light weapon dealing 1d6 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade forged from tooth of ancient sea serpent",
+            "handle of petrified coral that never deteriorates",
+            "weapon that moves faster than eye can follow",
+            "edge that parts matter before touching it",
+            "shortsword that produces no sound despite speed",
+            "steel showing patterns like schools of fish swimming"
+        ]
+    },
+    {
+        "name": "Trident +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A three-pronged spear. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "three prongs perfectly spaced for catching weapons",
+            "shaft wrapped in leather from deep-sea creature",
+            "trident that smells perpetually of salt water",
+            "prongs showing blue-green patina like aged bronze",
+            "weapon balanced for both throwing and thrusting",
+            "trident that produces bubbling sound when thrust"
+        ]
+    },
+    {
+        "name": "Trident +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A three-pronged spear. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "prongs of steel showing wave-pattern damascus",
+            "shaft of driftwood polished by decades of waves",
+            "trident decorated with pearls and coral fragments",
+            "prongs that never rust despite constant moisture",
+            "weapon that feels lighter when underwater",
+            "trident that produces whale-song when swung"
+        ]
+    },
+    {
+        "name": "Trident +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A three-pronged spear. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "prongs carved from teeth of primordial shark",
+            "shaft of bone from leviathan's spine, hollow yet strong",
+            "trident with grip wrapped in kraken tentacle hide",
+            "prongs that glow phosphorescent in darkness",
+            "weapon that commands respect from sea creatures",
+            "trident that produces storm surge sound when striking"
+        ]
+    },
+    {
+        "name": "Warpick +1",
+        "cost": 2165,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A pick designed for piercing armor. Deals 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "spike of hardened steel designed to punch through plate",
+            "handle wrapped in leather for shock absorption",
+            "pick showing dents from striking armor repeatedly",
+            "weapon balanced for overhead strikes",
+            "pick with hammer face opposite the spike",
+            "warpick that produces distinctive clang against metal"
+        ]
+    },
+    {
+        "name": "Warpick +2",
+        "cost": 11642,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A pick designed for piercing armor. Deals 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "spike of folded steel showing chevron patterns",
+            "handle of ironwood carved with anti-armor prayers",
+            "pick that screams when piercing metal",
+            "weapon showing notches from shattered armor plates",
+            "pick with runes meant to weaken steel",
+            "warpick that vibrates with anticipation near armor"
+        ]
+    },
+    {
+        "name": "Warpick +3",
+        "cost": 34905,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A pick designed for piercing armor. Deals 1d8 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "spike forged from heart of adamantine meteor",
+            "handle of dragonbone that amplifies striking force",
+            "pick that ignores armor as if it were cloth",
+            "weapon showing no wear despite piercing mythril",
+            "pick inscribed with names of armors destroyed",
+            "warpick that produces sound of rending metal on impact"
+        ]
+    },
+    {
+        "name": "Warhammer +1",
+        "cost": 2175,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A hammer designed for battle. Versatile weapon dealing 1d8 (1d10 two-handed) bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "hammer with face on one side, spike on other",
+            "handle of ash wrapped in wire for better grip",
+            "weapon that rings like anvil when striking",
+            "head showing both crushing and piercing capabilities",
+            "warhammer balanced for one or two-handed use",
+            "weapon that smells of forge smoke and iron"
+        ]
+    },
+    {
+        "name": "Warhammer +2",
+        "cost": 11652,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A hammer designed for battle. Versatile weapon dealing 1d8 (1d10 two-handed) bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head of steel inlaid with dwarven smith-runes",
+            "handle of ironwood reinforced with metal bands",
+            "weapon that produces gong-like resonance",
+            "head carved with geometric patterns that focus impact",
+            "warhammer that feels different in each hand",
+            "weapon showing blue temper colors on striking faces"
+        ]
+    },
+    {
+        "name": "Warhammer +3",
+        "cost": 34915,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A hammer designed for battle. Versatile weapon dealing 1d8 (1d10 two-handed) bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "head forged from core of mountain, dense as neutron star",
+            "handle of world-tree wood that never splinters",
+            "weapon that produces thunderclap on every strike",
+            "head etched with image of mountains being forged",
+            "warhammer that seems to pull toward enemies",
+            "weapon that resonates with earth's heartbeat"
+        ]
+    },
+    {
+        "name": "Whip +1",
+        "cost": 2162,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A flexible leather weapon. Finesse weapon with reach dealing 1d4 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "braided leather that cracks like thunder",
+            "whip with steel tips woven into the last foot",
+            "weapon that feels alive and serpentine",
+            "braiding showing different colored leather strips",
+            "whip that leaves burns from sheer friction",
+            "weapon smelling of oil and worked leather"
+        ]
+    },
+    {
+        "name": "Whip +2",
+        "cost": 11639,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A flexible leather weapon. Finesse weapon with reach dealing 1d4 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "braided leather showing scales from exotic reptile",
+            "whip with silver wire woven throughout",
+            "weapon that produces musical note when cracking",
+            "braiding so tight it appears solid until flexed",
+            "whip that seems longer when striking",
+            "weapon that never tangles despite wild motion"
+        ]
+    },
+    {
+        "name": "Whip +3",
+        "cost": 34902,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A flexible leather weapon. Finesse weapon with reach dealing 1d4 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "braided from hide of basilisk, still showing scales",
+            "whip with mithral thread that cuts like blade",
+            "weapon that cracks with force of breaking sound barrier",
+            "braiding that changes color based on wielder's mood",
+            "whip that coils around targets of its own accord",
+            "weapon that leaves afterimages in the air"
+        ]
+    },
+    {
+        "name": "Blowgun +1",
+        "cost": 2170,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A tube for propelling needles with your breath. Ranged weapon dealing 1 piercing damage. Range 25/100. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "hollow bamboo tube perfectly straight and smooth",
+            "blowgun carved with air-flow optimization grooves",
+            "weapon that produces no sound when fired",
+            "tube decorated with hunting scenes in scrimshaw",
+            "blowgun with mouthpiece shaped to user's lips",
+            "weapon light as breath yet surprisingly sturdy"
+        ]
+    },
+    {
+        "name": "Blowgun +2",
+        "cost": 11647,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A tube for propelling needles with your breath. Ranged weapon dealing 1 piercing damage. Range 25/100. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "tube of rare hardwood with internal spiral rifling",
+            "blowgun inlaid with mother-of-pearl wind patterns",
+            "weapon that amplifies breath into hurricane force",
+            "tube that never clogs or accumulates moisture",
+            "blowgun with jade mouthpiece cool against lips",
+            "weapon that seems to guide the dart's flight"
+        ]
+    },
+    {
+        "name": "Blowgun +3",
+        "cost": 34910,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A tube for propelling needles with your breath. Ranged weapon dealing 1 piercing damage. Range 25/100. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "tube carved from single piece of dragon windpipe",
+            "blowgun with mouthpiece of crystal that enhances breath",
+            "weapon that fires darts with sniper precision",
+            "tube inscribed with wind-spirit names inside",
+            "blowgun that produces no back-pressure when fired",
+            "weapon that extends range beyond physical possibility"
+        ]
+    },
+    {
+        "name": "Hand Crossbow +1",
+        "cost": 2235,
+        "type": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A miniature crossbow that fits in one hand. Light ranged weapon dealing 1d6 piercing damage. Range 30/120. You gain a +1 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "compact mechanism that clicks satisfyingly when cocked",
+            "miniature crossbow with ornate trigger guard",
+            "weapon small enough to conceal yet deadly accurate",
+            "crossbow showing master craftsmanship in miniature",
+            "weapon with string that never frays despite tension",
+            "compact bow producing distinctive twang when fired"
+        ]
+    },
+    {
+        "name": "Hand Crossbow +2",
+        "cost": 11712,
+        "type": "Weapon",
+        "rarity": "Rare",
+        "description": "A miniature crossbow that fits in one hand. Light ranged weapon dealing 1d6 piercing damage. Range 30/120. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "mechanism of brass and steel moving with watchmaker precision",
+            "crossbow with mother-of-pearl inlay on stock",
+            "weapon that cocks with one hand despite powerful draw",
+            "miniature bow with prod of spring steel",
+            "weapon whose string never loses tension",
+            "compact crossbow that feels like natural extension of hand"
+        ]
+    },
+    {
+        "name": "Hand Crossbow +3",
+        "cost": 34975,
+        "type": "Weapon",
+        "rarity": "Very Rare",
+        "description": "A miniature crossbow that fits in one hand. Light ranged weapon dealing 1d6 piercing damage. Range 30/120. You gain a +3 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "mechanism that loads itself through unknown magic",
+            "crossbow with stock of petrified dragonbone",
+            "weapon that never misses at close range",
+            "miniature bow with prod of mithral",
+            "weapon that produces no sound when firing",
+            "compact crossbow whose bolts fly impossibly far"
+        ]
     }
 ]
