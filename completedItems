@@ -2234,7 +2234,6 @@
             "tight leather gloves that leave no fingerprints, the material impossibly flexible"
         ]
     },
-
     {
         "name": "Goggles of Night",
         "cost": 1260,
@@ -3660,7 +3659,6 @@
             "brew of specific hue based on damage type, the color diagnostic"
         ]
     },
-	[
     {
         "name": "Potion of Speed",
         "cost": 630,
@@ -4396,7 +4394,6 @@
             "accelerated blade that seems to lag behind itself, the edge quick"
         ]
     },
-	[
     {
         "name": "Sending Stones",
         "cost": 1097,
@@ -7216,8 +7213,7 @@
             "disc decorated with falling leaf motif",
             "token that drifts slowly when dropped"
         ]
-    }
-,
+    },
     {
         "name": "Gauntlets of Flaming Fury",
         "cost": 1532,
