@@ -93,6 +93,18 @@
 			        <span>Custom Item Limits</span>
 			        <small>Override automatic inventory sizing</small>
 			    </div>
+
+								<div class="control-group">
+					<label>Maximum Rarity</label>
+					<select id="max-rarity">
+						<option value="mundane">Mundane</option>
+						<option value="common">Common</option>
+						<option value="uncommon">Uncommon</option>
+						<option value="rare" selected>Rare</option>
+						<option value="veryrare">Very Rare</option>
+						<option value="legendary">Legendary</option>
+					</select>
+				</div>
 			    
 			    <div class="custom-limits-grid">
 			        <div class="control-group">
@@ -124,13 +136,14 @@
 			            <label for="max-legendary">Max Legendary</label>
 			            <input type="number" id="max-legendary" min="0" max="50" value="1" step="1">
 			        </div>
-			    </div>
-			</div>
-
-				<div class="control-group">
+					<div class="control-group">
 					<label for="allow-homebrew">Allow Homebrew Items</label>
 					<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
 				</div>
+			    </div>
+			</div>
+
+
 
 				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
 					<label style="opacity: 0;">Generate</label>
