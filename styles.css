@@ -873,3 +873,71 @@ td .descriptor-btn {
         width: 100%;
     }
 }
+
+
+/* ===== CUSTOM LIMITS COLLAPSIBLE SECTION ===== */
+
+.custom-limits-container {
+    grid-column: span 2;
+    background: rgba(139, 111, 71, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #8b6f47;
+    margin-top: 10px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.custom-limits-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8b6f47;
+}
+
+.custom-limits-header span {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.custom-limits-header small {
+    color: #a89968;
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+.custom-limits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Make the toggle label look better */
+label[for="use-custom-limits"] {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+    .custom-limits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .custom-limits-container {
+        grid-column: span 1;
+    }
+}
