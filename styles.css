@@ -662,3 +662,214 @@
 .loot-category.collapsed .collapse-icon {
     transform: rotate(-90deg);
 }
+
+/* Add this entire section to the END of your styles.css file */
+
+/* ===== DESCRIPTOR EDITOR STYLES ===== */
+
+.descriptor-editor-row {
+    background: rgba(139, 111, 71, 0.05);
+    border-top: 2px solid #d4af37;
+}
+
+.descriptor-editor-cell {
+    padding: 0 !important;
+}
+
+.descriptor-editor {
+    padding: 20px;
+    background: rgba(139, 111, 71, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.descriptor-editor h4 {
+    color: #d4af37;
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.descriptor-help {
+    color: #a89968;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.descriptor-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.descriptor-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.descriptor-textarea {
+    flex: 1;
+    min-height: 60px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #8b6f47;
+    border-radius: 4px;
+    color: #e0d5c7;
+    font-family: inherit;
+    font-size: 0.95em;
+    resize: vertical;
+}
+
+.descriptor-textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.descriptor-textarea::placeholder {
+    color: #a89968;
+    font-style: italic;
+}
+
+.delete-descriptor-btn {
+    padding: 8px 12px;
+    background: rgba(220, 53, 69, 0.3);
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.delete-descriptor-btn:hover {
+    background: rgba(220, 53, 69, 0.5);
+    transform: scale(1.05);
+}
+
+.no-descriptors {
+    text-align: center;
+    color: #a89968;
+    padding: 20px;
+    font-style: italic;
+}
+
+.descriptor-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-top: 10px;
+    border-top: 1px solid #8b6f47;
+}
+
+.add-descriptor-btn,
+.save-descriptors-btn,
+.cancel-descriptors-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+    font-size: 0.95em;
+}
+
+.add-descriptor-btn {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+}
+
+.add-descriptor-btn:hover {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+}
+
+.save-descriptors-btn {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+}
+
+.save-descriptors-btn:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #21618c 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.cancel-descriptors-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0d5c7;
+    border: 1px solid #8b6f47;
+}
+
+.cancel-descriptors-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #d4af37;
+}
+
+.descriptor-btn {
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: all 0.2s;
+    margin-top: 5px;
+}
+
+.descriptor-btn:hover {
+    background: linear-gradient(135deg, #8e44ad 0%, #7d3c98 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(155, 89, 182, 0.3);
+}
+
+td .descriptor-btn {
+    display: block;
+    width: 100%;
+}
+
+.descriptor-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.descriptor-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.descriptor-list::-webkit-scrollbar-thumb {
+    background: #8b6f47;
+    border-radius: 5px;
+}
+
+.descriptor-list::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+}
+
+@media (max-width: 768px) {
+    .descriptor-item {
+        flex-direction: column;
+    }
+    
+    .delete-descriptor-btn {
+        align-self: flex-end;
+    }
+    
+    .descriptor-actions {
+        flex-direction: column;
+    }
+    
+    .add-descriptor-btn,
+    .save-descriptors-btn,
+    .cancel-descriptors-btn {
+        width: 100%;
+    }
+}
