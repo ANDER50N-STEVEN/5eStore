@@ -79,35 +79,53 @@
 				</div>
 			
 
-				<div class="control-group">
-					<label for="max-mundane">Max Mundane Items</label>
-					<input type="number" id="max-mundane" min="0" max="100" value="25" step="1">
-				</div>
-
-				<div class="control-group">
-					<label for="max-common">Max Common Items</label>
-					<input type="number" id="max-common" min="0" max="50" value="15" step="1">
-				</div>
-
-				<div class="control-group">
-					<label for="max-uncommon">Max Uncommon Items</label>
-					<input type="number" id="max-uncommon" min="0" max="50" value="10" step="1">
-				</div>
-
-				<div class="control-group">
-					<label for="max-rare">Max Rare Items</label>
-					<input type="number" id="max-rare" min="0" max="50" value="5" step="1">
-				</div>
-
-				<div class="control-group">
-					<label for="max-veryrare">Max Very Rare Items</label>
-					<input type="number" id="max-veryrare" min="0" max="50" value="3" step="1">
-				</div>
-
-				<div class="control-group">
-					<label for="max-legendary">Max Legendary Items</label>
-					<input type="number" id="max-legendary" min="0" max="50" value="1" step="1">
-				</div>
+			<!-- ADVANCED OPTIONS TOGGLE -->
+			<div class="control-group" style="grid-column: span 2;">
+			    <label style="display: flex; align-items: center; cursor: pointer;">
+			        <input type="checkbox" id="use-custom-limits" onchange="toggleCustomLimits()" style="width: auto; margin-right: 8px;">
+			        <span style="text-transform: none; letter-spacing: normal;">⚙️ Use Custom Item Limits (Advanced)</span>
+			    </label>
+			</div>
+			
+			<!-- HIDDEN CUSTOM LIMITS SECTION -->
+			<div id="custom-limits-container" class="custom-limits-container" style="display: none;">
+			    <div class="custom-limits-header">
+			        <span>Custom Item Limits</span>
+			        <small>Override automatic inventory sizing</small>
+			    </div>
+			    
+			    <div class="custom-limits-grid">
+			        <div class="control-group">
+			            <label for="max-mundane">Max Mundane</label>
+			            <input type="number" id="max-mundane" min="0" max="100" value="16" step="1">
+			        </div>
+			
+			        <div class="control-group">
+			            <label for="max-common">Max Common</label>
+			            <input type="number" id="max-common" min="0" max="50" value="11" step="1">
+			        </div>
+			
+			        <div class="control-group">
+			            <label for="max-uncommon">Max Uncommon</label>
+			            <input type="number" id="max-uncommon" min="0" max="50" value="8" step="1">
+			        </div>
+			
+			        <div class="control-group">
+			            <label for="max-rare">Max Rare</label>
+			            <input type="number" id="max-rare" min="0" max="50" value="5" step="1">
+			        </div>
+			
+			        <div class="control-group">
+			            <label for="max-veryrare">Max Very Rare</label>
+			            <input type="number" id="max-veryrare" min="0" max="50" value="1" step="1">
+			        </div>
+			
+			        <div class="control-group">
+			            <label for="max-legendary">Max Legendary</label>
+			            <input type="number" id="max-legendary" min="0" max="50" value="1" step="1">
+			        </div>
+			    </div>
+			</div>
 
 				<div class="control-group">
 					<label for="allow-homebrew">Allow Homebrew Items</label>
