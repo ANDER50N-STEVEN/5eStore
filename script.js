@@ -550,7 +550,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			    '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
 			    '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
 			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br>' +
-			    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Descriptors (' + descriptorCount + ')</button></td>';
+			    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Flavor Text (' + descriptorCount + ')</button></td>';
 		}
 		
 		
@@ -602,7 +602,7 @@ function toggleDescriptorEdit(index, isHomebrew) {
     let descriptorHTML = `
         <td colspan="7" class="descriptor-editor-cell">
             <div class="descriptor-editor">
-                <h4>Descriptors for: ${item.name}</h4>
+                <h4>Flavor Text for: ${item.name}</h4>
                 <p class="descriptor-help">Add flavor text descriptions that will be randomly shown when this item appears in shops or loot.</p>
                 <div id="descriptor-list-${isHomebrew ? 'hb-' : ''}${index}" class="descriptor-list">
     `;
@@ -617,13 +617,13 @@ function toggleDescriptorEdit(index, isHomebrew) {
     });
     
     if (descriptors.length === 0) {
-        descriptorHTML += '<p class="no-descriptors">No descriptors yet. Click "Add Descriptor" to create one.</p>';
+        descriptorHTML += '<p class="no-descriptors">No flavor text yet. Click "Add Descriptor" to create one.</p>';
     }
     
     descriptorHTML += `
                 </div>
                 <div class="descriptor-actions">
-                    <button class="add-descriptor-btn" onclick="addDescriptor(${index}, ${isHomebrew})">+ Add Descriptor</button>
+                    <button class="add-descriptor-btn" onclick="addDescriptor(${index}, ${isHomebrew})">+ Add Flavor Text</button>
                     <button class="save-descriptors-btn" onclick="saveDescriptors(${index}, ${isHomebrew})">💾 Save All</button>
                     <button class="cancel-descriptors-btn" onclick="toggleDescriptorEdit(${index}, ${isHomebrew})">Close</button>
                 </div>
@@ -653,7 +653,7 @@ function addDescriptor(index, isHomebrew) {
     descriptorDiv.className = 'descriptor-item';
     descriptorDiv.id = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}`;
     descriptorDiv.innerHTML = `
-        <textarea class="descriptor-textarea" id="desc-text-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}" placeholder="Enter descriptor text..."></textarea>
+        <textarea class="descriptor-textarea" id="desc-text-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}" placeholder="Enter flavor text..."></textarea>
         <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${newIndex}, ${isHomebrew})">🗑️</button>
     `;
     
@@ -687,7 +687,7 @@ function saveDescriptors(index, isHomebrew) {
     item.descriptors = newDescriptors;
     saveIndividualItemEdit(index, isHomebrew);
     
-    alert(`Saved ${newDescriptors.length} descriptor(s) for ${item.name}`);
+    alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
     toggleDescriptorEdit(index, isHomebrew);
     
     if (isHomebrew) {
@@ -1244,7 +1244,7 @@ row.innerHTML = `
     <td style="max-width: 400px;">${item.description || 'No description'}</td>
     <td>
         <button class="edit-btn" onclick="editHomebrewItem(${originalIndex})">Edit</button>
-        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit descriptors (${descriptorCount})">📝 Descriptors (${descriptorCount})</button>
+        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit flavor text (${descriptorCount})">📝 Flavor Text (${descriptorCount})</button>
     </td>
 `;
 		
@@ -1293,7 +1293,7 @@ row.innerHTML =
     '<td><textarea class="item-edit-textarea" id="edit-homebrew-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
     '<td><button class="save-btn" onclick="saveHomebrewItem(' + index + ')">Save</button>' +
     '<button class="cancel-btn" onclick="cancelHomebrewEdit(' + index + ')">Cancel</button><br>' +
-    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Descriptors (' + descriptorCount + ')</button></td>';
+    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Flavor Text (' + descriptorCount + ')</button></td>';
 	
 }
 
