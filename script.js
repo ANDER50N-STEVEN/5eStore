@@ -8,7 +8,7 @@ let officialSortDirection = 'asc';
 let homebrewSortColumn = 'name';
 let homebrewSortDirection = 'asc';
 
-// Track excluded items
+
 let excludedOfficialItems = new Set();
 let excludedHomebrewItems = new Set();
 
