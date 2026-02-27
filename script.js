@@ -503,7 +503,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			    <td style="max-width: 400px;">${item.description || 'No description'}</td>
 			    <td>
 			        <button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
-			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit descriptors (${descriptorCount})">📝 Descriptors (${descriptorCount})</button>
+			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit Flavor Text (${descriptorCount})">📝 Flavor Text (${descriptorCount})</button>
 			    </td>
 			`;
 				
