@@ -354,9 +354,30 @@ const cityDefaults = {
   }
 };
 
+// Toggle custom item limits visibility
+function toggleCustomLimits() {
+    const checkbox = document.getElementById('use-custom-limits');
+    const container = document.getElementById('custom-limits-container');
+    
+    if (checkbox.checked) {
+        container.style.display = 'block';
+    } else {
+        container.style.display = 'none';
+        // Reset to settlement defaults when unchecked
+        const settlementSize = document.getElementById('settlement-size').value;
+        applyCityDefaults(settlementSize);
+    }
+}
+
 function applyCityDefaults(size) {
   const config = cityDefaults[size];
   if (!config) return;
+
+  // Only update if custom limits are NOT enabled
+  const useCustom = document.getElementById('use-custom-limits');
+  if (useCustom && useCustom.checked) {
+      return; // Don't override user's custom settings
+  }
 
   document.getElementById("max-mundane").value = config.mundane;
   document.getElementById("max-common").value = config.common;
