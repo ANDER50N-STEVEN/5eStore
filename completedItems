@@ -5314,7 +5314,7 @@
 		"cost": 660,
 		"type": "Apparel",
 		"rarity": "Common",
-		"description": "While wearing this cloak, you can use a bonus action to change its appearance. It can be any color or pattern you imagine, and can even look like a different type of garment."
+		"description": "While wearing this cloak, you can use a bonus action to change its appearance. It can be any color or pattern you imagine, and can even look like a different type of garment.",
 		  "descriptors": [
 			"plain gray cloak with fabric that shimmers subtly under scrutiny",
 			"soft mantle whose color seems slightly different in every light",
@@ -5329,7 +5329,7 @@
 		"cost": 528,
 		"type": "Jewelry",
 		"rarity": "Common",
-		"description": "You can use this amulet to ensure success on an ability check. When you make an attack roll while wearing it and the d20 shows a 9 or less, you can treat the roll as a 10. Usable once, then it stops working until next dawn."
+		"description": "You can use this amulet to ensure success on an ability check. When you make an attack roll while wearing it and the d20 shows a 9 or less, you can treat the roll as a 10. Usable once, then it stops working until next dawn.",
 		  "descriptors": [
 			"brass amulet with tiny exposed gears slowly turning within a glass face",
 			"round copper pendant that ticks softly against the chest",
