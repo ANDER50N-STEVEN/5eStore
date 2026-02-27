@@ -492,17 +492,20 @@ window.addEventListener('DOMContentLoaded', async function() {
 						
 				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
 				
-				row.innerHTML = `
-					<td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateItemList();" title="Include in shop generation"></td>
-					<td>${item.name}</td>
-					<td>${item.cost}</td>
-					<td>${item.type}</td>
-					<td class="${rarityClass}">${item.rarity}</td>
-					<td style="max-width: 400px;">${item.description || 'No description'}</td>
-					<td>
-						<button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
-					</td>
-				`;
+			const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
+			
+			row.innerHTML = `
+			    <td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateItemList();" title="Include in shop generation"></td>
+			    <td>${item.name}</td>
+			    <td>${item.cost}</td>
+			    <td>${item.type}</td>
+			    <td class="${rarityClass}">${item.rarity}</td>
+			    <td style="max-width: 400px;">${item.description || 'No description'}</td>
+			    <td>
+			        <button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
+			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit descriptors (${descriptorCount})">📝 Descriptors (${descriptorCount})</button>
+			    </td>
+			`;
 				
 				tbody.appendChild(row);
 			});
@@ -511,6 +514,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 		
 				// Edit an item
 		let currentlyEditingIndex = null;
+		let descriptorEditingIndex = null; 
 
 		function editItem(index) {
 			const isExcluded = isItemExcluded(index, false);
@@ -535,15 +539,18 @@ window.addEventListener('DOMContentLoaded', async function() {
 				return '<option value="' + rarity + '" ' + (item.rarity === rarity ? 'selected' : '') + '>' + rarity + '</option>';
 			}).join('');
 			
+			const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
+			
 			row.innerHTML = 
-				'<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
-				'<td><input type="text" class="item-edit-input" id="edit-name-' + index + '" value="' + item.name + '"></td>' +
-				'<td><input type="number" class="item-edit-input" id="edit-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
-				'<td><select class="item-edit-select" id="edit-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
-				'<td><select class="item-edit-select" id="edit-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
-				'<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
-				'<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
-				'<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button></td>';
+			    '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
+			    '<td><input type="text" class="item-edit-input" id="edit-name-' + index + '" value="' + item.name + '"></td>' +
+			    '<td><input type="number" class="item-edit-input" id="edit-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
+			    '<td><select class="item-edit-select" id="edit-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
+			    '<td><select class="item-edit-select" id="edit-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
+			    '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
+			    '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
+			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br>' +
+			    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Descriptors (' + descriptorCount + ')</button></td>';
 		}
 		
 		
@@ -569,6 +576,128 @@ window.addEventListener('DOMContentLoaded', async function() {
 			currentlyEditingIndex = null;
 			populateItemList();
 		}
+
+// ===== DESCRIPTOR EDITOR FUNCTIONS =====
+
+function toggleDescriptorEdit(index, isHomebrew) {
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    const rowId = isHomebrew ? `homebrew-row-${index}` : `item-row-${index}`;
+    const row = document.getElementById(rowId);
+    
+    let descriptorRow = document.getElementById(`descriptor-row-${isHomebrew ? 'hb-' : ''}${index}`);
+    
+    if (descriptorRow) {
+        descriptorRow.remove();
+        descriptorEditingIndex = null;
+        return;
+    }
+    
+    descriptorRow = document.createElement('tr');
+    descriptorRow.id = `descriptor-row-${isHomebrew ? 'hb-' : ''}${index}`;
+    descriptorRow.className = 'descriptor-editor-row';
+    
+    const descriptors = item.descriptors || [];
+    
+    let descriptorHTML = `
+        <td colspan="7" class="descriptor-editor-cell">
+            <div class="descriptor-editor">
+                <h4>Descriptors for: ${item.name}</h4>
+                <p class="descriptor-help">Add flavor text descriptions that will be randomly shown when this item appears in shops or loot.</p>
+                <div id="descriptor-list-${isHomebrew ? 'hb-' : ''}${index}" class="descriptor-list">
+    `;
+    
+    descriptors.forEach((desc, descIndex) => {
+        descriptorHTML += `
+            <div class="descriptor-item" id="descriptor-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}">
+                <textarea class="descriptor-textarea" id="desc-text-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}">${desc}</textarea>
+                <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${descIndex}, ${isHomebrew})">🗑️</button>
+            </div>
+        `;
+    });
+    
+    if (descriptors.length === 0) {
+        descriptorHTML += '<p class="no-descriptors">No descriptors yet. Click "Add Descriptor" to create one.</p>';
+    }
+    
+    descriptorHTML += `
+                </div>
+                <div class="descriptor-actions">
+                    <button class="add-descriptor-btn" onclick="addDescriptor(${index}, ${isHomebrew})">+ Add Descriptor</button>
+                    <button class="save-descriptors-btn" onclick="saveDescriptors(${index}, ${isHomebrew})">💾 Save All</button>
+                    <button class="cancel-descriptors-btn" onclick="toggleDescriptorEdit(${index}, ${isHomebrew})">Close</button>
+                </div>
+            </div>
+        </td>
+    `;
+    
+    descriptorRow.innerHTML = descriptorHTML;
+    row.parentNode.insertBefore(descriptorRow, row.nextSibling);
+    descriptorEditingIndex = index;
+}
+
+function addDescriptor(index, isHomebrew) {
+    const listId = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
+    const list = document.getElementById(listId);
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    
+    const noDescMsg = list.querySelector('.no-descriptors');
+    if (noDescMsg) noDescMsg.remove();
+    
+    if (!item.descriptors) item.descriptors = [];
+    
+    const newIndex = list.querySelectorAll('.descriptor-item').length;
+    
+    const descriptorDiv = document.createElement('div');
+    descriptorDiv.className = 'descriptor-item';
+    descriptorDiv.id = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}`;
+    descriptorDiv.innerHTML = `
+        <textarea class="descriptor-textarea" id="desc-text-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}" placeholder="Enter descriptor text..."></textarea>
+        <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${newIndex}, ${isHomebrew})">🗑️</button>
+    `;
+    
+    list.appendChild(descriptorDiv);
+    descriptorDiv.querySelector('textarea').focus();
+}
+
+function deleteDescriptor(index, descIndex, isHomebrew) {
+    const descriptorId = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}`;
+    const descriptorDiv = document.getElementById(descriptorId);
+    
+    if (confirm('Delete this descriptor?')) {
+        descriptorDiv.remove();
+    }
+}
+
+function saveDescriptors(index, isHomebrew) {
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    const listId = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
+    const list = document.getElementById(listId);
+    
+    const newDescriptors = [];
+    const textareas = list.querySelectorAll('.descriptor-textarea');
+    
+    textareas.forEach(textarea => {
+        const text = textarea.value.trim();
+        if (text) newDescriptors.push(text);
+    });
+    
+    item.descriptors = newDescriptors;
+    saveIndividualItemEdit(index, isHomebrew);
+    
+    alert(`Saved ${newDescriptors.length} descriptor(s) for ${item.name}`);
+    toggleDescriptorEdit(index, isHomebrew);
+    
+    if (isHomebrew) {
+        populateHomebrewList();
+    } else {
+        populateItemList();
+    }
+}
+
+// ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 
 		// Filter items
 		function applyItemFilters() {
@@ -1102,19 +1231,25 @@ function populateHomebrewList(filteredItems = null) {
 		row.id = `homebrew-row-${originalIndex}`;
 		
 		const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+
+
+const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
+
+row.innerHTML = `
+    <td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateHomebrewList();" title="Include in shop generation"></td>
+    <td>${item.name}</td>
+    <td>${item.cost}</td>
+    <td>${item.type}</td>
+    <td class="${rarityClass}">${item.rarity}</td>
+    <td style="max-width: 400px;">${item.description || 'No description'}</td>
+    <td>
+        <button class="edit-btn" onclick="editHomebrewItem(${originalIndex})">Edit</button>
+        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit descriptors (${descriptorCount})">📝 Descriptors (${descriptorCount})</button>
+    </td>
+`;
 		
-		row.innerHTML = `
-			<td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, true); populateHomebrewList();" title="Include in shop generation"></td>
-			<td>${item.name}</td>
-			<td>${item.cost}</td>
-			<td>${item.type}</td>
-			<td class="${rarityClass}">${item.rarity}</td>
-			<td style="max-width: 400px;">${item.description || 'No description'}</td>
-			<td>
-				<button class="edit-btn" onclick="editHomebrewItem(${originalIndex})">Edit</button>
-			</td>
-		`;
 		
+
 		tbody.appendChild(row);
 	});
 	
@@ -1145,16 +1280,21 @@ function editHomebrewItem(index) {
 	const rarityOptionsHtml = rarityOptions.map(function(rarity) {
 		return '<option value="' + rarity + '" ' + (item.rarity === rarity ? 'selected' : '') + '>' + rarity + '</option>';
 	}).join('');
+
+
+const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
+
+row.innerHTML = 
+    '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
+    '<td><input type="text" class="item-edit-input" id="edit-homebrew-name-' + index + '" value="' + item.name + '"></td>' +
+    '<td><input type="number" class="item-edit-input" id="edit-homebrew-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
+    '<td><select class="item-edit-select" id="edit-homebrew-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
+    '<td><select class="item-edit-select" id="edit-homebrew-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
+    '<td><textarea class="item-edit-textarea" id="edit-homebrew-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
+    '<td><button class="save-btn" onclick="saveHomebrewItem(' + index + ')">Save</button>' +
+    '<button class="cancel-btn" onclick="cancelHomebrewEdit(' + index + ')">Cancel</button><br>' +
+    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Descriptors (' + descriptorCount + ')</button></td>';
 	
-	row.innerHTML = 
-		'<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', true);" title="Include in shop generation"></td>' +
-		'<td><input type="text" class="item-edit-input" id="edit-homebrew-name-' + index + '" value="' + item.name + '"></td>' +
-		'<td><input type="number" class="item-edit-input" id="edit-homebrew-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
-		'<td><select class="item-edit-select" id="edit-homebrew-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
-		'<td><select class="item-edit-select" id="edit-homebrew-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
-		'<td><textarea class="item-edit-textarea" id="edit-homebrew-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
-		'<td><button class="save-btn" onclick="saveHomebrewItem(' + index + ')">Save</button>' +
-		'<button class="cancel-btn" onclick="cancelHomebrewEdit(' + index + ')">Cancel</button></td>';
 }
 
 		// Save edited homebrew item
