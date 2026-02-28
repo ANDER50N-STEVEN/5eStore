@@ -1006,7 +1006,7 @@ function saveDescriptors(index, isHomebrew) {
 		}
 
         function applyPriceModifier(baseCost, maxModifier) {
-            const minModifier = 100;
+            const minModifier = 95;
             const randomModifier = Math.random() * (maxModifier - minModifier) + minModifier;
             const modifiedPrice = (baseCost * randomModifier) / 100;
             return {
@@ -1457,7 +1457,7 @@ function saveCurrentStore() {
 	
 	const storeType = document.getElementById('store-type').value;
 	const settlementSize = document.getElementById('settlement-size').value;
-	const maxModifier = parseFloat(document.getElementById('price-modifier').value);
+	const maxModifier = parseFloat(document.getElementById('price-modifier').value+5);
 	const maxRarity = document.getElementById('max-rarity').value;
 	
 	// Get current inventory from the DOM
