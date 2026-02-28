@@ -94,21 +94,24 @@
 			        <small>Override automatic inventory sizing</small>
 			    </div>
 
-								<div class="custom-limits-grid">
-					<label>Maximum Rarity</label>
-					<select id="max-rarity">
-						<option value="mundane">Mundane</option>
-						<option value="common">Common</option>
-						<option value="uncommon">Uncommon</option>
-						<option value="rare" selected>Rare</option>
-						<option value="veryrare">Very Rare</option>
-						<option value="legendary">Legendary</option>
-					</select>
+				<div class="custom-limits-grid">
+					<div class="control-group">
+						<label>Maximum Rarity</label>
+						<select id="max-rarity">
+							<option value="mundane">Mundane</option>
+							<option value="common">Common</option>
+							<option value="uncommon">Uncommon</option>
+							<option value="rare" selected>Rare</option>
+							<option value="veryrare">Very Rare</option>
+							<option value="legendary">Legendary</option>
+						</select>
+					</div>
+				        <div class="control-group">
+						<label for="allow-homebrew">Allow Homebrew Items</label>
+						<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
+					</div>
 				</div>
-			    <div class="custom-limits-grid">
-					<label for="allow-homebrew">Allow Homebrew Items</label>
-					<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
-				</div>
+		
 			    <div class="custom-limits-grid">
 			        <div class="control-group">
 			            <label for="max-mundane">Max Mundane</label>
