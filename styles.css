@@ -291,6 +291,7 @@
 		}
 		
 		.tabs {
+			margin: 20px auto;
 			max-width: 1200px;
 			display: flex;
 			gap: 10px;
