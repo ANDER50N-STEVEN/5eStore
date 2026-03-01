@@ -572,7 +572,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			    '<td><select class="item-edit-select" id="edit-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
 			    '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
 			    '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
-			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br>' +</td>
+			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br></td>' +
 			    '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)"> Flavor Text (' + descriptorCount + ')</button></td>';
 		}
 		
