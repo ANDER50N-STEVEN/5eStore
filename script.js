@@ -12,6 +12,9 @@ let homebrewSortDirection = 'asc';
 let excludedOfficialItems = new Set();
 let excludedHomebrewItems = new Set();
 
+let saveTimeout = null;
+let pendingSaves = new Set();
+
 const wealthLevels = {
     'squalid': { gold: [100, 500], sellModifier: 0.80, label: 'Squalid' },
     'common': { gold: [500, 2000], sellModifier: 1.00, label: 'Common' },
@@ -1477,18 +1480,34 @@ function loadItemEditsFromLocalStorage() {
 }
 
 // Helper function to save individual item edit
+
 function saveIndividualItemEdit(index, isHomebrew = false) {
-	const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
-	
-	if (isHomebrew) {
-		savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
-	} else {
-		savedEdits.officialItems[index] = {...itemDatabase[index]};
-	}
-	
-	localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
-	console.log('Individual item edit saved');
+    // Save asynchronously so it doesn't block the UI
+    setTimeout(() => {
+        const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
+        
+        if (isHomebrew) {
+            savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
+        } else {
+            savedEdits.officialItems[index] = {...itemDatabase[index]};
+        }
+        
+        localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
+        console.log('Individual item edit saved');
+    }, 0);
 }
+//function saveIndividualItemEdit(index, isHomebrew = false) {
+//	const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
+	
+//	if (isHomebrew) {
+//		savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
+//	} else {
+//		savedEdits.officialItems[index] = {...itemDatabase[index]};
+//	}
+	
+//	localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
+//	console.log('Individual item edit saved');
+//}
 
 // ===== SAVED STORES FUNCTIONS =====
 
