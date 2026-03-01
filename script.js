@@ -524,7 +524,9 @@ window.addEventListener('DOMContentLoaded', async function() {
 			    <td style="max-width: 400px;">${item.description || 'No description'}</td>
 			    <td>
 			        <button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
-			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit Flavor Text (${descriptorCount})">📝 Flavor Text (${descriptorCount})</button>
+					</td>
+					<td>
+			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit Flavor Text (${descriptorCount})"> Flavor Text (${descriptorCount})</button>
 			    </td>
 			`;
 				
@@ -570,8 +572,8 @@ window.addEventListener('DOMContentLoaded', async function() {
 			    '<td><select class="item-edit-select" id="edit-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
 			    '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
 			    '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
-			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br>' +
-			    '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Flavor Text (' + descriptorCount + ')</button></td>';
+			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br>' +</td>
+			    '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)"> Flavor Text (' + descriptorCount + ')</button></td>';
 		}
 		
 		
@@ -638,7 +640,7 @@ function toggleDescriptorEdit(index, isHomebrew) {
     });
     
     if (descriptors.length === 0) {
-        descriptorHTML += '<p class="no-descriptors">No flavor text yet. Click "Add Descriptor" to create one.</p>';
+        descriptorHTML += '<p class="no-descriptors">No flavor text yet. Click "Add Flavor Text" to create one.</p>';
     }
     
     descriptorHTML += `
