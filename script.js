@@ -762,6 +762,28 @@ function updateSingleItemRow(index, isHomebrew) {
     }
 }
 
+//function saveDescriptors(index, isHomebrew) {
+//    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+//    const item = database[index];
+//    const listId = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
+//    const list = document.getElementById(listId);
+    
+//    const newDescriptors = [];
+//    const textareas = list.querySelectorAll('.descriptor-textarea');
+    
+//    textareas.forEach(textarea => {
+//        const text = textarea.value.trim();
+//        if (text) newDescriptors.push(text);
+//    });
+    
+//    item.descriptors = newDescriptors;
+//    saveIndividualItemEdit(index, isHomebrew);
+    
+//    alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
+//    toggleDescriptorEdit(index, isHomebrew);
+    
+//    updateSingleItemRow(index, isHomebrew);
+//}
 function saveDescriptors(index, isHomebrew) {
     const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
     const item = database[index];
@@ -777,14 +799,21 @@ function saveDescriptors(index, isHomebrew) {
     });
     
     item.descriptors = newDescriptors;
-    saveIndividualItemEdit(index, isHomebrew);
     
+    // Show feedback immediately
     alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
+    
+    // Close the editor immediately
     toggleDescriptorEdit(index, isHomebrew);
     
+    // Update button text
     updateSingleItemRow(index, isHomebrew);
+    
+    // Save to localStorage in the background (non-blocking)
+    setTimeout(() => {
+        saveIndividualItemEdit(index, isHomebrew);
+    }, 0);
 }
-
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 
@@ -1480,34 +1509,18 @@ function loadItemEditsFromLocalStorage() {
 }
 
 // Helper function to save individual item edit
-
 function saveIndividualItemEdit(index, isHomebrew = false) {
-    // Save asynchronously so it doesn't block the UI
-    setTimeout(() => {
-        const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
-        
-        if (isHomebrew) {
-            savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
-        } else {
-            savedEdits.officialItems[index] = {...itemDatabase[index]};
-        }
-        
-        localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
-        console.log('Individual item edit saved');
-    }, 0);
+	const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
+	
+	if (isHomebrew) {
+		savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
+	} else {
+		savedEdits.officialItems[index] = {...itemDatabase[index]};
+	}
+	
+	localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
+	console.log('Individual item edit saved');
 }
-//function saveIndividualItemEdit(index, isHomebrew = false) {
-//	const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
-	
-//	if (isHomebrew) {
-//		savedEdits.homebrewItems[index] = {...homebrewItemDatabase[index]};
-//	} else {
-//		savedEdits.officialItems[index] = {...itemDatabase[index]};
-//	}
-	
-//	localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
-//	console.log('Individual item edit saved');
-//}
 
 // ===== SAVED STORES FUNCTIONS =====
 
