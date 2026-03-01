@@ -1314,7 +1314,7 @@ document.head.appendChild(notificationStyles);
 		
 function generateItemHTML(item, maxModifier) {
     const quantity = getItemQuantity(item);
-    const { price, modifier } = applyPriceModifier(item.cost, maxModifier+5);
+    const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
     const formattedPrice = formatPrice(price);
     const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
     const luckyFindStar = item.isLuckyFind ? ' ⭐' : '';
@@ -1348,7 +1348,7 @@ function generateItemHTML(item, maxModifier) {
        function generateShop() {
 			const storeType = document.getElementById('store-type').value;
 			const settlementSize = document.getElementById('settlement-size').value;
-			const maxModifier = parseFloat(document.getElementById('price-modifier').value);
+			const maxModifier = parseFloat(document.getElementById('price-modifier').value+5);
 			const maxRarity = document.getElementById('max-rarity').value;
 
 			const inventory = selectInventory(settlementSize, storeType, maxRarity);
