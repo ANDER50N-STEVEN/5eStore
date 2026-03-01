@@ -691,6 +691,22 @@ function deleteDescriptor(index, descIndex, isHomebrew) {
     }
 }
 
+function updateSingleItemRow(index, isHomebrew) {
+    const rowId = isHomebrew ? `homebrew-row-${index}` : `item-row-${index}`;
+    const row = document.getElementById(rowId);
+    if (!row) return; // Row might be filtered out, that's OK
+    
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    
+    // Update the descriptor button text to show count
+    const descriptorBtn = row.querySelector('.descriptor-btn');
+    if (descriptorBtn && item.descriptors) {
+        const count = item.descriptors.length;
+        descriptorBtn.textContent = `Flavor Text (${count})`;
+    }
+}
+
 function saveDescriptors(index, isHomebrew) {
     const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
     const item = database[index];
@@ -710,12 +726,15 @@ function saveDescriptors(index, isHomebrew) {
     
     alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
     toggleDescriptorEdit(index, isHomebrew);
+
+	    updateSingleItemRow(index, isHomebrew);
+
     
-    if (isHomebrew) {
-        populateHomebrewList();
-    } else {
-        populateItemList();
-    }
+//    if (isHomebrew) {
+//        populateHomebrewList();
+//    } else {
+//        populateItemList();
+//    }
 }
 
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
