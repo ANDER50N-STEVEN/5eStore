@@ -1510,7 +1510,7 @@ function generateItemHTML(item, maxModifier) {
        function generateShop() {
 			const storeType = document.getElementById('store-type').value;
 			const settlementSize = document.getElementById('settlement-size').value;
-			const maxModifier = parseFloat(document.getElementById('price-modifier').value+.05);
+			const maxModifier = parseFloat(document.getElementById('price-modifier').value)+5;
 			const maxRarity = document.getElementById('max-rarity').value;
 
 			const inventory = selectInventory(settlementSize, storeType, maxRarity);
@@ -1899,7 +1899,7 @@ function saveCurrentStore() {
 	
 	const storeType = document.getElementById('store-type').value;
 	const settlementSize = document.getElementById('settlement-size').value;
-	const maxModifier = parseFloat(document.getElementById('price-modifier').value+.05);
+	const maxModifier = parseFloat(document.getElementById('price-modifier').value)+5;
 	const maxRarity = document.getElementById('max-rarity').value;
 	
 	// Get current inventory from the DOM
