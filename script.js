@@ -622,18 +622,38 @@ function toggleDescriptorEdit(index, isHomebrew) {
         return;
     }
     
-    // Create editor immediately - no async
-    const row = document.getElementById(rowId);
-    if (!row) return;
+    // Chrome-specific fix: detect Chrome and skip requestAnimationFrame
+    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
     
-    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-    const item = database[index];
-    
-    descriptorRow = createDescriptorEditorRow(index, isHomebrew, item);
-    row.parentNode.insertBefore(descriptorRow, row.nextSibling);
-    
-    openDescriptorEditors.set(editorKey, descriptorRow);
-    descriptorEditingIndex = index;
+    if (isChrome) {
+        // Open immediately for Chrome
+        const row = document.getElementById(rowId);
+        if (!row) return;
+        
+        const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+        const item = database[index];
+        
+        descriptorRow = createDescriptorEditorRow(index, isHomebrew, item);
+        row.parentNode.insertBefore(descriptorRow, row.nextSibling);
+        
+        openDescriptorEditors.set(editorKey, descriptorRow);
+        descriptorEditingIndex = index;
+    } else {
+        // Use requestAnimationFrame for other browsers
+        requestAnimationFrame(() => {
+            const row = document.getElementById(rowId);
+            if (!row) return;
+            
+            const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+            const item = database[index];
+            
+            descriptorRow = createDescriptorEditorRow(index, isHomebrew, item);
+            row.parentNode.insertBefore(descriptorRow, row.nextSibling);
+            
+            openDescriptorEditors.set(editorKey, descriptorRow);
+            descriptorEditingIndex = index;
+        });
+    }
 }
 
 function createDescriptorEditorRow(index, isHomebrew, item) {
