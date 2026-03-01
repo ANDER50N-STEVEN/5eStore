@@ -529,7 +529,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			        <button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
 					</td>
 					<td>
-			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit Flavor Text (${descriptorCount})"> Flavor Text (${descriptorCount})</button>
+			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, true)" title="Edit Flavor Text (${descriptorCount})"> Flavor Text (${descriptorCount})</button>
 			    </td>
 			`;
 				
@@ -576,7 +576,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 			    '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
 			    '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
 			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br></td>' +
-			    '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)"> Flavor Text (' + descriptorCount + ')</button></td>';
+			    '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', true)"> Flavor Text (' + descriptorCount + ')</button></td>';
 		}
 		
 		
@@ -602,46 +602,55 @@ window.addEventListener('DOMContentLoaded', async function() {
 			currentlyEditingIndex = null;
 			populateItemList();
 		}
+// ===== DESCRIPTOR EDITOR FUNCTIONS - OPTIMIZED =====
 
-// ===== DESCRIPTOR EDITOR FUNCTIONS =====
+// Cache for open editors to avoid recreating
+const openDescriptorEditors = new Map();
 
-// ===== DESCRIPTOR EDITOR FUNCTIONS =====
+// Debounced save queue
+let descriptorSaveQueue = new Map();
+let descriptorSaveTimer = null;
 
 function toggleDescriptorEdit(index, isHomebrew) {
-    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-    const item = database[index];
+    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
     const rowId = isHomebrew ? `homebrew-row-${index}` : `item-row-${index}`;
-    const row = document.getElementById(rowId);
+    const descriptorRowId = `descriptor-row-${editorKey}`;
     
-    let descriptorRow = document.getElementById(`descriptor-row-${isHomebrew ? 'hb-' : ''}${index}`);
+    // Check if editor is already open
+    let descriptorRow = document.getElementById(descriptorRowId);
     
     if (descriptorRow) {
+        // Close immediately - no heavy operations
         descriptorRow.remove();
+        openDescriptorEditors.delete(editorKey);
         descriptorEditingIndex = null;
         return;
     }
     
-    // Use setTimeout to prevent UI freeze
-    const btn = event.target;
-    const originalText = btn.textContent;
-    btn.textContent = 'Loading...';
-    btn.disabled = true;
-    
-    setTimeout(() => {
-        createDescriptorEditor(index, isHomebrew, row);
-        btn.textContent = originalText;
-        btn.disabled = false;
-    }, 10);
+    // Open editor asynchronously
+    requestAnimationFrame(() => {
+        const row = document.getElementById(rowId);
+        if (!row) return;
+        
+        const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+        const item = database[index];
+        
+        descriptorRow = createDescriptorEditorRow(index, isHomebrew, item);
+        row.parentNode.insertBefore(descriptorRow, row.nextSibling);
+        
+        openDescriptorEditors.set(editorKey, descriptorRow);
+        descriptorEditingIndex = index;
+    });
 }
 
-function createDescriptorEditor(index, isHomebrew, row) {
-    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-    const item = database[index];
+function createDescriptorEditorRow(index, isHomebrew, item) {
+    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
     const descriptors = item.descriptors || [];
     
-    const descriptorRow = document.createElement('tr');
-    descriptorRow.id = `descriptor-row-${isHomebrew ? 'hb-' : ''}${index}`;
-    descriptorRow.className = 'descriptor-editor-row';
+    // Create elements programmatically (faster than innerHTML for complex structures)
+    const row = document.createElement('tr');
+    row.id = `descriptor-row-${editorKey}`;
+    row.className = 'descriptor-editor-row';
     
     const cell = document.createElement('td');
     cell.colSpan = 7;
@@ -650,101 +659,199 @@ function createDescriptorEditor(index, isHomebrew, row) {
     const editor = document.createElement('div');
     editor.className = 'descriptor-editor';
     
-    // Build header
-    const header = document.createElement('h4');
-    header.textContent = `Flavor Text for: ${item.name}`;
-    editor.appendChild(header);
+    // Header
+    const h4 = document.createElement('h4');
+    h4.textContent = `Flavor Text for: ${item.name}`;
     
     const help = document.createElement('p');
     help.className = 'descriptor-help';
     help.textContent = 'Add flavor text descriptions that will be randomly shown when this item appears in shops or loot.';
-    editor.appendChild(help);
     
-    // Build descriptor list
-    const list = document.createElement('div');
-    list.id = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
-    list.className = 'descriptor-list';
+    // Descriptor list container
+    const listContainer = document.createElement('div');
+    listContainer.id = `descriptor-list-${editorKey}`;
+    listContainer.className = 'descriptor-list';
     
+    // Add descriptors efficiently
     if (descriptors.length === 0) {
         const noDesc = document.createElement('p');
         noDesc.className = 'no-descriptors';
         noDesc.textContent = 'No flavor text yet. Click "Add Descriptor" to create one.';
-        list.appendChild(noDesc);
+        listContainer.appendChild(noDesc);
     } else {
-        // Use DocumentFragment for better performance
+        // Use fragment for batch DOM insertion
         const fragment = document.createDocumentFragment();
         descriptors.forEach((desc, descIndex) => {
-            const descDiv = createDescriptorItem(index, descIndex, desc, isHomebrew);
-            fragment.appendChild(descDiv);
+            fragment.appendChild(createDescriptorElement(index, descIndex, desc, isHomebrew));
         });
-        list.appendChild(fragment);
+        listContainer.appendChild(fragment);
     }
     
-    editor.appendChild(list);
-    
-    // Build actions
+    // Actions
     const actions = document.createElement('div');
     actions.className = 'descriptor-actions';
-    actions.innerHTML = `
-        <button class="add-descriptor-btn" onclick="addDescriptor(${index}, ${isHomebrew})">+ Add Flavor Text</button>
-        <button class="save-descriptors-btn" onclick="saveDescriptors(${index}, ${isHomebrew})">💾 Save All</button>
-        <button class="cancel-descriptors-btn" onclick="toggleDescriptorEdit(${index}, ${isHomebrew})">Close</button>
-    `;
-    editor.appendChild(actions);
     
+    const addBtn = document.createElement('button');
+    addBtn.className = 'add-descriptor-btn';
+    addBtn.textContent = '+ Add Flavor Text';
+    addBtn.onclick = () => addDescriptor(index, isHomebrew);
+    
+    const saveBtn = document.createElement('button');
+    saveBtn.className = 'save-descriptors-btn';
+    saveBtn.textContent = '💾 Save All';
+    saveBtn.onclick = () => saveDescriptors(index, isHomebrew);
+    
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'cancel-descriptors-btn';
+    closeBtn.textContent = 'Close';
+    closeBtn.onclick = () => toggleDescriptorEdit(index, isHomebrew);
+    
+    actions.appendChild(addBtn);
+    actions.appendChild(saveBtn);
+    actions.appendChild(closeBtn);
+    
+    // Assemble
+    editor.appendChild(h4);
+    editor.appendChild(help);
+    editor.appendChild(listContainer);
+    editor.appendChild(actions);
     cell.appendChild(editor);
-    descriptorRow.appendChild(cell);
-    row.parentNode.insertBefore(descriptorRow, row.nextSibling);
-    descriptorEditingIndex = index;
+    row.appendChild(cell);
+    
+    return row;
 }
 
-function createDescriptorItem(index, descIndex, text, isHomebrew) {
-    const descDiv = document.createElement('div');
-    descDiv.className = 'descriptor-item';
-    descDiv.id = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}`;
+function createDescriptorElement(index, descIndex, text, isHomebrew) {
+    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
+    
+    const container = document.createElement('div');
+    container.className = 'descriptor-item';
+    container.id = `descriptor-${editorKey}-${descIndex}`;
     
     const textarea = document.createElement('textarea');
     textarea.className = 'descriptor-textarea';
-    textarea.id = `desc-text-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}`;
+    textarea.id = `desc-text-${editorKey}-${descIndex}`;
     textarea.value = text || '';
     if (!text) textarea.placeholder = 'Enter flavor text...';
+    
+    // Store data attribute instead of in DOM
+    textarea.dataset.index = descIndex;
     
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'delete-descriptor-btn';
     deleteBtn.textContent = '🗑️';
     deleteBtn.onclick = () => deleteDescriptor(index, descIndex, isHomebrew);
     
-    descDiv.appendChild(textarea);
-    descDiv.appendChild(deleteBtn);
+    container.appendChild(textarea);
+    container.appendChild(deleteBtn);
     
-    return descDiv;
+    return container;
 }
 
 function addDescriptor(index, isHomebrew) {
-    const listId = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
+    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
+    const listId = `descriptor-list-${editorKey}`;
     const list = document.getElementById(listId);
-    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-    const item = database[index];
     
+    // Remove "no descriptors" message if present
     const noDescMsg = list.querySelector('.no-descriptors');
     if (noDescMsg) noDescMsg.remove();
     
-    if (!item.descriptors) item.descriptors = [];
-    
     const newIndex = list.querySelectorAll('.descriptor-item').length;
-    const descriptorDiv = createDescriptorItem(index, newIndex, '', isHomebrew);
+    const newElement = createDescriptorElement(index, newIndex, '', isHomebrew);
     
-    list.appendChild(descriptorDiv);
-    descriptorDiv.querySelector('textarea').focus();
+    list.appendChild(newElement);
+    
+    // Focus the new textarea
+    const textarea = newElement.querySelector('textarea');
+    if (textarea) textarea.focus();
 }
 
 function deleteDescriptor(index, descIndex, isHomebrew) {
-    const descriptorId = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}`;
-    const descriptorDiv = document.getElementById(descriptorId);
+    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
+    const descriptorId = `descriptor-${editorKey}-${descIndex}`;
+    const element = document.getElementById(descriptorId);
     
-    if (confirm('Delete this descriptor?')) {
-        descriptorDiv.remove();
+    if (element && confirm('Delete this flavor text?')) {
+        element.remove();
     }
+}
+
+function saveDescriptors(index, isHomebrew) {
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
+    const listId = `descriptor-list-${editorKey}`;
+    const list = document.getElementById(listId);
+    
+    // Collect descriptors efficiently
+    const textareas = list.querySelectorAll('.descriptor-textarea');
+    const newDescriptors = Array.from(textareas)
+        .map(ta => ta.value.trim())
+        .filter(text => text.length > 0);
+    
+    // Update in memory immediately
+    item.descriptors = newDescriptors;
+    
+    // Queue for async save (non-blocking)
+    queueDescriptorSave(index, isHomebrew, newDescriptors);
+    
+    // Close editor immediately
+    toggleDescriptorEdit(index, isHomebrew);
+    
+    // Update UI
+    updateSingleItemRow(index, isHomebrew);
+    
+    // Show feedback
+    showSaveNotification(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
+}
+
+function queueDescriptorSave(index, isHomebrew, descriptors) {
+    const saveKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
+    
+    // Add to queue
+    descriptorSaveQueue.set(saveKey, {
+        index: index,
+        isHomebrew: isHomebrew,
+        descriptors: descriptors
+    });
+    
+    // Clear existing timer
+    if (descriptorSaveTimer) {
+        clearTimeout(descriptorSaveTimer);
+    }
+    
+    // Batch save after short delay
+    descriptorSaveTimer = setTimeout(() => {
+        performBatchDescriptorSave();
+    }, 250);
+}
+
+function performBatchDescriptorSave() {
+    if (descriptorSaveQueue.size === 0) return;
+    
+    // Do the save asynchronously to not block UI
+    requestIdleCallback(() => {
+        const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
+        
+        // Process all queued saves
+        descriptorSaveQueue.forEach(({index, isHomebrew, descriptors}) => {
+            const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+            const item = database[index];
+            
+            if (isHomebrew) {
+                savedEdits.homebrewItems[index] = {...item};
+            } else {
+                savedEdits.officialItems[index] = {...item};
+            }
+        });
+        
+        // Single write to localStorage
+        localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
+        
+        console.log(`Batch saved ${descriptorSaveQueue.size} descriptor edits`);
+        descriptorSaveQueue.clear();
+    }, { timeout: 2000 });
 }
 
 function updateSingleItemRow(index, isHomebrew) {
@@ -755,66 +862,80 @@ function updateSingleItemRow(index, isHomebrew) {
     const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
     const item = database[index];
     
+    // Update descriptor button
     const descriptorBtn = row.querySelector('.descriptor-btn');
-    if (descriptorBtn && item.descriptors) {
-        const count = item.descriptors.length;
-        descriptorBtn.textContent = `Flavor Text (${count})`;
+    if (descriptorBtn) {
+        const count = item.descriptors ? item.descriptors.length : 0;
+        descriptorBtn.textContent = count > 0 ? `Flavor Text (${count})` : 'Flavor Text';
     }
 }
 
-//function saveDescriptors(index, isHomebrew) {
-//    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-//    const item = database[index];
-//    const listId = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
-//    const list = document.getElementById(listId);
+function showSaveNotification(message) {
+    // Non-blocking notification instead of alert
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 10000;
+        font-weight: bold;
+        animation: slideIn 0.3s ease-out;
+    `;
+    notification.textContent = message;
     
-//    const newDescriptors = [];
-//    const textareas = list.querySelectorAll('.descriptor-textarea');
+    document.body.appendChild(notification);
     
-//    textareas.forEach(textarea => {
-//        const text = textarea.value.trim();
-//        if (text) newDescriptors.push(text);
-//    });
-    
-//    item.descriptors = newDescriptors;
-//    saveIndividualItemEdit(index, isHomebrew);
-    
-//    alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
-//    toggleDescriptorEdit(index, isHomebrew);
-    
-//    updateSingleItemRow(index, isHomebrew);
-//}
-function saveDescriptors(index, isHomebrew) {
-    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-    const item = database[index];
-    const listId = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
-    const list = document.getElementById(listId);
-    
-    const newDescriptors = [];
-    const textareas = list.querySelectorAll('.descriptor-textarea');
-    
-    textareas.forEach(textarea => {
-        const text = textarea.value.trim();
-        if (text) newDescriptors.push(text);
-    });
-    
-    item.descriptors = newDescriptors;
-    
-    // Show feedback immediately
-    alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
-    
-    // Close the editor immediately
-    toggleDescriptorEdit(index, isHomebrew);
-    
-    // Update button text
-    updateSingleItemRow(index, isHomebrew);
-    
-    // Save to localStorage in the background (non-blocking)
     setTimeout(() => {
-        saveIndividualItemEdit(index, isHomebrew);
-    }, 0);
+        notification.style.animation = 'slideOut 0.3s ease-out';
+        setTimeout(() => notification.remove(), 300);
+    }, 2000);
 }
-// ===== END DESCRIPTOR EDITOR FUNCTIONS =====
+
+// Add CSS for notifications (add to your styles)
+const notificationStyles = document.createElement('style');
+notificationStyles.textContent = `
+    @keyframes slideIn {
+        from {
+            transform: translateX(400px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(400px);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(notificationStyles);
+
+// Save on page unload
+window.addEventListener('beforeunload', () => {
+    if (descriptorSaveQueue.size > 0) {
+        performBatchDescriptorSave();
+    }
+});
+
+// Fallback for browsers without requestIdleCallback
+if (!window.requestIdleCallback) {
+    window.requestIdleCallback = function(cb) {
+        return setTimeout(cb, 1);
+    };
+}
+
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 
 		// Filter items
