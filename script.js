@@ -404,6 +404,24 @@ function applyCityDefaults(size) {
 window.addEventListener('DOMContentLoaded', async function() {
     await loadItemDatabases();
     loadItemEditsFromLocalStorage();
+
+    // Load custom tags
+    const savedCustomTags = localStorage.getItem('dnd-custom-tags');
+    if (savedCustomTags) {
+        try {
+            const customTags = JSON.parse(savedCustomTags);
+            // Merge with existing, removing duplicates
+            customTags.forEach(tag => {
+                if (!commonTags.includes(tag)) {
+                    commonTags.push(tag);
+                }
+            });
+            commonTags.sort();
+        } catch (e) {
+            console.error('Error loading custom tags:', e);
+        }
+    }
+	
     
     // Set up city select event listener after DOM is ready
     const citySelect = document.getElementById("settlement-size");
@@ -599,7 +617,6 @@ window.addEventListener('DOMContentLoaded', async function() {
     createTagEditor('tag-editor-' + index, item.tags || []);
 }
 
-
 function createTagEditor(containerId, initialTags) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -608,6 +625,10 @@ function createTagEditor(containerId, initialTags) {
         <div class="tag-editor">
             <div class="tag-input-container" id="${containerId}-tags">
                 <input type="text" class="tag-add-input" id="${containerId}-input" placeholder="Type to add tag...">
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center; margin-top: 5px;">
+                <button type="button" class="add-new-tag-btn" onclick="showNewTagDialog('${containerId}')">+</button>
+                <span style="color: #8b6f47; font-size: 0.85em;">Press Enter or comma to add</span>
             </div>
             <div class="tag-suggestions" id="${containerId}-suggestions"></div>
         </div>
@@ -644,6 +665,147 @@ function createTagEditor(containerId, initialTags) {
     
     input.addEventListener('input', function() {
         updateSuggestions(containerId, input.value);
+    });
+}
+
+function showNewTagDialog(containerId) {
+    // Create modal overlay
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10001;
+    `;
+    
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+        background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 100%);
+        border: 3px solid #d4af37;
+        border-radius: 10px;
+        padding: 30px;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    `;
+    
+    modal.innerHTML = `
+        <h3 style="color: #d4af37; margin-bottom: 20px; text-align: center;">Create New Tag</h3>
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; color: #d4af37; margin-bottom: 8px;">Tag Name:</label>
+            <input type="text" id="new-tag-name" style="
+                width: 100%;
+                padding: 10px;
+                background: #1a0f08;
+                border: 2px solid #8b6f47;
+                border-radius: 5px;
+                color: #f4e4c1;
+                font-size: 1em;
+                font-family: inherit;
+            " placeholder="Enter tag name...">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: #c4b591;">
+                <input type="checkbox" id="save-to-common" checked style="
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                ">
+                <span>Save to common tags list (will appear in suggestions for all items)</span>
+            </label>
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+            <button id="cancel-new-tag" style="
+                padding: 10px 20px;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid #8b6f47;
+                border-radius: 5px;
+                color: #f4e4c1;
+                cursor: pointer;
+                font-weight: bold;
+            ">Cancel</button>
+            <button id="create-new-tag" style="
+                padding: 10px 20px;
+                background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-weight: bold;
+            ">Create Tag</button>
+        </div>
+    `;
+    
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+    
+    // Focus input
+    const input = document.getElementById('new-tag-name');
+    setTimeout(() => input.focus(), 100);
+    
+    // Handle create
+    function createTag() {
+        const tagName = input.value.trim();
+        if (!tagName) {
+            alert('Please enter a tag name');
+            return;
+        }
+        
+        const saveToCommon = document.getElementById('save-to-common').checked;
+        
+        // Add to common tags if requested
+        if (saveToCommon && !commonTags.includes(tagName)) {
+            commonTags.push(tagName);
+            commonTags.sort(); // Keep alphabetically sorted
+            
+            // Save to localStorage
+            localStorage.setItem('dnd-custom-tags', JSON.stringify(commonTags));
+            
+            showSaveNotification(`Tag "${tagName}" added to common tags`);
+        }
+        
+        // Add to current item
+        addTagToEditor(containerId, tagName);
+        
+        // Clear input in main editor
+        const mainInput = document.getElementById(`${containerId}-input`);
+        if (mainInput) {
+            mainInput.value = '';
+            mainInput.focus();
+        }
+        
+        // Update suggestions
+        updateSuggestions(containerId, '');
+        
+        // Close modal
+        overlay.remove();
+    }
+    
+    // Event listeners
+    document.getElementById('create-new-tag').addEventListener('click', createTag);
+    document.getElementById('cancel-new-tag').addEventListener('click', () => overlay.remove());
+    
+    // Enter key to create
+    input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            createTag();
+        } else if (e.key === 'Escape') {
+            overlay.remove();
+        }
+    });
+    
+    // Click outside to close
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            overlay.remove();
+        }
     });
 }
 
@@ -1348,7 +1510,7 @@ function generateItemHTML(item, maxModifier) {
        function generateShop() {
 			const storeType = document.getElementById('store-type').value;
 			const settlementSize = document.getElementById('settlement-size').value;
-			const maxModifier = parseFloat(document.getElementById('price-modifier').value+5);
+			const maxModifier = parseFloat(document.getElementById('price-modifier').value+.05);
 			const maxRarity = document.getElementById('max-rarity').value;
 
 			const inventory = selectInventory(settlementSize, storeType, maxRarity);
@@ -1734,7 +1896,7 @@ function saveCurrentStore() {
 	
 	const storeType = document.getElementById('store-type').value;
 	const settlementSize = document.getElementById('settlement-size').value;
-	const maxModifier = parseFloat(document.getElementById('price-modifier').value+5);
+	const maxModifier = parseFloat(document.getElementById('price-modifier').value+.05);
 	const maxRarity = document.getElementById('max-rarity').value;
 	
 	// Get current inventory from the DOM
