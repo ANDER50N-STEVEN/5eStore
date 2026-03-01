@@ -602,12 +602,9 @@ window.addEventListener('DOMContentLoaded', async function() {
 			currentlyEditingIndex = null;
 			populateItemList();
 		}
-// ===== DESCRIPTOR EDITOR FUNCTIONS - OPTIMIZED =====
+// ===== DESCRIPTOR EDITOR FUNCTIONS - SIMPLIFIED FOR PERFORMANCE =====
 
-// Cache for open editors to avoid recreating
 const openDescriptorEditors = new Map();
-
-// Debounced save queue
 let descriptorSaveQueue = new Map();
 let descriptorSaveTimer = null;
 
@@ -616,50 +613,44 @@ function toggleDescriptorEdit(index, isHomebrew) {
     const rowId = isHomebrew ? `homebrew-row-${index}` : `item-row-${index}`;
     const descriptorRowId = `descriptor-row-${editorKey}`;
     
-    // Check if editor is already open
     let descriptorRow = document.getElementById(descriptorRowId);
     
     if (descriptorRow) {
-        // Close immediately - no heavy operations
         descriptorRow.remove();
         openDescriptorEditors.delete(editorKey);
         descriptorEditingIndex = null;
         return;
     }
     
-    // Open editor asynchronously
-    requestAnimationFrame(() => {
-        const row = document.getElementById(rowId);
-        if (!row) return;
-        
-        const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-        const item = database[index];
-        
-        descriptorRow = createDescriptorEditorRow(index, isHomebrew, item);
-        row.parentNode.insertBefore(descriptorRow, row.nextSibling);
-        
-        openDescriptorEditors.set(editorKey, descriptorRow);
-        descriptorEditingIndex = index;
-    });
+    // Create editor immediately - no async
+    const row = document.getElementById(rowId);
+    if (!row) return;
+    
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    
+    descriptorRow = createDescriptorEditorRow(index, isHomebrew, item);
+    row.parentNode.insertBefore(descriptorRow, row.nextSibling);
+    
+    openDescriptorEditors.set(editorKey, descriptorRow);
+    descriptorEditingIndex = index;
 }
 
 function createDescriptorEditorRow(index, isHomebrew, item) {
     const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
     const descriptors = item.descriptors || [];
     
-    // Create elements programmatically (faster than innerHTML for complex structures)
     const row = document.createElement('tr');
     row.id = `descriptor-row-${editorKey}`;
     row.className = 'descriptor-editor-row';
     
     const cell = document.createElement('td');
-    cell.colSpan = 7;
+    cell.colSpan = 8; // Changed from 7 to 8 to match your table
     cell.className = 'descriptor-editor-cell';
     
     const editor = document.createElement('div');
     editor.className = 'descriptor-editor';
     
-    // Header
     const h4 = document.createElement('h4');
     h4.textContent = `Flavor Text for: ${item.name}`;
     
@@ -667,27 +658,29 @@ function createDescriptorEditorRow(index, isHomebrew, item) {
     help.className = 'descriptor-help';
     help.textContent = 'Add flavor text descriptions that will be randomly shown when this item appears in shops or loot.';
     
-    // Descriptor list container
     const listContainer = document.createElement('div');
     listContainer.id = `descriptor-list-${editorKey}`;
     listContainer.className = 'descriptor-list';
     
-    // Add descriptors efficiently
     if (descriptors.length === 0) {
         const noDesc = document.createElement('p');
         noDesc.className = 'no-descriptors';
         noDesc.textContent = 'No flavor text yet. Click "Add Descriptor" to create one.';
         listContainer.appendChild(noDesc);
     } else {
-        // Use fragment for batch DOM insertion
-        const fragment = document.createDocumentFragment();
+        // Build all at once with innerHTML for speed
+        let descriptorsHTML = '';
         descriptors.forEach((desc, descIndex) => {
-            fragment.appendChild(createDescriptorElement(index, descIndex, desc, isHomebrew));
+            descriptorsHTML += `
+                <div class="descriptor-item" id="descriptor-${editorKey}-${descIndex}">
+                    <textarea class="descriptor-textarea" id="desc-text-${editorKey}-${descIndex}">${desc}</textarea>
+                    <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${descIndex}, ${isHomebrew})">🗑️</button>
+                </div>
+            `;
         });
-        listContainer.appendChild(fragment);
+        listContainer.innerHTML = descriptorsHTML;
     }
     
-    // Actions
     const actions = document.createElement('div');
     actions.className = 'descriptor-actions';
     
@@ -710,7 +703,6 @@ function createDescriptorEditorRow(index, isHomebrew, item) {
     actions.appendChild(saveBtn);
     actions.appendChild(closeBtn);
     
-    // Assemble
     editor.appendChild(h4);
     editor.appendChild(help);
     editor.appendChild(listContainer);
@@ -721,50 +713,26 @@ function createDescriptorEditorRow(index, isHomebrew, item) {
     return row;
 }
 
-function createDescriptorElement(index, descIndex, text, isHomebrew) {
-    const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
-    
-    const container = document.createElement('div');
-    container.className = 'descriptor-item';
-    container.id = `descriptor-${editorKey}-${descIndex}`;
-    
-    const textarea = document.createElement('textarea');
-    textarea.className = 'descriptor-textarea';
-    textarea.id = `desc-text-${editorKey}-${descIndex}`;
-    textarea.value = text || '';
-    if (!text) textarea.placeholder = 'Enter flavor text...';
-    
-    // Store data attribute instead of in DOM
-    textarea.dataset.index = descIndex;
-    
-    const deleteBtn = document.createElement('button');
-    deleteBtn.className = 'delete-descriptor-btn';
-    deleteBtn.textContent = '🗑️';
-    deleteBtn.onclick = () => deleteDescriptor(index, descIndex, isHomebrew);
-    
-    container.appendChild(textarea);
-    container.appendChild(deleteBtn);
-    
-    return container;
-}
-
 function addDescriptor(index, isHomebrew) {
     const editorKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
     const listId = `descriptor-list-${editorKey}`;
     const list = document.getElementById(listId);
     
-    // Remove "no descriptors" message if present
     const noDescMsg = list.querySelector('.no-descriptors');
     if (noDescMsg) noDescMsg.remove();
     
     const newIndex = list.querySelectorAll('.descriptor-item').length;
-    const newElement = createDescriptorElement(index, newIndex, '', isHomebrew);
+    
+    const newElement = document.createElement('div');
+    newElement.className = 'descriptor-item';
+    newElement.id = `descriptor-${editorKey}-${newIndex}`;
+    newElement.innerHTML = `
+        <textarea class="descriptor-textarea" id="desc-text-${editorKey}-${newIndex}" placeholder="Enter flavor text..."></textarea>
+        <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${newIndex}, ${isHomebrew})">🗑️</button>
+    `;
     
     list.appendChild(newElement);
-    
-    // Focus the new textarea
-    const textarea = newElement.querySelector('textarea');
-    if (textarea) textarea.focus();
+    newElement.querySelector('textarea').focus();
 }
 
 function deleteDescriptor(index, descIndex, isHomebrew) {
@@ -784,74 +752,34 @@ function saveDescriptors(index, isHomebrew) {
     const listId = `descriptor-list-${editorKey}`;
     const list = document.getElementById(listId);
     
-    // Collect descriptors efficiently
     const textareas = list.querySelectorAll('.descriptor-textarea');
     const newDescriptors = Array.from(textareas)
         .map(ta => ta.value.trim())
         .filter(text => text.length > 0);
     
-    // Update in memory immediately
     item.descriptors = newDescriptors;
     
-    // Queue for async save (non-blocking)
-    queueDescriptorSave(index, isHomebrew, newDescriptors);
-    
-    // Close editor immediately
+    // Close immediately
     toggleDescriptorEdit(index, isHomebrew);
     
-    // Update UI
+    // Update button
     updateSingleItemRow(index, isHomebrew);
     
-    // Show feedback
-    showSaveNotification(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
-}
-
-function queueDescriptorSave(index, isHomebrew, descriptors) {
-    const saveKey = `${isHomebrew ? 'hb' : 'off'}-${index}`;
-    
-    // Add to queue
-    descriptorSaveQueue.set(saveKey, {
-        index: index,
-        isHomebrew: isHomebrew,
-        descriptors: descriptors
-    });
-    
-    // Clear existing timer
-    if (descriptorSaveTimer) {
-        clearTimeout(descriptorSaveTimer);
-    }
-    
-    // Batch save after short delay
-    descriptorSaveTimer = setTimeout(() => {
-        performBatchDescriptorSave();
-    }, 250);
-}
-
-function performBatchDescriptorSave() {
-    if (descriptorSaveQueue.size === 0) return;
-    
-    // Do the save asynchronously to not block UI
-    requestIdleCallback(() => {
+    // Save in background
+    setTimeout(() => {
         const savedEdits = JSON.parse(localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}');
         
-        // Process all queued saves
-        descriptorSaveQueue.forEach(({index, isHomebrew, descriptors}) => {
-            const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
-            const item = database[index];
-            
-            if (isHomebrew) {
-                savedEdits.homebrewItems[index] = {...item};
-            } else {
-                savedEdits.officialItems[index] = {...item};
-            }
-        });
+        if (isHomebrew) {
+            savedEdits.homebrewItems[index] = {...item};
+        } else {
+            savedEdits.officialItems[index] = {...item};
+        }
         
-        // Single write to localStorage
         localStorage.setItem('dnd-item-edits', JSON.stringify(savedEdits));
-        
-        console.log(`Batch saved ${descriptorSaveQueue.size} descriptor edits`);
-        descriptorSaveQueue.clear();
-    }, { timeout: 2000 });
+    }, 0);
+    
+    // Show notification
+    showSaveNotification(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
 }
 
 function updateSingleItemRow(index, isHomebrew) {
@@ -862,7 +790,6 @@ function updateSingleItemRow(index, isHomebrew) {
     const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
     const item = database[index];
     
-    // Update descriptor button
     const descriptorBtn = row.querySelector('.descriptor-btn');
     if (descriptorBtn) {
         const count = item.descriptors ? item.descriptors.length : 0;
@@ -871,7 +798,6 @@ function updateSingleItemRow(index, isHomebrew) {
 }
 
 function showSaveNotification(message) {
-    // Non-blocking notification instead of alert
     const notification = document.createElement('div');
     notification.style.cssText = `
         position: fixed;
@@ -896,7 +822,6 @@ function showSaveNotification(message) {
     }, 2000);
 }
 
-// Add CSS for notifications (add to your styles)
 const notificationStyles = document.createElement('style');
 notificationStyles.textContent = `
     @keyframes slideIn {
@@ -922,22 +847,7 @@ notificationStyles.textContent = `
 `;
 document.head.appendChild(notificationStyles);
 
-// Save on page unload
-window.addEventListener('beforeunload', () => {
-    if (descriptorSaveQueue.size > 0) {
-        performBatchDescriptorSave();
-    }
-});
-
-// Fallback for browsers without requestIdleCallback
-if (!window.requestIdleCallback) {
-    window.requestIdleCallback = function(cb) {
-        return setTimeout(cb, 1);
-    };
-}
-
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
-
 		// Filter items
 		function applyItemFilters() {
 			const searchTerm = document.getElementById('item-search').value.toLowerCase();
