@@ -1314,7 +1314,7 @@ document.head.appendChild(notificationStyles);
 		
 function generateItemHTML(item, maxModifier) {
     const quantity = getItemQuantity(item);
-    const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
+    const { price, modifier } = applyPriceModifier(item.cost, maxModifier+5);
     const formattedPrice = formatPrice(price);
     const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
     const luckyFindStar = item.isLuckyFind ? ' ⭐' : '';
