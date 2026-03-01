@@ -168,6 +168,16 @@ const shopkeeperData = {
     }
 };
 
+// Common tag suggestions
+const commonTags = [
+    'Weapon', 'Armor', 'Ammunition', 'Apparel', 'Jewelry', 'Misc',
+    'Consumable', 'Potion', 'Scroll', 'Wand', 'Staff', 'Rod',
+    'Ring', 'Amulet', 'Cloak', 'Boots', 'Gloves', 'Headwear',
+    'Shield', 'Tool', 'Instrument', 'Book', 'Container', 'Light',
+    'Adventuring Gear', 'Magic Item', 'Cursed', 'Sentient',
+    'Artifact', 'Relic', 'Common Item', 'Trade Good'
+];
+
 // Get random descriptor for an item
 function getRandomDescriptor(item) {
     if (!item.descriptors || item.descriptors.length === 0) {
@@ -486,56 +496,64 @@ window.addEventListener('DOMContentLoaded', async function() {
 
 				// Populate the item list table
 		function populateItemList(filteredItems = null) {
-			const tbody = document.getElementById('item-table-body');
-			// Always use officialItemDatabase only - never mix in homebrew here
-			const items = (filteredItems || officialItemDatabase).slice().sort((a, b) => {
-			    let aVal, bVal;
-			    if (officialSortColumn === 'cost') {
-			        aVal = a.cost;
-			        bVal = b.cost;
-			    } else {
-			        aVal = (a[officialSortColumn] || '').toString().toLowerCase();
-			        bVal = (b[officialSortColumn] || '').toString().toLowerCase();
-			    }
-			    
-			    if (officialSortColumn === 'cost') {
-			        return officialSortDirection === 'asc' ? aVal - bVal : bVal - aVal;
-			    } else {
-			        return officialSortDirection === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
-			    }
-			});
-			
-			tbody.innerHTML = '';
-			
-			items.forEach((item, index) => {
-				// Find the original index in officialItemDatabase
-				const originalIndex = officialItemDatabase.findIndex(i => i.name === item.name);
-				const isExcluded = isItemExcluded(originalIndex, false);
-				const row = document.createElement('tr');
-				row.id = `item-row-${originalIndex}`;
-						
-				const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-				
-			const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
-			
-			row.innerHTML = `
-			    <td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateItemList();" title="Include in shop generation"></td>
-			    <td>${item.name}</td>
-			    <td>${item.cost}</td>
-			    <td>${item.type}</td>
-			    <td class="${rarityClass}">${item.rarity}</td>
-			    <td style="max-width: 400px;">${item.description || 'No description'}</td>
-			    <td>
-			        <button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
-					</td>
-					<td>
-			        <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit Flavor Text (${descriptorCount})"> Flavor Text (${descriptorCount})</button>
-			    </td>
-			`;
-				
-				tbody.appendChild(row);
-			});
-		}
+    const tbody = document.getElementById('item-table-body');
+    const items = (filteredItems || officialItemDatabase).slice().sort((a, b) => {
+        let aVal, bVal;
+        if (officialSortColumn === 'cost') {
+            aVal = a.cost;
+            bVal = b.cost;
+        } else if (officialSortColumn === 'type') {
+            // Sort by first tag
+            aVal = (a.tags && a.tags[0]) ? a.tags[0].toLowerCase() : (a.type || '').toLowerCase();
+            bVal = (b.tags && b.tags[0]) ? b.tags[0].toLowerCase() : (b.type || '').toLowerCase();
+        } else {
+            aVal = (a[officialSortColumn] || '').toString().toLowerCase();
+            bVal = (b[officialSortColumn] || '').toString().toLowerCase();
+        }
+        
+        if (officialSortColumn === 'cost') {
+            return officialSortDirection === 'asc' ? aVal - bVal : bVal - aVal;
+        } else {
+            return officialSortDirection === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+        }
+    });
+    
+    tbody.innerHTML = '';
+    
+    items.forEach((item, index) => {
+        const originalIndex = officialItemDatabase.findIndex(i => i.name === item.name);
+        const isExcluded = isItemExcluded(originalIndex, false);
+        const row = document.createElement('tr');
+        row.id = `item-row-${originalIndex}`;
+        
+        const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+        const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
+        
+        // Handle tags - migrate from old 'type' field if needed
+        if (!item.tags && item.type) {
+            item.tags = [item.type];
+        }
+        const tags = item.tags || [];
+        const tagsHTML = tags.map(tag => `<span class="item-tag">${tag}</span>`).join('');
+        
+        row.innerHTML = `
+            <td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateItemList();" title="Include in shop generation"></td>
+            <td>${item.name}</td>
+            <td>${item.cost}</td>
+            <td><div class="item-tags">${tagsHTML || '<span style="color: #8b6f47; font-style: italic;">No tags</span>'}</div></td>
+            <td class="${rarityClass}">${item.rarity}</td>
+            <td style="max-width: 400px;">${item.description || 'No description'}</td>
+            <td>
+                <button class="edit-btn" onclick="editItem(${originalIndex})">Edit</button>
+            </td>
+            <td>
+                <button class="descriptor-btn" onclick="toggleDescriptorEdit(${originalIndex}, false)" title="Edit Flavor Text (${descriptorCount})">Flavor Text (${descriptorCount})</button>
+            </td>
+        `;
+        
+        tbody.appendChild(row);
+    });
+}
 		
 		
 				// Edit an item
@@ -543,59 +561,159 @@ window.addEventListener('DOMContentLoaded', async function() {
 		let descriptorEditingIndex = null; 
 
 		function editItem(index) {
-			const isExcluded = isItemExcluded(index, false);
+    const isExcluded = isItemExcluded(index, false);
 
-			// If already editing another item, cancel that first
-			if (currentlyEditingIndex !== null && currentlyEditingIndex !== index) {
-				cancelEdit(currentlyEditingIndex);
-			}
-			
-			currentlyEditingIndex = index;
-			const item = officialItemDatabase[index];
-			const row = document.getElementById('item-row-' + index);
-			
-			const rarityOptions = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
-			const typeOptions = ['Weapon', 'Armor', 'Ammunition', 'Apperal', 'Jewelry', 'Misc'];
-			
-			const typeOptionsHtml = typeOptions.map(function(type) {
-				return '<option value="' + type + '" ' + (item.type === type ? 'selected' : '') + '>' + type + '</option>';
-			}).join('');
-			
-			const rarityOptionsHtml = rarityOptions.map(function(rarity) {
-				return '<option value="' + rarity + '" ' + (item.rarity === rarity ? 'selected' : '') + '>' + rarity + '</option>';
-			}).join('');
-			
-			const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
-			
-			row.innerHTML = 
-			    '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
-			    '<td><input type="text" class="item-edit-input" id="edit-name-' + index + '" value="' + item.name + '"></td>' +
-			    '<td><input type="number" class="item-edit-input" id="edit-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
-			    '<td><select class="item-edit-select" id="edit-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
-			    '<td><select class="item-edit-select" id="edit-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
-			    '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
-			    '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
-			    '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br></td>' +
-			    '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)"> Flavor Text (' + descriptorCount + ')</button></td>';
-		}
+    if (currentlyEditingIndex !== null && currentlyEditingIndex !== index) {
+        cancelEdit(currentlyEditingIndex);
+    }
+    
+    currentlyEditingIndex = index;
+    const item = officialItemDatabase[index];
+    const row = document.getElementById('item-row-' + index);
+    
+    const rarityOptions = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
+    
+    const rarityOptionsHtml = rarityOptions.map(function(rarity) {
+        return '<option value="' + rarity + '" ' + (item.rarity === rarity ? 'selected' : '') + '>' + rarity + '</option>';
+    }).join('');
+    
+    const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
+    
+    // Migrate from old type field if needed
+    if (!item.tags && item.type) {
+        item.tags = [item.type];
+    }
+    
+    row.innerHTML = 
+        '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
+        '<td><input type="text" class="item-edit-input" id="edit-name-' + index + '" value="' + item.name + '"></td>' +
+        '<td><input type="number" class="item-edit-input" id="edit-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
+        '<td><div id="tag-editor-' + index + '"></div></td>' +
+        '<td><select class="item-edit-select" id="edit-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
+        '<td><textarea class="item-edit-textarea" id="edit-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
+        '<td><button class="save-btn" onclick="saveItem(' + index + ')">Save</button>' +
+        '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br></td>' +
+        '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">Flavor Text (' + descriptorCount + ')</button></td>';
+    
+    // Initialize tag editor
+    createTagEditor('tag-editor-' + index, item.tags || []);
+}
+
+
+function createTagEditor(containerId, initialTags) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    container.innerHTML = `
+        <div class="tag-editor">
+            <div class="tag-input-container" id="${containerId}-tags">
+                <input type="text" class="tag-add-input" id="${containerId}-input" placeholder="Type to add tag...">
+            </div>
+            <div class="tag-suggestions" id="${containerId}-suggestions"></div>
+        </div>
+    `;
+    
+    const tagsContainer = document.getElementById(`${containerId}-tags`);
+    const input = document.getElementById(`${containerId}-input`);
+    const suggestionsContainer = document.getElementById(`${containerId}-suggestions`);
+    
+    // Render initial tags
+    initialTags.forEach(tag => addTagToEditor(containerId, tag));
+    
+    // Show suggestions
+    updateSuggestions(containerId, '');
+    
+    // Input handling
+    input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ',') {
+            e.preventDefault();
+            const value = input.value.trim().replace(/,/g, '');
+            if (value) {
+                addTagToEditor(containerId, value);
+                input.value = '';
+                updateSuggestions(containerId, '');
+            }
+        } else if (e.key === 'Backspace' && input.value === '') {
+            // Remove last tag on backspace
+            const tags = tagsContainer.querySelectorAll('.tag-input-item');
+            if (tags.length > 0) {
+                tags[tags.length - 1].remove();
+            }
+        }
+    });
+    
+    input.addEventListener('input', function() {
+        updateSuggestions(containerId, input.value);
+    });
+}
+
+function addTagToEditor(containerId, tagText) {
+    const tagsContainer = document.getElementById(`${containerId}-tags`);
+    const input = document.getElementById(`${containerId}-input`);
+    
+    // Check if tag already exists
+    const existingTags = Array.from(tagsContainer.querySelectorAll('.tag-input-item'))
+        .map(el => el.dataset.tag);
+    if (existingTags.includes(tagText)) return;
+    
+    const tagElement = document.createElement('div');
+    tagElement.className = 'tag-input-item';
+    tagElement.dataset.tag = tagText;
+    tagElement.innerHTML = `
+        <span>${tagText}</span>
+        <button type="button" class="tag-remove-btn" onclick="this.parentElement.remove()">×</button>
+    `;
+    
+    tagsContainer.insertBefore(tagElement, input);
+}
+
+function updateSuggestions(containerId, searchTerm) {
+    const suggestionsContainer = document.getElementById(`${containerId}-suggestions`);
+    const tagsContainer = document.getElementById(`${containerId}-tags`);
+    
+    const existingTags = Array.from(tagsContainer.querySelectorAll('.tag-input-item'))
+        .map(el => el.dataset.tag);
+    
+    const filtered = commonTags.filter(tag => 
+        !existingTags.includes(tag) && 
+        tag.toLowerCase().includes(searchTerm.toLowerCase())
+    ).slice(0, 10);
+    
+    suggestionsContainer.innerHTML = filtered.map(tag => 
+        `<div class="tag-suggestion" onclick="addTagFromSuggestion('${containerId}', '${tag}')">${tag}</div>`
+    ).join('');
+}
+
+function addTagFromSuggestion(containerId, tag) {
+    addTagToEditor(containerId, tag);
+    const input = document.getElementById(`${containerId}-input`);
+    input.value = '';
+    input.focus();
+    updateSuggestions(containerId, '');
+}
+
+function getTagsFromEditor(containerId) {
+    const tagsContainer = document.getElementById(`${containerId}-tags`);
+    return Array.from(tagsContainer.querySelectorAll('.tag-input-item'))
+        .map(el => el.dataset.tag);
+}
 		
 		
 			// Save edited item
-		function saveItem(index) {
-			const item = officialItemDatabase[index];
-			
-			item.name = document.getElementById(`edit-name-${index}`).value;
-			item.cost = parseFloat(document.getElementById(`edit-cost-${index}`).value);
-			item.type = document.getElementById(`edit-type-${index}`).value;
-			item.rarity = document.getElementById(`edit-rarity-${index}`).value;
-			item.description = document.getElementById(`edit-desc-${index}`).value;
-			
-			currentlyEditingIndex = null;
-			populateItemList();
-			
-			// Save only this item's edit
-			saveIndividualItemEdit(index, false);
-		}
+	function saveItem(index) {
+    const item = officialItemDatabase[index];
+    
+    item.name = document.getElementById(`edit-name-${index}`).value;
+    item.cost = parseFloat(document.getElementById(`edit-cost-${index}`).value);
+    item.tags = getTagsFromEditor(`tag-editor-${index}`); // Changed from type
+    item.rarity = document.getElementById(`edit-rarity-${index}`).value;
+    item.description = document.getElementById(`edit-desc-${index}`).value;
+    
+    currentlyEditingIndex = null;
+    populateItemList();
+    
+    saveIndividualItemEdit(index, false);
+}
 
 				// Cancel editing
 		function cancelEdit(index) {
@@ -1363,20 +1481,18 @@ function generateItemHTML(item, maxModifier) {
 
 // Populate the homebrew item list table
 function populateHomebrewList(filteredItems = null) {
-	console.log('populateHomebrewList called');
 	const tbody = document.getElementById('homebrew-table-body');
-	console.log('tbody element:', tbody);
-	
-	if (!tbody) {
-		console.error('Homebrew table body not found');
-		return;
-	}
 	
 	const items = (filteredItems || homebrewItemDatabase).slice().sort((a, b) => {
 	    let aVal, bVal;
 	    if (homebrewSortColumn === 'cost') {
 	        aVal = a.cost;
 	        bVal = b.cost;
+			} else if (officialSortColumn === 'type') {
+            // Sort by first tag
+            aVal = (a.tags && a.tags[0]) ? a.tags[0].toLowerCase() : (a.type || '').toLowerCase();
+            bVal = (b.tags && b.tags[0]) ? b.tags[0].toLowerCase() : (b.type || '').toLowerCase();
+      
 	    } else {
 	        aVal = (a[homebrewSortColumn] || '').toString().toLowerCase();
 	        bVal = (b[homebrewSortColumn] || '').toString().toLowerCase();
@@ -1400,15 +1516,21 @@ function populateHomebrewList(filteredItems = null) {
 		row.id = `homebrew-row-${originalIndex}`;
 		
 		const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-
-
 const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
 
+// Handle tags - migrate from old 'type' field if needed
+        if (!item.tags && item.type) {
+            item.tags = [item.type];
+        }
+        const tags = item.tags || [];
+        const tagsHTML = tags.map(tag => `<span class="item-tag">${tag}</span>`).join('');
+      
+		
 row.innerHTML = `
     <td><input type="checkbox" ${isExcluded ? '' : 'checked'} onchange="toggleItemExclusion(${originalIndex}, false); populateHomebrewList();" title="Include in shop generation"></td>
     <td>${item.name}</td>
     <td>${item.cost}</td>
-    <td>${item.type}</td>
+            <td><div class="item-tags">${tagsHTML || '<span style="color: #8b6f47; font-style: italic;">No tags</span>'}</div></td>
     <td class="${rarityClass}">${item.rarity}</td>
     <td style="max-width: 400px;">${item.description || 'No description'}</td>
     <td>
@@ -1440,11 +1562,11 @@ function editHomebrewItem(index) {
 	const row = document.getElementById('homebrew-row-' + index);
 	
 	const rarityOptions = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
-	const typeOptions = ['Weapon', 'Armor', 'Ammunition', 'Apperal', 'Jewelry', 'Misc'];
+	//const typeOptions = ['Weapon', 'Armor', 'Ammunition', 'Apperal', 'Jewelry', 'Misc'];
 	
-	const typeOptionsHtml = typeOptions.map(function(type) {
-		return '<option value="' + type + '" ' + (item.type === type ? 'selected' : '') + '>' + type + '</option>';
-	}).join('');
+	//const typeOptionsHtml = typeOptions.map(function(type) {
+	//	return '<option value="' + type + '" ' + (item.type === type ? 'selected' : '') + '>' + type + '</option>';
+	//}).join('');
 	
 	const rarityOptionsHtml = rarityOptions.map(function(rarity) {
 		return '<option value="' + rarity + '" ' + (item.rarity === rarity ? 'selected' : '') + '>' + rarity + '</option>';
@@ -1453,17 +1575,24 @@ function editHomebrewItem(index) {
 
 const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
 
+   // Migrate from old type field if needed
+    if (!item.tags && item.type) {
+        item.tags = [item.type];
+    }
+	
 row.innerHTML = 
     '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
     '<td><input type="text" class="item-edit-input" id="edit-homebrew-name-' + index + '" value="' + item.name + '"></td>' +
     '<td><input type="number" class="item-edit-input" id="edit-homebrew-cost-' + index + '" value="' + item.cost + '" step="0.01"></td>' +
-    '<td><select class="item-edit-select" id="edit-homebrew-type-' + index + '">' + typeOptionsHtml + '</select></td>' +
+        '<td><div id="tag-editor-' + index + '"></div></td>' +
     '<td><select class="item-edit-select" id="edit-homebrew-rarity-' + index + '">' + rarityOptionsHtml + '</select></td>' +
     '<td><textarea class="item-edit-textarea" id="edit-homebrew-desc-' + index + '">' + (item.description || '') + '</textarea></td>' +
     '<td><button class="save-btn" onclick="saveHomebrewItem(' + index + ')">Save</button>' +
     '<button class="cancel-btn" onclick="cancelHomebrewEdit(' + index + ')">Cancel</button><br>' +
     '<button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">📝 Flavor Text (' + descriptorCount + ')</button></td>';
-	
+
+    // Initialize tag editor
+    createTagEditor('tag-editor-' + index, item.tags || []);	
 }
 
 		// Save edited homebrew item
@@ -1472,7 +1601,7 @@ row.innerHTML =
 			
 			item.name = document.getElementById(`edit-homebrew-name-${index}`).value;
 			item.cost = parseFloat(document.getElementById(`edit-homebrew-cost-${index}`).value);
-			item.type = document.getElementById(`edit-homebrew-type-${index}`).value;
+   			item.tags = getTagsFromEditor(`tag-homebrew-editor-${index}`); // Changed from type
 			item.rarity = document.getElementById(`edit-homebrew-rarity-${index}`).value;
 			item.description = document.getElementById(`edit-homebrew-desc-${index}`).value;
 			
