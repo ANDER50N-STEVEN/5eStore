@@ -1514,7 +1514,10 @@ function generateItemHTML(item, maxModifier) {
 			const maxRarity = document.getElementById('max-rarity').value;
 
 			const inventory = selectInventory(settlementSize, storeType, maxRarity);
-			
+
+		   	console.log('Price Modifier:', maxModifier);
+
+		   
 			if (inventory.length === 0) {
 				document.getElementById('shop-content').innerHTML = `
 					<div class="empty-state">
