@@ -602,6 +602,8 @@ window.addEventListener('DOMContentLoaded', async function() {
 
 // ===== DESCRIPTOR EDITOR FUNCTIONS =====
 
+// ===== DESCRIPTOR EDITOR FUNCTIONS =====
+
 function toggleDescriptorEdit(index, isHomebrew) {
     const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
     const item = database[index];
@@ -616,47 +618,103 @@ function toggleDescriptorEdit(index, isHomebrew) {
         return;
     }
     
-    descriptorRow = document.createElement('tr');
+    // Use setTimeout to prevent UI freeze
+    const btn = event.target;
+    const originalText = btn.textContent;
+    btn.textContent = 'Loading...';
+    btn.disabled = true;
+    
+    setTimeout(() => {
+        createDescriptorEditor(index, isHomebrew, row);
+        btn.textContent = originalText;
+        btn.disabled = false;
+    }, 10);
+}
+
+function createDescriptorEditor(index, isHomebrew, row) {
+    const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
+    const item = database[index];
+    const descriptors = item.descriptors || [];
+    
+    const descriptorRow = document.createElement('tr');
     descriptorRow.id = `descriptor-row-${isHomebrew ? 'hb-' : ''}${index}`;
     descriptorRow.className = 'descriptor-editor-row';
     
-    const descriptors = item.descriptors || [];
+    const cell = document.createElement('td');
+    cell.colSpan = 7;
+    cell.className = 'descriptor-editor-cell';
     
-    let descriptorHTML = `
-        <td colspan="7" class="descriptor-editor-cell">
-            <div class="descriptor-editor">
-                <h4>Flavor Text for: ${item.name}</h4>
-                <p class="descriptor-help">Add flavor text descriptions that will be randomly shown when this item appears in shops or loot.</p>
-                <div id="descriptor-list-${isHomebrew ? 'hb-' : ''}${index}" class="descriptor-list">
-    `;
+    const editor = document.createElement('div');
+    editor.className = 'descriptor-editor';
     
-    descriptors.forEach((desc, descIndex) => {
-        descriptorHTML += `
-            <div class="descriptor-item" id="descriptor-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}">
-                <textarea class="descriptor-textarea" id="desc-text-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}">${desc}</textarea>
-                <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${descIndex}, ${isHomebrew})">🗑️</button>
-            </div>
-        `;
-    });
+    // Build header
+    const header = document.createElement('h4');
+    header.textContent = `Flavor Text for: ${item.name}`;
+    editor.appendChild(header);
+    
+    const help = document.createElement('p');
+    help.className = 'descriptor-help';
+    help.textContent = 'Add flavor text descriptions that will be randomly shown when this item appears in shops or loot.';
+    editor.appendChild(help);
+    
+    // Build descriptor list
+    const list = document.createElement('div');
+    list.id = `descriptor-list-${isHomebrew ? 'hb-' : ''}${index}`;
+    list.className = 'descriptor-list';
     
     if (descriptors.length === 0) {
-        descriptorHTML += '<p class="no-descriptors">No flavor text yet. Click "Add Flavor Text" to create one.</p>';
+        const noDesc = document.createElement('p');
+        noDesc.className = 'no-descriptors';
+        noDesc.textContent = 'No flavor text yet. Click "Add Descriptor" to create one.';
+        list.appendChild(noDesc);
+    } else {
+        // Use DocumentFragment for better performance
+        const fragment = document.createDocumentFragment();
+        descriptors.forEach((desc, descIndex) => {
+            const descDiv = createDescriptorItem(index, descIndex, desc, isHomebrew);
+            fragment.appendChild(descDiv);
+        });
+        list.appendChild(fragment);
     }
     
-    descriptorHTML += `
-                </div>
-                <div class="descriptor-actions">
-                    <button class="add-descriptor-btn" onclick="addDescriptor(${index}, ${isHomebrew})">+ Add Flavor Text</button>
-                    <button class="save-descriptors-btn" onclick="saveDescriptors(${index}, ${isHomebrew})">💾 Save All</button>
-                    <button class="cancel-descriptors-btn" onclick="toggleDescriptorEdit(${index}, ${isHomebrew})">Close</button>
-                </div>
-            </div>
-        </td>
-    `;
+    editor.appendChild(list);
     
-    descriptorRow.innerHTML = descriptorHTML;
+    // Build actions
+    const actions = document.createElement('div');
+    actions.className = 'descriptor-actions';
+    actions.innerHTML = `
+        <button class="add-descriptor-btn" onclick="addDescriptor(${index}, ${isHomebrew})">+ Add Flavor Text</button>
+        <button class="save-descriptors-btn" onclick="saveDescriptors(${index}, ${isHomebrew})">💾 Save All</button>
+        <button class="cancel-descriptors-btn" onclick="toggleDescriptorEdit(${index}, ${isHomebrew})">Close</button>
+    `;
+    editor.appendChild(actions);
+    
+    cell.appendChild(editor);
+    descriptorRow.appendChild(cell);
     row.parentNode.insertBefore(descriptorRow, row.nextSibling);
     descriptorEditingIndex = index;
+}
+
+function createDescriptorItem(index, descIndex, text, isHomebrew) {
+    const descDiv = document.createElement('div');
+    descDiv.className = 'descriptor-item';
+    descDiv.id = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}`;
+    
+    const textarea = document.createElement('textarea');
+    textarea.className = 'descriptor-textarea';
+    textarea.id = `desc-text-${isHomebrew ? 'hb-' : ''}${index}-${descIndex}`;
+    textarea.value = text || '';
+    if (!text) textarea.placeholder = 'Enter flavor text...';
+    
+    const deleteBtn = document.createElement('button');
+    deleteBtn.className = 'delete-descriptor-btn';
+    deleteBtn.textContent = '🗑️';
+    deleteBtn.onclick = () => deleteDescriptor(index, descIndex, isHomebrew);
+    
+    descDiv.appendChild(textarea);
+    descDiv.appendChild(deleteBtn);
+    
+    return descDiv;
 }
 
 function addDescriptor(index, isHomebrew) {
@@ -671,14 +729,7 @@ function addDescriptor(index, isHomebrew) {
     if (!item.descriptors) item.descriptors = [];
     
     const newIndex = list.querySelectorAll('.descriptor-item').length;
-    
-    const descriptorDiv = document.createElement('div');
-    descriptorDiv.className = 'descriptor-item';
-    descriptorDiv.id = `descriptor-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}`;
-    descriptorDiv.innerHTML = `
-        <textarea class="descriptor-textarea" id="desc-text-${isHomebrew ? 'hb-' : ''}${index}-${newIndex}" placeholder="Enter flavor text..."></textarea>
-        <button class="delete-descriptor-btn" onclick="deleteDescriptor(${index}, ${newIndex}, ${isHomebrew})">🗑️</button>
-    `;
+    const descriptorDiv = createDescriptorItem(index, newIndex, '', isHomebrew);
     
     list.appendChild(descriptorDiv);
     descriptorDiv.querySelector('textarea').focus();
@@ -696,12 +747,11 @@ function deleteDescriptor(index, descIndex, isHomebrew) {
 function updateSingleItemRow(index, isHomebrew) {
     const rowId = isHomebrew ? `homebrew-row-${index}` : `item-row-${index}`;
     const row = document.getElementById(rowId);
-    if (!row) return; // Row might be filtered out, that's OK
+    if (!row) return;
     
     const database = isHomebrew ? homebrewItemDatabase : officialItemDatabase;
     const item = database[index];
     
-    // Update the descriptor button text to show count
     const descriptorBtn = row.querySelector('.descriptor-btn');
     if (descriptorBtn && item.descriptors) {
         const count = item.descriptors.length;
@@ -728,17 +778,11 @@ function saveDescriptors(index, isHomebrew) {
     
     alert(`Saved ${newDescriptors.length} flavor text for ${item.name}`);
     toggleDescriptorEdit(index, isHomebrew);
-
-	    updateSingleItemRow(index, isHomebrew);
-
     
-//    if (isHomebrew) {
-//        populateHomebrewList();
-//    } else {
-//        populateItemList();
-//    }
+    updateSingleItemRow(index, isHomebrew);
 }
 
+// ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 
 		// Filter items
