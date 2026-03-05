@@ -9006,7 +9006,7 @@
     {
         "name": "Handaxe +3",
         "cost": 34905,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Slashing", "Thrown", "Light", "Axe"],
         "rarity": "Very Rare",
         "description": "A small axe designed for one-handed use or throwing. Deals 1d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9021,7 +9021,7 @@
     {
         "name": "Longsword +1",
         "cost": 2175,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Sword"],
         "rarity": "Uncommon",
         "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9036,7 +9036,7 @@
     {
         "name": "Longsword +2",
         "cost": 11652,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Sword"],
         "rarity": "Rare",
         "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9051,7 +9051,7 @@
     {
         "name": "Longsword +3",
         "cost": 34915,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Sword"],
         "rarity": "Very Rare",
         "description": "A classic balanced blade. Versatile weapon dealing 1d8 (1d10 two-handed) slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9066,7 +9066,7 @@
     {
         "name": "Greatsword +1",
         "cost": 2210,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Two-Handed", "Sword"],
         "rarity": "Uncommon",
         "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9081,7 +9081,7 @@
     {
         "name": "Greatsword +2",
         "cost": 11687,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Two-Handed", "Sword"],
         "rarity": "Rare",
         "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9096,7 +9096,7 @@
     {
         "name": "Greatsword +3",
         "cost": 34950,
-        "type": "Weapon",
+        "type":["Weapon", "Melee", "Martial", "Slashing", "Two-Handed", "Sword"],
         "rarity": "Very Rare",
         "description": "A large two-handed sword. Heavy weapon dealing 2d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9111,7 +9111,7 @@
     {
         "name": "Rapier +1",
         "cost": 2185,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Piercing", "Finesse", "Sword"],
         "rarity": "Uncommon",
         "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9126,7 +9126,7 @@
     {
         "name": "Rapier +2",
         "cost": 11662,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Piercing", "Finesse", "Sword"],
         "rarity": "Rare",
         "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9141,7 +9141,7 @@
     {
         "name": "Rapier +3",
         "cost": 34925,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Piercing", "Finesse", "Sword"],
         "rarity": "Very Rare",
         "description": "A slender, sharply pointed sword. Finesse weapon dealing 1d8 piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9156,7 +9156,7 @@
     {
         "name": "Longbow +1",
         "cost": 2210,
-        "type": "Weapon",
+        "type": ["Weapon", "Ranged", "Martial", "Piercing", "Two-Handed", "Bow"],
         "rarity": "Uncommon",
         "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9171,7 +9171,7 @@
     {
         "name": "Longbow +2",
         "cost": 11687,
-        "type": "Weapon",
+        "type": ["Weapon", "Ranged", "Martial", "Piercing", "Two-Handed", "Bow"],
         "rarity": "Rare",
         "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9186,7 +9186,7 @@
     {
         "name": "Longbow +3",
         "cost": 34950,
-        "type": "Weapon",
+        "type": ["Weapon", "Ranged", "Martial", "Piercing", "Two-Handed", "Bow"],
         "rarity": "Very Rare",
         "description": "A tall bow with exceptional range. Two-handed heavy weapon dealing 1d8 piercing damage. Range 150/600. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9201,7 +9201,7 @@
     {
         "name": "Mace +1",
         "cost": 2165,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Uncommon",
         "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9216,7 +9216,7 @@
     {
         "name": "Mace +2",
         "cost": 11642,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Rare",
         "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9231,7 +9231,7 @@
     {
         "name": "Mace +3",
         "cost": 34905,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Very Rare",
         "description": "A blunt weapon with a heavy head on a solid shaft. Deals 1d6 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9246,7 +9246,7 @@
     {
         "name": "Quarterstaff +1",
         "cost": 2160.2,
-        "type": "Weapon",
+        "type":["Weapon", "Melee", "Simple", "Bludgeoning", "Staff/Club"],
         "rarity": "Uncommon",
         "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9261,7 +9261,7 @@
     {
         "name": "Quarterstaff +2",
         "cost": 11637.2,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Staff/Club"],
         "rarity": "Rare",
         "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9276,7 +9276,7 @@
     {
         "name": "Quarterstaff +3",
         "cost": 34900.2,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Staff/Club"],
         "rarity": "Very Rare",
         "description": "A simple wooden staff. Versatile weapon dealing 1d6 (1d8 two-handed) bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9291,7 +9291,7 @@
     {
         "name": "Sickle +1",
         "cost": 2161,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Slashing", "Light"],
         "rarity": "Uncommon",
         "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9306,7 +9306,7 @@
     {
         "name": "Sickle +2",
         "cost": 11638,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Slashing", "Light"],
         "rarity": "Rare",
         "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9321,7 +9321,7 @@
     {
         "name": "Sickle +3",
         "cost": 34901,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Slashing", "Light"],
         "rarity": "Very Rare",
         "description": "A curved blade on a short handle, originally used for harvesting. Light weapon dealing 1d4 slashing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9336,7 +9336,7 @@
     {
         "name": "Spear +1",
         "cost": 2161,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Piercing", "Thrown", "Polearm"],
         "rarity": "Uncommon",
         "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9351,7 +9351,7 @@
     {
         "name": "Spear +2",
         "cost": 11638,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Piercing", "Thrown", "Polearm"],
         "rarity": "Rare",
         "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9366,7 +9366,7 @@
     {
         "name": "Spear +3",
         "cost": 34901,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Simple", "Piercing", "Thrown", "Polearm"],
         "rarity": "Very Rare",
         "description": "A shaft with a pointed head. Versatile and throwable weapon dealing 1d6 (1d8 two-handed) piercing damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9381,7 +9381,7 @@
     {
         "name": "Flail +1",
         "cost": 2170,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Uncommon",
         "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9396,7 +9396,7 @@
     {
         "name": "Flail +2",
         "cost": 11647,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Rare",
         "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9411,7 +9411,7 @@
     {
         "name": "Flail +3",
         "cost": 34910,
-        "type": "Weapon",
+        "type":["Weapon", "Melee", "Martial", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Very Rare",
         "description": "A spiked ball attached to a handle by a chain. Deals 1d8 bludgeoning damage. You gain a +3 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9426,7 +9426,7 @@
     {
         "name": "Glaive +1",
         "cost": 2180,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Reach", "Two-Handed", "Polearm"],
         "rarity": "Uncommon",
         "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +1 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -9441,7 +9441,22 @@
     {
         "name": "Glaive +2",
         "cost": 11657,
-        "type": "Weapon",
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Reach", "Two-Handed", "Polearm"],
+        "rarity": "Rare",
+        "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
+        "descriptors": [
+            "blade showing waves of pattern-welded steel",
+            "pole of ash that bends slightly without breaking",
+            "blade etched with flowing script in an ancient tongue",
+            "pole inlaid with wire forming geometric patterns",
+            "blade sharp enough to cut silk dropped on it",
+            "weapon that hums at different pitches when spun"
+        ]
+    },
+	    {
+        "name": "Glaive +3",
+        "cost": 34900,
+        "type": ["Weapon", "Melee", "Martial", "Slashing", "Reach", "Two-Handed", "Polearm"],
         "rarity": "Rare",
         "description": "A blade mounted on a long pole. Two-handed weapon with reach dealing 1d10 slashing damage. You gain a +2 bonus to attack and damage rolls made with this weapon.",
         "descriptors": [
@@ -14677,5 +14692,6 @@
 		 "descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	}
 ]   
+
 
 
