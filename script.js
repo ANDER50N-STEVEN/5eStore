@@ -513,7 +513,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 
 
 				// Populate the item list table
-		function populateItemList(filteredItems = null) {
+	function populateItemList(filteredItems = null) {
     const tbody = document.getElementById('item-table-body');
     const items = (filteredItems || officialItemDatabase).slice().sort((a, b) => {
         let aVal, bVal;
@@ -522,8 +522,8 @@ window.addEventListener('DOMContentLoaded', async function() {
             bVal = b.cost;
         } else if (officialSortColumn === 'type') {
             // Sort by first tag
-            aVal = (a.tags && a.tags[0]) ? a.tags[0].toLowerCase() : (a.type || '').toLowerCase();
-            bVal = (b.tags && b.tags[0]) ? b.tags[0].toLowerCase() : (b.type || '').toLowerCase();
+            aVal = Array.isArray(a.type) ? (a.type[0] || '').toLowerCase() : (a.type || '').toLowerCase();
+            bVal = Array.isArray(b.type) ? (b.type[0] || '').toLowerCase() : (b.type || '').toLowerCase();
         } else {
             aVal = (a[officialSortColumn] || '').toString().toLowerCase();
             bVal = (b[officialSortColumn] || '').toString().toLowerCase();
@@ -547,11 +547,8 @@ window.addEventListener('DOMContentLoaded', async function() {
         const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
         const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
         
-        // Handle tags - migrate from old 'type' field if needed
-        if (!item.tags && item.type) {
-            item.tags = [item.type];
-        }
-        const tags = item.tags || [];
+        // Handle tags - convert array to display
+        const tags = Array.isArray(item.type) ? item.type : [item.type];
         const tagsHTML = tags.map(tag => `<span class="item-tag">${tag}</span>`).join('');
         
         row.innerHTML = `
@@ -578,7 +575,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 		let currentlyEditingIndex = null;
 		let descriptorEditingIndex = null; 
 
-		function editItem(index) {
+function editItem(index) {
     const isExcluded = isItemExcluded(index, false);
 
     if (currentlyEditingIndex !== null && currentlyEditingIndex !== index) {
@@ -597,10 +594,8 @@ window.addEventListener('DOMContentLoaded', async function() {
     
     const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
     
-    // Migrate from old type field if needed
-    if (!item.tags && item.type) {
-        item.tags = [item.type];
-    }
+    // Convert type to array if it isn't already
+    const itemTags = Array.isArray(item.type) ? item.type : (item.type ? [item.type] : []);
     
     row.innerHTML = 
         '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') + ' onchange="toggleItemExclusion(' + index + ', false);" title="Include in shop generation"></td>' +
@@ -613,8 +608,8 @@ window.addEventListener('DOMContentLoaded', async function() {
         '<button class="cancel-btn" onclick="cancelEdit(' + index + ')">Cancel</button><br></td>' +
         '<td><button class="descriptor-btn" onclick="toggleDescriptorEdit(' + index + ', false)">Flavor Text (' + descriptorCount + ')</button></td>';
     
-    // Initialize tag editor
-    createTagEditor('tag-editor-' + index, item.tags || []);
+    // Initialize tag editor with array
+    createTagEditor('tag-editor-' + index, itemTags);
 }
 
 function createTagEditor(containerId, initialTags) {
@@ -867,7 +862,7 @@ function getTagsFromEditor(containerId) {
     
     item.name = document.getElementById(`edit-name-${index}`).value;
     item.cost = parseFloat(document.getElementById(`edit-cost-${index}`).value);
-    item.tags = getTagsFromEditor(`tag-editor-${index}`); // Changed from type
+    item.type = getTagsFromEditor(`tag-editor-${index}`); // Saves as array
     item.rarity = document.getElementById(`edit-rarity-${index}`).value;
     item.description = document.getElementById(`edit-desc-${index}`).value;
     
@@ -1149,22 +1144,26 @@ document.head.appendChild(notificationStyles);
 
 // ===== END DESCRIPTOR EDITOR FUNCTIONS =====
 		// Filter items
-		function applyItemFilters() {
-			const searchTerm = document.getElementById('item-search').value.toLowerCase();
-			const filterType = document.getElementById('filter-type').value;
-			const filterRarity = document.getElementById('filter-rarity').value;
-			
-			const filtered = officialItemDatabase.filter(item => {
-				const matchesSearch = item.name.toLowerCase().includes(searchTerm) || 
-									(item.description && item.description.toLowerCase().includes(searchTerm));
-				const matchesType = !filterType || item.type === filterType;
-				const matchesRarity = !filterRarity || item.rarity === filterRarity;
-				
-				return matchesSearch && matchesType && matchesRarity;
-			});
-			
-			populateItemList(filtered);
-		}
+function applyItemFilters() {
+    const searchTerm = document.getElementById('item-search').value.toLowerCase();
+    const filterType = document.getElementById('filter-type').value;
+    const filterRarity = document.getElementById('filter-rarity').value;
+    
+    const filtered = officialItemDatabase.filter(item => {
+        const matchesSearch = item.name.toLowerCase().includes(searchTerm) || 
+                            (item.description && item.description.toLowerCase().includes(searchTerm));
+        
+        // Check if any tag matches the filter
+        const tags = Array.isArray(item.type) ? item.type : [item.type];
+        const matchesType = !filterType || tags.includes(filterType);
+        
+        const matchesRarity = !filterRarity || item.rarity === filterRarity;
+        
+        return matchesSearch && matchesType && matchesRarity;
+    });
+    
+    populateItemList(filtered);
+}
 		
 		
 		function resetItemFilters() {
@@ -1263,68 +1262,62 @@ document.head.appendChild(notificationStyles);
 		
 
 
-		function filterByStoreType(items, storeType) {
-	if (storeType === 'general') {
-		return items;
-	}
+	function filterByStoreType(items, storeType) {
+    if (storeType === 'general') {
+        return items;
+    }
 
-	const filters = {
-		'weaponsmith': (item) => 
-			item.type === 'Weapon' || 
-			item.type === 'Ammunition' || 
-			item.type === 'Armor' ||
-			item.type === 'Shield',
-			
-		'armorer': (item) => 
-			item.type === 'Apparel' || 
-			item.type === 'Armor' ||
-			item.type === 'Shield' ||
-			item.type === 'Cloak' ||
-			item.type === 'Boots' ||
-			item.type === 'Gloves' ||
-			item.type === 'Headwear' ||
-			item.type === 'Clothing',
-			
-		'outfitter': (item) => 
-			(item.type === 'Misc' && (item.rarity === 'Common' || item.rarity === 'Mundane') ) ||
-			(item.type === 'Potion' && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
-			item.rarity === 'Common',
-			
-		'magic': (item) => 
-			item.type === 'Wand/Staff/Rod' ||
-			item.type === 'Book' || 
-			item.type === 'Scroll' ||
-			item.type === 'Amulet' ||
-			item.type === 'Ring' ||
-			(item.type === 'Jewelry' && item.rarity !== 'Mundane') ||
-			(item.type === 'Potion' && item.rarity !== 'Mundane') ||
-			(item.type === 'Cloak' && item.rarity !== 'Mundane') ||
-			(item.type === 'Boots' && item.rarity !== 'Mundane') ||
-			(item.type === 'Gloves' && item.rarity !== 'Mundane') ||
-			(item.type === 'Headwear' && item.rarity !== 'Mundane'),
-			
-		'clothier': (item) => 
-			item.type === 'Apparel' ||
-			item.type === 'Clothing' ||
-			item.type === 'Cloak' ||
-			item.type === 'Boots' ||
-			item.type === 'Gloves' ||
-			item.type === 'Headwear',
-			
-		'apothecary': (item) => 
-			item.type === 'Potion',
-			
-		'curiosities': (item) => {
-			if ((item.type === 'Misc' && item.rarity !== 'Mundane') ||
-			item.type === 'Jewelry' ||
-			item.type === 'Amulet' ||
-			item.type === 'Ring') return true;
-			return Math.random() < 0.05;
-			}
-	};
+    const filters = {
+        'weaponsmith': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            return tags.some(tag => ['Weapon', 'Ammunition', 'Armor', 'Shield'].includes(tag));
+        },
+            
+        'armorer': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            return tags.some(tag => ['Apparel', 'Armor', 'Shield', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Clothing'].includes(tag));
+        },
+            
+        'outfitter': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            return (tags.includes('Misc') && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
+                   (tags.includes('Potion') && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
+                   item.rarity === 'Common';
+        },
+            
+        'magic': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            return tags.some(tag => ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring'].includes(tag)) ||
+                   (tags.includes('Jewelry') && item.rarity !== 'Mundane') ||
+                   (tags.includes('Potion') && item.rarity !== 'Mundane') ||
+                   (tags.includes('Cloak') && item.rarity !== 'Mundane') ||
+                   (tags.includes('Boots') && item.rarity !== 'Mundane') ||
+                   (tags.includes('Gloves') && item.rarity !== 'Mundane') ||
+                   (tags.includes('Headwear') && item.rarity !== 'Mundane');
+        },
+            
+        'clothier': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            return tags.some(tag => ['Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear'].includes(tag));
+        },
+            
+        'apothecary': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            return tags.includes('Potion');
+        },
+            
+        'curiosities': (item) => {
+            const tags = Array.isArray(item.type) ? item.type : [item.type];
+            if ((tags.includes('Misc') && item.rarity !== 'Mundane') ||
+                tags.some(tag => ['Jewelry', 'Amulet', 'Ring'].includes(tag))) return true;
+            return Math.random() < 0.05;
+        }
+    };
 
-	return items.filter(filters[storeType] || (() => true));
+    return items.filter(filters[storeType] || (() => true));
 }
+
+
 		function selectInventory(settlementSize, storeType, maxRarity) {
 			const probabilities = getInventorySize(settlementSize);
 			const maxRarityLevel = rarityLevels[maxRarity];
@@ -1458,16 +1451,19 @@ document.head.appendChild(notificationStyles);
             }
         }
 
-        function groupByType(inventory) {
-            const grouped = {};
-            for (const item of inventory) {
-                if (!grouped[item.type]) {
-                    grouped[item.type] = [];
-                }
-                grouped[item.type].push(item);
-            }
-            return grouped;
+function groupByType(inventory) {
+    const grouped = {};
+    for (const item of inventory) {
+        // Use first tag as primary category
+        const primaryType = Array.isArray(item.type) ? (item.type[0] || 'Misc') : (item.type || 'Misc');
+        
+        if (!grouped[primaryType]) {
+            grouped[primaryType] = [];
         }
+        grouped[primaryType].push(item);
+    }
+    return grouped;
+}
 
         function toggleCategory(categoryId) {
             const category = document.getElementById(categoryId);
