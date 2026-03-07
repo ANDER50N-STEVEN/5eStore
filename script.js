@@ -1502,24 +1502,28 @@ function generateItemHTML(item, maxModifier) {
     const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
     const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
     
-    // ADD THESE LINES:
     const descriptor = getRandomDescriptor(item);
     const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
     
+    // Unique ID for each item div so we can target it for deletion
+    const itemId = `shop-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
+    
     return `
-        <div class="item">
+        <div class="item" id="${itemId}">
             <div class="item-header">
                 <div>
                     <span class="item-name">${item.name}${quantityDisplay}${luckyFindStar}${homebrewBadge}</span>
                     <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
                 </div>
-                <div>
+                <div style="display: flex; align-items: center; gap: 10px;">
                     <span class="item-price">${formattedPrice}</span>
                     <span class="price-modifier-display">(${modifier}%)</span>
+                    <button class="item-action-btn sold-btn" onclick="soldItem('${itemId}')" title="Mark as sold and remove">🪙 Sold</button>
+                    <button class="item-action-btn print-btn" onclick="printItem('${itemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
                 </div>
             </div>
             <div class="item-description">${item.description || 'No description available.'}</div>
-            ${descriptorHTML}  <!-- ADD THIS LINE -->
+            ${descriptorHTML}
         </div>
     `;
 }
@@ -2962,4 +2966,78 @@ if (loot.specialDrops && loot.specialDrops.length > 0) {
 function toggleLootCategory(categoryId) {
     const category = document.getElementById(categoryId);
     category.classList.toggle('collapsed');
+}
+
+
+function soldItem(itemId) {
+    const el = document.getElementById(itemId);
+    if (el) {
+        el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        el.style.opacity = '0';
+        el.style.transform = 'translateX(-20px)';
+        setTimeout(() => el.remove(), 300);
+    }
+}
+
+function printItem(itemId, itemName, itemRarity) {
+    const el = document.getElementById(itemId);
+    if (!el) return;
+
+    const description = el.querySelector('.item-description')?.textContent?.trim() || '';
+    const descriptor = el.querySelector('.item-descriptor')?.textContent?.trim() || '';
+
+    const printWindow = window.open('', '_blank', 'width=500,height=400');
+    printWindow.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>${itemName}</title>
+            <style>
+                body {
+                    font-family: Georgia, serif;
+                    padding: 40px;
+                    max-width: 500px;
+                    margin: 0 auto;
+                    color: #1a0f08;
+                }
+                h2 {
+                    font-size: 1.5em;
+                    margin-bottom: 4px;
+                    border-bottom: 2px solid #8b6f47;
+                    padding-bottom: 6px;
+                }
+                .rarity {
+                    font-size: 0.9em;
+                    color: #6b5437;
+                    font-style: italic;
+                    margin-bottom: 16px;
+                }
+                .description {
+                    font-size: 1em;
+                    line-height: 1.6;
+                    margin-bottom: 12px;
+                }
+                .descriptor {
+                    font-style: italic;
+                    color: #5a4a30;
+                    font-size: 0.95em;
+                    border-left: 3px solid #8b6f47;
+                    padding-left: 10px;
+                    margin-top: 10px;
+                }
+                @media print {
+                    body { padding: 20px; }
+                }
+            </style>
+        </head>
+        <body>
+            <h2>${itemName}</h2>
+            <div class="rarity">${itemRarity}</div>
+            <div class="description">${description}</div>
+            ${descriptor ? `<div class="descriptor">${descriptor}</div>` : ''}
+            <script>window.onload = () => { window.print(); }<\/script>
+        </body>
+        </html>
+    `);
+    printWindow.document.close();
 }
