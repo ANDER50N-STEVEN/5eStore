@@ -315,57 +315,113 @@ async function loadItemDatabases() {
         alert('Failed to load item databases. Please refresh the page.');
     }
 }
-
-const cityDefaults = {
-	hamlet: {
-    mundane: 10,
-    common: 5,
-    uncommon: 2,
-    rare: 0,
-    veryRare: 0,
-    legendary: 0
-  },
-  village: {
-    mundane: 13,
-    common: 8,
-    uncommon: 5,
-    rare: 1,
-    veryRare: 0,
-    legendary: 0
-  },
-  town: {
-    mundane: 16,
-    common: 11,
-    uncommon: 8,
-    rare: 5,
-    veryRare: 1,
-    legendary: 1
-  },
-	smallcity: {
-    mundane: 20,
-    common: 15,
-    uncommon: 12,
-    rare: 8,
-    veryRare: 3,
-    legendary: 2
-  },
-  city: {
-    mundane: 22,
-    common: 18,
-    uncommon: 15,
-    rare: 11,
-    veryRare: 6,
-    legendary: 2
-  },
-  metropolis: {
-    mundane: 25,
-    common: 20,
-    uncommon: 20,
-    rare: 15,
-    veryRare: 10,
-    legendary: 5
-  }
+const cityDiceDefaults = {
+    hamlet: {
+        mundane: '3d6+6',     // 9-24 items
+        common: '2d4+1',      // 3-9 items
+        uncommon: '1d6-4',    // 0-2 items (often 0)
+        rare: '1d4-3',        // 0-1 items (often 0)
+        veryRare: '0',
+        legendary: '0'
+    },
+    village: {
+        mundane: '4d6+8',     // 12-32 items
+        common: '2d6+2',      // 4-14 items
+        uncommon: '1d8-2',    // 0-6 items
+        rare: '1d6-3',        // 0-3 items (often 0-1)
+        veryRare: '1d4-3',    // 0-1 items (often 0)
+        legendary: '0'
+    },
+    town: {
+        mundane: '5d6+10',    // 15-40 items
+        common: '2d8+3',      // 5-19 items
+        uncommon: '2d6',      // 2-12 items
+        rare: '1d8-2',        // 0-6 items
+        veryRare: '1d6-3',    // 0-3 items (often 0-1)
+        legendary: '1d4-3'    // 0-1 items (often 0)
+    },
+    smallcity: {
+        mundane: '6d6+12',    // 18-48 items
+        common: '2d10+2',     // 4-22 items
+        uncommon: '2d8+1',    // 3-17 items
+        rare: '2d6-1',        // 1-11 items
+        veryRare: '1d8-2',    // 0-6 items
+        legendary: '1d6-4'    // 0-2 items (often 0)
+    },
+    city: {
+        mundane: '7d6+14',    // 21-56 items
+        common: '2d12+1',     // 3-25 items
+        uncommon: '3d6+2',    // 5-20 items
+        rare: '2d8',          // 2-16 items
+        veryRare: '2d6-1',    // 1-11 items
+        legendary: '1d6-2'    // 0-4 items (often 0-2)
+    },
+    metropolis: {
+        mundane: '8d6+16',    // 24-64 items
+        common: '3d10',       // 3-30 items
+        uncommon: '3d8+2',    // 5-26 items
+        rare: '3d6+3',        // 6-21 items
+        veryRare: '2d8',      // 2-16 items
+        legendary: '1d8-2'    // 0-6 items
+    }
 };
+
+
+// Dice rolling utility
+function rollDice(notation) {
+    // Parse dice notation (e.g., "2d6+3", "1d8-2", "3d10")
+    notation = notation.trim().toUpperCase().replace(/\s/g, '');
+    
+    // Handle "0" or empty
+    if (notation === '0' || notation === '') return 0;
+    
+    // Match pattern: XdY+Z or XdY-Z or XdY
+    const match = notation.match(/^(\d+)?D(\d+)([+-]\d+)?$/);
+    
+    if (!match) {
+        throw new Error(`Invalid dice notation: ${notation}`);
+    }
+    
+    const numDice = parseInt(match[1] || '1');
+    const diceSize = parseInt(match[2]);
+    const modifier = parseInt(match[3] || '0');
+    
+    // Validate
+    if (numDice < 1 || numDice > 100) {
+        throw new Error(`Invalid number of dice: ${numDice}`);
+    }
+    if (diceSize < 2 || diceSize > 100) {
+        throw new Error(`Invalid dice size: ${diceSize}`);
+    }
+    
+    // Roll the dice
+    let total = 0;
+    for (let i = 0; i < numDice; i++) {
+        total += Math.floor(Math.random() * diceSize) + 1;
+    }
+    
+    total += modifier;
+    
+    // Negative results become 0
+    return Math.max(0, total);
+}
+
+// Validate dice notation without rolling
+function validateDiceNotation(notation) {
+    notation = notation.trim().toUpperCase().replace(/\s/g, '');
+    
+    if (notation === '0' || notation === '') return true;
+    
+    const match = notation.match(/^(\d+)?D(\d+)([+-]\d+)?$/);
+    
+    if (!match) return false;
+    
+    const numDice = parseInt(match[1] || '1');
+    const diceSize = parseInt(match[2]);
+    
+    return numDice >= 1 && numDice <= 100 && diceSize >= 2 && diceSize <= 100;
+}
+
 
 // Toggle custom item limits visibility
 function toggleCustomLimits() {
@@ -381,24 +437,24 @@ function toggleCustomLimits() {
         applyCityDefaults(settlementSize);
     }
 }
-
 function applyCityDefaults(size) {
-  const config = cityDefaults[size];
-  if (!config) return;
+    const config = cityDiceDefaults[size];
+    if (!config) return;
 
-  // Only update if custom limits are NOT enabled
-  const useCustom = document.getElementById('use-custom-limits');
-  if (useCustom && useCustom.checked) {
-      return; // Don't override user's custom settings
-  }
+    // Only update if custom limits are NOT enabled
+    const useCustom = document.getElementById('use-custom-limits');
+    if (useCustom && useCustom.checked) {
+        return; // Don't override user's custom settings
+    }
 
-  document.getElementById("max-mundane").value = config.mundane;
-  document.getElementById("max-common").value = config.common;
-  document.getElementById("max-uncommon").value = config.uncommon;
-  document.getElementById("max-rare").value = config.rare;
-  document.getElementById("max-veryrare").value = config.veryRare;
-  document.getElementById("max-legendary").value = config.legendary;
+    document.getElementById("max-mundane").value = config.mundane;
+    document.getElementById("max-common").value = config.common;
+    document.getElementById("max-uncommon").value = config.uncommon;
+    document.getElementById("max-rare").value = config.rare;
+    document.getElementById("max-veryrare").value = config.veryRare;
+    document.getElementById("max-legendary").value = config.legendary;
 }
+
 
 // Call on page load
 window.addEventListener('DOMContentLoaded', async function() {
@@ -1318,113 +1374,105 @@ function applyItemFilters() {
 }
 
 
-		function selectInventory(settlementSize, storeType, maxRarity) {
-			const probabilities = getInventorySize(settlementSize);
-			const maxRarityLevel = rarityLevels[maxRarity];
-			
-			// Get individual max limits from inputs
-			const maxLimits = {
-				'mundane': parseInt(document.getElementById('max-mundane').value),
-				'common': parseInt(document.getElementById('max-common').value),
-				'uncommon': parseInt(document.getElementById('max-uncommon').value),
-				'rare': parseInt(document.getElementById('max-rare').value),
-				'veryrare': parseInt(document.getElementById('max-veryrare').value),
-				'legendary': parseInt(document.getElementById('max-legendary').value)
-			};
-			
-			// Filter items by store type first
-			const availableItems = filterByStoreType(itemDatabase, storeType);
-			const inventory = [];
-			
-			availableItems.sort(() => Math.random() - 0.5);
+function selectInventory(settlementSize, storeType, maxRarity) {
+    const maxRarityLevel = rarityLevels[maxRarity];
+    
+    // Get dice formulas from inputs
+    const diceFormulas = {
+        'mundane': document.getElementById('max-mundane').value,
+        'common': document.getElementById('max-common').value,
+        'uncommon': document.getElementById('max-uncommon').value,
+        'rare': document.getElementById('max-rare').value,
+        'veryrare': document.getElementById('max-veryrare').value,
+        'legendary': document.getElementById('max-legendary').value
+    };
+    
+    // Validate all dice formulas
+    for (const [rarity, formula] of Object.entries(diceFormulas)) {
+        if (!validateDiceNotation(formula)) {
+            throw new Error(`Invalid dice notation for ${rarity}: "${formula}"\n\nPlease use format like: 2d6+3, 1d8-2, 3d10, or 0`);
+        }
+    }
+    
+    // Roll for how many items of each rarity
+    const rarityTargets = {};
+    for (const [rarity, formula] of Object.entries(diceFormulas)) {
+        rarityTargets[rarity] = rollDice(formula);
+    }
+    
+    console.log('Rolled item counts:', rarityTargets);
+    
+    // Filter items by store type first
+    const availableItems = filterByStoreType(itemDatabase, storeType);
+    
+    // Separate items by rarity
+    const itemsByRarity = {
+        'mundane': [],
+        'common': [],
+        'uncommon': [],
+        'rare': [],
+        'veryrare': [],
+        'legendary': []
+    };
+    
+    const luckyFindItems = [];
+    
+    for (const item of availableItems) {
+        const itemRarityLevel = rarityLevels[item.rarity.toLowerCase().replace(' ', '')];
+        const rarityKey = item.rarity.toLowerCase().replace(' ', '');
+        
+        if (itemRarityLevel <= maxRarityLevel) {
+            itemsByRarity[rarityKey].push(item);
+        } else if (itemRarityLevel === maxRarityLevel + 1) {
+            luckyFindItems.push(item);
+        }
+    }
+    
+    // Shuffle all arrays
+    for (const rarity in itemsByRarity) {
+        itemsByRarity[rarity].sort(() => Math.random() - 0.5);
+    }
+    
+    const inventory = [];
+    
+    // Select items for each rarity up to the rolled amount
+    for (const [rarity, target] of Object.entries(rarityTargets)) {
+        if (target > 0 && itemsByRarity[rarity]) {
+            const available = itemsByRarity[rarity];
+            const numToAdd = Math.min(target, available.length);
+            
+            for (let i = 0; i < numToAdd; i++) {
+                inventory.push(available[i]);
+            }
+        }
+    }
+    
+    // Healing potion guarantee (dice-based, behind the scenes)
+    // Roll 1d6, on 5+ guarantee at least one healing potion
+    const healingPotions = inventory.filter(item => isHealingPotion(item));
+    if (healingPotions.length === 0 && Math.floor(Math.random() * 6) + 1 >= 5) {
+        // Find all available healing potions
+        const availableHealingPotions = availableItems.filter(item => 
+            isHealingPotion(item) && 
+            rarityLevels[item.rarity.toLowerCase().replace(' ', '')] <= maxRarityLevel
+        );
+        
+        if (availableHealingPotions.length > 0) {
+            const guaranteedHealing = availableHealingPotions[Math.floor(Math.random() * availableHealingPotions.length)];
+            inventory.push({...guaranteedHealing, isGuaranteed: true});
+        }
+    }
+    
+    // 5% chance for lucky find (one item of next rarity tier)
+    if (luckyFindItems.length > 0 && Math.random() < 0.05) {
+        const luckyItem = luckyFindItems[Math.floor(Math.random() * luckyFindItems.length)];
+        inventory.push({...luckyItem, isLuckyFind: true});
+    }
+    
+    return inventory;
+}
 
-			// Separate items by rarity level
-			const regularItems = [];
-			const luckyFindItems = [];
-			const healingPotions = [];
-			const mundaneItems = [];
-			
-			// Track count per rarity
-			const rarityCount = {
-				'mundane': 0,
-				'common': 0,
-				'uncommon': 0,
-				'rare': 0,
-				'veryrare': 0,
-				'legendary': 0
-			};
-			
-			for (const item of availableItems) {
-				const itemRarityLevel = rarityLevels[item.rarity.toLowerCase().replace(' ', '')];
-				
-				// Separate healing potions for special handling
-				if (isHealingPotion(item) && itemRarityLevel <= maxRarityLevel) {
-					healingPotions.push(item);
-				}
-				
-				if (itemRarityLevel === -1) {  // Mundane items
-					mundaneItems.push(item);
-				} else if (itemRarityLevel <= maxRarityLevel) {
-					// Item is within allowed rarity
-					regularItems.push(item);
-				} else if (itemRarityLevel === maxRarityLevel + 1) {
-					// Item is exactly one rarity level higher - potential lucky find
-					luckyFindItems.push(item);
-				}
-			}
-			
-		// Add 20-70% of mundane items (with individual limit) - more variation
-		const mundanePercentage = (Math.random() * 0.5);
-			for (const item of mundaneItems) {
-				if (rarityCount['mundane'] >= maxLimits['mundane']) break;
-				if (Math.random() < mundanePercentage) {
-					inventory.push(item);
-					rarityCount['mundane']++;
-				}
-			}
 
-			// 80% chance to guarantee at least one healing potion if any are available
-			if (healingPotions.length > 0 && Math.random() < 0.8) {
-				const guaranteedHealing = healingPotions[Math.floor(Math.random() * healingPotions.length)];
-				const rarityKey = guaranteedHealing.rarity.toLowerCase().replace(' ', '');
-				if (rarityCount[rarityKey] < maxLimits[rarityKey]) {
-					inventory.push({...guaranteedHealing, isGuaranteed: true});
-					rarityCount[rarityKey]++;
-				}
-			}
-
-			// Select regular inventory (including healing potions through normal probability)
-			for (const item of regularItems) {
-				const rarityKey = item.rarity.toLowerCase().replace(' ', '');
-				
-				// Check if we've hit the individual limit for this rarity
-				if (rarityCount[rarityKey] >= maxLimits[rarityKey]) continue;
-				
-			const prob = probabilities[rarityKey];
-			
-			// Add randomization factor - multiply base probability by 0.2 to 1.5
-			const randomFactor = (Math.random() * .8);
-			const adjustedProb = isHealingPotion(item) ? prob * 3 * randomFactor : prob * randomFactor;
-			
-			if (adjustedProb && Math.random() < adjustedProb) {
-			    inventory.push(item);
-			    rarityCount[rarityKey]++;
-			}
-				
-			}
-			
-			// 5% chance to add ONE lucky find item (one rarity above max)
-			if (luckyFindItems.length > 0 && Math.random() < 0.05) {
-				const luckyItem = luckyFindItems[Math.floor(Math.random() * luckyFindItems.length)];
-				const rarityKey = luckyItem.rarity.toLowerCase().replace(' ', '');
-				if (rarityCount[rarityKey] < maxLimits[rarityKey]) {
-					inventory.push({...luckyItem, isLuckyFind: true});
-					rarityCount[rarityKey]++;
-				}
-			}
-
-			return inventory;
-		}
 
         function applyPriceModifier(baseCost, maxModifier) {
             const minModifier = 95;
@@ -1503,27 +1551,25 @@ function generateItemHTML(item, maxModifier) {
     `;
 }
 
-       function generateShop() {
-			const storeType = document.getElementById('store-type').value;
-			const settlementSize = document.getElementById('settlement-size').value;
-			const maxModifier = parseFloat(document.getElementById('price-modifier').value)+5;
-			const maxRarity = document.getElementById('max-rarity').value;
+function generateShop() {
+    const storeType = document.getElementById('store-type').value;
+    const settlementSize = document.getElementById('settlement-size').value;
+    const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
+    const maxRarity = document.getElementById('max-rarity').value;
+    
+    try {
+        const inventory = selectInventory(settlementSize, storeType, maxRarity);
+        
+        if (inventory.length === 0) {
+            document.getElementById('shop-content').innerHTML = `
+                <div class="empty-state">
+                    <p>The merchant has nothing in stock today. Try a larger settlement or regenerate!</p>
+                </div>
+            `;
+            return;
+        }
 
-			const inventory = selectInventory(settlementSize, storeType, maxRarity);
-
-		   	console.log('Price Modifier:', maxModifier);
-
-		   
-			if (inventory.length === 0) {
-				document.getElementById('shop-content').innerHTML = `
-					<div class="empty-state">
-						<p>The merchant has nothing in stock today. Try a larger settlement or regenerate!</p>
-					</div>
-				`;
-				return;
-			}
-
-			const grouped = groupByType(inventory);
+        const grouped = groupByType(inventory);
 			
 			const storeNames = {
 				'general': 'General Store',
@@ -1635,6 +1681,12 @@ function generateItemHTML(item, maxModifier) {
 
 			html += '</div>';
 			document.getElementById('shop-content').innerHTML = html;
+
+		    } catch (error) {
+        alert(error.message);
+        console.error('Error generating shop:', error);
+        return;
+    }
 		}
 
 
