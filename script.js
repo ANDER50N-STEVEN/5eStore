@@ -1843,7 +1843,7 @@ const storeName = allTypes[storeType]?.name || storeType;
 			
 			let html = `
 				<div class="shop-info">
-					<h2>${storeNames} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
+					<h2>${storeName} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
 					<div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
