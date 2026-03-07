@@ -1358,8 +1358,7 @@ function applyItemFilters() {
 }
 
 
-function selectInventory(settlementSize, storeType, maxRarity) {
-    const maxRarityLevel = rarityLevels[maxRarity];
+function selectInventory(settlementSize, storeType) {
     
     // Get dice formulas from inputs
     const diceFormulas = {
@@ -1405,11 +1404,9 @@ function selectInventory(settlementSize, storeType, maxRarity) {
         const itemRarityLevel = rarityLevels[item.rarity.toLowerCase().replace(' ', '')];
         const rarityKey = item.rarity.toLowerCase().replace(' ', '');
         
-        if (itemRarityLevel <= maxRarityLevel) {
+
             itemsByRarity[rarityKey].push(item);
-        } else if (itemRarityLevel === maxRarityLevel + 1) {
-            luckyFindItems.push(item);
-        }
+
     }
     
     // Shuffle all arrays
@@ -1437,9 +1434,7 @@ function selectInventory(settlementSize, storeType, maxRarity) {
     if (healingPotions.length === 0 && Math.floor(Math.random() * 6) + 1 >= 5) {
         // Find all available healing potions
         const availableHealingPotions = availableItems.filter(item => 
-            isHealingPotion(item) && 
-            rarityLevels[item.rarity.toLowerCase().replace(' ', '')] <= maxRarityLevel
-        );
+            isHealingPotion(item)         );
         
         if (availableHealingPotions.length > 0) {
             const guaranteedHealing = availableHealingPotions[Math.floor(Math.random() * availableHealingPotions.length)];
@@ -1539,10 +1534,9 @@ function generateShop() {
     const storeType = document.getElementById('store-type').value;
     const settlementSize = document.getElementById('settlement-size').value;
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
-    const maxRarity = document.getElementById('max-rarity').value;
     
     try {
-        const inventory = selectInventory(settlementSize, storeType, maxRarity);
+        const inventory = selectInventory(settlementSize, storeType);
         
         if (inventory.length === 0) {
             document.getElementById('shop-content').innerHTML = `
@@ -1590,7 +1584,7 @@ function generateShop() {
 						<p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
 						<p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
 					</div>
-					<p style="margin-top: 15px;"><strong>Total Items:</strong> ${inventory.length} | <strong>Price Variance:</strong> 100% - ${maxModifier}% | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[maxRarity]]}</p>
+					<p style="margin-top: 15px;"><strong>Total Items:</strong> ${inventory.length} | <strong>Price Variance:</strong> 100% - ${maxModifier}% </p>
 				</div>
 				<div class="inventory">
 			`;
@@ -1932,7 +1926,6 @@ function saveCurrentStore() {
 	const storeType = document.getElementById('store-type').value;
 	const settlementSize = document.getElementById('settlement-size').value;
 	const maxModifier = parseFloat(document.getElementById('price-modifier').value)+5;
-	const maxRarity = document.getElementById('max-rarity').value;
 	
 	// Get current inventory from the DOM
 	const inventory = [];
@@ -1976,7 +1969,6 @@ itemElements2.forEach(itemEl => {
 	    storeType: storeType,
 	    settlementSize: settlementSize,
 	    maxModifier: maxModifier,
-	    maxRarity: maxRarity,
 	    wealthLevel: wealthLevel,  // Add this line
 	    inventory: inventory
 	};
@@ -2100,7 +2092,7 @@ let html = `
             <p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
             <p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
         </div>
-        <p style="margin-top: 15px;"><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> ${store.inventory.length} | <strong>Max Rarity:</strong> ${rarityNames[rarityLevels[store.maxRarity]]}</p>
+        <p style="margin-top: 15px;"><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> ${store.inventory.length} </p>
     </div>
     <div class="inventory">
 `;
