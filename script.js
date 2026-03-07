@@ -1639,56 +1639,6 @@ function filterByStoreType(items, storeType) {
     });
 }
 
-    const filters = {
-        'weaponsmith': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            return tags.some(tag => ['Weapon', 'Ammunition', 'Armor', 'Shield'].includes(tag));
-        },
-            
-        'armorer': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            return tags.some(tag => ['Apparel', 'Armor', 'Shield', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Clothing'].includes(tag));
-        },
-            
-        'outfitter': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            return (tags.includes('Misc') && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
-                   (tags.includes('Potion') && (item.rarity === 'Common' || item.rarity === 'Mundane')) ||
-                   item.rarity === 'Common';
-        },
-            
-        'magic': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            return tags.some(tag => ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring'].includes(tag)) ||
-                   (tags.includes('Jewelry') && item.rarity !== 'Mundane') ||
-                   (tags.includes('Potion') && item.rarity !== 'Mundane') ||
-                   (tags.includes('Cloak') && item.rarity !== 'Mundane') ||
-                   (tags.includes('Boots') && item.rarity !== 'Mundane') ||
-                   (tags.includes('Gloves') && item.rarity !== 'Mundane') ||
-                   (tags.includes('Headwear') && item.rarity !== 'Mundane');
-        },
-            
-        'clothier': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            return tags.some(tag => ['Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear'].includes(tag));
-        },
-            
-        'apothecary': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            return tags.includes('Potion');
-        },
-            
-        'curiosities': (item) => {
-            const tags = Array.isArray(item.type) ? item.type : [item.type];
-            if ((tags.includes('Misc') && item.rarity !== 'Mundane') ||
-                tags.some(tag => ['Jewelry', 'Amulet', 'Ring'].includes(tag))) return true;
-            return Math.random() < 0.05;
-        }
-    };
-
-    return items.filter(filters[storeType] || (() => true));
-}
-
 
 function selectInventory(settlementSize, storeType) {
     
