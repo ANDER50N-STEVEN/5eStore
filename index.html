@@ -39,7 +39,7 @@
 
 				<div class="control-group">
 					<label for="settlement-size">Settlement Size</label>
-					<select id="settlement-size" onchange="updateRarityDefaults()">
+					<select id="settlement-size" onchange="applyCityDefaults(this.value)">
 						<option value="hamlet">Hamlet (Very Small Selection)</option>
 						<option value="village">Village (Small Selection)</option>
 						<option value="town" selected>Town (Medium Selection)</option>
