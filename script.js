@@ -185,37 +185,37 @@ const defaultStoreTypes = {
         name: 'General Store',
         tags: [],  // empty = everything
         isGeneral: true,
-        limits: { mundane: '5d6+10', common: '2d8+3', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
+        limits: { mundane: '4d6+10', common: '1d8+3', uncommon: '1d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     weaponsmith: {
         name: 'Weaponsmith',
         tags: ['Weapon', 'Ammunition', 'Armor', 'Shield'],
-        limits: { mundane: '4d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
+        limits: { mundane: '4d6+4', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
     },
     outfitter: {
         name: 'Outfitter',
         tags: ['Misc', 'Ammunition', 'Potion'],
-        limits: { mundane: '5d6+10', common: '2d6+2', uncommon: '1d6-4', rare: '0', veryrare: '0', legendary: '0' }
+        limits: { mundane: '2d6+10', common: '2d6+2', uncommon: '1d6', rare: '1d8-4', veryrare: '0', legendary: '0' }
     },
     armorer: {
         name: 'Armorer',
         tags: ['Armor', 'Shield', 'Apparel', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Clothing'],
-        limits: { mundane: '4d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
+        limits: { mundane: '2d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
     magic: {
         name: 'Magic Shop',
         tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring', 'Jewelry', 'Potion', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
-        limits: { mundane: '1d4', common: '2d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
+        limits: { mundane: '1d4', common: '1d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     apothecary: {
         name: 'Apothecary',
         tags: ['Potion'],
-        limits: { mundane: '2d4', common: '3d6+3', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
+        limits: { mundane: '2d4', common: '1d6+3', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
     },
     clothier: {
         name: 'Clothier',
         tags: ['Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
-        limits: { mundane: '4d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
+        limits: { mundane: '1d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
     curiosities: {
         name: 'Curiosities Shop',
