@@ -1063,3 +1063,35 @@ label[for="use-custom-limits"] {
     transform: translateY(-1px);
     box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
 }
+
+.item-action-btn {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid;
+    transition: all 0.2s ease;
+}
+
+.sold-btn {
+    background: linear-gradient(135deg, #8b3a3a 0%, #6b2a2a 100%);
+    border-color: #a84848;
+    color: #f4e4c1;
+}
+
+.sold-btn:hover {
+    background: linear-gradient(135deg, #a84848 0%, #8b3a3a 100%);
+    transform: translateY(-1px);
+}
+
+.print-btn {
+    background: linear-gradient(135deg, #2c6b4f 0%, #1a4a37 100%);
+    border-color: #3d8b5f;
+    color: #f4e4c1;
+}
+
+.print-btn:hover {
+    background: linear-gradient(135deg, #3d8b5f 0%, #2c6b4f 100%);
+    transform: translateY(-1px);
+}
