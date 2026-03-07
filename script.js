@@ -441,12 +441,6 @@ function applyCityDefaults(size) {
     const config = cityDiceDefaults[size];
     if (!config) return;
 
-    // Only update if custom limits are NOT enabled
-    const useCustom = document.getElementById('use-custom-limits');
-    if (useCustom && useCustom.checked) {
-        return; // Don't override user's custom settings
-    }
-
     document.getElementById("max-mundane").value = config.mundane;
     document.getElementById("max-common").value = config.common;
     document.getElementById("max-uncommon").value = config.uncommon;
