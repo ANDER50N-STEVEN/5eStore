@@ -17,6 +17,7 @@
 	<div class="tab active" onclick="switchTab('generator')">Shop Generator</div>
 	<div class="tab" onclick="switchTab('itemlist')">Official Items</div>
 	<div class="tab" onclick="switchTab('homebrew')">Homebrew Items</div>
+	    <div class="tab" onclick="switchTab('storetypes', event)">Store Types</div>
 	<div class="tab" onclick="switchTab('loot')">Loot Generator</div>
 	<div class="tab" onclick="switchTab('savedstores')">Saved Stores</div>
 </div>
@@ -223,6 +224,17 @@
             </table>
         </div>
     </div>
+
+	<!-- Store Types Tab -->
+<div id="storetypes-tab" class="tab-content">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h2 style="color: #d4af37;">🏪 Store Types</h2>
+        <button onclick="openStoreTypeEditor(null)">+ New Store Type</button>
+    </div>
+    <div id="store-types-list">
+        <!-- Populated by JS -->
+    </div>
+</div>
 
 	<!-- Saved Stores Tab -->
 	<div id="savedstores-tab" class="tab-content">
