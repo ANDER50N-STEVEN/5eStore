@@ -1298,23 +1298,7 @@ function applyItemFilters() {
 
         const rarityNames = ['Mundane','Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
 
-        function updateRarityDefaults() {
-            const settlementSize = document.getElementById('settlement-size').value;
-            const maxRaritySelect = document.getElementById('max-rarity');
-            
-            // Set default max rarity based on settlement
-            const defaults = {
-                'hamlet': 'common',
-                'village': 'uncommon',
-                'town': 'rare',
-                'smallcity': 'rare',
-                'city': 'veryrare',
-				'metropolis': 'legendary'
 
-            };
-            
-            maxRaritySelect.value = defaults[settlementSize];
-        }
 		
 
 
