@@ -813,7 +813,7 @@
     {
         "name": "Alchemy Jug",
         "cost": 3023,
-        "type": ["Misc"],
+        "type": ["Misc", "Potion", "Poison"],
         "rarity": "Uncommon",
         "description": "This ceramic jug can produce 2 gallons of liquid per day. It can create mayonnaise, vinegar, fresh water, salt water, beer, wine, honey, or oil.",
         "descriptors": [
@@ -828,7 +828,7 @@
     {
         "name": "Amulet of Health",
         "cost": 8200,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Healing"],
         "rarity": "Rare",
         "description": "Your Constitution score is 19 while you wear this amulet. It has no effect if your Constitution is already 19 or higher.",
         "descriptors": [
@@ -858,7 +858,7 @@
     {
         "name": "Amulet of the Planes",
         "cost": 77667,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Travel"],
         "rarity": "Very Rare",
         "description": "While wearing this amulet, you can use an action to name a location on another plane of existence and make a DC 15 Intelligence check. On success, you cast plane shift. On failure, everyone within 15 feet is transported to a random location.",
         "descriptors": [
@@ -888,7 +888,7 @@
     {
         "name": "Apparatus of Kwalish",
         "cost": 37917,
-        "type": ["Misc"],
+        "type": ["Misc", "Travel"],
         "rarity": "Legendary",
         "description": "This iron vehicle resembles a giant lobster. It's airtight and watertight, providing air for 10 hours. It has underwater movement and powerful claws for attacks.",
         "descriptors": [
@@ -948,7 +948,7 @@
     {
         "name": "Bag of Tricks",
         "cost": 1660,
-        "type": ["Misc"],
+        "type": ["Misc", "Animal"],
         "rarity": "Uncommon",
         "description": "You can use an action to pull a fuzzy object from this bag and throw it. It transforms into a random creature determined by the bag's color. The creature vanishes at the next dawn or when reduced to 0 hit points.",
         "descriptors": [
@@ -963,7 +963,7 @@
     {
         "name": "Bead of Force",
         "cost": 2334,
-        "type": ["Misc"],
+        "type": ["Misc", "Ammunition"],
         "rarity": "Rare",
         "description": "A bead of force is a throwable item that explodes in a 10-foot radius for 5d4 force damage, then creates an impenetrable sphere for 1 minute. Creatures that fail the Dex save are trapped inside, while others are pushed out, and the sphere can be moved or carried despite containing creatures.",
         "descriptors": [
@@ -978,7 +978,7 @@
     {
         "name": "Belt of Dwarvenkind",
         "cost": 5687,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Dwarf"],
         "rarity": "Rare",
         "description": "This belt boosts your Constitution by 2 (up to 20) and gives advantage on Persuasion checks with dwarves, plus a daily chance to grow a magnificent beard. If you're not a dwarf, it also grants poison resistance and save advantage, 60-foot darkvision, and the ability to speak Dwarvish.",
         "descriptors": [
@@ -1069,7 +1069,7 @@
     {
         "name": "Boots of Elvenkind",
         "cost": 1627,
-        "type": ["Apparel", "Stealth", "Travel"],
+        "type": ["Apparel", "Stealth", "Travel", "Elf"],
         "rarity": "Uncommon",
         "description": "While wearing these boots, your steps make no sound, regardless of the surface you're moving across. You also have advantage on Stealth checks that rely on moving silently.",
         "descriptors": [
@@ -1159,7 +1159,7 @@
     {
         "name": "Bracers of Archery",
         "cost": 1367,
-        "type": ["Armor", "Bracer"],
+        "type": ["Armor", "Bracer", "Bow"],
         "rarity": "Uncommon",
         "description": "While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.",
         "descriptors": [
@@ -1234,7 +1234,7 @@
     {
         "name": "Candle of Invocation",
         "cost": 16125,
-        "type": ["Misc"],
+        "type": ["Misc", "Divine", "Travel"],
         "rarity": "Very Rare",
         "description": "This slender taper is dedicated to a deity and shares that deity's alignment. While lit, the candle sheds dim light in a 30-foot radius. Any creature within that light whose alignment matches that of the candle makes attack rolls, saving throws, and ability checks with advantage. In addition, a cleric or druid in the light whose alignment matches the candle's can cast 1st-level spells he or she has prepared without expending spell slots, though the spell's effect is as if cast with a 1st-level slot. Alternatively, when you light the candle for the first time, you can cast the Gate spell with it. Doing so destroys the candle.",
         "descriptors": [
@@ -1249,7 +1249,7 @@
     {
         "name": "Cap of Water Breathing",
         "cost": 1473,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater.",
         "descriptors": [
@@ -1354,7 +1354,7 @@
     {
         "name": "Chime of Opening",
         "cost": 2460,
-        "type": ["Misc"],
+        "type": ["Misc", "Stealth"],
         "rarity": "Rare",
         "description": "You can strike this chime as an action to cast knock. It can be used 10 times, after which it cracks and becomes useless.",
         "descriptors": [
@@ -1414,7 +1414,7 @@
     {
         "name": "Cloak of Elvenkind",
         "cost": 3550,
-        "type": ["Apparel", "Stealth"],
+        "type": ["Apparel", "Stealth", "Elf"],
         "rarity": "Uncommon",
         "description": "While wearing this cloak with the hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Stealth checks since the cloak's color shifts to camouflage you.",
         "descriptors": [
@@ -1459,7 +1459,7 @@
     {
         "name": "Cloak of the Bat",
         "cost": 6733,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Stealth"],
         "rarity": "Rare",
         "description": "While wearing this cloak, you have advantage on Stealth checks. You can use it to cast polymorph on yourself, transforming into a bat. You can also use it to fly in dim light or darkness.",
         "descriptors": [
@@ -1564,7 +1564,7 @@
     {
         "name": "Cubic Gate",
         "cost": 87983,
-        "type": ["Misc"],
+        "type": ["Misc", "Travel"],
         "rarity": "Legendary",
         "description": "This cube has 6 sides, each linked to a different plane of existence. You can use an action to press one side and cast gate, opening a portal to that plane.",
         "descriptors": [
@@ -1579,7 +1579,7 @@
     {
         "name": "Daern's Instant Fortress",
         "cost": 31800,
-        "type": ["Misc"],
+        "type": ["Misc", "Travel"],
         "rarity": "Rare",
         "description": "A 1-inch metal cube that transforms into a square tower 20 feet on each side and 30 feet high when activated. Has arrow slits, a battlement, and a ladder inside. Can be commanded to return to cube form.",
         "descriptors": [
@@ -1594,7 +1594,7 @@
     {
         "name": "Dagger of Venom",
         "cost": 2117,
-        "type": ["Weapon", "Melee", "Simple", "Piercing", "Finesse", "Thrown", "Light", "Dagger"],
+        "type": ["Weapon", "Melee", "Simple", "Piercing", "Finesse", "Thrown", "Light", "Dagger", "Poison"],
         "rarity": "Rare",
         "description": "A +1 dagger. You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.",
         "descriptors": [
@@ -1639,7 +1639,7 @@
     {
         "name": "Deck of Illusions",
         "cost": 5430,
-        "type": ["Misc"],
+        "type": ["Misc", "Animal"],
         "rarity": "Uncommon",
         "description": "A box containing 34 cards. Drawing a card creates an illusory creature that lasts until dispelled or you use an action to dismiss it. The illusion looks and sounds real but cannot deal damage.",
         "descriptors": [
@@ -1699,7 +1699,7 @@
     {
         "name": "Dragon Scale Mail",
         "cost": 11533,
-        "type": ["Armor", "Medium"],
+        "type": ["Armor", "Medium", "Dragon"],
         "rarity": "Very Rare",
         "description": "AC 14 + Dex modifier (max 2) armor that grants advantage on saving throws against dragon breath weapons and resistance to one damage type based on the dragon's color.",
         "descriptors": [
@@ -1714,7 +1714,7 @@
     {
         "name": "Dragon Slayer",
         "cost": 4962,
-        "type": ["Weapon", "Melee", "Martial"],
+        "type": ["Weapon", "Melee", "Martial", "Dragon"],
         "rarity": "Rare",
         "description": "A +1 weapon that deals an extra 3d6 damage against creatures of the dragon type, making it particularly effective against dragons and dragonborn.",
         "descriptors": [
@@ -1774,7 +1774,7 @@
     {
         "name": "Dwarven Plate",
         "cost": 17603,
-        "type": ["Armor", "Heavy"],
+        "type": ["Armor", "Heavy", "Dwarf"],
         "rarity": "Very Rare",
         "description": "Plate armor (AC 18) that doesn't impose disadvantage on Stealth checks. While wearing it, you gain +2 to AC and are immune to effects that would push you or knock you prone.",
         "descriptors": [
@@ -1789,7 +1789,7 @@
     {
         "name": "Dwarven Thrower",
         "cost": 18855,
-        "type": ["Weapon", "Melee", "Martial"],
+        "type": ["Weapon", "Melee", "Martial", "Dwarf"],
         "rarity": "Very Rare",
         "description": "A +3 warhammer with the thrown property (range 20/60) that returns to your hand after being thrown. Deals an extra 1d8 damage to giants (2d8 when thrown).",
         "descriptors": [
@@ -1864,7 +1864,7 @@
     {
         "name": "Elven Chain",
         "cost": 3567,
-        "type": ["Armor", "Light"],
+        "type": ["Armor", "Light", "Elf"],
         "rarity": "Rare",
         "description": "A +1 chain shirt that can be worn by anyone regardless of armor proficiency. AC 13 + Dex modifier. Exceptionally light and quiet.",
         "descriptors": [
@@ -1939,7 +1939,7 @@
     {
         "name": "Figurine of Wondrous Power, Bronze Griffon",
         "cost": 4747,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "A bronze griffon that transforms into a living griffon for up to 6 hours, serving as a loyal mount. Can be used again after 5 days.",
         "descriptors": [
@@ -1954,7 +1954,7 @@
     {
         "name": "Figurine of Wondrous Power, Ebony Fly",
         "cost": 3552,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "A small ebony statue that becomes a giant fly for up to 12 hours, serving as a mount. Can be used again after 2 days.",
         "descriptors": [
@@ -1969,7 +1969,7 @@
     {
         "name": "Figurine of Wondrous Power, Golden Lions",
         "cost": 2527,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "Two golden lion figurines that can each become a lion for up to 1 hour. Can be used simultaneously. Usable once per week. The lions obey your commands and fight for you.",
         "descriptors": [
@@ -1984,7 +1984,7 @@
     {
         "name": "Figurine of Wondrous Power, Ivory Goats",
         "cost": 8861,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "Three ivory goat figurines. One becomes a riding goat for 24 hours (1/week), one a giant goat for 3 hours (1/month), and one a nightmare-like goat for 3 hours (1/15 days).",
         "descriptors": [
@@ -2000,7 +2000,7 @@
     {
         "name": "Figurine of Wondrous Power, Marble Elephant",
         "cost": 5720,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "A marble elephant that transforms into a living elephant for up to 24 hours. Can be used once per week. Stats as per the elephant creature, obeying your commands.",
         "descriptors": [
@@ -2015,7 +2015,7 @@
     {
         "name": "Figurine of Wondrous Power, Obsidian Steed",
         "cost": 44813,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Very Rare",
         "description": "An obsidian horse that becomes a Nightmare (24 hours, 1/5 days). The mount is friendly, unless you are of good alignment, in which case it has a 10% of disobeying you.",
         "descriptors": [
@@ -2030,7 +2030,7 @@
     {
         "name": "Figurine of Wondrous Power, Onyx Dog",
         "cost": 2419,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "An onyx statuette that becomes a mastiff for up to 6 hours. It obeys your commands and fights for you. Can be used once per week. The mastiff disappears if reduced to 0 hit points.",
         "descriptors": [
@@ -2045,7 +2045,7 @@
     {
         "name": "Figurine of Wondrous Power, Serpentine Owl",
         "cost": 4019,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
         "description": "A serpentine owl figurine that becomes a giant owl for up to 8 hours. Can be used again after 2 days. The owl is friendly, obeys commands, and can communicate telepathically to you.",
         "descriptors": [
@@ -2060,7 +2060,7 @@
     {
         "name": "Figurine of Wondrous Power, Silver Raven",
         "cost": 2057,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Uncommon",
         "description": "A silver raven that transforms into a living raven for up to 12 hours. Can be used again after 2 days. The raven obeys simple commands and can deliver messages.",
         "descriptors": [
@@ -2070,21 +2070,6 @@
             "silver raven perched as if about to take wing, the beak sharp",
             "polished silver bird small enough for a pocket, surprisingly detailed",
             "sterling raven figure with tiny feet gripping a base, wings folded"
-        ]
-    },
-    {
-        "name": "Flame Tongue",
-        "cost": 3867,
-        "type": ["Weapon", "Melee", "Martial"],
-        "rarity": "Rare",
-        "description": "A sword that can ignite with flames as a bonus action, dealing an extra 2d6 fire damage on hits. The flames shed bright light in a 40-foot radius and dim light for another 40 feet.",
-        "descriptors": [
-            "sword with a blade that shows heat-wave distortion even when cold, handle wrapped in red leather",
-            "weapon with flame patterns etched along the fuller, the metal having an orange tint",
-            "blade that's always slightly warm to the touch, the cross-guard shaped like flickering fire",
-            "sword with a pommel of carved ruby, the blade showing rainbow heat-tempering",
-            "weapon that smells faintly of ash and smoke, the edge having a peculiar reddish hue",
-            "blade with grip that never feels cold, minute fire runes visible along the tang"
         ]
     },
     {
@@ -2100,21 +2085,6 @@
             "mahogany container with ship imagery in relief on the lid, well-crafted",
             "sealed wooden box with nautical decorations, the wood treated against water damage",
             "portable case of ship-wood with metal reinforcements at the corners"
-        ]
-    },
-    {
-        "name": "Frost Brand",
-        "cost": 5214,
-        "type": ["Weapon", "Melee", "Martial"],
-        "rarity": "Very Rare",
-        "description": "A +1 sword that deals an extra 1d6 cold damage. Grants resistance to fire damage and extinguishes nonmagical flames within 30 feet.",
-        "descriptors": [
-            "blade covered in frost that never melts, the metal perpetually cold to touch",
-            "sword with ice-blue steel and a grip that's uncomfortably cold, rime forming on the guard",
-            "weapon with snowflake patterns etched into the blade, always radiating chill",
-            "frozen-looking sword with white-blue metal, the pommel a sphere of eternal ice",
-            "blade that frosts over anything it touches, the cross-guard icy to the touch",
-            "sword with a handle wrapped in white leather, the blade leaving condensation trails in warm air"
         ]
     },
     {
@@ -2195,7 +2165,7 @@
     {
         "name": "Gloves of Missile Snaring",
         "cost": 1708,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Bow"],
         "rarity": "Uncommon",
         "description": "When hit by a ranged weapon attack, you can use your reaction to reduce damage by 1d10 + your Dexterity modifier. If reduced to 0, you catch the projectile if you have a free hand.",
         "descriptors": [
@@ -2210,7 +2180,7 @@
     {
         "name": "Gloves of Swimming and Climbing",
         "cost": 1650,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing these gloves, you gain a climbing speed and swimming speed equal to your walking speed, and you gain +5 to Strength (Athletics) checks for climbing or swimming.",
         "descriptors": [
@@ -2240,7 +2210,7 @@
     {
         "name": "Goggles of Night",
         "cost": 1260,
-        "type": ["Misc"],
+        "type": ["Misc", "Stealth"],
         "rarity": "Uncommon",
         "description": "While wearing these dark lenses, you have darkvision out to 60 feet. If you already have darkvision, its range increases by 60 feet.",
         "descriptors": [
@@ -2345,7 +2315,7 @@
     {
         "name": "Helm of Teleportation",
         "cost": 8100,
-        "type": ["Armor", "Helmet"],
+        "type": ["Armor", "Helmet", "Travel"],
         "rarity": "Rare",
         "description": "This helm has 3 charges. You can expend 1 charge to cast Teleport from it. Regains 1d3 charges daily at dawn. Navigate through familiar and unfamiliar locations.",
         "descriptors": [
@@ -2495,7 +2465,7 @@
     {
         "name": "Immovable Rod",
         "cost": 3483,
-        "type": ["Wand/Staff/Rod", "Arcane"],
+        "type": ["Wand/Staff/Rod", "Arcane", "Misc"],
         "rarity": "Uncommon",
         "description": "A rod that can be activated to fix in place, supporting up to 8,000 pounds. Only a DC 30 Strength check can move it. Stays fixed relative to its position even if in a moving vehicle.",
         "descriptors": [
@@ -2510,7 +2480,7 @@
     {
         "name": "Instrument of the Bards, Anstruth Harp",
         "cost": 37167,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Very Rare",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Control Weather, Cure Wounds (5th), and Wall of Thorns. Each 1/day. Non-bards take 4d10 psychic damage when playing.",
         "descriptors": [
@@ -2525,7 +2495,7 @@
     {
         "name": "Instrument of the Bards, Canaith Mandolin",
         "cost": 14690,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Rare",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Cure Wounds (3rd), Dispel Magic, and Protection from Energy. Each 1/day. Non-bards take 3d6 psychic damage when playing.",
         "descriptors": [
@@ -2540,7 +2510,7 @@
     {
         "name": "Instrument of the Bards, Cli Lyre",
         "cost": 17163,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Rare",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Stone Shape, Wall of Fire, and Wind Wall. Each 1/day. Non-bards take 3d6 psychic damage when playing.",
         "descriptors": [
@@ -2555,7 +2525,7 @@
     {
         "name": "Instrument of the Bards, Doss Lute",
         "cost": 11803,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Uncommon",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Animal Friendship, Protection from Energy, and Protection from Poison. Each 1/day. Non-bards take 2d4 psychic damage.",
         "descriptors": [
@@ -2570,7 +2540,7 @@
     {
         "name": "Instrument of the Bards, Fochlucan Bandore",
         "cost": 10930,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Uncommon",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Entangle, Faerie Fire, Shillelagh, and Speak with Animals. Each 1/day. Non-bards take 2d4 psychic damage.",
         "descriptors": [
@@ -2585,7 +2555,7 @@
     {
         "name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
         "cost": 11130,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Uncommon",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Barkskin, Cure Wounds, and Fog Cloud. Each 1/day. Non-bards take 2d4 psychic damage.",
         "descriptors": [
@@ -2600,7 +2570,7 @@
     {
         "name": "Instrument of the Bards, Ollamh Harp",
         "cost": 81333,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Legendary",
         "description": "Grants +2 to spell attack rolls and performance checks. Casts Confusion, Control Weather, and Fire Storm. Each 1/day. Non-bards take 5d10 psychic damage.",
         "descriptors": [
@@ -2885,7 +2855,7 @@
     {
         "name": "Lantern of Revealing",
         "cost": 2823,
-        "type": ["Misc"],
+        "type": ["Misc", "Travel"],
         "rarity": "Uncommon",
         "description": "Burns for 6 hours on 1 pint of oil. Sheds bright light in 30-foot radius, dim light 30 feet beyond. Invisible creatures and objects become visible in the light. Can be shuttered.",
         "descriptors": [
@@ -2915,7 +2885,7 @@
     {
         "name": "Mace of Disruption",
         "cost": 4477,
-        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace"],
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace", "Divine"],
         "rarity": "Rare",
         "description": "A +2 mace that deals extra 2d6 radiant damage to fiends and undead. On a critical hit, the target must succeed on DC 15 Wisdom save or be destroyed (if 25 HP or less remaining).",
         "descriptors": [
@@ -2930,7 +2900,7 @@
     {
         "name": "Mace of Smiting",
         "cost": 5713,
-        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace"],
+        "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace", "Divine"],
         "rarity": "Rare",
         "description": "A +1 mace that becomes +3 against constructs. On a hit against a construct, it deals an extra 2d6 bludgeoning damage. Critical hits can destroy constructs instantly (DC 17 Constitution save).",
         "descriptors": [
@@ -2960,7 +2930,7 @@
     {
         "name": "Mantle of Spell Resistance",
         "cost": 13400,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Arcane"],
         "rarity": "Rare",
         "description": "While wearing this cloak, you have advantage on saving throws against spells and other magical effects. Provides significant protection against hostile magic.",
         "descriptors": [
@@ -3020,7 +2990,7 @@
     {
         "name": "Marvelous Pigments",
         "cost": 10533,
-        "type": ["Misc"],
+        "type": ["Misc", "Consumable"],
         "rarity": "Very Rare",
         "description": "A set of magical paints that can create real three-dimensional objects when painted on surfaces. The objects become permanent and real. Contains 1d4 pots of paint, each sufficient for 1,000 square feet.",
         "descriptors": [
@@ -14692,6 +14662,7 @@
 		 "descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	}
 ]   
+
 
 
 
