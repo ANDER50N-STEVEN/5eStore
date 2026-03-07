@@ -178,6 +178,328 @@ const commonTags = [
     'Artifact', 'Relic', 'Common Item', 'Trade Good'
 ];
 
+// ===== STORE TYPES SYSTEM =====
+
+const defaultStoreTypes = {
+    general: {
+        name: 'General Store',
+        icon: '🏪',
+        tags: [],  // empty = everything
+        isGeneral: true,
+        limits: { mundane: '5d6+10', common: '2d8+3', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
+    },
+    weaponsmith: {
+        name: 'Weaponsmith',
+        icon: '⚔️',
+        tags: ['Weapon', 'Ammunition', 'Armor', 'Shield'],
+        limits: { mundane: '4d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
+    },
+    outfitter: {
+        name: 'Outfitter',
+        icon: '💼',
+        tags: ['Misc', 'Ammunition', 'Potion'],
+        limits: { mundane: '5d6+10', common: '2d6+2', uncommon: '1d6-4', rare: '0', veryrare: '0', legendary: '0' }
+    },
+    armorer: {
+        name: 'Armorer',
+        icon: '🛡️',
+        tags: ['Armor', 'Shield', 'Apparel', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Clothing'],
+        limits: { mundane: '4d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
+    },
+    magic: {
+        name: 'Magic Shop',
+        icon: '🔮',
+        tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring', 'Jewelry', 'Potion', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
+        limits: { mundane: '1d4', common: '2d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
+    },
+    apothecary: {
+        name: 'Apothecary',
+        icon: '⚗️',
+        tags: ['Potion'],
+        limits: { mundane: '2d4', common: '3d6+3', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
+    },
+    clothier: {
+        name: 'Clothier',
+        icon: '👔',
+        tags: ['Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
+        limits: { mundane: '4d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
+    },
+    curiosities: {
+        name: 'Curiosities Shop',
+        icon: '🎭',
+        tags: ['Misc', 'Jewelry', 'Amulet', 'Ring'],
+        limits: { mundane: '1d4', common: '2d4+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
+    }
+};
+
+// All known tags for the picker
+const allKnownTags = [
+    'Weapon', 'Armor', 'Shield', 'Ammunition',
+    'Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear',
+    'Jewelry', 'Amulet', 'Ring',
+    'Potion', 'Scroll', 'Wand/Staff/Rod', 'Book',
+    'Misc', 'Tool', 'Instrument', 'Container', 'Light'
+];
+
+let customStoreTypes = {};  // loaded from localStorage
+
+function loadCustomStoreTypes() {
+    try {
+        const saved = localStorage.getItem('dnd-custom-store-types');
+        if (saved) customStoreTypes = JSON.parse(saved);
+    } catch(e) {
+        console.error('Error loading custom store types:', e);
+        customStoreTypes = {};
+    }
+}
+
+function saveCustomStoreTypes() {
+    localStorage.setItem('dnd-custom-store-types', JSON.stringify(customStoreTypes));
+}
+
+// Returns merged built-in + custom, with any user edits to built-ins applied
+function getAllStoreTypes() {
+    const merged = {};
+    // Start with defaults
+    for (const [key, val] of Object.entries(defaultStoreTypes)) {
+        merged[key] = { ...val };
+    }
+    // Overlay any saved edits (including edits to built-ins)
+    for (const [key, val] of Object.entries(customStoreTypes)) {
+        merged[key] = { ...val };
+    }
+    return merged;
+}
+
+function getStoreType(key) {
+    return customStoreTypes[key] || defaultStoreTypes[key] || null;
+}
+
+function isBuiltIn(key) {
+    return !!defaultStoreTypes[key];
+}
+
+function populateStoreTypesList() {
+    const container = document.getElementById('store-types-list');
+    const allTypes = getAllStoreTypes();
+
+    let html = '<div class="store-types-grid">';
+
+    for (const [key, store] of Object.entries(allTypes)) {
+        const isEdited = isBuiltIn(key) && customStoreTypes[key];
+        const isCustom = !isBuiltIn(key);
+
+        const tagBadges = store.isGeneral
+            ? '<span class="store-type-tag">Everything</span>'
+            : (store.tags && store.tags.length > 0
+                ? store.tags.map(t => `<span class="store-type-tag">${t}</span>`).join('')
+                : '<span class="store-type-tag" style="color:#8b6f47;">No tags set</span>');
+
+        html += `
+            <div class="store-type-card">
+                <div class="store-type-card-header">
+                    <span class="store-type-icon">${store.icon || '🏪'}</span>
+                    <span class="store-type-name">${store.name}</span>
+                    ${isEdited ? '<span class="store-type-badge edited">Edited</span>' : ''}
+                    ${isCustom ? '<span class="store-type-badge custom">Custom</span>' : ''}
+                </div>
+                <div class="store-type-tags-preview">${tagBadges}</div>
+                <div class="store-type-limits-preview">
+                    <span>Mundane: ${store.limits.mundane}</span>
+                    <span>Common: ${store.limits.common}</span>
+                    <span>Uncommon: ${store.limits.uncommon}</span>
+                    <span>Rare: ${store.limits.rare}</span>
+                    <span>Very Rare: ${store.limits.veryrare}</span>
+                    <span>Legendary: ${store.limits.legendary}</span>
+                </div>
+                <div class="store-type-card-actions">
+                    <button class="edit-btn" onclick="openStoreTypeEditor('${key}')">Edit</button>
+                    ${isEdited ? `<button class="cancel-btn" onclick="resetStoreType('${key}')">Reset</button>` : ''}
+                    ${isCustom ? `<button class="delete-btn" onclick="deleteStoreType('${key}')">Delete</button>` : ''}
+                </div>
+            </div>
+        `;
+    }
+
+    html += '</div>';
+    container.innerHTML = html;
+}
+
+function openStoreTypeEditor(key) {
+    const isNew = key === null;
+    const allTypes = getAllStoreTypes();
+    const store = isNew ? {
+        name: '',
+        icon: '🏪',
+        tags: [],
+        isGeneral: false,
+        limits: { mundane: '3d6+6', common: '2d4+1', uncommon: '1d6-4', rare: '1d4-3', veryrare: '0', legendary: '0' }
+    } : { ...allTypes[key] };
+
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.id = 'store-type-editor-overlay';
+
+    // Build tag checkboxes
+    const tagCheckboxes = allKnownTags.map(tag => {
+        const checked = store.tags && store.tags.includes(tag) ? 'checked' : '';
+        return `
+            <label class="tag-checkbox-label">
+                <input type="checkbox" value="${tag}" ${checked} class="store-type-tag-check">
+                <span>${tag}</span>
+            </label>
+        `;
+    }).join('');
+
+    overlay.innerHTML = `
+        <div class="modal-box" style="max-width: 650px; max-height: 90vh; overflow-y: auto;">
+            <h3 style="color: #d4af37; margin-bottom: 20px;">${isNew ? '✨ New Store Type' : `✏️ Edit: ${store.name}`}</h3>
+
+            <div class="modal-section">
+                <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px;">
+                    <div class="control-group">
+                        <label>Icon</label>
+                        <input type="text" id="st-icon" value="${store.icon || '🏪'}" style="text-align: center; font-size: 1.5em;">
+                    </div>
+                    <div class="control-group">
+                        <label>Store Name</label>
+                        <input type="text" id="st-name" value="${store.name}" placeholder="e.g. Blacksmith">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <label style="color: #d4af37; font-weight: bold; display: block; margin-bottom: 10px;">
+                    Item Tags This Store Carries
+                </label>
+                <label class="tag-checkbox-label" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="st-is-general" ${store.isGeneral ? 'checked' : ''} onchange="toggleGeneralStore(this)">
+                    <span style="color: #d4af37;">General Store (carries everything)</span>
+                </label>
+                <div id="st-tags-grid" class="tag-checkbox-grid" style="${store.isGeneral ? 'opacity:0.4; pointer-events:none;' : ''}">
+                    ${tagCheckboxes}
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <label style="color: #d4af37; font-weight: bold; display: block; margin-bottom: 10px;">
+                    Default Item Limits (dice notation)
+                </label>
+                <div class="custom-limits-grid">
+                    <div class="control-group"><label>Mundane</label><input type="text" id="st-mundane" value="${store.limits.mundane}"></div>
+                    <div class="control-group"><label>Common</label><input type="text" id="st-common" value="${store.limits.common}"></div>
+                    <div class="control-group"><label>Uncommon</label><input type="text" id="st-uncommon" value="${store.limits.uncommon}"></div>
+                    <div class="control-group"><label>Rare</label><input type="text" id="st-rare" value="${store.limits.rare}"></div>
+                    <div class="control-group"><label>Very Rare</label><input type="text" id="st-veryrare" value="${store.limits.veryrare}"></div>
+                    <div class="control-group"><label>Legendary</label><input type="text" id="st-legendary" value="${store.limits.legendary}"></div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px;">
+                <button class="cancel-btn" onclick="closeStoreTypeEditor()">Cancel</button>
+                <button class="save-btn" onclick="saveStoreTypeFromEditor('${key}', ${isNew})">💾 Save</button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(overlay);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeStoreTypeEditor(); });
+}
+
+function toggleGeneralStore(checkbox) {
+    const grid = document.getElementById('st-tags-grid');
+    grid.style.opacity = checkbox.checked ? '0.4' : '1';
+    grid.style.pointerEvents = checkbox.checked ? 'none' : '';
+}
+
+function closeStoreTypeEditor() {
+    const overlay = document.getElementById('store-type-editor-overlay');
+    if (overlay) overlay.remove();
+}
+
+function saveStoreTypeFromEditor(originalKey, isNew) {
+    const name = document.getElementById('st-name').value.trim();
+    const icon = document.getElementById('st-icon').value.trim();
+    const isGeneral = document.getElementById('st-is-general').checked;
+
+    if (!name) {
+        alert('Please enter a store name.');
+        return;
+    }
+
+    const limits = {
+        mundane:   document.getElementById('st-mundane').value.trim(),
+        common:    document.getElementById('st-common').value.trim(),
+        uncommon:  document.getElementById('st-uncommon').value.trim(),
+        rare:      document.getElementById('st-rare').value.trim(),
+        veryrare:  document.getElementById('st-veryrare').value.trim(),
+        legendary: document.getElementById('st-legendary').value.trim()
+    };
+
+    // Validate dice notation
+    for (const [rarity, formula] of Object.entries(limits)) {
+        if (!validateDiceNotation(formula)) {
+            alert(`Invalid dice notation for ${rarity}: "${formula}"\n\nUse format like: 2d6+3, 1d8-2, or 0`);
+            return;
+        }
+    }
+
+    const tags = isGeneral ? [] : Array.from(
+        document.querySelectorAll('.store-type-tag-check:checked')
+    ).map(cb => cb.value);
+
+    // Generate a key for new store types
+    const key = isNew
+        ? 'custom_' + name.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '') + '_' + Date.now()
+        : originalKey;
+
+    customStoreTypes[key] = { name, icon, tags, isGeneral, limits };
+    saveCustomStoreTypes();
+
+    // Rebuild the store type dropdown in the generator
+    rebuildStoreTypeDropdown();
+
+    closeStoreTypeEditor();
+    populateStoreTypesList();
+    showSaveNotification(`Store type "${name}" saved!`);
+}
+
+function resetStoreType(key) {
+    if (!confirm(`Reset "${defaultStoreTypes[key].name}" to its default settings?`)) return;
+    delete customStoreTypes[key];
+    saveCustomStoreTypes();
+    rebuildStoreTypeDropdown();
+    populateStoreTypesList();
+    showSaveNotification(`"${defaultStoreTypes[key].name}" reset to defaults.`);
+}
+
+function deleteStoreType(key) {
+    const name = customStoreTypes[key]?.name || key;
+    if (!confirm(`Delete store type "${name}"? This cannot be undone.`)) return;
+    delete customStoreTypes[key];
+    saveCustomStoreTypes();
+    rebuildStoreTypeDropdown();
+    populateStoreTypesList();
+    showSaveNotification(`"${name}" deleted.`);
+}
+
+function rebuildStoreTypeDropdown() {
+    const select = document.getElementById('store-type');
+    const currentValue = select.value;
+    const allTypes = getAllStoreTypes();
+
+    select.innerHTML = '';
+    for (const [key, store] of Object.entries(allTypes)) {
+        const option = document.createElement('option');
+        option.value = key;
+        option.textContent = `${store.icon} ${store.name}`;
+        select.appendChild(option);
+    }
+
+    // Restore previous selection if still valid
+    if (allTypes[currentValue]) select.value = currentValue;
+}
+
 // Get random descriptor for an item
 function getRandomDescriptor(item) {
     if (!item.descriptors || item.descriptors.length === 0) {
@@ -454,6 +776,8 @@ function applyCityDefaults(size) {
 window.addEventListener('DOMContentLoaded', async function() {
     await loadItemDatabases();
     loadItemEditsFromLocalStorage();
+	loadCustomStoreTypes();
+rebuildStoreTypeDropdown();
 
     // Load custom tags
     const savedCustomTags = localStorage.getItem('dnd-custom-tags');
@@ -526,6 +850,9 @@ window.addEventListener('DOMContentLoaded', async function() {
 			} else if (tabName === 'savedstores') {
 				shopContent.style.display = 'none';
 				document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
+			} else if (tabName === 'storetypes') {
+   				 shopContent.style.display = 'none';
+    			populateStoreTypesList();
 			} else {
 				shopContent.style.display = 'block';
 			}
@@ -1296,10 +1623,21 @@ function applyItemFilters() {
 		
 
 
-	function filterByStoreType(items, storeType) {
-    if (storeType === 'general') {
+function filterByStoreType(items, storeType) {
+    const store = getStoreType(storeType);
+    if (!store || store.isGeneral || !store.tags || store.tags.length === 0) {
         return items;
     }
+
+    return items.filter(item => {
+        const tags = Array.isArray(item.type) ? item.type : [item.type];
+        // For curiosities, add small random chance for odd items
+        if (storeType === 'curiosities') {
+            return tags.some(t => store.tags.includes(t)) || Math.random() < 0.05;
+        }
+        return tags.some(t => store.tags.includes(t));
+    });
+}
 
     const filters = {
         'weaponsmith': (item) => {
@@ -1532,6 +1870,19 @@ function generateShop() {
     const storeType = document.getElementById('store-type').value;
     const settlementSize = document.getElementById('settlement-size').value;
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
+
+    // Apply store type default limits if custom limits not enabled
+    const useCustom = document.getElementById('use-custom-limits').checked;
+    if (!useCustom) {
+        const store = getStoreType(storeType);
+        if (store && store.limits) {
+            document.getElementById('max-mundane').value   = store.limits.mundane;
+            document.getElementById('max-common').value    = store.limits.common;
+            document.getElementById('max-uncommon').value  = store.limits.uncommon;
+            document.getElementById('max-rare').value      = store.limits.rare;
+            document.getElementById('max-veryrare').value  = store.limits.veryrare;
+            document.getElementById('max-legendary').value = store.limits.legendary;
+		}
     
     try {
         const inventory = selectInventory(settlementSize, storeType);
@@ -1547,27 +1898,9 @@ function generateShop() {
 
         const grouped = groupByType(inventory);
 			
-			const storeNames = {
-				'general': 'General Store',
-				'weaponsmith': 'Weaponsmith',
-				'outfitter': 'Outfitter',
-				'apothecary': 'Apothecary',
-				'armorer': 'Armorer',
-				'magic': 'Magic Shop',
-				'clothier': 'Clothier',
-				'curiosities': 'Curiosities Shop'
-			};
-
-			const storeIcons = {
-				'general': '🏪',
-				'weaponsmith': '⚔️',
-				'outfitter': '💼',
-				'apothecary': '⚗️',
-				'armorer': '🛡️',
-				'magic': '🔮',
-				'clothier': '👔',
-				'curiosities': '🎭'
-			};
+const allTypes = getAllStoreTypes();
+const storeName = allTypes[storeType]?.name || storeType;
+const storeIcon = allTypes[storeType]?.icon || '🏪';
 
 			// Generate shopkeeper
 			const wealthLevel = document.getElementById('wealth-level').value;
@@ -1575,7 +1908,7 @@ function generateShop() {
 			
 			let html = `
 				<div class="shop-info">
-					<h2>${storeIcons[storeType]} ${storeNames[storeType]} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
+					<h2>${storeIcons} ${storeNames} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
 					<div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
@@ -2236,6 +2569,8 @@ function deleteSavedStore(index) {
 // Initialize - Load edits on page load
 window.addEventListener('DOMContentLoaded', function() {
 	loadItemEditsFromLocalStorage();
+	loadCustomStoreTypes();
+rebuildStoreTypeDropdown();
 });
 
 // ===== LOOT GENERATOR FUNCTIONS =====
