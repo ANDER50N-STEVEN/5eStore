@@ -183,50 +183,42 @@ const commonTags = [
 const defaultStoreTypes = {
     general: {
         name: 'General Store',
-        icon: '🏪',
         tags: [],  // empty = everything
         isGeneral: true,
         limits: { mundane: '5d6+10', common: '2d8+3', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     weaponsmith: {
         name: 'Weaponsmith',
-        icon: '⚔️',
         tags: ['Weapon', 'Ammunition', 'Armor', 'Shield'],
         limits: { mundane: '4d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
     },
     outfitter: {
         name: 'Outfitter',
-        icon: '💼',
         tags: ['Misc', 'Ammunition', 'Potion'],
         limits: { mundane: '5d6+10', common: '2d6+2', uncommon: '1d6-4', rare: '0', veryrare: '0', legendary: '0' }
     },
     armorer: {
         name: 'Armorer',
-        icon: '🛡️',
         tags: ['Armor', 'Shield', 'Apparel', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Clothing'],
         limits: { mundane: '4d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
     magic: {
         name: 'Magic Shop',
-        icon: '🔮',
         tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring', 'Jewelry', 'Potion', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
         limits: { mundane: '1d4', common: '2d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     apothecary: {
         name: 'Apothecary',
-        icon: '⚗️',
         tags: ['Potion'],
         limits: { mundane: '2d4', common: '3d6+3', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
     },
     clothier: {
         name: 'Clothier',
-        icon: '👔',
         tags: ['Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
         limits: { mundane: '4d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
     curiosities: {
         name: 'Curiosities Shop',
-        icon: '🎭',
         tags: ['Misc', 'Jewelry', 'Amulet', 'Ring'],
         limits: { mundane: '1d4', common: '2d4+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
     }
@@ -298,7 +290,6 @@ function populateStoreTypesList() {
         html += `
             <div class="store-type-card">
                 <div class="store-type-card-header">
-                    <span class="store-type-icon">${store.icon || '🏪'}</span>
                     <span class="store-type-name">${store.name}</span>
                     ${isEdited ? '<span class="store-type-badge edited">Edited</span>' : ''}
                     ${isCustom ? '<span class="store-type-badge custom">Custom</span>' : ''}
@@ -330,7 +321,6 @@ function openStoreTypeEditor(key) {
     const allTypes = getAllStoreTypes();
     const store = isNew ? {
         name: '',
-        icon: '🏪',
         tags: [],
         isGeneral: false,
         limits: { mundane: '3d6+6', common: '2d4+1', uncommon: '1d6-4', rare: '1d4-3', veryrare: '0', legendary: '0' }
@@ -357,10 +347,6 @@ function openStoreTypeEditor(key) {
 
             <div class="modal-section">
                 <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px;">
-                    <div class="control-group">
-                        <label>Icon</label>
-                        <input type="text" id="st-icon" value="${store.icon || '🏪'}" style="text-align: center; font-size: 1.5em;">
-                    </div>
                     <div class="control-group">
                         <label>Store Name</label>
                         <input type="text" id="st-name" value="${store.name}" placeholder="e.g. Blacksmith">
@@ -419,7 +405,6 @@ function closeStoreTypeEditor() {
 
 function saveStoreTypeFromEditor(originalKey, isNew) {
     const name = document.getElementById('st-name').value.trim();
-    const icon = document.getElementById('st-icon').value.trim();
     const isGeneral = document.getElementById('st-is-general').checked;
 
     if (!name) {
@@ -453,7 +438,7 @@ function saveStoreTypeFromEditor(originalKey, isNew) {
         ? 'custom_' + name.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '') + '_' + Date.now()
         : originalKey;
 
-    customStoreTypes[key] = { name, icon, tags, isGeneral, limits };
+    customStoreTypes[key] = { name, tags, isGeneral, limits };
     saveCustomStoreTypes();
 
     // Rebuild the store type dropdown in the generator
@@ -492,7 +477,7 @@ function rebuildStoreTypeDropdown() {
     for (const [key, store] of Object.entries(allTypes)) {
         const option = document.createElement('option');
         option.value = key;
-        option.textContent = `${store.icon} ${store.name}`;
+        option.textContent = `${store.name}`;
         select.appendChild(option);
     }
 
@@ -1851,7 +1836,6 @@ function generateShop() {
 			
 const allTypes = getAllStoreTypes();
 const storeName = allTypes[storeType]?.name || storeType;
-const storeIcon = allTypes[storeType]?.icon || '🏪';
 
 			// Generate shopkeeper
 			const wealthLevel = document.getElementById('wealth-level').value;
@@ -1859,7 +1843,7 @@ const storeIcon = allTypes[storeType]?.icon || '🏪';
 			
 			let html = `
 				<div class="shop-info">
-					<h2>${storeIcons} ${storeNames} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
+					<h2>${storeNames} - ${settlementSize.charAt(0).toUpperCase() + settlementSize.slice(1)}</h2>
 					<div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
 						<p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
@@ -2342,16 +2326,7 @@ function loadSavedStore(index) {
 		'curiosities': 'Curiosities Shop'
 	};
 	
-	const storeIcons = {
-		'general': '🏪',
-		'weaponsmith': '⚔️',
-		'outfitter': '💼',
-		'apothecary': '⚗️',
-		'armorer': '🛡️',
-		'magic': '🔮',
-		'clothier': '👔',
-		'curiosities': '🎭'
-	};
+
 	
 	const rarityNames = ['Mundane','Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
 	const rarityLevels = {
@@ -2367,7 +2342,7 @@ function loadSavedStore(index) {
 	
 let html = `
     <div class="shop-info">
-        <h2>${storeIcons[store.storeType]} ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
+        <h2> ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
         <div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
             <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
             <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
