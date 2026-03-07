@@ -80,39 +80,57 @@
 			
 
 			<!-- ADVANCED OPTIONS TOGGLE -->
-			<div class="control-group" style="grid-column: span 2;">
-			    <label style="display: flex; align-items: center; cursor: pointer;">
-			        <input type="checkbox" id="use-custom-limits" onchange="toggleCustomLimits()" style="width: auto; margin-right: 8px;">
-			        <span style="text-transform: none; letter-spacing: normal;">⚙️ Use Custom Item Limits (Advanced)</span>
-			    </label>
-			</div>
-			
-			<!-- HIDDEN CUSTOM LIMITS SECTION -->
-			<div id="custom-limits-container" class="custom-limits-container" style="display: none;">
-			    <div class="custom-limits-header">
-			        <span>Custom Item Limits</span>
-			        <small>Override automatic inventory sizing</small>
-			    </div>
+<div class="control-group" style="grid-column: span 2;">
+    <label style="display: flex; align-items: center; cursor: pointer;">
+        <input type="checkbox" id="use-custom-limits" onchange="toggleCustomLimits()" style="width: auto; margin-right: 8px;">
+        <span style="text-transform: none; letter-spacing: normal;">⚙️ Use Custom Item Limits (Advanced)</span>
+    </label>
+</div>
 
-				<div class="custom-limits-grid">
-					<div class="control-group">
-						  <h4>Custom Item Limits (Dice Notation)</h4>
-    <label>Mundane: <input type="text" id="max-mundane" value="3d6+6" placeholder="e.g., 3d6+6"></label>
-    <label>Common: <input type="text" id="max-common" value="2d4+1" placeholder="e.g., 2d6+3"></label>
-    <label>Uncommon: <input type="text" id="max-uncommon" value="1d6-4" placeholder="e.g., 1d8-2"></label>
-    <label>Rare: <input type="text" id="max-rare" value="1d4-3" placeholder="e.g., 1d6-3"></label>
-    <label>Very Rare: <input type="text" id="max-veryrare" value="0" placeholder="e.g., 1d4-3"></label>
-    <label>Legendary: <input type="text" id="max-legendary" value="0" placeholder="e.g., 1d6-4"></label>
+<!-- HIDDEN CUSTOM LIMITS SECTION -->
+<div id="custom-limits-container" class="custom-limits-container" style="display: none; grid-column: span 2;">
+    <div class="custom-limits-header">
+        <span>Custom Item Limits</span>
+        <small>Override automatic inventory sizing with dice notation (e.g., 2d6+3, 1d8-2)</small>
+    </div>
 
-					</div>
-				        <div class="control-group">
-						<label for="allow-homebrew">Allow Homebrew Items</label>
-						<input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
-					</div>
-				</div>
-			</div>
-
-
+    <div class="custom-limits-grid">
+        <div class="control-group">
+            <label for="max-mundane">Mundane</label>
+            <input type="text" id="max-mundane" value="3d6+6" placeholder="e.g., 3d6+6">
+        </div>
+        
+        <div class="control-group">
+            <label for="max-common">Common</label>
+            <input type="text" id="max-common" value="2d4+1" placeholder="e.g., 2d6+3">
+        </div>
+        
+        <div class="control-group">
+            <label for="max-uncommon">Uncommon</label>
+            <input type="text" id="max-uncommon" value="1d6-4" placeholder="e.g., 1d8-2">
+        </div>
+        
+        <div class="control-group">
+            <label for="max-rare">Rare</label>
+            <input type="text" id="max-rare" value="1d4-3" placeholder="e.g., 1d6-3">
+        </div>
+        
+        <div class="control-group">
+            <label for="max-veryrare">Very Rare</label>
+            <input type="text" id="max-veryrare" value="0" placeholder="e.g., 1d4-3">
+        </div>
+        
+        <div class="control-group">
+            <label for="max-legendary">Legendary</label>
+            <input type="text" id="max-legendary" value="0" placeholder="e.g., 1d6-4">
+        </div>
+        
+        <div class="control-group">
+            <label for="allow-homebrew">Allow Homebrew Items</label>
+            <input type="checkbox" id="allow-homebrew" onchange="updateItemDatabase()">
+        </div>
+    </div>
+</div>
 
 
 		</div>
