@@ -1833,6 +1833,7 @@ function generateShop() {
             document.getElementById('max-veryrare').value  = store.limits.veryrare;
             document.getElementById('max-legendary').value = store.limits.legendary;
 		}
+	}
     
     try {
         const inventory = selectInventory(settlementSize, storeType);
