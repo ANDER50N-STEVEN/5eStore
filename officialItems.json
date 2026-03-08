@@ -3050,7 +3050,7 @@
     {
         "name": "Necklace of Fireballs",
         "cost": 4638,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Arcane"],
         "rarity": "Rare",
         "description": "This necklace has 1d6+3 beads that can be detached and thrown to explode as fireballs. Different beads create different power levels. When all beads are used, the necklace becomes nonmagical.",
         "descriptors": [
@@ -3080,7 +3080,7 @@
     {
         "name": "Oathbow",
         "cost": 6890,
-        "type": ["Weapon", "Melee", "Martial"],
+        "type": ["Weapon", "Bow", "Martial"],
         "rarity": "Very Rare",
         "description": "A +2 longbow. You can declare a sworn enemy, gaining +3d6 damage against that target but disadvantage against others. Advantage on attack rolls against sworn enemy. Declaration lasts until target dies or dawn.",
         "descriptors": [
@@ -3155,7 +3155,7 @@
     {
         "name": "Periapt of Health",
         "cost": 2410,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Healing"],
         "rarity": "Uncommon",
         "description": "While wearing this pendant, you are immune to contracting any disease. If already diseased when you put it on, the disease is suppressed until you remove the periapt.",
         "descriptors": [
@@ -3170,7 +3170,7 @@
     {
         "name": "Periapt of Proof Against Poison",
         "cost": 4553,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Healing"],
         "rarity": "Rare",
         "description": "While wearing this pendant, you are immune to the poisoned condition and have immunity to poison damage.",
         "descriptors": [
@@ -3185,7 +3185,7 @@
     {
         "name": "Periapt of Wound Closure",
         "cost": 1392,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Healing"],
         "rarity": "Uncommon",
         "description": "While wearing this pendant, you stabilize automatically whenever you're dying at the start of your turn. In addition, you regain hit points from Hit Dice at double rate (minimum 1 HP).",
         "descriptors": [
@@ -3215,7 +3215,7 @@
     {
         "name": "Pipes of Haunting",
         "cost": 2694,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Uncommon",
         "description": "These pipes have 3 charges. You can play them to create an eerie, spellbinding tune. Creatures within 30 feet must make DC 15 Wisdom save or be frightened for 1 minute. Regains charges daily.",
         "descriptors": [
@@ -3230,7 +3230,7 @@
     {
         "name": "Pipes of the Sewers",
         "cost": 1077,
-        "type": ["Misc", "Summoning"],
+        "type": ["Misc", "Summoning", "Instrument"],
         "rarity": "Uncommon",
         "description": "These pipes have 3 charges. You can play them to summon 1d3 swarms of rats. The rats are friendly and obey commands for 1 hour. Regains charges daily at dawn.",
         "descriptors": [
@@ -3260,7 +3260,7 @@
     {
         "name": "Potion of Animal Friendship",
         "cost": 167,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Animal"],
         "rarity": "Uncommon",
         "description": "When you drink this potion, you can cast Animal Friendship (save DC 13) for 1 hour at will. Agitated, earthy green color with floating particles.",
         "descriptors": [
@@ -3290,7 +3290,7 @@
     {
         "name": "Potion of Climbing",
         "cost": 257,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Travel"],
         "rarity": "Common",
         "description": "When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. Viscous brown liquid that smells of pine tar.",
         "descriptors": [
@@ -3350,7 +3350,7 @@
     {
         "name": "Potion of Gaseous Form",
         "cost": 820,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Stealth"],
         "rarity": "Rare",
         "description": "When you drink this potion, you gain the effect of Gaseous Form for 1 hour (no concentration). Grayish-white liquid that constantly bubbles.",
         "descriptors": [
@@ -3470,7 +3470,7 @@
     {
         "name": "Potion of Healing",
         "cost": 50,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Common",
         "description": "You regain 2d4+2 hit points when you drink this potion. Red liquid that glimmers when agitated.",
         "descriptors": [
@@ -3485,7 +3485,7 @@
     {
         "name": "Potion of Healing, Greater",
         "cost": 205,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Uncommon",
         "description": "You regain 4d4+4 hit points when you drink this potion. Deep red liquid with bright sparkles.",
         "descriptors": [
@@ -3500,7 +3500,7 @@
     {
         "name": "Potion of Healing, Superior",
         "cost": 463,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Rare",
         "description": "You regain 8d4+8 hit points when you drink this potion. Bright red liquid with dancing motes of light.",
         "descriptors": [
@@ -3515,7 +3515,7 @@
     {
         "name": "Potion of Healing, Supreme",
         "cost": 1470,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Very Rare",
         "description": "You regain 10d4+20 hit points when you drink this potion. Crimson liquid with golden light swirling through it.",
         "descriptors": [
@@ -3560,7 +3560,7 @@
     {
         "name": "Potion of Invulnerability",
         "cost": 2757,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Rare",
         "description": "For 1 minute after drinking this potion, you have resistance to all damage. The syrupy liquid looks like liquefied iron.",
         "descriptors": [
@@ -3605,7 +3605,7 @@
     {
         "name": "Potion of Poison",
         "cost": 1956,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Stealth"],
         "rarity": "Uncommon",
         "description": "This liquid looks and smells like a Potion of Healing. However, it is actually poison. Drinking it deals 3d6 poison damage and poisons you (save DC 13). Same appearance as healing potion.",
         "descriptors": [
@@ -3620,7 +3620,7 @@
     {
         "name": "Potion of Resistance",
         "cost": 632,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Uncommon",
         "description": "When you drink this potion, you gain resistance to one type of damage for 1 hour. The DM chooses the type or determines it randomly. Liquid's color varies by damage type.",
         "descriptors": [
@@ -3650,7 +3650,7 @@
     {
         "name": "Potion of Vitality",
         "cost": 1690,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Very Rare",
         "description": "When you drink this potion, you are cured of any disease and the poisoned condition. You regain all HP and are energized for 24 hours (advantage on Constitution checks). Bright red liquid that glows with inner light.",
         "descriptors": [
@@ -3770,7 +3770,7 @@
     {
         "name": "Restorative Ointment",
         "cost": 637,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Uncommon",
         "description": "This jar contains 5 doses of a thick mixture that smells faintly of aloe. One dose restores 2d8+2 hit points. Using all 5 doses at once casts Lesser Restoration on the target.",
         "descriptors": [
@@ -3875,7 +3875,7 @@
     {
         "name": "Ring of Evasion",
         "cost": 5100,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Stealth"],
         "rarity": "Rare",
         "description": "This ring has 3 charges. When you fail a Dexterity save, you can use your reaction to expend 1 charge and succeed instead. Regains 1d3 charges daily at dawn.",
         "descriptors": [
@@ -3935,7 +3935,7 @@
     {
         "name": "Ring of Jumping",
         "cost": 1217,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing this ring, you can cast Jump on yourself at will. This triples your jumping distance.",
         "descriptors": [
@@ -3980,7 +3980,7 @@
     {
         "name": "Ring of Regeneration",
         "cost": 27333,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Healing"],
         "rarity": "Very Rare",
         "description": "While wearing this ring, you regain 1d6 hit points every 10 minutes if you have at least 1 hit point. If you lose a body part, the ring causes it to regrow in 1d6+1 days.",
         "descriptors": [
@@ -3994,6 +3994,141 @@
     },
     {
         "name": "Ring of Resistance",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+	    {
+        "name": "Ring of Resistance - Fire",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+	    {
+        "name": "Ring of Resistance - Cold",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+	    {
+        "name": "Ring of Resistance - Lightning",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+	    {
+        "name": "Ring of Resistance - Acid",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+		    {
+        "name": "Ring of Resistance - Force",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+		    {
+        "name": "Ring of Resistance - Necrotic",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+		    {
+        "name": "Ring of Resistance - Poison",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+		    {
+        "name": "Ring of Resistance - Radiant",
+        "cost": 5167,
+        "type": ["Jewelry"],
+        "rarity": "Rare",
+        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
+        "descriptors": [
+            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
+            "resistance band with color-coded gem, the stone specific to protection",
+            "elemental ring with diagnostic gemstone, each color different",
+            "protection ring with identifying gem, the stone revealing its nature",
+            "resistant band with gem matching damage type, the color indicative",
+            "ring bearing a gem that shows its protective element through color"
+        ]
+    },
+		    {
+        "name": "Ring of Resistance - Thunder",
         "cost": 5167,
         "type": ["Jewelry"],
         "rarity": "Rare",
@@ -4055,7 +4190,7 @@
     {
         "name": "Ring of Swimming",
         "cost": 2090,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Travel"],
         "rarity": "Uncommon",
         "description": "You have a swimming speed of 40 feet while wearing this ring.",
         "descriptors": [
@@ -4130,7 +4265,7 @@
     {
         "name": "Ring of Water Walking",
         "cost": 2317,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.",
         "descriptors": [
@@ -4205,7 +4340,7 @@
     {
         "name": "Robe of the Archmagi",
         "cost": 50833,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Arcane"],
         "rarity": "Legendary",
         "description": "This robe grants AC 15 + Dex mod, advantage on saves against spells, and +2 to spell save DC and attack rolls. Color indicates alignment requirement (white/good, gray/neutral, black/evil).",
         "descriptors": [
@@ -4310,7 +4445,7 @@
     {
         "name": "Rope of Climbing",
         "cost": 948,
-        "type": ["Misc"],
+        "type": ["Misc", "Travel"],
         "rarity": "Uncommon",
         "description": "This 60-foot length of silk rope can be commanded to move, knot itself, attach to surfaces, and detach. It has AC 20, 20 HP, and can support 3,000 pounds.",
         "descriptors": [
@@ -4445,7 +4580,7 @@
     {
         "name": "Shield of Missile Attraction",
         "cost": 3533,
-        "type": ["Armor", "Shield"],
+        "type": ["Armor", "Shield", "Bow"],
         "rarity": "Rare",
         "description": "While holding this cursed shield, you have resistance to ranged weapon damage. However, ranged weapon attacks against other targets within 10 feet are redirected to target you. Requires Remove Curse to unattune.",
         "descriptors": [
@@ -4460,7 +4595,7 @@
     {
         "name": "Slippers of Spider Climbing",
         "cost": 2733,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing these slippers, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed.",
         "descriptors": [
@@ -4565,7 +4700,7 @@
     {
         "name": "Staff of Healing",
         "cost": 7593,
-        "type": ["Wand/Staff/Rod", "Arcane"],
+        "type": ["Wand/Staff/Rod", "Divine", "Healing"],
         "rarity": "Rare",
         "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you can expend charges to cast Cure Wounds (1 per spell level), Lesser Restoration (2), or Mass Cure Wounds (5).",
         "descriptors": [
@@ -4835,7 +4970,7 @@
     {
         "name": "Talisman of Ultimate Evil",
         "cost": 59220,
-        "type": ["Jewelry", "Divine"],
+        "type": ["Jewelry", "Evil"],
         "rarity": "Legendary",
         "description": "This unholy symbol has 6 charges. Usable only by evil-aligned creatures. A good creature touching it takes 8d6 necrotic damage. You can expend charges to transform good creatures into harmless animals. If non-evil creature uses final charge, it destroys talisman and creature.",
         "descriptors": [
@@ -5195,7 +5330,7 @@
     {
         "name": "Bead of Nourishment",
         "cost": 66,
-        "type": ["Misc"],
+        "type": ["Misc", "Consumable"],
         "rarity": "Common",
         "description": "This bead provides enough nourishment to sustain a humanoid for one day when eaten. Takes an action to eat. Single use item.",
         "descriptors": [
@@ -5210,7 +5345,7 @@
     {
         "name": "Bead of Refreshment",
         "cost": 66,
-        "type": ["Misc"],
+        "type": ["Misc", "Consumable"],
         "rarity": "Common",
         "description": "This bead dissolves in liquid, transforming up to 1 pint of the liquid into fresh, cold water. Single use. Useful for purifying drinks.",
         "descriptors": [
@@ -5332,7 +5467,7 @@
         "cost": 120,
         "type": ["Jewelry"],
         "rarity": "Common",
-        "description": "A shard of dark crystal. As an action, you can use it to cast Minor Illusion. Requires spellcasting ability. Warlock-themed trinket for cantrip casting.",
+        "description": "A shard of dark crystal. You may attempt to cast a Warlock Cantrip you do not know. Requires attunement by a Warlock.",
         "descriptors": [
             "jagged shard of black crystal wrapped in thin iron wire",
             "obsidian fragment that swallows nearby light rather than reflecting it",
@@ -5375,7 +5510,7 @@
     {
         "name": "Enduring Spellbook",
         "cost": 330,
-        "type": ["Book"],
+        "type": ["Book", "Arcane"],
         "rarity": "Common",
         "description": "This spellbook is immune to damage from fire and water. The pages are waterproof and fireproof, protecting your spell collection from environmental hazards.",
         "descriptors": [
@@ -5422,7 +5557,7 @@
         "cost": 120,
         "type": ["Apparel", "Arcane"],
         "rarity": "Common",
-        "description": "This pointed hat allows you to cast Prestidigitation while wearing it. If you can already cast Prestidigitation, you can cast it as a bonus action. Requires spellcasting ability.",
+        "description": "This pointed hat allows you attempt to cast a Wizard cantrip while wearing it. Requires attunement by a wizard.",
         "descriptors": [
             "pointed blue hat speckled with embroidered silver stars",
             "tall conical hat with a slightly bent tip",
@@ -5435,7 +5570,7 @@
     {
         "name": "Heward's Handy Spice Pouch",
         "cost": 330,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Travel"],
         "rarity": "Common",
         "description": "This belt pouch produces enough seasoning to season a single meal each day. The seasoning changes to suit your taste. Never run out of spices for cooking.",
         "descriptors": [
@@ -5465,7 +5600,7 @@
     {
         "name": "Instrument of Illusions",
         "cost": 300,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Common",
         "description": "While playing this musical instrument, you can create harmless, illusory visual effects within a 5-foot radius sphere centered on you. The illusions last until you stop playing. Requires proficiency.",
         "descriptors": [
@@ -5480,7 +5615,7 @@
     {
         "name": "Instrument of Scribing",
         "cost": 180,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Common",
         "description": "While playing this musical instrument, you can create writing on nonmagical surfaces within 5 feet. The writing appears wherever you direct. Stops when you stop playing. Requires proficiency.",
         "descriptors": [
@@ -5495,7 +5630,7 @@
     {
         "name": "Lock of Trickery",
         "cost": 660,
-        "type": ["Misc"],
+        "type": ["Misc", "Stealth"],
         "rarity": "Common",
         "description": "This lock appears to be an ordinary lock but can be locked or unlocked without a key. You can use an action to lock or unlock it, and only you can unlock it this way without using thieves' tools.",
         "descriptors": [
@@ -5508,24 +5643,9 @@
         ]
     },
     {
-        "name": "Moon-Touched Sword",
-        "cost": 660,
-        "type": ["Weapon", "Melee", "Martial"],
-        "rarity": "Common",
-        "description": "In darkness, the unsheathed blade sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet. Otherwise functions as a normal sword.",
-        "descriptors": [
-            "polished blade that gleams with a pale silvery sheen",
-            "simple sword with a faint crescent etched near the hilt",
-            "steel blade that reflects light like a calm night sky",
-            "well-balanced sword with a cool, almost lunar glow",
-            "blade that seems brighter under starlight",
-            "plain weapon whose edge shines softly in dim conditions"
-        ]
-    },
-    {
         "name": "Mystery Key",
         "cost": 66,
-        "type": ["Misc"],
+        "type": ["Misc", "Stealth"],
         "rarity": "Common",
         "description": "A question mark is worked into the head of this key. The key has a 5% chance of unlocking any lock into which it's inserted. Once it unlocks something, it disappears.",
         "descriptors": [
@@ -5630,7 +5750,7 @@
     {
         "name": "Pot of Awakening",
         "cost": 132,
-        "type": ["Misc"],
+        "type": ["Misc", "Nature"],
         "rarity": "Common",
         "description": "When you plant a shrub in this pot and let it grow for 30 days, the shrub awakens and pulls itself free, becoming an awakened shrub. The pot can't be used again for 1 year.",
         "descriptors": [
@@ -5660,7 +5780,7 @@
     {
         "name": "Ruby of the War Mage",
         "cost": 300,
-        "type": ["Jewelry", "Spellcasting Focus"],
+        "type": ["Jewelry", "Arcane"],
         "rarity": "Common",
         "description": "You can attach this ruby to a simple or martial weapon. The weapon then functions as a spellcasting focus for your spells. Requires attunement by a spellcaster.",
         "descriptors": [
@@ -5690,7 +5810,7 @@
     {
         "name": "Staff of Adornment",
         "cost": 330,
-        "type": ["Wand/Staff/Rod", "Arcane"],
+        "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Common",
         "description": "You can use a bonus action to cause flowers or vines to appear on the staff, or cause them to disappear. These decorations are harmless and don't affect the staff's function.",
         "descriptors": [
@@ -5705,7 +5825,7 @@
     {
         "name": "Staff of Birdcalls",
         "cost": 330,
-        "type": ["Wand/Staff/Rod", "Arcane"],
+        "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Common",
         "description": "This staff has 10 charges. You can use an action to expend 1 charge and create a sound out to a range of 60 feet: bird calls, chirps, or caws. Regains 1d6+4 charges at dawn.",
         "descriptors": [
@@ -5720,7 +5840,7 @@
     {
         "name": "Staff of Flowers",
         "cost": 330,
-        "type": ["Wand/Staff/Rod", "Arcane"],
+        "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Common",
         "description": "Has 10 charges. You can use an action to expend 1 charge and cause a flower to sprout from the ground or from the staff itself. The flower is harmless and nonmagical. Regains 1d6+4 charges daily.",
         "descriptors": [
@@ -5810,7 +5930,7 @@
     {
         "name": "Wand of Conducting",
         "cost": 198,
-        "type": ["Wand/Staff/Rod", "Arcane"],
+        "type": ["Wand/Staff/Rod", "Arcane", "Instrument"],
         "rarity": "Common",
         "description": "This wand has 3 charges. You can use an action to wave it and expend 1 charge to create orchestral music that can be heard up to 60 feet away. You control the song. Regains charges at dawn.",
         "descriptors": [
@@ -5885,7 +6005,7 @@
     {
         "name": "Alchemical Compendium",
         "cost": 4880,
-        "type": ["Potion", "Consumable", "Arcane"],
+        "type": ["Potion", "Consumable", "Arcane", "Book"],
         "rarity": "Rare",
         "description": "This leather-bound book contains alchemical knowledge. Requires attunement by wizard. Grants advantage on Arcana checks related to potions and elixirs. Can produce common alchemical items. Replacement for alchemist's supplies granting +2 bonus.",
         "descriptors": [
@@ -6035,7 +6155,7 @@
     {
         "name": "Astral Shard",
         "cost": 3620,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic, you can roll on the Wild Magic Surge table. If you roll a 1, you gain 1 sorcery point.",
         "descriptors": [
@@ -6065,7 +6185,7 @@
     {
         "name": "Atlas of Endless Horizons",
         "cost": 4640,
-        "type": ["Book", "Arcane"],
+        "type": ["Book", "Arcane", "Travel"],
         "rarity": "Rare",
         "description": "Requires attunement by wizard. This book shows maps of places you've been. Can cast Arcane Gate. Contains 3d6 spells related to travel and exploration (conjuration school). Can be used as spellcasting focus.",
         "descriptors": [
@@ -6125,7 +6245,7 @@
     {
         "name": "Bell Branch",
         "cost": 800,
-        "type": ["Misc", "Spellcasting Focus"],
+        "type": ["Misc", "Spellcasting Focus", "Spellcasting Focus", "Healing"],
         "rarity": "Rare",
         "description": "Requires attunement by druid or warlock. This silver implement can be used as a spellcasting focus. As a bonus action, you can expend one spell slot to regain a number of hit points equal to 1d4 per level of the spell slot expended.",
         "descriptors": [
@@ -6200,7 +6320,7 @@
     {
         "name": "Cauldron of Rebirth",
         "cost": 8700,
-        "type": ["Misc"],
+        "type": ["Misc", "Healing"],
         "rarity": "Very Rare",
         "description": "Requires attunement by druid or warlock. This tiny pot grows to Medium size when placed on ground. Once per long rest, you can use it to cast Resurrection (no material components required), brewing resurrection for 1 minute. Target emerges renewed.",
         "descriptors": [
@@ -6290,7 +6410,7 @@
     {
         "name": "Elemental Essence Shard, Air",
         "cost": 2420,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to lightning damage. You also gain resistance to lightning damage.",
         "descriptors": [
@@ -6305,7 +6425,7 @@
     {
         "name": "Elemental Essence Shard, Earth",
         "cost": 3620,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to acid damage. You also gain resistance to acid damage.",
         "descriptors": [
@@ -6320,7 +6440,7 @@
     {
         "name": "Elemental Essence Shard, Fire",
         "cost": 806,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to fire damage. You also gain resistance to fire damage.",
         "descriptors": [
@@ -6335,7 +6455,7 @@
     {
         "name": "Elemental Essence Shard, Water",
         "cost": 1581,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to cold damage. You also gain resistance to cold damage.",
         "descriptors": [
@@ -6350,7 +6470,7 @@
     {
         "name": "Far Realm Shard",
         "cost": 736,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic, roll on the Wild Magic Surge table. You also gain advantage on Arcana checks.",
         "descriptors": [
@@ -6365,7 +6485,7 @@
     {
         "name": "Feywild Shard",
         "cost": 2715,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Uncommon",
         "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that charms or frightens, you can force the target to have disadvantage on their first save. You also have advantage on saving throws against being charmed.",
         "descriptors": [
@@ -6425,7 +6545,7 @@
     {
         "name": "Heart Weaver's Primer",
         "cost": 3800,
-        "type": ["Misc", "Arcane"],
+        "type": ["Misc", "Arcane", "Book"],
         "rarity": "Rare",
         "description": "Requires attunement by wizard. This tome is bound in bird feathers. Grants advantage on Arcana checks about enchantment spells. Can cast Rary's Telepathic Bond. Contains 3d6 enchantment spells. When you cast an enchantment spell that targets one creature, you can target two instead. Usable once per dawn.",
         "descriptors": [
@@ -6470,7 +6590,7 @@
     {
         "name": "Lifewell Tattoo",
         "cost": 12600,
-        "type": ["Misc", "Tattoo"],
+        "type": ["Misc", "Tattoo", "Healing"],
         "rarity": "Very Rare",
         "description": "Produced by a special needle, this tattoo represents vitality. When you would drop to 0 hit points, you can drop to 1 hit point instead and gain temporary hit points equal to your Constitution modifier (minimum 1) for each level you've gained. You then gain 1 level of exhaustion. Usable once per long rest.",
         "descriptors": [
@@ -6485,7 +6605,7 @@
     {
         "name": "Lyre of Building",
         "cost": 20520,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Rare",
         "description": "Requires proficiency with a musical instrument. While playing this lyre, you can cast Mending, Fabricate, and Move Earth. All construction takes half the normal time. Once per day, construction projects can be completed with a song rather than mundane work.",
         "descriptors": [
@@ -6560,7 +6680,7 @@
     {
         "name": "Nature's Mantle",
         "cost": 1800,
-        "type": ["Apparel", "Nature"],
+        "type": ["Apparel", "Nature", "Spellcasting Focus"],
         "rarity": "Uncommon",
         "description": "Requires attunement by druid or ranger. While wearing this cloak, you can use it as a spellcasting focus. You also have advantage on Charisma checks made to interact with beasts and plants.",
         "descriptors": [
@@ -6575,9 +6695,9 @@
     {
         "name": "Outer Essence Shard, Lawful",
         "cost": 9020,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You also gain resistance to psychic damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You can end one of the following conditions affecting yourself or one creature you can see within 30 feet of you: charmed, blinded, deafened, frightened, poisoned, or stunned.",
         "descriptors": [
             "crystalline shard with perfect geometric patterns inside",
             "fragment showing orderly structures in the crystal",
@@ -6590,9 +6710,9 @@
     {
         "name": "Outer Essence Shard, Chaotic",
         "cost": 3620,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You also gain resistance to psychic damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. Choose one creature who takes damage from the spell. That target has disadvantage on attack rolls and ability checks made before the start of your next turn.",
         "descriptors": [
             "crystalline shard with swirling random patterns inside",
             "fragment showing ever-changing chaos within",
@@ -6605,9 +6725,9 @@
     {
         "name": "Outer Essence Shard, Good",
         "cost": 2420,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You also gain resistance to psychic damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You or one creature of your choice that you can see within 30 feet of you gains 3d6 temporary hit points.",
         "descriptors": [
             "crystalline shard glowing with warm golden light",
             "fragment showing scenes of peace and harmony within",
@@ -6620,9 +6740,9 @@
     {
         "name": "Outer Essence Shard, Evil",
         "cost": 734,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You also gain resistance to psychic damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. Choose one creature who takes damage from the spell. That target takes an extra 3d6 necrotic damage.",
         "descriptors": [
             "crystalline shard with darkness seeping through cracks",
             "fragment showing disturbing imagery within",
@@ -6635,7 +6755,7 @@
     {
         "name": "Planecaller's Codex",
         "cost": 3800,
-        "type": ["Book", "Arcane"],
+        "type": ["Book", "Arcane", "Travel"],
         "rarity": "Rare",
         "description": "Requires attunement by wizard. This book is bound in celestial leather. Grants advantage on Arcana checks about conjuration. Can cast Gate. Contains 3d6 conjuration spells. When you cast a conjuration spell, you can extend its duration. Usable once per dawn.",
         "descriptors": [
@@ -6665,7 +6785,7 @@
     {
         "name": "Protective Verses",
         "cost": 3800,
-        "type": ["Misc"],
+        "type": ["Misc", "Book"],
         "rarity": "Rare",
         "description": "Requires attunement by wizard. This leather-bound book contains protection spells. Grants advantage on Arcana checks about abjuration. Can cast Otiluke's Resilient Sphere. Contains 3d6 abjuration spells. When you cast an abjuration spell, you can grant yourself or another creature 2d10 temporary hit points. Usable once per dawn.",
         "descriptors": [
@@ -6680,7 +6800,7 @@
     {
         "name": "Reveler's Concertina",
         "cost": 11000,
-        "type": ["Misc"],
+        "type": ["Misc", "Instrument"],
         "rarity": "Rare",
         "description": "Requires proficiency with a musical instrument. While playing this concertina, you can cast Otto's Irresistible Dance (DC 15). Once used, this property can't be used again until next dawn.",
         "descriptors": [
@@ -6695,7 +6815,7 @@
     {
         "name": "Rhythm-Maker's Drum, +1",
         "cost": 2460,
-        "type": ["Misc", "Spellcasting Focus"],
+        "type": ["Misc", "Spellcasting Focus", "Instrument"],
         "rarity": "Uncommon",
         "description": "Requires attunement by bard. This drum can be used as a spellcasting focus. Grants +1 to spell attack rolls and saving throw DCs. As a bonus action, you can play the drum to give one creature advantage on their next attack roll or saving throw.",
         "descriptors": [
@@ -6710,7 +6830,7 @@
     {
         "name": "Rhythm-Maker's Drum, +2",
         "cost": 8880,
-        "type": ["Misc", "Spellcasting Focus"],
+        "type": ["Misc", "Spellcasting Focus", "Instrument"],
         "rarity": "Rare",
         "description": "Requires attunement by bard. This drum can be used as a spellcasting focus. Grants +2 to spell attack rolls and saving throw DCs. As a bonus action, you can play the drum to give one creature advantage on their next attack roll or saving throw.",
         "descriptors": [
@@ -6725,7 +6845,7 @@
     {
         "name": "Rhythm-Maker's Drum, +3",
         "cost": 25920,
-        "type": ["Misc", "Spellcasting Focus"],
+        "type": ["Misc", "Spellcasting Focus", "Instrument"],
         "rarity": "Very Rare",
         "description": "Requires attunement by bard. This drum can be used as a spellcasting focus. Grants +3 to spell attack rolls and saving throw DCs. As a bonus action, you can play the drum to give one creature advantage on their next attack roll or saving throw.",
         "descriptors": [
@@ -6862,7 +6982,7 @@
         "cost": 1600,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Rare",
-        "description": "This rapier can mend what it cuts. When you hit a creature with it, you can cast Cure Wounds (2nd level) on yourself as a bonus action. Once used, this property can't be used again until next dawn. Vampiric healing.",
+        "description": "This dagger can mend what it cuts. When you hit a creature with it, you can cast Cure Wounds (2nd level) on yourself as a bonus action. Once used, this property can't be used again until next dawn. Vampiric healing.",
         "descriptors": [
             "slender rapier with medical symbols on hilt",
             "blade impossibly thin and perfectly straight",
@@ -6904,7 +7024,7 @@
     },
     {
         "name": "Weapon of Certain Death",
-        "cost": 660,
+        "cost": 66600,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Rare",
         "description": "When you score a critical hit with this weapon against a creature below half its hit point maximum, that creature must succeed on a DC 15 Constitution save or die instantly. A grim and efficient finisher.",
@@ -6935,7 +7055,7 @@
     {
         "name": "Amulet of the Black Skull",
         "cost": 8100,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Evil"],
         "rarity": "Very Rare",
         "description": "This skull-shaped amulet radiates evil. While wearing it, you have immunity to the frightened condition and advantage on all saving throws against necromancy spells. You can cast Cause Fear at will. Requires evil alignment.",
         "descriptors": [
@@ -14662,6 +14782,7 @@
 		 "descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	}
 ]   
+
 
 
 
