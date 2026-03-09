@@ -1249,3 +1249,8 @@ label[for="use-custom-limits"] {
     margin: 0;
     cursor: pointer;
 }
+
+/* Hide full descriptions on screen - only show in print popup */
+.item-full-description {
+    display: none;
+}
