@@ -3301,9 +3301,7 @@ console.log('Full Description:', fullDescription);
         <body>
             <h2>${itemName}</h2>
             <div class="rarity">${itemRarity}</div>
-			<div class="description">${description}</div>
-            <div class="fullDescription">${fullDescription}</div>
-			//${fullDescription ? `<div class="fullDescription">${fullDescription}</div>` : `<div class="description">${description}</div>`}
+			${fullDescription ? `<div class="fullDescription" style="white-space: pre-wrap;">${fullDescription}</div>` : `<div class="description">${description}</div>`}
             ${descriptor ? `<div class="descriptor">${descriptor}</div>` : ''}
             <script>window.onload = () => { window.print(); }<\/script>
         </body>
