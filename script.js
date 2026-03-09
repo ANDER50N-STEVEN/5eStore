@@ -1777,6 +1777,10 @@ function generateItemHTML(item, maxModifier) {
     
     const descriptor = getRandomDescriptor(item);
     const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
+
+	    // Include fullDescription as hidden div for print popup
+    const fullDescriptionHTML = item.fullDescription ? `<div class="item-full-description">${item.fullDescription}</div>` : '';
+
     
     // Unique ID for each item div so we can target it for deletion
     const itemId = `shop-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
@@ -3294,7 +3298,7 @@ function printItem(itemId, itemName, itemRarity) {
         <body>
             <h2>${itemName}</h2>
             <div class="rarity">${itemRarity}</div>
-            <div class="description">${description}</div>
+			${fullDescription ? `<div class="fullDescription">${fullDescription}</div>` : `<div class="description">${description}</div>`}
             ${descriptor ? `<div class="descriptor">${descriptor}</div>` : ''}
             <script>window.onload = () => { window.print(); }<\/script>
         </body>
