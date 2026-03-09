@@ -1801,6 +1801,7 @@ function generateItemHTML(item, maxModifier) {
             </div>
             <div class="item-description">${item.description || 'No description available.'}</div>
             ${descriptorHTML}
+			${fullDescriptionHTML}
         </div>
     `;
 }
