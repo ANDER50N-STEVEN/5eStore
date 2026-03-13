@@ -15547,183 +15547,201 @@
 		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	},
 
-    {
-		"name": "Spell Scroll (Blade Barrier)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Blade Barrier (6th level). Vertical wall of whirling blades. Creatures entering or starting turn in area make Dexterity save or take 6d10 slashing damage (half on success). If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
 
     {
-		"name": "Spell Scroll (Chain Lightning)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Chain Lightning (6th level). Lightning bolt arcs to target. Three more bolts leap to three other targets (within 30 feet of first). Dexterity save or take 10d8 lightning damage (half on success). If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Blade Barrier)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Evocation", "Cleric"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Blade Barrier (6th level). Vertical wall of whirling blades. Creatures entering or starting turn in area make Dexterity save or take 6d10 slashing damage (half on success)..",
+        "fullDescription": "Casting Time: 1 action\nRange: 90 feet\nComponents: V, S\nDuration: Concentration, up to 10 minutes\n\nYou create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.\n\nWhen a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Disintegrate)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Disintegrate (6th level). Thin green ray. Target makes Dexterity save or takes 10d6+40 force damage. If reduced to 0 HP, disintegrated. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Chain Lightning)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Evocation", "Sorcerer", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Chain Lightning (6th level). Lightning bolt arcs to target. Three more bolts leap to three other targets (within 30 feet of first). Dexterity save or take 10d8 lightning damage (half on success)..",
+        "fullDescription": "Casting Time: 1 action\nRange: 150 feet\nComponents: V, S, M (a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins)\nDuration: Instantaneous\n\nYou create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.\n\nA target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Find the Path)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Find the Path (6th level). Find shortest route to specific fixed location on same plane. Know distance and direction. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Disintegrate)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Transmutation", "Sorcerer", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Disintegrate (6th level). Thin green ray. Target makes Dexterity save or takes 10d6+40 force damage. If reduced to 0 HP, disintegrated.",
+        "fullDescription": "Casting Time: 1 action\nRange: 60 feet\nComponents: V, S, M (a lodestone and a pinch of dust)\nDuration: Instantaneous\n\nA thin green ray springs from your pointing finger to a target you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force.\n\nA creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. The target is disintegrated if this damage leaves it with 0 hit points.\n\nA disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.\n\nThis spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Globe of Invulnerability)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Globe of Invulnerability (6th level). 10-foot radius barrier. Spells of 5th level or lower cast from outside can't affect creatures/objects within. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Find the Path)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Divination", "Bard", "Cleric", "Druid"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Find the Path (6th level). Find shortest route to specific fixed location on same plane. Know distance and direction.",
+        "fullDescription": "Casting Time: 1 minute\nRange: Self\nComponents: V, S, M (a set of divinatory tools — such as bones, ivory sticks, cards, teeth, or carved runes — worth 100 gp and an object from the location you wish to find)\nDuration: Concentration, up to 1 day\n\nThis spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence that you have visited, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as \"a green dragon's lair\"), the spell fails.\n\nFor the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Harm)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Harm (6th level). Target makes Constitution save or takes 14d6 necrotic damage (half on success, min 1 HP). On fail, HP max reduced by damage for 1 hour. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Globe of Invulnerability)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Abjuration", "Sorcerer", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Globe of Invulnerability (6th level). 10-foot radius barrier. Spells of 5th level or lower cast from outside can't affect creatures/objects within.",
+        "fullDescription": "Casting Time: 1 action\nRange: Self (10-foot radius)\nComponents: V, S, M (a glass or crystal bead that shatters when the spell ends)\nDuration: Concentration, up to 1 minute\n\nAn immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.\n\nAny spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells.\n\nAt Higher Levels: When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level lower than the slot you used to cast this spell.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Heal)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Heal (6th level). Creature regains 70 HP. Ends blindness, deafness, diseases. No effect on constructs/undead. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Harm)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Necromancy", "Cleric"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Harm (6th level). Target makes Constitution save or takes 14d6 necrotic damage (half on success, min 1 HP). On fail, HP max reduced by damage for 1 hour.",
+        "fullDescription": "Casting Time: 1 action\nRange: 60 feet\nComponents: V, S\nDuration: Instantaneous\n\nYou unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can't reduce the target's hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Heroes' Feast)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Heroes' Feast (6th level). Great feast (1 hour to consume). Partakers: cured of diseases/poison, immune to poison and frightened, advantage on Wisdom saves, HP max +2d10. Benefits last 24 hours. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Heal)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Evocation", "Cleric", "Druid"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Heal (6th level). Creature regains 70 HP. Ends blindness, deafness, diseases. No effect on constructs/undead.",
+        "fullDescription": "Casting Time: 1 action\nRange: 60 feet\nComponents: V, S\nDuration: Instantaneous\n\nChoose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Mass Suggestion)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Mass Suggestion (6th level). Suggest activity (max two sentences) to up to twelve creatures. Wisdom save or pursue action. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Heroes' Feast)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Conjuration", "Bard", "Cleric", "Druid"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Heroes' Feast (6th level). Great feast (1 hour to consume). Partakers: cured of diseases/poison, immune to poison and frightened, advantage on Wisdom saves, HP max +2d10. Benefits last 24 hours.",
+        "fullDescription": "Casting Time: 10 minutes\nRange: 30 feet\nComponents: V, S, M (a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes)\nDuration: Instantaneous\n\nYou bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve other creatures can partake of the feast.\n\nA creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Otto's Irresistible Dance)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Otto's Irresistible Dance (6th level). Creature begins comic dance in place. Must use all movement to dance, can't leave space. Disadvantage on Dexterity saves and attack rolls. If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Mass Suggestion)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Enchantment", "Bard", "Sorcerer", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Mass Suggestion (6th level). Suggest activity (max two sentences) to up to twelve creatures. Wisdom save or pursue action.",
+        "fullDescription": "Casting Time: 1 action\nRange: 60 feet\nComponents: V, M (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)\nDuration: 24 hours\n\nYou suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act automatically negates the effect of the spell.\n\nEach target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.\n\nYou can also specify conditions that will trigger a special activity during the duration. If the condition isn't met before the spell expires, the activity isn't performed. A remove curse, greater restoration, or heal spell cast on the target ends this spell's effect.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (True Seeing)",
-		"cost": 1863,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains True Seeing (6th level). Touch willing creature. Gains truesight, sees secret doors, sees into Ethereal Plane (all out to 120 feet). If on your class list, cast normally. Otherwise DC 16 ability check required. Single use.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Otto's Irresistible Dance)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Enchantment", "Bard", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Otto's Irresistible Dance (6th level). Creature begins comic dance in place. Must use all movement to dance, can't leave space. Disadvantage on Dexterity saves and attack rolls.",
+        "fullDescription": "Casting Time: 1 action\nRange: 30 feet\nComponents: V\nDuration: Concentration, up to 1 minute\n\nChoose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.\n\nA dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Delayed Blast Fireball)",
-		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Delayed Blast Fireball (7th level). Glowing bead lingers at point. When detonates: 20-foot-radius sphere, Dexterity save or take fire damage. Base 12d6, +1d6 each turn bead doesn't detonate.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (True Seeing)",
+        "cost": 1863,
+        "type": ["Scroll", "Consumable", "Divination", "Cleric", "Sorcerer", "Warlock", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains True Seeing (6th level). Touch willing creature. Gains truesight, sees secret doors, sees into Ethereal Plane (all out to 120 feet).",
+        "fullDescription": "Casting Time: 1 action\nRange: Touch\nComponents: V, S, M (an ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell)\nDuration: 1 hour\n\nYou give the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Etherealness)",
-		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Etherealness (7th level). Step into Border Ethereal. Remain there for duration. Can only affect and be affected by creatures on that plane.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Delayed Blast Fireball)",
+        "cost": 3120,
+        "type": ["Scroll", "Consumable", "Evocation", "Sorcerer", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Delayed Blast Fireball (7th level). Glowing bead lingers at point. When detonates: 20-foot-radius sphere, Dexterity save or take fire damage. Base 12d6, +1d6 each turn bead doesn't detonate.",
+        "fullDescription": "Casting Time: 1 action\nRange: 150 feet\nComponents: V, S, M (a tiny ball of bat guano and sulfur)\nDuration: Concentration, up to 1 minute\n\nA beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.\n\nThe spell's base damage is 12d6. If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.\n\nIf the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.\n\nThe fire damages objects in the area and ignites flammable objects that aren't being worn or carried.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Finger of Death)",
-		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Finger of Death (7th level). Target makes Constitution save or takes 7d8+30 necrotic damage (half on success). Humanoid killed rises as zombie under your command.",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Etherealness)",
+        "cost": 3120,
+        "type": ["Scroll", "Consumable", "Transmutation", "Bard", "Cleric", "Sorcerer", "Warlock", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Etherealness (7th level). Step into Border Ethereal. Remain there for duration. Can only affect and be affected by creatures on that plane.",
+        "fullDescription": "Casting Time: 1 action\nRange: Self\nComponents: V, S\nDuration: Up to 8 hours\n\nYou step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away.\n\nWhile on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so.\n\nYou ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from. When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.\n\nThis spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
-		"name": "Spell Scroll (Fire Storm)",
-		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
-		"rarity": "Very Rare",
-		"description": "Contains Fire Storm (7th level). Storm of flame in up to ten 10-foot cubes. Creatures make Dexterity save or take 7d10 fire damage (half on success).",
-		 "fullDescription": "",
-		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	},
+        "name": "Spell Scroll (Finger of Death)",
+        "cost": 3120,
+        "type": ["Scroll", "Consumable", "Necromancy", "Sorcerer", "Warlock", "Wizard"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Finger of Death (7th level). Target makes Constitution save or takes 7d8+30 necrotic damage (half on success). Humanoid killed rises as zombie under your command.",
+        "fullDescription": "Casting Time: 1 action\nRange: 60 feet\nComponents: V, S\nDuration: Instantaneous\n\nYou send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.\n\nA humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
+
+    {
+        "name": "Spell Scroll (Fire Storm)",
+        "cost": 3120,
+        "type": ["Scroll", "Consumable", "Evocation", "Cleric", "Druid", "Sorcerer"],
+        "rarity": "Very Rare",
+        "source": "PH",
+        "description": "Contains Fire Storm (7th level). Storm of flame in up to ten 10-foot cubes. Creatures make Dexterity save or take 7d10 fire damage (half on success).",
+        "fullDescription": "Casting Time: 1 action\nRange: 150 feet\nComponents: V, S\nDuration: Instantaneous\n\nA storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.",
+        "descriptors": ["parchment yellowed with age showing careful preservation", "scroll sealed with wax stamped with arcane symbol", "vellum smooth as silk to the touch", "paper smelling faintly of old libraries and dust", "scroll bound with ribbon that never frays", "parchment edges gilded in gold leaf", "scroll showing faint magical shimmer when tilted", "vellum with watermark visible when held to light", "paper crackling softly when unrolled", "scroll rolled around rod of polished wood", "parchment cool to touch despite room temperature", "scroll with ink that glows faintly in darkness", "vellum smelling of cedar and preservation oils", "paper showing precise calligraphy throughout", "scroll edges singed but text intact", "parchment thick and luxurious quality", "scroll sealed with elaborate knotwork", "vellum showing no signs of aging despite years", "paper with text in multiple colored inks", "scroll ends capped with metal or bone", "parchment smelling faintly of incense", "scroll showing previous owner's marginal notes", "vellum smooth as glass from countless readings", "paper with illuminated letters in bright pigments", "scroll wrapped in protective silk cloth", "parchment with text that shifts slightly when read", "scroll showing tiny magical formulae in margins", "vellum that resists tearing despite thinness", "paper sealed in waterproof leather case", "scroll with wax seal showing arcane academy mark", "parchment edges decorated with mystical borders", "scroll smelling of specific spell components", "vellum showing evidence of magical preparation", "paper with geometric diagrams alongside text", "scroll rolled with specific spell-casting diagram visible", "parchment showing faint traces of previous spell", "scroll with text written in flowing elven script", "vellum prepared with alchemical treatments", "paper showing signs of hasty but skilled copying", "scroll edges trimmed with precision", "parchment showing no wear despite being single-use", "scroll with diagrams showing hand gestures", "vellum smelling faintly of specific magical energy", "paper with crystalline dust clinging to text", "scroll showing different ink colors for each component", "parchment that seems to warm when magic user touches it", "scroll with pronunciation guide in smaller text", "vellum showing water-stain damage in corners only", "paper edges reinforced with magical treatment", "scroll with final incantation words emphasized"]
+    },
 
     {
 		"name": "Spell Scroll (Mordenkainen's Sword)",
 		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
+		"type": ["Scroll", "Consumable","Evocation", "Bard", "Wizard"],
 		"rarity": "Very Rare",
+		"source": "PH",
 		"description": "Contains Mordenkainen's Sword (7th level). Sword-shaped force plane. When appears and as bonus action, make melee spell attack (within 5 feet of sword) for 3d10 force damage. Bonus action to move sword 20 feet.",
-		 "fullDescription": "",
+		 "fullDescription": "Casting Time: 1 action\nRange: 60 feet\nComponents: V, S, M (a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp)\nDuration: Concentration, up to 1 minute\n\nYou create a sword-shaped plane of force that hovers within range. It lasts for the duration.\n\nWhen the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit. the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.",
 		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	},
 
     {
 		"name": "Spell Scroll (Regenerate)",
 		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
+		"type": ["Scroll", "Consumable", "Transmutation", "Bard", "Cleric","Druid"],
 		"rarity": "Very Rare",
+		"source": "PH",
 		"description": "Contains Regenerate (7th level). Touch creature. Regains 4d8+15 HP immediately, then 1 HP at start of each turn for duration. Severed body members restored after 2 minutes.",
-		 "fullDescription": "",
+		 "fullDescription": "Casting Time: 1 minute\nRange: Touch\nComponents: V, S, M (a prayer wheel and holy water)\nDuration: 1 hour\n\nYou touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).\n\nThe target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.",
 		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	},
 
     {
 		"name": "Spell Scroll (Resurrection)",
 		"cost": 3120,
-		"type": ["Scroll", "Consumable"],
+		"type": ["Scroll", "Consumable", "Necromancy", "Bard", "Cleric"],
 		"rarity": "Very Rare",
 		"description": "Contains Resurrection (7th level). Touch dead creature (max 1 century dead, didn't die of old age, not undead). Soul willing returns to life with all HP. Neutralizes poisons, cures diseases.",
-		 "fullDescription": "",
+		 "fullDescription": "Casting Time: 1 hour\nRange: Touch\nComponents: V, S, M (a diamond worth at least 1,000 gp, which the spell consumes)\nDuration: Instantaneous\n\nYou touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points.\n\nThis spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't, however, remove magical diseases, curses, and the like; if such affects aren't removed prior to casting the spell, they afflict the target on its return to life.\n\nThis spell closes all mortal wounds and restores any missing body parts.\n\nComing back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.\n\nCasting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.",
 		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
 	},
 
@@ -15895,8 +15913,3183 @@
 		"description": "Contains True Resurrection (9th level). Touch creature dead max 200 years (any reason except old age). Soul willing, restored with all HP. Closes wounds, neutralizes poison, cures diseases, lifts curses.",
 		 "fullDescription": "Casting Time: 1 hour\nRange: Touch\nComponents: V, S, M (a sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes)\nDuration: Instantaneous\n\nYou touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature’s soul is free and willing, the creature is restored to life with all its hit points.\n\nThis spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs or limbs. If the creature was undead, it is restored to its non-undead form.\n\nThe spell can even provide a new body if the original no longer exists, in which case you must speak the creature’s name. The creature then appears in an unoccupied space you choose within 10 feet of you.",
 		"descriptors": [     "parchment yellowed with age showing careful preservation",     "scroll sealed with wax stamped with arcane symbol",     "vellum smooth as silk to the touch",     "paper smelling faintly of old libraries and dust",     "scroll bound with ribbon that never frays",     "parchment edges gilded in gold leaf",     "scroll showing faint magical shimmer when tilted",     "vellum with watermark visible when held to light",     "paper crackling softly when unrolled",     "scroll rolled around rod of polished wood",     "parchment cool to touch despite room temperature",     "scroll with ink that glows faintly in darkness",     "vellum smelling of cedar and preservation oils",     "paper showing precise calligraphy throughout",     "scroll edges singed but text intact",     "parchment thick and luxurious quality",     "scroll sealed with elaborate knotwork",     "vellum showing no signs of aging despite years",     "paper with text in multiple colored inks",     "scroll ends capped with metal or bone",     "parchment smelling faintly of incense",     "scroll showing previous owner's marginal notes",     "vellum smooth as glass from countless readings",     "paper with illuminated letters in bright pigments",     "scroll wrapped in protective silk cloth",     "parchment with text that shifts slightly when read",     "scroll showing tiny magical formulae in margins",     "vellum that resists tearing despite thinness",     "paper sealed in waterproof leather case",     "scroll with wax seal showing arcane academy mark",     "parchment edges decorated with mystical borders",     "scroll smelling of specific spell components",     "vellum showing evidence of magical preparation",     "paper with geometric diagrams alongside text",     "scroll rolled with specific spell-casting diagram visible",     "parchment showing faint traces of previous spell",     "scroll with text written in flowing elven script",     "vellum prepared with alchemical treatments",     "paper showing signs of hasty but skilled copying",     "scroll edges trimmed with precision",     "parchment showing no wear despite being single-use",     "scroll with diagrams showing hand gestures",     "vellum smelling faintly of specific magical energy",     "paper with crystalline dust clinging to text",     "scroll showing different ink colors for each component",     "parchment that seems to warm when magic user touches it",     "scroll with pronunciation guide in smaller text",     "vellum showing water-stain damage in corners only",     "paper edges reinforced with magical treatment",     "scroll with final incantation words emphasized"   ]
-	}
+	},
+
+	 {
+    "name": "Adder's stomach",
+    "cost": 3,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Common",
+    "description": "Spell component with no known spell associations in current database.",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Agate, quality",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Awaken",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Agate, small",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Awaken, Darkvision",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Alcohol",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: False Life",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Alum",
+    "cost": 0.2,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Antipathy/Sympathy",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Amber rod",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Chain Lightning, Lightning Bolt",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Arrows",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Ammunition"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Cordon of Arrows",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ashes, burned mistletoe leaf",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Ash"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Pass without Trace",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bat fur",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Arcane Eye, Darkness",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bat guano",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Delayed Blast Fireball, Fireball",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bell, tiny",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Tool"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Alarm",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bitumen",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Spider Climb",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Black onyx stone",
+    "cost": 150,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Create Undead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Black pearl, crushed",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Circle of Death",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bloodhound fur",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Locate Animals or Plants, Locate Creature",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bolts",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Ammunition"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Cordon of Arrows",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bone dust",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Animate Dead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bones, divinatory",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Augury, Find the Path",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Bowl, gem-encrusted",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Container",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Heroes' Feast",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Brass brazier",
+    "cost": 2,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Container"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Find Familiar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Brimstone",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Flaming Sphere, Guards and Wards",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Cards, divinatory",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Find the Path",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Carrot, dried",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Food"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Darkvision",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Caterpillar cocoon",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Polymorph",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Charcoal",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Find Familiar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Chest, exquisite",
+    "cost": 5000,
+    "type": [
+      "Spellcasting Focus",
+      "Container"
+    ],
+    "rarity": "Very Rare",
+    "description": "Used in the following spells: Leomund's Secret Chest",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Chrysolite, powdered",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Mordenkainen's Private Sanctum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Clay model, ziggurat",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Tongues",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Clay pot",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Container"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Create Undead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Cloak, miniature",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Cloth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Resistance",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Club",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Weapon",
+      "Wood"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Shillelagh",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Coal",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Darkness, Find Familiar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Cocoon",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Polymorph",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Copper coin",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Currency"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Detect Thoughts",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Copper wire",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Wire"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Message, Sending",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Copper wire, fine",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Wire"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Sending",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Corn extract, powdered",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Rope Trick",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Cotton",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Cloth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Mordenkainen's Private Sanctum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Cricket",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Insect"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Sleep",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal ball",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal",
+      "Divination"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal bead, shattering",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Globe of Invulnerability",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal bead, small",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Globe of Invulnerability, Leomund's Tiny Hut",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal cone",
+    "cost": 0.2,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Cone of Cold",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal reliquary",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal",
+      "Container",
+      "Religious"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Holy Aura, Magic Jar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal rod",
+    "cost": 8,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Chain Lightning",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal sphere, small",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Otiluke's Freezing Sphere",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal spheres",
+    "cost": 1,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Chain Lightning, Clone, Cone of Cold, Feeblemind, Globe of Invulnerability, Hypnotic Pattern, Leomund's Tiny Hut, Lightning Bolt, Magic Jar, Otiluke's Freezing Sphere, Otiluke's Resilient Sphere, Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal vial, phosphorescent",
+    "cost": 3,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal",
+      "Container"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Hypnotic Pattern",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Crystal, clear hemispherical",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Otiluke's Resilient Sphere",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond dust, 100 gp",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Greater Restoration, Stoneskin",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond dust, 200 gp",
+    "cost": 200,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Glyph of Warding",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond dust, 25 gp",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Nondetection",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond dust, 25,000 gp",
+    "cost": 25000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Very Rare",
+    "description": "Used in the following spells: True Resurrection",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond dust, 5,000 gp",
+    "cost": 5000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Very Rare",
+    "description": "Used in the following spells: Sequester",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond, 1,000 gp",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Clone, Resurrection",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond, 5,000 gp",
+    "cost": 5000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Very Rare",
+    "description": "Used in the following spells: Gate",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond, 50 gp",
+    "cost": 50,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Chromatic Orb, Raise Dead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Diamond, 500 gp",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Raise Dead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Dirt, grave",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Earth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Create Undead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Dirt, graveyard",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Earth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Feign Death",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Distilled spirits",
+    "cost": 0.8,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: False Life",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Divinatory tools set",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Divination"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Find the Path",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Down",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Feather Fall",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Eggshells, mixed creatures",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Bigby's Hand, Rary's Telepathic Bond",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fat",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Insect Plague, Legend Lore, True Seeing",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feather, exotic",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Wind Wall",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feather, hen",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Fear, Globe of Invulnerability",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feather, hummingbird",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Foresight",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feather, small",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Enhance Ability, Fear, Feather Fall, Fly, Foresight, Identify, Tasha's Hideous Laughter, Wind Wall",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feather, white",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Fear",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feather, wing",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Fly",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Feldspar, opalescent",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Moonbeam",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fine copper wire",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Wire"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Sending",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fine silver wire",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Wire"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Alarm",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Firefly",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Insect"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Fire Shield, Light",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fleece",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Major Image, Minor Illusion, Permanent Image, Phantasmal Force, Programmed Illusion, Silent Image",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Font filled with holy water",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Container",
+      "Religious"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fur",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Arcane Eye, Beast Bond, Chain Lightning, Conjure Elemental, Darkness, Delayed Blast Fireball, Enhance Ability, Fireball, Flame Strike, Lightning Bolt, Locate Animals or Plants, Locate Creature, Melf's Minute Meteors",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fur, beast",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Arcane Eye, Beast Bond, Chain Lightning, Conjure Elemental, Darkness, Delayed Blast Fireball, Enhance Ability, Fireball, Flame Strike, Lightning Bolt, Locate Animals or Plants, Locate Creature, Melf's Minute Meteors",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Fur, wrapped in cloth",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Beast Bond",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Gauze",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Cloth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Gaseous Form",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Gemstone, clear powdered",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Wall of Force",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Giant slug bile",
+    "cost": 8,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Liquid"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Vitriolic Sphere",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Giant squid tentacle",
+    "cost": 15,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Evard's Black Tentacles",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass bead",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Mundane",
+    "description": "Spell component with no known spell associations in current database.",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass cone",
+    "cost": 0.2,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Cone of Cold",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass eye",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Clairvoyance",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass eye for seeing",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Glass",
+      "Divination"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Clairvoyance",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass rod",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Glass",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Spell component with no known spell associations in current database.",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass spheres",
+    "cost": 0.8,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Chain Lightning, Clairvoyance, Cloud of Daggers, Cone of Cold, Feeblemind, Globe of Invulnerability, Lightning Bolt, Mordenkainen's Private Sanctum, Sunbeam",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass, opaque",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Mordenkainen's Private Sanctum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glass, sliver",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Cloud of Daggers",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Glowworm",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Insect"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Dancing Lights",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Gold dust, 25 gp",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Arcane Lock",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Golden wire, cup-shaped",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Wire"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Levitate",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Granite block, small",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Stone"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Wall of Stone",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Grasshopper's hind leg",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Insect"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Jump",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Graveyard dirt",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Earth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Feign Death",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Gum arabic",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Invisibility, Otiluke's Resilient Sphere, True Polymorph",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Gum arabic, hemispherical",
+    "cost": 0.08,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Otiluke's Resilient Sphere",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Hand, miniature sculpted clay",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Maximilian's Earthen Grasp",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Hen heart",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Fear",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Herbs for brazier",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Find Familiar, Hallow",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Herbs, rare",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Find Familiar, Hallow",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Holly berry",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Conjure Woodland Beings",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Holy symbol",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Religious"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Spirit Guardians",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Holy text on parchment",
+    "cost": 1,
+    "type": [
+      "Spellcasting Focus",
+      "Religious"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Shield of Faith",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Holy water, cup",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Religious",
+      "Liquid"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Bless, Commune, Dispel Evil and Good, Forbiddance, Magic Circle, Protection from Evil and Good, Regenerate, Scrying, True Resurrection, Wind Walk",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Holy water, vial",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Religious",
+      "Liquid"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Bless, Commune, Dispel Evil and Good, Forbiddance, Magic Circle, Protection from Evil and Good, Regenerate, Scrying, True Resurrection, Wind Walk",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Honey",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Food",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Antipathy/Sympathy, Magic Mouth, Mass Suggestion, Suggestion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Honeycomb",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Magic Mouth, Mass Suggestion, Suggestion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Honeycomb, large",
+    "cost": 1,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Magic Mouth, Mass Suggestion, Suggestion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Horn, jeweled",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Gem"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Clairvoyance",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ice for life-size copy",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Find Familiar, Hallucinatory Terrain, Haste, Ice Knife, Simulacrum, Snilloc's Snowball Swarm",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Incense for brazier",
+    "cost": 0.30000000000000004,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Commune, Conjure Elemental, Control Weather, Divination, Find Familiar, Forbiddance, Glyph of Warding, Guards and Wards, Hallow, Hypnotic Pattern, Legend Lore, Speak with Dead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Incense stick",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Commune, Conjure Elemental, Control Weather, Divination, Find Familiar, Forbiddance, Glyph of Warding, Guards and Wards, Hallow, Hypnotic Pattern, Legend Lore, Speak with Dead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Incense stick, glowing",
+    "cost": 0.2,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Hypnotic Pattern",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Incense, quality",
+    "cost": 250,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Legend Lore",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Incense, rare",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Commune, Conjure Elemental, Control Weather, Divination, Find Familiar, Forbiddance, Glyph of Warding, Guards and Wards, Hallow, Hypnotic Pattern, Legend Lore, Speak with Dead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ink",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Bless, Dream, Forbiddance, Illusory Script, Nondetection, Simulacrum, Telepathy, Teleportation Circle, True Resurrection",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ink, lead-based",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid",
+      "Metal"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Illusory Script",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ink, rare chalks",
+    "cost": 50,
+    "type": [
+      "Spellcasting Focus",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Teleportation Circle",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Metal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Antimagic Field, Dispel Evil and Good, Enlarge/Reduce, Flaming Sphere, Heat Metal, Hold Monster, Hold Person, Magic Circle, Move Earth, Protection from Evil and Good, Reverse Gravity",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron blade",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Weapon"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Move Earth",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron filings",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Antimagic Field, Reverse Gravity",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron powder",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Antimagic Field, Enlarge/Reduce, Flaming Sphere",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron rod, forked",
+    "cost": 250,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Rod"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Plane Shift",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron rod, silver",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Guards and Wards",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Iron rod, small straight",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Rod"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Hold Person",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ivory",
+    "cost": 20,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Contingency, Find the Path, Legend Lore, Mordenkainen's Magnificent Mansion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ivory carved miniature portal",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ivory carved statuette",
+    "cost": 1500,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Contingency, Imprisonment",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ivory sticks",
+    "cost": 50,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Contingency, Find the Path, Legend Lore, Mordenkainen's Magnificent Mansion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ivory sticks, divinatory",
+    "cost": 8,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Find the Path",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Jacinth",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Astral Projection",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Jade circlet",
+    "cost": 1500,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Jewelry"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Shapechange",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Jade dust, 10 gp",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Magic Mouth, Programmed Illusion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Jade dust, 25 gp",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Programmed Illusion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Jewel, quality",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Planar Binding",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Knotted string",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Guards and Wards",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Lead sheet, thin",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Metal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Illusory Script, Mordenkainen's Private Sanctum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Leather loop, small",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Leather"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Levitate",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Leather strap",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Leather"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Freedom of Movement",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Leather, cured",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Leather"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Mage Armor",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Licorice root",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Haste",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Lime",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Flesh to Stone",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Lodestone",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Disintegrate, Mending, Reverse Gravity",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Magnifying glass",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Glass",
+      "Tool"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Sunbeam",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Makeup",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Friends",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Marble, small polished",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Stone"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Marked sticks",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Augury",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mercury",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid",
+      "Metal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Symbol, Tenser's Floating Disk, True Polymorph",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mica",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Shatter",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mineral spheres",
+    "cost": 1,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Feeblemind",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mirror, silver quality",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Tool"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Sanctuary, Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mirror, silver small",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Tool"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Sanctuary, Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mistletoe leaf, burned to ash",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Ash"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Goodberry, Pass without Trace, Shillelagh",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mistletoe sprig",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Goodberry, Pass without Trace, Shillelagh",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Molasses",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Food",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Slow",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Moonseed plant seeds",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Moonbeam",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Moss, phosphorescent",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Light",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Mushroom powder",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: True Seeing",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Newt eye, petrified",
+    "cost": 0.8,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Hex",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Niter",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Melf's Minute Meteors",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Oak bark",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Barkskin",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Obsidian",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Stone"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Erupting Earth",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Octopus tentacle, giant",
+    "cost": 15,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Evard's Black Tentacles, Find Familiar, Hunger of Hadar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Octopus tentacle, pickled",
+    "cost": 0.8,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Hunger of Hadar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Oil",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Guards and Wards, Hallow, Mass Suggestion, Move Earth, Reincarnate, Suggestion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Oil, sweet",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Mass Suggestion, Suggestion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Oils, rare",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Reincarnate",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ointment for eyes",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: True Seeing",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Onyx, black",
+    "cost": 150,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Create Undead",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Opaque glass",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Glass"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Mordenkainen's Private Sanctum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Parchment from religious text",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Religious"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Holy Aura",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Parchment with holy text",
+    "cost": 1,
+    "type": [
+      "Spellcasting Focus",
+      "Religious"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Shield of Faith",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Parchment, twisted loop",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Rope Trick",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Pearl, 100 gp",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Identify",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Pearl, black crushed",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Circle of Death",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Phosphorescent material, vial",
+    "cost": 3,
+    "type": [
+      "Spellcasting Focus",
+      "Container"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Hypnotic Pattern",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Phosphorus",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Conjure Elemental, Dancing Lights, Fire Shield, Symbol, Wall of Fire",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Pine tar",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Melf's Minute Meteors",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Pitch",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Darkness",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Platinum rings, pair",
+    "cost": 50,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Jewelry"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Warding Bond",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Platinum sword, miniature",
+    "cost": 250,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Weapon"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Mordenkainen's Faithful Hound, Mordenkainen's Sword",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Pork rind",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Food",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Grease",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Portal, miniature ivory",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Powder, colored",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Color Spray",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Prayer wheel",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Religious"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Regenerate",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Quarterstaff",
+    "cost": 0.2,
+    "type": [
+      "Spellcasting Focus",
+      "Weapon",
+      "Wood"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Shillelagh",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Quartz",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Wall of Ice",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Quill from sleeping bird",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Dream",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Quiver with ammunition",
+    "cost": 1,
+    "type": [
+      "Spellcasting Focus",
+      "Container",
+      "Ammunition"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Swift Quiver",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Red dragon scale",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Aganazzar's Scorcher",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Reliquary, crystal or gem",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus",
+      "Container",
+      "Religious",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Holy Aura, Magic Jar",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Reliquary, tiny",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Container",
+      "Religious"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Holy Aura",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rhubarb leaf, powdered",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Melf's Acid Arrow",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rings, linked silver pair",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Jewelry"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Telepathy",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rings, platinum pair",
+    "cost": 50,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Jewelry"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Warding Bond",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rod, amber",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Chain Lightning, Lightning Bolt",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rod, crystal",
+    "cost": 8,
+    "type": [
+      "Spellcasting Focus",
+      "Crystal",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Chain Lightning",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rod, glass",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Glass",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Spell component with no known spell associations in current database.",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rod, iron forked",
+    "cost": 250,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Rod"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Locate Object, Plane Shift",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rod, silver small",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Rod"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Guards and Wards",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Rose petals",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Sleep",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ruby dust, 1,000 gp",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Continual Flame, Forbiddance, Forcecage, Sequester, Simulacrum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ruby dust, 1,500 gp",
+    "cost": 1500,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Continual Flame, Forbiddance, Forcecage, Sequester, Simulacrum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ruby dust, 50 gp",
+    "cost": 50,
+    "type": [
+      "Spellcasting Focus",
+      "Gem",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Continual Flame",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ruby, quality",
+    "cost": 1500,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Continual Flame, Forbiddance, Forcecage, Sequester, Simulacrum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Runes, carved divinatory",
+    "cost": 12,
+    "type": [
+      "Spellcasting Focus",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Find the Path",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sacrificial offering",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Religious"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Divination",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Saffron",
+    "cost": 0.8,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: True Seeing",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sapphire, quality",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Drawmij's Instant Summons, Sequester",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sesame seeds",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Food"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Passwall",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Shamrock leaf",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Shillelagh",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silk, small square",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Cloth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Nystul's Magic Aura",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver bar, carved",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Metal"
+    ],
+    "rarity": "Uncommon",
+    "description": "Spell component with no known spell associations in current database.",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver dust, 25 gp",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Powder"
+    ],
+    "rarity": "Common",
+    "description": "Spell component with no known spell associations in current database.",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver mirror, quality",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Tool"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Sanctuary, Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver mirror, small",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Tool"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Sanctuary, Scrying",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver pins, three",
+    "cost": 0.30000000000000004,
+    "type": [
+      "Spellcasting Focus",
+      "Metal"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Chain Lightning",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver powder",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: See Invisibility",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver rings, linked pair",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Jewelry"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Telepathy",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver spoon, tiny",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Metal"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Silver, powdered 100 gp",
+    "cost": 100,
+    "type": [
+      "Spellcasting Focus",
+      "Metal",
+      "Powder"
+    ],
+    "rarity": "Uncommon",
+    "description": "Used in the following spells: Dispel Evil and Good, Magic Circle, Protection from Evil and Good",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Skunk cabbage leaves",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Stinking Cloud",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Snake tongue",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Bigby's Hand, Find Familiar, Mass Suggestion, Suggestion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Snakeskin glove",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Leather"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Bigby's Hand",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Snow for life-size copy",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Simulacrum",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Spider",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Insect"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Find Familiar, Spider Climb, Web",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Spines, seven sharp",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Spike Growth",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sponge",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Abi-Dalzim's Horrid Wilting",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Spruce sprig",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Pass without Trace",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Statuette, ivory",
+    "cost": 1500,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Contingency, Imprisonment",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Statuette, replica",
+    "cost": 5,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Project Image",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sugar",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Food"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Insect Plague",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sulfur",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Conjure Elemental, Delayed Blast Fireball, Fireball, Flame Strike, Melf's Minute Meteors",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sumac leaf",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Flame Blade",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Sunstone",
+    "cost": 10,
+    "type": [
+      "Spellcasting Focus",
+      "Gem"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Sunburst",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Talc",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Mineral",
+      "Powder"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: See Invisibility",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Tallow",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Flaming Sphere",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Tarts, tiny",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Food"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Tasha's Hideous Laughter",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Teeth, divinatory",
+    "cost": 6,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Find the Path",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Thorns",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Thorn Whip, Wall of Thorns",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Tokens, marked",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Divination"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Augury",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Tree branch, lightning-struck",
+    "cost": 0.5,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Wood"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Witch Bolt",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Twigs, seven cut peak",
+    "cost": 0.03,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Spike Growth",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Umber hulk blood",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Animal Part",
+      "Liquid"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Guards and Wards",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Unguents, rare",
+    "cost": 1000,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Reincarnate",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Unholy water, vial",
+    "cost": 25,
+    "type": [
+      "Spellcasting Focus",
+      "Religious",
+      "Liquid"
+    ],
+    "rarity": "Common",
+    "description": "Used in the following spells: Commune",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Vellum depiction",
+    "cost": 500,
+    "type": [
+      "Spellcasting Focus"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Imprisonment",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Vessel, ornate",
+    "cost": 2000,
+    "type": [
+      "Spellcasting Focus",
+      "Container"
+    ],
+    "rarity": "Rare",
+    "description": "Used in the following spells: Clone",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Vinegar",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Liquid"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Antipathy/Sympathy",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Walnuts",
+    "cost": 0.02,
+    "type": [
+      "Spellcasting Focus",
+      "Plant",
+      "Food"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Confusion",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "White cloth strip, tiny",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Cloth"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Aid",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Wychwood",
+    "cost": 0.05,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Dancing Lights",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Yew leaf",
+    "cost": 0.01,
+    "type": [
+      "Spellcasting Focus",
+      "Plant"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Detect Poison and Disease",
+    "fullDescription": "",
+    "descriptors": []
+  },
+  {
+    "name": "Ziggurat clay model",
+    "cost": 0.1,
+    "type": [
+      "Spellcasting Focus",
+      "Sculpture"
+    ],
+    "rarity": "Mundane",
+    "description": "Used in the following spells: Tongues",
+    "fullDescription": "",
+    "descriptors": []
+  }
 ]   
+
 
 
 
