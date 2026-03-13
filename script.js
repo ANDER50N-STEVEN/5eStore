@@ -204,7 +204,7 @@ const defaultStoreTypes = {
     },
     magic: {
         name: 'Magic Shop',
-        tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring', 'Jewelry', 'Potion', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
+        tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring', 'Jewelry', 'Potion', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'SpellCasting Focus'],
         limits: { mundane: '1d4', common: '1d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     apothecary: {
