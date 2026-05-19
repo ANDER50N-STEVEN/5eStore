@@ -18873,7 +18873,8 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Animal",
+		"Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Flaming Sphere",
@@ -18897,8 +18898,8 @@
     "cost": 6,
     "type": [
       "Spellcasting Focus",
-      "Animal Part",
-      "Divination"
+      "Animal",
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Find the Path",
@@ -18910,7 +18911,8 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy",
+		"Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Thorn Whip, Wall of Thorns",
@@ -18922,7 +18924,7 @@
     "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Divination"
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Augury",
@@ -18934,8 +18936,7 @@
     "cost": 0.5,
     "type": [
       "Spellcasting Focus",
-      "Plant",
-      "Wood"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Witch Bolt",
@@ -18947,7 +18948,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Spike Growth",
@@ -18959,8 +18960,8 @@
     "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Animal Part",
-      "Liquid"
+      "Animal",
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Guards and Wards",
@@ -18972,23 +18973,11 @@
     "cost": 1000,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Religious",
+		"Alchemy"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Reincarnate",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Unholy water, vial",
-    "cost": 25,
-    "type": [
-      "Spellcasting Focus",
-      "Religious",
-      "Liquid"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Commune",
     "fullDescription": "",
     "descriptors": []
   },
@@ -19007,8 +18996,7 @@
     "name": "Vessel, ornate",
     "cost": 2000,
     "type": [
-      "Spellcasting Focus",
-      "Container"
+      "Spellcasting Focus"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Clone",
@@ -19020,7 +19008,9 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Food",
+		"Alchemy",
+		"Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Antipathy/Sympathy",
@@ -19032,7 +19022,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant",
+      "Alchemy",
       "Food"
     ],
     "rarity": "Mundane",
@@ -19045,7 +19035,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Cloth"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Aid",
@@ -19057,7 +19047,7 @@
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Dancing Lights",
@@ -19069,7 +19059,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Detect Poison and Disease",
@@ -19080,9 +19070,7 @@
     "name": "Ziggurat clay model",
     "cost": 0.1,
     "type": [
-      "Spellcasting Focus",
-      "Sculpture"
-    ],
+      "Spellcasting Focus"    ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Tongues",
     "fullDescription": "",
