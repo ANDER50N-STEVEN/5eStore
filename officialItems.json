@@ -15951,23 +15951,10 @@
     "descriptors": []
   },
   {
-    "name": "Alcohol",
-    "cost": 0.5,
-    "type": [
-      "Spellcasting Focus",
-      "Liquid"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: False Life",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Alum",
     "cost": 0.2,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Antipathy/Sympathy",
@@ -15978,23 +15965,10 @@
     "name": "Amber rod",
     "cost": 10,
     "type": [
-      "Spellcasting Focus",
-      "Rod"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Chain Lightning, Lightning Bolt",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Arrows",
-    "cost": 0.05,
-    "type": [
-      "Spellcasting Focus",
-      "Ammunition"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Cordon of Arrows",
     "fullDescription": "",
     "descriptors": []
   },
@@ -16003,8 +15977,7 @@
     "cost": 0.1,
     "type": [
       "Spellcasting Focus",
-      "Plant",
-      "Ash"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Pass without Trace",
@@ -16016,7 +15989,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Arcane Eye, Darkness",
@@ -16028,7 +16001,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Delayed Blast Fireball, Fireball",
@@ -16039,9 +16012,7 @@
     "name": "Bell, tiny",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Tool"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Alarm",
@@ -16052,8 +16023,7 @@
     "name": "Bitumen",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Spider Climb",
@@ -16072,48 +16042,13 @@
     "fullDescription": "",
     "descriptors": []
   },
-  {
-    "name": "Black pearl, crushed",
-    "cost": 500,
-    "type": [
-      "Spellcasting Focus",
-      "Gem"
-    ],
-    "rarity": "Rare",
-    "description": "Used in the following spells: Circle of Death",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Bloodhound fur",
-    "cost": 0.02,
-    "type": [
-      "Spellcasting Focus",
-      "Animal Part"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Locate Animals or Plants, Locate Creature",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Bolts",
-    "cost": 0.05,
-    "type": [
-      "Spellcasting Focus",
-      "Ammunition"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Cordon of Arrows",
-    "fullDescription": "",
-    "descriptors": []
-  },
+
   {
     "name": "Bone dust",
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Animate Dead",
@@ -16121,12 +16056,10 @@
     "descriptors": []
   },
   {
-    "name": "Bones, divinatory",
+    "name": "Bones",
     "cost": 5,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part",
-      "Divination"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Augury, Find the Path",
@@ -16137,9 +16070,7 @@
     "name": "Bowl, gem-encrusted",
     "cost": 1000,
     "type": [
-      "Spellcasting Focus",
-      "Container",
-      "Gem"
+      "Spellcasting Focus"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Heroes' Feast",
@@ -16150,9 +16081,7 @@
     "name": "Brass brazier",
     "cost": 2,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Container"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Find Familiar",
@@ -16163,8 +16092,7 @@
     "name": "Brimstone",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Flaming Sphere, Guards and Wards",
@@ -16172,11 +16100,11 @@
     "descriptors": []
   },
   {
-    "name": "Cards, divinatory",
+    "name": "Playing Cards",
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Divination"
+      "Misc"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Find the Path",
@@ -16188,7 +16116,6 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Plant",
       "Food"
     ],
     "rarity": "Mundane",
@@ -16197,23 +16124,10 @@
     "descriptors": []
   },
   {
-    "name": "Caterpillar cocoon",
-    "cost": 0.02,
-    "type": [
-      "Spellcasting Focus",
-      "Animal Part"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Polymorph",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Charcoal",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Find Familiar",
@@ -16221,11 +16135,10 @@
     "descriptors": []
   },
   {
-    "name": "Chest, exquisite",
+    "name": "Chest",
     "cost": 5000,
     "type": [
-      "Spellcasting Focus",
-      "Container"
+      "Spellcasting Focus"
     ],
     "rarity": "Very Rare",
     "description": "Used in the following spells: Leomund's Secret Chest",
@@ -16236,9 +16149,7 @@
     "name": "Chrysolite, powdered",
     "cost": 25,
     "type": [
-      "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Mordenkainen's Private Sanctum",
@@ -16249,8 +16160,7 @@
     "name": "Clay model, ziggurat",
     "cost": 0.1,
     "type": [
-      "Spellcasting Focus",
-      "Sculpture"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Tongues",
@@ -16262,44 +16172,19 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Container"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Create Undead",
     "fullDescription": "",
     "descriptors": []
   },
-  {
-    "name": "Cloak, miniature",
-    "cost": 0.1,
-    "type": [
-      "Spellcasting Focus",
-      "Cloth"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Resistance",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Club",
-    "cost": 0.1,
-    "type": [
-      "Spellcasting Focus",
-      "Weapon",
-      "Wood"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Shillelagh",
-    "fullDescription": "",
-    "descriptors": []
-  },
+
   {
     "name": "Coal",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Darkness, Find Familiar",
@@ -16311,59 +16196,21 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Polymorph",
     "fullDescription": "",
     "descriptors": []
   },
-  {
-    "name": "Copper coin",
-    "cost": 0.01,
-    "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Currency"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Detect Thoughts",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Copper wire",
-    "cost": 0.01,
-    "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Wire"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Message, Sending",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Copper wire, fine",
-    "cost": 0.01,
-    "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Wire"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Sending",
-    "fullDescription": "",
-    "descriptors": []
-  },
+
+
   {
     "name": "Corn extract, powdered",
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Plant",
-      "Powder"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Rope Trick",
@@ -16374,8 +16221,7 @@
     "name": "Cotton",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Cloth"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Private Sanctum",
@@ -16387,7 +16233,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Insect"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Sleep",
@@ -16398,48 +16244,22 @@
     "name": "Crystal ball",
     "cost": 1000,
     "type": [
-      "Spellcasting Focus",
-      "Crystal",
-      "Divination"
+      "Spellcasting Focus"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Scrying",
     "fullDescription": "",
     "descriptors": []
   },
-  {
-    "name": "Crystal bead, shattering",
-    "cost": 0.1,
-    "type": [
-      "Spellcasting Focus",
-      "Crystal"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Globe of Invulnerability",
-    "fullDescription": "",
-    "descriptors": []
-  },
+
   {
     "name": "Crystal bead, small",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Crystal"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Globe of Invulnerability, Leomund's Tiny Hut",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Crystal cone",
-    "cost": 0.2,
-    "type": [
-      "Spellcasting Focus",
-      "Crystal"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Cone of Cold",
     "fullDescription": "",
     "descriptors": []
   },
@@ -16448,8 +16268,6 @@
     "cost": 500,
     "type": [
       "Spellcasting Focus",
-      "Crystal",
-      "Container",
       "Religious"
     ],
     "rarity": "Rare",
@@ -16461,9 +16279,7 @@
     "name": "Crystal rod",
     "cost": 8,
     "type": [
-      "Spellcasting Focus",
-      "Crystal",
-      "Rod"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Chain Lightning",
@@ -16474,8 +16290,7 @@
     "name": "Crystal sphere, small",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Crystal"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Otiluke's Freezing Sphere",
@@ -16486,36 +16301,10 @@
     "name": "Crystal spheres",
     "cost": 1,
     "type": [
-      "Spellcasting Focus",
-      "Crystal"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Chain Lightning, Clone, Cone of Cold, Feeblemind, Globe of Invulnerability, Hypnotic Pattern, Leomund's Tiny Hut, Lightning Bolt, Magic Jar, Otiluke's Freezing Sphere, Otiluke's Resilient Sphere, Scrying",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Crystal vial, phosphorescent",
-    "cost": 3,
-    "type": [
-      "Spellcasting Focus",
-      "Crystal",
-      "Container"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Hypnotic Pattern",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Crystal, clear hemispherical",
-    "cost": 5,
-    "type": [
-      "Spellcasting Focus",
-      "Crystal"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Otiluke's Resilient Sphere",
     "fullDescription": "",
     "descriptors": []
   },
@@ -16524,8 +16313,7 @@
     "cost": 100,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Greater Restoration, Stoneskin",
@@ -16537,8 +16325,7 @@
     "cost": 200,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Glyph of Warding",
@@ -16550,8 +16337,7 @@
     "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Nondetection",
@@ -16563,8 +16349,7 @@
     "cost": 25000,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Very Rare",
     "description": "Used in the following spells: True Resurrection",
@@ -16576,8 +16361,7 @@
     "cost": 5000,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Very Rare",
     "description": "Used in the following spells: Sequester",
@@ -16633,35 +16417,11 @@
     "descriptors": []
   },
   {
-    "name": "Dirt, grave",
-    "cost": 0.05,
-    "type": [
-      "Spellcasting Focus",
-      "Earth"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Create Undead",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Dirt, graveyard",
-    "cost": 0.02,
-    "type": [
-      "Spellcasting Focus",
-      "Earth"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Feign Death",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Distilled spirits",
     "cost": 0.8,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: False Life",
@@ -16672,8 +16432,7 @@
     "name": "Divinatory tools set",
     "cost": 100,
     "type": [
-      "Spellcasting Focus",
-      "Divination"
+      "Spellcasting Focus"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Find the Path",
@@ -16684,8 +16443,7 @@
     "name": "Down",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Feather Fall",
@@ -16697,7 +16455,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Bigby's Hand, Rary's Telepathic Bond",
@@ -16709,7 +16467,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Food"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Insect Plague, Legend Lore, True Seeing",
@@ -16721,7 +16479,7 @@
     "cost": 0.5,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Wind Wall",
@@ -16733,7 +16491,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Fear, Globe of Invulnerability",
@@ -16745,7 +16503,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Foresight",
@@ -16757,7 +16515,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Enhance Ability, Fear, Feather Fall, Fly, Foresight, Identify, Tasha's Hideous Laughter, Wind Wall",
@@ -16769,7 +16527,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Fear",
@@ -16781,7 +16539,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Fly",
@@ -16792,8 +16550,7 @@
     "name": "Feldspar, opalescent",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Moonbeam",
@@ -16802,11 +16559,9 @@
   },
   {
     "name": "Fine copper wire",
-    "cost": 0.01,
+    "cost": 1,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Wire"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Sending",
@@ -16815,11 +16570,9 @@
   },
   {
     "name": "Fine silver wire",
-    "cost": 0.02,
+    "cost": 2,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Wire"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Alarm",
@@ -16831,7 +16584,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Insect"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Fire Shield, Light",
@@ -16843,7 +16596,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Major Image, Minor Illusion, Permanent Image, Phantasmal Force, Programmed Illusion, Silent Image",
@@ -16851,24 +16604,10 @@
     "descriptors": []
   },
   {
-    "name": "Font filled with holy water",
-    "cost": 1000,
-    "type": [
-      "Spellcasting Focus",
-      "Container",
-      "Religious"
-    ],
-    "rarity": "Rare",
-    "description": "Used in the following spells: Scrying",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Fur",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Arcane Eye, Beast Bond, Chain Lightning, Conjure Elemental, Darkness, Delayed Blast Fireball, Enhance Ability, Fireball, Flame Strike, Lightning Bolt, Locate Animals or Plants, Locate Creature, Melf's Minute Meteors",
@@ -16879,8 +16618,7 @@
     "name": "Fur, beast",
     "cost": 0.03,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Arcane Eye, Beast Bond, Chain Lightning, Conjure Elemental, Darkness, Delayed Blast Fireball, Enhance Ability, Fireball, Flame Strike, Lightning Bolt, Locate Animals or Plants, Locate Creature, Melf's Minute Meteors",
@@ -16891,8 +16629,7 @@
     "name": "Fur, wrapped in cloth",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Beast Bond",
@@ -16904,7 +16641,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Cloth"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Gaseous Form",
@@ -16915,9 +16652,7 @@
     "name": "Gemstone, clear powdered",
     "cost": 10,
     "type": [
-      "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Wall of Force",
@@ -16929,8 +16664,7 @@
     "cost": 8,
     "type": [
       "Spellcasting Focus",
-      "Animal Part",
-      "Liquid"
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Vitriolic Sphere",
@@ -16942,31 +16676,19 @@
     "cost": 15,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Evard's Black Tentacles",
     "fullDescription": "",
     "descriptors": []
   },
-  {
-    "name": "Glass bead",
-    "cost": 0.01,
-    "type": [
-      "Spellcasting Focus",
-      "Glass"
-    ],
-    "rarity": "Mundane",
-    "description": "Spell component with no known spell associations in current database.",
-    "fullDescription": "",
-    "descriptors": []
-  },
+
   {
     "name": "Glass cone",
     "cost": 0.2,
     "type": [
-      "Spellcasting Focus",
-      "Glass"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Cone of Cold",
@@ -16977,37 +16699,10 @@
     "name": "Glass eye",
     "cost": 100,
     "type": [
-      "Spellcasting Focus",
-      "Glass"
+      "Spellcasting Focus"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Clairvoyance",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Glass eye for seeing",
-    "cost": 100,
-    "type": [
-      "Spellcasting Focus",
-      "Glass",
-      "Divination"
-    ],
-    "rarity": "Uncommon",
-    "description": "Used in the following spells: Clairvoyance",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Glass rod",
-    "cost": 5,
-    "type": [
-      "Spellcasting Focus",
-      "Glass",
-      "Rod"
-    ],
-    "rarity": "Common",
-    "description": "Spell component with no known spell associations in current database.",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17015,8 +16710,7 @@
     "name": "Glass spheres",
     "cost": 0.8,
     "type": [
-      "Spellcasting Focus",
-      "Glass"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Chain Lightning, Clairvoyance, Cloud of Daggers, Cone of Cold, Feeblemind, Globe of Invulnerability, Lightning Bolt, Mordenkainen's Private Sanctum, Sunbeam",
@@ -17027,8 +16721,7 @@
     "name": "Glass, opaque",
     "cost": 0.1,
     "type": [
-      "Spellcasting Focus",
-      "Glass"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Private Sanctum",
@@ -17039,8 +16732,7 @@
     "name": "Glass, sliver",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Glass"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Cloud of Daggers",
@@ -17052,7 +16744,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Insect"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Dancing Lights",
@@ -17063,9 +16755,7 @@
     "name": "Gold dust, 25 gp",
     "cost": 25,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Arcane Lock",
@@ -17073,12 +16763,10 @@
     "descriptors": []
   },
   {
-    "name": "Golden wire, cup-shaped",
-    "cost": 0.5,
+    "name": "Golden wire",
+    "cost": 5,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Wire"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Levitate",
@@ -17089,8 +16777,7 @@
     "name": "Granite block, small",
     "cost": 0.05,
     "type": [
-      "Spellcasting Focus",
-      "Stone"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Wall of Stone",
@@ -17102,7 +16789,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Insect"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Jump",
@@ -17113,8 +16800,7 @@
     "name": "Graveyard dirt",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Earth"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Feign Death",
@@ -17126,58 +16812,23 @@
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Invisibility, Otiluke's Resilient Sphere, True Polymorph",
     "fullDescription": "",
     "descriptors": []
   },
-  {
-    "name": "Gum arabic, hemispherical",
-    "cost": 0.08,
-    "type": [
-      "Spellcasting Focus",
-      "Plant"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Otiluke's Resilient Sphere",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Hand, miniature sculpted clay",
-    "cost": 0.1,
-    "type": [
-      "Spellcasting Focus",
-      "Sculpture"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Maximilian's Earthen Grasp",
-    "fullDescription": "",
-    "descriptors": []
-  },
+
   {
     "name": "Hen heart",
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Fear",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Herbs for brazier",
-    "cost": 0.5,
-    "type": [
-      "Spellcasting Focus",
-      "Plant"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Find Familiar, Hallow",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17186,7 +16837,7 @@
     "cost": 1000,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Food"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Find Familiar, Hallow",
@@ -17198,7 +16849,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Conjure Woodland Beings",
@@ -17230,25 +16881,11 @@
     "descriptors": []
   },
   {
-    "name": "Holy water, cup",
-    "cost": 25,
-    "type": [
-      "Spellcasting Focus",
-      "Religious",
-      "Liquid"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Bless, Commune, Dispel Evil and Good, Forbiddance, Magic Circle, Protection from Evil and Good, Regenerate, Scrying, True Resurrection, Wind Walk",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Holy water, vial",
     "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Religious",
-      "Liquid"
+      "Religious"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Bless, Commune, Dispel Evil and Good, Forbiddance, Magic Circle, Protection from Evil and Good, Regenerate, Scrying, True Resurrection, Wind Walk",
@@ -17261,22 +16898,10 @@
     "type": [
       "Spellcasting Focus",
       "Food",
-      "Liquid"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Antipathy/Sympathy, Magic Mouth, Mass Suggestion, Suggestion",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Honeycomb",
-    "cost": 0.03,
-    "type": [
-      "Spellcasting Focus",
-      "Animal Part"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Magic Mouth, Mass Suggestion, Suggestion",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17285,7 +16910,8 @@
     "cost": 1,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Food",
+		"Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Magic Mouth, Mass Suggestion, Suggestion",
@@ -17297,34 +16923,10 @@
     "cost": 100,
     "type": [
       "Spellcasting Focus",
-      "Animal Part",
-      "Gem"
+      "Misc"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Clairvoyance",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Ice for life-size copy",
-    "cost": 0.1,
-    "type": [
-      "Spellcasting Focus"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Find Familiar, Hallucinatory Terrain, Haste, Ice Knife, Simulacrum, Snilloc's Snowball Swarm",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Incense for brazier",
-    "cost": 0.30000000000000004,
-    "type": [
-      "Spellcasting Focus",
-      "Plant"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Commune, Conjure Elemental, Control Weather, Divination, Find Familiar, Forbiddance, Glyph of Warding, Guards and Wards, Hallow, Hypnotic Pattern, Legend Lore, Speak with Dead",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17333,22 +16935,10 @@
     "cost": 0.1,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Commune, Conjure Elemental, Control Weather, Divination, Find Familiar, Forbiddance, Glyph of Warding, Guards and Wards, Hallow, Hypnotic Pattern, Legend Lore, Speak with Dead",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Incense stick, glowing",
-    "cost": 0.2,
-    "type": [
-      "Spellcasting Focus",
-      "Plant"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Hypnotic Pattern",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17357,7 +16947,7 @@
     "cost": 250,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Legend Lore",
@@ -17369,7 +16959,7 @@
     "cost": 1000,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Commune, Conjure Elemental, Control Weather, Divination, Find Familiar, Forbiddance, Glyph of Warding, Guards and Wards, Hallow, Hypnotic Pattern, Legend Lore, Speak with Dead",
@@ -17380,8 +16970,7 @@
     "name": "Ink",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Liquid"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Bless, Dream, Forbiddance, Illusory Script, Nondetection, Simulacrum, Telepathy, Teleportation Circle, True Resurrection",
@@ -17392,9 +16981,7 @@
     "name": "Ink, lead-based",
     "cost": 10,
     "type": [
-      "Spellcasting Focus",
-      "Liquid",
-      "Metal"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Illusory Script",
@@ -17402,11 +16989,10 @@
     "descriptors": []
   },
   {
-    "name": "Ink, rare chalks",
+    "name": "Rare chalks",
     "cost": 50,
     "type": [
-      "Spellcasting Focus",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Teleportation Circle",
@@ -17417,8 +17003,7 @@
     "name": "Iron",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Metal"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Antimagic Field, Dispel Evil and Good, Enlarge/Reduce, Flaming Sphere, Heat Metal, Hold Monster, Hold Person, Magic Circle, Move Earth, Protection from Evil and Good, Reverse Gravity",
@@ -17426,25 +17011,10 @@
     "descriptors": []
   },
   {
-    "name": "Iron blade",
-    "cost": 0.5,
-    "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Weapon"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Move Earth",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Iron filings",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Antimagic Field, Reverse Gravity",
@@ -17455,9 +17025,7 @@
     "name": "Iron powder",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Antimagic Field, Enlarge/Reduce, Flaming Sphere",
@@ -17468,9 +17036,7 @@
     "name": "Iron rod, forked",
     "cost": 250,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Rod"
+      "Spellcasting Focus"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Plane Shift",
@@ -17481,9 +17047,7 @@
     "name": "Iron rod, silver",
     "cost": 10,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Rod"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Guards and Wards",
@@ -17494,9 +17058,7 @@
     "name": "Iron rod, small straight",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Rod"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Hold Person",
@@ -17507,8 +17069,7 @@
     "name": "Ivory",
     "cost": 20,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Contingency, Find the Path, Legend Lore, Mordenkainen's Magnificent Mansion",
@@ -17519,8 +17080,7 @@
     "name": "Ivory carved miniature portal",
     "cost": 5,
     "type": [
-      "Spellcasting Focus",
-      "Sculpture"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
@@ -17531,8 +17091,7 @@
     "name": "Ivory carved statuette",
     "cost": 1500,
     "type": [
-      "Spellcasting Focus",
-      "Sculpture"
+      "Spellcasting Focus"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Contingency, Imprisonment",
@@ -17543,24 +17102,10 @@
     "name": "Ivory sticks",
     "cost": 50,
     "type": [
-      "Spellcasting Focus",
-      "Animal Part"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Contingency, Find the Path, Legend Lore, Mordenkainen's Magnificent Mansion",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Ivory sticks, divinatory",
-    "cost": 8,
-    "type": [
-      "Spellcasting Focus",
-      "Animal Part",
-      "Divination"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Find the Path",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17594,8 +17139,7 @@
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Magic Mouth, Programmed Illusion",
@@ -17607,34 +17151,10 @@
     "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Gem",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Programmed Illusion",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Jewel, quality",
-    "cost": 1000,
-    "type": [
-      "Spellcasting Focus",
-      "Gem"
-    ],
-    "rarity": "Rare",
-    "description": "Used in the following spells: Planar Binding",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Knotted string",
-    "cost": 0.01,
-    "type": [
-      "Spellcasting Focus"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Guards and Wards",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17643,7 +17163,7 @@
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Metal"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Illusory Script, Mordenkainen's Private Sanctum",
@@ -17655,7 +17175,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Leather"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Levitate",
@@ -17667,7 +17187,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Leather"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Freedom of Movement",
@@ -17679,7 +17199,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Leather"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Mage Armor",
@@ -17691,7 +17211,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Haste",
@@ -17702,8 +17222,7 @@
     "name": "Lime",
     "cost": 0.01,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Flesh to Stone",
@@ -17714,8 +17233,7 @@
     "name": "Lodestone",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Disintegrate, Mending, Reverse Gravity",
@@ -17727,8 +17245,7 @@
     "cost": 100,
     "type": [
       "Spellcasting Focus",
-      "Glass",
-      "Tool"
+      "Misc"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Sunbeam",
@@ -17750,8 +17267,7 @@
     "name": "Marble, small polished",
     "cost": 5,
     "type": [
-      "Spellcasting Focus",
-      "Stone"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
@@ -17762,8 +17278,7 @@
     "name": "Marked sticks",
     "cost": 25,
     "type": [
-      "Spellcasting Focus",
-      "Divination"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Augury",
@@ -17775,8 +17290,7 @@
     "cost": 0.5,
     "type": [
       "Spellcasting Focus",
-      "Liquid",
-      "Metal"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Symbol, Tenser's Floating Disk, True Polymorph",
@@ -17787,8 +17301,7 @@
     "name": "Mica",
     "cost": 0.02,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Shatter",
@@ -17799,37 +17312,10 @@
     "name": "Mineral spheres",
     "cost": 1,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Feeblemind",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Mirror, silver quality",
-    "cost": 1000,
-    "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Tool"
-    ],
-    "rarity": "Rare",
-    "description": "Used in the following spells: Sanctuary, Scrying",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Mirror, silver small",
-    "cost": 10,
-    "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Tool"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Sanctuary, Scrying",
     "fullDescription": "",
     "descriptors": []
   },
@@ -17838,8 +17324,7 @@
     "cost": 0.1,
     "type": [
       "Spellcasting Focus",
-      "Plant",
-      "Ash"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Goodberry, Pass without Trace, Shillelagh",
@@ -17851,7 +17336,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Goodberry, Pass without Trace, Shillelagh",
@@ -17863,8 +17348,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Food",
-      "Liquid"
+      "Food"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Slow",
@@ -17876,7 +17360,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Moonbeam",
@@ -17888,7 +17372,7 @@
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Light",
@@ -17900,8 +17384,7 @@
     "cost": 0.5,
     "type": [
       "Spellcasting Focus",
-      "Plant",
-      "Powder"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: True Seeing",
@@ -17913,7 +17396,7 @@
     "cost": 0.8,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Hex",
@@ -17924,8 +17407,7 @@
     "name": "Niter",
     "cost": 0.03,
     "type": [
-      "Spellcasting Focus",
-      "Mineral"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Melf's Minute Meteors",
@@ -17937,7 +17419,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Barkskin",
@@ -17948,8 +17430,7 @@
     "name": "Obsidian",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Stone"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Erupting Earth",
@@ -17961,7 +17442,7 @@
     "cost": 15,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Evard's Black Tentacles, Find Familiar, Hunger of Hadar",
@@ -17973,7 +17454,7 @@
     "cost": 0.8,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Hunger of Hadar",
@@ -17985,7 +17466,7 @@
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Guards and Wards, Hallow, Mass Suggestion, Move Earth, Reincarnate, Suggestion",
@@ -17997,7 +17478,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Mass Suggestion, Suggestion",
@@ -18009,7 +17490,7 @@
     "cost": 1000,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Religious"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Reincarnate",
@@ -18021,7 +17502,7 @@
     "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Liquid"
+      "Alchemy"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: True Seeing",
@@ -18045,7 +17526,7 @@
     "cost": 0.1,
     "type": [
       "Spellcasting Focus",
-      "Glass"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Private Sanctum",
@@ -18115,8 +17596,7 @@
     "name": "Phosphorescent material, vial",
     "cost": 3,
     "type": [
-      "Spellcasting Focus",
-      "Container"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Hypnotic Pattern",
@@ -18128,7 +17608,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Mineral"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Conjure Elemental, Dancing Lights, Fire Shield, Symbol, Wall of Fire",
@@ -18140,7 +17620,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Melf's Minute Meteors",
@@ -18152,7 +17632,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Mineral"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Darkness",
@@ -18164,7 +17644,6 @@
     "cost": 50,
     "type": [
       "Spellcasting Focus",
-      "Metal",
       "Jewelry"
     ],
     "rarity": "Common",
@@ -18176,9 +17655,7 @@
     "name": "Platinum sword, miniature",
     "cost": 250,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Weapon"
+      "Spellcasting Focus"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Mordenkainen's Faithful Hound, Mordenkainen's Sword",
@@ -18190,23 +17667,10 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Food",
-      "Animal Part"
+      "Food"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Grease",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Portal, miniature ivory",
-    "cost": 5,
-    "type": [
-      "Spellcasting Focus",
-      "Sculpture"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
     "fullDescription": "",
     "descriptors": []
   },
@@ -18215,7 +17679,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Powder"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Color Spray",
@@ -18235,52 +17699,14 @@
     "descriptors": []
   },
   {
-    "name": "Quarterstaff",
-    "cost": 0.2,
-    "type": [
-      "Spellcasting Focus",
-      "Weapon",
-      "Wood"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Shillelagh",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Quartz",
-    "cost": 0.5,
-    "type": [
-      "Spellcasting Focus",
-      "Mineral"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Wall of Ice",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Quill from sleeping bird",
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Dream",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Quiver with ammunition",
-    "cost": 1,
-    "type": [
-      "Spellcasting Focus",
-      "Container",
-      "Ammunition"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Swift Quiver",
     "fullDescription": "",
     "descriptors": []
   },
@@ -18289,24 +17715,10 @@
     "cost": 500,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Aganazzar's Scorcher",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Reliquary, crystal or gem",
-    "cost": 500,
-    "type": [
-      "Spellcasting Focus",
-      "Container",
-      "Religious",
-      "Gem"
-    ],
-    "rarity": "Rare",
-    "description": "Used in the following spells: Holy Aura, Magic Jar",
     "fullDescription": "",
     "descriptors": []
   },
@@ -18315,7 +17727,6 @@
     "cost": 1000,
     "type": [
       "Spellcasting Focus",
-      "Container",
       "Religious"
     ],
     "rarity": "Rare",
@@ -18328,8 +17739,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Plant",
-      "Powder"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Melf's Acid Arrow",
@@ -18341,7 +17751,6 @@
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Metal",
       "Jewelry"
     ],
     "rarity": "Common",
@@ -18354,7 +17763,6 @@
     "cost": 50,
     "type": [
       "Spellcasting Focus",
-      "Metal",
       "Jewelry"
     ],
     "rarity": "Common",
@@ -18363,11 +17771,11 @@
     "descriptors": []
   },
   {
-    "name": "Rod, amber",
+    "name": "Amber",
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Rod"
+      "Misc"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Chain Lightning, Lightning Bolt",
@@ -18379,24 +17787,10 @@
     "cost": 8,
     "type": [
       "Spellcasting Focus",
-      "Crystal",
-      "Rod"
+      "Misc"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Chain Lightning",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Rod, glass",
-    "cost": 5,
-    "type": [
-      "Spellcasting Focus",
-      "Glass",
-      "Rod"
-    ],
-    "rarity": "Common",
-    "description": "Spell component with no known spell associations in current database.",
     "fullDescription": "",
     "descriptors": []
   },
@@ -18405,8 +17799,7 @@
     "cost": 250,
     "type": [
       "Spellcasting Focus",
-      "Metal",
-      "Rod"
+      "Misc"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Locate Object, Plane Shift",
@@ -18418,8 +17811,7 @@
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Metal",
-      "Rod"
+      "Misc"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Guards and Wards",
@@ -18431,7 +17823,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Sleep",
@@ -18444,7 +17836,7 @@
     "type": [
       "Spellcasting Focus",
       "Gem",
-      "Powder"
+      "Jewelry"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Continual Flame, Forbiddance, Forcecage, Sequester, Simulacrum",
@@ -18457,7 +17849,7 @@
     "type": [
       "Spellcasting Focus",
       "Gem",
-      "Powder"
+      "Jewelry"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Continual Flame, Forbiddance, Forcecage, Sequester, Simulacrum",
@@ -18470,7 +17862,7 @@
     "type": [
       "Spellcasting Focus",
       "Gem",
-      "Powder"
+      "Jewelry"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Continual Flame",
@@ -18493,23 +17885,10 @@
     "name": "Runes, carved divinatory",
     "cost": 12,
     "type": [
-      "Spellcasting Focus",
-      "Divination"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Find the Path",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Sacrificial offering",
-    "cost": 25,
-    "type": [
-      "Spellcasting Focus",
-      "Religious"
-    ],
-    "rarity": "Common",
-    "description": "Used in the following spells: Divination",
     "fullDescription": "",
     "descriptors": []
   },
@@ -18518,7 +17897,7 @@
     "cost": 0.8,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: True Seeing",
@@ -18542,7 +17921,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Plant",
+      "Alchemy",
       "Food"
     ],
     "rarity": "Mundane",
@@ -18555,7 +17934,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Shillelagh",
@@ -18567,7 +17946,7 @@
     "cost": 0.5,
     "type": [
       "Spellcasting Focus",
-      "Cloth"
+      "Apparel"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Nystul's Magic Aura",
@@ -18575,24 +17954,10 @@
     "descriptors": []
   },
   {
-    "name": "Silver bar, carved",
-    "cost": 100,
-    "type": [
-      "Spellcasting Focus",
-      "Metal"
-    ],
-    "rarity": "Uncommon",
-    "description": "Spell component with no known spell associations in current database.",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
     "name": "Silver dust, 25 gp",
     "cost": 25,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Spell component with no known spell associations in current database.",
@@ -18601,11 +17966,10 @@
   },
   {
     "name": "Silver mirror, quality",
-    "cost": 1000,
+    "cost": 25,
     "type": [
       "Spellcasting Focus",
-      "Metal",
-      "Tool"
+      "Misc"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Sanctuary, Scrying",
@@ -18617,8 +17981,7 @@
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Metal",
-      "Tool"
+      "Misc"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Sanctuary, Scrying",
@@ -18627,10 +17990,10 @@
   },
   {
     "name": "Silver pins, three",
-    "cost": 0.30000000000000004,
+    "cost": 0.3,
     "type": [
       "Spellcasting Focus",
-      "Metal"
+      "Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Chain Lightning",
@@ -18641,9 +18004,7 @@
     "name": "Silver powder",
     "cost": 0.5,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: See Invisibility",
@@ -18655,7 +18016,7 @@
     "cost": 10,
     "type": [
       "Spellcasting Focus",
-      "Metal",
+      "Misc",
       "Jewelry"
     ],
     "rarity": "Common",
@@ -18668,7 +18029,7 @@
     "cost": 5,
     "type": [
       "Spellcasting Focus",
-      "Metal"
+      "Misc"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
@@ -18679,9 +18040,7 @@
     "name": "Silver, powdered 100 gp",
     "cost": 100,
     "type": [
-      "Spellcasting Focus",
-      "Metal",
-      "Powder"
+      "Spellcasting Focus"
     ],
     "rarity": "Uncommon",
     "description": "Used in the following spells: Dispel Evil and Good, Magic Circle, Protection from Evil and Good",
@@ -18693,7 +18052,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Stinking Cloud",
@@ -18705,7 +18064,7 @@
     "cost": 0.03,
     "type": [
       "Spellcasting Focus",
-      "Animal Part"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Bigby's Hand, Find Familiar, Mass Suggestion, Suggestion",
@@ -18717,22 +18076,10 @@
     "cost": 0.5,
     "type": [
       "Spellcasting Focus",
-      "Animal Part",
-      "Leather"
+      "Apparel"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Bigby's Hand",
-    "fullDescription": "",
-    "descriptors": []
-  },
-  {
-    "name": "Snow for life-size copy",
-    "cost": 0.1,
-    "type": [
-      "Spellcasting Focus"
-    ],
-    "rarity": "Mundane",
-    "description": "Used in the following spells: Simulacrum",
     "fullDescription": "",
     "descriptors": []
   },
@@ -18741,7 +18088,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Insect"
+      "Animal"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Find Familiar, Spider Climb, Web",
@@ -18753,7 +18100,7 @@
     "cost": 0.05,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Spike Growth",
@@ -18776,7 +18123,7 @@
     "cost": 0.01,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Pass without Trace",
@@ -18787,8 +18134,7 @@
     "name": "Statuette, ivory",
     "cost": 1500,
     "type": [
-      "Spellcasting Focus",
-      "Sculpture"
+      "Spellcasting Focus"
     ],
     "rarity": "Rare",
     "description": "Used in the following spells: Contingency, Imprisonment",
@@ -18799,8 +18145,7 @@
     "name": "Statuette, replica",
     "cost": 5,
     "type": [
-      "Spellcasting Focus",
-      "Sculpture"
+      "Spellcasting Focus"
     ],
     "rarity": "Common",
     "description": "Used in the following spells: Project Image",
@@ -18824,7 +18169,8 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Mineral"
+      "Gem",
+		"Misc"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Conjure Elemental, Delayed Blast Fireball, Fireball, Flame Strike, Melf's Minute Meteors",
@@ -18836,7 +18182,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Plant"
+      "Alchemy"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: Flame Blade",
@@ -18860,8 +18206,7 @@
     "cost": 0.02,
     "type": [
       "Spellcasting Focus",
-      "Mineral",
-      "Powder"
+      "Gem"
     ],
     "rarity": "Mundane",
     "description": "Used in the following spells: See Invisibility",
