@@ -869,8 +869,8 @@
         "cost": 3023,
         "type": ["Misc", "Potion", "Poison"],
         "rarity": "Uncommon",
-        "description": "This ceramic jug can produce 2 gallons of liquid per day. It can create mayonnaise, vinegar, fresh water, salt water, beer, wine, honey, or oil.",
-        "fullDescription": "",
+        "description": "This ceramic jug can produce up to 2 gallons of a liquid per day depending on the liquid. It can create mayonnaise, vinegar, fresh water, salt water, beer, wine, honey, or oil.",
+        "fullDescription": "You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named. Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.",
 		"descriptors": [
             "glazed earthenware jug with arcane symbols etched around the rim, always slightly warm to the touch",
             "ancient clay vessel with a cork stopper, the interior seeming larger than the outside suggests",
@@ -886,7 +886,7 @@
         "type": ["Jewelry", "Healing"],
         "rarity": "Rare",
         "description": "Your Constitution score is 19 while you wear this amulet. It has no effect if your Constitution is already 19 or higher.",
-        "fullDescription": "",
+        "fullDescription": "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher without it.",
 		"descriptors": [
             "polished ruby set in gold that pulses with a steady heartbeat rhythm when worn against skin",
             "carved jade pendant shaped like a coiled serpent, warm to the touch regardless of temperature",
@@ -902,7 +902,7 @@
         "type": ["Jewelry"],
         "rarity": "Uncommon",
         "description": "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.",
 		"descriptors": [
             "blank silver disc that seems to reflect nothing, even in bright light, hanging on a thin chain",
             "lead medallion inscribed with warding symbols, heavy and cold against the chest",
@@ -918,7 +918,7 @@
         "type": ["Jewelry", "Travel"],
         "rarity": "Very Rare",
         "description": "While wearing this amulet, you can use an action to name a location on another plane of existence and make a DC 15 Intelligence check. On success, you cast plane shift. On failure, everyone within 15 feet is transported to a random location.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1–60, you travel to a random location on the plane you named. On a 61–100, you travel to a randomly determined plane of existence.",
 		"descriptors": [
             "prismatic crystal suspended in an ever-rotating gimbal, showing glimpses of other worlds within",
             "ancient medallion carved with overlapping planar symbols, warm and cold in alternating pulses",
@@ -934,8 +934,8 @@
         "cost": 6700,
         "type": ["Armor", "Shield"],
         "rarity": "Very Rare",
-        "description": "As a bonus action, you can animate this shield to hover and defend you, granting +2 AC while leaving your hands free. It remains animated for 1 minute. Recharges after a long rest.",
-        "fullDescription": "",
+        "description": "As a bonus action, you can animate this shield to hover and defend you, granting the effects of the sheild's AC bonus while leaving your hands free. It remains animated for 1 minute.",
+        "fullDescription": "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.",
 		"descriptors": [
             "round shield with softly glowing runes around the rim, hovering slightly even when held",
             "heater shield that vibrates gently when danger approaches, eager to float free",
@@ -967,8 +967,8 @@
         "cost": 5700,
         "type": ["Armor", "Shield"],
         "rarity": "Rare",
-        "description": "You gain a +2 bonus to AC against ranged attacks while wielding this shield. As a reaction when hit by a ranged weapon attack, you can catch the ammunition if you have a free hand.",
-        "fullDescription": "",
+        "description": "You gain an additional +2 bonus to AC against ranged attacks while wielding this shield. As a reaction when hit by a ranged weapon attack, you can catch the ammunition if you have a free hand.",
+        "fullDescription": "You gain a +2 bonus to AC against ranged attacks while you wield this shield. This bonus is in addition to the shield's normal bonus to AC. In addition, whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead.",
 		"descriptors": [
             "round shield with a magnetic field around it, arrows visibly slowing as they approach",
             "buckler with a recessed hollow perfect for catching projectiles, the rim reinforced for deflection",
@@ -984,7 +984,6 @@
         "type": ["Misc"],
         "rarity": "Rare",
         "description": "Inside this bag are 3d4 magical beans. Plant one and roll on a table to determine what sprouts, ranging from useful plants to dangerous monsters.",
-        "fullDescription": "",
 		"descriptors": [
             "leather pouch that rattles with large colorful beans, each one warm to the touch",
             "silk bag containing beans that glow faintly in darkness, pulsing with latent growth",
@@ -1065,7 +1064,7 @@
         "type": ["Misc", "Ammunition"],
         "rarity": "Rare",
         "description": "A bead of force is a throwable item that explodes in a 10-foot radius for 5d4 force damage, then creates an impenetrable sphere for 1 minute. Creatures that fail the Dex save are trapped inside, while others are pushed out, and the sphere can be moved or carried despite containing creatures.",
-        "fullDescription": "",
+        "fullDescription": "This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 beads of force are found together. You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can. An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.",
 		"descriptors": [
             "perfectly smooth glass bead that hums at a frequency just below hearing, vibrating constantly",
             "metal sphere no larger than a marble that weighs more than it should",
@@ -1081,7 +1080,7 @@
         "type": ["Apparel", "Dwarf"],
         "rarity": "Rare",
         "description": "This belt boosts your Constitution by 2 (up to 20) and gives advantage on Persuasion checks with dwarves, plus a daily chance to grow a magnificent beard. If you're not a dwarf, it also grants poison resistance and save advantage, 60-foot darkvision, and the ability to speak Dwarvish.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this belt, you gain the following benefits: Your Constitution score increases by 2, to a maximum of 20. You have advantage on Charisma (Persuasion) checks made to interact with dwarves. In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one. If you aren't a dwarf, you gain the following additional benefits while wearing the belt: You have advantage on saving throws against poison, and you have resistance against poison damage. You have darkvision out to a range of 60 feet. You can speak, read, and write Dwarvish.",
 		"descriptors": [
             "thick leather belt with dwarvish runes hammered into bronze plates, smelling of stone and forge smoke",
             "masterwork belt with mithral buckle shaped like a mountain, the leather aged to perfection",
@@ -1210,7 +1209,7 @@
         "type": ["Apparel", "Travel"],
         "rarity": "Rare",
         "description": "These boots let you use a bonus action to double your walking speed and impose disadvantage on opportunity attacks against you, lasting until you deactivate them. The magic works for up to 10 minutes total per long rest.",
-        "fullDescription": "",
+        "fullDescription": "While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest.",
 		"descriptors": [
             "sleek boots with racing stripes that blur when the wearer moves quickly",
             "red leather boots reinforced with mithral, designed for supernatural swiftness",
@@ -1226,7 +1225,7 @@
         "type": ["Apparel", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing these boots, your walking speed becomes 30 feet (unless it's higher), and your jump distance is tripled.",
-        "fullDescription": "",
+        "fullDescription": "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow.",
 		"descriptors": [
             "springy boots with reinforced soles that compress and release with each step",
             "boots with coiled springs visible in the heels, sturdy yet bouncy",
@@ -1241,8 +1240,8 @@
         "cost": 4333,
         "type": ["Apparel", "Nature", "Travel"],
         "rarity": "Uncommon",
-        "description": "While wearing these boots, you have resistance to cold damage and ignore difficult terrain created by ice or snow. You can tolerate temperatures as low as -50°F without any additional protection.",
-        "fullDescription": "",
+        "description": "While wearing these boots, you have resistance to cold damage and ignore difficult terrain created by ice or snow. You can tolerate extremely cold temperatures.",
+        "fullDescription": "These furred boots are snug and feel quite warm. While you wear them, you gain the following benefits: You have resistance to cold damage. You ignore difficult terrain created by ice or snow. You can tolerate temperatures as low as −50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as −100 degrees Fahrenheit.",
 		"descriptors": [
             "white fur-lined boots that radiate gentle warmth, impervious to cold and ice",
             "arctic boots with ice-blue leather and silver buckles, gripping any frozen surface",
@@ -1258,7 +1257,7 @@
         "type": ["Misc", "Summoning"],
         "rarity": "Rare",
         "description": "While this bowl is filled with water, you can speak its command word to summon a water elemental. Once used, it can't be used again until the next dawn.",
-        "fullDescription": "",
+        "fullDescription": "While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again until the next dawn.",
 		"descriptors": [
             "blue ceramic bowl with wave patterns, the interior always damp even when dry",
             "crystal bowl that makes water swirl in unnatural patterns when filled",
@@ -1370,7 +1369,7 @@
         "type": ["Apparel", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, the cap is removed, or you are no longer underwater.",
 		"descriptors": [
             "tight-fitting cap of fish scales that smells faintly of the sea",
             "rubber swimming cap with gills embossed on the sides, practical and enchanted",
@@ -1513,8 +1512,8 @@
         "cost": 8973,
         "type": ["Apparel"],
         "rarity": "Very Rare",
-        "description": "This cloak grants you resistance to poison damage, immunity to being poisoned, walking speed equal to your climbing speed, and the ability to move on vertical surfaces and ceilings. You can also cast web once per day.",
-        "fullDescription": "",
+        "description": "This cloak grants you resistance to poison damage, immunity to being poisoned, climbing speed equal to your walking speed, and the ability to move on vertical surfaces and ceilings. You can also cast an enhanced web spell (DC 13) once per day.",
+        "fullDescription": "While wearing it, you gain the following benefits: You have resistance to poison damage. You have a climbing speed equal to your walking speed. You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You can't be caught in webs of any sort and can move through webs as if they were difficult terrain. You can use an action to cast the web spell (save DC 13). The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.",
 		"descriptors": [
             "cloak woven from actual spider silk, unnaturally strong and shimming with an oily sheen",
             "dark cloak with silver spider web patterns that seem to move when not watched directly",
@@ -1530,7 +1529,7 @@
         "type": ["Apparel"],
         "rarity": "Rare",
         "description": "While wearing this cloak, creatures have disadvantage on attack rolls against you. If you take damage, this property ceases to function until the start of your next turn.",
-        "fullDescription": "",
+        "fullDescription": "While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.",
 		"descriptors": [
             "cloak that makes the wearer appear to be standing several feet from their actual location",
             "shimmering cape that causes the wearer's image to blur and shift constantly",
@@ -1609,7 +1608,7 @@
         "cost": 4097,
         "type": ["Apparel", "Nature", "Travel"],
         "rarity": "Uncommon",
-        "description": "While wearing this cloak with its hood up, you can breathe underwater and have a swimming speed of 60 feet. You can also pull the hood up or down as a bonus action.",
+        "description": "While wearing this cloak with its hood up, you can breathe underwater and have a swimming speed of 60 feet. You pull the hood up or down as an action.",
         "fullDescription": "",
 		"descriptors": [
             "cloak of blue-green material that flows like water when the hood is raised",
@@ -1625,7 +1624,7 @@
         "cost": 35167,
         "type": ["Misc", "Arcane"],
         "rarity": "Very Rare",
-        "description": "You can cast scrying with this crystal ball.",
+        "description": "While touching it, you can cast the scrying spell (save DC 17) with it.",
         "fullDescription": "",
 		"descriptors": [
             "perfectly clear crystal sphere the size of a grapefruit, cold and heavy in the hands",
@@ -1642,7 +1641,7 @@
         "type": ["Misc", "Arcane"],
         "rarity": "Legendary",
         "description": "Functions as a Crystal Ball. Additionally, while scrying with it, you can cast detect thoughts targeting creatures you can see within the spell's sensor.",
-        "fullDescription": "",
+        "fullDescription": "While touching it, you can cast the scrying spell (save DC 17) with it. You can use an action to cast the detect thoughts spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this detect thoughts to maintain it during its duration, but it ends if scrying ends.",
 		"descriptors": [
             "crystal orb with a pinkish glow at its core, pulsing gently like a heartbeat",
             "sphere of rose quartz with silver veins running through it, warm against the skin",
@@ -1658,7 +1657,7 @@
         "type": ["Misc", "Arcane"],
         "rarity": "Legendary",
         "description": "Functions as a Crystal Ball. Additionally, while scrying with it, you can communicate telepathically with creatures you can see within the spell's sensor.",
-        "fullDescription": "",
+        "fullDescription": "While touching it, you can cast the scrying spell (save DC 17) with it. While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the suggestion spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn.",
 		"descriptors": [
             "crystal sphere with blue lightning frozen inside, crackling silently within the glass",
             "orb that resonates when touched, vibrating at multiple frequencies simultaneously",
@@ -1674,7 +1673,7 @@
         "type": ["Misc", "Arcane"],
         "rarity": "Legendary",
         "description": "Functions as a Crystal Ball. Additionally, while scrying with it, you have truesight with a radius of 120 feet centered on the spell's sensor.",
-        "fullDescription": "",
+        "fullDescription": "While touching it, you can cast the scrying spell (save DC 17) with it. While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor.",
 		"descriptors": [
             "diamond-clear sphere that reveals hidden details in whatever it reflects",
             "crystal orb with a golden eye-like pattern in its center, unblinking and watchful",
@@ -1690,7 +1689,7 @@
         "type": ["Misc"],
         "rarity": "Rare",
         "description": "This cube has 36 charges. You can use an action to press one of the cube's faces and expend charges to create a barrier around you. Different faces create different effects.",
-        "fullDescription": "",
+        "fullDescription": "The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn. You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration. If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains. ",
 		"descriptors": [
             "inch-wide ivory cube with different symbols carved on each face, warm to the touch",
             "bone cube with six distinct pictograms, each face slightly depressed like a button",
@@ -1706,7 +1705,7 @@
         "type": ["Misc", "Travel"],
         "rarity": "Legendary",
         "description": "This cube has 6 sides, each linked to a different plane of existence. You can use an action to press one side and cast gate, opening a portal to that plane.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to press one side of the cube to cast the gate spell with it, opening a portal to the plane keyed to that side. Alternatively, if you use an action to press one side twice, you can cast the plane shift spell (save DC 17) with the cube and transport the targets to the plane keyed to that side. The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 1d3 expended charges daily at dawn.",
 		"descriptors": [
             "three-inch cube of unknown metal, each face showing a different alien landscape",
             "stone cube with six sides that seem to open onto different worlds when examined",
@@ -1722,7 +1721,7 @@
         "type": ["Misc", "Travel"],
         "rarity": "Rare",
         "description": "A 1-inch metal cube that transforms into a square tower 20 feet on each side and 30 feet high when activated. Has arrow slits, a battlement, and a ladder inside. Can be commanded to return to cube form.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening. Each creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.",
 		"descriptors": [
             "small steel cube with intricate etchings of castle walls, surprisingly heavy for its size",
             "iron cube with tiny portcullis design on one face, the metal cold and unyielding",
@@ -1737,8 +1736,8 @@
         "cost": 2117,
         "type": ["Weapon", "Melee", "Simple", "Piercing", "Finesse", "Thrown", "Light", "Dagger", "Poison"],
         "rarity": "Rare",
-        "description": "A +1 dagger. You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.",
-        "fullDescription": "",
+        "description": "A +1 dagger. You can use an action to cause poison to coat the blade which remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.",
+        "fullDescription": "You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.",
 		"descriptors": [
             "serpent-hilted dagger with a black blade that seems to weep dark fluid occasionally",
             "green-tinted steel blade with a viper etched along the fuller, the handle wrapped in snakeskin",
@@ -1754,7 +1753,7 @@
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Very Rare",
         "description": "A sword that can be commanded to fight on its own as a bonus action, hovering and attacking independently for up to 1 minute. It has the same attack bonus as you.",
-        "fullDescription": "",
+        "fullDescription": "You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls. While the sword hovers, you can use a bonus action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same bonus action, you can cause the sword to attack one creature within 5 feet of it. After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it.",
 		"descriptors": [
             "lightweight longsword that seems to resist being sheathed, the blade vibrating eagerly",
             "sword with a pommel weighted to spin in the air, the balance impossibly perfect",
@@ -1770,7 +1769,7 @@
         "type": ["Misc"],
         "rarity": "Uncommon",
         "description": "Produces unlimited water in three modes: stream (1 gallon), fountain (5 gallons), or geyser (30 gallons that can push creatures). The geyser mode can deal 1d4 bludgeoning damage and push targets.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options: Stream produces 1 gallon of water. Fountain produces 5 gallons of water. Geyser produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you.",
 		"descriptors": [
             "ceramic flask with three spouts at different heights, always cool and slightly damp",
             "ornate decanter carved with wave patterns, perpetually beaded with condensation",
@@ -1786,7 +1785,7 @@
         "type": ["Misc", "Animal"],
         "rarity": "Uncommon",
         "description": "A box containing 34 cards. Drawing a card creates an illusory creature that lasts until dispelled or you use an action to dismiss it. The illusion looks and sounds real but cannot deal damage.",
-        "fullDescription": "",
+        "fullDescription": "The magic of the deck functions only if cards are drawn at random (you can use an altered deck of playing cards to simulate the deck). You can use an action to draw a card at random from the deck and throw it to the ground at a point within 30 feet of you. An illusion of one or more creatures forms over the thrown card and remains until dispelled. An illusory creature appears real, of the appropriate size, and behaves as if it were a real creature except that it can do no harm. While you are within 120 feet of the illusory creature and can see it, you can use an action to move it magically anywhere within 30 feet of its card. Any physical interaction with the illusory creature reveals it to be an illusion, because objects pass through it. Someone who uses an action to visually inspect the creature identifies it as illusory with a successful DC 15 Intelligence (Investigation) check. The creature then appears translucent. The illusion lasts until its card is moved or the illusion is dispelled. When the illusion ends, the image on its card disappears, and that card can't be used again.",
 		"descriptors": [
             "wooden box of playing cards with creatures painted on their faces, the images seeming to move",
             "worn deck of oversized cards showing various monsters, the edges frayed from use",
@@ -1802,7 +1801,7 @@
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Legendary",
         "description": "A +3 sword that allows you to transfer up to +3 of its bonus to your AC instead of attack and damage as a bonus action. You can change the distribution each round.",
-        "fullDescription": "",
+        "fullDescription": "The first time you attack with the sword on each of your turns, you can transfer some or all of the sword's bonus to your Armor Class, instead of using the bonus on any attacks that turn. For example, you could reduce the bonus to your attack and damage rolls to +1 and gain a +2 bonus to AC. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the sword to gain a bonus to AC from it.",
 		"descriptors": [
             "sword with a wide blade engraved with protective wards, the steel mirror-polished",
             "defensive longsword with an oversized guard wrapping around the hand, perfectly balanced",
@@ -1817,8 +1816,8 @@
         "cost": 10350,
         "type": ["Armor", "Heavy"],
         "rarity": "Very Rare",
-        "description": "Cursed plate armor (AC 18) that gives +1 AC but cannot be removed once worn. Increases attack rolls by 1 but disadvantage on attacks against demons. Wearer is vulnerable to influence from fiends.",
-        "fullDescription": "",
+        "description": "Cursed plate armor (AC 18) that gives +1 AC but cannot be removed once worn. Gives +1 to attack rolls and damage and 1d8 to unarmed strikes. Gives disadvantage on attacks against demons. Wearer is vulnerable to influence from fiends.",
+        "fullDescription": "While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8. Curse. Once you don this cursed armor, you can't doff it unless you are targeted by the remove curse spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities.",
 		"descriptors": [
             "black plate armor with red highlights, the metal warm and the straps tightening of their own accord",
             "spiked armor with demonic faces worked into the pauldrons, the eyes seeming to follow movement",
@@ -1833,8 +1832,8 @@
         "cost": 4133,
         "type": ["Misc"],
         "rarity": "Rare",
-        "description": "Restraints that prevent a bound creature from using teleportation, planar travel, or any extradimensional movement. Escape requires a DC 30 Dexterity or Strength check.",
-        "fullDescription": "",
+        "description": "Restraints that prevent a bound creature from using teleportation, planar travel, or any extradimensional movement. Escape requires a DC 30 Strength check.",
+        "fullDescription": "You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing through an interdimensional portal. You and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength (Athletics) check. On a success, the creature breaks free and destroys the shackles.",
 		"descriptors": [
             "iron manacles covered in spatial runes that seem to bend light around them",
             "shackles made of strange metal that feels anchored to reality itself, impossibly heavy",
@@ -1850,7 +1849,7 @@
         "type": ["Armor", "Medium", "Dragon"],
         "rarity": "Very Rare",
         "description": "AC 14 + Dex modifier (max 2) armor that grants advantage on saving throws against dragon breath weapons and resistance to one damage type based on the dragon's color.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this armor, you gain a +1 bonus to AC, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of a dragon that provided the scales (see the table). Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon of the type of armor within 30 miles of you. This special action can't be used again until the next dawn.",
 		"descriptors": [
             "armor crafted from overlapping dragon scales in shades of red, each scale warm to the touch",
             "scale mail of metallic bronze dragon hide, the scales catching light like polished copper",
@@ -1861,12 +1860,76 @@
         ]
     },
     {
-        "name": "Dragon Slayer",
+        "name": "Dragon Slayer - GreatSword",
         "cost": 4962,
         "type": ["Weapon", "Melee", "Martial", "Dragon"],
         "rarity": "Rare",
         "description": "A +1 weapon that deals an extra 3d6 damage against creatures of the dragon type, making it particularly effective against dragons and dragonborn.",
-        "fullDescription": "",
+        "fullDescription": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.  When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage. For the purpose of this weapon, dragon refers to any creature with the dragon type, including dragon turtles and wyverns.",
+		"descriptors": [
+            "sword with dragon scales worked into the hilt, the blade etched with a wyrm being slain",
+            "weapon with a pommel carved like a dragon's head screaming, the grip wrapped in dragonhide",
+            "blade made from a dragon's own claw, still retaining a faint scaled texture",
+            "greatsword with dragon teeth set into the cross-guard, the metal gleaming with purpose",
+            "spear tipped with a dragon's fang, the shaft carved with scenes of dragon hunts",
+            "axe with dragon bone handle, the blade showing a rainbow sheen like dragon scales"
+        ]
+    },
+	    {
+        "name": "Dragon Slayer - Longsword",
+        "cost": 4962,
+        "type": ["Weapon", "Melee", "Martial", "Dragon"],
+        "rarity": "Rare",
+        "description": "A +1 weapon that deals an extra 3d6 damage against creatures of the dragon type, making it particularly effective against dragons and dragonborn.",
+        "fullDescription": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.  When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage. For the purpose of this weapon, dragon refers to any creature with the dragon type, including dragon turtles and wyverns.",
+		"descriptors": [
+            "sword with dragon scales worked into the hilt, the blade etched with a wyrm being slain",
+            "weapon with a pommel carved like a dragon's head screaming, the grip wrapped in dragonhide",
+            "blade made from a dragon's own claw, still retaining a faint scaled texture",
+            "greatsword with dragon teeth set into the cross-guard, the metal gleaming with purpose",
+            "spear tipped with a dragon's fang, the shaft carved with scenes of dragon hunts",
+            "axe with dragon bone handle, the blade showing a rainbow sheen like dragon scales"
+        ]
+    },
+	    {
+        "name": "Dragon Slayer - Rapier",
+        "cost": 4962,
+        "type": ["Weapon", "Melee", "Martial", "Dragon"],
+        "rarity": "Rare",
+        "description": "A +1 weapon that deals an extra 3d6 damage against creatures of the dragon type, making it particularly effective against dragons and dragonborn.",
+        "fullDescription": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.  When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage. For the purpose of this weapon, dragon refers to any creature with the dragon type, including dragon turtles and wyverns.",
+		"descriptors": [
+            "sword with dragon scales worked into the hilt, the blade etched with a wyrm being slain",
+            "weapon with a pommel carved like a dragon's head screaming, the grip wrapped in dragonhide",
+            "blade made from a dragon's own claw, still retaining a faint scaled texture",
+            "greatsword with dragon teeth set into the cross-guard, the metal gleaming with purpose",
+            "spear tipped with a dragon's fang, the shaft carved with scenes of dragon hunts",
+            "axe with dragon bone handle, the blade showing a rainbow sheen like dragon scales"
+        ]
+    },
+	    {
+        "name": "Dragon Slayer - Scimitar",
+        "cost": 4962,
+        "type": ["Weapon", "Melee", "Martial", "Dragon"],
+        "rarity": "Rare",
+        "description": "A +1 weapon that deals an extra 3d6 damage against creatures of the dragon type, making it particularly effective against dragons and dragonborn.",
+        "fullDescription": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.  When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage. For the purpose of this weapon, dragon refers to any creature with the dragon type, including dragon turtles and wyverns.",
+		"descriptors": [
+            "sword with dragon scales worked into the hilt, the blade etched with a wyrm being slain",
+            "weapon with a pommel carved like a dragon's head screaming, the grip wrapped in dragonhide",
+            "blade made from a dragon's own claw, still retaining a faint scaled texture",
+            "greatsword with dragon teeth set into the cross-guard, the metal gleaming with purpose",
+            "spear tipped with a dragon's fang, the shaft carved with scenes of dragon hunts",
+            "axe with dragon bone handle, the blade showing a rainbow sheen like dragon scales"
+        ]
+    },
+	    {
+        "name": "Dragon Slayer - Shortsword",
+        "cost": 4962,
+        "type": ["Weapon", "Melee", "Martial", "Dragon"],
+        "rarity": "Rare",
+        "description": "A +1 weapon that deals an extra 3d6 damage against creatures of the dragon type, making it particularly effective against dragons and dragonborn.",
+        "fullDescription": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.  When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage. For the purpose of this weapon, dragon refers to any creature with the dragon type, including dragon turtles and wyverns.",
 		"descriptors": [
             "sword with dragon scales worked into the hilt, the blade etched with a wyrm being slain",
             "weapon with a pommel carved like a dragon's head screaming, the grip wrapped in dragonhide",
@@ -1881,8 +1944,8 @@
         "cost": 844,
         "type": ["Misc"],
         "rarity": "Uncommon",
-        "description": "A glass sphere that sheds bright light in a 60-foot radius (and dim light for another 60 feet) when commanded. Can cast Daylight once per day and floats within 5 feet of you.",
-        "fullDescription": "",
+        "description": "A glass sphere that sheds bright light in a 20-foot radius (and dim light for another 20 feet) when commanded and floats in the air. Can cast Daylight once per day and floats within 60 feet of you.",
+        "fullDescription": "This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the light or daylight spell. Once used, the daylight effect can't be used again until the next dawn. You can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out. ",
 		"descriptors": [
             "palm-sized glass orb that glows softly even when inactive, slightly warm",
             "crystalline sphere containing what appears to be trapped sunlight, hovering slightly",
@@ -1897,8 +1960,8 @@
         "cost": 827,
         "type": ["Misc"],
         "rarity": "Uncommon",
-        "description": "When scattered, makes all creatures and objects within a 10-foot cube invisible for 2d4 minutes. Anything moving out of the area becomes visible. Found in small packets.",
-        "fullDescription": "",
+        "description": "When scattered, makes all creatures and objects within 10 feet of you, becomes invisible as though under the effects of the invisibility spell, but for 2d4 minutes. ",
+        "fullDescription": "There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.",
 		"descriptors": [
             "small pouch of glittering powder that seems to vanish and reappear when viewed",
             "silvery dust that reflects no light, contained in a paper packet",
@@ -1914,7 +1977,7 @@
         "type": ["Misc"],
         "rarity": "Uncommon",
         "description": "One pinch transforms 15 cubic feet of water into a marble-sized pellet. Breaking the pellet releases the water. Contains 1d6+4 pinches. Can also dry other liquids.",
-        "fullDescription": "",
+        "fullDescription": "This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible. Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic. An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.",
 		"descriptors": [
             "small vial of chalky white powder that absorbs moisture from the air around it",
             "desiccating dust that leaves skin feeling dry when touched, stored in a watertight container",
@@ -1929,7 +1992,7 @@
         "cost": 17603,
         "type": ["Armor", "Heavy", "Dwarf"],
         "rarity": "Very Rare",
-        "description": "Plate armor (AC 18) that doesn't impose disadvantage on Stealth checks. While wearing it, you gain +2 to AC and are immune to effects that would push you or knock you prone.",
+        "description": "Plate armor (AC 18).  While wearing it, you gain +2 to AC and are immune to effects that would push you or knock you prone.",
         "fullDescription": "",
 		"descriptors": [
             "masterwork plate armor with dwarven runes inlaid in mithral, perfectly articulated joints",
@@ -1945,8 +2008,8 @@
         "cost": 18855,
         "type": ["Weapon", "Melee", "Martial", "Dwarf"],
         "rarity": "Very Rare",
-        "description": "A +3 warhammer with the thrown property (range 20/60) that returns to your hand after being thrown. Deals an extra 1d8 damage to giants (2d8 when thrown).",
-        "fullDescription": "",
+        "description": "A +3 warhammer with the thrown property (range 20/60) that returns to your hand after being thrown. Deals an extra 1d8 damage or 2d8 to giants.",
+        "fullDescription": "It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.",
 		"descriptors": [
             "rune-covered warhammer that vibrates slightly, as if eager to fly",
             "perfectly balanced hammer with a strap that never tangles, the head etched with giant-slaying scenes",
@@ -1961,8 +2024,8 @@
         "cost": 38835,
         "type": ["Jewelry", "Summoning"],
         "rarity": "Very Rare",
-        "description": "Contains an efreeti that serves you for 1 hour when released, granting up to 3 wishes or performing other services. 10% chance it attacks you instead.",
-        "fullDescription": "",
+        "description": "Contains an efreeti that has a chance to serve you for 1 hour when released, a chance to grant up to 3 wishes, and a chance it attacks you instead.",
+        "fullDescription": "The first time the bottle is opened, the GM rolls to determine what happens.",
 		"descriptors": [
             "brass bottle with a heavy stopper, uncomfortably hot to hold for long",
             "ornate vessel sealed with lead and wax, smoke occasionally escaping around the seal",
@@ -2041,8 +2104,8 @@
         "cost": 1083,
         "type": ["Misc"],
         "rarity": "Uncommon",
-        "description": "Creates a 60-foot radius cloud of thick smoke when unplugged. The cloud spreads around corners and its area is heavily obscured. Lasts 10 minutes or until a strong wind disperses it.",
-        "fullDescription": "",
+        "description": "Creates a 60-foot radius cloud of thick smoke when unplugged. The cloud spreads around corners and its area is heavily obscured and continues to grow the longer it is open. Lasts 10 minutes once closed or until a strong wind disperses it.",
+        "fullDescription": "Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet. The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round.",
 		"descriptors": [
             "iron bottle with smoke stains around the opening, cork vibrating from internal pressure",
             "brass vessel that's always slightly warm, wisps of smoke escaping around the seal",
@@ -2137,7 +2200,7 @@
         "cost": 2527,
         "type": ["Misc", "Summoning", "Travel"],
         "rarity": "Rare",
-        "description": "Two golden lion figurines that can each become a lion for up to 1 hour. Can be used simultaneously. Usable once per week. The lions obey your commands and fight for you.",
+        "description": "Two golden lion figurines that can each become a lion for up to 1 hour. Can be used individually or simultaneously. Usable once per week. The lions obey your commands and fight for you.",
         "fullDescription": "",
 		"descriptors": [
             "pair of gold-painted stone lions, one roaring and one crouched",
@@ -2250,8 +2313,8 @@
         "cost": 7850,
         "type": ["Misc", "Travel"],
         "rarity": "Rare",
-        "description": "A wooden box that unfolds into either a rowboat (10x4 feet) or a ship (24x8 feet) on command. Takes 1 action to transform. Can hold up to 4 people as a boat or 15 as a ship.",
-        "fullDescription": "",
+        "description": "A small wooden box that unfolds into either a rowboat (10x4 feet) or a ship (24x8 feet) on command. Takes 1 action to transform. Can hold up to 4 people as a boat or 15 as a ship.",
+        "fullDescription": "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.  One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.  The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide; and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.  When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.  The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.",
 		"descriptors": [
             "lacquered wooden box with brass hinges, surprisingly light for its solid construction",
             "compact wooden case carved with wave patterns, the seams barely visible",
@@ -2282,8 +2345,8 @@
         "cost": 3202,
         "type": ["Jewelry"],
         "rarity": "Uncommon",
-        "description": "Has 50 charges. Can spend charges to shed light (1), blind creatures (5), or cast Daylight (10). Regains 1d12 charges daily. Crumbles to dust when empty.",
-        "fullDescription": "",
+        "description": "Has 50 charges. Can spend charges to shed light (0), blind a single creature for 1 minute(DC 15 Con) (1), or blind a group of creatures in a 30 foot cone (5). Crumbles to dust when empty.",
+        "fullDescription": "This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects: The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem. The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The third command word expends 5 charges and causes the gem to flare with blinding light in a 30- foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word. When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.",
 		"descriptors": [
             "multifaceted crystal that glows with inner light, warm and radiant in the palm",
             "brilliant gemstone that pulses with stored sunlight, too bright to look at directly",
@@ -2298,7 +2361,7 @@
         "cost": 15133,
         "type": ["Jewelry"],
         "rarity": "Rare",
-        "description": "Looking through this gem grants truesight out to 120 feet for 10 minutes. Has 3 charges, regaining all charges daily at dawn. See through illusions and invisible creatures.",
+        "description": "Looking through this gem grants truesight out to 120 feet for 10 minutes. Has 3 charges, regaining all charges daily at dawn.",
         "fullDescription": "",
 		"descriptors": [
             "crystalline prism that reveals hidden truths when peered through, the edges sharp",
@@ -2310,9 +2373,9 @@
         ]
     },
     {
-        "name": "Giant Slayer",
+        "name": "Giant Slayer - Any weapon",
         "cost": 4439,
-        "type": ["Weapon", "Melee", "Martial"],
+        "type": ["Weapon", "Martial"],
         "rarity": "Rare",
         "description": "A +1 weapon that deals an extra 2d6 damage to creatures with the giant type. When you hit a giant, the giant must succeed on a DC 15 Strength save or fall prone.",
         "fullDescription": "",
@@ -2411,7 +2474,7 @@
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Legendary",
         "description": "It's a +1 magic hammer that requires attunement with a Belt of Giant Strength and Gauntlets of Ogre Power, boosting your Strength by 4 (up to 30). It's especially deadly to giants—instantly killing them on a nat 20—and can be thrown using charges to unleash a massive thunderclap that stuns nearby creatures.",
-        "fullDescription": "",
+        "fullDescription": "Giant's Bane (Requires Attunement). You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 4 and can exceed 20, but not 30. When you roll a 20 on an attack roll made with this weapon against a giant, the giant must succeed on a DC 17 Constitution saving throw or die. The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn.",
 		"descriptors": [
             "enormous warhammer crackling with barely contained lightning, the metal blackened from countless strikes",
             "thunder-marked hammer with storm cloud etchings, the head rumbling when swung",
@@ -2458,8 +2521,8 @@
         "cost": 43667,
         "type": ["Armor", "Helmet"],
         "rarity": "Very Rare",
-        "description": "Set with gems that grant various benefits: resistance to fire, bright light emission, gem-powered spells (10 diamonds, 20 rubies, 30 fire opals, 40 opals). Devastating when destroyed by fire.",
-        "fullDescription": "",
+        "description": "Set with gems that grant various benefits: resistance to fire, bright light emission, gem-powered spells (10 diamonds, 20 rubies, 30 fire opals, 40 opals). ",
+        "fullDescription": "You gain the following benefits while wearing it: You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fire opal), prismatic spray (diamond), or wall of fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm. As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage. As long as the helm has at least one ruby, you have resistance to fire damage. As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon. Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed.",
 		"descriptors": [
             "helmet encrusted with glowing gems of various colors, radiating light and heat",
             "brilliant helm set with dozens of precious stones, each one pulsing with power",
@@ -2490,8 +2553,8 @@
         "cost": 773,
         "type": ["Armor", "Helmet"],
         "rarity": "Uncommon",
-        "description": "Grants the ability to cast Detect Thoughts (DC 13) at will while wearing it. Also lets you cast Suggestion (DC 13) once per day. Regains use of Suggestion at dawn.",
-        "fullDescription": "",
+        "description": "Grants the ability to cast Detect Thoughts (DC 13) at will and communicate telepathically while wearing it. Also lets you cast Suggestion (DC 13) once per day.",
+        "fullDescription": "While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply--using a bonus action to do so--while your focus on it continues. While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.",
 		"descriptors": [
             "silver helm with mind-reading runes, the metal cool and thought-receptive",
             "mental helmet with crystal nodes at the temples, humming with energy",
@@ -2506,7 +2569,7 @@
         "cost": 8100,
         "type": ["Armor", "Helmet", "Travel"],
         "rarity": "Rare",
-        "description": "This helm has 3 charges. You can expend 1 charge to cast Teleport from it. Regains 1d3 charges daily at dawn. Navigate through familiar and unfamiliar locations.",
+        "description": "This helm has 3 charges. You can expend 1 charge to cast Teleport from it. Regains 1d3 charges daily at dawn.",
         "fullDescription": "",
 		"descriptors": [
             "helmet with spatial distortion around it, the metal seeming to flicker between here and elsewhere",
@@ -2522,8 +2585,8 @@
         "cost": 2303,
         "type": ["Misc", "Travel"],
         "rarity": "Rare",
-        "description": "A backpack with three compartments: two hold 8 cubic feet/80 pounds each, one holds 2 cubic feet/20 pounds. Always weighs 5 pounds. Retrieving an item is an action. Holds much more than it appears.",
-        "fullDescription": "",
+        "description": "A backpack with three compartments: the main pouch can hold 8 cubic feet/80 pounds, and the two side puches each holds 2 cubic feet/20 pounds. Always weighs 5 pounds. Retrieving an item is an action.",
+        "fullDescription": "This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents.  Placing an object in the haversack follows the normal rules for interacting with objects. Retrieving an item from the haversack requires you to use an action. When you reach into the haversack for a specific item, the item is always magically on top.  The haversack has a few limitations. If it is overloaded, or if a sharp object pierces it or tears it, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth, unharmed, and the haversack must be put right before it can be used again. If a breathing creature is placed within the haversack, the creature can survive for up to 10 minutes, after which time it begins to suffocate.  Placing the haversack inside an extradimensional space created by a Bag of Holding, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10-feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.",
 		"descriptors": [
             "leather backpack with three pockets that feel much deeper than they look",
             "dimensionally expanded rucksack, the interior clearly larger than the exterior",
@@ -2539,7 +2602,7 @@
         "type": ["Weapon", "Melee", "Martial", "Divine"],
         "rarity": "Legendary",
         "description": "(Requires Atunement by a Paladin) A +3 magic sword that deals an extra 2d10 radiant damage to fiends and undead. While drawn, it creates a 10-foot aura granting you and allies advantage on saves against spells and magical effects, expanding to 30 feet if you're a 17th-level paladin.",
-        "fullDescription": "",
+        "fullDescription": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.  While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the paladin class, the radius of the aura increases to 30 feet.",
 		"descriptors": [
             "radiant blade inscribed with holy prayers, the metal shining with inner light",
             "celestial sword with golden cross-guard, the blade pure white and gleaming",
@@ -2555,7 +2618,7 @@
         "type": ["Misc"],
         "rarity": "Rare",
         "description": "Deals 5d6 thunder damage in a 30-foot cone (DC 15 Constitution save for half). Objects take double damage. 20% chance it explodes, dealing 10d6 damage to the user. Has charges for uses.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6. Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.",
 		"descriptors": [
             "brass war horn with cracks forming along its length, the metal resonating dangerously",
             "thunderous horn that vibrates when touched, showing stress fractures",
@@ -2570,8 +2633,8 @@
         "cost": 11727,
         "type": ["Misc", "Summoning"],
         "rarity": "Rare",
-        "description": "Summons 2d4+2 warrior spirits (as berserkers) that fight for you for 1 hour. Usable once per 7 days. Nonbarbarians who blow it take 3d6 psychic damage.",
-        "fullDescription": "",
+        "description": "Summons 2d4+2 warrior spirits (as berserkers) that fight for you for 1 hour. Usable once per 7 days.",
+        "fullDescription": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed. Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
 		"descriptors": [
             "brass horn carved with scenes of ancient battles, warm to the touch",
             "warrior's horn with runic inscriptions, the metal vibrating with energy",
@@ -2587,7 +2650,7 @@
         "type": ["Misc", "Summoning"],
         "rarity": "Very Rare",
         "description": "Summons 3d4+3 warrior spirits (as berserkers) that fight for you for 1 hour. Usable once per 7 days. Requires proficiency with all martial weapons. 6d6 psychic damage if unqualified.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed. Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
 		"descriptors": [
             "bronze war horn with battle-worn surface, the patina telling of countless conflicts",
             "ancient bronze horn covered in warrior runes, heavy with age",
@@ -2603,7 +2666,7 @@
         "type": ["Misc", "Summoning"],
         "rarity": "Legendary",
         "description": "Summons 5d4+5 warrior spirits (as berserkers) that fight for you for 1 hour. Usable once per 7 days. Requires barbarian class or fighter with proficiency in all martial weapons. 8d6 damage if unqualified.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed. Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
 		"descriptors": [
             "iron war horn blackened from age, the metal ice-cold always",
             "legendary battle horn of dark iron, covered in the runes of ancient warlords",
@@ -2619,7 +2682,7 @@
         "type": ["Misc", "Summoning"],
         "rarity": "Rare",
         "description": "Summons 2d4+2 warrior spirits (as berserkers) that fight for you for 1 hour. Usable once per 7 days. Anyone can use it without penalty.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed. Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
 		"descriptors": [
             "polished silver horn with gentle warrior etchings, gleaming brightly",
             "silver war horn that catches light beautifully, the tone clear and pure",
@@ -2634,8 +2697,8 @@
         "cost": 3820,
         "type": ["Misc", "Travel"],
         "rarity": "Very Rare",
-        "description": "These shoes allow a horse to walk on air as if on solid ground for up to 1 hour per day. The effect can be used in 1-minute increments. Horse doesn't trigger ground effects.",
-        "fullDescription": "",
+        "description": "These shoes allow a horse to walk 4 inches above the ground or liquid surface in the air as if on solid ground.",
+        "fullDescription": "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above non-solid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march.",
 		"descriptors": [
             "four lightweight horseshoes that seem to float slightly, engraved with cloud patterns",
             "ethereal shoes of mithral that barely touch the ground, feather-light",
@@ -2650,7 +2713,7 @@
         "cost": 3547,
         "type": ["Misc", "Travel"],
         "rarity": "Rare",
-        "description": "These shoes increase a horse's walking speed by 30 feet when all four shoes are worn. Horses with these shoes are exceptionally swift.",
+        "description": "These shoes increase a horse's walking speed by 30 feet when all four shoes are worn.",
         "fullDescription": "",
 		"descriptors": [
             "four racing shoes of meteoric iron, the metal polished smooth",
@@ -2666,8 +2729,8 @@
         "cost": 3483,
         "type": ["Wand/Staff/Rod", "Arcane", "Misc"],
         "rarity": "Uncommon",
-        "description": "A rod that can be activated to fix in place, supporting up to 8,000 pounds. Only a DC 30 Strength check can move it. Stays fixed relative to its position even if in a moving vehicle.",
-        "fullDescription": "",
+        "description": "A rod that can be activated to fix in place, supporting up to 8,000 pounds. Only a DC 30 Strength check can move it. Stays fixed relative to its position.",
+        "fullDescription": "This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.",
 		"descriptors": [
             "iron rod with a button on one end, the metal dense and unyielding",
             "metal pole with activation stud, impossibly solid when examined",
@@ -2795,7 +2858,7 @@
         "type": ["Jewelry"],
         "rarity": "Very Rare",
         "description": "Orbits your head and absorbs spells of 4th level or lower cast at you, storing up to 20 levels. You can cast stored spells. Becomes dull when it has absorbed 20 levels.",
-        "fullDescription": "",
+        "fullDescription": "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect. While this pale lavender ellipsoid orbits your head, you can use your reaction to cancel a spell of 4th level or lower cast by a creature you can see and targeting only you. Once the stone has canceled 20 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it.",
 		"descriptors": [
             "pale lavender ellipsoid that orbits the head, pulsing when near magic",
             "spell-drinking stone that glows brighter as it fills, lavender-hued",
@@ -2826,7 +2889,7 @@
         "cost": 5733,
         "type": ["Jewelry"],
         "rarity": "Rare",
-        "description": "This dark blue rhomboid orbits your head. You can't be surprised while conscious, and you gain +5 to Initiative rolls.",
+        "description": "This dark blue rhomboid orbits your head. You can't be surprised.",
         "fullDescription": "",
 		"descriptors": [
             "midnight blue rhomboid spinning alertly around the head, watchful",
@@ -2938,7 +3001,7 @@
         "cost": 2200,
         "type": ["Jewelry"],
         "rarity": "Rare",
-        "description": "This dusty rose prism orbits your head and grants +1 to AC. It occupies your attunement slot and can be grabbed as an action.",
+        "description": "This dusty rose prism orbits your head and grants +1 to AC. ",
         "fullDescription": "",
 		"descriptors": [
             "dusty rose prism orbiting defensively, the color faded pink",
@@ -2971,7 +3034,7 @@
         "type": ["Jewelry"],
         "rarity": "Rare",
         "description": "This vibrant purple prism orbits your head and stores 3 levels of spells. You can cast spells into it and retrieve them later. The stone becomes dull gray when empty.",
-        "fullDescription": "",
+        "fullDescription": "Use an action to make this item start orbiting your head.  This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 3 levels worth of spells at a time. When found, it contains 1d4−1 levels of stored spells chosen by the GM.Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses. While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space. ",
 		"descriptors": [
             "vivid purple prism that glows when full, dimming when depleted",
             "spell-storage stone of rich violet, the color intensity varying",
@@ -3018,8 +3081,8 @@
         "cost": 2860,
         "type": ["Misc"],
         "rarity": "Rare",
-        "description": "A rusty iron sphere. When thrown, bands spring out to restrain a Large or smaller creature (DC 20 Strength save). Restrained target can't move. DC 20 Strength check or dealing 20 slashing damage breaks bands.",
-        "fullDescription": "",
+        "description": "A rusty iron sphere. When thrown, bands spring out to restrain a Huge or smaller creature (DC 20 Strength save). Restrained target can't move. DC 20 Strength check breaks bands.",
+        "fullDescription": "You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands. Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more. A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed. Once the bands are used, they can't be used again until the next dawn.",
 		"descriptors": [
             "rusty iron sphere covered in orange oxidation, surprisingly heavy",
             "corroded metal ball with visible seams where mechanisms hide",
@@ -3035,7 +3098,7 @@
         "type": ["Misc", "Summoning"],
         "rarity": "Legendary",
         "description": "Can trap one creature inside (DC 17 Wisdom save to resist). Trapped creature is held in stasis. Opening releases the creature, which is hostile unless you control it. Can hold one creature at a time.",
-        "fullDescription": "",
+        "fullDescription": "You can use an action to speak the flask's command word, targeting a creature that you can see within 60 feet of you. If the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has advantage on the saving throw. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn't need to breathe, eat, or drink and doesn't age. You can use an action to remove the flask's stopper and release the creature the flask contains. The creature is friendly to you and your companions for 1 hour and obeys your commands for that duration. If you give no commands or give it a command that is likely to result in its death, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition and alignment.An identify spell reveals that a creature is inside the flask, but the only way to determine the type of creature is to open the flask. ",
 		"descriptors": [
             "iron flask with heavy stopper, etched with binding runes of immense complexity",
             "containment vessel of dark iron, the seal multiple layers thick",
@@ -3051,7 +3114,7 @@
         "type": ["Weapon", "Melee", "Simple", "Piercing", "Thrown", "Polearm"],
         "rarity": "Uncommon",
         "description": "When thrown, transforms into a lightning bolt in a 120-foot line. Each creature in line makes DC 13 Dexterity save, taking 4d6 lightning damage (half on success). The javelin is destroyed.",
-        "fullDescription": "",
+        "fullDescription": "This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage. The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.",
 		"descriptors": [
             "javelin with metal shaft that crackles with static electricity when gripped",
             "lightning-marked spear that smells of ozone, the tip sparking faintly",
@@ -3066,7 +3129,7 @@
         "cost": 637,
         "type": ["Potion", "Consumable"],
         "rarity": "Uncommon",
-        "description": "A jar contains 5 doses. One dose heals 2d8+2 hit points, or you can use all 5 doses to cure any disease or neutralize any poison affecting a creature. Applied as an action.",
+        "description": "A jar contains 5 doses. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease..",
         "fullDescription": "",
 		"descriptors": [
             "ceramic jar of gray-green ointment that smells of healing herbs",
@@ -3082,8 +3145,8 @@
         "cost": 2823,
         "type": ["Misc", "Travel"],
         "rarity": "Uncommon",
-        "description": "Burns for 6 hours on 1 pint of oil. Sheds bright light in 30-foot radius, dim light 30 feet beyond. Invisible creatures and objects become visible in the light. Can be shuttered.",
-        "fullDescription": "",
+        "description": "Burns for 6 hours on 1 pint of oil. Sheds bright light in 30-foot radius, dim light 30 feet beyond. Invisible creatures and objects become visible in the bright light. Can be shuttered.",
+        "fullDescription": "While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.",
 		"descriptors": [
             "brass lantern with crystal panes, the light unusually pure and penetrating",
             "truth-showing lantern with clear glass, the metal polished bright",
@@ -3094,12 +3157,12 @@
         ]
     },
     {
-        "name": "Luck Blade",
+        "name": "Luck Blade - Any Blade",
         "cost": 35350,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Legendary",
         "description": "A +1 sword that grants +1 to all saving throws. May contain 1d4-1 Wishes. Once all wishes are used, it loses that property but retains other abilities. Reroll any attack roll, save, or check once per day.",
-        "fullDescription": "",
+        "fullDescription": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.  Luck: If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw. You must use the second roll. This property can't be used again until the next dawn.  Wish: The sword has 1d4–1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges.",
 		"descriptors": [
             "fortunate blade with four-leaf clover pommel, the edge impossibly sharp",
             "lucky sword that seems to guide hands naturally, gleaming silver",
@@ -3114,8 +3177,8 @@
         "cost": 4477,
         "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace", "Divine"],
         "rarity": "Rare",
-        "description": "A +2 mace that deals extra 2d6 radiant damage to fiends and undead. On a critical hit, the target must succeed on DC 15 Wisdom save or be destroyed (if 25 HP or less remaining).",
-        "fullDescription": "",
+        "description": "A mace that deals extra 2d6 radiant damage to fiends and undead and the target must succeed on DC 15 Wisdom save or be destroyed (if 25 HP or less remaining).",
+        "fullDescription": "When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn. While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.",
 		"descriptors": [
             "silver mace with holy symbols, glowing faintly when undead are near",
             "disruption weapon humming with divine energy, the metal sanctified",
@@ -3130,8 +3193,8 @@
         "cost": 5713,
         "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace", "Divine"],
         "rarity": "Rare",
-        "description": "A +1 mace that becomes +3 against constructs. On a hit against a construct, it deals an extra 2d6 bludgeoning damage. Critical hits can destroy constructs instantly (DC 17 Constitution save).",
-        "fullDescription": "",
+        "description": "A +1 mace that becomes +3 against constructs. On a hit, it deals an extra 2d6 bludgeoning damage and 4d6 against constructs and if the construct has less than 25 hit points it is destroyed.",
+        "fullDescription": "The bonus increases to +3 when you use the mace to attack a construct. When you roll a 20 on an attack roll made with this weapon, the target takes an extra 7 bludgeoning damage, or 14 bludgeoning damage if it's a construct. If a construct has 25 hit points or fewer after taking this damage, it is destroyed. ",
 		"descriptors": [
             "heavy mace designed for breaking constructs, the head massive",
             "construct-smashing weapon with geometric patterns, the metal dense",
@@ -3147,7 +3210,7 @@
         "type": ["Weapon", "Melee", "Simple", "Bludgeoning", "Hammer/Mace"],
         "rarity": "Rare",
         "description": "This mace has 3 charges. You can expend 1 charge to release a wave of terror in a 30-foot radius. Creatures must succeed on a DC 15 Wisdom save or be frightened for 1 minute. Regains charges daily.",
-        "fullDescription": "",
+        "fullDescription": "This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Dodge action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success. The mace regains 1d3 expended charges daily at dawn.",
 		"descriptors": [
             "spiked mace with a skull pommel, the face frozen in silent scream",
             "terror weapon covered in frightening imagery, the metal dark",
@@ -3162,7 +3225,7 @@
         "cost": 13400,
         "type": ["Apparel", "Arcane"],
         "rarity": "Rare",
-        "description": "While wearing this cloak, you have advantage on saving throws against spells and other magical effects. Provides significant protection against hostile magic.",
+        "description": "While wearing this cloak, you have advantage on saving throws against spells.",
         "fullDescription": "",
 		"descriptors": [
             "cloak woven with anti-magic threads that shimmer with iridescence",
@@ -3178,8 +3241,8 @@
         "cost": 39830,
         "type": ["Book"],
         "rarity": "Very Rare",
-        "description": "Reading this book (48 hours over 6 days) increases your Constitution by 2 and maximum by 2. The book loses magic for 100 years after use. Maximum cannot exceed 30.",
-        "fullDescription": "",
+        "description": "Reading this book (48 hours over 6 days) increases your Constitution by 2 and maximum by 2. The book loses magic for 100 years after use.",
+        "fullDescription": "This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.",
 		"descriptors": [
             "leather-bound health manual with anatomical diagrams, the pages edged in gold",
             "tome of physical perfection bound in red leather, exercises illustrated within",
@@ -3194,7 +3257,7 @@
         "cost": 36830,
         "type": ["Book"],
         "rarity": "Very Rare",
-        "description": "Reading this book (48 hours over 6 days) increases your Strength by 2 and maximum by 2. The book loses magic for 100 years after use. Maximum cannot exceed 30.",
+        "description": "Reading this book (48 hours over 6 days) increases your Strength by 2 and maximum by 2. The book loses magic for 100 years after use.",
         "fullDescription": "",
 		"descriptors": [
             "muscle-bound tome with illustrations of strength feats, the binding reinforced",
@@ -3210,7 +3273,7 @@
         "cost": 39830,
         "type": ["Book"],
         "rarity": "Very Rare",
-        "description": "Reading this book (48 hours over 6 days) increases your Dexterity by 2 and maximum by 2. The book loses magic for 100 years after use. Maximum cannot exceed 30.",
+        "description": "Reading this book (48 hours over 6 days) increases your Dexterity by 2 and maximum by 2. The book loses magic for 100 years after use.",
         "fullDescription": "",
 		"descriptors": [
             "slim volume bound in supple leather, the pages showing acrobatic poses",
@@ -3227,7 +3290,7 @@
         "type": ["Misc", "Consumable"],
         "rarity": "Very Rare",
         "description": "A set of magical paints that can create real three-dimensional objects when painted on surfaces. The objects become permanent and real. Contains 1d4 pots of paint, each sufficient for 1,000 square feet.",
-        "fullDescription": "",
+        "fullDescription": "Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features--such as a door, a pit, flowers, trees, cells, rooms, or weapons-- that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet. When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create. Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material. If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.",
 		"descriptors": [
             "set of paint pots with colors that shimmer and shift, smelling of turpentine",
             "magical pigments that seem too thick to be liquid, yet flow perfectly",
@@ -3243,7 +3306,7 @@
         "type": ["Jewelry"],
         "rarity": "Uncommon",
         "description": "This medallion has 3 charges and regains all daily at dawn. While wearing it, you can expend 1 charge to cast Detect Thoughts (DC 13). The target must be within 30 feet.",
-        "fullDescription": "",
+        "fullDescription": "The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.",
 		"descriptors": [
             "silver medallion with a brain etched on one side, cool against the chest",
             "thought-reading pendant with concentric circles, the metal humming softly",
@@ -3258,8 +3321,8 @@
         "cost": 27287,
         "type": ["Misc"],
         "rarity": "Very Rare",
-        "description": "A 4-foot-tall mirror that can trap up to 15 creatures in 15 extradimensional cells. Creatures that look at it must save or be trapped. Cells can be accessed by speaking command words.",
-        "fullDescription": "",
+        "description": "A 4-foot-tall mirror that can trap up to 12 creatures in 12 extradimensional cells. Creatures that look at it must save or be trapped. Cells can be accessed by speaking command words.",
+        "fullDescription": "The mirror weighs 50 pounds, and it has AC 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters and is destroyed when reduced to 0 hit points. If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can use an action to speak its command word and activate it. It remains activated until you use an action to speak the command word again. Any creature other than you that sees its reflection in the activated mirror while within 30 feet of it must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. This saving throw is made with advantage if the creature knows the mirror's nature, and constructs succeed on the saving throw automatically. An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed. If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it. While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally. In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.",
 		"descriptors": [
             "tall ornate mirror with a gilded frame, the glass showing faint shadows within",
             "trapping mirror with fifteen compartments etched on the frame, the surface pristine",
@@ -3290,8 +3353,8 @@
         "cost": 4638,
         "type": ["Jewelry", "Arcane"],
         "rarity": "Rare",
-        "description": "This necklace has 1d6+3 beads that can be detached and thrown to explode as fireballs. Different beads create different power levels. When all beads are used, the necklace becomes nonmagical.",
-        "fullDescription": "",
+        "description": "This necklace has 1d6+3 beads that can be detached and thrown to explode as fireballs.  When all beads are used, the necklace becomes nonmagical.",
+        "fullDescription": "This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15). You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first.",
 		"descriptors": [
             "necklace strung with glowing red beads, each one warm to the touch",
             "fire-bead chain with spheres of varying sizes, all radiating heat",
@@ -3307,7 +3370,7 @@
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Very Rare",
         "description": "A +2 longsword with 1d8+1 charges. On a critical hit against a creature with fewer than 100 HP, the target must save (DC 15) or die. Each kill uses one charge. When empty, becomes a +2 sword.",
-        "fullDescription": "",
+        "fullDescription": "The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.",
 		"descriptors": [
             "sword with nine cat's eyes set into the pommel, the blade dark and lethal",
             "life-stealing blade etched with tally marks, the metal black as night",
@@ -3322,8 +3385,8 @@
         "cost": 6890,
         "type": ["Weapon", "Bow", "Martial"],
         "rarity": "Very Rare",
-        "description": "A +2 longbow. You can declare a sworn enemy, gaining +3d6 damage against that target but disadvantage against others. Advantage on attack rolls against sworn enemy. Declaration lasts until target dies or dawn.",
-        "fullDescription": "",
+        "description": "A +2 longbow. Once per day you can declare a sworn enemy, gaining advantage on attack rolls and dealing +3d6 damage against that target but disadvantage against others. Declaration lasts until target dies or 7 days later.",
+        "fullDescription": "When you nock an arrow on this bow, it whispers in Elvish, Swift defeat to my enemies. When you use this weapon to make a ranged attack, you can, as a command phrase, say, Swift death to you who have wronged me. The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn. When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage. While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.",
 		"descriptors": [
             "longbow carved with oaths in many languages, the wood dark and solemn",
             "vow-bound bow with a grip that feels binding when held, serious presence",
