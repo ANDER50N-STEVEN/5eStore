@@ -5769,7 +5769,7 @@
         "cost": 66,
         "type": ["Misc", "Consumable"],
         "rarity": "Common",
-        "description": "This bead dissolves in liquid, transforming up to 1 pint of the liquid into fresh, cold water. Single use. Useful for purifying drinks.",
+        "description": "This spongy, flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison.",
         "fullDescription": "",
 		"descriptors": [
             "translucent blue bead cool to the touch, tiny droplets forming on its surface",
@@ -5785,7 +5785,7 @@
         "cost": 330,
         "type": ["Apparel", "Travel"],
         "rarity": "Common",
-        "description": "Only humanoids can wear these boots. While wearing them, you can choose to have them leave tracks like another kind of humanoid of your size. Useful for misdirection.",
+        "description": "Only humanoids can wear these boots. While wearing them, you can choose to have them leave tracks like another kind of humanoid of your size.",
         "fullDescription": "",
 		"descriptors": [
             "sturdy boots with interchangeable sole plates etched in different tread patterns",
@@ -5817,7 +5817,7 @@
         "cost": 300,
         "type": ["Misc", "Stealth"],
         "rarity": "Common",
-        "description": "When you roll this six-sided die, you can control which number it lands on. Appears as a normal die to others. Perfect for rigging games of chance.",
+        "description": "When you roll this six-sided die, you can control which number it lands on. Appears as a normal die to others.",
         "fullDescription": "",
 		"descriptors": [
             "ivory six-sided die with slightly rounded corners and worn pips",
@@ -5865,7 +5865,7 @@
         "cost": 528,
         "type": ["Jewelry"],
         "rarity": "Common",
-        "description": "You can use this amulet to ensure success on an ability check. When you make an attack roll while wearing it and the d20 shows a 9 or less, you can treat the roll as a 10. Usable once, then it stops working until next dawn.",
+        "description": "When you make an attack roll while wearing the amulet, you can forgo rolling the d20 to get a 10 on the die. Once used, this property can’t be used again until the next dawn.",
         "fullDescription": "",
 		"descriptors": [
             "brass amulet with tiny exposed gears slowly turning within a glass face",
@@ -5881,7 +5881,7 @@
         "cost": 330,
         "type": ["Apparel"],
         "rarity": "Common",
-        "description": "These clothes magically mend themselves to counteract daily wear and tear. Always look clean and well-maintained. Repairs tears and holes within 1 hour. Minor cosmetic benefit.",
+        "description": "These clothes magically mend themselves to counteract daily wear and tear. Always look clean and well-maintained. Repairs tears and holes within 1 hour.",
         "fullDescription": "",
 		"descriptors": [
             "well-tailored garments with barely visible silver stitching along every seam",
@@ -5898,7 +5898,7 @@
         "type": ["Jewelry"],
         "rarity": "Common",
         "description": "A shard of dark crystal. You may attempt to cast a Warlock Cantrip you do not know. Requires attunement by a Warlock.",
-        "fullDescription": "",
+        "fullDescription": "While you are wearing it, you gain the following benefits: You can use the amulet as a spellcasting focus for your warlock spells. You can try to cast a cantrip that you don’t know. The cantrip must be on the warlock spell list, and you must make a DC 10 Intelligence (Arcana) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest.",
 		"descriptors": [
             "jagged shard of black crystal wrapped in thin iron wire",
             "obsidian fragment that swallows nearby light rather than reflecting it",
@@ -5913,7 +5913,7 @@
         "cost": 330,
         "type": ["Armor", "Helmet"],
         "rarity": "Common",
-        "description": "This fearsome helmet makes your voice deeper and more commanding. Adds an intimidating element to your presence but provides no mechanical combat benefits.",
+        "description": "This fearsome steel helm makes your eyes glow red while you wear it.",
         "fullDescription": "",
 		"descriptors": [
             "menacing helm with narrow eye slits and exaggerated brow ridges",
@@ -5929,7 +5929,7 @@
         "cost": 660,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "While held to your ear, this horn suppresses the effects of the deafened condition, allowing you to hear normally. Useful for those with hearing impairments.",
+        "description": "While held up to your ear, this horn suppresses the effects of the deafened condition on you, allowing you to hear normally.",
         "fullDescription": "",
 		"descriptors": [
             "polished brass ear trumpet engraved with delicate scrollwork",
@@ -5945,7 +5945,7 @@
         "cost": 330,
         "type": ["Book", "Arcane"],
         "rarity": "Common",
-        "description": "This spellbook is immune to damage from fire and water. The pages are waterproof and fireproof, protecting your spell collection from environmental hazards.",
+        "description": "This spellbook, along with anything written on its pages, can’t be damaged by fire or immersion in water. In addition, the spellbook doesn’t deteriorate with age.",
         "fullDescription": "",
 		"descriptors": [
             "thick leather-bound tome with pages that feel slightly waxed",
@@ -5961,7 +5961,7 @@
         "cost": 600,
         "type": ["Jewelry"],
         "rarity": "Common",
-        "description": "This artificial eye replaces a real one that was lost or damaged. While the ersatz eye is embedded in your eye socket, you can see through it as if it were a normal eye. Cosmetic replacement.",
+        "description": "This artificial eye replaces a real one that was lost or removed. While the ersatz eye is embedded in your eye socket, it can’t be removed by anyone other than you, and you can see through the tiny orb as though it were a normal eye.",
         "fullDescription": "",
 		"descriptors": [
             "glass eye with a perfectly painted iris and glossy sheen",
@@ -5977,8 +5977,8 @@
         "cost": 396,
         "type": ["Apparel"],
         "rarity": "Common",
-        "description": "Has 3 charges. Use an action to pull a rat, snake, or spider from the hat (your choice). The creature is real, not an illusion. Regains all charges at dawn. Summoned creature acts as normal animal.",
-        "fullDescription": "",
+        "description": "Has 3 charges. Use an action to pull a rat, snake, or spider from the hat (your choice).  Regains all charges at dawn. Summoned creature acts as normal animal and disappers after 1 hour.",
+        "fullDescription": "This hat has 3 charges. While holding the hat, you can use an action to expend 1 of its charges and speak a command word that summons your choice of a bat, a frog, or a rat. The summoned creature magically appears in the hat and tries to get away from you as quickly as possible. The creature is neither friendly nor hostile, and it isn’t under your control. It behaves as an ordinary creature of its kind and disappears after 1 hour or when it drops to 0 hit points. The hat regains all expended charges daily at dawn.",
 		"descriptors": [
             "tall, slightly crushed top hat with a faint rustling from within",
             "wide-brimmed hat lined with suspiciously twitching fabric",
@@ -5993,8 +5993,8 @@
         "cost": 120,
         "type": ["Apparel", "Arcane"],
         "rarity": "Common",
-        "description": "This pointed hat allows you attempt to cast a Wizard cantrip while wearing it. Requires attunement by a wizard.",
-        "fullDescription": "",
+        "description": "This pointed hat allows you attempt to cast any Wizard cantrip while wearing it. Requires attunement by a wizard.",
+        "fullDescription": "While you are wearing it, you gain the following benefits: You can use the hat as a spellcasting focus for your wizard spells. You can try to cast a cantrip that you don’t know. The cantrip must be on the wizard spell list, and you must make a DC 10 Intelligence (Arcana) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest.",
 		"descriptors": [
             "pointed blue hat speckled with embroidered silver stars",
             "tall conical hat with a slightly bent tip",
@@ -6009,8 +6009,8 @@
         "cost": 330,
         "type": ["Apparel", "Travel"],
         "rarity": "Common",
-        "description": "This belt pouch produces enough seasoning to season a single meal each day. The seasoning changes to suit your taste. Never run out of spices for cooking.",
-        "fullDescription": "",
+        "description": "This belt pouch has 10 charges and regains 1d6 + 4 charges daily at dawn.  By expending 1 charge it produces enough seasoning to season a single meal. The seasoning changes to suit your taste.",
+        "fullDescription": "This belt pouch appears empty and has 10 charges. While holding the pouch, you can use an action to expend 1 of its charges, speak the name of any nonmagical food seasoning (such as salt, pepper, saffron, or cilantro), and remove a pinch of the desired seasoning from the pouch. A pinch is enough to season a single meal. The pouch regains 1d6 + 4 expended charges daily at dawn.",
 		"descriptors": [
             "leather belt pouch embroidered with tiny peppers and herbs",
             "small drawstring bag that smells richly of mixed spices",
@@ -6025,8 +6025,8 @@
         "cost": 462,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "You can blow this horn as an action. One creature of your choice within 600 feet hears it. Other creatures don't hear anything. Perfect for silent communication or alerts.",
-        "fullDescription": "",
+        "description": "You can blow this horn as an action. One creature of your choice within 600 feet hears it. Other creatures don't hear anything.",
+        "fullDescription": "This horn has 4 charges. When you use an action to blow it, one creature of your choice can hear the horn’s blare, provided the creature is within 600 feet of the horn and not deafened. No other creature hears sound coming from the horn. The horn regains 1d4 expended charges daily at dawn.",
 		"descriptors": [
             "short brass horn with a narrow, tightly coiled tube",
             "dark metal signal horn with a muted bell",
@@ -6041,8 +6041,8 @@
         "cost": 300,
         "type": ["Misc", "Instrument"],
         "rarity": "Common",
-        "description": "While playing this musical instrument, you can create harmless, illusory visual effects within a 5-foot radius sphere centered on you. The illusions last until you stop playing. Requires proficiency.",
-        "fullDescription": "",
+        "description": "While playing this musical instrument, you can create harmless, illusory visual effects within a 5-foot radius sphere centered on you or 15 feet if you are a bard. The illusions last until you stop playing. Requires proficiency.",
+        "fullDescription": "While you are playing this musical instrument, you can create harmless, illusory visual effects within a 5-foot-radius sphere centered on the instrument. If you are a bard, the radius increases to 15 feet. Sample visual effects include luminous musical notes, a spectral dancer, butterflies, and gently falling snow. The magical effects have neither substance nor sound, and they are obviously illusory. The effects end when you stop playing.",
 		"descriptors": [
             "polished lute with iridescent inlays along its body",
             "slender flute carved with swirling patterns",
@@ -6057,8 +6057,8 @@
         "cost": 180,
         "type": ["Misc", "Instrument"],
         "rarity": "Common",
-        "description": "While playing this musical instrument, you can create writing on nonmagical surfaces within 5 feet. The writing appears wherever you direct. Stops when you stop playing. Requires proficiency.",
-        "fullDescription": "",
+        "description": "While playing this musical instrument, you can create a short message of 6 words on nonmagical surfaces within 30 feet or 13 words if you are a bard. The writing appears wherever you direct and fades after 24 hours. Requires proficiency.",
+        "fullDescription": "This musical instrument has 3 charges. While you are playing it, you can use an action to expend 1 charge from the instrument and write a magical message on a nonmagical object or surface that you can see within 30 feet of you. The message can be up to six words long and is written in a language you know. If you are a bard, you can scribe an additional seven words and choose to make the message glow faintly, allowing it to be seen in nonmagical darkness. Casting dispel magic on the message erases it. Otherwise, the message fades away after 24 hours. The instrument regains all expended charges daily at dawn.",
 		"descriptors": [
             "wooden flute with ink-dark stains along its finger holes",
             "lute carved with quill and parchment motifs",
@@ -6073,7 +6073,7 @@
         "cost": 660,
         "type": ["Misc", "Stealth"],
         "rarity": "Common",
-        "description": "This lock appears to be an ordinary lock but can be locked or unlocked without a key. You can use an action to lock or unlock it, and only you can unlock it this way without using thieves' tools.",
+        "description": "This lock appears to be an ordinary lock (of the type described in chapter 5 of the Player’s Handbook) and comes with a single key. The tumblers in this lock magically adjust to thwart burglars. Dexterity checks made to pick the lock have disadvantage.",
         "fullDescription": "",
 		"descriptors": [
             "ordinary brass padlock with an oddly smooth keyhole",
@@ -6105,7 +6105,7 @@
         "cost": 330,
         "type": ["Jewelry"],
         "rarity": "Common",
-        "description": "While holding this orb, you can use an action to learn which way is north. This works anywhere except in locations where directional magic doesn't function. Simple navigation aid.",
+        "description": "While holding this orb, you can use an action to learn which way is north. This works anywhere except in locations where directional magic doesn't function.",
         "fullDescription": "",
 		"descriptors": [
             "smooth stone sphere with a thin gold line circling its equator",
@@ -6121,7 +6121,7 @@
         "cost": 330,
         "type": ["Jewelry"],
         "rarity": "Common",
-        "description": "While holding this orb, you can use an action to learn the current time. You instantly know the hour, minute, and second. Works everywhere. Never be late again.",
+        "description": "While holding this orb, you can use an action to learn the current time. You instantly know the hour, minute, and second. Works everywhere.",
         "fullDescription": "",
 		"descriptors": [
             "silver sphere with delicate clockwork ticking inside",
@@ -6137,7 +6137,7 @@
         "cost": 132,
         "type": ["Potion", "Consumable"],
         "rarity": "Common",
-        "description": "This perfume grants advantage on all Charisma checks directed at humanoids of a specific gender for 1 hour after application. You choose the gender when applying. Single use.",
+        "description": "This perfume grants advantage on all Charisma checks directed at humanoids of CR 1 or under for 1 hour after application. Single use.",
         "fullDescription": "",
 		"descriptors": [
             "slender crystal vial filled with shimmering rose-gold liquid",
@@ -6153,8 +6153,8 @@
         "cost": 330,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "While smoking this pipe, you can exhale smoke in the shape of creatures you imagine. The smoke is harmless and lasts for a few seconds. Purely cosmetic entertainment.",
-        "fullDescription": "",
+        "description": "While smoking this pipe, you can exhale smoke in the shape of creatures you imagine.  The smoke creature must be less than 1 foot. The smoke is harmless and lasts for a few seconds.",
+        "fullDescription": "While smoking this pipe, you can use an action to exhale a puff of smoke that takes the form of a single creature, such as a dragon, a flumph, or a froghemoth. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke.",
 		"descriptors": [
             "curved wooden pipe with a deep, oversized bowl",
             "dark briar pipe carved with tiny beast shapes",
@@ -6201,8 +6201,8 @@
         "cost": 132,
         "type": ["Misc", "Nature"],
         "rarity": "Common",
-        "description": "When you plant a shrub in this pot and let it grow for 30 days, the shrub awakens and pulls itself free, becoming an awakened shrub. The pot can't be used again for 1 year.",
-        "fullDescription": "",
+        "description": "When you plant a shrub in this pot and let it grow for 30 days, the shrub awakens and pulls itself free, becoming an awakened shrub and the pot is broken.",
+        "fullDescription": "If you plant an ordinary shrub in this 10-pound clay pot and let it grow for 30 days, the shrub magically transforms into an awakened shrub at the end of that time. When the shrub awakens, its roots break the pot, destroying it. The awakened shrub is friendly toward you. Absent commands from you, it does nothing.",
 		"descriptors": [
             "simple clay pot etched with tiny leaf patterns",
             "terra-cotta planter warm and rich in color",
@@ -6217,8 +6217,8 @@
         "cost": 330,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "This 50-foot length of silk rope can magically repair itself. Any cut or frayed sections rejoin and mend within 1 hour.",
-        "fullDescription": "",
+        "description": "This 50-foot length of silk rope can magically repair itself. Any cut or frayed sections rejoin and mend when placed together.",
+        "fullDescription": "You can cut this 50-foot coil of hempen rope into any number of smaller pieces, and then use an action to speak a command word and cause the pieces to knit back together. The pieces must be in contact with each other and not otherwise in use. A rope of mending is forever shortened if a section of it is lost or destroyed.",
 		"descriptors": [
             "silken rope that feels impossibly strong and supple",
             "50-foot coil of pale rope with faint silver threading",
@@ -6234,7 +6234,7 @@
         "type": ["Jewelry", "Arcane"],
         "rarity": "Common",
         "description": "You can attach this ruby to a simple or martial weapon. The weapon then functions as a spellcasting focus for your spells. Requires attunement by a spellcaster.",
-        "fullDescription": "",
+        "fullDescription": "Etched with eldritch runes, this 1-inch-diameter ruby allows you to use a simple or martial weapon as a spellcasting focus for your spells. For this property to work, you must attach the ruby to the weapon by pressing the ruby against it for at least 10 minutes. Thereafter, the ruby can’t be removed unless you detach it as an action or the weapon is destroyed. Not even an antimagic field causes it to fall off. The ruby does fall off the weapon if your attunement to the ruby ends.",
 		"descriptors": [
             "deep red ruby cut into a sharp multifaceted gem",
             "crimson gemstone that pulses faintly when held",
@@ -6249,7 +6249,7 @@
         "cost": 341,
         "type": ["Armor", "Shield"],
         "rarity": "Common",
-        "description": "The front of this shield displays a facial expression. You can use a bonus action to change the expression among several preset options.",
+        "description": "While bearing the shield, you can use a bonus action to alter the face’s expression.",
         "fullDescription": "",
 		"descriptors": [
             "round shield bearing a sculpted, neutral human face",
@@ -6265,8 +6265,8 @@
         "cost": 330,
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Common",
-        "description": "You can use a bonus action to cause flowers or vines to appear on the staff, or cause them to disappear. These decorations are harmless and don't affect the staff's function.",
-        "fullDescription": "",
+        "description": "You place up to 3 objects weighing not more than 1 pound above the staff and they float  and inch from the staff's tip and remain there until removed.",
+        "fullDescription": "If you place an object weighing no more than 1 pound (such as a shard of crystal, an egg, or a stone) above the tip of the staff while holding it, the object floats an inch from the staff’s tip and remains there until it is removed or until the staff is no longer in your possession. The staff can have up to three such objects floating over its tip at any given time. While holding the staff, you can make one or more of the objects slowly spin or turn in place.",
 		"descriptors": [
             "smooth wooden staff wrapped in faint vine carvings",
             "polished staff with tiny buds etched along its length",
@@ -6282,7 +6282,7 @@
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Common",
         "description": "This staff has 10 charges. You can use an action to expend 1 charge and create a sound out to a range of 60 feet: bird calls, chirps, or caws. Regains 1d6+4 charges at dawn.",
-        "fullDescription": "",
+        "fullDescription": "It has 10 charges. While holding it, you can use an action to expend 1 charge from the staff and cause it to create one of the following sounds out to a range of 60 feet: a finch’s chirp, a raven’s caw, a duck’s quack, a chicken’s cluck, a goose’s honk, a loon’s call, a turkey’s gobble, a seagull’s cry, an owl’s hoot, or an eagle’s shriek. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff explodes in a harmless cloud of bird feathers and is lost forever.",
 		"descriptors": [
             "lightweight wooden staff carved with tiny feather motifs",
             "ashen rod topped with a small perched bird figure",
@@ -6298,7 +6298,7 @@
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Common",
         "description": "Has 10 charges. You can use an action to expend 1 charge and cause a flower to sprout from the ground or from the staff itself. The flower is harmless and nonmagical. Regains 1d6+4 charges daily.",
-        "fullDescription": "",
+        "fullDescription": "This wooden staff has 10 charges. While holding it, you can use an action to expend 1 charge from the staff and cause a flower to sprout from a patch of earth or soil within 5 feet of you, or from the staff itself. Unless you choose a specific kind of flower, the staff creates a mild-scented daisy. The flower is harmless and nonmagical, and it grows or withers as a normal flower would. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns into flower petals and is lost forever.",
 		"descriptors": [
             "oak staff with tiny petal patterns carved along its shaft",
             "smooth rod capped with a carved rosebud",
@@ -6313,8 +6313,8 @@
         "cost": 600,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "This child-sized doll whispers what it heard over the last 24 hours when a button on its chest is pressed. It records up to 10 minutes of speech. Can be reprogrammed daily.",
-        "fullDescription": "",
+        "description": "You can record up to 6 phrases that trigger on their own conditions and have the doll speak those phrases.",
+        "fullDescription": "While this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, “I want a piece of candy.” The doll’s phrases are lost when your attunement to the doll ends.",
 		"descriptors": [
             "cloth doll with button eyes and neatly stitched smile",
             "porcelain-faced doll with softly painted features",
@@ -6329,7 +6329,7 @@
         "cost": 330,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "Any liquid poured into this tankard becomes water. The tankard can't be used this way again until the next dawn.",
+        "description": "You can drink ale, wine, or any other nonmagical alcoholic beverage poured into it without becoming inebriated. The tankard has no effect on magical liquids or harmful substances such as poison.",
         "fullDescription": "",
 		"descriptors": [
             "sturdy pewter tankard with a plain, polished finish",
@@ -6345,7 +6345,7 @@
         "cost": 330,
         "type": ["Ammunition", "Ranged", "Consumable"],
         "rarity": "Common",
-        "description": "This arrow can't be broken except by a Wish spell. After being fired, it reappears in your quiver at dawn.",
+        "description": "This arrow can’t be broken, except when it is within an antimagic field.",
         "fullDescription": "",
 		"descriptors": [
             "straight-shafted arrow with perfectly aligned fletching",
@@ -6361,7 +6361,7 @@
         "cost": 66,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Common",
-        "description": "When held, this cane changes to resemble any simple melee weapon of your choice. It reverts to a cane when you let go.",
+        "description": "When you grasp this walking cane and use a bonus action to speak the command word, it transforms into an ordinary longsword and ceases to be magical.",
         "fullDescription": "",
 		"descriptors": [
             "plain wooden cane with a curved handle",
@@ -6373,11 +6373,43 @@
         ]
     },
     {
-        "name": "Walloping Ammunition",
+        "name": "Walloping Ammunition - Arrow",
         "cost": 33,
         "type": ["Ammunition", "Ranged", "Consumable"],
         "rarity": "Common",
-        "description": "This ammunition deals no damage, but on a hit, the target must succeed on a DC 10 Strength save or be knocked prone. Single use.",
+        "description": "This ammunition packs a wallop. A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked prone in addition to its normal damage.",
+        "fullDescription": "",
+		"descriptors": [
+            "blunt-headed arrow with a rounded wooden tip",
+            "smooth stone sling bullet polished to a shine",
+            "crossbow bolt capped with a padded metal bulb",
+            "heavy projectile balanced for impact rather than piercing",
+            "arrow with a thick, flattened head",
+            "solid shot that feels heavier than typical ammunition"
+        ]
+    },
+	    {
+        "name": "Walloping Ammunition - Bolt",
+        "cost": 33,
+        "type": ["Ammunition", "Ranged", "Consumable"],
+        "rarity": "Common",
+        "description": "This ammunition packs a wallop. A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked prone in addition to its normal damage.",
+        "fullDescription": "",
+		"descriptors": [
+            "blunt-headed arrow with a rounded wooden tip",
+            "smooth stone sling bullet polished to a shine",
+            "crossbow bolt capped with a padded metal bulb",
+            "heavy projectile balanced for impact rather than piercing",
+            "arrow with a thick, flattened head",
+            "solid shot that feels heavier than typical ammunition"
+        ]
+    },
+	    {
+        "name": "Walloping Ammunition - Sling",
+        "cost": 33,
+        "type": ["Ammunition", "Ranged", "Consumable"],
+        "rarity": "Common",
+        "description": "This ammunition packs a wallop. A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked prone in addition to its normal damage.",
         "fullDescription": "",
 		"descriptors": [
             "blunt-headed arrow with a rounded wooden tip",
@@ -6394,7 +6426,7 @@
         "type": ["Wand/Staff/Rod", "Arcane", "Instrument"],
         "rarity": "Common",
         "description": "This wand has 3 charges. You can use an action to wave it and expend 1 charge to create orchestral music that can be heard up to 60 feet away. You control the song. Regains charges at dawn.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 3 charges. While holding it, you can use an action to expend 1 of its charges and create orchestral music by waving it around. The music can be heard out to a range of 60 feet and ends when you stop waving the wand. The wand regains all expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, a sad tuba sound plays as the wand crumbles to dust and is destroyed.",
 		"descriptors": [
             "slender ivory baton with a dark wooden handle",
             "polished wand tipped with a tiny silver sphere",
@@ -6409,8 +6441,8 @@
         "cost": 198,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Common",
-        "description": "Has 7 charges. Use 1 charge to cast Pyrotechnics. Regains 1d6+1 charges daily at dawn. 5% chance to become nonmagical if emptied.",
-        "fullDescription": "",
+        "description": "Has 7 charges. Use 1 charge to create a harmless burst of multicolored light at a point you can see up to 60 feet away. Regains 1d6+1 charges daily at dawn.",
+        "fullDescription": "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand erupts in a harmless pyrotechnic display and is destroyed.",
 		"descriptors": [
             "charred-looking wand with a warm ember glow at its tip",
             "blackened rod that smells faintly of sulfur",
@@ -6426,7 +6458,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Common",
         "description": "Has 3 charges. You can expend 1 charge and target a humanoid within 30 feet. The target must succeed on a DC 10 Charisma save or be forced to scowl for 1 minute. Regains charges at dawn.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 3 charges. While holding it, you can use an action to expend 1 of its charges and target a humanoid you can see within 30 feet of you. The target must succeed on a DC 10 Charisma saving throw or be forced to scowl for 1 minute. The wand regains all expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand transforms into a wand of smiles.",
 		"descriptors": [
             "short wand topped with a tiny carved frowning face",
             "dark wooden rod etched with exaggerated grimaces",
@@ -6442,7 +6474,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Common",
         "description": "Has 3 charges. You can expend 1 charge and target a humanoid within 30 feet. The target must succeed on a DC 10 Charisma save or be forced to smile for 1 minute. Regains charges at dawn.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 3 charges. While holding it, you can use an action to expend 1 of its charges and target a humanoid you can see within 30 feet of you. The target must succeed on a DC 10 Charisma saving throw or be forced to smile for 1 minute. The wand regains all expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand transforms into a wand of scowls.",
 		"descriptors": [
             "short wand topped with a tiny carved smiling face",
             "light wooden rod etched with cheerful expressions",
@@ -6453,8 +6485,152 @@
         ]
     },
     {
-        "name": "Absorbing Tattoo",
+        "name": "Absorbing Tattoo - Acid",
+        "cost": 7220,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Cold",
+        "cost": 6220,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Fire",
+        "cost": 8220,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Force",
+        "cost": 7720,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Lightning",
+        "cost": 6720,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Necrotic",
+        "cost": 9220,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Poison",
         "cost": 9720,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Psychic",
+        "cost": 8720,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Radiant",
+        "cost": 5720,
+        "type": ["Misc", "Tattoo"],
+        "rarity": "Very Rare",
+        "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
+        "fullDescription": "",
+		"descriptors": [
+            "tattoo showing elemental clash in vivid colors across the skin",
+            "inked design depicting opposing forces in eternal conflict",
+            "tattoo with symbols that seem to shimmer when light hits them",
+            "skin art showing elements colliding in dramatic composition",
+            "permanent marking with element-specific imagery in bold lines",
+            "tattoo that appears raised slightly above the skin surface"
+        ]
+    },
+	    {
+        "name": "Absorbing Tattoo - Thunder",
+        "cost": 5220,
         "type": ["Misc", "Tattoo"],
         "rarity": "Very Rare",
         "description": "Produced by a special needle, this tattoo depicts clashing elements (choose acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder). Grants resistance to that damage type. While taking damage of that type, you can use reaction to gain immunity until end of your next turn and regain HP equal to half damage taken. Immunity usable once per dawn.",
@@ -6489,8 +6665,8 @@
         "cost": 2580,
         "type": ["Misc", "Arcane", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by artificer. This tool can transform into any artisan's tool of your choice. Grants +1 to spell attack rolls and ability checks made with it. Can be used as a spellcasting focus.",
-        "fullDescription": "",
+        "description": "Requires attunement by artificer. This tool can transform into any artisan's tool of your choice. Grants +1 to spell attack rolls and ability checks made with it.  You can cast any cantrip once per day. Can be used as a spellcasting focus.",
+        "fullDescription": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it. While holding this tool, you gain a bonus to the spell attack rolls and the saving throw DCs of your artificer spells. The bonus is determined by the tool's rarity.  As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn.",
 		"descriptors": [
             "metallic tool with multiple folding sections and hidden components",
             "device with intricate hinges and transformation mechanisms visible",
@@ -6505,8 +6681,8 @@
         "cost": 9040,
         "type": ["Misc", "Arcane", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by artificer. This tool can transform into any artisan's tool. Grants +2 to spell attack rolls and ability checks made with it. Can store one cantrip. Can be used as a spellcasting focus.",
-        "fullDescription": "",
+        "description": "Requires attunement by artificer. This tool can transform into any artisan's tool. Grants +2 to spell attack rolls and ability checks made with it.  You can cast any cantrip once per day. Can be used as a spellcasting focus.",
+        "fullDescription": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it. While holding this tool, you gain a bonus to the spell attack rolls and the saving throw DCs of your artificer spells. The bonus is determined by the tool's rarity.  As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn.",
 		"descriptors": [
             "masterwork tool with complex transformation mechanisms throughout",
             "device glowing faintly with stored magical energy",
@@ -6521,8 +6697,8 @@
         "cost": 26160,
         "type": ["Misc", "Arcane", "Spellcasting Focus"],
         "rarity": "Very Rare",
-        "description": "Requires attunement by artificer. This tool can transform into any artisan's tool. Grants +3 to spell attack rolls and ability checks made with it. Can store two cantrips. Can be used as a spellcasting focus.",
-        "fullDescription": "",
+        "description": "Requires attunement by artificer. This tool can transform into any artisan's tool. Grants +3 to spell attack rolls and ability checks made with it.  You can cast any cantrip once per day. Can be used as a spellcasting focus.",
+        "fullDescription": "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice. Whatever form the tool takes, you are proficient with it. While holding this tool, you gain a bonus to the spell attack rolls and the saving throw DCs of your artificer spells. The bonus is determined by the tool's rarity.  As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn.",
 		"descriptors": [
             "legendary tool with seamless transformations between forms",
             "device radiating palpable magical energy at all times",
@@ -6537,8 +6713,8 @@
         "cost": 2460,
         "type": ["Jewelry", "Divine", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by cleric or paladin. This amulet grants +1 to spell attack rolls and saving throw DCs of your spells. Can be used as a holy symbol.",
-        "fullDescription": "",
+        "description": "Requires attunement by cleric or paladin. This amulet grants +1 to spell attack rolls and saving throw DCs of your spells. Can be used as a holy symbol.  Once per day you can use your Channel Divinity feature without expending one of the feature's uses.",
+        "fullDescription": "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a bonus to spell attack rolls and the saving throw DCs of your spells. The bonus is determined by the amulet's rarity. While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.",
 		"descriptors": [
             "amulet carved with holy symbols in relief",
             "pendant warm to touch with divine energy",
@@ -6554,7 +6730,7 @@
         "type": ["Jewelry", "Divine", "Spellcasting Focus"],
         "rarity": "Rare",
         "description": "Requires attunement by cleric or paladin. This amulet grants +2 to spell attack rolls and saving throw DCs of your spells. Can be used as a holy symbol. You can use Channel Divinity one extra time per rest.",
-        "fullDescription": "",
+        "fullDescription": "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a bonus to spell attack rolls and the saving throw DCs of your spells. The bonus is determined by the amulet's rarity. While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.",
 		"descriptors": [
             "radiant amulet with elaborate religious iconography",
             "pendant pulsing with divine power visibly",
@@ -6570,7 +6746,7 @@
         "type": ["Jewelry", "Divine", "Spellcasting Focus"],
         "rarity": "Very Rare",
         "description": "Requires attunement by cleric or paladin. This amulet grants +3 to spell attack rolls and saving throw DCs of your spells. Can be used as a holy symbol. You can use Channel Divinity one extra time per rest.",
-        "fullDescription": "",
+        "fullDescription": "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a bonus to spell attack rolls and the saving throw DCs of your spells. The bonus is determined by the amulet's rarity. While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.",
 		"descriptors": [
             "legendary amulet blazing with divine radiance",
             "pendant forged from celestial metals",
@@ -6585,8 +6761,8 @@
         "cost": 2460,
         "type": ["Book", "Arcane", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by wizard. This spellbook grants +1 to spell attack rolls and saving throw DCs of your spells. Can be used as a spellcasting focus and contains your prepared spells.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This spellbook grants +1 to spell attack rolls and saving throw DCs of your spells. Can be used as a spellcasting focus and contains your prepared spells.  When you use your Arcane Recovery, you can increase the number of spell slot levels you regain by 1",
+        "fullDescription": "While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a bonus to spell attack rolls and to the saving throw DCs of your wizard spells. The bonus is determined by the book's rarity.  You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.",
 		"descriptors": [
             "spellbook with arcane symbols glowing faintly on cover",
             "grimoire bound in dark leather with brass corners",
@@ -6601,8 +6777,8 @@
         "cost": 8880,
         "type": ["Book", "Arcane", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This spellbook grants +2 to spell attack rolls and saving throw DCs of your spells. Can be used as a focus. Once per long rest, you can replace a prepared spell.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This spellbook grants +2 to spell attack rolls and saving throw DCs of your spells. Can be used as a focus. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.",
+        "fullDescription": "While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a bonus to spell attack rolls and to the saving throw DCs of your wizard spells. The bonus is determined by the book's rarity.  You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.",
 		"descriptors": [
             "masterwork grimoire with runes that shift and change",
             "spellbook with covers inlaid with magical gemstones",
@@ -6617,8 +6793,8 @@
         "cost": 25920,
         "type": ["Book", "Arcane", "Spellcasting Focus"],
         "rarity": "Very Rare",
-        "description": "Requires attunement by wizard. This spellbook grants +3 to spell attack rolls and saving throw DCs of your spells. Can be used as a focus. Once per long rest, you can replace a prepared spell.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This spellbook grants +3 to spell attack rolls and saving throw DCs of your spells. Can be used as a focus. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1",
+        "fullDescription": "While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a bonus to spell attack rolls and to the saving throw DCs of your wizard spells. The bonus is determined by the book's rarity.  You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.",
 		"descriptors": [
             "legendary grimoire radiating powerful arcane energy",
             "spellbook with covers made from unknown material",
@@ -6633,8 +6809,8 @@
         "cost": 3620,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic, you can roll on the Wild Magic Surge table. If you roll a 1, you gain 1 sorcery point.",
-        "fullDescription": "",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus.  When you use a Metamagic option on a spell, you can teleport to an unoccupied space you can see within 30 feet of you.",
+        "fullDescription": "This crystal is a solidified shard of the Astral Plane, swirling with silver mist. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.  When you use a Metamagic option on a spell while you are holding or wearing the shard, immediately after casting the spell you can teleport to an unoccupied space you can see within 30 feet of you.",
 		"descriptors": [
             "crystalline shard showing swirling cosmos within",
             "fragment that sparkles with chaotic energy",
@@ -6649,8 +6825,8 @@
         "cost": 3920,
         "type": ["Book", "Arcane"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This brass disc shows an orrery of the planes. Grants +1 to Arcana checks. Can cast Augury and Divination. Contains 3d6 spells from the divination school. Spells can change with study.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This brass disc shows an orrery of the planes. Can cast  Augury, Divination, Find the Path, Foresight, Locate Creature, and Locate Object. Charges can be used to change a prepared spell, or force a creature to add or subtract a d4 to a roll",
+        "fullDescription": "This brass disc of articulated, concentric rings unfolds into an armillary sphere. As a bonus action, you can unfold it into the sphere or back into a disc. When found, it contains the following spells, which are wizard spells for you while you are attuned to it: Augury, Divination, Find the Path, Foresight, Locate Creature, and Locate Object. It functions as a spellbook for you, with spells encoded on the rings.  While you are holding the archive, you can use it as a spellcasting focus for your wizard spells.  The archive has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  If you spend 1 minute studying the archive, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the archive. The new spell must be of the divination school.  When a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to expend 1 charge and force the creature to roll a d4 and apply the number rolled as a bonus or penalty (your choice) to the original roll. You can do this after you see the roll but before its effects are applied.",
 		"descriptors": [
             "brass disc with mechanical orrery moving on its surface",
             "circular device showing planetary alignments in miniature",
@@ -6665,8 +6841,8 @@
         "cost": 4640,
         "type": ["Book", "Arcane", "Travel"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This book shows maps of places you've been. Can cast Arcane Gate. Contains 3d6 spells related to travel and exploration (conjuration school). Can be used as spellcasting focus.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This book shows maps of places you've been. Can cast Arcane Gate, Dimension Door, Gate, Misty Step, Plane Shift, Teleportation Circle, and Word of Recall. Can be used as spellcasting focus. Can expend charges to change prepared spells, or teleport when you are hit by an attack",
+        "fullDescription": "This thick book is bound in dark leather, crisscrossed with inlaid silver lines suggesting a map or chart. When found, the book contains the following spells, which are wizard spells for you while you are attuned to the book: Arcane Gate, Dimension Door, Gate, Misty Step, Plane Shift, Teleportation Circle, and Word of Recall. It functions as a spell book for you.  While you are holding the book, you can use it as a spellcasting focus for your wizard spells.  The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the conjuration school.  When you are hit by an attack, you can use your reaction to expend 1 charge to teleport up to 10 feet to an unoccupied space you can see. If your new position is out of range of the attack, it misses you.",
 		"descriptors": [
             "atlas with maps that update themselves as places are visited",
             "book showing routes in ink that moves across pages",
@@ -6681,7 +6857,7 @@
         "cost": 900,
         "type": ["Misc", "Tattoo"],
         "rarity": "Uncommon",
-        "description": "Produced by a special needle. While not wearing armor, the tattoo grants AC equal to 12 + your Dexterity modifier. You can use a bonus action to activate it, gaining +5 to AC until the start of your next turn. Usable once per short or long rest.",
+        "description": "Produced by a special needle. While not wearing armor, the tattoo grants AC equal to 12 + your Dexterity modifier.",
         "fullDescription": "",
 		"descriptors": [
             "tattoo depicting protective symbols in geometric patterns",
@@ -6697,7 +6873,7 @@
         "cost": 2400,
         "type": ["Misc", "Tattoo"],
         "rarity": "Rare",
-        "description": "Produced by a special needle. While not wearing armor, the tattoo grants AC equal to 15 + your Dexterity modifier (max 2). You can use a bonus action to activate it, gaining +5 to AC until start of your next turn. Usable twice per short or long rest.",
+        "description": "Produced by a special needle. While not wearing armor, the tattoo grants AC equal to 15 + your Dexterity modifier (max 2).",
         "fullDescription": "",
 		"descriptors": [
             "elaborate tattoo with complex defensive patterns",
@@ -6713,7 +6889,7 @@
         "cost": 5400,
         "type": ["Misc", "Tattoo"],
         "rarity": "Very Rare",
-        "description": "Produced by a special needle. While not wearing armor, the tattoo grants AC 18. You can use a bonus action to activate it, gaining +5 to AC until the start of your next turn. Usable three times per short or long rest.",
+        "description": "Produced by a special needle. While not wearing armor, the tattoo grants AC 18.",
         "fullDescription": "",
 		"descriptors": [
             "masterwork tattoo with nearly impenetrable symbolism",
@@ -6729,8 +6905,8 @@
         "cost": 800,
         "type": ["Misc", "Spellcasting Focus", "Spellcasting Focus", "Healing"],
         "rarity": "Rare",
-        "description": "Requires attunement by druid or warlock. This silver implement can be used as a spellcasting focus. As a bonus action, you can expend one spell slot to regain a number of hit points equal to 1d4 per level of the spell slot expended.",
-        "fullDescription": "",
+        "description": "Requires attunement by druid or warlock. This silver implement can be used as a spellcasting focus. has 3 charges and recovers 1d3 charges at dawn.  Charges can be used to detect certain monsters and cast Protection from Evil and Good.",
+        "fullDescription": "This silver implement is shaped like a tree branch and is strung with small golden bells. The branch is a spellcasting focus for your spells while you hold it.  The branch has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  As a bonus action, you can expend 1 charge to detect the presence of aberrations, celestials, constructs, elementals, fey, fiends, or undead within 60 feet of you. If such creatures are present and don't have total cover from you, the bells ring softly, their tone indicating the creature types present.  As an action, you can expend 1 charge to cast Protection from Evil and Good.",
 		"descriptors": [
             "silver branch with small bells hanging from twigs",
             "implement shaped like living wood but cast in metal",
@@ -6745,8 +6921,8 @@
         "cost": 18000,
         "type": ["Misc", "Tattoo"],
         "rarity": "Legendary",
-        "description": "Produced by a special needle, this tattoo depicts blood-red symbols. Grants +1 to attack and damage rolls. When you hit with a weapon attack, you can activate the tattoo to deal extra damage equal to 4d6 + your Constitution modifier. Usable once per short or long rest. While active for 1 minute, you gain resistance to all damage and advantage on Strength checks and saves.",
-        "fullDescription": "",
+        "description": "Produced by a special needle, this tattoo depicts blood-red symbols. Has 10 charges and recovers all at dawn.  expend charges to deal 4d6 necrotic damage and regain hit points, or make attacks as a reaction to being damaged.",
+        "fullDescription": "Bloodthirsty Strikes. The tattoo has 10 charges, and it regains all expended charges daily at dawn. While this tattoo is on your skin, you gain the following benefits:  When you hit a creature with a weapon attack, you can expend a charge to deal an extra 4d6 necrotic damage to the target, and you regain a number of hit points equal to the necrotic damage dealt.  When a creature you can see damages you, you can expend a charge and use your reaction to make a melee attack against that creature, with advantage on your attack roll.",
 		"descriptors": [
             "blood-red tattoo with symbols of primal rage",
             "crimson inked design showing battle fury imagery",
@@ -6761,8 +6937,8 @@
         "cost": 3180,
         "type": ["Jewelry", "Arcane", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by sorcerer. This vial can be used as a spellcasting focus. Grants +1 to spell attack rolls and saving throw DCs. When you roll Hit Dice to recover hit points, you can regain one expended sorcery point (max once per long rest).",
-        "fullDescription": "",
+        "description": "Requires attunement by sorcerer. This vial can be used as a spellcasting focus. Grants +1 to spell attack rolls and saving throw DCs. When you roll Hit Dice to recover hit points, you can regain 5 expended sorcery point.",
+        "fullDescription": "To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells. The bonus is determined by the vial's rarity.  In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.",
 		"descriptors": [
             "glass vial containing single drop of crimson liquid",
             "pendant vial with stopper sealed with wax",
@@ -6777,8 +6953,8 @@
         "cost": 9840,
         "type": ["Jewelry", "Arcane", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. This vial can be used as a spellcasting focus. Grants +2 to spell attack rolls and saving throw DCs. When you roll Hit Dice to recover hit points, you can regain one expended sorcery point (max 5 times per long rest).",
-        "fullDescription": "",
+        "description": "Requires attunement by sorcerer. This vial can be used as a spellcasting focus. Grants +2 to spell attack rolls and saving throw DCs. When you roll Hit Dice to recover hit points, you can regain 5 ",
+        "fullDescription": "To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells. The bonus is determined by the vial's rarity.  In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.",
 		"descriptors": [
             "ornate vial with multiple drops swirling inside",
             "crystal container with blood that glows faintly",
@@ -6793,8 +6969,8 @@
         "cost": 27360,
         "type": ["Jewelry", "Arcane", "Spellcasting Focus"],
         "rarity": "Very Rare",
-        "description": "Requires attunement by sorcerer. This vial can be used as a spellcasting focus. Grants +3 to spell attack rolls and saving throw DCs. When you roll Hit Dice to recover hit points, you can regain one expended sorcery point (max 5 times per long rest).",
-        "fullDescription": "",
+        "description": "Requires attunement by sorcerer. This vial can be used as a spellcasting focus. Grants +3 to spell attack rolls and saving throw DCs. When you roll Hit Dice to recover hit points, you can regain 5 ",
+        "fullDescription": "To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells. The bonus is determined by the vial's rarity.  In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn.",
 		"descriptors": [
             "legendary vial containing blood of obvious power",
             "crystal container with liquid radiating magical energy",
@@ -6809,8 +6985,8 @@
         "cost": 8700,
         "type": ["Misc", "Healing"],
         "rarity": "Very Rare",
-        "description": "Requires attunement by druid or warlock. This tiny pot grows to Medium size when placed on ground. Once per long rest, you can use it to cast Resurrection (no material components required), brewing resurrection for 1 minute. Target emerges renewed.",
-        "fullDescription": "",
+        "description": "Requires attunement by druid or warlock. This tiny pot can grow to Medium size when placed on ground. Once per long rest, you can use it to Raise Dead and create Potions of Greater Healing.",
+        "fullDescription": "This Tiny pot bears relief scenes of heroes on its cast iron sides. You can use the cauldron as a spell casting focus for your spells, and it functions as a suitable component for the Scrying spell. When you finish a long rest, you can use the cauldron to create a Potion of Greater Healing. The potion lasts for 24 hours, then loses its magic if not consumed.  As an action, you can cause the cauldron to grow large enough for a Medium creature to crouch within. You can revert the cauldron to its normal size as an action, harmlessly shunting anything that can't fit inside to the nearest unoccupied space.  If you place the corpse of a humanoid into the cauldron and cover the corpse with 200 pounds of salt (which costs 10 gp) for at least 8 hours, the salt is consumed and the creature returns to life as if by Raise Dead at the next dawn. Once used, this property can't be used again for 7 days.",
 		"descriptors": [
             "miniature cauldron that fits in palm of hand",
             "iron pot with symbols of life and death",
@@ -6825,8 +7001,8 @@
         "cost": 849,
         "type": ["Misc", "Tattoo"],
         "rarity": "Uncommon",
-        "description": "Produced by a special needle, this tattoo depicts grasping tendrils. Your unarmed strikes have a reach of 15 feet and deal 1d6 force damage on a hit. You can use a bonus action to activate the tattoo and pull a creature within 15 feet up to 10 feet closer (DC 14 Strength save negates). Usable once per short or long rest.",
-        "fullDescription": "",
+        "description": "Produced by a special needle, this tattoo depicts grasping tendrils.  You can use a bonus action to activate the tattoo and grapple a creature within 15 feet and deal 3d6 force damage(DC 14 Strength save negates).",
+        "fullDescription": "Grasping Tendrils. While the tattoo is on your skin, you can, as an action, cause the tattoo to extrude into inky tendrils, which reach for a creature you can see within 15 feet of you. The creature must succeed on a DC 14 Strength saving throw or take 3d6 force damage and be grappled by you. As an action, the creature can escape the grapple by succeeding on a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check. The grapple also ends if you halt it (no action required), if the creature is ever more than 15 feet away from you, or if you use this tattoo on a different creature.",
 		"descriptors": [
             "tattoo showing reaching tendrils and grasping vines",
             "inked design with serpentine coils in motion",
@@ -6841,8 +7017,8 @@
         "cost": 8130,
         "type": ["Jewelry", "Arcane", "Spellcasting Focus"],
         "rarity": "Very Rare",
-        "description": "Requires attunement by wizard. This crystalline book can change its appearance. Grants advantage on Arcana checks. Cast Identify and Illusory Script at will. Contains 3d6 spells related to knowledge (primarily divination, illusion). Can be used as a focus.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This crystal acts as a spellbook you can write spells too. Several mental Spells are already contained within.  It has 3 charges that can be used to change prepared spells or cast spells without components. Can be used as a focus.",
+        "fullDescription": "An etched crystal sphere the size of a grapefruit hums faintly and pulses with irregular flares of inner light. While you are touching the crystal, you can retrieve and store information and spells within the crystal at the same rate as reading and writing. When found, the crystal contains the following spells: Detect Thoughts, Intellect Fortress, Rary's Telepathic Bond, Sending, Telekinesis, Tasha's Mind Whip, and Tenser's Floating Disk. It functions as a spellbook for you, with its spells and other writing psychically encoded within it.  While you are holding the crystal, you can use it as a spellcasting focus for your wizard spells, and you know the Mage Hand, Mind Sliver, and Message cantrips if you don't already know them.  The crystal has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it: If you spend 1 minute studying the information within the crystal, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. When you cast a wizard spell, you can expend 1 charge to cast the spell without verbal, somatic, or material components of up to 100 gp value.",
 		"descriptors": [
             "book made entirely of clear crystal facets",
             "tome with pages of transparent crystalline sheets",
@@ -6857,8 +7033,8 @@
         "cost": 1734,
         "type": ["Misc", "Divine"],
         "rarity": "Rare",
-        "description": "Requires attunement by cleric or paladin. This vessel can be used as a holy symbol and a spellcasting focus. As a bonus action, you can expend one spell slot to cause the censer to emit incense that grants you and allies advantage on their next attack roll or saving throw. Affects allies within 10 feet.",
-        "fullDescription": "",
+        "description": "Requires attunement by cleric or paladin. This vessel can be used as a holy symbol and a spellcasting focus.  Deals an extra 1d8 radiant damage. Once per day, as a bonus action, you can expend one spell slot to cause the censer to emit incense, each ally within the incense cloud regains 1d4 hit points. Affects allies within 10 feet.",
+        "fullDescription": "The rounded head of this flail is perforated with tiny holes, arranged in symbols and patterns. The flail counts as a holy symbol for you. When you hit with an attack using this magic flail, the target takes an extra 1d8 radiant damage.  As a bonus action, you can speak the command word to cause the flail to emanate a thin cloud of incense out to 10 feet for 1 minute. At the start of each of your turns, you and any other creatures in the incense each regain 1d4 hit points. This property can't be used again until the next dawn.",
 		"descriptors": [
             "brass censer with holes for fragrant smoke",
             "hanging vessel on chain with religious symbols",
@@ -6873,8 +7049,9 @@
         "cost": 3380,
         "type": ["Book", "Arcane"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This book shows whatever text you wish others to see. Can cast Nystul's Magic Aura. Contains 3d6 spells related to deception (primarily illusion school). Ideal for trickster wizards. Can be used as a focus.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This book shows whatever text you wish others to see. Contains several illusory spells. Has 3 charges and regains 1d3 charges daily at dawn.  Charges can be used to replace prepared spells or impose disadvantage on investigation checks of your illusion spells. Can be used as a focus.",
+        "fullDescription": "To you, this book is a magical spellbook. To anyone else, the book appears to be a volume of verbose romance fiction. As an action, you can change the book's appearance and alter the plot of the romance.When found, the book contains the following spells: Hallucinatory Terrain, Major Image, Mirror Image, Mislead, Nystul's Magic Aura, Phantasmal Force, and Silent Image. It functions as a spellbook for you.While you are holding the book, you can use it as a spellcasting focus for your wizard spells.The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the illusion school.
+When a creature you can see makes an Intelligence (Investigation) check to discern the true nature of an illusion spell you cast, or makes a saving throw against an illusion spell you cast, you can use your reaction and expend 1 charge to impose disadvantage on the roll.",
 		"descriptors": [
             "book with cover that shows different titles to different viewers",
             "tome with pages that appear blank until read closely",
@@ -6889,8 +7066,8 @@
         "cost": 1191,
         "type": ["Misc", "Tattoo"],
         "rarity": "Uncommon",
-        "description": "Produced by a special needle, this tattoo channels eldritch energy. Your unarmed strikes deal 1d6 force damage. You can use a bonus action to activate the tattoo for 1 minute, during which your unarmed strikes are magical with a +1 bonus to attack and damage rolls, and reach increases by 15 feet. Usable once per short or long rest.",
-        "fullDescription": "",
+        "description": "Produced by a special needle, this tattoo channels eldritch energy. Your unarmed strikes gain a +1 bonus to attack and damage rolls. You can use a bonus action to activate the tattoo for 1 minute, during which your unarmed strikes are magical your reach increases by 15 feet and deal 1d6 additional force damage. Usable once per day.",
+        "fullDescription": "Magical Strikes. While the tattoo is on your skin, your unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes.  Eldritch Maul. As a bonus action, you can empower the tattoo for 1 minute. For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as inky tendrils launch toward the target. In addition, your melee attacks deal an extra 1d6 force damage on a hit. Once used, this bonus action can't be used again until the next dawn.",
 		"descriptors": [
             "tattoo showing clawed hands crackling with energy",
             "inked design with otherworldly claws and talons",
@@ -6905,7 +7082,7 @@
         "cost": 2420,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to lightning damage. You also gain resistance to lightning damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell you can immediately fly up to 60 feet without provoking opportunity attacks.",
         "fullDescription": "",
 		"descriptors": [
             "crystalline shard with storm clouds trapped inside",
@@ -6921,7 +7098,7 @@
         "cost": 3620,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to acid damage. You also gain resistance to acid damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell you gain resistance to a damage type of your choice until the start of your next turn.",
         "fullDescription": "",
 		"descriptors": [
             "dark shard with mineral deposits throughout",
@@ -6937,7 +7114,7 @@
         "cost": 806,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to fire damage. You also gain resistance to fire damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell one target of the spell that you can see catches fire. The burning target takes 2d10 fire damage at the start of its next turn, and then the flames go out.",
         "fullDescription": "",
 		"descriptors": [
             "orange-red shard with flames dancing inside",
@@ -6953,7 +7130,7 @@
         "cost": 1581,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that deals acid, cold, fire, lightning, or thunder damage, you can change it to cold damage. You also gain resistance to cold damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell you create a wave of water that bursts out from you in a 10-foot radius. Each creature of your choice that you can see in that area takes 2d6 cold damage and must succeed on a Strength saving throw against your spell save DC or be pushed 10 feet away from you and fall prone.",
         "fullDescription": "",
 		"descriptors": [
             "blue shard with water flowing inside impossibly",
@@ -6969,8 +7146,8 @@
         "cost": 736,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic, roll on the Wild Magic Surge table. You also gain advantage on Arcana checks.",
-        "fullDescription": "",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic,you can cause a slimy tentacle to rip through the fabric of reality and strike one creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw against your spell save DC or take 3d6 psychic damage and become frightened of you until the start of your next turn.",
+        "fullDescription": "This writhing crystal is steeped in the warped essence of the Far Realm. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.  When you use a Metamagic option on a spell while you are holding or wearing the shard, you can cause a slimy tentacle to rip through the fabric of reality and strike one creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw against your spell save DC or take 3d6 psychic damage and become frightened of you until the start of your next turn.",
 		"descriptors": [
             "shard with impossible geometry visible within",
             "fragment showing colors that shouldn't exist",
@@ -6985,8 +7162,8 @@
         "cost": 2715,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell that charms or frightens, you can force the target to have disadvantage on their first save. You also have advantage on saving throws against being charmed.",
-        "fullDescription": "",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell you can roll on the Wild Magic Surge table in the Player's Handbook.",
+        "fullDescription": "This warm crystal glints with the sunset colors of the Feywild sky and evokes whispers of emotional memory. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.  When you use a Metamagic option on a spell while you are holding or wearing the shard, you can roll on the Wild Magic Surge table in the Player's Handbook. If the result is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.  If you don't have the Wild Magic Sorcerous Origin, once this property is used to roll on the Wild Magic Surge table, it can't be used again until the next dawn.",
 		"descriptors": [
             "iridescent shard with fairy lights dancing inside",
             "fragment showing enchanted forest within crystal",
@@ -7001,8 +7178,8 @@
         "cost": 3750,
         "type": ["Misc", "Arcane"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This brass book smells of sulfur. Grants advantage on Arcana checks about evocation spells. Can cast Contingency. Contains 3d6 evocation spells. When you deal damage with a wizard spell, you can reroll damage dice (minimum result of 1d6). Usable once per dawn.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This brass book smells of sulfur. Contains several Elemental Spells.  It has 3 charges and regains 1d3 charges at dawn.  Charges can be used to switch prepared spells or deal additional 2d6 force damage to creatures you hit with your Evocations spells",
+        "fullDescription": "This thick, scorched spellbook reeks of smoke and ozone, and sparks of energy crackles along the edges of its pages. When found, the book contains the following spells: Contingency, Fireball, Gust of Wind, Leomund's Tiny Hut, Magic Missile, Thunderwave, and Wall of Force. It functions as a spellbook for you.  While you are holding the book, you can use it as a spellcasting focus for your wizard spells.The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it: If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the evocation school. When one creature you can see takes damage from an evocation spell you cast, you can use your reaction and expend 1 charge to deal an extra 2d6 force damage to the creature and knock the creature prone if it is Large or smaller.",
 		"descriptors": [
             "brass-bound book that smells of gunpowder and sulfur",
             "tome with scorch marks on covers and pages",
@@ -7017,8 +7194,8 @@
         "cost": 2160,
         "type": ["Misc", "Stealth", "Tattoo"],
         "rarity": "Very Rare",
-        "description": "Produced by a special needle. As a bonus action, you can become incorporeal until the end of your next turn. While incorporeal, you gain resistance to bludgeoning, piercing, and slashing damage, you can move through creatures and objects as if they were difficult terrain, and you take 1d10 force damage if you end your turn inside an object. Usable once per long rest.",
-        "fullDescription": "",
+        "description": "Produced by a special needle. The tatoo has 3 charges and regains all at dawn.  Charges can be used to become incorporeal and gain the abilites of a ghost; damage resistances and incorporeal movement.",
+        "fullDescription": "Ghostly Form. The tattoo has 3 charges, and it regains all expended charges daily at dawn. As a bonus action while the tattoo is on your skin, you can expend 1 of the tattoo's charges to become incorporeal until the end of your next turn. For the duration, you gain the following benefits:  You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.  You can't be grappled or restrained.  You can move through creatures and solid objects as if they were difficult terrain. If you end your turn in a solid object, you take 1d10 force damage. If the effect ends while you are inside a solid object, you instead are shunted to the nearest unoccupied space, and you take 1d10 force damage for every 5 feet traveled.",
 		"descriptors": [
             "tattoo depicting spectral figure walking through walls",
             "ethereal design showing phasing motion",
@@ -7033,8 +7210,8 @@
         "cost": 555,
         "type": ["Misc", "Divine"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by cleric or paladin. This medallion can be used as a holy symbol. When a creature you can see within 30 feet is hit by an attack, you can use your reaction to grant that creature a +2 bonus to its AC against that attack. Usable a number of times equal to your proficiency bonus per long rest.",
-        "fullDescription": "",
+        "description": "Requires attunement by cleric or paladin. This medallion can be used as a holy symbol. The emblem has 3 charges and regain all expended charges daily at dawn.  You can expend a charge to turn a critical hit into a normal hit.",
+        "fullDescription": "This emblem is the symbol of a deity or a spiritual tradition. As an action, you can attach the emblem to a suit of armor or a shield or remove it.  The emblem has 3 charges. When you or a creature you can see within 30 feet of you suffers a critical hit while you're wearing the armor or wielding the shield that bears the emblem, you can use your reaction to expend 1 charge to turn the critical hit into a normal hit instead.  The emblem regains all expended charges daily at dawn.",
 		"descriptors": [
             "medallion showing shield and protective imagery",
             "emblem with guardian angel in relief",
@@ -7049,8 +7226,8 @@
         "cost": 3800,
         "type": ["Misc", "Arcane", "Book"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This tome is bound in bird feathers. Grants advantage on Arcana checks about enchantment spells. Can cast Rary's Telepathic Bond. Contains 3d6 enchantment spells. When you cast an enchantment spell that targets one creature, you can target two instead. Usable once per dawn.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard.  Contains several enchantement spells.  Has 3 charges and regains 1d3 charges daily at dawn.  Charges can be used to switch prepared spells or impose disadvantage on saving throws against your spells.",
+        "fullDescription": "This pristine book smells faintly of a random scent you find pleasing. When found, the book contains the following spells: Antipathy/Sympathy, Charm Person, Dominate Person, Enthrall, Hypnotic Pattern, Modify Memory, and Suggestion. It functions as a spellbook for you.  While you are holding the book, you can use it as a spellcasting focus for your wizard spells.  The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the enchantment school. When you cast an enchantment spell, you can expend 1 charge to impose disadvantage on the first saving throw one target makes against the spell.",
 		"descriptors": [
             "book bound in multicolored bird feathers",
             "tome with feathered cover soft to the touch",
@@ -7065,8 +7242,8 @@
         "cost": 540,
         "type": ["Misc", "Tattoo"],
         "rarity": "Common",
-        "description": "Produced by a special needle, this tattoo features beautiful calligraphy. As an action, you can touch the tattoo and shed bright light in a 20-foot radius and dim light for an additional 20 feet, or extinguish the light. You can also write words on any surface. The words fade after 1 hour.",
-        "fullDescription": "",
+        "description": "Produced by a special needle, this tattoo features beautiful calligraphy. Write with your fingertip without ink.  Can create secret messages that can only be read by you and creatures you name.",
+        "fullDescription": "Magical Scribing. While this tattoo is on your skin, you can write with your fingertip as if it were an ink pen that never runs out of ink.  As an action, you can touch a piece of writing up to one page in length and speak a creature's name. The writing becomes invisible to everyone other than you and the named creature for the next 24 hours. Either of you can dismiss the invisibility by touching the script (no action required). Once used, this action can't be used again until the next dawn.",
 		"descriptors": [
             "tattoo with ornate script and decorative flourishes",
             "inked calligraphy showing artistic letterforms",
@@ -7081,8 +7258,8 @@
         "cost": 3800,
         "type": ["Book", "Arcane"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This tome is bound in skin. Grants advantage on Arcana checks about necromancy. Can cast Magic Jar. Contains 3d6 necromancy spells. When you cast a necromancy spell that targets one creature, you can target two instead. Usable once per dawn.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This tome is bound in skin. Contains several necromancy spells.  Has 3 charges and it regains 1d3 charges daily at dawn.  Charges can be used to switch prepared spells or appear undead.",
+        "fullDescription": "With covers made of skin and fittings of bone, this tome is cold to the touch, and it whispers faintly. When found, the book contains the following spells, which are wizard spells for you while you are attuned to the book: Animate Dead, Circle of Death, False Life, Finger of Death, Speak with Dead, Summon Undead, Vampiric Touch. It functions as a spellbook for you.  While you are holding the book, you can use it as a spellcasting focus for your wizard spells.  The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the necromancy school. As an action, you can expend 1 charge to take on a semblance of undeath for 10 minutes. For the duration, you take on a deathly appearance, and undead creatures are indifferent to you, unless you have damaged them. You also appear undead to all outward inspection and to spells used to determine the target's status. The effect ends if you deal damage or force a creature to make a saving throw.",
 		"descriptors": [
             "book bound in preserved skin, unsettling to touch",
             "tome with leather that feels too much like flesh",
@@ -7097,8 +7274,8 @@
         "cost": 12600,
         "type": ["Misc", "Tattoo", "Healing"],
         "rarity": "Very Rare",
-        "description": "Produced by a special needle, this tattoo represents vitality. When you would drop to 0 hit points, you can drop to 1 hit point instead and gain temporary hit points equal to your Constitution modifier (minimum 1) for each level you've gained. You then gain 1 level of exhaustion. Usable once per long rest.",
-        "fullDescription": "",
+        "description": "Produced by a special needle, this tattoo represents vitality. Necrotic Resistance. You have resistance to necrotic damage.  Life Ward. When you would be reduced to 0 hit points, you drop to 1 hit point instead. Once used, this property can't be used again until the next dawn.",
+        "fullDescription": "Necrotic Resistance. You have resistance to necrotic damage.  Life Ward. When you would be reduced to 0 hit points, you drop to 1 hit point instead. Once used, this property can't be used again until the next dawn.",
 		"descriptors": [
             "tattoo depicting heart with flowing life energy",
             "vibrant design showing vitality and health imagery",
@@ -7113,8 +7290,8 @@
         "cost": 20520,
         "type": ["Misc", "Instrument"],
         "rarity": "Rare",
-        "description": "Requires proficiency with a musical instrument. While playing this lyre, you can cast Mending, Fabricate, and Move Earth. All construction takes half the normal time. Once per day, construction projects can be completed with a song rather than mundane work.",
-        "fullDescription": "",
+        "description": "Requires proficiency with a musical instrument. While playing this lyre, you can cast Mending, Fabricate, Passwall, Summon Construct, and Move Earth.",
+        "fullDescription": "While holding this lyre, you can cast Mending as an action. You can also play the lyre as a reaction when an object or a structure you can see within 300 feet of you takes damage, causing it to be immune to that damage and any further damage of the same type until the start of your next turn.  In addition, you can play the lyre as an action to cast Fabricate, Move Earth, Passwall, or Summon Construct, and that spell can't be cast from it again until the next dawn.",
 		"descriptors": [
             "golden lyre with strings that never break",
             "instrument carved with images of construction",
@@ -7129,8 +7306,8 @@
         "cost": 540,
         "type": ["Misc", "Stealth", "Tattoo"],
         "rarity": "Common",
-        "description": "Produced by a special needle, this tattoo shifts and changes. As a bonus action, you can shape the tattoo into any color or pattern you wish. You can also add tattoos to your appearance or make existing tattoos disappear. This doesn't count as a disguise.",
-        "fullDescription": "",
+        "description": "Produced by a special needle, this tattoo shifts and changes. As a bonus action, you can shape the tattoo into any color or pattern you wish. You can also add tattoos to your appearance or make existing tattoos disappear. You can also cast Disquise Self once per day.",
+        "fullDescription": "Fluid Ink. As a bonus action, you can shape the tattoo into any color or pattern and move it to any area of your skin. Whatever form it takes, it is always obviously a tattoo. It can range in size from no smaller than a copper piece to an intricate work of art that covers all your skin.  Disguise Self. As an action, you can use the tattoo to cast the Disguise Self spell (DC 13 to discern the disguise). Once the spell is cast from the tattoo, it can't be cast from the tattoo again until the next dawn.",
 		"descriptors": [
             "tattoo that slowly shifts between different patterns",
             "chameleon-like design that changes colors subtly",
@@ -7145,8 +7322,8 @@
         "cost": 4365,
         "type": ["Weapon", "Melee", "Simple", "Slashing", "Light", "Nature", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by druid or ranger. This silver sickle functions as a +1 weapon and can be used as a spellcasting focus. When you cast a spell that restores hit points or deals radiant damage, add a d4 to one roll of that spell.",
-        "fullDescription": "",
+        "description": "Requires attunement by druid or ranger. This silver sickle functions as a +1 weapon and can be used as a spellcasting focus and gain +1 bonus to your spell attack rolls and saving throw DC. When you cast a spell that restores hit points or deals radiant damage, add a d4 to one roll of that spell.",
+        "fullDescription": "This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. The bonus is determined by the weapon's rarity. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.  When you cast a spell that restores hit points, you can roll a d4 and add the number rolled to the amount of hit points restored, provided you are holding the sickle.",
 		"descriptors": [
             "silver sickle with crescent moon carved into the handle",
             "blade showing lunar phases etched along the edge",
@@ -7161,8 +7338,8 @@
         "cost": 15020,
         "type": ["Weapon", "Melee", "Simple", "Slashing", "Light", "Nature", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by druid or ranger. This silver sickle functions as a +2 weapon and can be used as a spellcasting focus. When you cast a spell that restores hit points or deals radiant damage, add a d6 to one roll of that spell.",
-        "fullDescription": "",
+        "description": "Requires attunement by druid or ranger. This silver sickle functions as a +2 weapon and can be used as a spellcasting focus and gain +2 bonus to your spell attack rolls and saving throw DC. When you cast a spell that restores hit points or deals radiant damage, add a d4 to one roll of that spell",
+        "fullDescription": "This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. The bonus is determined by the weapon's rarity. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.  When you cast a spell that restores hit points, you can roll a d4 and add the number rolled to the amount of hit points restored, provided you are holding the sickle.",
 		"descriptors": [
             "masterwork silver sickle with full moon prominently displayed",
             "blade with lunar calendar etched in flowing script",
@@ -7177,8 +7354,8 @@
         "cost": 43230,
         "type": ["Weapon", "Melee", "Simple", "Slashing", "Light", "Nature", "Spellcasting Focus"],
         "rarity": "Very Rare",
-        "description": "Requires attunement by druid or ranger. This silver sickle functions as a +3 weapon and can be used as a spellcasting focus. When you cast a spell that restores hit points or deals radiant damage, add a d8 to one roll of that spell.",
-        "fullDescription": "",
+        "description": "Requires attunement by druid or ranger. This silver sickle functions as a +3 weapon and can be used as a spellcasting focus and gain +3 bonus to your spell attack rolls and saving throw DC. When you cast a spell that restores hit points or deals radiant damage, add a d4 to one roll of that spell",
+        "fullDescription": "This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. The bonus is determined by the weapon's rarity. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.  When you cast a spell that restores hit points, you can roll a d4 and add the number rolled to the amount of hit points restored, provided you are holding the sickle.",
 		"descriptors": [
             "legendary silver sickle glowing with moonlight at all times",
             "blade with complete lunar cycle etched in perfect detail",
@@ -7193,8 +7370,8 @@
         "cost": 1800,
         "type": ["Apparel", "Nature", "Spellcasting Focus"],
         "rarity": "Uncommon",
-        "description": "Requires attunement by druid or ranger. While wearing this cloak, you can use it as a spellcasting focus. You also have advantage on Charisma checks made to interact with beasts and plants.",
-        "fullDescription": "",
+        "description": "Requires attunement by druid or ranger. This cloak shifts color and texture to blend with the terrain surrounding you. While wearing the cloak, you can use it as a spellcasting focus for your druid and ranger spells.  While you are in an area that is lightly obscured, you can Hide as a bonus action even if you are being directly observed.",
+        "fullDescription": "This cloak shifts color and texture to blend with the terrain surrounding you. While wearing the cloak, you can use it as a spellcasting focus for your druid and ranger spells.  While you are in an area that is lightly obscured, you can Hide as a bonus action even if you are being directly observed.",
 		"descriptors": [
             "cloak woven from living moss and leaves",
             "mantle with flowers blooming across the fabric",
@@ -7209,7 +7386,7 @@
         "cost": 9020,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You can end one of the following conditions affecting yourself or one creature you can see within 30 feet of you: charmed, blinded, deafened, frightened, poisoned, or stunned.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, you can end one of the following conditions affecting yourself or one creature you can see within 30 feet of you: charmed, blinded, deafened, frightened, poisoned, or stunned.",
         "fullDescription": "",
 		"descriptors": [
             "crystalline shard with perfect geometric patterns inside",
@@ -7225,7 +7402,7 @@
         "cost": 3620,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. Choose one creature who takes damage from the spell. That target has disadvantage on attack rolls and ability checks made before the start of your next turn.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, choose one creature who takes damage from the spell. That target has disadvantage on attack rolls and ability checks made before the start of your next turn.",
         "fullDescription": "",
 		"descriptors": [
             "crystalline shard with swirling random patterns inside",
@@ -7241,7 +7418,7 @@
         "cost": 2420,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. You or one creature of your choice that you can see within 30 feet of you gains 3d6 temporary hit points.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, you or one creature of your choice that you can see within 30 feet of you gains 3d6 temporary hit points.",
         "fullDescription": "",
 		"descriptors": [
             "crystalline shard glowing with warm golden light",
@@ -7257,7 +7434,7 @@
         "cost": 734,
         "type": ["Jewelry", "Spellcasting Focus"],
         "rarity": "Rare",
-        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, roll on table for chance of additional effect. Choose one creature who takes damage from the spell. That target takes an extra 3d6 necrotic damage.",
+        "description": "Requires attunement by sorcerer. While holding this shard, you can use it as a spellcasting focus. When you use Metamagic on a spell, choose one creature who takes damage from the spell. That target takes an extra 3d6 necrotic damage.",
         "fullDescription": "",
 		"descriptors": [
             "crystalline shard with darkness seeping through cracks",
@@ -7273,8 +7450,8 @@
         "cost": 3800,
         "type": ["Book", "Arcane", "Travel"],
         "rarity": "Rare",
-        "description": "Requires attunement by wizard. This book is bound in celestial leather. Grants advantage on Arcana checks about conjuration. Can cast Gate. Contains 3d6 conjuration spells. When you cast a conjuration spell, you can extend its duration. Usable once per dawn.",
-        "fullDescription": "",
+        "description": "Requires attunement by wizard. This book is bound in celestial leather. Contains several spells related to the Planes and their creatures.  Has 3 charges and regains 1d3 charges daily at dawn.  Charges can be used to switch prepared spells or give your summons advantage on their attack rolls.",
+        "fullDescription": "The pages of this book are bound in fiend hide, and its cover is embossed with a diagram of the Great Wheel of the multiverse. When found, the book contains the following spells: Banishment, Find Familiar, Gate, Magic Circle, Planar Binding, and Summon Elemental. It functions as a spellbook for you.  While you are holding the book, you can use it as a spellcasting focus for your wizard spells.  The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the conjuration school.  When you cast a conjuration spell that summons or creates one creature, you can expend 1 charge to grant that creature advantage on attack rolls for 1 minute.",
 		"descriptors": [
             "tome bound in leather with otherworldly sheen",
             "book showing portal diagrams on every page",
@@ -7289,7 +7466,7 @@
         "cost": 330,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "This artificial limb replaces a lost limb. While attached and attuned to it, the prosthetic functions identically to the body part it is replacing. Can take many forms: a wooden peg leg, an iron hand, or similar.",
+        "description": "This item replaces a lost limb a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as an action, and it can't be removed against your will. It detaches if you die.",
         "fullDescription": "",
 		"descriptors": [
             "wooden limb with joints that move smoothly",
@@ -7306,7 +7483,7 @@
         "type": ["Misc", "Book"],
         "rarity": "Rare",
         "description": "Requires attunement by wizard. This leather-bound book contains protection spells. Grants advantage on Arcana checks about abjuration. Can cast Otiluke's Resilient Sphere. Contains 3d6 abjuration spells. When you cast an abjuration spell, you can grant yourself or another creature 2d10 temporary hit points. Usable once per dawn.",
-        "fullDescription": "",
+        "fullDescription": "This leather-bound spellbook is reinforced with iron and silver fittings and an iron lock (DC 20 to open). As an action, you can touch the book's cover and cause it to lock as if you cast Arcane Lock on it. When found, the book contains the following spells: Arcane Lock, Dispel Magic, Globe of Invulnerability, Glyph of Warding, Mordenkainen's Private Sanctum, Protection from Evil and Good, and Symbol. It functions as a spellbook for you.  While you are holding the book, you can use it as a spellcasting focus for your wizard spells.  The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:  If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the abjuration school.  When you cast an abjuration spell, you can expend 1 charge to grant a creature you can see within 30 feet of you 2d10 temporary hit points.",
 		"descriptors": [
             "book with protective runes covering every surface",
             "tome bound in reinforced leather with iron corners",
