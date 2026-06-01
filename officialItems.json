@@ -3402,7 +3402,7 @@
         "type": ["Potion", "Consumable"],
         "rarity": "Rare",
         "description": "This cloudy gray oil can coat one Medium creature or object. Applying takes 10 minutes. The coated target becomes ethereal for 1 hour, able to move through objects and creatures.",
-        "fullDescription": "",
+        "fullDescription": "The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour.",
 		"descriptors": [
             "bottle of translucent gray oil that seems to phase in and out of sight",
             "ethereal oil that feels cold and insubstantial, barely liquid",
@@ -3418,7 +3418,7 @@
         "type": ["Potion", "Consumable"],
         "rarity": "Very Rare",
         "description": "This clear, gelatinous oil can coat one weapon or 5 pieces of ammunition. Takes 1 minute to apply. For 1 hour, the coated item is magical and has +3 bonus to attack and damage rolls.",
-        "fullDescription": "",
+        "fullDescription": "The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls.",
 		"descriptors": [
             "bottle of viscous clear oil that smells sharply metallic, thick and clingy",
             "sharpening oil with tiny metal particles suspended within, gleaming",
@@ -3434,7 +3434,7 @@
         "type": ["Potion", "Consumable"],
         "rarity": "Uncommon",
         "description": "This sticky black oil can coat one creature or object. Takes 10 minutes to apply. For 8 hours, the coated target is difficult to grapple or restrain, and can squeeze through tight spaces easily.",
-        "fullDescription": "",
+        "fullDescription": "The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.",
 		"descriptors": [
             "flask of black oil that slides around inside the container, impossibly slick",
             "greasy substance that makes the bottle hard to hold, dark and viscous",
@@ -3450,7 +3450,7 @@
         "type": ["Jewelry", "Arcane"],
         "rarity": "Uncommon",
         "description": "While this pearl is on your person, you can use an action to regain one expended spell slot of up to 3rd level. Once used, can't be used again until next dawn.",
-        "fullDescription": "",
+        "fullDescription": "While this pearl is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you use the pearl, it can't be used again until the next dawn.",
 		"descriptors": [
             "lustrous white pearl that pulses with inner light, warm in the palm",
             "power pearl with rainbow iridescence, the surface perfectly smooth",
@@ -3466,7 +3466,7 @@
         "type": ["Jewelry", "Healing"],
         "rarity": "Uncommon",
         "description": "While wearing this pendant, you are immune to contracting any disease. If already diseased when you put it on, the disease is suppressed until you remove the periapt.",
-        "fullDescription": "",
+        "fullDescription": "You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed you while you wear the pendant.",
 		"descriptors": [
             "pendant of polished amber with preserved herbs inside, warm and clean-smelling",
             "health periapt carved from jade, the surface smooth and soothing",
@@ -3482,7 +3482,7 @@
         "type": ["Jewelry", "Healing"],
         "rarity": "Rare",
         "description": "While wearing this pendant, you are immune to the poisoned condition and have immunity to poison damage.",
-        "fullDescription": "",
+        "fullDescription": "This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage.",
 		"descriptors": [
             "pendant of green stone with a serpent eating its tail, cool to touch",
             "poison-proof amulet carved from emerald, the surface acid-etched",
@@ -3498,7 +3498,7 @@
         "type": ["Jewelry", "Healing"],
         "rarity": "Uncommon",
         "description": "While wearing this pendant, you stabilize automatically whenever you're dying at the start of your turn. In addition, you regain hit points from Hit Dice at double rate (minimum 1 HP).",
-        "fullDescription": "",
+        "fullDescription": "While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores.",
 		"descriptors": [
             "pendant with a red stone that pulses like a heartbeat, warm against skin",
             "healing periapt carved with sutured wound imagery, reassuring to wear",
@@ -3513,8 +3513,8 @@
         "cost": 328,
         "type": ["Potion", "Consumable"],
         "rarity": "Uncommon",
-        "description": "Drinking this potion causes the drinker to become charmed by the first creature they see within 10 minutes (save DC 15 to resist). The charm lasts 1 hour. The potion's pink hue is recognizable.",
-        "fullDescription": "",
+        "description": "Drinking this potion causes the drinker to become charmed by the first creature they see within 10 minutes (save DC 15 to resist). The charm lasts 1 hour.",
+        "fullDescription": "The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed.",
 		"descriptors": [
             "pink potion that smells of roses and honey, the color vibrant",
             "love philter with heart-shaped bubbles, sickeningly sweet aroma",
@@ -3530,7 +3530,7 @@
         "type": ["Misc", "Instrument"],
         "rarity": "Uncommon",
         "description": "These pipes have 3 charges. You can play them to create an eerie, spellbinding tune. Creatures within 30 feet must make DC 15 Wisdom save or be frightened for 1 minute. Regains charges daily.",
-        "fullDescription": "",
+        "fullDescription": "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn.",
 		"descriptors": [
             "bone pipes that produce an unsettling tone, the sound lingering unnaturally",
             "haunting flute carved with ghost imagery, cold to the lips",
@@ -3546,7 +3546,7 @@
         "type": ["Misc", "Summoning", "Instrument"],
         "rarity": "Uncommon",
         "description": "These pipes have 3 charges. You can play them to summon 1d3 swarms of rats. The rats are friendly and obey commands for 1 hour. Regains charges daily at dawn.",
-        "fullDescription": "",
+        "fullDescription": "You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them. The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the GM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn. Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.",
 		"descriptors": [
             "dirty pipes with rat motifs, smelling faintly of sewers",
             "vermin-caller flute carved with rodent designs, the wood stained",
@@ -3561,8 +3561,8 @@
         "cost": 5213,
         "type": ["Misc", "Travel"],
         "rarity": "Rare",
-        "description": "A 6-foot-diameter circular cloth that unfolds into a 10-foot-deep extradimensional hole. Can hold 500 cubic feet of nonliving matter. Folds back into cloth form. Dangerous if placed in a Bag of Holding.",
-        "fullDescription": "",
+        "description": "A 6-foot-diameter circular cloth that unfolds into a 10-foot-deep extradimensional hole. Folds back into cloth form. Dangerous if placed in a Bag of Holding.",
+        "fullDescription": "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.  You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be used to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it. You can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing. If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate. Placing a portable hole inside an extradimensional space created by a bag of holding, handy haversack, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.",
 		"descriptors": [
             "black cloth circle that feels strangely heavy, the edges perfectly round",
             "dimensional fabric with a void-like center, cold to the touch",
@@ -3641,8 +3641,8 @@
         "cost": 233,
         "type": ["Potion", "Consumable"],
         "rarity": "Uncommon",
-        "description": "After drinking this potion, you can exhale fire three times as an action. Orange fluid that flickers and gives off smoke.",
-        "fullDescription": "",
+        "description": "After drinking this potion, you can exhale fire three times as a bonus action for 4d6 fire damage on a DC 13 Dexterity saving throw. Orange fluid that flickers and gives off smoke.",
+        "fullDescription": "After drinking this potion, you can use a bonus action to exhale fire at a target within 30 feet of you. The target must make a DC 13 Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one. The effect ends after you exhale the fire three times or when 1 hour has passed.",
 		"descriptors": [
             "orange potion that flickers with internal flame, smoke rising from it",
             "fire-breath brew that's warm to hold, the liquid dancing like fire",
@@ -3929,7 +3929,7 @@
         "cost": 692,
         "type": ["Potion", "Consumable"],
         "rarity": "Rare",
-        "description": "When you drink this potion, you gain the effect of Detect Thoughts (save DC 13) for 10 minutes. Dense purple liquid with a white cloud swirling in it.",
+        "description": "When you drink this potion, you gain the effect of Detect Thoughts (save DC 13). Dense purple liquid with a white cloud swirling in it.",
         "fullDescription": "",
 		"descriptors": [
             "purple potion with white clouds swirling inside, hypnotic patterns",
@@ -3945,8 +3945,8 @@
         "cost": 1956,
         "type": ["Potion", "Consumable", "Stealth"],
         "rarity": "Uncommon",
-        "description": "This liquid looks and smells like a Potion of Healing. However, it is actually poison. Drinking it deals 3d6 poison damage and poisons you (save DC 13). Same appearance as healing potion.",
-        "fullDescription": "",
+        "description": "This liquid looks unnassuming and harmless. However, it is actually poison. Drinking it deals 3d6 poison damage and poisons you (save DC 13).",
+        "fullDescription": "If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way, you take 3d6 poison damage. At the end of each of your turns, you can repeat the saving throw. On a successful save, the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.",
 		"descriptors": [
             "red potion identical to healing potions, the deception perfect",
             "deceptive brew that looks like medicine, red and glimmering",
@@ -3993,8 +3993,8 @@
         "cost": 1690,
         "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Very Rare",
-        "description": "When you drink this potion, you are cured of any disease and the poisoned condition. You regain all HP and are energized for 24 hours (advantage on Constitution checks). Bright red liquid that glows with inner light.",
-        "fullDescription": "",
+        "description": "When you drink this potion, it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours, you regain the maximum number of hit points for any Hit Die you spend.",
+        "fullDescription": "When you drink this potion, it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours, you regain the maximum number of hit points for any Hit Die you spend.",
 		"descriptors": [
             "bright red potion glowing from within, the liquid radiant with health",
             "vitality brew of luminous red, the glow pulsing like a heartbeat",
@@ -4122,7 +4122,7 @@
         "type": ["Potion", "Consumable", "Healing"],
         "rarity": "Uncommon",
         "description": "This jar contains 5 doses of a thick mixture that smells faintly of aloe. One dose restores 2d8+2 hit points. Using all 5 doses at once casts Lesser Restoration on the target.",
-        "fullDescription": "",
+        "fullDescription": "As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.",
 		"descriptors": [
             "jar of thick salve that smells of aloe and healing herbs, pale green",
             "restorative ointment with a cooling scent, the consistency smooth",
@@ -4138,7 +4138,7 @@
         "type": ["Jewelry", "Nature"],
         "rarity": "Rare",
         "description": "This ring has 3 charges and regains 1d3 daily. You can expend charges to cast Animal Friendship (1), Fear targeting beasts (2), or Speak with Animals (1).",
-        "fullDescription": "",
+        "fullDescription": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells: Animal friendship (save DC 13) Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower Speak with animals",
 		"descriptors": [
             "bronze ring carved with animal tracks, the band showing various prints",
             "beast ring with paw prints etched around it, the metal warm",
@@ -4154,7 +4154,7 @@
         "type": ["Jewelry", "Summoning"],
         "rarity": "Legendary",
         "description": "While wearing this ring, you can speak its command word to summon a djinni. The djinni serves you for 1 hour. Can be used once per day. The djinni appears in an unoccupied space you choose within 120 feet.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this ring, you can speak its command word as an action to summon a particular djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of you. It remains as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour, or until it drops to 0 hit points. It then returns to its home plane. While summoned, the djinni is friendly to you and your companions. It obeys any commands you give it, no matter what language you use. If you fail to command it, the djinni defends itself against attackers but takes no other actions. After the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies.",
 		"descriptors": [
             "brass ring with wind patterns, the metal warm and vibrating slightly",
             "djinni ring with cloud engravings, the band feeling alive with air",
@@ -4169,8 +4169,8 @@
         "cost": 66350,
         "type": ["Jewelry", "Summoning"],
         "rarity": "Legendary",
-        "description": "This ring grants resistance to lightning damage, advantage on attacks against air elementals, access to air-themed spells, and the ability to speak Auran. Can summon an air elemental once per dawn.",
-        "fullDescription": "",
+        "description": "This ring grants advantage on attacks against air elementals, access to air-themed spells, and the ability to speak Auran.  If you help slay an air elemental while attuned to the ring, this ring gains additional abilities.",
+        "fullDescription": "While wearing this ring, you have advantage on attack rolls against air elementals, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the Elemental Plane of Air. The ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran. If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties: You have resistance to lightning damage. You have a flying speed equal to your walking speed and can hover. You can cast the following spells from the ring, expending the necessary number of charges: chain lightning (3 charges), gust of wind (2 charges), or wind wall (1 charge).",
 		"descriptors": [
             "platinum ring with sapphire, wind patterns swirling in the gem",
             "air command ring showing storm imagery, the metal light as air",
@@ -4185,8 +4185,8 @@
         "cost": 65217,
         "type": ["Jewelry", "Summoning"],
         "rarity": "Legendary",
-        "description": "This ring grants resistance to acid damage, advantage on attacks against earth elementals, access to earth-themed spells, and the ability to speak Terran. Can summon an earth elemental once per dawn.",
-        "fullDescription": "",
+        "description": "This ring grants resistance to acid damage, advantage on attacks against earth elementals, access to earth-themed spells, and the ability to speak Terran.  If you help slay an earth elemental while attuned to the ring, you gain access to additional properties",
+        "fullDescription": "While wearing this ring, you have advantage on attack rolls against earth elementals, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the Elemental Plane of Earth. The ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran. If you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties: You have resistance to acid damage. You can move through solid earth or rock as if those areas were difficult terrain. If you end your turn there, you are shunted out to the nearest unoccupied space you last occupied. You can cast the following spells from the ring, expending the necessary number of charges: stone shape (2 charges), stoneskin (3 charges), or wall of stone (3 charges).",
 		"descriptors": [
             "iron ring set with brown diamond, the gem showing stone layers",
             "earth command ring heavy with mineral imagery, the metal dense",
@@ -4201,8 +4201,8 @@
         "cost": 70967,
         "type": ["Jewelry", "Summoning"],
         "rarity": "Legendary",
-        "description": "This ring grants resistance to fire damage, advantage on attacks against fire elementals, access to fire-themed spells, and the ability to speak Ignan. Can summon a fire elemental once per dawn.",
-        "fullDescription": "",
+        "description": "This ring grants resistance to fire damage, advantage on attacks against fire elementals, access to fire-themed spells, and the ability to speak Ignan. If you help slay a fire elemental while attuned to the ring, you gain access to additional properties.",
+        "fullDescription": "While wearing this ring, you have advantage on attack rolls against fire elementals, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the Elemental Plane of Fire. The ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan. If you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties: You are immune to fire damage. You can cast the following spells from the ring, expending the necessary number of charges: burning hands (1 charge), fireball (2 charges), and wall of fire (3 charges).",
 		"descriptors": [
             "gold ring with ruby, flames seeming to dance within the gem",
             "fire command ring warm to touch, the ruby glowing internally",
@@ -4217,8 +4217,8 @@
         "cost": 64317,
         "type": ["Jewelry", "Summoning"],
         "rarity": "Legendary",
-        "description": "This ring grants resistance to cold damage, advantage on attacks against water elementals, access to water-themed spells, and the ability to speak Aquan. Can summon a water elemental once per dawn.",
-        "fullDescription": "",
+        "description": "This ring grants resistance to cold damage, advantage on attacks against water elementals, access to water-themed spells, and the ability to speak Aquan.  If you help slay a water elemental while attuned to the ring, you gain access to additional properties.",
+        "fullDescription": "While wearing this ring, you have advantage on attack rolls against water elementals, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the Elemental Plane of Water. The ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan. If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties: You can breathe underwater and have a swimming speed equal to your walking speed. You can cast the following spells from the ring, expending the necessary number of charges: create or destroy water (1 charge), control water (3 charges), ice storm (2 charges), or wall of ice (3 charges).",
 		"descriptors": [
             "silver ring with aquamarine, waves rippling within the gem",
             "water command ring always cool, the gem showing flowing liquid",
@@ -4234,7 +4234,7 @@
         "type": ["Jewelry", "Stealth"],
         "rarity": "Rare",
         "description": "This ring has 3 charges. When you fail a Dexterity save, you can use your reaction to expend 1 charge and succeed instead. Regains 1d3 charges daily at dawn.",
-        "fullDescription": "",
+        "fullDescription": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead.",
 		"descriptors": [
             "thin ring engraved with dodging figures, the metal sleek",
             "evasion ring showing acrobatic poses, the band lightweight",
@@ -4314,7 +4314,7 @@
         "type": ["Jewelry"],
         "rarity": "Uncommon",
         "description": "While wearing this ring, you are immune to magic that reads thoughts, determines truth/lies, knows alignment, or determines creature type. Creatures can communicate telepathically with you only if you allow it. When you die while wearing it, your soul enters the ring.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it. You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die. If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication.",
 		"descriptors": [
             "ring carved with closed eyes and sealed lips, the metal cool",
             "mind-shielding band showing barrier imagery, protective symbols",
@@ -4354,22 +4354,6 @@
             "life ring carved with growth imagery, the band thrumming",
             "restoration ring with cellular patterns, the metal pulsing softly",
             "regenerating band showing renewal symbols, the ring alive with energy"
-        ]
-    },
-    {
-        "name": "Ring of Resistance",
-        "cost": 5167,
-        "type": ["Jewelry"],
-        "rarity": "Rare",
-        "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type (emerald for poison, ruby for fire, sapphire for cold, etc.).",
-        "fullDescription": "",
-		"descriptors": [
-            "ring with gemstone indicating damage type - ruby for fire, sapphire for cold, etc.",
-            "resistance band with color-coded gem, the stone specific to protection",
-            "elemental ring with diagnostic gemstone, each color different",
-            "protection ring with identifying gem, the stone revealing its nature",
-            "resistant band with gem matching damage type, the color indicative",
-            "ring bearing a gem that shows its protective element through color"
         ]
     },
 	    {
@@ -4521,8 +4505,8 @@
         "cost": 12822,
         "type": ["Jewelry"],
         "rarity": "Very Rare",
-        "description": "This ring has 6 charges and various star-themed abilities: Dancing Lights, Light (2 charges), Ball Lightning (4 charges), and Shooting Stars (1 charge each). Regains 1d6 charges daily at dawn. Usable only outdoors at night.",
-        "fullDescription": "",
+        "description": "This ring has 6 charges and various star-themed abilities: Dancing Lights(0 charges) Faerie Fire (1 charge), Ball Lightning (2-6 charges), and Shooting Stars (1 charge each). Regains 1d6 charges daily at dawn.",
+        "fullDescription": "While wearing this ring in dim light or darkness, you can cast dancing lights and light from the ring at will. Casting either spell from the ring requires an action. The ring has 6 charges for the following other properties. The ring regains 1d6 expended charges daily at dawn. Faerie Fire. You can expend 1 charge as an action to cast faerie fire from the ring. Ball Lightning. You can expend 2 charges as an action to create one to four 3-foot-diameter spheres of lightning. The more spheres you create, the less powerful each sphere is individually. Each sphere appears in an unoccupied space you can see within 120 feet of you. The spheres last as long as you concentrate (as if concentrating on a spell), up to 1 minute. Each sphere sheds dim light in a 30-foot radius. As a bonus action, you can move each sphere up to 30 feet, but no farther than 120 feet away from you. When a creature other than you comes within 5 feet of a sphere, the sphere discharges lightning at that creature and disappears. That creature must make a DC 15 Dexterity saving throw. On a failed save, the creature takes lightning damage based on the number of spheres you created. Shooting Stars. You can expend 1 to 3 charges as an action. For every charge you expend, you launch a glowing mote of light from the ring at a point you can see within 60 feet of you. Each creature within a 15-foot cube originating from that point is showered in sparks and must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one.",
 		"descriptors": [
             "night-dark ring set with tiny diamonds like stars, the gems twinkling",
             "celestial ring showing constellation patterns, the metal dark blue",
@@ -4554,7 +4538,7 @@
         "type": ["Jewelry", "Arcane"],
         "rarity": "Legendary",
         "description": "While wearing this ring, you have advantage on saves against spells that target only you. If you roll a natural 20 on the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.",
 		"descriptors": [
             "mirrored ring that reflects light strangely, the surface perfect",
             "spell-turning band with mirror finish, the metal reflective",
@@ -4601,8 +4585,8 @@
         "cost": 3236,
         "type": ["Jewelry"],
         "rarity": "Rare",
-        "description": "This ring has 3 charges. You can expend charges to make a ranged force attack (50/200 feet) dealing damage and potentially pushing targets. Regains 1d3 charges daily at dawn.",
-        "fullDescription": "",
+        "description": "This ring has 3 charges. You can expend charges to make a ranged force attack dealing damage and potentially pushing targets. Regains 1d3 charges daily at dawn.",
+        "fullDescription": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to attack one creature you can see within 60 feet of you. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 force damage and is pushed 5 feet away from you. Alternatively, you can expend 1 to 3 of the ring's charges as an action to try to break an object you can see within 60 feet of you that isn't being worn or carried. The ring makes a Strength check with a +5 bonus for each charge you spend.",
 		"descriptors": [
             "ring carved with a ram's head, the horns prominent in relief",
             "battering ring showing charging ram, the metal aggressive",
@@ -4666,7 +4650,7 @@
         "type": ["Jewelry"],
         "rarity": "Rare",
         "description": "This ring has 3 charges. While wearing it, you can use an action to speak its command word and expend 1 charge. For 1 minute, you can see into and through solid matter up to 30 feet. Regains 1d3 charges daily.",
-        "fullDescription": "",
+        "fullDescription": "While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead. Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.",
 		"descriptors": [
             "ring with transparent crystal, the gem seeming to see through things",
             "x-ray band with clear stone, the gem revealing hidden depths",
@@ -4681,8 +4665,8 @@
         "cost": 17133,
         "type": ["Apparel"],
         "rarity": "Rare",
-        "description": "This robe is adorned with hundreds of eyeball patterns. While wearing it, you gain numerous vision benefits including advantage on sight Perception, darkvision 120 feet, and seeing invisible creatures. Vulnerable to certain spells.",
-        "fullDescription": "",
+        "description": "This robe is adorned with hundreds of eyeball patterns. While wearing it, you gain numerous vision benefits including advantage on sight Perception, darkvision 120 feet, and seeing invisible creatures. Vulnerable to Light spells.",
+        "fullDescription": "While you wear the robe, you gain the following benefits: The robe lets you see in all directions, and you have advantage on Wisdom (Perception) checks that rely on sight. You have darkvision out to a range of 120 feet. You can see invisible creatures and objects, as well as see into the Ethereal Plane, out to a range of 120 feet.  The eyes on the robe can't be closed or averted. Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe. A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success.",
 		"descriptors": [
             "robe covered in embroidered eyes, each one seeming to blink",
             "eye-patterned garment with hundreds of watching orbs, unnerving",
@@ -4697,8 +4681,8 @@
         "cost": 12650,
         "type": ["Apparel"],
         "rarity": "Very Rare",
-        "description": "This robe has 3 charges. You can use an action to expend 1 charge to cause the robe to display a shifting pattern of dazzling hues, affecting creatures within 15 feet. Regains 1d3 charges at dawn.",
-        "fullDescription": "",
+        "description": "This robe has 3 charges. You can use an action to expend 1 charge to cause the robe to display a shifting pattern of dazzling hues, affecting creatures within 30 feet. Regains 1d3 charges at dawn.",
+        "fullDescription": "This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends.",
 		"descriptors": [
             "robe that shifts through rainbow colors constantly, never the same hue twice",
             "dazzling garment with colors flowing across the fabric, hypnotic",
@@ -4713,8 +4697,8 @@
         "cost": 39950,
         "type": ["Apparel"],
         "rarity": "Very Rare",
-        "description": "This black or dark blue robe is embroidered with stars. Grants +1 to saves, 6 star-shaped patches that can be used as Magic Missiles, and ability to enter Astral Plane. Patches regrow monthly.",
-        "fullDescription": "",
+        "description": "This black or dark blue robe is embroidered with stars. Grants +1 to saves, 6 star-shaped patches that can be used as Magic Missiles (5th level), and ability to enter the Astral Plane. Daily at dusk, 1d6 removed stars reappear on the robe.",
+        "fullDescription": "You gain a +1 bonus to saving throws while you wear it. Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell. Daily at dusk, 1d6 removed stars reappear on the robe. While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.",
 		"descriptors": [
             "midnight blue robe with silver star embroidery, the stars twinkling",
             "star-covered garment of deep black, constellations mapped across it",
@@ -4729,8 +4713,8 @@
         "cost": 50833,
         "type": ["Apparel", "Arcane"],
         "rarity": "Legendary",
-        "description": "This robe grants AC 15 + Dex mod, advantage on saves against spells, and +2 to spell save DC and attack rolls. Color indicates alignment requirement (white/good, gray/neutral, black/evil).",
-        "fullDescription": "",
+        "description": "This robe grants AC 15 + Dex mod, advantage on saves against spells, and +2 to spell save DC and attack rolls.",
+        "fullDescription": "You gain these benefits while wearing the robe: If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier. You have advantage on saving throws against spells and other magical effects. Your spell save DC and spell attack bonus each increase by 2.",
 		"descriptors": [
             "flowing robe in white, gray, or black, covered in arcane symbols",
             "archmage's garment with runic patterns, the fabric shimmering with power",
@@ -4746,7 +4730,7 @@
         "type": ["Apparel"],
         "rarity": "Uncommon",
         "description": "This robe has cloth patches of various shapes and colors. Detaching a patch causes it to become the real object depicted. Contains 2d4 common patches plus rarer ones randomly.",
-        "fullDescription": "",
+        "fullDescription": "While wearing the robe, you can use an action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment. The robe has two of each of the following patches: Dagger, Bullseye lantern (filled and lit), Steel mirror, 10-foot pole, Hempen rope (50 feet, coiled), Sack. In addition, the robe has 4d4 other patches. The GM chooses the patches or determines them randomly. ",
 		"descriptors": [
             "robe covered in colorful patches, each showing a different item",
             "patchwork garment with various designs, the patches removable",
@@ -4762,7 +4746,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
         "description": "This rod can absorb spells cast at you, storing up to 50 spell levels. You can then cast stored spells. While holding it, you have advantage on saves against spells.",
-        "fullDescription": "",
+        "fullDescription": "While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy -- not the spell itself -- is stored in the rod. The energy has the same level as the spell when it was cast. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell. When you become attuned to the rod, you know how many levels of energy the rod has absorbed over the course of its existence, and how many levels of spell energy it currently has stored. If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own spell slots, up to a maximum of 5th level. You use the stored levels in place of your slots, but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a 3rd-level spell slot. A newly found rod has 1d10 levels of spell energy stored in it already. A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical.",
 		"descriptors": [
             "black metal rod with crystal tip, the crystal cloudy with absorbed magic",
             "absorption rod that grows heavier with stored spells, dark and dense",
@@ -4777,8 +4761,8 @@
         "cost": 15600,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
-        "description": "This rod has multiple abilities including advantage on initiative and Perception, casting light spells, creating protective barriers, and detecting evil. Functions as +1 mace in combat.",
-        "fullDescription": "",
+        "description": "This rod has multiple abilities including advantage on initiative and Perception, casting light spells, creating protective barriers, and detecting evil.",
+        "fullDescription": "Alertness. While holding the rod, you have advantage on Wisdom (Perception) checks and on rolls for initiative. Spells. While holding the rod, you can use an action to cast one of the following spells from it: detect evil and good, detect magic, detect poison and disease, or see invisibility. Protective Aura. As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you gain a +1 bonus to AC and saving throws and can sense the location of any invisible hostile creature that is also in the bright light. The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn.",
 		"descriptors": [
             "flanged rod that vibrates when danger is near, always alert",
             "watchful rod with multiple facets, each side a different design",
@@ -4793,8 +4777,8 @@
         "cost": 43214,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Legendary",
-        "description": "This rod functions as +3 mace that can transform into various weapons (flaming sword, battleaxe, spear) and has additional magical abilities. Can climb like immovable rod, attack as longsword, and more.",
-        "fullDescription": "",
+        "description": "This rod functions as +3 mace that can transform into various weapons (flaming sword, battleaxe, spear) and has additional magical abilities. Can climb like immovable rod, attack as longsword, drain life, Paralyze, and Terrify.",
+        "fullDescription": "This rod has a flanged head, and it functions as a magic mace that grants a +3 bonus to attack and damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft. It has three other properties as well, detailed below. Six Buttons. You can press one of the rod's six buttons as a bonus action. A button's effect lasts until you push a different button or until you push the same button again, which causes the rod to revert to its normal form. If you press button 1, the rod becomes a flame tongue, as a fiery blade sprouts from the end opposite the rod's flanged head (you choose the type of sword). If you press button 2, the rod's flanged head folds down and two crescent-shaped blades spring out, transforming the rod into a magic battleaxe that grants a +3 bonus to attack and damage rolls made with it. If you press button 3, the rod's flanged head folds down, a spear point springs from the rod's tip, and the rod's handle lengthens into a 6-foot haft, transforming the rod into a magic spear that grants a +3 bonus to attack and damage rolls made with it. If you press button 4, the rod transforms into a climbing pole up to 50 feet long, as you specify. In surfaces as hard as granite, a spike at the bottom and three hooks at the top anchor the pole. Horizontal bars 3 inches long fold out from the sides, 1 foot apart, forming a ladder. The pole can bear up to 4,000 pounds. More weight or lack of solid anchoring causes the rod to revert to its normal form. If you press button 5, the rod transforms into a handheld battering ram and grants its user a +10 bonus to Strength checks made to break through doors, barricades, and other barriers. If you press button 6, the rod assumes or remains in its normal form and indicates magnetic north. (Nothing happens if this function of the rod is used in a location that has no magnetic north.) The rod also gives you knowledge of your approximate depth beneath the ground or your height above it. Drain Life. When you hit a creature with a melee attack using the rod, you can force the target to make a DC 17 Constitution saving throw. On a failure, the target takes an extra 4d6 necrotic damage, and you regain a number of hit points equal to half that necrotic damage. This property can't be used again until the next dawn. Paralyze. When you hit a creature with a melee attack using the rod, you can force the target to make a DC 17 Strength saving throw. On a failure, the target is paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. This property can't be used again until the next dawn. Terrify. While holding the rod, you can use an action to force each creature you can see within 30 feet of you to make a DC 17 Wisdom saving throw. On a failure, a target is frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This property can't be used again until the next dawn.",
 		"descriptors": [
             "ornate rod with multiple sections, each part a different weapon waiting",
             "transforming rod covered in mechanism seams, complex and powerful",
@@ -4825,8 +4809,8 @@
         "cost": 52425,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
-        "description": "This rod transports you and up to 199 others to a paradise demiplane for 200 days. Time passes differently - 200 days inside equals 1 hour outside. Usable once per week. The rod can't be used again until 10 days pass.",
-        "fullDescription": "",
+        "description": "This rod transports you and up to 199 others to a paradise demiplane for up to 200 days depending on the number of people inside the plane. The rod can't be used again until 10 days pass.",
+        "fullDescription": "While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space. For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down). When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed.",
 		"descriptors": [
             "ivory rod carved with paradise scenes, the images peaceful and inviting",
             "security rod showing safe havens, the carvings detailed and comforting",
@@ -4841,8 +4825,8 @@
         "cost": 948,
         "type": ["Misc", "Travel"],
         "rarity": "Uncommon",
-        "description": "This 60-foot length of silk rope can be commanded to move, knot itself, attach to surfaces, and detach. It has AC 20, 20 HP, and can support 3,000 pounds.",
-        "fullDescription": "",
+        "description": "This 50-foot length of silk rope can be commanded to move, knot itself, attach to surfaces, and detach. It has AC 20, 20 HP, and regains 1 hit point every 5 minutes.",
+        "fullDescription": "If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying. If you tell the rope to knot, large knots appear at 1- foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it. The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.",
 		"descriptors": [
             "silk rope that feels alive, the strands moving slightly when touched",
             "animated rope of fine silk, the texture smooth and strong",
@@ -4857,8 +4841,8 @@
         "cost": 1733,
         "type": ["Misc"],
         "rarity": "Rare",
-        "description": "This 30-foot rope can be commanded to entangle a creature you can see within 20 feet. Target makes DC 15 Dexterity save or becomes restrained. Can escape with DC 15 check. Usable once per day.",
-        "fullDescription": "",
+        "description": "This 30-foot rope can be commanded to entangle a creature you can see within 20 feet. Target makes DC 15 Dexterity save or becomes restrained. Can escape with DC 15 check.",
+        "fullDescription": "If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained. You can release the creature by using a bonus action to speak a second command word. A target restrained by the rope can use an action to make a DC 15 Strength or Dexterity check (target’s choice). On a success, the creature is no longer restrained by the rope. The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.",
 		"descriptors": [
             "thick rope that writhes like a snake, the strands aggressive",
             "living rope of dark hemp, the fibers moving independently",
@@ -4874,7 +4858,7 @@
         "type": ["Jewelry"],
         "rarity": "Legendary",
         "description": "This beetle-shaped amulet has 12 charges. If you fail a save against a necromancy spell or harmful effect from undead, you can expend 1 charge to succeed instead. Crumbles to dust when last charge is used.",
-        "fullDescription": "",
+        "fullDescription": "If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person: You have advantage on saving throws against spells. The scarab has 12 charges. If you fail a saving throw against a necromancy spell or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended.",
 		"descriptors": [
             "golden scarab with twelve gemstone segments, each one a charge",
             "beetle amulet of polished gold, the carapace showing segments",
@@ -4906,7 +4890,7 @@
         "type": ["Misc"],
         "rarity": "Uncommon",
         "description": "Sending Stones come in pairs and allow bearers to communicate over any distance once per day. Each bearer can cast Sending to the other stone.",
-        "fullDescription": "",
+        "fullDescription": "Sending Stones come in pairs, with each smooth stone carved to match the other so the pairing is easily recognized. While you touch one stone, you can use an action to cast the sending spell from it. The target is the bearer of the other stone. If no creature bears the other stone, you know that fact as soon as you use the stone and don't cast the spell.  Once sending is cast through the stones, they can't be used again until the next dawn. If one of the stones in a pair is destroyed, the other one becomes nonmagical.",
 		"descriptors": [
             "pair of smooth stones that warm when held, matching in size and shape",
             "twin stones of polished granite, each one warm to the touch",
@@ -4921,7 +4905,7 @@
         "cost": 7427,
         "type": ["Armor", "Shield"],
         "rarity": "Uncommon",
-        "description": "While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.",
+        "description": "While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks.",
         "fullDescription": "",
 		"descriptors": [
             "shield with a large eye painted on the front, the pupil seeming to follow movement",
@@ -4985,8 +4969,8 @@
         "cost": 3533,
         "type": ["Armor", "Shield", "Bow"],
         "rarity": "Rare",
-        "description": "While holding this cursed shield, you have resistance to ranged weapon damage. However, ranged weapon attacks against other targets within 10 feet are redirected to target you. Requires Remove Curse to unattune.",
-        "fullDescription": "",
+        "description": "While holding this shield, you have resistance to ranged weapon damage. However, ranged weapon attacks against other targets within 10 feet are redirected to target you. Requires Remove Curse to unattune.",
+        "fullDescription": "While holding this shield, you have resistance to damage from ranged weapon attacks. Curse. This shield is cursed. Attuning to it curses you until you are targeted by the remove curse spell or similar magic. Removing the shield fails to end the curse on you. Whenever a ranged weapon attack is made against a target within 10 feet of you, the curse causes you to become the target instead.",
 		"descriptors": [
             "shield with magnetic pull visible around it, projectiles curving toward it",
             "attracting shield that draws arrows, the surface pockmarked from impacts",
@@ -5002,7 +4986,7 @@
         "type": ["Apparel", "Travel"],
         "rarity": "Uncommon",
         "description": "While wearing these slippers, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed.",
-        "fullDescription": "",
+        "fullDescription": "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.",
 		"descriptors": [
             "soft slippers with sticky undersides, the soles covered in tiny hair-like fibers",
             "spider-silk shoes that cling to any surface, the material impossibly adhesive",
@@ -5017,8 +5001,8 @@
         "cost": 5650,
         "type": ["Misc"],
         "rarity": "Legendary",
-        "description": "This viscous, milky-white substance can permanently glue together any two objects. It takes 1 minute to set. Only Universal Solvent can dissolve it. One ounce covers a 1-foot square surface.",
-        "fullDescription": "",
+        "description": "This viscous, milky-white substance can permanently glue together any two objects. It takes 1 minute to set. Only Universal Solvent can dissolve it. One ounce covers a 1-foot square surface, a container contains 1d6 + 1 ounces.",
+        "fullDescription": "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces. One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent or oil of etherealness, or with a wish spell.",
 		"descriptors": [
             "milky white fluid impossibly sticky, the consistency thick as paste",
             "permanent adhesive that bonds to anything touched, the color opaque white",
@@ -5045,28 +5029,12 @@
         ]
     },
     {
-        "name": "Sphere of Annihilation",
-        "cost": 26750,
-        "type": ["Misc"],
-        "rarity": "Legendary",
-        "description": "A 2-foot-diameter black sphere that obliterates all matter it touches. Floats in place unless controlled. Utterly destroys anything - creatures, objects, magic. Extremely dangerous.",
-        "fullDescription": "",
-		"descriptors": [
-            "perfect black sphere that absorbs all light, the darkness absolute",
-            "void sphere two feet across, the blackness deeper than any shadow",
-            "annihilation orb of pure darkness, nothing reflected in its surface",
-            "black sphere that seems to pull at reality itself, terrifyingly dark",
-            "perfect sphere of utter blackness, the darkness complete and final",
-            "void orb floating impossibly, the black consuming all light near it"
-        ]
-    },
-    {
         "name": "Staff of Charming",
         "cost": 6243,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
         "description": "This staff has 10 charges and regains 1d8+2 daily. While holding it, you can expend charges to cast Charm Person (1), Command (1), or Comprehend Languages (1).",
-        "fullDescription": "",
+        "fullDescription": "While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell. The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical quarterstaff.",
 		"descriptors": [
             "wooden staff carved with hearts and smiling faces, warm and friendly-looking",
             "charming staff decorated with pleasant imagery, the wood inviting to touch",
@@ -5081,8 +5049,8 @@
         "cost": 16073,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
-        "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you have resistance to fire damage. Can cast various fire spells by expending charges. If last charge used, roll d20 - on 1, staff burns to ash.",
-        "fullDescription": "",
+        "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you have resistance to fire damage. Can cast various fire spells by expending charges: burning hands (1 charge), fireball (3 charges), or wall of fire (4 charges). If last charge used, roll d20 - on 1, staff burns to ash.",
+        "fullDescription": "You have resistance to fire damage while you hold this staff. The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: burning hands (1 charge), fireball (3 charges), or wall of fire (4 charges). The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff blackens, crumbles into cinders, and is destroyed.",
 		"descriptors": [
             "staff topped with eternally burning flame, the wood charred but intact",
             "fire staff wrapped in red-hot metal bands, warm to hold",
@@ -5097,8 +5065,8 @@
         "cost": 21647,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
-        "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you have resistance to cold damage. Can cast various cold spells by expending charges. If last charge used, roll d20 - on 1, staff shatters into ice.",
-        "fullDescription": "",
+        "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you have resistance to cold damage. Can cast various cold spells by expending charges: cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges). If last charge used, roll d20 - on 1, staff shatters into ice.",
+        "fullDescription": "You have resistance to cold damage while you hold this staff. The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges). The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns to water and is destroyed.",
 		"descriptors": [
             "staff covered in perpetual frost, the wood frozen solid yet unbroken",
             "ice staff with icicles hanging from it, cold enough to burn skin",
@@ -5114,7 +5082,7 @@
         "type": ["Wand/Staff/Rod", "Divine", "Healing"],
         "rarity": "Rare",
         "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you can expend charges to cast Cure Wounds (1 per spell level), Lesser Restoration (2), or Mass Cure Wounds (5).",
-        "fullDescription": "",
+        "fullDescription": "This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: cure wounds (1 charge per spell level, up to 4th), lesser restoration (2 charges), or mass cure wounds (5 charges). The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever.",
 		"descriptors": [
             "staff carved from living wood, green leaves still sprouting from it",
             "healing staff with medical symbols, the wood warm and soothing",
@@ -5130,7 +5098,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
         "description": "This +2 quarterstaff has 20 charges. Grants +2 to spell attacks and save DC. Can cast numerous spells. Functions as +2 weapon. If last charge used with retributive strike, creates massive explosion.",
-        "fullDescription": "",
+        "fullDescription": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.  The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff retains its +2 bonus to attack and damage rolls but loses all other properties. On a 20, the staff regains 1d8 + 2 charges. Power Strike. When you hit with a melee attack using the staff, you can expend 1 charge to deal an extra 1d6 force damage to the target. Spells. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: cone of cold (5 charges), fireball (5th-level version, 5 charges), globe of invulnerability (6 charges), hold monster (5 charges), levitate (2 charges), lightning bolt (5th-level version, 5 charges), magic missile (1 charge), ray of enfeeblement (1 charge), or wall of force (5 charges). Retributive Strike. You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 × the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage. ",
 		"descriptors": [
             "staff crackling with raw magical power, the wood humming constantly",
             "power staff wrapped in arcane energy, the surface glowing with runes",
@@ -5146,7 +5114,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
         "description": "This staff can be wielded as a +3 quarterstaff. It has 10 charges. When you hit with a melee attack using it, you can expend up to 3 charges to deal extra 1d6 force damage per charge. Regains 1d6+4 charges daily.",
-        "fullDescription": "",
+        "fullDescription": "This staff can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it. The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 force damage. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical quarterstaff.",
 		"descriptors": [
             "combat staff reinforced with metal bands, the wood dense and heavy",
             "striking staff with impact marks, the surface scarred from battle",
@@ -5162,7 +5130,7 @@
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Rare",
         "description": "This staff has 10 charges and regains 1d6+4 daily. While holding it, you can expend charges to cast Giant Insect (4) or Insect Plague (5). If last charge used, 1d10 spiders crawl out and staff becomes nonmagical.",
-        "fullDescription": "",
+        "fullDescription": "This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses. Spells. While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC: giant insect (4 charges) or insect plague (5 charges). Insect Cloud. While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect.",
 		"descriptors": [
             "staff crawling with preserved insects, the wood showing beetle shells",
             "insect staff with chitin decorations, bugs visible in the grain",
@@ -5178,7 +5146,7 @@
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Uncommon",
         "description": "You can use a bonus action to animate the head of this staff into a snake head for 1 minute or revert it. As a snake, it can be used to make melee attacks. Has 10 charges for poison attacks, regaining 1d6+4 daily.",
-        "fullDescription": "",
+        "fullDescription": "You can use a bonus action to speak the staff's command word and make the head of the staff become that of an animate poisonous snake for 1 minute. By using another bonus action to speak the command word again, you return the staff to its normal inanimate form. You can make a melee attack using the snake head, which has a reach of 5 feet. Your proficiency bonus applies to the attack roll. On a hit, the target takes 1d6 piercing damage and must succeed on a DC 15 Constitution saving throw or take 3d6 poison damage. The snake head can be attacked while it is animate. It has an Armor Class of 15 and 20 hit points. If the head drops to 0 hit points, the staff is destroyed. As long as it's not destroyed, the staff regains all lost hit points when it reverts to its animate form.",
 		"descriptors": [
             "staff with a carved snake head, the eyes seeming to follow movement",
             "serpent staff with scaled texture, the head remarkably lifelike",
@@ -5194,7 +5162,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Legendary",
         "description": "This +2 quarterstaff grants +2 to spell attacks and saves while holding it. Has 50 charges for numerous powerful spells. Advantage on saves against spells. Absorbs spells. Devastating retributive strike.",
-        "fullDescription": "",
+        "fullDescription": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls. The staff has 50 charges for the following properties. It regains 4d6 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 20, the staff regains 1d12 + 1 charges. Spell Absorption. While holding the staff, you have advantage on saving throws against spells. In addition, you can use your reaction when another creature casts a spell that targets only you. If you do, the staff absorbs the magic of the spell, canceling its effect and gaining a number of charges equal to the absorbed spell's level. However, if doing so brings the staff's total number of charges above 50, the staff explodes as if you activated its retributive strike (see below). Spells. While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: conjure elemental (7 charges), dispel magic (3 charges), fireball (7th-level version, 7 charges), flaming sphere (2 charges), ice storm (4 charges), invisibility (2 charges), knock (2 charges), lightning bolt (7th-level version, 7 charges), passwall (5 charges), plane shift (7 charges), telekinesis (5 charges), wall of fire (4 charges), or web (2 charges). You can also use an action to cast one of the following spells from the staff without using any charges: arcane lock, detect magic, enlarge/reduce, light, mage hand, or protection from evil and good. Retributive Strike. You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 × the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage. ",
 		"descriptors": [
             "legendary staff blazing with supreme power, reality warping around it",
             "archmage staff covered in living runes, the magic overwhelming",
@@ -5209,8 +5177,8 @@
         "cost": 1650,
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Uncommon",
-        "description": "You can use an action to transform this staff into a giant constrictor snake. It obeys your commands and reverts if reduced to 0 HP. Can transform back as a bonus action. Usable once per day.",
-        "fullDescription": "",
+        "description": "You can use an action to transform this staff into a giant constrictor snake. It obeys your commands and reverts and is destroyed if reduced to 0 HP. Can transform back as a bonus action.",
+        "fullDescription": "You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake. On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location. If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.",
 		"descriptors": [
             "staff carved to look like coiled python, the scales detailed and realistic",
             "snake staff with python patterns, the wood textured like reptile skin",
@@ -5225,8 +5193,8 @@
         "cost": 21500,
         "type": ["Wand/Staff/Rod", "Arcane", "Nature"],
         "rarity": "Rare",
-        "description": "This staff can be wielded as a +2 quarterstaff. It has 10 charges for casting druid spells. As an action, plant it in the ground to grow into a tree. Regains 1d6+4 charges daily.",
-        "fullDescription": "",
+        "description": "This staff can be wielded as a +2 quarterstaff. It has 10 charges for casting druid spells: animal friendship (1 charge), awaken (5 charges), barkskin (2 charges), locate animals or plants (2 charges), speak with animals (1 charge), speak with plants (3 charges), or wall of thorns (6 charges). As an action, plant it in the ground to grow into a tree. Regains 1d6+4 charges daily.",
+        "fullDescription": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls. The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff. Spells. You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: animal friendship (1 charge), awaken (5 charges), barkskin (2 charges), locate animals or plants (2 charges), speak with animals (1 charge), speak with plants (3 charges), or wall of thorns (6 charges). You can also use an action to cast the pass without trace spell from the staff without using any charges. Tree Form. You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.",
 		"descriptors": [
             "living staff growing leaves and moss, the wood alive and green",
             "forest staff wrapped in living bark, small plants sprouting from it",
@@ -5242,7 +5210,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Very Rare",
         "description": "This +2 quarterstaff has 5 properties: Lightning (1d6 damage), Thunder (DC 17 save or stunned), Lightning Strike (5d6 damage), Thunderclap (DC 17 save or deafened), Thunder and Lightning. Functions as +2 weapon.",
-        "fullDescription": "",
+        "fullDescription": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn. Lightning. When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage. Thunder. When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder, audible out to 300 feet. The target you hit must succeed on a DC 17 Constitution saving throw or become stunned until the end of your next turn. Lightning Strike. You can use an action to cause a bolt of lightning to leap from the staff's tip in a line that is 5 feet wide and 120 feet long. Each creature in that line must make a DC 17 Dexterity saving throw, taking 9d6 lightning damage on a failed save, or half as much damage on a successful one. Thunderclap. You can use an action to cause the staff to issue a deafening thunderclap, audible out to 600 feet. Each creature within 60 feet of you (not including you) must make a DC 17 Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 1 minute. On a successful save, a creature takes half damage and isn't deafened. Thunder and Lightning. You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.",
 		"descriptors": [
             "staff crackling with lightning and rumbling with thunder, the wood electrified",
             "storm staff showing both lightning and cloud patterns, constantly sparking",
@@ -5258,7 +5226,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
         "description": "This staff has 3 charges and regains 1d3 daily. On a hit with melee attack using it, you can expend 1 charge to deal extra 2d10 necrotic damage and force Constitution save or target has disadvantage on ability checks and saves using Strength or Constitution for 1 hour.",
-        "fullDescription": "",
+        "fullDescription": "This staff has 3 charges and regains 1d3 expended charges daily at dawn. The staff can be wielded as a magic quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.",
 		"descriptors": [
             "staff of dead wood covered in decay, the surface crumbling but solid",
             "withering staff carved from diseased tree, the wood gray and lifeless",
@@ -5274,7 +5242,7 @@
         "type": ["Misc", "Summoning"],
         "rarity": "Rare",
         "description": "If the stone is touching the ground, you can use an action to summon an earth elemental. It obeys your commands for 1 hour or until reduced to 0 HP. Can't be used again until next dawn.",
-        "fullDescription": "",
+        "fullDescription": "If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds.",
 		"descriptors": [
             "rough stone that smells of deep earth, heavy and dense",
             "earth-controlling rock covered in crystal formations, naturally heavy",
@@ -5306,7 +5274,7 @@
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Rare",
         "description": "This longsword hilt creates a blade of pure radiance. Functions as +2 longsword dealing radiant damage. Emits sunlight, gives advantage against undead, and extra damage to undead. Can be used as a one-handed versatile weapon.",
-        "fullDescription": "",
+        "fullDescription": "This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade. You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage. The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.",
 		"descriptors": [
             "longsword hilt that projects a blade of pure sunlight, bright and warm",
             "radiant weapon with light-blade, the brilliance almost blinding",
@@ -5321,7 +5289,7 @@
         "cost": 1352,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Rare",
-        "description": "This +1 sword deals an extra 1d10 necrotic damage. When you attack a creature with this weapon and roll a 20 on the attack roll, the target takes an extra 10 necrotic damage and you gain 10 temporary HP.",
+        "description": "When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn't a construct or an undead. You also gain 10 temporary hit points.",
         "fullDescription": "",
 		"descriptors": [
             "blade that seems to hunger for life, the metal dark and cold",
@@ -5337,8 +5305,8 @@
         "cost": 15495,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Very Rare",
-        "description": "This +3 sword has maximum damage against objects. When you roll 20 on attack roll against creature, it takes an extra 14 slashing damage, and you can cut off one limb if it has one. If you roll 20 again, you can cut off two limbs.",
-        "fullDescription": "",
+        "description": "This sword has maximum damage against objects. When you roll 20 on attack roll against creature, it takes an extra 14 slashing damage. Then roll another d20, on another 20 you can cut off one limb if it has one.",
+        "fullDescription": "When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target. When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another d20. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the GM. If the creature has no limb to sever, you lop off a portion of its body instead. In addition, you can speak the sword's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.",
 		"descriptors": [
             "blade with an edge so sharp it cuts the air itself, the metal singing",
             "impossibly keen sword with edge like a razor, the sharpness visible",
@@ -5354,7 +5322,7 @@
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Rare",
         "description": "Hit points lost to this weapon can be regained only through a short or long rest (not healing spells/potions). Once per turn when you hit, you can wound target. At start of wounded creature's turn, it takes 1d4 necrotic damage per wound. Wounds end with DC 15 Wisdom (Medicine) check or magical healing.",
-        "fullDescription": "",
+        "fullDescription": "Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.",
 		"descriptors": [
             "blade with serrated edge that won't heal, the metal designed to wound deeply",
             "jagged sword with cruel barbs, the cuts refusing to close",
@@ -5369,8 +5337,8 @@
         "cost": 68465,
         "type": ["Jewelry", "Divine"],
         "rarity": "Legendary",
-        "description": "This holy symbol has 7 charges. Usable only by good-aligned creatures. An evil creature touching it takes 8d6 radiant damage. You can expend charges to transform evil creatures into harmless animals. If non-good creature uses final charge, it destroys talisman and creature.",
-        "fullDescription": "",
+        "description": " Usable only by good-aligned creatures. An evil creature touching it takes 8d6 radiant damage. This holy symbol has 7 charges.  You can expend charges to destroy evil creatures.  You can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it.",
+        "fullDescription": "This talisman is a mighty symbol of goodness. A creature that is neither good nor evil in alignment takes 6d6 radiant damage upon touching the talisman. An evil creature takes 8d6 radiant damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman. If you are a good cleric or paladin, you can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it. The talisman has 7 charges. If you are wearing or holding it, you can use an action to expend 1 charge from it and choose one creature you can see on the ground within 120 feet of you. If the target is of evil alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman disperses into motes of golden light and is destroyed.",
 		"descriptors": [
             "holy symbol blazing with divine light, warm and pure to righteous touch",
             "good talisman radiating holy energy, the symbol burning with virtue",
@@ -5401,8 +5369,8 @@
         "cost": 59220,
         "type": ["Jewelry", "Evil"],
         "rarity": "Legendary",
-        "description": "This unholy symbol has 6 charges. Usable only by evil-aligned creatures. A good creature touching it takes 8d6 necrotic damage. You can expend charges to transform good creatures into harmless animals. If non-evil creature uses final charge, it destroys talisman and creature.",
-        "fullDescription": "",
+        "description": " Usable only by evil-aligned creatures. A good creature touching it takes 8d6 necrotic damage. This unholy symbol has 6 charges.  You can expend charges to destroy good creatures.  You can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it.",
+        "fullDescription": "This item symbolizes unrepentant evil. A creature that is neither good nor evil in alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman. If you are an evil cleric or paladin, you can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it. The talisman has 6 charges. If you are wearing or holding it, you can use an action to expend 1 charge from the talisman and choose one creature you can see on the ground within 120 feet of you. If the target is of good alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed.",
 		"descriptors": [
             "unholy symbol radiating malevolence, cold and hateful to touch",
             "evil talisman showing demonic imagery, the metal freezing with wickedness",
@@ -5417,8 +5385,8 @@
         "cost": 39830,
         "type": ["Book"],
         "rarity": "Very Rare",
-        "description": "Reading this book (48 hours over 6 days) increases your Intelligence by 2 and maximum by 2. The book loses magic for 100 years after use. Maximum cannot exceed 30.",
-        "fullDescription": "",
+        "description": "Reading this book (48 hours over 6 days) increases your Intelligence by 2 and maximum by 2. The book loses magic for 100 years after use.",
+        "fullDescription": "This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.",
 		"descriptors": [
             "leather-bound tome with complex diagrams, the pages edged in silver",
             "intelligence book showing logical proofs, the binding crisp and organized",
@@ -5433,7 +5401,7 @@
         "cost": 39830,
         "type": ["Book"],
         "rarity": "Very Rare",
-        "description": "Reading this book (48 hours over 6 days) increases your Charisma by 2 and maximum by 2. The book loses magic for 100 years after use. Maximum cannot exceed 30.",
+        "description": "Reading this book (48 hours over 6 days) increases your Charisma by 2 and maximum by 2. The book loses magic for 100 years after use.",
         "fullDescription": "",
 		"descriptors": [
             "gilt-edged tome with inspiring speeches, the cover charismatic and commanding",
@@ -5449,7 +5417,7 @@
         "cost": 39830,
         "type": ["Book"],
         "rarity": "Very Rare",
-        "description": "Reading this book (48 hours over 6 days) increases your Wisdom by 2 and maximum by 2. The book loses magic for 100 years after use. Maximum cannot exceed 30.",
+        "description": "Reading this book (48 hours over 6 days) increases your Wisdom by 2 and maximum by 2. The book loses magic for 100 years after use.",
         "fullDescription": "",
 		"descriptors": [
             "worn tome with meditative texts, the pages bringing calm when read",
@@ -5466,7 +5434,7 @@
         "type": ["Weapon", "Melee", "Martial", "Piercing", "Thrown", "Polearm"],
         "rarity": "Uncommon",
         "description": "This trident is a magical weapon with 3 charges. While carrying it, you can speak and understand Aquan. You can expend 1 charge to cast Dominate Beast (DC 15) on a beast with swimming speed. Regains 1d3 charges at dawn.",
-        "fullDescription": "",
+        "fullDescription": "This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast dominate beast (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn.",
 		"descriptors": [
             "trident decorated with fish scales, the prongs shaped like fins",
             "aquatic weapon with swimming fish carved on shaft, the metal ocean-blue",
@@ -5497,8 +5465,8 @@
         "cost": 47107,
         "type": ["Weapon", "Melee", "Martial"],
         "rarity": "Legendary",
-        "description": "This +3 sword ignores slashing resistance. When you roll a 20 on attack roll against creature with a head, you decapitate it (if it has 50 or fewer HP remaining). Otherwise, extra 6d8 slashing damage.",
-        "fullDescription": "",
+        "description": "This +3 sword ignores slashing resistance. When you roll a 20 on attack roll against creature with a head, you decapitate it. Otherwise, extra 6d8 slashing damage.",
+        "fullDescription": "When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.",
 		"descriptors": [
             "legendary blade impossibly sharp, the edge seeming to vanish into thinness",
             "decapitating sword with edge like nothing, the metal transcendent",
@@ -5514,7 +5482,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
         "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend charges to cast Hold Monster (5) or Hold Person (2). DC 17 save.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed. Spells. While holding the wand, you can use an action to expend some of its charges to cast one of the following spells (save DC 17): hold monster (5 charges) or hold person (2 charges). Assisted Escape. While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple.",
 		"descriptors": [
             "wand carved with chains and ropes, the wood showing binding imagery",
             "binding wand decorated with shackle patterns, the wood restrictive-feeling",
@@ -5529,8 +5497,8 @@
         "cost": 4583,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
-        "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend 1 charge to sense hostile creatures within 60 feet for 1 minute. The wand vibrates in the direction of each hostile creature.",
-        "fullDescription": "",
+        "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend 1 charge to sense hostile creatures within 60 feet for 1 minute.",
+        "fullDescription": "This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.",
 		"descriptors": [
             "wand that trembles when danger is near, the wood constantly alert",
             "detection wand carved with eye patterns, vibrating when enemies approach",
@@ -5545,8 +5513,8 @@
         "cost": 5297,
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
-        "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend 1 charge to create a cone of fear. Creatures in the cone must succeed on DC 15 Wisdom save or drop what they're holding and become frightened for 1 minute.",
-        "fullDescription": "",
+        "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend charges to cast different effects: Command(1), Cone of Fear (2).",
+        "fullDescription": "This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed. Command. While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the command spell (save DC 15). Cone of Fear. While holding the wand, you can use an action to expend 2 charges, causing the wand's tip to emit a 60-foot cone of amber light. Each creature in the cone must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Dodge action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.",
 		"descriptors": [
             "wand carved with screaming faces, the wood cold and disturbing",
             "fear wand showing terror imagery, the material uncomfortable to hold",
@@ -5562,7 +5530,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
         "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend 1+ charges to cast Fireball (3rd level uses 1 charge, each additional level uses 1 more charge). DC 15 save.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the fireball spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.",
 		"descriptors": [
             "wand wrapped in flames that don't burn, the wood charred black",
             "fireball wand with ember decorations, the tip glowing orange",
@@ -5578,7 +5546,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
         "description": "This wand has 7 charges and regains 1d6+1 daily. While holding it, you can expend 1+ charges to cast Lightning Bolt (3rd level uses 1 charge, each additional level uses 1 more charge). DC 15 save.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the lightning bolt spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.",
 		"descriptors": [
             "wand crackling with electricity, the wood wrapped in static discharge",
             "lightning wand showing bolt patterns, the tip sparking constantly",
@@ -5738,7 +5706,7 @@
         "type": ["Wand/Staff/Rod", "Arcane"],
         "rarity": "Rare",
         "description": "This wand has 7 charges and regains 1d6+1 daily. Each time you use it, roll d100 to determine random magical effect. Effects vary from harmless to dangerous, affecting you, targets, or the environment unpredictably.",
-        "fullDescription": "",
+        "fullDescription": "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll d100 and consult the following table to discover what happens. If the effect causes you to cast a spell from the wand, the spell's save DC is 15. If the spell normally has a range expressed in feet, its range becomes 120 feet if it isn't already. If an effect covers an area, you must center the spell on and include the target. If an effect has multiple possible subjects, the GM randomly determines which ones are affected. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.",
 		"descriptors": [
             "chaotic wand showing mixed imagery, the carvings constantly shifting",
             "random wand decorated with everything and nothing, the patterns confusing",
