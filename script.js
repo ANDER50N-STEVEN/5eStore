@@ -2472,6 +2472,8 @@ function loadSavedStore(index) {
 		alert('Store not found!');
 		return;
 	}
+
+	currentLoadedStoreIndex = index;
 	
 	// Switch to generator tab
 	switchTab('generator');
@@ -2504,14 +2506,17 @@ function loadSavedStore(index) {
 	
 let html = `
     <div class="shop-info">
-        <h2> ${storeNames[store.storeType]} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
+        <h2>${storeNames[store.storeType] || store.storeType} - ${store.settlementSize.charAt(0).toUpperCase() + store.settlementSize.slice(1)}</h2>
         <div style="margin-top: 15px; padding: 15px; background: rgba(139, 111, 71, 0.15); border-radius: 5px; border-left: 3px solid #d4af37;">
             <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Proprietor:</strong> ${shopkeeper.name}, ${shopkeeper.race}</p>
-            <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp </p>
+            <p style="margin-bottom: 8px;"><strong style="color: #d4af37;">Available Gold:</strong> ${shopkeeper.goldAvailable} gp</p>
             <p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
             <p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
         </div>
-        <p style="margin-top: 15px;"><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> ${store.inventory.length} </p>
+        <p style="margin-top: 15px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+            <span><strong>Saved Store:</strong> ${store.name} | <strong>Total Items:</strong> <span id="saved-store-item-count">${store.inventory.length}</span></span>
+            <button onclick="restockSavedStore(${index})" style="background: linear-gradient(135deg, #2c6b4f 0%, #1a4a37 100%);">🔄 Restock</button>
+        </p>
     </div>
     <div class="inventory">
 `;
@@ -2559,21 +2564,24 @@ let html = `
 			    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
 			    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
 			    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
-			    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';  // ADD THIS
+			    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';
+			    const itemId = `saved-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
 			    
 			    html += `
-			        <div class="item">
+			        <div class="item" id="${itemId}">
 			            <div class="item-header">
 			                <div>
 			                    <span class="item-name">${item.name}${homebrewBadge}</span>
 			                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
 			                </div>
-			                <div>
+			                <div style="display: flex; align-items: center; gap: 10px;">
 			                    <span class="item-price">${item.displayPrice}</span>
+			                    <button class="item-action-btn sold-btn" onclick="soldSavedItem('${itemId}', ${index})" title="Mark as sold">🪙 Sold</button>
+			                    <button class="item-action-btn print-btn" onclick="printItem('${itemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
 			                </div>
 			            </div>
 			            <div class="item-description">${item.description || 'No description available.'}</div>
-			            ${descriptorHTML}  <!-- ADD THIS LINE -->
+			            ${descriptorHTML}
 			        </div>
 			    `;
 			}
@@ -2603,7 +2611,8 @@ let html = `
 			    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
 			    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
 			    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';  // ADD THIS
-			    
+			    const itemId = `saved-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
+
 			    html += `
 			        <div class="item">
 			            <div class="item-header">
@@ -2611,8 +2620,10 @@ let html = `
 			                    <span class="item-name">${item.name}${homebrewBadge}</span>
 			                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
 			                </div>
-			                <div>
+			                <div style="display: flex; align-items: center; gap: 10px;">
 			                    <span class="item-price">${item.displayPrice}</span>
+			                    <button class="item-action-btn sold-btn" onclick="soldSavedItem('${itemId}', ${index})" title="Mark as sold">🪙 Sold</button>
+			                    <button class="item-action-btn print-btn" onclick="printItem('${itemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
 			                </div>
 			            </div>
 			            <div class="item-description">${item.description || 'No description available.'}</div>
@@ -3389,6 +3400,121 @@ if (loot.specialDrops && loot.specialDrops.length > 0) {
 function toggleLootCategory(categoryId) {
     const category = document.getElementById(categoryId);
     category.classList.toggle('collapsed');
+}
+
+
+// Track which saved store is currently loaded
+let currentLoadedStoreIndex = null;
+
+// Override the existing loadSavedStore to track index
+// Add this line at the TOP of the loadSavedStore function, after the store null check:
+// currentLoadedStoreIndex = index;
+
+function soldSavedItem(itemId, storeIndex) {
+    const el = document.getElementById(itemId);
+    if (!el) return;
+
+    // Get the item name from the element
+    const nameEl = el.querySelector('.item-name');
+    if (!nameEl) return;
+
+    let itemName = nameEl.textContent.trim();
+    itemName = itemName.replace(/\s*🔮 Homebrew\s*/g, '').trim();
+
+    // Remove from saved store inventory permanently
+    const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+    const store = savedStores[storeIndex];
+
+    if (store) {
+        // Find and remove the first matching item
+        const itemIdx = store.inventory.findIndex(i => i.name === itemName);
+        if (itemIdx !== -1) {
+            store.inventory.splice(itemIdx, 1);
+            localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
+
+            // Update item count display
+            const countEl = document.getElementById('saved-store-item-count');
+            if (countEl) countEl.textContent = store.inventory.length;
+        }
+    }
+
+    // Animate removal
+    el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    el.style.opacity = '0';
+    el.style.transform = 'translateX(-20px)';
+    setTimeout(() => el.remove(), 300);
+}
+
+function restockSavedStore(storeIndex) {
+    const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
+    const store = savedStores[storeIndex];
+
+    if (!store) return;
+
+    const currentCount = store.inventory.length;
+
+    if (currentCount === 0) {
+        if (!confirm('This store has no inventory. Generate a fresh stock?')) return;
+    } else {
+        if (!confirm(`Restock "${store.name}"?\n\nBetween 25-75% of current items will be removed and replaced with new stock.`)) return;
+    }
+
+    // Step 1: Remove 25-75% of existing items randomly
+    const removePercent = 0.25 + Math.random() * 0.50;
+    const numToRemove = Math.round(store.inventory.length * removePercent);
+
+    // Shuffle and slice
+    const shuffled = [...store.inventory].sort(() => Math.random() - 0.5);
+    const kept = shuffled.slice(numToRemove);
+    const removedCount = store.inventory.length - kept.length;
+
+    // Step 2: Generate new items using existing store settings
+    let newInventory = [];
+    try {
+        // Temporarily apply the store's limits to the inputs if they exist
+        const storeTypeData = getStoreType(store.storeType);
+        if (storeTypeData && storeTypeData.limits) {
+            document.getElementById('max-mundane').value   = storeTypeData.limits.mundane;
+            document.getElementById('max-common').value    = storeTypeData.limits.common;
+            document.getElementById('max-uncommon').value  = storeTypeData.limits.uncommon;
+            document.getElementById('max-rare').value      = storeTypeData.limits.rare;
+            document.getElementById('max-veryrare').value  = storeTypeData.limits.veryrare;
+            document.getElementById('max-legendary').value = storeTypeData.limits.legendary;
+        }
+
+        newInventory = selectInventory(store.settlementSize, store.storeType);
+    } catch (e) {
+        console.error('Error generating restock inventory:', e);
+        alert('Error generating new stock. Please try again.');
+        return;
+    }
+
+    // Step 3: Only take enough new items to roughly replace what was removed
+    const newItems = newInventory
+        .sort(() => Math.random() - 0.5)
+        .slice(0, removedCount)
+        .map(item => {
+            // Generate a display price for each new item
+            const maxModifier = store.maxModifier || 105;
+            const { price } = applyPriceModifier(item.cost, maxModifier);
+            const descriptor = getRandomDescriptor(item);
+            return {
+                ...item,
+                displayPrice: formatPrice(price),
+                savedDescriptor: descriptor || null
+            };
+        });
+
+    // Step 4: Merge kept + new items
+    store.inventory = [...kept, ...newItems];
+
+    // Save back to localStorage
+    localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
+
+    // Reload the store display
+    loadSavedStore(storeIndex);
+
+    showSaveNotification(`Restocked! Removed ${removedCount} items, added ${newItems.length} new items.`);
 }
 
 
