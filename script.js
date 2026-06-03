@@ -170,12 +170,15 @@ const shopkeeperData = {
 
 // Common tag suggestions
 const commonTags = [
-    'Weapon', 'Armor', 'Ammunition', 'Apparel', 'Jewelry', 'Misc',
-    'Consumable', 'Potion', 'Scroll', 'Wand', 'Staff', 'Rod',
-    'Ring', 'Amulet', 'Cloak', 'Boots', 'Gloves', 'Headwear',
-    'Shield', 'Tool', 'Instrument', 'Book', 'Container', 'Light',
-    'Adventuring Gear', 'Magic Item', 'Cursed', 'Sentient',
-    'Artifact', 'Relic', 'Common Item', 'Trade Good'
+    'Abjuration', 'Alchemy', 'Ammunition', 'Animal', 'Apparel', 'Arcane', 'Armor',
+    'Axe', 'Bard', 'Blowgun', 'Book', 'Bow', 'Bracer', 'Cleric', 'Conjuration',
+    'Consumable', 'Crossbow', 'Dagger', 'Divination', 'Divine', 'Druid', 'Dwarf',
+    'Elf', 'Enchantment', 'Evil', 'Evocation', 'Food', 'Gauntlet', 'Gem',
+    'Hammer/Mace', 'Healing', 'Helmet', 'Instrument', 'Jewelry', 'Misc', 'Nature',
+    'Necromancy', 'Poison', 'Polearm', 'Potion', 'Ranged', 'Religious', 'Scroll',
+    'Shield', 'Sling', 'Sorcerer', 'Spellcasting Focus', 'Staff/Club', 'Stealth',
+    'Summoning', 'Sword', 'Tattoo', 'Transmutation', 'Travel', 'Wand/Staff/Rod',
+    'Warlock', 'Weapon', 'Whip', 'Wizard'
 ];
 
 // ===== STORE TYPES SYSTEM =====
@@ -183,54 +186,60 @@ const commonTags = [
 const defaultStoreTypes = {
     general: {
         name: 'General Store',
-        tags: [],  // empty = everything
+        tags: [],
         isGeneral: true,
         limits: { mundane: '4d6+10', common: '1d8+3', uncommon: '1d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     weaponsmith: {
         name: 'Weaponsmith',
-        tags: ['Weapon', 'Ammunition', 'Armor', 'Shield'],
+        tags: ['Weapon', 'Sword', 'Axe', 'Hammer/Mace', 'Polearm', 'Dagger', 'Whip', 'Staff/Club', 'Ammunition', 'Armor', 'Shield'],
         limits: { mundane: '4d6+4', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
     },
     outfitter: {
         name: 'Outfitter',
-        tags: ['Misc', 'Ammunition', 'Potion'],
+        tags: ['Misc', 'Ammunition', 'Potion', 'Travel', 'Food'],
         limits: { mundane: '2d6+10', common: '2d6+2', uncommon: '1d6', rare: '1d8-4', veryrare: '0', legendary: '0' }
     },
     armorer: {
         name: 'Armorer',
-        tags: ['Armor', 'Shield', 'Apparel', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Clothing'],
+        tags: ['Armor', 'Shield', 'Apparel', 'Bracer', 'Gauntlet', 'Helmet'],
         limits: { mundane: '2d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
     magic: {
         name: 'Magic Shop',
-        tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Amulet', 'Ring', 'Jewelry', 'Potion', 'Cloak', 'Boots', 'Gloves', 'Headwear', 'Spellcasting Focus'],
+        tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Jewelry', 'Potion', 'Spellcasting Focus',
+               'Abjuration', 'Conjuration', 'Divination', 'Enchantment', 'Evocation',
+               'Necromancy', 'Transmutation', 'Arcane'],
         limits: { mundane: '1d4', common: '1d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
     },
     apothecary: {
         name: 'Apothecary',
-        tags: ['Potion'],
+        tags: ['Potion', 'Consumable', 'Alchemy', 'Healing', 'Poison'],
         limits: { mundane: '2d4', common: '1d6+3', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
     },
     clothier: {
         name: 'Clothier',
-        tags: ['Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear'],
+        tags: ['Apparel', 'Bracer', 'Gauntlet', 'Helmet'],
         limits: { mundane: '1d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
     curiosities: {
         name: 'Curiosities Shop',
-        tags: ['Misc', 'Jewelry', 'Amulet', 'Ring'],
+        tags: ['Misc', 'Jewelry', 'Gem', 'Tattoo', 'Summoning', 'Evil', 'Religious'],
         limits: { mundane: '1d4', common: '2d4+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
     }
 };
 
 // All known tags for the picker
 const allKnownTags = [
-    'Weapon', 'Armor', 'Shield', 'Ammunition',
-    'Apparel', 'Clothing', 'Cloak', 'Boots', 'Gloves', 'Headwear',
-    'Jewelry', 'Amulet', 'Ring',
-    'Potion', 'Scroll', 'Wand/Staff/Rod', 'Book',
-    'Misc', 'Tool', 'Instrument', 'Container', 'Light'
+    'Abjuration', 'Alchemy', 'Ammunition', 'Animal', 'Apparel', 'Arcane', 'Armor',
+    'Axe', 'Bard', 'Blowgun', 'Book', 'Bow', 'Bracer', 'Cleric', 'Conjuration',
+    'Consumable', 'Crossbow', 'Dagger', 'Divination', 'Divine', 'Druid', 'Dwarf',
+    'Elf', 'Enchantment', 'Evil', 'Evocation', 'Food', 'Gauntlet', 'Gem',
+    'Hammer/Mace', 'Healing', 'Helmet', 'Instrument', 'Jewelry', 'Misc', 'Nature',
+    'Necromancy', 'Poison', 'Polearm', 'Potion', 'Ranged', 'Religious', 'Scroll',
+    'Shield', 'Sling', 'Sorcerer', 'Spellcasting Focus', 'Staff/Club', 'Stealth',
+    'Summoning', 'Sword', 'Tattoo', 'Transmutation', 'Travel', 'Wand/Staff/Rod',
+    'Warlock', 'Weapon', 'Whip', 'Wizard'
 ];
 
 let customStoreTypes = {};  // loaded from localStorage
