@@ -7818,7 +7818,7 @@
         "type": ["Jewelry"],
         "rarity": "Uncommon",
         "description": "A balance scale with celestial and fiendish symbols that casts Detect Evil and Good as a ritual (requiring holy water or a 100 gp gem in each pan), tipping toward good or evil, fluctuating for neutral creatures, and conveying the spell's full information when you touch it afterward.",
-        "fullDescription": "",
+        "fullDescription": "This scale bears celestial symbols on one pan and fiendish symbols on the other. You can use the scale to cast Detect Evil and Good as a ritual. Doing so requires you to place the scale on a solid surface, then sprinkle the pans with holy water or place a transparent gem worth 100 gp in each pan. The scale remains motionless if it detects nothing, tips to one side or the other for good (consecrated) or evil (desecrated), and fluctuates slightly if it detects a creature appropriate to the spell but neither good nor evil. By touching the scales after casting the ritual, you instantly learn any information the spell can normally convey, and then the effect ends.",
 		"descriptors": [
             "medallion with perfect circle and balance beam symbol",
             "pendant showing yin-yang or scale imagery",
@@ -7833,7 +7833,7 @@
         "cost": 1800,
         "type": ["Misc"],
         "rarity": "Very Rare",
-        "description": "This flag on a 10-foot pole radiates infernal energy. Allies within 60 feet who can see the standard gain +1 to attack rolls and saving throws. Fiends gain +2 instead. Planting it requires an action. Moving it ends the effect.",
+        "description": "An infernal iron battle standard holding a caged, incapacitated quasit (cage AC 19, 10 HP, immune to all but force damage; a new quasit replaces any that's killed or freed). While held, it makes the weapon attacks of you and all allies within 300 feet count as magical.",
         "fullDescription": "",
 		"descriptors": [
             "banner with infernal symbols in dark crimson",
@@ -7849,8 +7849,8 @@
         "cost": 35100,
         "type": ["Jewelry"],
         "rarity": "Legendary",
-        "description": "This crown is adorned with eyestalks. While wearing it, you gain darkvision 60 feet (or +60 if you have it) and can see invisible creatures within that range. You can also cast Eyebite once per day. Aberrations have disadvantage on attacks against you.",
-        "fullDescription": "",
+        "description": "A symbiotic beholder-like crown that bonds to your skull, granting darkvision (magical and nonmagical) out to 120 feet and 10 charges (regaining 1d6+3 at dawn) to cast a range of spells like Charm Person, Disintegrate, Finger of Death, and Flesh to Stone (save DC 16). It can only be removed via remove curse, and its creator, the daelkyr Belashyrra, can see through its eyestalks while on the same plane.",
+        "fullDescription": "This symbiotic crown is carved from dark purple and mauve stone, with ten points like stalks set with gemstones resembling the eyestalks of a beholder. To attune to this item, you must wear it on your head for the entire attunement period, during which the crown's hidden tendrils burrow into your scalp to bond with your skull.  While wearing the crown, you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.  Spells. The crown has 10 charges. While wearing it, you can use an action to expend some of its charges to cast one of the following spells from it (spell save DC 16): Charm Person (1 charge), Disintegrate (6 charges), Fear (3 charges), Finger of Death (7 charges), Flesh to Stone (6 charges), Hold Person (2 charges), Ray of Enfeeblement (2 charges), Sleep (1 charge), Slow (3 charges), Telekinesis (5 charges).  The crown regains 1d6 + 3 expended charges daily at dawn.  Symbiotic Nature. The crown can't be removed from you while you're attuned to it, and you can't voluntarily end your attunement to it. If you're targeted by a spell that ends a curse, your attunement to the crown ends, and it detaches from you.  The daelkyr Belashyrra made these crowns. While on the same plane of existence as the crown, Belashyrra can see through its eyestalks.",
 		"descriptors": [
             "crown with multiple eyestalks protruding upward",
             "circlet with eyes that swivel and focus",
@@ -7865,7 +7865,7 @@
         "cost": 600,
         "type": ["Jewelry"],
         "rarity": "Rare",
-        "description": "This armband can produce magical daggers. As a bonus action, you can cause a dagger to appear in your free hand. The dagger lasts until the end of your turn. You can use an action to make two ranged attacks with them (attack bonus +5, 1d4+3 damage, range 60 feet).",
+        "description": "This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.",
         "fullDescription": "",
 		"descriptors": [
             "armband with slots where daggers appear",
@@ -7881,7 +7881,7 @@
         "cost": 1320,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "This translucent bubble of magic allows you to breathe normally in any environment (including underwater or in toxic gas) for 1 hour. The bubble pops when the duration ends or you remove it. Single use item.",
+        "description": "This translucent, bubble-like sphere has a slightly tacky outer surface, and you gain the item's benefits only while wearing it over your head like a helmet.  The bubble contains 1 hour of breathable air. The bubble regains all its expended air daily at dawn.",
         "fullDescription": "",
 		"descriptors": [
             "soap-bubble appearance with rainbow shimmer",
@@ -7897,7 +7897,7 @@
         "cost": 1800,
         "type": ["Jewelry"],
         "rarity": "Uncommon",
-        "description": "While wearing this living brooch, you have resistance to necrotic damage and advantage on death saving throws. The brooch appears to pulse with a faint heartbeat. Protection against death magic.",
+        "description": "While wearing this nondescript brooch, spells and anything else that would detect or reveal your creature type treat you as humanoid, and those that would reveal your alignment treat it as neutral.",
         "fullDescription": "",
 		"descriptors": [
             "brooch that pulses rhythmically like heartbeat",
@@ -7913,7 +7913,7 @@
         "cost": 2400,
         "type": ["Apparel"],
         "rarity": "Rare",
-        "description": "This blood-stained apron grants resistance to necrotic damage. When you reduce a living creature to 0 hit points, you gain temporary hit points equal to your Constitution modifier (minimum 1). Macabre but effective.",
+        "description": "Once per turn when you roll damage for a melee attack with a weapon, you can reroll the weapon's damage dice. If you do so, you must use the second total.  Your weapon attacks that deal slashing damage score a critical hit on a roll of 19 or 20 on the d20.",
         "fullDescription": "",
 		"descriptors": [
             "leather apron with permanent blood stains",
@@ -7929,7 +7929,7 @@
         "cost": 2160,
         "type": ["Misc", "Nature"],
         "rarity": "Rare",
-        "description": "This tiny wooden amulet allows you to cast Speak with Plants at will while wearing it. Once per day, you can also cast Plant Growth. Useful for druids and nature-themed characters.",
+        "description": "This fist-sized charm is made from a bundle of dried plant stems wrapped in silver thread. Hung on a leather thong, it is typically worn around the neck or attached to a belt.  This charm has 3 charges. While you bear the charm, you can expend 1 charge as an action to cast the Speak with Plants spell. For the duration of the spell, you also have advantage on Charisma checks made to influence the behavior, demeanor. and attitude of plants. The charm regains all expended charges at dawn each day.",
         "fullDescription": "",
 		"descriptors": [
             "wooden amulet carved with leaf patterns",
@@ -7945,7 +7945,7 @@
         "cost": 330,
         "type": ["Jewelry"],
         "rarity": "Common",
-        "description": "This coin has a compass on one side. While underground, you can use an action to learn which way is north. You also learn your approximate depth below the surface. Perfect for dungeon delving.",
+        "description": "This scintillating copper coin sheds dim light in a 5-foot radius. If dropped a distance greater than 5 feet, the coin issues a melodious ringing sound when it hits a surface. Any creature that can hear the chime can determine the distance the coin dropped based on the tone.",
         "fullDescription": "",
 		"descriptors": [
             "coin with compass rose on one face",
@@ -7959,9 +7959,9 @@
     {
         "name": "Dispelling Stone",
         "cost": 4455,
-        "type": ["Jewelry"],
+        "type": ["Jewelry", "Consumable"],
         "rarity": "Very Rare",
-        "description": "This smooth stone allows you to cast Dispel Magic (5th level) once per day. You can also use it as a focus for abjuration spells, granting advantage on the spell attack roll or imposing disadvantage on the target's save.",
+        "description": "This smooth, rainbow-colored, egg-shaped stone can be thrown up to 30 feet and explodes in a 10-foot-radius sphere of magical energy on impact, destroying the stone. Any active spell of 5th level or lower in the sphere ends.",
         "fullDescription": "",
 		"descriptors": [
             "smooth stone with anti-magic runes carved",
@@ -7977,7 +7977,7 @@
         "cost": 792,
         "type": ["Potion", "Consumable"],
         "rarity": "Uncommon",
-        "description": "This fine powder can season any food or drink, making it taste delicious regardless of its actual quality. Can season up to 5 meals. Also neutralizes any poisons in the food or drink. Useful for survival situations.",
+        "description": "This reddish brown dust can be sprinkled over any edible substance to greatly improve the flavor. The dust also dulls the eater's senses: anyone eating food treated with this dust has disadvantage on Wisdom ability checks and Wisdom saving throws for 1 hour. There is enough dust to flavor six servings.",
         "fullDescription": "",
 		"descriptors": [
             "fine powder with pleasant aroma",
@@ -7993,7 +7993,7 @@
         "cost": 1584,
         "type": ["Misc"],
         "rarity": "Rare",
-        "description": "This whistle summons 1d4+1 giant eagles within 10 minutes. They serve you for 1 hour, carrying you or fighting for you. Once used, the whistle can't be used again for 7 days. Excellent for emergency transport or combat aid.",
+        "description": "While you blow an Eagle Whistle continuously, you can fly twice as fast as your walking speed. You can blow the whistle continuously for a number of rounds equal to 5 + five times your Constitution modifier (minimum of 1 round) or until you talk, hold your breath, or start suffocating. A use of the whistle also ends if you land. If you are aloft when you stop blowing the whistle, you fall. The whistle has three uses. It regains expended uses daily at dawn.",
         "fullDescription": "",
 		"descriptors": [
             "whistle carved from eagle talon or bone",
@@ -8006,11 +8006,11 @@
     },
     {
         "name": "Feather of Diatryma Summoning",
-        "cost": 1056,
+        "cost": 3056,
         "type": ["Misc", "Summoning"],
         "rarity": "Rare",
-        "description": "This giant feather can summon a diatryma (use axe beak statistics). The bird appears within 30 feet, is friendly, and obeys your commands for 6 hours. Once used, the feather disintegrates. Single use summoning item.",
-        "fullDescription": "",
+        "description": "A feather that, on command, transforms into a friendly diatryma (using axe beak stats with a piercing beak) for up to 6 hours that obeys you and can serve as a mount. It reverts to a feather at 0 HP or on command, after which the magic can't be used again for 7 days.",
+        "fullDescription": "This bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living diatryma for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.  When the diatryma reverts to its feather form, the magic of the feather can't be used again until 7 days have passed.  The diatryma uses the statistics of an axe beak, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.",
 		"descriptors": [
             "enormous feather from prehistoric bird",
             "plume over three feet in length",
@@ -8023,9 +8023,9 @@
     {
         "name": "Feather Token Feather Fall",
         "cost": 198,
-        "type": ["Misc"],
+        "type": ["Misc", "Consumable"],
         "rarity": "Common",
-        "description": "This small token stops a fall. When you fall, you can use your reaction to activate it. You and everything you're carrying fall 60 feet per round and take no falling damage. Effect lasts until you land. Single use.",
+        "description": "This small metal disk is inscribed with the image of a feather. When you fall at least 20 feet while the token is on your person, you descend 60 feet per round and take no damage from falling. The token's magic is expended after you land, whereupon the disk becomes nonmagical.",
         "fullDescription": "",
 		"descriptors": [
             "token carved with feather design",
@@ -8041,7 +8041,7 @@
         "cost": 1532,
         "type": ["Armor", "Gauntlet"],
         "rarity": "Rare",
-        "description": "These metal gauntlets glow with inner fire. Your unarmed strikes deal an extra 1d6 fire damage. You can use a bonus action to cause them to shed bright light in a 20-foot radius and dim light for another 20 feet, or extinguish them.",
+        "description": "While you wear both of these steel gauntlets, any nonmagical weapon you grasp with either gauntlet is treated as a magic weapon. As a bonus action, you can use the gauntlets to cause magical flames to envelop one or two melee weapons in your grasp. Each flaming weapon deals an extra 1d6 fire damage on a hit. The flames last until you sheath or let go of either weapon. Once used, this property can't be used again until the next dawn.",
         "fullDescription": "",
 		"descriptors": [
             "metal gauntlets with flames visible through seams",
@@ -8057,8 +8057,8 @@
         "cost": 1800,
         "type": ["Misc"],
         "rarity": "Rare",
-        "description": "This lantern contains a captured spirit. It sheds bright light in a 30-foot radius and dim light for another 30 feet. Undead in the light have disadvantage on attack rolls. You can release the spirit to cast Phantasmal Killer once, then it becomes nonmagical.",
-        "fullDescription": "",
+        "description": "A lantern housing a bound spirit that can shed bright light (30 ft.) on command, cast Mage Hand, and automatically stabilize you if you fall unconscious nearby. The spirit can't be harmed or turned, but casting Dispel Evil and Good frees it and renders the lantern mundane.",
+        "fullDescription": "A restless spirit is trapped inside this lantern. While holding the lantern, you can command the spirit as a bonus action to shed bright light in a 30-foot radius and dim light for an additional 30 feet.  While holding the lantern, you can use an action to order the spirit to leave the lantern and duplicate the effect of the Mage Hand spell. The spirit returns to the lantern when the spell ends.  If you fall unconscious within 10 feet of the lantern, the spirit emerges from it, magically stabilizes you with a touch, and then quickly returns to the lantern.  The spirit is bound to the lantern and can't be harmed, turned, or raised from the dead. Casting a Dispel Evil and Good spell on the lantern releases the spirit to the afterlife and renders the lantern nonmagical.",
 		"descriptors": [
             "lantern with ghostly face visible in the glass",
             "iron lantern with spirit moving inside",
@@ -8069,11 +8069,27 @@
         ]
     },
     {
-        "name": "Glamerweave",
+        "name": "Glamerweave - Common",
+        "cost": 188,
+        "type": ["Apparel", "Stealth"],
+        "rarity": "Uncommon",
+        "description": "Clothing imbued with harmless illusory magic. While wearing these clothes, you can use a bonus action to create a moving illusory pattern within the cloth.",
+        "fullDescription": "",
+		"descriptors": [
+            "clothing with shimmering threads throughout",
+            "garment that seems to shift in peripheral vision",
+            "clothing with iridescent quality to fabric",
+            "garment with subtle pattern changes",
+            "clothing that catches light strangely",
+            "garment feeling different than it appears"
+        ]
+    },
+    {
+        "name": "Glamerweave - Uncommon",
         "cost": 1188,
         "type": ["Apparel", "Stealth"],
         "rarity": "Uncommon",
-        "description": "This clothing is woven with illusory magic. You can use a bonus action to change the clothing's appearance to any other style. The clothing can appear as anything from beggar's rags to fine noble attire. Doesn't change actual protective value.",
+        "description": "Clothing imbued with harmless illusory magic. While wearing these clothes, you can use a bonus action to create a moving illusory pattern within the cloth and can have the pattern rise from the cloth. For example, a glamerweave gown might be wreathed in harmless, illusory flames, while a glamerweave hat might have illusory butterflies fluttering around it.  When you make a Charisma (Performance) or Charisma (Persuasion) check you can roll a d4 and add the number rolled to the check. Once you use this property, it can't be used again until the next dawn.",
         "fullDescription": "",
 		"descriptors": [
             "clothing with shimmering threads throughout",
@@ -8089,7 +8105,7 @@
         "cost": 810,
         "type": ["Apparel"],
         "rarity": "Uncommon",
-        "description": "While wearing these crystal lenses, you can cast Identify at will. The goggles also grant advantage on Intelligence (Investigation) checks to examine objects within 5 feet. Perfect for finding hidden details and magical properties.",
+        "description": "These leather-framed goggles feature purple crystal lenses. While wearing the goggles, you have advantage on Intelligence (Arcana) checks made to reveal information about a creature or object you can see.  In addition, you can cast the Identify spell using the goggles. Once you do so, you can't do so again until the next dawn.",
         "fullDescription": "",
 		"descriptors": [
             "goggles with multiple magnifying lenses",
@@ -8105,7 +8121,7 @@
         "cost": 4500,
         "type": ["Armor", "Helmet"],
         "rarity": "Uncommon",
-        "description": "While wearing this helmet, you can breathe underwater and have a swimming speed equal to your walking speed. The helmet also grants darkvision 60 feet while underwater. Complete underwater capability.",
+        "description": "While wearing this brass helmet, you can breathe underwater, you gain dark vision with a range of 60 feet, and you gain a swimming speed of 30 feet.",
         "fullDescription": "",
 		"descriptors": [
             "helmet with gills carved into sides",
@@ -8117,11 +8133,102 @@
         ]
     },
     {
-        "name": "Imbued Wood Focus",
+        "name": "Imbued Wood Focus - Fernian Ash - Fire",
         "cost": 550,
         "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
         "rarity": "Common",
-        "description": "This wooden rod is carved with druidic symbols. It can be used as a spellcasting focus by druids. The rod is also immune to damage and never rots or decays. Simple but reliable focus.",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Irian Rosewood - Radiant",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Kythrian Manchineel - Acid or poison",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Lamannian Oak - Lightning or thunder",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Mabaran Ebony - Necrotic",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Risian Pine - Cold",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Shavarran Birch - Force",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
+        "fullDescription": "",
+		"descriptors": [
+            "wooden rod with living bark still attached",
+            "carved rod showing natural patterns",
+            "wooden rod with druidic circle symbols"
+        ]
+    },
+    {
+        "name": "Imbued Wood Focus - Xorian Wenge - Psychic",
+        "cost": 550,
+        "type": ["Wand/Staff/Rod", "Arcane", "Spellcasting Focus"],
+        "rarity": "Common",
+        "description": "An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this as a spellcasting focus.  When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one damage roll of the spell, provided the damage is of the type associated with the item's wood.",
         "fullDescription": "",
 		"descriptors": [
             "wooden rod with living bark still attached",
@@ -8134,7 +8241,7 @@
         "cost": 6600,
         "type": ["Apparel", "Stealth"],
         "rarity": "Rare",
-        "description": "While wearing this eye patch, you gain advantage on Wisdom (Perception) checks based on sight. You also have advantage on Charisma (Deception) checks. Useful for rogues and pirates. Covers one eye but enhances overall perception.",
+        "description": "You have advantage on Wisdom (Perception) checks that rely on sight.  If you have the Sunlight Sensitivity trait, you are unaffected by the trait.  You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.",
         "fullDescription": "",
 		"descriptors": [
             "black leather eye patch with silver trim",
@@ -8150,7 +8257,7 @@
         "cost": 990,
         "type": ["Apparel"],
         "rarity": "Uncommon",
-        "description": "While wearing this mask shaped like a beast's face, your Charisma (Intimidation) checks have advantage. You can also cast Speak with Animals at will. You have disadvantage on Charisma (Persuasion) checks while wearing it.",
+        "description": "This wooden mask is shaped in the likeness of a beast's visage and has 3 charges. While wearing the mask, you can expend 1 charge and use the mask to cast the Animal Friendship spell as an action. The mask regains all expended charges at dawn.",
         "fullDescription": "",
 		"descriptors": [
             "mask carved to resemble snarling predator",
@@ -8166,8 +8273,8 @@
         "cost": 9900,
         "type": ["Misc"],
         "rarity": "Rare",
-        "description": "This hand mirror can show events from the past. Once per day, you can gaze into it and see events that occurred at your current location up to 100 years ago. You can view up to 10 minutes of events. Cannot be used in combat.",
-        "fullDescription": "",
+        "description": "A platinum hand mirror that, once per day, shows random and cryptic (but accurate) scenes from a target object or creature's past when you gaze into it while thinking of them, lasting up to 1 minute.",
+        "fullDescription": "The holder of this platinum hand mirror can learn something about the history of a specific object or creature by taking an action to gaze into the mirror and think of the target. Instead of the holder's reflection, the mirror presents scenes from the target's past. Information conveyed is accurate, but it is random and cryptic, and presented in no particular order. Once it is activated, the mirror gives its information for 1 minute or less, then returns to normal. It can't be used again until the next dawn.",
 		"descriptors": [
             "silver hand mirror with ornate frame",
             "mirror with surface showing faint images",
@@ -8182,8 +8289,8 @@
         "cost": 2970,
         "type": ["Misc"],
         "rarity": "Uncommon",
-        "description": "This whistle is made from bone. When blown at night, it summons 1d4+1 skeletons or zombies (your choice) that rise from the ground within 60 feet. They obey you for 1 hour. Once used, can't be used again for 7 days.",
-        "fullDescription": "",
+        "description": "A duergar-made crystal dragon whistle that, when blown at night or in darkness, casts Animate Dead once per week (able to animate through up to 10 feet of earth). It can also be blown once per day to reassert control over one or two undead you've animated with it.",
+        "fullDescription": "This whistle is carved from transparent crystal, and it resembles a tiny dragon curled up like a snail. The name Night Caller is etched on the whistle in Dwarvish runes. If a character succeeds on a DC 20 Intelligence (Arcana or History) check, the character recalls lore that says the duergar made several such whistles for various groups in an age past.  If you blow the whistle in darkness or under the night sky, it allows you to cast the Animate Dead spell. The target can be affected through up to 10 feet of soft earth or similar material, and if it is, it takes 1 minute to claw its way to the surface to serve you. Once the whistle has animated an undead creature, it can't do so again until 7 days have passed.  Once every 24 hours, you can blow the whistle to reassert control over one or two creatures you animated with it",
 		"descriptors": [
             "bone whistle carved with death imagery",
             "whistle made from hollow femur",
@@ -8198,8 +8305,8 @@
         "cost": 1782,
         "type": ["Misc"],
         "rarity": "Uncommon",
-        "description": "This origami bird can deliver messages. Write a message (up to 50 words), speak a recipient's name, and the bird flies to them (knows location if within 1 mile). Travels 15 miles per hour for up to 24 hours. Recipient can write reply. Single use.",
-        "fullDescription": "",
+        "description": "A magic sheet of parchment that folds into a paper bird (AC 13, 1 HP, 60 ft. fly speed) and delivers a 50-word-or-fewer message to a named recipient on the same plane, turning into a sealed, recipient-only sheet upon arrival or ash if destroyed or intercepted. They typically come in boxes of 1d6+3 sheets.",
+        "fullDescription": "After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magically folds into a Tiny paper bird and flies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.  The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (-5) in all other abilities, and it is immune to poison and psychic damage.  It travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a nonmagical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.Paper Birds usually come in small, flat boxes containing 1d6 + 3 sheets of the parchment.",
 		"descriptors": [
             "folded paper bird with intricate creases",
             "origami crane with magical ink patterns",
@@ -8214,8 +8321,8 @@
         "cost": 330,
         "type": ["Misc"],
         "rarity": "Common",
-        "description": "While smoking this pipe, you can perfectly recall any events that occurred within the last 24 hours. The memories are clear and detailed. Once per day, you can recall events from up to a year ago. Useful for investigations.",
-        "fullDescription": "",
+        "description": "A wooden pipe that, once per day, produces lingering smoke that after 10 minutes forms a vivid 5-minute reenactment of the smoker's most heroic deeds before dissipating.",
+        "fullDescription": "This long, delicate wooden pipe features a bowl made from smooth river stone. When the pipe is lit. smoke exhaled from it does not dissipate, instead lingering around the bearer. After 10 minutes, the smoke forms moving shapes that reenact the bearer's most impressive and heroic achievements for 5 minutes. When this realistic performance is complete, the smoke dissipates. The pipe can't be used this way again until the next dawn.",
 		"descriptors": [
             "carved wooden pipe with memory symbols",
             "pipe with bowl showing scene imagery",
@@ -8224,11 +8331,11 @@
     },
     {
         "name": "Robe of Summer",
-        "cost": 6000,
+        "cost": 2300,
         "type": ["Apparel"],
         "rarity": "Rare",
-        "description": "While wearing this robe, you have resistance to cold damage and are comfortable in temperatures as low as -50°F. The robe also grants advantage on saving throws against effects that would reduce your speed or restrain you due to ice or snow.",
-        "fullDescription": "",
+        "description": "This elegant garment is made from fine cloth in hues of red, orange, and gold. While you wear the robe, you have resistance to cold damage. In addition, you are comfortable as if the temperature were that of a balmy day, so you suffer no ill effects from the weather's temperature extremes.",
+        "fullDescription": "This elegant garment is made from fine cloth in hues of red, orange, and gold. While you wear the robe, you have resistance to cold damage. In addition, you are comfortable as if the temperature were that of a balmy day, so you suffer no ill effects from the weather's temperature extremes.",
 		"descriptors": [
             "robe in bright warm colors",
             "garment with sun symbols embroidered",
@@ -8243,8 +8350,8 @@
         "cost": 9780,
         "type": ["Jewelry"],
         "rarity": "Rare",
-        "description": "This crystal allows you to cast Speak with Plants at will, but only to communicate with stone and earth. You can ask questions of rocks, boulders, and stone structures. Once per day, you can cast Meld into Stone. Useful for earth-based exploration.",
-        "fullDescription": "",
+        "description": "A quartz shard made by stone giant librarians that grants advantage on Investigation checks and holds 10 charges (regaining 1d6+4 at dawn) to cast Speak with Animals, Dead, or Plants, or substitute for consumed divination spell components at 1 charge per spell level.",
+        "fullDescription": "Created by the stone giant librarians of Gravenhollow. this nineteen-inch-long shard of quartz grants you advantage on Intelligence (investigation) checks while it is on your person.  The crystal has 10 charges. While holding it, you can use an action to expend some of its charges to cast one of the following spells from it: speak with animals (2 charges), speak with dead (4 charges), or speak with plants (3 charges).  When you cast a divination spell, you can use the crystal in place of one material component that would normally be consumed by the spell, at a cost of 1 charge per level of the spell. The crystal is not consumed when used in this way.  The crystal regains 1d6 + 4 expended charges daily at dawn. If you expend the crystal's last charge, roll a d20. On a 1, the crystal vanishes, lost forever.",
 		"descriptors": [
             "crystal showing geological layers within",
             "stone-colored crystal with mineral inclusions",
