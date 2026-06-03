@@ -222,6 +222,48 @@ const defaultStoreTypes = {
         tags: ['Apparel', 'Bracer', 'Gauntlet', 'Helmet'],
         limits: { mundane: '1d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
     },
+	scribe: {
+    name: 'Scribe',
+    tags: ['Scroll', 'Book', 'Divination', 'Arcane', 'Divine', 'Abjuration', 
+           'Conjuration', 'Enchantment', 'Evocation', 'Necromancy', 'Transmutation', 'Misc'],
+    limits: { mundane: '2d6+4', common: '2d6+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
+},
+	fletcher: {
+    name: 'Fletcher',
+    tags: ['Bow', 'Crossbow', 'Blowgun', 'Sling', 'Ammunition', 'Ranged', 'Travel'],
+    limits: { mundane: '4d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
+},
+stable: {
+    name: 'Stable & Tack',
+    tags: ['Animal', 'Travel', 'Misc', 'Food'],
+    limits: { mundane: '3d6+8', common: '2d4+2', uncommon: '1d6-2', rare: '0', veryrare: '0', legendary: '0' }
+},
+tattoo: {
+    name: 'Tattoo Parlor',
+    tags: ['Tattoo', 'Arcane', 'Divine', 'Necromancy', 'Enchantment', 'Evil', 'Summoning'],
+    limits: { mundane: '1d4', common: '2d4+2', uncommon: '2d6', rare: '1d6-1', veryrare: '1d4-2', legendary: '1d4-3' }
+},
+jeweler: {
+    name: 'Jeweler',
+    tags: ['Jewelry', 'Gem', 'Apparel'],
+    limits: { mundane: '2d6+6', common: '2d6+2', uncommon: '2d6', rare: '1d6-1', veryrare: '1d4-2', legendary: '1d4-3' }
+},
+tavern: {
+    name: 'Tavern & Inn',
+    tags: ['Food', 'Consumable', 'Misc', 'Alchemy', 'Poison'],
+    limits: { mundane: '4d6+8', common: '2d4+2', uncommon: '1d4-1', rare: '0', veryrare: '0', legendary: '0' }
+},
+temple: {
+    name: 'Temple Store',
+    tags: ['Divine', 'Religious', 'Healing', 'Scroll', 'Abjuration', 'Conjuration', 
+           'Divination', 'Cleric', 'Potion'],
+    limits: { mundane: '2d6+4', common: '2d6+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
+},
+thievesguild: {
+    name: "Thieves' Guild",
+    tags: ['Dagger', 'Poison', 'Stealth', 'Misc', 'Consumable', 'Scroll', 'Alchemy'],
+    limits: { mundane: '3d6+4', common: '2d6+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
+},
     curiosities: {
         name: 'Curiosities Shop',
         tags: ['Misc', 'Jewelry', 'Gem', 'Tattoo', 'Summoning', 'Evil', 'Religious'],
