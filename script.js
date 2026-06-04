@@ -3414,31 +3414,50 @@ function soldSavedItem(itemId, storeIndex) {
     const el = document.getElementById(itemId);
     if (!el) return;
 
-    // Get the item name from the element
+    // Get the item name from the element more reliably
     const nameEl = el.querySelector('.item-name');
     if (!nameEl) return;
 
-    let itemName = nameEl.textContent.trim();
-    itemName = itemName.replace(/\s*🔮 Homebrew\s*/g, '').trim();
+    // Clone the node and remove child elements to get just the text
+    const nameClone = nameEl.cloneNode(true);
+    const badge = nameClone.querySelector('.homebrew-badge');
+    if (badge) badge.remove();
+    
+    let itemName = nameClone.textContent.trim();
+    // Strip quantity markers and lucky find stars just in case
+    itemName = itemName.replace(/\s*\(×\d+\)\s*/g, '').trim();
+    itemName = itemName.replace(/\s*⭐\s*/g, '').trim();
 
-    // Remove from saved store inventory permanently
+    console.log('Attempting to sell item:', itemName, 'from store index:', storeIndex);
+
+    // Get fresh copy from localStorage
     const savedStores = JSON.parse(localStorage.getItem('dnd-saved-stores') || '[]');
     const store = savedStores[storeIndex];
 
-    if (store) {
-        // Find and remove the first matching item
-        const itemIdx = store.inventory.findIndex(i => i.name === itemName);
-        if (itemIdx !== -1) {
-            store.inventory.splice(itemIdx, 1);
-            localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
-
-            // Update item count display
-            const countEl = document.getElementById('saved-store-item-count');
-            if (countEl) countEl.textContent = store.inventory.length;
-        }
+    if (!store) {
+        console.error('Store not found at index:', storeIndex);
+        return;
     }
 
-    // Animate removal
+    console.log('Store inventory before removal:', store.inventory.map(i => i.name));
+
+    // Find and remove the first matching item
+    const itemIdx = store.inventory.findIndex(i => i.name === itemName);
+    
+    if (itemIdx === -1) {
+        console.error('Item not found in inventory:', itemName);
+        // Still remove from DOM even if not found in storage
+    } else {
+        store.inventory.splice(itemIdx, 1);
+        localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
+        console.log('Item removed. Remaining inventory:', store.inventory.length);
+
+        // Update item count display
+        const countEl = document.getElementById('saved-store-item-count');
+        if (countEl) countEl.textContent = store.inventory.length;
+    }
+
+    // Animate and remove from DOM
     el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     el.style.opacity = '0';
     el.style.transform = 'translateX(-20px)';
