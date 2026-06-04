@@ -2520,14 +2520,17 @@ let html = `
     </div>
     <div class="inventory">
 `;
-	
-	// Group items by type
+	// Group items by type - handle both array and string type
 	const grouped = {};
 	for (const item of store.inventory) {
-		if (!grouped[item.type]) {
-			grouped[item.type] = [];
-		}
-		grouped[item.type].push(item);
+	    const primaryType = Array.isArray(item.type) 
+	        ? (item.type[0] || 'Misc') 
+	        : (item.type || 'Misc');
+	    
+	    if (!grouped[primaryType]) {
+	        grouped[primaryType] = [];
+	    }
+	    grouped[primaryType].push(item);
 	}
 	
 	for (const [type, items] of Object.entries(grouped).sort()) {
@@ -2606,31 +2609,31 @@ let html = `
 			
 			// For Magic Items (same pattern):
 			magicItems.sort((a, b) => a.name.localeCompare(b.name));
-			for (const item of magicItems) {
-			    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-			    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
-			    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
-			    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';  // ADD THIS
-			    const itemId = `saved-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
-
-			    html += `
-			        <div class="item">
-			            <div class="item-header">
-			                <div>
-			                    <span class="item-name">${item.name}${homebrewBadge}</span>
-			                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
-			                </div>
-			                <div style="display: flex; align-items: center; gap: 10px;">
-			                    <span class="item-price">${item.displayPrice}</span>
-			                    <button class="item-action-btn sold-btn" onclick="soldSavedItem('${itemId}', ${index})" title="Mark as sold">🪙 Sold</button>
-			                    <button class="item-action-btn print-btn" onclick="printItem('${itemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
-			                </div>
-			            </div>
-			            <div class="item-description">${item.description || 'No description available.'}</div>
-			            ${descriptorHTML}  <!-- ADD THIS LINE -->
-			        </div>
-			    `;
-			}
+				for (const item of magicItems) {
+				    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
+				    const isHomebrew = homebrewItemDatabase.some(hbItem => hbItem.name === item.name);
+				    const homebrewBadge = isHomebrew ? ' <span class="homebrew-badge">🔮 Homebrew</span>' : '';
+				    const descriptorHTML = item.savedDescriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${item.savedDescriptor}</div>` : '';
+				    const itemId = `saved-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
+				
+				    html += `
+				        <div class="item" id="${itemId}">
+				            <div class="item-header">
+				                <div>
+				                    <span class="item-name">${item.name}${homebrewBadge}</span>
+				                    <span class="item-rarity ${rarityClass}">(${item.rarity})</span>
+				                </div>
+				                <div style="display: flex; align-items: center; gap: 10px;">
+				                    <span class="item-price">${item.displayPrice}</span>
+				                    <button class="item-action-btn sold-btn" onclick="soldSavedItem('${itemId}', ${index})" title="Mark as sold">🪙 Sold</button>
+				                    <button class="item-action-btn print-btn" onclick="printItem('${itemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
+				                </div>
+				            </div>
+				            <div class="item-description">${item.description || 'No description available.'}</div>
+				            ${descriptorHTML}
+				        </div>
+				    `;
+				}
 			
 			html += `
 					</div>
