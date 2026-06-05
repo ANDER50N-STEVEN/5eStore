@@ -19,19 +19,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Inject build timestamp
-        run: |
-          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
-          echo "Timestamp is: $TIMESTAMP"
-          python3 -c "
-          import re
-          with open('index.html', 'r', encoding='utf-8') as f:
-              content = f.read()
-          print('Before:', 'BUILD_TIMESTAMP' in content)
-          content = content.replace('{{BUILD_TIMESTAMP}}', '$TIMESTAMP')
-          print('After:', '{{BUILD_TIMESTAMP}}' in content)
-          with open('index.html', 'w', encoding='utf-8') as f:
-              f.write(content)
-          "
+        run: python3 .github/scripts/inject_timestamp.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
