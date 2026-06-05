@@ -161,6 +161,22 @@
             font-size: 0.9em;
         }
 
+		.site-footer {
+		    margin-top: 40px;
+		    padding: 20px;
+		    text-align: center;
+		    border-top: 1px solid #4a2c1a;
+		    color: #8b6f47;
+		    font-size: 0.8em;
+		    font-style: italic;
+		    background: linear-gradient(135deg, #1a0f08 0%, #2c1810 100%);
+		}
+		
+		.site-footer p {
+		    margin: 0;
+		    color: #8b6f47;
+		}
+
 .items {
     display: block;
     padding: 0;
