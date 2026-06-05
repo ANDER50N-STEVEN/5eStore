@@ -5,7 +5,7 @@
     "descriptors": [],
     "name": "Abdel's Trusted Shield",
     "rarity": "Very Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 1560,
@@ -13,7 +13,7 @@
     "descriptors": [],
     "name": "Aberration Hunter's Amulet",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 407,
@@ -21,7 +21,7 @@
     "descriptors": [],
     "name": "Absolute Confidence Amulet",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 4450,
@@ -29,7 +29,7 @@
     "descriptors": [],
     "name": "Abyss Beckoners",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1310,
@@ -37,7 +37,7 @@
     "descriptors": [],
     "name": "Acrobat Shoes",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 4030,
@@ -45,7 +45,7 @@
     "descriptors": [],
     "name": "After Death Do Us Part",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1467,
@@ -53,7 +53,7 @@
     "descriptors": [],
     "name": "Ambusher (Shortsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 25250,
@@ -61,7 +61,7 @@
     "descriptors": [],
     "name": "Amulet of Bhaal",
     "rarity": "Legendary",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 48350,
@@ -69,7 +69,7 @@
     "descriptors": [],
     "name": "Amulet of Greater Health",
     "rarity": "Legendary",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 465,
@@ -77,7 +77,7 @@
     "descriptors": [],
     "name": "Amulet of Misty Step",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 740,
@@ -85,7 +85,7 @@
     "descriptors": [],
     "name": "Amulet of Restoration",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 465,
@@ -93,7 +93,7 @@
     "descriptors": [],
     "name": "Amulet of Silvanus",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 2650,
@@ -101,7 +101,7 @@
     "descriptors": [],
     "name": "Amulet of the Devout",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 3515,
@@ -109,7 +109,7 @@
     "descriptors": [],
     "name": "Amulet of the Harpers",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 612,
@@ -117,7 +117,7 @@
     "descriptors": [],
     "name": "Amulet of the Unworthy",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 375,
@@ -125,7 +125,7 @@
     "descriptors": [],
     "name": "Armor of Uninhibited Kushigo",
     "rarity": "Uncommon",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 11980,
@@ -133,7 +133,7 @@
     "descriptors": [],
     "name": "Assassin of Bhaal Cowl",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 697,
@@ -141,7 +141,7 @@
     "descriptors": [],
     "name": "Assassin's Shortsword (Shortsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 728,
@@ -149,7 +149,7 @@
     "descriptors": [],
     "name": "Assassin's Touch (Dagger)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 39050,
@@ -157,7 +157,7 @@
     "descriptors": [],
     "name": "Balduran's Giantslayer (Greatsword)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 575,
@@ -165,7 +165,7 @@
     "descriptors": [],
     "name": "Band of the Mystic Scoundrel",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 420,
@@ -173,7 +173,7 @@
     "descriptors": [],
     "name": "Beastmaster's Chain",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 3275,
@@ -181,7 +181,7 @@
     "descriptors": [],
     "name": "Belm (Scimitar)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1375,
@@ -189,7 +189,7 @@
     "descriptors": [],
     "name": "Bigboy's Chew Toy (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 7915,
@@ -197,7 +197,7 @@
     "descriptors": [],
     "name": "Birthright",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Jewelry"]
   },
   {
     "cost": 1235,
@@ -205,7 +205,7 @@
     "descriptors": [],
     "name": "Blackguard's Gauntlets",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gauntlet", "Armor"]
   },
   {
     "cost": 635,
@@ -213,7 +213,7 @@
     "descriptors": [],
     "name": "Blackguard's Greaves",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Armor"]
   },
   {
     "cost": 1840,
@@ -221,7 +221,7 @@
     "descriptors": [],
     "name": "Blackguard's Sword (Longsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 384,
@@ -229,7 +229,7 @@
     "descriptors": [],
     "name": "Blazer of Benevolence",
     "rarity": "Uncommon",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 15512,
@@ -237,7 +237,7 @@
     "descriptors": [],
     "name": "Blightbringer (Shortbow)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Bow"]
   },
   {
     "cost": 1390,
@@ -245,7 +245,7 @@
     "descriptors": [],
     "name": "Blood-Bound Blade (Longsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 917,
@@ -253,7 +253,7 @@
     "descriptors": [],
     "name": "Blooded Greataxe (Greataxe)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 41752,
@@ -261,7 +261,7 @@
     "descriptors": [],
     "name": "Bloodthirst (Dagger)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 8545,
@@ -269,7 +269,7 @@
     "descriptors": [],
     "name": "Bonespike Boots",
     "rarity": "Very Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 2691,
@@ -277,7 +277,7 @@
     "descriptors": [],
     "name": "Bonespike Garb",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 2650,
@@ -285,7 +285,7 @@
     "descriptors": [],
     "name": "Bonespike Gloves",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 9040,
@@ -293,7 +293,7 @@
     "descriptors": [],
     "name": "Bonespike Helmet",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Helmet", "Armor"]
   },
   {
     "cost": 382,
@@ -301,7 +301,7 @@
     "descriptors": [],
     "name": "Boots of Aid and Comfort",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 350,
@@ -309,15 +309,15 @@
     "descriptors": [],
     "name": "Boots of Apparent Death",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 350,
-    "description": "These boots While wearing these boots, you can use a bonus action to regain one expended use of your Bardic Inspiration. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
+    "description": "While wearing these boots, you can use a bonus action to regain one expended use of your Bardic Inspiration. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
     "descriptors": [],
     "name": "Boots of Brilliance",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 2870,
@@ -325,7 +325,7 @@
     "descriptors": [],
     "name": "Boots of Elemental Momentum",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 462,
@@ -333,7 +333,7 @@
     "descriptors": [],
     "name": "Boots of Genial Striding",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 15085,
@@ -341,7 +341,7 @@
     "descriptors": [],
     "name": "Boots of Persistence",
     "rarity": "Very Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 9482,
@@ -349,7 +349,7 @@
     "descriptors": [],
     "name": "Boots of Psionic Movement",
     "rarity": "Very Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 350,
@@ -357,7 +357,7 @@
     "descriptors": [],
     "name": "Boots of Uninhibited Kushigo",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 375,
@@ -365,7 +365,7 @@
     "descriptors": [],
     "name": "Boots of Very Fast Blinking",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 870,
@@ -373,7 +373,7 @@
     "descriptors": [],
     "name": "Bow of Awareness (Shortbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 1602,
@@ -381,7 +381,7 @@
     "descriptors": [],
     "name": "Bow of the Banshee (Shortbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 1090,
@@ -389,7 +389,7 @@
     "descriptors": [],
     "name": "Bracing Band",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 350,
@@ -397,7 +397,7 @@
     "descriptors": [],
     "name": "Braindrain Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 755,
@@ -405,7 +405,7 @@
     "descriptors": [],
     "name": "Breaching Pikestaff (Pike)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 419,
@@ -413,7 +413,7 @@
     "descriptors": [],
     "name": "Broodmother's Revenge",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 375,
@@ -421,7 +421,7 @@
     "descriptors": [],
     "name": "Browbeaten Circlet",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 4540,
@@ -429,7 +429,7 @@
     "descriptors": [],
     "name": "Burnished Ring",
     "rarity": "Very Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 4557,
@@ -437,7 +437,7 @@
     "descriptors": [],
     "name": "Cacophony (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 390,
@@ -445,7 +445,7 @@
     "descriptors": [],
     "name": "Callous Glow Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 391,
@@ -453,7 +453,7 @@
     "descriptors": [],
     "name": "Cap of Curing",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 875,
@@ -461,7 +461,7 @@
     "descriptors": [],
     "name": "Cap of Wrath",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 390,
@@ -469,7 +469,7 @@
     "descriptors": [],
     "name": "Caustic Band",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 800,
@@ -477,7 +477,7 @@
     "descriptors": [],
     "name": "Champion's Chain",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 1537,
@@ -485,7 +485,7 @@
     "descriptors": [],
     "name": "Charge-Bound Warhammer (Warhammer)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 375,
@@ -493,7 +493,7 @@
     "descriptors": [],
     "name": "Cindermoth Cloak",
     "rarity": "Uncommon",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 4850,
@@ -501,7 +501,7 @@
     "descriptors": [],
     "name": "Cindersnap Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2937,
@@ -509,7 +509,7 @@
     "descriptors": [],
     "name": "Circlet of Fire",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 2650,
@@ -517,7 +517,7 @@
     "descriptors": [],
     "name": "Circlet of Hunting",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 547,
@@ -525,7 +525,7 @@
     "descriptors": [],
     "name": "Circlet of Mental Anguish",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 575,
@@ -533,7 +533,7 @@
     "descriptors": [],
     "name": "Circlet of Psionic Revenge",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 375,
@@ -541,7 +541,7 @@
     "descriptors": [],
     "name": "Cloak of Cunning Brume",
     "rarity": "Uncommon",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 427,
@@ -549,7 +549,7 @@
     "descriptors": [],
     "name": "Cloak of Elemental Absorption",
     "rarity": "Uncommon",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 1205,
@@ -557,7 +557,7 @@
     "descriptors": [],
     "name": "Cloth of Authority",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 1420,
@@ -565,7 +565,7 @@
     "descriptors": [],
     "name": "Clown Hammer (Warhammer)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 2595,
@@ -573,7 +573,7 @@
     "descriptors": [],
     "name": "Club of Hill Giant Strength (Club)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1377,
@@ -581,7 +581,7 @@
     "descriptors": [],
     "name": "Cold Snap (Dagger)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 2180,
@@ -589,7 +589,7 @@
     "descriptors": [],
     "name": "Corellon's Grace (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 350,
@@ -597,7 +597,7 @@
     "descriptors": [],
     "name": "Corpsegrinder (Maul)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 760,
@@ -605,7 +605,7 @@
     "descriptors": [],
     "name": "Corrosive Flail (Flail)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 403,
@@ -613,7 +613,7 @@
     "descriptors": [],
     "name": "Coruscation Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 5800,
@@ -621,7 +621,7 @@
     "descriptors": [],
     "name": "Corvid Token",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 1398,
@@ -629,7 +629,7 @@
     "descriptors": [],
     "name": "Covert Cowl",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 1022,
@@ -637,7 +637,7 @@
     "descriptors": [],
     "name": "Craterflesh Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1810,
@@ -645,7 +645,7 @@
     "descriptors": [],
     "name": "Creation's Echo (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 36247,
@@ -653,7 +653,7 @@
     "descriptors": [],
     "name": "Crimson Mischief (Shortsword)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1073,
@@ -661,7 +661,7 @@
     "descriptors": [],
     "name": "Crossbow of Arcane Force (Heavy Crossbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Crossbow"]
   },
   {
     "cost": 460,
@@ -669,7 +669,7 @@
     "descriptors": [],
     "name": "Crusher's Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 3700,
@@ -677,7 +677,7 @@
     "descriptors": [],
     "name": "Crypt Lord Ring",
     "rarity": "Very Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 710,
@@ -685,7 +685,7 @@
     "descriptors": [],
     "name": "Daredevil Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 875,
@@ -693,7 +693,7 @@
     "descriptors": [],
     "name": "Dark Displacement Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1750,
@@ -701,7 +701,7 @@
     "descriptors": [],
     "name": "Darkfire Shortbow (Shortbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 1385,
@@ -709,7 +709,7 @@
     "descriptors": [],
     "name": "Defender Flail (Flail)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 547,
@@ -717,7 +717,7 @@
     "descriptors": [],
     "name": "Derivation Cloak",
     "rarity": "Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 975,
@@ -725,7 +725,7 @@
     "descriptors": [],
     "name": "Despair of Athkatla (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 37005,
@@ -733,7 +733,7 @@
     "descriptors": [],
     "name": "Devotee's Mace (Mace)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 350,
@@ -741,7 +741,7 @@
     "descriptors": [],
     "name": "Diadem of Arcane Synergy",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 3010,
@@ -749,7 +749,7 @@
     "descriptors": [],
     "name": "Disintegrating Night Walkers",
     "rarity": "Very Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 407,
@@ -757,7 +757,7 @@
     "descriptors": [],
     "name": "Djinni Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1447,
@@ -765,7 +765,7 @@
     "descriptors": [],
     "name": "Dolor Amarus (Dagger)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 1098,
@@ -773,7 +773,7 @@
     "descriptors": [],
     "name": "Doom Hammer (Maul)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 708,
@@ -781,7 +781,7 @@
     "descriptors": [],
     "name": "Dragon's Grasp (Handaxe)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 8635,
@@ -789,7 +789,7 @@
     "descriptors": [],
     "name": "Drakethroat Glaive (Glaive)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 899,
@@ -797,7 +797,7 @@
     "descriptors": [],
     "name": "Dread Iron Dagger (Dagger)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 1535,
@@ -805,7 +805,7 @@
     "descriptors": [],
     "name": "Drunken Cloth",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 80525,
@@ -813,7 +813,7 @@
     "descriptors": [],
     "name": "Duellist's Prerogative (Rapier)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 9737,
@@ -821,7 +821,7 @@
     "descriptors": [],
     "name": "Duke Ravengard's Longsword (Longsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2085,
@@ -829,7 +829,7 @@
     "descriptors": [],
     "name": "Enraging Heart Garb",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 800,
@@ -837,7 +837,7 @@
     "descriptors": [],
     "name": "Envoy's Amulet",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 1700,
@@ -845,7 +845,7 @@
     "descriptors": [],
     "name": "Evasive Shoes",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 744,
@@ -853,7 +853,7 @@
     "descriptors": [],
     "name": "Everburn Blade (Greatsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 587,
@@ -861,7 +861,7 @@
     "descriptors": [],
     "name": "Eversight Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 395,
@@ -869,7 +869,7 @@
     "descriptors": [],
     "name": "Explorer's Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 741,
@@ -877,7 +877,7 @@
     "descriptors": [],
     "name": "Exterminator's Axe (Greataxe)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 17370,
@@ -885,7 +885,7 @@
     "descriptors": [],
     "name": "Fabricated Arbalest (Heavy Crossbow)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Crossbow"]
   },
   {
     "cost": 1397,
@@ -893,7 +893,7 @@
     "descriptors": [],
     "name": "Faithbreaker (Warhammer)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 415,
@@ -901,7 +901,7 @@
     "descriptors": [],
     "name": "Family Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 470,
@@ -909,7 +909,7 @@
     "descriptors": [],
     "name": "Fetish of Callarduran Smoothhands",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 4000,
@@ -917,7 +917,7 @@
     "descriptors": [],
     "name": "Fey Semblance Amulet",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 403,
@@ -925,7 +925,7 @@
     "descriptors": [],
     "name": "Fireheart",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 778,
@@ -933,7 +933,7 @@
     "descriptors": [],
     "name": "Firestoker (Hand Crossbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Crossbow"]
   },
   {
     "cost": 395,
@@ -941,7 +941,7 @@
     "descriptors": [],
     "name": "Firzu's Ring of Trading",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 775,
@@ -949,7 +949,7 @@
     "descriptors": [],
     "name": "Fistbreaker Helm",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 1532,
@@ -957,7 +957,7 @@
     "descriptors": [],
     "name": "Flail of Ages (Flail)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 1195,
@@ -965,7 +965,7 @@
     "descriptors": [],
     "name": "Flawed Helldusk Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1550,
@@ -973,7 +973,7 @@
     "descriptors": [],
     "name": "Flawed Helldusk Helmet",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 375,
@@ -981,7 +981,7 @@
     "descriptors": [],
     "name": "Fleetfingers",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 375,
@@ -989,7 +989,7 @@
     "descriptors": [],
     "name": "Fleshmelter Cloak",
     "rarity": "Uncommon",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 1567,
@@ -997,7 +997,7 @@
     "descriptors": [],
     "name": "Fleshrender (Shortsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 10150,
@@ -1005,7 +1005,7 @@
     "descriptors": [],
     "name": "Foebreaker (Maul)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 420,
@@ -1013,7 +1013,7 @@
     "descriptors": [],
     "name": "Frost Prince",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 962,
@@ -1021,7 +1021,7 @@
     "descriptors": [],
     "name": "Gandrel's Aspiration (Heavy Crossbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Crossbow"]
   },
   {
     "cost": 642,
@@ -1029,7 +1029,7 @@
     "descriptors": [],
     "name": "Garb of the Land and Sky",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 6302,
@@ -1037,7 +1037,7 @@
     "descriptors": [],
     "name": "Gauntlet of the Tyrant",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 19660,
@@ -1045,7 +1045,7 @@
     "descriptors": [],
     "name": "Gauntlets of Hill Giant Strength",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 350,
@@ -1053,7 +1053,7 @@
     "descriptors": [],
     "name": "Gauntlets of Surging Accuracy",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 11200,
@@ -1061,7 +1061,7 @@
     "descriptors": [],
     "name": "Gauntlets of the Warmaster",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 3775,
@@ -1069,7 +1069,7 @@
     "descriptors": [],
     "name": "Gemini Gloves",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2685,
@@ -1077,7 +1077,7 @@
     "descriptors": [],
     "name": "Giantbreaker (Heavy Crossbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Crossbow"]
   },
   {
     "cost": 1135,
@@ -1085,7 +1085,7 @@
     "descriptors": [],
     "name": "Gibus of the Worshipful Servant",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 2502,
@@ -1093,7 +1093,7 @@
     "descriptors": [],
     "name": "Gleamdance Dagger (Dagger)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 480,
@@ -1101,7 +1101,7 @@
     "descriptors": [],
     "name": "Gloomstrand Shield",
     "rarity": "Uncommon",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 390,
@@ -1109,7 +1109,7 @@
     "descriptors": [],
     "name": "Gloves of Archery",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 375,
@@ -1117,7 +1117,7 @@
     "descriptors": [],
     "name": "Gloves of Baneful Striking",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 995,
@@ -1125,7 +1125,7 @@
     "descriptors": [],
     "name": "Gloves of Battlemage's Power",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1080,
@@ -1133,7 +1133,7 @@
     "descriptors": [],
     "name": "Gloves of Belligerent Skies",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 607,
@@ -1141,7 +1141,7 @@
     "descriptors": [],
     "name": "Gloves of Cinder and Sizzle",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 695,
@@ -1149,7 +1149,7 @@
     "descriptors": [],
     "name": "Gloves of Crushing",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 11560,
@@ -1157,7 +1157,7 @@
     "descriptors": [],
     "name": "Gloves of Dexterity",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 420,
@@ -1165,7 +1165,7 @@
     "descriptors": [],
     "name": "Gloves of Hail of Thorns",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 620,
@@ -1173,7 +1173,7 @@
     "descriptors": [],
     "name": "Gloves of Heroism",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 395,
@@ -1181,7 +1181,7 @@
     "descriptors": [],
     "name": "Gloves of Power",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 37965,
@@ -1189,7 +1189,7 @@
     "descriptors": [],
     "name": "Gloves of Soul Catching",
     "rarity": "Legendary",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 920,
@@ -1197,7 +1197,7 @@
     "descriptors": [],
     "name": "Gloves of the Automaton",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 350,
@@ -1205,7 +1205,7 @@
     "descriptors": [],
     "name": "Gloves of the Balanced Hands",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1400,
@@ -1213,7 +1213,7 @@
     "descriptors": [],
     "name": "Gloves of the Duellist",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 632,
@@ -1221,7 +1221,7 @@
     "descriptors": [],
     "name": "Gloves of the Growling Underdog",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 487,
@@ -1229,7 +1229,7 @@
     "descriptors": [],
     "name": "Gloves of Uninhibited Kushigo",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 494,
@@ -1237,7 +1237,7 @@
     "descriptors": [],
     "name": "Glowing Shield",
     "rarity": "Uncommon",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 960,
@@ -1245,7 +1245,7 @@
     "descriptors": [],
     "name": "Gold Wyrmling Staff (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 38300,
@@ -1253,7 +1253,7 @@
     "descriptors": [],
     "name": "Gontr Mael (Longbow)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 11965,
@@ -1261,7 +1261,7 @@
     "descriptors": [],
     "name": "Grymskull Helm",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 407,
@@ -1269,7 +1269,7 @@
     "descriptors": [],
     "name": "Guiding Light",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 8500,
@@ -1277,7 +1277,7 @@
     "descriptors": [],
     "name": "Halberd of Vigilance (Halberd)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 375,
@@ -1285,7 +1285,7 @@
     "descriptors": [],
     "name": "Hamarhraft (Maul)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 1657,
@@ -1293,7 +1293,7 @@
     "descriptors": [],
     "name": "Hammer of the Just (Warhammer)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 430,
@@ -1301,7 +1301,7 @@
     "descriptors": [],
     "name": "Hammergrim Mist Amulet",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 9465,
@@ -1309,7 +1309,7 @@
     "descriptors": [],
     "name": "Handmaiden's Mace (Mace)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 4478,
@@ -1317,7 +1317,7 @@
     "descriptors": [],
     "name": "Harmonic Dueller (Rapier)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2235,
@@ -1325,7 +1325,7 @@
     "descriptors": [],
     "name": "Harmonium Halberd (Halberd)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 1425,
@@ -1333,7 +1333,7 @@
     "descriptors": [],
     "name": "Harold (Heavy Crossbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Crossbow"]
   },
   {
     "cost": 1495,
@@ -1341,7 +1341,7 @@
     "descriptors": [],
     "name": "Harper Sacredstriker (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 562,
@@ -1349,7 +1349,7 @@
     "descriptors": [],
     "name": "Haste Helm",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 375,
@@ -1357,7 +1357,7 @@
     "descriptors": [],
     "name": "Hat of Fire Acuity",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 375,
@@ -1365,7 +1365,7 @@
     "descriptors": [],
     "name": "Hat of Storm Scion's Power",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 350,
@@ -1373,7 +1373,7 @@
     "descriptors": [],
     "name": "Hat of the Sharp Caster",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 575,
@@ -1381,7 +1381,7 @@
     "descriptors": [],
     "name": "Hat of Uninhibited Kushigo",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 385,
@@ -1389,7 +1389,7 @@
     "descriptors": [],
     "name": "Hellbeard Halberd (Halberd)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 2695,
@@ -1397,7 +1397,7 @@
     "descriptors": [],
     "name": "Helldusk Boots",
     "rarity": "Very Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 9100,
@@ -1405,7 +1405,7 @@
     "descriptors": [],
     "name": "Helldusk Gloves",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 20110,
@@ -1413,7 +1413,7 @@
     "descriptors": [],
     "name": "Helldusk Helmet",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 11520,
@@ -1421,7 +1421,7 @@
     "descriptors": [],
     "name": "Hellfire Engine Crossbow (Heavy Crossbow)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Crossbow"]
   },
   {
     "cost": 10142,
@@ -1429,7 +1429,7 @@
     "descriptors": [],
     "name": "Hellfire Greataxe (Greataxe)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 17035,
@@ -1437,7 +1437,7 @@
     "descriptors": [],
     "name": "Hellfire Hand Crossbow (Hand Crossbow)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Crossbow"]
   },
   {
     "cost": 1247,
@@ -1445,7 +1445,7 @@
     "descriptors": [],
     "name": "Hellrider Longbow (Longbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 620,
@@ -1453,7 +1453,7 @@
     "descriptors": [],
     "name": "Hellrider's Pride",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 50535,
@@ -1461,7 +1461,7 @@
     "descriptors": [],
     "name": "Helm of Balduran",
     "rarity": "Legendary",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 620,
@@ -1469,7 +1469,7 @@
     "descriptors": [],
     "name": "Helmet of Arcane Acuity",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 620,
@@ -1477,7 +1477,7 @@
     "descriptors": [],
     "name": "Helmet of Autonomy",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 15925,
@@ -1485,7 +1485,7 @@
     "descriptors": [],
     "name": "Helmet of Grit",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 642,
@@ -1493,7 +1493,7 @@
     "descriptors": [],
     "name": "Helmet of Smiting",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 722,
@@ -1501,7 +1501,7 @@
     "descriptors": [],
     "name": "Herbalist's Gloves",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 398,
@@ -1509,7 +1509,7 @@
     "descriptors": [],
     "name": "Hoarfrost Boots",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 2332,
@@ -1517,7 +1517,7 @@
     "descriptors": [],
     "name": "Hollow's Staff (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 620,
@@ -1525,7 +1525,7 @@
     "descriptors": [],
     "name": "Holy Lance Helm",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 7150,
@@ -1533,7 +1533,7 @@
     "descriptors": [],
     "name": "Hood of the Weave",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 5005,
@@ -1541,7 +1541,7 @@
     "descriptors": [],
     "name": "Horns of the Berserker",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 7195,
@@ -1549,7 +1549,7 @@
     "descriptors": [],
     "name": "Hr'a'cknir Bracers",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 677,
@@ -1557,7 +1557,7 @@
     "descriptors": [],
     "name": "Hunter's Dagger (Dagger)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 1302,
@@ -1565,7 +1565,7 @@
     "descriptors": [],
     "name": "Hunting Shortbow (Shortbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 1235,
@@ -1573,7 +1573,7 @@
     "descriptors": [],
     "name": "Icebite Robe",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 713,
@@ -1581,7 +1581,7 @@
     "descriptors": [],
     "name": "Ichorous Gloves",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 15460,
@@ -1589,7 +1589,7 @@
     "descriptors": [],
     "name": "Incandescent Staff (Quarterstaff)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1860,
@@ -1597,7 +1597,7 @@
     "descriptors": [],
     "name": "Infernal Mace (Mace)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 25025,
@@ -1605,7 +1605,7 @@
     "descriptors": [],
     "name": "Infernal Rapier (Rapier)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 4450,
@@ -1613,7 +1613,7 @@
     "descriptors": [],
     "name": "Infernal Robe",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 1856,
@@ -1621,7 +1621,7 @@
     "descriptors": [],
     "name": "Infernal Spear (Spear)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 713,
@@ -1629,7 +1629,7 @@
     "descriptors": [],
     "name": "Intransigent Warhammer (Warhammer)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 460,
@@ -1637,7 +1637,7 @@
     "descriptors": [],
     "name": "Ironvine Shield",
     "rarity": "Uncommon",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 675,
@@ -1645,7 +1645,7 @@
     "descriptors": [],
     "name": "Ironwood Club (Club)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1138,
@@ -1653,7 +1653,7 @@
     "descriptors": [],
     "name": "Jagged Spear (Spear)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 4000,
@@ -1661,7 +1661,7 @@
     "descriptors": [],
     "name": "Jannath's Hat",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 4025,
@@ -1669,7 +1669,7 @@
     "descriptors": [],
     "name": "Jhannyl's Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1637,
@@ -1677,7 +1677,7 @@
     "descriptors": [],
     "name": "Jorgoral's Greatsword (Greatsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 5335,
@@ -1685,7 +1685,7 @@
     "descriptors": [],
     "name": "Justiciar's Greatshield",
     "rarity": "Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 21590,
@@ -1693,7 +1693,7 @@
     "descriptors": [],
     "name": "Justiciar's Scimitar (Scimitar)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 700,
@@ -1701,7 +1701,7 @@
     "descriptors": [],
     "name": "Keepsake Ring",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1420,
@@ -1709,7 +1709,7 @@
     "descriptors": [],
     "name": "Ketheric's Shield",
     "rarity": "Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 765,
@@ -1717,7 +1717,7 @@
     "descriptors": [],
     "name": "Ketheric's Warhammer (Warhammer)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 395,
@@ -1725,7 +1725,7 @@
     "descriptors": [],
     "name": "Key of the Ancients",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 11650,
@@ -1733,7 +1733,7 @@
     "descriptors": [],
     "name": "Khalid's Gift",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 4450,
@@ -1741,7 +1741,7 @@
     "descriptors": [],
     "name": "Killer's Sweetheart",
     "rarity": "Very Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 12110,
@@ -1749,7 +1749,7 @@
     "descriptors": [],
     "name": "Knife of the Undermountain King (Shortsword)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 485,
@@ -1757,7 +1757,7 @@
     "descriptors": [],
     "name": "Knock Knuckle Gloves",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 407,
@@ -1765,7 +1765,7 @@
     "descriptors": [],
     "name": "Komira's Locket",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 700,
@@ -1773,7 +1773,7 @@
     "descriptors": [],
     "name": "Kurwin's Cauteriser (Scimitar)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1390,
@@ -1781,7 +1781,7 @@
     "descriptors": [],
     "name": "Larethian's Wrath (Longsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1400,
@@ -1789,7 +1789,7 @@
     "descriptors": [],
     "name": "Least Expected (Shortbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 8650,
@@ -1797,7 +1797,7 @@
     "descriptors": [],
     "name": "Legacy of the Masters",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 713,
@@ -1805,7 +1805,7 @@
     "descriptors": [],
     "name": "Light of Creation (Halberd)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 704,
@@ -1813,7 +1813,7 @@
     "descriptors": [],
     "name": "Lightning Jabber (Spear)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 487,
@@ -1821,7 +1821,7 @@
     "descriptors": [],
     "name": "Linebreaker Boots",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 917,
@@ -1829,7 +1829,7 @@
     "descriptors": [],
     "name": "Loviatar's Scourge (Mace)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 648,
@@ -1837,7 +1837,7 @@
     "descriptors": [],
     "name": "Luminous Gloves",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1395,
@@ -1845,7 +1845,7 @@
     "descriptors": [],
     "name": "Mage's Friend",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 4175,
@@ -1853,7 +1853,7 @@
     "descriptors": [],
     "name": "Mantle of the Holy Warrior",
     "rarity": "Very Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 61312,
@@ -1861,7 +1861,7 @@
     "descriptors": [],
     "name": "Markoheshkir (Quarterstaff)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 2395,
@@ -1869,7 +1869,7 @@
     "descriptors": [],
     "name": "Marksmanship Hat",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 2642,
@@ -1877,7 +1877,7 @@
     "descriptors": [],
     "name": "Martial Exertion Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 16820,
@@ -1885,7 +1885,7 @@
     "descriptors": [],
     "name": "Mask of Soul Perception",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 2695,
@@ -1893,7 +1893,7 @@
     "descriptors": [],
     "name": "Melf's First Staff (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 875,
@@ -1901,7 +1901,7 @@
     "descriptors": [],
     "name": "Merregon Halberd (Halberd)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 2532,
@@ -1909,7 +1909,7 @@
     "descriptors": [],
     "name": "Monster Slayer Glaive (Glaive)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 26664,
@@ -1917,7 +1917,7 @@
     "descriptors": [],
     "name": "Moon Devotion Robe",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 1375,
@@ -1925,7 +1925,7 @@
     "descriptors": [],
     "name": "Moondrop Pendant",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 3395,
@@ -1933,7 +1933,7 @@
     "descriptors": [],
     "name": "Moonlight Glaive (Glaive)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 8310,
@@ -1941,7 +1941,7 @@
     "descriptors": [],
     "name": "Mourning Frost (Quarterstaff)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1705,
@@ -1949,7 +1949,7 @@
     "descriptors": [],
     "name": "Murderous Cut (Dagger)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 1704,
@@ -1957,7 +1957,7 @@
     "descriptors": [],
     "name": "Myrkulite Scourge (Flail)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 1430,
@@ -1965,7 +1965,7 @@
     "descriptors": [],
     "name": "Mystra's Grace",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 1743,
@@ -1973,7 +1973,7 @@
     "descriptors": [],
     "name": "Nature's Snare (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 4705,
@@ -1981,7 +1981,7 @@
     "descriptors": [],
     "name": "Ne'er Misser (Hand Crossbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Crossbow"]
   },
   {
     "cost": 3375,
@@ -1989,7 +1989,7 @@
     "descriptors": [],
     "name": "Necklace of Elemental Augmentation",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 4767,
@@ -1997,7 +1997,7 @@
     "descriptors": [],
     "name": "Nimblefinger Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 8175,
@@ -2005,7 +2005,7 @@
     "descriptors": [],
     "name": "Nymph Cloak",
     "rarity": "Very Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 62755,
@@ -2013,7 +2013,7 @@
     "descriptors": [],
     "name": "Nyrulna (Trident)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 5785,
@@ -2021,7 +2021,7 @@
     "descriptors": [],
     "name": "Obsidian Laced Robe",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 59765,
@@ -2029,7 +2029,7 @@
     "descriptors": [],
     "name": "Orphic Hammer (Warhammer)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 3650,
@@ -2037,7 +2037,7 @@
     "descriptors": [],
     "name": "Orphic Ring",
     "rarity": "Very Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2840,
@@ -2045,7 +2045,7 @@
     "descriptors": [],
     "name": "Pale Oak (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 10775,
@@ -2053,7 +2053,7 @@
     "descriptors": [],
     "name": "Pelorsun Blade (Rapier)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 6445,
@@ -2061,7 +2061,7 @@
     "descriptors": [],
     "name": "Phalar Aluve (Longsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1800,
@@ -2069,7 +2069,7 @@
     "descriptors": [],
     "name": "Poisoner's Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1403,
@@ -2077,7 +2077,7 @@
     "descriptors": [],
     "name": "Poisoner's Robe",
     "rarity": "Uncommon",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 12650,
@@ -2085,7 +2085,7 @@
     "descriptors": [],
     "name": "Potent Robe",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 2436,
@@ -2093,7 +2093,7 @@
     "descriptors": [],
     "name": "Psychic Spark",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 1635,
@@ -2101,7 +2101,7 @@
     "descriptors": [],
     "name": "Punch-Drunk Bastard (Greatclub)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 13225,
@@ -2109,7 +2109,7 @@
     "descriptors": [],
     "name": "Pyroquickness Hat",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 26500,
@@ -2117,7 +2117,7 @@
     "descriptors": [],
     "name": "Quickspell Gloves",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1988,
@@ -2125,7 +2125,7 @@
     "descriptors": [],
     "name": "Rain Dancer (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1185,
@@ -2133,7 +2133,7 @@
     "descriptors": [],
     "name": "Rat Bat (Greatclub)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1530,
@@ -2141,7 +2141,7 @@
     "descriptors": [],
     "name": "Raven Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 3565,
@@ -2149,7 +2149,7 @@
     "descriptors": [],
     "name": "Ravengard's Scourger (Morningstar)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 1418,
@@ -2157,7 +2157,7 @@
     "descriptors": [],
     "name": "Reason's Grasp",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1740,
@@ -2165,7 +2165,7 @@
     "descriptors": [],
     "name": "Render of Mind and Body (Shortsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1680,
@@ -2173,7 +2173,7 @@
     "descriptors": [],
     "name": "Returning Pike (Pike)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 600,
@@ -2181,7 +2181,7 @@
     "descriptors": [],
     "name": "Reverse Rain Cloak",
     "rarity": "Uncommon",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 9687,
@@ -2189,7 +2189,7 @@
     "descriptors": [],
     "name": "Rhapsody (Dagger)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 1788,
@@ -2197,7 +2197,7 @@
     "descriptors": [],
     "name": "Ring of Absolute Force",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 3500,
@@ -2205,7 +2205,7 @@
     "descriptors": [],
     "name": "Ring of Arcane Synergy",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2500,
@@ -2213,7 +2213,7 @@
     "descriptors": [],
     "name": "Ring of Blink",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1420,
@@ -2221,7 +2221,7 @@
     "descriptors": [],
     "name": "Ring of Colour Spray",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 903,
@@ -2229,7 +2229,7 @@
     "descriptors": [],
     "name": "Ring of Elemental Infusion",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 5690,
@@ -2237,7 +2237,7 @@
     "descriptors": [],
     "name": "Ring of Exalted Marrow",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 4900,
@@ -2245,7 +2245,7 @@
     "descriptors": [],
     "name": "Ring of Feywild Sparks",
     "rarity": "Very Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 875,
@@ -2253,7 +2253,7 @@
     "descriptors": [],
     "name": "Ring of Flinging",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 895,
@@ -2261,7 +2261,7 @@
     "descriptors": [],
     "name": "Ring of Geniality",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1387,
@@ -2269,7 +2269,7 @@
     "descriptors": [],
     "name": "Ring of Mental Inhibition",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 885,
@@ -2277,7 +2277,7 @@
     "descriptors": [],
     "name": "Ring of Restorative Gravity",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2401,
@@ -2285,7 +2285,7 @@
     "descriptors": [],
     "name": "Ring of Salving",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1693,
@@ -2293,7 +2293,7 @@
     "descriptors": [],
     "name": "Ring of Self Immolation",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2465,
@@ -2301,7 +2301,7 @@
     "descriptors": [],
     "name": "Ring of Shadows",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1713,
@@ -2309,7 +2309,7 @@
     "descriptors": [],
     "name": "Ring of Spiteful Thunder",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2850,
@@ -2317,7 +2317,7 @@
     "descriptors": [],
     "name": "Ring of Truthfulness",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2700,
@@ -2325,7 +2325,7 @@
     "descriptors": [],
     "name": "Ring of Twilight",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 3720,
@@ -2333,7 +2333,7 @@
     "descriptors": [],
     "name": "Risky Ring",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1680,
@@ -2341,7 +2341,7 @@
     "descriptors": [],
     "name": "Ritual Axe (Handaxe)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 1677,
@@ -2349,7 +2349,7 @@
     "descriptors": [],
     "name": "Ritual Dagger (Dagger)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 677,
@@ -2357,7 +2357,7 @@
     "descriptors": [],
     "name": "Ritual Dagger of Shar (Dagger)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 5300,
@@ -2365,7 +2365,7 @@
     "descriptors": [],
     "name": "Robe of Exquisite Focus",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 12500,
@@ -2373,7 +2373,7 @@
     "descriptors": [],
     "name": "Robe of Supreme Defences",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 16736,
@@ -2381,7 +2381,7 @@
     "descriptors": [],
     "name": "Robe of the Weave",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 1736,
@@ -2389,7 +2389,7 @@
     "descriptors": [],
     "name": "Rupturing Blade (Rapier)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1950,
@@ -2397,7 +2397,7 @@
     "descriptors": [],
     "name": "Safeguard Shield",
     "rarity": "Uncommon",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 28080,
@@ -2405,7 +2405,7 @@
     "descriptors": [],
     "name": "Sarevok's Horned Helmet",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 970,
@@ -2413,7 +2413,7 @@
     "descriptors": [],
     "name": "Scabby Pugilist Circlet",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 920,
@@ -2421,7 +2421,7 @@
     "descriptors": [],
     "name": "Seemingly Gleaming Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 215301,
@@ -2429,7 +2429,7 @@
     "descriptors": [],
     "name": "Selûne's Spear of Night (Spear)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 3250,
@@ -2437,7 +2437,7 @@
     "descriptors": [],
     "name": "Sentient Amulet (Very Rare)",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 2487,
@@ -2445,7 +2445,7 @@
     "descriptors": [],
     "name": "Seraphic Pugilist Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1667,
@@ -2453,7 +2453,7 @@
     "descriptors": [],
     "name": "Servitor of the Black Hand Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 14830,
@@ -2461,7 +2461,7 @@
     "descriptors": [],
     "name": "Sethan (Greataxe)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 15050,
@@ -2469,7 +2469,7 @@
     "descriptors": [],
     "name": "Shade-Slayer Cloak",
     "rarity": "Very Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 1968,
@@ -2477,7 +2477,7 @@
     "descriptors": [],
     "name": "Shadow Blade Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 5555,
@@ -2485,7 +2485,7 @@
     "descriptors": [],
     "name": "Shadow Lantern (Club)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1440,
@@ -2493,7 +2493,7 @@
     "descriptors": [],
     "name": "Shadow of Menzoberranzan",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 1403,
@@ -2501,7 +2501,7 @@
     "descriptors": [],
     "name": "Shadow-Cloaked Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 7775,
@@ -2509,7 +2509,7 @@
     "descriptors": [],
     "name": "Shapeshifter Hat",
     "rarity": "Very Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 1375,
@@ -2517,7 +2517,7 @@
     "descriptors": [],
     "name": "Shapeshifter's Boon Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 80801,
@@ -2525,7 +2525,7 @@
     "descriptors": [],
     "name": "Shar's Spear of Evening (Spear)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 1788,
@@ -2533,7 +2533,7 @@
     "descriptors": [],
     "name": "Shar's Temptation",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 3246,
@@ -2541,7 +2541,7 @@
     "descriptors": [],
     "name": "Shattered Flail (Mace)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 5205,
@@ -2549,7 +2549,7 @@
     "descriptors": [],
     "name": "Shelter of Athkatla",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 14510,
@@ -2557,7 +2557,7 @@
     "descriptors": [],
     "name": "Shield (Hope)",
     "rarity": "Very Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 22910,
@@ -2565,7 +2565,7 @@
     "descriptors": [],
     "name": "Shield of Devotion",
     "rarity": "Very Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 2605,
@@ -2573,7 +2573,7 @@
     "descriptors": [],
     "name": "Shield of Scorching Reprisal",
     "rarity": "Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 2250,
@@ -2581,7 +2581,7 @@
     "descriptors": [],
     "name": "Shield of Shielding",
     "rarity": "Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 27930,
@@ -2589,7 +2589,7 @@
     "descriptors": [],
     "name": "Shield of the Undevout",
     "rarity": "Very Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 2650,
@@ -2597,7 +2597,7 @@
     "descriptors": [],
     "name": "Shifting Corpus Ring",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 677,
@@ -2605,7 +2605,7 @@
     "descriptors": [],
     "name": "Shining Staver-of-Skulls (Light Hammer)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 1728,
@@ -2613,7 +2613,7 @@
     "descriptors": [],
     "name": "Shortsword of First Blood (Shortsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 707,
@@ -2621,7 +2621,7 @@
     "descriptors": [],
     "name": "Silver Pendant",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 46137,
@@ -2629,7 +2629,7 @@
     "descriptors": [],
     "name": "Silver Sword of the Astral Plane (Greatsword)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 3033,
@@ -2637,7 +2637,7 @@
     "descriptors": [],
     "name": "Skybreaker (Light Hammer)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 1895,
@@ -2645,7 +2645,7 @@
     "descriptors": [],
     "name": "Slicing Shortsword (Shortsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2037,
@@ -2653,7 +2653,7 @@
     "descriptors": [],
     "name": "Slinging Shoes",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 815,
@@ -2661,7 +2661,7 @@
     "descriptors": [],
     "name": "Smuggler's Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1547,
@@ -2669,7 +2669,7 @@
     "descriptors": [],
     "name": "Snow-Dusted Monastery Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1375,
@@ -2677,7 +2677,7 @@
     "descriptors": [],
     "name": "Snowburst Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2860,
@@ -2685,7 +2685,7 @@
     "descriptors": [],
     "name": "Sorrow (Glaive)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2787,
@@ -2693,7 +2693,7 @@
     "descriptors": [],
     "name": "Soulbreaker Greatsword (Greatsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 4650,
@@ -2701,7 +2701,7 @@
     "descriptors": [],
     "name": "Spaceshunt Boots",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 1775,
@@ -2709,7 +2709,7 @@
     "descriptors": [],
     "name": "Speedy Reply (Scimitar)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 3287,
@@ -2717,7 +2717,7 @@
     "descriptors": [],
     "name": "Spell Savant Amulet",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 6925,
@@ -2725,7 +2725,7 @@
     "descriptors": [],
     "name": "Spellcrux Amulet",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 5842,
@@ -2733,7 +2733,7 @@
     "descriptors": [],
     "name": "Spellmight Gloves",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1485,
@@ -2741,7 +2741,7 @@
     "descriptors": [],
     "name": "Spellseeking Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 3205,
@@ -2749,7 +2749,7 @@
     "descriptors": [],
     "name": "Spellthief (Longbow)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 1443,
@@ -2757,7 +2757,7 @@
     "descriptors": [],
     "name": "Spiderstep Boots",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 2080,
@@ -2765,7 +2765,7 @@
     "descriptors": [],
     "name": "Spineshudder Amulet",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 1450,
@@ -2773,7 +2773,7 @@
     "descriptors": [],
     "name": "Springstep Boots",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 1160,
@@ -2781,7 +2781,7 @@
     "descriptors": [],
     "name": "Spurred Band",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1713,
@@ -2789,7 +2789,7 @@
     "descriptors": [],
     "name": "Staff of a Mumbling Wizard (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 2750,
@@ -2797,7 +2797,7 @@
     "descriptors": [],
     "name": "Staff of Arcane Blessing (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 9770,
@@ -2805,7 +2805,7 @@
     "descriptors": [],
     "name": "Staff of Cherished Necromancy (Quarterstaff)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 1988,
@@ -2813,7 +2813,7 @@
     "descriptors": [],
     "name": "Staff of Crones (Quarterstaff)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 5155,
@@ -2821,7 +2821,7 @@
     "descriptors": [],
     "name": "Staff of Interruption (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 6692,
@@ -2829,7 +2829,7 @@
     "descriptors": [],
     "name": "Staff of Spellpower (Quarterstaff)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 5425,
@@ -2837,7 +2837,7 @@
     "descriptors": [],
     "name": "Staff of the Emperor (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 9625,
@@ -2845,7 +2845,7 @@
     "descriptors": [],
     "name": "Staff of the Ram (Quarterstaff)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 2912,
@@ -2853,7 +2853,7 @@
     "descriptors": [],
     "name": "Stalker Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 685,
@@ -2861,7 +2861,7 @@
     "descriptors": [],
     "name": "Steelforge Sword (Shortsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2250,
@@ -2869,7 +2869,7 @@
     "descriptors": [],
     "name": "Steelwatcher Helmet",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 3777,
@@ -2877,7 +2877,7 @@
     "descriptors": [],
     "name": "Stillmaker (Dagger)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 1403,
@@ -2885,7 +2885,7 @@
     "descriptors": [],
     "name": "Strange Conduit Ring",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 1650,
@@ -2893,7 +2893,7 @@
     "descriptors": [],
     "name": "Strange Tendril Amulet",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 1220,
@@ -2901,7 +2901,7 @@
     "descriptors": [],
     "name": "Sunwalker's Gift",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 14350,
@@ -2909,7 +2909,7 @@
     "descriptors": [],
     "name": "Surgeon's Subjugation Amulet",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 7752,
@@ -2917,7 +2917,7 @@
     "descriptors": [],
     "name": "Sussur Dagger (Dagger)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 7800,
@@ -2925,7 +2925,7 @@
     "descriptors": [],
     "name": "Sussur Greatsword (Greatsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 7751,
@@ -2933,7 +2933,7 @@
     "descriptors": [],
     "name": "Sussur Sickle (Sickle)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 3725,
@@ -2941,7 +2941,7 @@
     "descriptors": [],
     "name": "Svartlebee's Woundseeker (Greatsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 4032,
@@ -2949,7 +2949,7 @@
     "descriptors": [],
     "name": "Swires' Sledboard",
     "rarity": "Very Rare",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 2725,
@@ -2957,7 +2957,7 @@
     "descriptors": [],
     "name": "Swiresy Shoes",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 10836,
@@ -2965,7 +2965,7 @@
     "descriptors": [],
     "name": "Sword of Chaos (Greatsword)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 3042,
@@ -2973,7 +2973,7 @@
     "descriptors": [],
     "name": "Sword of Clutching Umbra (Shortsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1815,
@@ -2981,7 +2981,7 @@
     "descriptors": [],
     "name": "Sword of Justice (Greatsword)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2700,
@@ -2989,7 +2989,7 @@
     "descriptors": [],
     "name": "Sword of Screams (Rapier)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 3202,
@@ -2997,7 +2997,7 @@
     "descriptors": [],
     "name": "Sword of the Emperor (Longsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 3575,
@@ -3005,7 +3005,7 @@
     "descriptors": [],
     "name": "Swordmaster Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2200,
@@ -3013,7 +3013,7 @@
     "descriptors": [],
     "name": "Sylvan Scimitar (Scimitar)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 875,
@@ -3021,7 +3021,7 @@
     "descriptors": [],
     "name": "Tarnished Charm",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 954,
@@ -3029,7 +3029,7 @@
     "descriptors": [],
     "name": "The Amulet of Lost Voices",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 3385,
@@ -3037,7 +3037,7 @@
     "descriptors": [],
     "name": "The Baneful (Shortsword)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 97955,
@@ -3045,7 +3045,7 @@
     "descriptors": [],
     "name": "The Blood of Lathander (Mace)",
     "rarity": "Legendary",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 8970,
@@ -3053,7 +3053,7 @@
     "descriptors": [],
     "name": "The Dancing Breeze (Glaive)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 15750,
@@ -3061,7 +3061,7 @@
     "descriptors": [],
     "name": "The Dead Shot (Longbow)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 6440,
@@ -3069,7 +3069,7 @@
     "descriptors": [],
     "name": "The Deathstalker Mantle",
     "rarity": "Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 1788,
@@ -3077,7 +3077,7 @@
     "descriptors": [],
     "name": "The Ever-Seeing Eye",
     "rarity": "Uncommon",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 10282,
@@ -3085,7 +3085,7 @@
     "descriptors": [],
     "name": "The Graceful Cloth (Araj)",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 10622,
@@ -3093,7 +3093,7 @@
     "descriptors": [],
     "name": "The Graceful Cloth (Esther)",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 3425,
@@ -3101,7 +3101,7 @@
     "descriptors": [],
     "name": "The Joltshooter (Longbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 4425,
@@ -3109,7 +3109,7 @@
     "descriptors": [],
     "name": "The Long Arm of the Gur (Heavy Crossbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Crossbow"]
   },
   {
     "cost": 11072,
@@ -3117,7 +3117,7 @@
     "descriptors": [],
     "name": "The Mighty Cloth",
     "rarity": "Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 762,
@@ -3125,7 +3125,7 @@
     "descriptors": [],
     "name": "The Pointy Hat",
     "rarity": "Rare",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 2460,
@@ -3133,7 +3133,7 @@
     "descriptors": [],
     "name": "The Real Sparky Sparkswall",
     "rarity": "Uncommon",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 7420,
@@ -3141,7 +3141,7 @@
     "descriptors": [],
     "name": "The Reviving Hands",
     "rarity": "Very Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 7512,
@@ -3149,7 +3149,7 @@
     "descriptors": [],
     "name": "The Sacred Star (Morningstar)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 2375,
@@ -3157,7 +3157,7 @@
     "descriptors": [],
     "name": "The Shadespell Circlet",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 2411,
@@ -3165,7 +3165,7 @@
     "descriptors": [],
     "name": "The Skinburster (Halberd)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 1785,
@@ -3173,7 +3173,7 @@
     "descriptors": [],
     "name": "The Sparkle Hands",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 5910,
@@ -3181,7 +3181,7 @@
     "descriptors": [],
     "name": "The Sparkswall",
     "rarity": "Uncommon",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 3380,
@@ -3189,7 +3189,7 @@
     "descriptors": [],
     "name": "The Sparky Points (Trident)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 4640,
@@ -3197,7 +3197,7 @@
     "descriptors": [],
     "name": "The Spectator Eyes",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 2575,
@@ -3205,7 +3205,7 @@
     "descriptors": [],
     "name": "The Speedy Lightfeet",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 3975,
@@ -3213,7 +3213,7 @@
     "descriptors": [],
     "name": "The Spellsparkler (Quarterstaff)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 3731,
@@ -3221,7 +3221,7 @@
     "descriptors": [],
     "name": "The Undead Bane (Greataxe)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 988,
@@ -3229,7 +3229,7 @@
     "descriptors": [],
     "name": "The Watcher's Guide (Spear)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 6375,
@@ -3237,7 +3237,7 @@
     "descriptors": [],
     "name": "The Whispering Promise",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2403,
@@ -3245,7 +3245,7 @@
     "descriptors": [],
     "name": "Thermoarcanic Gloves",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2897,
@@ -3253,7 +3253,7 @@
     "descriptors": [],
     "name": "Thermodynamo Axe (Battleaxe)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 3947,
@@ -3261,7 +3261,7 @@
     "descriptors": [],
     "name": "Thorn Blade (Scimitar)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 1547,
@@ -3269,7 +3269,7 @@
     "descriptors": [],
     "name": "Thunderpalm Strikers",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 3700,
@@ -3277,7 +3277,7 @@
     "descriptors": [],
     "name": "Til Death Do Us Part",
     "rarity": "Rare",
-    "type": "Ring"
+    "type": ["Ring", "Jewelry"]
   },
   {
     "cost": 2800,
@@ -3285,7 +3285,7 @@
     "descriptors": [],
     "name": "Titanstring Bow (Longbow)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon","Bow"]
   },
   {
     "cost": 8950,
@@ -3293,7 +3293,7 @@
     "descriptors": [],
     "name": "Torch of Revocation (Club)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 8955,
@@ -3301,7 +3301,7 @@
     "descriptors": [],
     "name": "Trident of the Waves (Trident)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 1350,
@@ -3309,7 +3309,7 @@
     "descriptors": [],
     "name": "Twist of Fortune (Morningstar)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 2395,
@@ -3317,7 +3317,7 @@
     "descriptors": [],
     "name": "Tyrannical Jackboots",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 1470,
@@ -3325,7 +3325,7 @@
     "descriptors": [],
     "name": "Uncovered Mysteries",
     "rarity": "Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 21470,
@@ -3333,7 +3333,7 @@
     "descriptors": [],
     "name": "Unflinching Protector Amulet",
     "rarity": "Very Rare",
-    "type": "Amulet"
+    "type": ["Jewelry"]
   },
   {
     "cost": 975,
@@ -3341,7 +3341,7 @@
     "descriptors": [],
     "name": "Unlucky Thief's Gloves",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 5180,
@@ -3349,7 +3349,7 @@
     "descriptors": [],
     "name": "Unseen Menace (Pike)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 6075,
@@ -3357,7 +3357,7 @@
     "descriptors": [],
     "name": "Unwanted Masterwork Gauntlets",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2575,
@@ -3365,7 +3365,7 @@
     "descriptors": [],
     "name": "Unwanted Masterwork Greaves",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 1317,
@@ -3373,7 +3373,7 @@
     "descriptors": [],
     "name": "Varsh Ko'kuu's Boots",
     "rarity": "Uncommon",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 16475,
@@ -3381,7 +3381,7 @@
     "descriptors": [],
     "name": "Veil of the Morning",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 705,
@@ -3389,7 +3389,7 @@
     "descriptors": [],
     "name": "Very Heavy Greataxe (Greataxe)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 4475,
@@ -3397,7 +3397,7 @@
     "descriptors": [],
     "name": "Vest of Soul Rejuvenation",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 76510,
@@ -3405,7 +3405,7 @@
     "descriptors": [],
     "name": "Viconia's Walking Fortress",
     "rarity": "Legendary",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 2941,
@@ -3413,7 +3413,7 @@
     "descriptors": [],
     "name": "Vision of the Absolute (Spear)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Polearm"]
   },
   {
     "cost": 5990,
@@ -3421,7 +3421,7 @@
     "descriptors": [],
     "name": "Vital Conduit Boots",
     "rarity": "Rare",
-    "type": "Boots"
+    "type": ["Boots", "Apparel"]
   },
   {
     "cost": 3910,
@@ -3429,7 +3429,7 @@
     "descriptors": [],
     "name": "Vivacious Cloak",
     "rarity": "Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 10277,
@@ -3437,7 +3437,7 @@
     "descriptors": [],
     "name": "Voss' Silver Sword (Longsword)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 2409,
@@ -3445,7 +3445,7 @@
     "descriptors": [],
     "name": "Wapira's Crown",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 3350,
@@ -3453,7 +3453,7 @@
     "descriptors": [],
     "name": "Warped Headband of Intellect",
     "rarity": "Uncommon",
-    "type": "Headwear"
+    "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 3950,
@@ -3461,7 +3461,7 @@
     "descriptors": [],
     "name": "Wavemother's Cloak",
     "rarity": "Rare",
-    "type": "Cloak"
+    "type": ["Apparel"]
   },
   {
     "cost": 7837,
@@ -3469,7 +3469,7 @@
     "descriptors": [],
     "name": "Wavemother's Robe",
     "rarity": "Very Rare",
-    "type": "Clothing"
+    "type": ["Apparel"]
   },
   {
     "cost": 1186,
@@ -3477,7 +3477,7 @@
     "descriptors": [],
     "name": "Wavemother's Sickle (Sickle)",
     "rarity": "Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Sword"]
   },
   {
     "cost": 4875,
@@ -3485,7 +3485,7 @@
     "descriptors": [],
     "name": "Winkling Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2075,
@@ -3493,7 +3493,7 @@
     "descriptors": [],
     "name": "Winter's Clutches",
     "rarity": "Uncommon",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 2922,
@@ -3501,7 +3501,7 @@
     "descriptors": [],
     "name": "Witchbreaker (Battleaxe)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Axe"]
   },
   {
     "cost": 19350,
@@ -3509,7 +3509,7 @@
     "descriptors": [],
     "name": "Woe (Quarterstaff)",
     "rarity": "Very Rare",
-    "type": "Weapon"
+    "type": ["Weapon", "Staff/Club"]
   },
   {
     "cost": 6620,
@@ -3517,7 +3517,7 @@
     "descriptors": [],
     "name": "Wondrous Gloves",
     "rarity": "Rare",
-    "type": "Gloves"
+    "type": ["Gloves", "Apparel"]
   },
   {
     "cost": 1188,
@@ -3525,7 +3525,7 @@
     "descriptors": [],
     "name": "Wood Woad Shield",
     "rarity": "Uncommon",
-    "type": "Shield"
+    "type": ["Shield", "Armor"]
   },
   {
     "cost": 2384,
@@ -3533,7 +3533,7 @@
     "descriptors": [],
     "name": "Worgfang (Dagger)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Dagger"]
   },
   {
     "cost": 5993,
@@ -3541,7 +3541,7 @@
     "descriptors": [],
     "name": "Xyanyde (Mace)",
     "rarity": "Uncommon",
-    "type": "Weapon"
+    "type": ["Weapon", "Hammer/Mace"]
   },
   {
     "cost": 11010,
@@ -3549,7 +3549,7 @@
     "descriptors": [],
     "name": "Armor of Agility (Hide Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 12000,
@@ -3557,7 +3557,7 @@
     "descriptors": [],
     "name": "Armor of Agility (Chain Shirt)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 13000,
@@ -3565,7 +3565,7 @@
     "descriptors": [],
     "name": "Armor of Agility (Scale Mail)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 15000,
@@ -3573,7 +3573,7 @@
     "descriptors": [],
     "name": "Armor of Agility (Breastplate)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 16000,
@@ -3581,7 +3581,7 @@
     "descriptors": [],
     "name": "Armor of Agility (Half Plate)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 11900,
@@ -3589,7 +3589,7 @@
     "descriptors": [],
     "name": "Armor of Devotion (Ring Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 11900,
@@ -3597,7 +3597,7 @@
     "descriptors": [],
     "name": "Armor of Devotion (Chain Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 12100,
@@ -3605,7 +3605,7 @@
     "descriptors": [],
     "name": "Armor of Devotion (Splint Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 13400,
@@ -3613,7 +3613,7 @@
     "descriptors": [],
     "name": "Armor of Devotion (Plate Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 14725,
@@ -3621,7 +3621,7 @@
     "descriptors": [],
     "name": "Armor of Landfall (Padded Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 14730,
@@ -3629,7 +3629,7 @@
     "descriptors": [],
     "name": "Armor of Landfall (Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 14730,
@@ -3637,7 +3637,7 @@
     "descriptors": [],
     "name": "Armor of Landfall (Studded Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 16905,
@@ -3645,7 +3645,7 @@
     "descriptors": [],
     "name": "Armor of Moonbasking (Padded Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 16910,
@@ -3653,7 +3653,7 @@
     "descriptors": [],
     "name": "Armor of Moonbasking (Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 16910,
@@ -3661,7 +3661,7 @@
     "descriptors": [],
     "name": "Armor of Moonbasking (Studded Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 13950,
@@ -3669,7 +3669,7 @@
     "descriptors": [],
     "name": "Armor of Persistence (Ring Mail)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 14950,
@@ -3677,7 +3677,7 @@
     "descriptors": [],
     "name": "Armor of Persistence (Chain Mail)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 15150,
@@ -3685,7 +3685,7 @@
     "descriptors": [],
     "name": "Armor of Persistence (Splint Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 16450,
@@ -3693,7 +3693,7 @@
     "descriptors": [],
     "name": "Armor of Persistence (Plate Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 12950,
@@ -3701,7 +3701,7 @@
     "descriptors": [],
     "name": "Barkskin Armor (Hide Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 29980,
@@ -3709,7 +3709,7 @@
     "descriptors": [],
     "name": "Bhaalist Armor (Padded Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 29985,
@@ -3717,7 +3717,7 @@
     "descriptors": [],
     "name": "Bhaalist Armor (Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 29985,
@@ -3725,7 +3725,7 @@
     "descriptors": [],
     "name": "Bhaalist Armor (Studded Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 9700,
@@ -3733,7 +3733,7 @@
     "descriptors": [],
     "name": "Blackguard's Plate (Plate Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 4910,
@@ -3741,7 +3741,7 @@
     "descriptors": [],
     "name": "Drow Studded Leather Armor (Studded Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 29720,
@@ -3749,7 +3749,7 @@
     "descriptors": [],
     "name": "Dwarven Splintmail (Splint Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 29120,
@@ -3757,7 +3757,7 @@
     "descriptors": [],
     "name": "Elegant Studded Leather (Studded Leather Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 21700,
@@ -3765,7 +3765,7 @@
     "descriptors": [],
     "name": "Emblazoned Plate of the Marshal (Plate Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 15610,
@@ -3773,7 +3773,7 @@
     "descriptors": [],
     "name": "Flame Enamelled Armor (Hide Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 16600,
@@ -3781,7 +3781,7 @@
     "descriptors": [],
     "name": "Flame Enamelled Armor (Chain Shirt)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 17600,
@@ -3789,7 +3789,7 @@
     "descriptors": [],
     "name": "Flame Enamelled Armor (Scale Mail)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 18600,
@@ -3797,7 +3797,7 @@
     "descriptors": [],
     "name": "Flame Enamelled Armor (Breastplate)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 19600,
@@ -3805,7 +3805,7 @@
     "descriptors": [],
     "name": "Flame Enamelled Armor (Half Plate)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 6547,
@@ -3813,7 +3813,7 @@
     "descriptors": [],
     "name": "Flawed Helldusk Armor (Ring Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 7000,
@@ -3821,7 +3821,7 @@
     "descriptors": [],
     "name": "Flawed Helldusk Armor (Chain Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 7200,
@@ -3829,7 +3829,7 @@
     "descriptors": [],
     "name": "Flawed Helldusk Armor (Splint Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 7500,
@@ -3837,7 +3837,7 @@
     "descriptors": [],
     "name": "Flawed Helldusk Armor (Plate Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 1780,
@@ -3845,7 +3845,7 @@
     "descriptors": [],
     "name": "Hedge Wanderer Armor (Hide Armor)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 1770,
@@ -3853,7 +3853,7 @@
     "descriptors": [],
     "name": "Hedge Wanderer Armor (Chain Shirt)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 1770,
@@ -3861,7 +3861,7 @@
     "descriptors": [],
     "name": "Hedge Wanderer Armor (Scale Mail)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 2170,
@@ -3869,7 +3869,7 @@
     "descriptors": [],
     "name": "Hedge Wanderer Armor (Breastplate)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 1770,
@@ -3877,7 +3877,7 @@
     "descriptors": [],
     "name": "Hedge Wanderer Armor (Half Plate)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 48450,
@@ -3885,7 +3885,7 @@
     "descriptors": [],
     "name": "Helldusk Armor (Ring Mail)",
     "rarity": "Legendary",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 48450,
@@ -3893,7 +3893,7 @@
     "descriptors": [],
     "name": "Helldusk Armor (Chain Mail)",
     "rarity": "Legendary",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 48450,
@@ -3901,7 +3901,7 @@
     "descriptors": [],
     "name": "Helldusk Armor (Splint Armor)",
     "rarity": "Legendary",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 49950,
@@ -3909,7 +3909,7 @@
     "descriptors": [],
     "name": "Helldusk Armor (Plate Armor)",
     "rarity": "Legendary",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 2563,
@@ -3917,7 +3917,7 @@
     "descriptors": [],
     "name": "Luminous Armor (Hide Armor)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3553,
@@ -3925,7 +3925,7 @@
     "descriptors": [],
     "name": "Luminous Armor (Chain Shirt)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 4153,
@@ -3933,7 +3933,7 @@
     "descriptors": [],
     "name": "Luminous Armor (Scale Mail)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 4853,
@@ -3941,7 +3941,7 @@
     "descriptors": [],
     "name": "Luminous Armor (Breastplate)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 5530,
@@ -3949,7 +3949,7 @@
     "descriptors": [],
     "name": "Luminous Armor (Half Plate)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 4355,
@@ -3957,7 +3957,7 @@
     "descriptors": [],
     "name": "Penumbral Armor (Padded Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 4360,
@@ -3965,7 +3965,7 @@
     "descriptors": [],
     "name": "Penumbral Armor (Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 4360,
@@ -3973,7 +3973,7 @@
     "descriptors": [],
     "name": "Penumbral Armor (Studded Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 6262,
@@ -3981,7 +3981,7 @@
     "descriptors": [],
     "name": "Protective Plate (Plate Armor)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3192,
@@ -3989,7 +3989,7 @@
     "descriptors": [],
     "name": "Psionic Ward Armor (Hide Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3282,
@@ -3997,7 +3997,7 @@
     "descriptors": [],
     "name": "Psionic Ward Armor (Chain Shirt)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3382,
@@ -4005,7 +4005,7 @@
     "descriptors": [],
     "name": "Psionic Ward Armor (Scale Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3482,
@@ -4013,7 +4013,7 @@
     "descriptors": [],
     "name": "Psionic Ward Armor (Breastplate)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3682,
@@ -4021,7 +4021,7 @@
     "descriptors": [],
     "name": "Psionic Ward Armor (Half Plate)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 21190,
@@ -4029,7 +4029,7 @@
     "descriptors": [],
     "name": "Reaper's Embrace (Ring Mail)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 21190,
@@ -4037,7 +4037,7 @@
     "descriptors": [],
     "name": "Reaper's Embrace (Chain Mail)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 21390,
@@ -4045,7 +4045,7 @@
     "descriptors": [],
     "name": "Reaper's Embrace (Splint Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 22690,
@@ -4053,7 +4053,7 @@
     "descriptors": [],
     "name": "Reaper's Embrace (Plate Armor)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 2047,
@@ -4061,7 +4061,7 @@
     "descriptors": [],
     "name": "Rippling Force Mail (Chain Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 525,
@@ -4069,7 +4069,7 @@
     "descriptors": [],
     "name": "Robust Chain Shirt (Chain Shirt)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 555,
@@ -4077,7 +4077,7 @@
     "descriptors": [],
     "name": "Scarlet Leather Armor (Leather Armor)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3840,
@@ -4085,7 +4085,7 @@
     "descriptors": [],
     "name": "Shadeclinger Armor (Padded Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3845,
@@ -4093,7 +4093,7 @@
     "descriptors": [],
     "name": "Shadeclinger Armor (Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 3845,
@@ -4101,7 +4101,7 @@
     "descriptors": [],
     "name": "Shadeclinger Armor (Studded Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 8350,
@@ -4109,7 +4109,7 @@
     "descriptors": [],
     "name": "Sharpened Snare Cuirass (Breastplate)",
     "rarity": "Very Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 525,
@@ -4117,7 +4117,7 @@
     "descriptors": [],
     "name": "Slippery Chain Shirt",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 2640,
@@ -4125,7 +4125,7 @@
     "descriptors": [],
     "name": "Spidersilk Armor (Padded Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 2645,
@@ -4133,7 +4133,7 @@
     "descriptors": [],
     "name": "Spidersilk Armor (Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 2645,
@@ -4141,7 +4141,7 @@
     "descriptors": [],
     "name": "Spidersilk Armor (Studded Leather Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 560,
@@ -4149,7 +4149,7 @@
     "descriptors": [],
     "name": "The Jolty Vest (Hide Armor)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 550,
@@ -4157,7 +4157,7 @@
     "descriptors": [],
     "name": "The Jolty Vest (Chain Shirt)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 550,
@@ -4165,7 +4165,7 @@
     "descriptors": [],
     "name": "The Jolty Vest (Scale Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 550,
@@ -4173,7 +4173,7 @@
     "descriptors": [],
     "name": "The Jolty Vest (Breastplate)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 550,
@@ -4181,7 +4181,7 @@
     "descriptors": [],
     "name": "The Jolty Vest (Half Plate)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 571,
@@ -4189,7 +4189,7 @@
     "descriptors": [],
     "name": "The Oakfather's Embrace (Hide Armor)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 561,
@@ -4197,7 +4197,7 @@
     "descriptors": [],
     "name": "The Oakfather's Embrace (Chain Shirt)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 561,
@@ -4205,7 +4205,7 @@
     "descriptors": [],
     "name": "The Oakfather's Embrace (Scale Mail)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 561,
@@ -4213,7 +4213,7 @@
     "descriptors": [],
     "name": "The Oakfather's Embrace (Breastplate)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 561,
@@ -4221,7 +4221,7 @@
     "descriptors": [],
     "name": "The Oakfather's Embrace (Half Plate)",
     "rarity": "Uncommon",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 1120,
@@ -4229,13 +4229,13 @@
     "descriptors": [],
     "name": "Unwanted Masterwork Scalemail (Scale Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   },
   {
     "cost": 1110,
     "description": "While wearing this armor, you can add your full Dexterity modifier (instead of a maximum of 2) to your AC. This armor doesn't impose disadvantage on Dexterity (Stealth) checks. You gain a +1 bonus to initiative rolls. This item requires attunement.",
     "name": "Yuan-Ti Scale Mail (Scale Mail)",
     "rarity": "Rare",
-    "type": "Armor"
+    "type": ["Armor"]
   }
 ]
