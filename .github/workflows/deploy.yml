@@ -21,7 +21,10 @@ jobs:
       - name: Inject build timestamp
         run: |
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+          echo "Timestamp is: $TIMESTAMP"
           sed -i "s|{{BUILD_TIMESTAMP}}|${TIMESTAMP}|g" index.html
+          echo "Checking replacement worked:"
+          grep -i "timestamp\|last updated\|BUILD" index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
