@@ -22,9 +22,16 @@ jobs:
         run: |
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
           echo "Timestamp is: $TIMESTAMP"
-          sed -i "s|{{BUILD_TIMESTAMP}}|${TIMESTAMP}|g" index.html
-          echo "Checking replacement worked:"
-          grep -i "timestamp\|last updated\|BUILD" index.html
+          python3 -c "
+          import re
+          with open('index.html', 'r', encoding='utf-8') as f:
+              content = f.read()
+          print('Before:', 'BUILD_TIMESTAMP' in content)
+          content = content.replace('{{BUILD_TIMESTAMP}}', '$TIMESTAMP')
+          print('After:', '{{BUILD_TIMESTAMP}}' in content)
+          with open('index.html', 'w', encoding='utf-8') as f:
+              f.write(content)
+          "
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
