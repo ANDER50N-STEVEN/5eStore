@@ -294,86 +294,85 @@ const defaultStoreTypes = {
         name: 'General Store',
         tags: [],
         isGeneral: true,
-        limits: { mundane: '4d6+10', common: '1d8+3', uncommon: '1d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
+        limits: { mundane: '3d6+6', common: '1d6+2', uncommon: '1d4-1', rare: '1d4-3', veryrare: '0', legendary: '0' }
     },
     weaponsmith: {
         name: 'Weaponsmith',
         tags: ['Weapon', 'Sword', 'Axe', 'Hammer/Mace', 'Polearm', 'Dagger', 'Whip', 'Staff/Club', 'Ammunition', 'Armor', 'Shield'],
-        limits: { mundane: '4d6+4', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
+        limits: { mundane: '3d6+4', common: '1d6+1', uncommon: '1d4-1', rare: '1d4-3', veryrare: '0', legendary: '0' }
     },
     outfitter: {
         name: 'Outfitter',
-        tags: ['Misc', 'Ammunition', 'Potion', 'Travel', 'Food'],
-        limits: { mundane: '2d6+10', common: '2d6+2', uncommon: '1d6', rare: '1d8-4', veryrare: '0', legendary: '0' }
+        tags: ['Misc', 'Ammunition', 'Travel', 'Food'],
+        limits: { mundane: '2d6+6', common: '1d6+1', uncommon: '1d4-2', rare: '0', veryrare: '0', legendary: '0' }
     },
     armorer: {
         name: 'Armorer',
-        tags: ['Armor', 'Shield', 'Apparel', 'Bracer', 'Gauntlet', 'Helmet'],
-        limits: { mundane: '2d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
+        tags: ['Armor', 'Shield', 'Bracer', 'Gauntlet', 'Helmet'],
+        limits: { mundane: '2d6+2', common: '1d6', uncommon: '1d4-1', rare: '1d4-3', veryrare: '0', legendary: '0' }
     },
     magic: {
         name: 'Magic Shop',
         tags: ['Wand/Staff/Rod', 'Book', 'Scroll', 'Jewelry', 'Potion', 'Spellcasting Focus',
                'Abjuration', 'Conjuration', 'Divination', 'Enchantment', 'Evocation',
                'Necromancy', 'Transmutation', 'Arcane'],
-        limits: { mundane: '1d4', common: '1d6+2', uncommon: '2d6', rare: '1d8-2', veryrare: '1d6-3', legendary: '1d4-3' }
+        limits: { mundane: '1d4-1', common: '1d6+1', uncommon: '1d6', rare: '1d4-1', veryrare: '1d4-2', legendary: '1d4-3' }
     },
     apothecary: {
         name: 'Apothecary',
-        tags: ['Potion', 'Consumable', 'Alchemy', 'Healing', 'Poison'],
-        limits: { mundane: '2d4', common: '1d6+3', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
+        tags: ['Potion', 'Alchemy', 'Healing', 'Poison'],
+        limits: { mundane: '1d6+2', common: '1d6+2', uncommon: '1d6-1', rare: '1d4-2', veryrare: '0', legendary: '0' }
     },
     clothier: {
         name: 'Clothier',
-        tags: ['Apparel', 'Bracer', 'Gauntlet', 'Helmet'],
-        limits: { mundane: '1d6+8', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-4', veryrare: '0', legendary: '0' }
+        tags: ['Apparel', 'Bracer'],
+        limits: { mundane: '2d6+4', common: '1d6+1', uncommon: '1d4-1', rare: '1d4-3', veryrare: '0', legendary: '0' }
     },
-	scribe: {
-    name: 'Scribe',
-    tags: ['Scroll', 'Book', 'Divination', 'Arcane', 'Divine', 'Abjuration', 
-           'Conjuration', 'Enchantment', 'Evocation', 'Necromancy', 'Transmutation', 'Misc'],
-    limits: { mundane: '2d6+4', common: '2d6+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '0' }
-},
-	fletcher: {
-    name: 'Fletcher',
-    tags: ['Bow', 'Crossbow', 'Blowgun', 'Sling', 'Ammunition', 'Ranged', 'Travel'],
-    limits: { mundane: '4d6+6', common: '2d6+2', uncommon: '1d8-2', rare: '1d6-3', veryrare: '1d4-3', legendary: '0' }
-},
-stable: {
-    name: 'Stable & Tack',
-    tags: ['Animal', 'Travel', 'Misc', 'Food'],
-    limits: { mundane: '3d6+8', common: '2d4+2', uncommon: '1d6-2', rare: '0', veryrare: '0', legendary: '0' }
-},
-tattoo: {
-    name: 'Tattoo Parlor',
-    tags: ['Tattoo', 'Arcane', 'Divine', 'Necromancy', 'Enchantment', 'Evil', 'Summoning'],
-    limits: { mundane: '1d4', common: '2d4+2', uncommon: '2d6', rare: '1d6-1', veryrare: '1d4-2', legendary: '1d4-3' }
-},
-jeweler: {
-    name: 'Jeweler',
-    tags: ['Jewelry', 'Gem', 'Apparel'],
-    limits: { mundane: '2d6+6', common: '2d6+2', uncommon: '2d6', rare: '1d6-1', veryrare: '1d4-2', legendary: '1d4-3' }
-},
-tavern: {
-    name: 'Tavern & Inn',
-    tags: ['Food', 'Consumable', 'Misc', 'Alchemy', 'Poison'],
-    limits: { mundane: '4d6+8', common: '2d4+2', uncommon: '1d4-1', rare: '0', veryrare: '0', legendary: '0' }
-},
-temple: {
-    name: 'Temple Store',
-    tags: ['Divine', 'Religious', 'Healing', 'Scroll', 'Abjuration', 'Conjuration', 
-           'Divination', 'Cleric', 'Potion'],
-    limits: { mundane: '2d6+4', common: '2d6+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
-},
-thievesguild: {
-    name: "Thieves' Guild",
-    tags: ['Dagger', 'Poison', 'Stealth', 'Misc', 'Consumable', 'Scroll', 'Alchemy'],
-    limits: { mundane: '3d6+4', common: '2d6+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
-},
+    scribe: {
+        name: 'Scribe',
+        tags: ['Scroll', 'Book'],
+        limits: { mundane: '1d6+2', common: '1d6+1', uncommon: '1d6', rare: '1d4-2', veryrare: '1d4-3', legendary: '0' }
+    },
+    fletcher: {
+        name: 'Fletcher',
+        tags: ['Bow', 'Crossbow', 'Blowgun', 'Sling', 'Ammunition', 'Ranged'],
+        limits: { mundane: '2d6+4', common: '1d6+1', uncommon: '1d4-1', rare: '1d4-3', veryrare: '0', legendary: '0' }
+    },
+    stable: {
+        name: 'Stable & Tack',
+        tags: ['Animal', 'Travel'],
+        limits: { mundane: '2d6+4', common: '1d4+1', uncommon: '1d4-2', rare: '0', veryrare: '0', legendary: '0' }
+    },
+    tattoo: {
+        name: 'Tattoo Parlor',
+        tags: ['Tattoo'],
+        limits: { mundane: '0', common: '1d4+1', uncommon: '1d6', rare: '1d4-1', veryrare: '1d4-2', legendary: '1d4-3' }
+    },
+    jeweler: {
+        name: 'Jeweler',
+        tags: ['Jewelry', 'Gem'],
+        limits: { mundane: '1d6+4', common: '1d6+2', uncommon: '1d6-1', rare: '1d4-2', veryrare: '1d4-3', legendary: '0' }
+    },
+    tavern: {
+        name: 'Tavern & Inn',
+        tags: ['Food'],
+        limits: { mundane: '2d6+6', common: '1d4+1', uncommon: '1d4-2', rare: '0', veryrare: '0', legendary: '0' }
+    },
+    temple: {
+        name: 'Temple Store',
+        tags: ['Divine', 'Religious', 'Healing', 'Abjuration',
+               'Divination', 'Cleric', 'Potion'],
+        limits: { mundane: '1d6+2', common: '1d6+2', uncommon: '1d6-1', rare: '1d4-2', veryrare: '1d4-3', legendary: '1d4-3' }
+    },
+    thievesguild: {
+        name: "Thieves' Guild",
+        tags: ['Dagger', 'Poison', 'Stealth', 'Misc', 'Consumable', 'Scroll', 'Alchemy'],
+        limits: { mundane: '1d6+2', common: '1d6+1', uncommon: '1d6-1', rare: '1d4-2', veryrare: '1d4-3', legendary: '0' }
+    },
     curiosities: {
         name: 'Curiosities Shop',
-        tags: ['Misc', 'Jewelry', 'Gem', 'Tattoo', 'Summoning', 'Evil', 'Religious'],
-        limits: { mundane: '1d4', common: '2d4+2', uncommon: '2d6', rare: '1d6-2', veryrare: '1d4-3', legendary: '1d4-3' }
+        tags: ['Jewelry', 'Gem', 'Tattoo', 'Summoning', 'Evil', 'Religious'],
+        limits: { mundane: '1d4', common: '1d6+1', uncommon: '1d6', rare: '1d4-1', veryrare: '1d4-2', legendary: '1d4-3' }
     }
 };
 
