@@ -9195,19 +9195,6 @@
         ]
     },
     {
-        "name": "Potion of Healing",
-        "cost": 50,
-        "type": ["Potion", "Consumable"],
-        "rarity": "Common",
-        "description": "Restores 2d4 + 2 hit points when consumed.",
-        "fullDescription": "",
-		"descriptors": [
-            "red liquid in glass vial",
-            "healing potion glowing faintly",
-            "bottle with restorative contents"
-        ]
-    },
-    {
         "name": "Pouch",
         "cost": 0.5,
         "type": ["Common", "Consumable"],
