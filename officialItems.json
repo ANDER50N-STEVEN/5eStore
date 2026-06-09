@@ -8598,7 +8598,7 @@
     {
         "name": "Candle",
         "cost": 0.01,
-        "type": ["Common", "Consumable"],
+        "type": ["Misc", "Consumable"],
         "rarity": "Mundane",
         "description": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
         "fullDescription": "",
@@ -8767,7 +8767,7 @@
     {
         "name": "Lantern, Hooded",
         "cost": 5,
-        "type": ["Common", "Consumable"],
+        "type": ["Misc", "Consumable"],
         "rarity": "Mundane",
         "description": "A Hooded Lantern burns oil to shed Bright Light in a 30-foot radius and Dim Light for an additional 30 feet, with adjustable shutter.",
         "fullDescription": "",
@@ -8819,7 +8819,7 @@
     {
         "name": "Torch",
         "cost": 0.01,
-        "type": ["Common", "Consumable"],
+        "type": ["Misc", "Consumable", "Travel"],
         "rarity": "Mundane",
         "description": "A Torch burns for 1 hour, shedding Bright Light in a 20-foot radius. It can be used as a simple melee weapon.",
         "fullDescription": "",
@@ -8858,8 +8858,8 @@
     {
         "name": "Crossbow Bolt Case",
         "cost": 1,
-        "type": ["Weapon"],
-        "rarity": "Common",
+        "type": ["Weapon", "Crossbow"],
+        "rarity": "Mundane",
         "description": "Holds up to 20 crossbow bolts.",
         "fullDescription": "",
 		"descriptors": [
@@ -8871,8 +8871,8 @@
     {
         "name": "Map or Scroll Case",
         "cost": 1,
-        "type": ["Book"],
-        "rarity": "Common",
+        "type": ["Book", "Misc"],
+        "rarity": "Mundane",
         "description": "Protects and stores up to 10 paper sheets or 5 parchment scrolls.",
         "fullDescription": "",
 		"descriptors": [
@@ -8884,8 +8884,8 @@
     {
         "name": "Chest",
         "cost": 5,
-        "type": ["Misc"],
-        "rarity": "Common",
+        "type": ["Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "Large storage chest holding up to 12 cubic feet of gear.",
         "fullDescription": "",
 		"descriptors": [
@@ -8897,8 +8897,8 @@
     {
         "name": "Diplomat's Pack",
         "cost": 39,
-        "type": ["Consumable"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "A social-focused pack with fine clothes, writing supplies, oil, perfume, and a chest.",
         "fullDescription": "",
 		"descriptors": [
@@ -8910,8 +8910,8 @@
     {
         "name": "Dungeoneer's Pack",
         "cost": 12,
-        "type": ["Consumable"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "Adventuring essentials for dungeon exploration, including tools, food, torches, and rope.",
         "fullDescription": "",
 		"descriptors": [
@@ -8923,8 +8923,8 @@
     {
         "name": "Entertainer's Pack",
         "cost": 40,
-        "type": ["Consumable"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "Performance gear including costumes, lantern, rations, and personal items.",
         "fullDescription": "",
 		"descriptors": [
@@ -8936,8 +8936,8 @@
     {
         "name": "Explorer's Pack",
         "cost": 10,
-        "type": ["Consumable"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "Basic travel gear with rations, torches, rope, and survival essentials.",
         "fullDescription": "",
 		"descriptors": [
@@ -8950,7 +8950,7 @@
         "name": "Flask",
         "cost": 0.02,
         "type": ["Potion", "Consumable"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Holds up to 1 pint of liquid.",
         "fullDescription": "",
 		"descriptors": [
@@ -8962,8 +8962,8 @@
     {
         "name": "Hunting Trap",
         "cost": 5,
-        "type": ["Misc"],
-        "rarity": "Common",
+        "type": ["Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "A chained steel trap that restrains and damages creatures that trigger it.",
         "fullDescription": "",
 		"descriptors": [
@@ -8977,7 +8977,7 @@
         "name": "Ink",
         "cost": 10,
         "type": ["Book"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Ink bottle sufficient for roughly 500 pages of writing.",
         "fullDescription": "",
 		"descriptors": [
@@ -8990,7 +8990,7 @@
         "name": "Ink Pen",
         "cost": 0.02,
         "type": ["Book"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Used with ink for writing or drawing.",
         "fullDescription": "",
 		"descriptors": [
@@ -9003,7 +9003,7 @@
         "name": "Jug",
         "cost": 0.02,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Holds up to 1 gallon of liquid.",
         "fullDescription": "",
 		"descriptors": [
@@ -9016,7 +9016,7 @@
         "name": "Ladder",
         "cost": 0.1,
         "type": ["Consumable"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "A 10-foot ladder for climbing.",
         "fullDescription": "",
 		"descriptors": [
@@ -9028,8 +9028,8 @@
     {
         "name": "Lamp",
         "cost": 0.5,
-        "type": [ "Consumable"],
-        "rarity": "Common",
+        "type": [ "Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "Oil-powered lamp providing bright and dim light.",
         "fullDescription": "",
 		"descriptors": [
@@ -9041,8 +9041,8 @@
     {
         "name": "Bullseye Lantern",
         "cost": 10,
-        "type": [ "Consumable"],
-        "rarity": "Common",
+        "type": [ "Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "Oil lantern that projects focused light in a long cone.",
         "fullDescription": "",
 		"descriptors": [
@@ -9068,7 +9068,7 @@
         "name": "Magnifying Glass",
         "cost": 100,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Grants advantage on detailed inspection and can start fires in sunlight.",
         "fullDescription": "",
 		"descriptors": [
@@ -9080,8 +9080,8 @@
     {
         "name": "Map",
         "cost": 1,
-        "type": ["Book"],
-        "rarity": "Common",
+        "type": ["Book", "Travel"],
+        "rarity": "Mundane",
         "description": "Grants a bonus to navigation checks in mapped areas.",
         "fullDescription": "",
 		"descriptors": [
@@ -9094,7 +9094,7 @@
         "name": "Mirror",
         "cost": 5,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Handheld steel mirror useful for signaling or scouting.",
         "fullDescription": "",
 		"descriptors": [
@@ -9107,7 +9107,7 @@
         "name": "Oil Flask",
         "cost": 0.1,
         "type": ["Potion", "Consumable"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Used as fuel or weaponized to burn creatures or areas.",
         "fullDescription": "",
 		"descriptors": [
@@ -9120,7 +9120,7 @@
         "name": "Paper",
         "cost": 0.2,
         "type": ["Book"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Single sheet suitable for about 250 handwritten words.",
         "fullDescription": "",
 		"descriptors": [
@@ -9133,7 +9133,7 @@
         "name": "Parchment",
         "cost": 0.1,
         "type": ["Book"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Durable writing material holding about 250 words.",
         "fullDescription": "",
 		"descriptors": [
@@ -9145,8 +9145,8 @@
     {
         "name": "Perfume",
         "cost": 5,
-        "type": ["Jewelry"],
-        "rarity": "Common",
+        "type": ["Jewelry", "Misc"],
+        "rarity": "Mundane",
         "description": "Grants advantage on Persuasion checks for 1 hour after application.",
         "fullDescription": "",
 		"descriptors": [
@@ -9159,7 +9159,7 @@
         "name": "Basic Poison",
         "cost": 100,
         "type": ["Potion", "Consumable"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Coats weapons to deal extra poison damage for a short time.",
         "fullDescription": "",
 		"descriptors": [
@@ -9172,7 +9172,7 @@
         "name": "Pole",
         "cost": 0.05,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "A 10-foot pole useful for vaulting or probing hazards.",
         "fullDescription": "",
 		"descriptors": [
@@ -9185,7 +9185,7 @@
         "name": "Iron Pot",
         "cost": 2,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Holds up to 1 gallon; commonly used for cooking.",
         "fullDescription": "",
 		"descriptors": [
@@ -9197,8 +9197,8 @@
     {
         "name": "Pouch",
         "cost": 0.5,
-        "type": ["Common", "Consumable"],
-        "rarity": "Common",
+        "type": ["Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "Small pouch holding up to 6 pounds of items.",
         "fullDescription": "",
 		"descriptors": [
@@ -9210,8 +9210,8 @@
     {
         "name": "Priest's Pack",
         "cost": 33,
-        "type": ["Common", "Consumable"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "Religious travel gear including holy items, rations, and a lamp.",
         "fullDescription": "",
 		"descriptors": [
@@ -9223,8 +9223,8 @@
     {
         "name": "Quiver",
         "cost": 1,
-        "type": ["Weapon"],
-        "rarity": "Common",
+        "type": ["Weapon", "Bow"],
+        "rarity": "Mundane",
         "description": "Holds up to 20 arrows.",
         "fullDescription": "",
 		"descriptors": [
@@ -9236,8 +9236,8 @@
     {
         "name": "Portable Ram",
         "cost": 4,
-        "type": ["Common", "Consumable"],
-        "rarity": "Common",
+        "type": ["Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "Grants a bonus when forcing doors open.",
         "fullDescription": "",
 		"descriptors": [
@@ -9249,8 +9249,8 @@
     {
         "name": "Rations",
         "cost": 0.5,
-        "type": ["Common", "Consumable"],
-        "rarity": "Common",
+        "type": ["Misc", "Consumable", "Travel", "Food"],
+        "rarity": "Mundane",
         "description": "Travel food sufficient for one day.",
         "fullDescription": "",
 		"descriptors": [
@@ -9263,7 +9263,7 @@
         "name": "Robe",
         "cost": 1,
         "type": ["Apparel"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Ceremonial or professional garment.",
         "fullDescription": "",
 		"descriptors": [
@@ -9276,7 +9276,7 @@
         "name": "Rope",
         "cost": 1,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Strong rope useful for climbing, binding, or securing objects.",
         "fullDescription": "",
 		"descriptors": [
@@ -9289,7 +9289,7 @@
         "name": "Sack",
         "cost": 0.01,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Simple sack holding up to 30 pounds of items.",
         "fullDescription": "",
 		"descriptors": [
@@ -9301,8 +9301,8 @@
     {
         "name": "Scholar's Pack",
         "cost": 40,
-        "type": ["Consumable"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "Academic gear including books, writing supplies, and oil.",
         "fullDescription": "",
 		"descriptors": [
@@ -9314,8 +9314,8 @@
     {
         "name": "Shovel",
         "cost": 2,
-        "type": [ "Consumable"],
-        "rarity": "Common",
+        "type": [ "Misc"],
+        "rarity": "Mundane",
         "description": "Used to dig holes in soil over extended time.",
         "fullDescription": "",
 		"descriptors": [
@@ -9328,7 +9328,7 @@
         "name": "Signal Whistle",
         "cost": 0.05,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Produces a loud signal audible up to 600 feet.",
         "fullDescription": "",
 		"descriptors": [
@@ -9341,7 +9341,7 @@
         "name": "Iron Spikes",
         "cost": 1,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Ten metal spikes used to jam doors or anchor ropes.",
         "fullDescription": "",
 		"descriptors": [
@@ -9354,7 +9354,7 @@
         "name": "Spyglass",
         "cost": 1000,
         "type": ["Misc"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Magnifies distant objects to twice their size.",
         "fullDescription": "",
 		"descriptors": [
@@ -9366,8 +9366,8 @@
     {
         "name": "String",
         "cost": 0.1,
-        "type": ["Misc"],
-        "rarity": "Common",
+        "type": ["Misc", "Apparel"],
+        "rarity": "Mundane",
         "description": "10 feet of string for tying or fastening small items.",
         "fullDescription": "",
 		"descriptors": [
@@ -9379,8 +9379,8 @@
     {
         "name": "Tent",
         "cost": 2,
-        "type": ["Travel"],
-        "rarity": "Common",
+        "type": ["Travel", "Misc"],
+        "rarity": "Mundane",
         "description": "Shelter that sleeps up to two creatures.",
         "fullDescription": "",
 		"descriptors": [
@@ -9392,8 +9392,8 @@
     {
         "name": "Tinderbox",
         "cost": 0.5,
-        "type": ["Misc"],
-        "rarity": "Common",
+        "type": ["Misc", "Travel"],
+        "rarity": "Mundane",
         "description": "Used to easily start fires.",
         "fullDescription": "",
 		"descriptors": [
@@ -9406,7 +9406,7 @@
         "name": "Vial",
         "cost": 1,
         "type": ["Potion", "Consumable"],
-        "rarity": "Common",
+        "rarity": "Mundane",
         "description": "Small container holding up to 4 ounces of liquid.",
         "fullDescription": "",
 		"descriptors": [
@@ -15550,7 +15550,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Spell component with no known spell associations in current database.",
     "fullDescription": "",
     "descriptors": []
@@ -15574,7 +15574,7 @@
       "Spellcasting Focus",
       "Gem"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Awaken, Darkvision",
     "fullDescription": "",
     "descriptors": []
@@ -15596,7 +15596,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Chain Lightning, Lightning Bolt",
     "fullDescription": "",
     "descriptors": []
@@ -15690,7 +15690,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Augury, Find the Path",
     "fullDescription": "",
     "descriptors": []
@@ -15712,7 +15712,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Find Familiar",
     "fullDescription": "",
     "descriptors": []
@@ -15735,7 +15735,7 @@
       "Spellcasting Focus",
       "Misc"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Find the Path",
     "fullDescription": "",
     "descriptors": []
@@ -15780,7 +15780,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Private Sanctum",
     "fullDescription": "",
     "descriptors": []
@@ -15910,7 +15910,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Chain Lightning",
     "fullDescription": "",
     "descriptors": []
@@ -15932,7 +15932,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Chain Lightning, Clone, Cone of Cold, Feeblemind, Globe of Invulnerability, Hypnotic Pattern, Leomund's Tiny Hut, Lightning Bolt, Magic Jar, Otiluke's Freezing Sphere, Otiluke's Resilient Sphere, Scrying",
     "fullDescription": "",
     "descriptors": []
@@ -15968,7 +15968,7 @@
       "Spellcasting Focus",
       "Gem"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Nondetection",
     "fullDescription": "",
     "descriptors": []
@@ -16028,7 +16028,7 @@
       "Spellcasting Focus",
       "Gem"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Chromatic Orb, Raise Dead",
     "fullDescription": "",
     "descriptors": []
@@ -16283,7 +16283,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Wall of Force",
     "fullDescription": "",
     "descriptors": []
@@ -16295,7 +16295,7 @@
       "Spellcasting Focus",
       "Alchemy"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Vitriolic Sphere",
     "fullDescription": "",
     "descriptors": []
@@ -16307,7 +16307,7 @@
       "Spellcasting Focus",
       "Alchemy"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Evard's Black Tentacles",
     "fullDescription": "",
     "descriptors": []
@@ -16386,7 +16386,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Arcane Lock",
     "fullDescription": "",
     "descriptors": []
@@ -16504,7 +16504,7 @@
       "Spellcasting Focus",
       "Religious"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Shield of Faith",
     "fullDescription": "",
     "descriptors": []
@@ -16542,7 +16542,7 @@
       "Food",
 		"Alchemy"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Magic Mouth, Mass Suggestion, Suggestion",
     "fullDescription": "",
     "descriptors": []
@@ -16612,7 +16612,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Illusory Script",
     "fullDescription": "",
     "descriptors": []
@@ -16711,7 +16711,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
     "fullDescription": "",
     "descriptors": []
@@ -16770,7 +16770,7 @@
       "Spellcasting Focus",
       "Gem"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Magic Mouth, Programmed Illusion",
     "fullDescription": "",
     "descriptors": []
@@ -16898,7 +16898,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
     "fullDescription": "",
     "descriptors": []
@@ -16943,7 +16943,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Feeblemind",
     "fullDescription": "",
     "descriptors": []
@@ -17169,7 +17169,7 @@
       "Spellcasting Focus",
       "Religious"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Holy Aura",
     "fullDescription": "",
     "descriptors": []
@@ -17181,7 +17181,7 @@
       "Spellcasting Focus",
       "Religious"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Shield of Faith",
     "fullDescription": "",
     "descriptors": []
@@ -17227,7 +17227,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Hypnotic Pattern",
     "fullDescription": "",
     "descriptors": []
@@ -17322,7 +17322,7 @@
       "Spellcasting Focus",
       "Religious"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Regenerate",
     "fullDescription": "",
     "descriptors": []
@@ -17418,7 +17418,7 @@
       "Spellcasting Focus",
       "Misc"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Chain Lightning",
     "fullDescription": "",
     "descriptors": []
@@ -17442,7 +17442,7 @@
       "Spellcasting Focus",
       "Misc"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Guards and Wards",
     "fullDescription": "",
     "descriptors": []
@@ -17612,7 +17612,7 @@
       "Spellcasting Focus",
       "Misc"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Sanctuary, Scrying",
     "fullDescription": "",
     "descriptors": []
@@ -17648,7 +17648,7 @@
       "Misc",
       "Jewelry"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Telepathy",
     "fullDescription": "",
     "descriptors": []
@@ -17660,7 +17660,7 @@
       "Spellcasting Focus",
       "Misc"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Mordenkainen's Magnificent Mansion",
     "fullDescription": "",
     "descriptors": []
@@ -17776,7 +17776,7 @@
     "type": [
       "Spellcasting Focus"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Project Image",
     "fullDescription": "",
     "descriptors": []
@@ -17825,7 +17825,7 @@
       "Spellcasting Focus",
       "Gem"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Sunburst",
     "fullDescription": "",
     "descriptors": []
@@ -17875,7 +17875,7 @@
       "Animal",
       "Alchemy"
     ],
-    "rarity": "Common",
+    "rarity": "Mundane",
     "description": "Used in the following spells: Find the Path",
     "fullDescription": "",
     "descriptors": []
