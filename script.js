@@ -3472,37 +3472,30 @@ function restockSavedStore(storeIndex) {
 
     if (!store) return;
 
-    const currentCount = store.inventory.length;
-
-    if (currentCount === 0) {
-        if (!confirm('This store has no inventory. Generate a fresh stock?')) return;
-    } else {
-        if (!confirm(`Restock "${store.name}"?\n\nBetween 25-75% of current items will be removed and replaced with new stock.`)) return;
-    }
+    if (!confirm(`Restock "${store.name}"?\n\nBetween 25-75% of current items will be removed and the store will be restocked to full capacity.`)) return;
 
     // Step 1: Remove 25-75% of existing items randomly
     const removePercent = 0.25 + Math.random() * 0.50;
     const numToRemove = Math.round(store.inventory.length * removePercent);
-
-    // Shuffle and slice
     const shuffled = [...store.inventory].sort(() => Math.random() - 0.5);
     const kept = shuffled.slice(numToRemove);
-    const removedCount = store.inventory.length - kept.length;
 
-    // Step 2: Generate new items using existing store settings
+    console.log(`Keeping ${kept.length} items, removed ${numToRemove}`);
+
+    // Step 2: Apply store type limits to the inputs
+    const storeTypeData = getStoreType(store.storeType);
+    if (storeTypeData && storeTypeData.limits) {
+        document.getElementById('max-mundane').value   = storeTypeData.limits.mundane;
+        document.getElementById('max-common').value    = storeTypeData.limits.common;
+        document.getElementById('max-uncommon').value  = storeTypeData.limits.uncommon;
+        document.getElementById('max-rare').value      = storeTypeData.limits.rare;
+        document.getElementById('max-veryrare').value  = storeTypeData.limits.veryrare;
+        document.getElementById('max-legendary').value = storeTypeData.limits.legendary;
+    }
+
+    // Step 3: Generate a full new inventory using the store's limits
     let newInventory = [];
     try {
-        // Temporarily apply the store's limits to the inputs if they exist
-        const storeTypeData = getStoreType(store.storeType);
-        if (storeTypeData && storeTypeData.limits) {
-            document.getElementById('max-mundane').value   = storeTypeData.limits.mundane;
-            document.getElementById('max-common').value    = storeTypeData.limits.common;
-            document.getElementById('max-uncommon').value  = storeTypeData.limits.uncommon;
-            document.getElementById('max-rare').value      = storeTypeData.limits.rare;
-            document.getElementById('max-veryrare').value  = storeTypeData.limits.veryrare;
-            document.getElementById('max-legendary').value = storeTypeData.limits.legendary;
-        }
-
         newInventory = selectInventory(store.settlementSize, store.storeType);
     } catch (e) {
         console.error('Error generating restock inventory:', e);
@@ -3510,24 +3503,26 @@ function restockSavedStore(storeIndex) {
         return;
     }
 
-    // Step 3: Only take enough new items to roughly replace what was removed
-    const newItems = newInventory
-        .sort(() => Math.random() - 0.5)
-        .slice(0, removedCount)
-        .map(item => {
-            // Generate a display price for each new item
-            const maxModifier = store.maxModifier || 105;
-            const { price } = applyPriceModifier(item.cost, maxModifier);
-            const descriptor = getRandomDescriptor(item);
-            return {
-                ...item,
-                displayPrice: formatPrice(price),
-                savedDescriptor: descriptor || null
-            };
-        });
+    // Step 4: Filter out items we already kept so we don't get duplicates
+    const keptNames = new Set(kept.map(i => i.name));
+    const freshItems = newInventory.filter(i => !keptNames.has(i.name));
 
-    // Step 4: Merge kept + new items
-    store.inventory = [...kept, ...newItems];
+    // Step 5: Add display prices and descriptors to new items
+    const maxModifier = store.maxModifier || 105;
+    const pricedFreshItems = freshItems.map(item => {
+        const { price } = applyPriceModifier(item.cost, maxModifier);
+        const descriptor = getRandomDescriptor(item);
+        return {
+            ...item,
+            displayPrice: formatPrice(price),
+            savedDescriptor: descriptor || null
+        };
+    });
+
+    // Step 6: Merge kept items with all new fresh items
+    store.inventory = [...kept, ...pricedFreshItems];
+
+    console.log(`Restock complete. Total items: ${store.inventory.length}`);
 
     // Save back to localStorage
     localStorage.setItem('dnd-saved-stores', JSON.stringify(savedStores));
@@ -3535,9 +3530,8 @@ function restockSavedStore(storeIndex) {
     // Reload the store display
     loadSavedStore(storeIndex);
 
-    showSaveNotification(`Restocked! Removed ${removedCount} items, added ${newItems.length} new items.`);
+    showSaveNotification(`Restocked! Kept ${kept.length} items, added ${pricedFreshItems.length} new items.`);
 }
-
 
 function soldItem(itemId) {
     const el = document.getElementById(itemId);
