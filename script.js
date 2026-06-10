@@ -425,22 +425,16 @@ const crXPValues = {
     26: 90000, 27: 105000, 28: 125000, 29: 150000, 30: 155000
 };
 
-function getEncounterDifficulty(partyLevel, encounterCR, numCreatures) {
+function getEncounterDifficulty(partyLevel, totalEncounterCR, numCreatures) {
     const level = Math.min(Math.max(partyLevel, 1), 20);
     const thresholds = encounterXPThresholds[level];
 
-    // Get XP for this CR, defaulting to nearest value
-    const crXP = crXPValues[encounterCR] || crXPValues[Math.floor(encounterCR)] || 100;
+    // CR is the total encounter CR, not per creature
+    // Find the closest CR value in our XP table
+    const crXP = crXPValues[totalEncounterCR] || crXPValues[Math.floor(totalEncounterCR)] || 100;
 
-    // Apply multiplier based on number of creatures
-    let multiplier = 1;
-    if (numCreatures === 2) multiplier = 1.5;
-    else if (numCreatures <= 6) multiplier = 2;
-    else if (numCreatures <= 10) multiplier = 2.5;
-    else if (numCreatures <= 14) multiplier = 3;
-    else multiplier = 4;
-
-    const totalXP = crXP * numCreatures * multiplier;
+    // This is already the total encounter XP, no creature multiplication needed
+    const totalXP = crXP;
 
     let difficulty = 'easy';
     if (totalXP >= thresholds.deadly) difficulty = 'deadly';
@@ -3028,9 +3022,9 @@ function generateCombatLoot() {
 	        }
 	    }
 	
-	    // Distribute weapons - 60% of creatures drop a weapon
+	    // Distribute weapons - 25% of creatures drop a weapon
 	    if (weaponPool.length > 0) {
-	        const numWeapons = Math.floor(numCreatures * 0.6);
+	        const numWeapons = Math.floor(numCreatures * 0.25);
 	        for (let i = 0; i < numWeapons; i++) {
 	            const weapon = weaponPool[Math.floor(Math.random() * weaponPool.length)];
 	            if (weapon && weapon.name) {
@@ -3039,9 +3033,9 @@ function generateCombatLoot() {
 	        }
 	    }
 	
-	    // Distribute armor - 40% of creatures drop armor
+	    // Distribute armor - 25% of creatures drop armor
 	    if (armorPool.length > 0) {
-	        const numArmor = Math.floor(numCreatures * 0.4);
+	        const numArmor = Math.floor(numCreatures * 0.25);
 	        for (let i = 0; i < numArmor; i++) {
 	            const armor = armorPool[Math.floor(Math.random() * armorPool.length)];
 	            if (armor && armor.name) {
