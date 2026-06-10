@@ -15,6 +15,21 @@ let excludedHomebrewItems = new Set();
 let saveTimeout = null;
 let pendingSaves = new Set();
 
+const creatureTypeMagicItemTags = {
+    humanoid:    null, // null = no restriction, any item allowed
+    dragon:      null,
+    beast:       ['Jewelry', 'Gem'],
+    undead:      ['Necromancy', 'Abjuration', 'Divine', 'Religious', 'Jewelry', 'Scroll', 'Wand/Staff/Rod'],
+    fiend:       ['Evil', 'Summoning', 'Necromancy', 'Enchantment', 'Wand/Staff/Rod', 'Jewelry'],
+    celestial:   ['Divine', 'Religious', 'Healing', 'Abjuration', 'Conjuration', 'Jewelry'],
+    fey:         ['Enchantment', 'Nature', 'Jewelry', 'Gem', 'Instrument', 'Scroll'],
+    elemental:   ['Transmutation', 'Arcane', 'Evocation'],
+    aberration:  ['Divination', 'Transmutation', 'Arcane', 'Wand/Staff/Rod', 'Book'],
+    monstrosity: ['Weapon', 'Armor', 'Jewelry', 'Gem'],
+    giant:       ['Weapon', 'Armor', 'Gem', 'Jewelry'],
+    construct:   ['Arcane', 'Transmutation', 'Wand/Staff/Rod', 'Book']
+};
+
 const wealthLevels = {
     'squalid': { gold: [100, 500], sellModifier: 0.80, label: 'Squalid' },
     'common': { gold: [500, 2000], sellModifier: 1.00, label: 'Common' },
@@ -3048,9 +3063,9 @@ function generateCombatLoot() {
 	}
     
     // Add magic items if enabled - scale with creatures and difficulty
-    if (includeMagic) {
-        const magicScale = (0.5 * lootMultiplier * creatureScale);
-        loot.magicItems.push(...generateMagicItems(crTier, magicScale, includeHomebrew));
+if (includeMagic) {
+        const magicScale = (0.5 * lootMultiplier * creatureScale) / 2;
+        loot.magicItems.push(...generateMagicItems(crTier, magicScale, includeHomebrew, creatureType));
     }
 
     // Boss loot
@@ -3136,11 +3151,12 @@ function generateArtObjects(crTier, sizeMultiplier) {
     return artObjects;
 }
 
-function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false) {
+function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false, creatureType = null) {
     const items = [];
     const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
-    const numItems = Math.max(0, Math.round((crIndex + 1) * (sizeMultiplier/2)));
     
+    const numItems = Math.max(0, Math.round((crIndex + 1) * sizeMultiplier));
+
     const rarities = [
         ['Common', 'Uncommon'],
         ['Uncommon', 'Rare'],
@@ -3150,18 +3166,35 @@ function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false) {
     
     const allowedRarities = rarities[crIndex];
     
-    // Build item pool based on homebrew setting
     let itemPool = [...officialItemDatabase];
     if (includeHomebrew) {
         itemPool = [...itemPool, ...homebrewItemDatabase];
     }
-    
-    const availableItems = itemPool.filter(item => 
-        allowedRarities.includes(item.rarity) && item.rarity !== 'Mundane'
-    );
-    
-    // Shuffle pool to avoid always picking the same items
-    const shuffled = availableItems.sort(() => Math.random() - 0.5);
+
+    // Apply creature type tag restriction
+    const allowedTags = creatureType ? creatureTypeMagicItemTags[creatureType] : null;
+
+    let availableItems = itemPool.filter(item => {
+        if (!allowedRarities.includes(item.rarity) || item.rarity === 'Mundane') return false;
+
+        // If no tag restriction, allow anything
+        if (!allowedTags) return true;
+
+        // Check if item has any matching tag
+        const itemTags = Array.isArray(item.type) ? item.type : [item.type];
+        return itemTags.some(t => allowedTags.includes(t));
+    });
+
+    // If the restriction yields nothing, fall back to unrestricted pool
+    // so we never return an empty result unexpectedly
+    if (availableItems.length === 0) {
+        console.warn(`No magic items found for creature type ${creatureType}, falling back to unrestricted pool`);
+        availableItems = itemPool.filter(item =>
+            allowedRarities.includes(item.rarity) && item.rarity !== 'Mundane'
+        );
+    }
+
+    const shuffled = [...availableItems].sort(() => Math.random() - 0.5);
     
     for (let i = 0; i < numItems && i < shuffled.length; i++) {
         items.push(shuffled[i]);
