@@ -966,46 +966,38 @@ rebuildStoreTypeDropdown();
 			
 		}
 		
-				// Tab switching
-		// Tab switching
 		function switchTab(tabName) {
-			// Hide all tabs
-			document.querySelectorAll('.tab-content').forEach(tab => {
-				tab.classList.remove('active');
-			});
-			document.querySelectorAll('.tab').forEach(tab => {
-				tab.classList.remove('active');
-			});
-			
-			// Show selected tab
-			document.getElementById(tabName + '-tab').classList.add('active');
-			event.target.classList.add('active');
-			
-			const shopContent = document.getElementById('shop-content');
-			if (tabName === 'itemlist') {
-				shopContent.style.display = 'none';
-				populateItemList();
-			} else if (tabName === 'homebrew') {
-				shopContent.style.display = 'none';
-				populateHomebrewList();
-			} else if (tabName === 'savedstores') {
-				shopContent.style.display = 'none';
-				document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
-			} else if (tabName === 'storetypes') {
-   				 shopContent.style.display = 'none';
-    			populateStoreTypesList();
-			} else {
-				shopContent.style.display = 'block';
-			}
-			
-			// If switching to item list, populate it
-			if (tabName === 'itemlist') {
-				populateItemList();
-			} else if (tabName === 'homebrew') {
-				populateHomebrewList();
-			} else if (tabName === 'savedstores') {
-				document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
-			}
+		    // Hide all tabs
+		    document.querySelectorAll('.tab-content').forEach(tab => {
+		        tab.classList.remove('active');
+		    });
+		    document.querySelectorAll('.tab').forEach(tab => {
+		        tab.classList.remove('active');
+		    });
+		    
+		    // Show selected tab
+		    document.getElementById(tabName + '-tab').classList.add('active');
+		    event.target.classList.add('active');
+		    
+		    const shopContent = document.getElementById('shop-content');
+		    const tabsToHideShop = ['itemlist', 'homebrew', 'savedstores', 'storetypes', 'loot'];
+		
+		    if (tabsToHideShop.includes(tabName)) {
+		        shopContent.style.display = 'none';
+		    } else {
+		        shopContent.style.display = 'block';
+		    }
+		
+		    // Run any tab-specific logic
+		    if (tabName === 'itemlist') {
+		        populateItemList();
+		    } else if (tabName === 'homebrew') {
+		        populateHomebrewList();
+		    } else if (tabName === 'savedstores') {
+		        document.getElementById('savedstores-tab').innerHTML = displaySavedStores();
+		    } else if (tabName === 'storetypes') {
+		        populateStoreTypesList();
+		    }
 		}
 
 		function sortItemList(column) {
@@ -2722,7 +2714,7 @@ creatureThemes: {
         { name: 'Silver signet ring', value: '10 gp', description: 'Bears an unfamiliar family crest' },
         { name: 'Love letter', value: '0 gp', description: 'Reveals a tragic romance or useful blackmail material' },
         { name: 'Wanted poster', value: '0 gp', description: 'Shows a bounty for someone the party might know' },
-        { name: 'Iron rations (3 days)', value: '3 gp', description: 'Dried meat, hardtack, and stale cheese' },
+        { name: 'Rations (3 days)', value: '3 gp', description: 'Dried meat, hardtack, and stale cheese' },
         { name: 'Thieves\' tools', value: '25 gp', description: 'Well-used but functional lockpicks' },
         { name: 'Half-empty flask of cheap whiskey', value: '5 cp', description: 'Burns on the way down' },
         { name: 'Jade gambling die', value: '15 gp', description: 'Weighted - grants advantage on deception checks about gambling' },
@@ -2730,8 +2722,8 @@ creatureThemes: {
         { name: 'Identification papers', value: '0 gp', description: 'Could be useful for disguises or forging documents' }
     ],
     beast: [
-        { name: 'Pristine wolf pelt', value: '5 gp', description: 'Can be sold to a furrier or worn as a cloak' },
-        { name: 'Bear claws (4)', value: '8 gp', description: 'Trophy or crafting component for weapons' },
+        { name: 'Pristine pelt/skin', value: '5 gp', description: 'Can be sold to a furrier or worn as a cloak' },
+        { name: 'Claws/Teeth (4)', value: '8 gp', description: 'Trophy or crafting component for weapons' },
         { name: 'Dire boar tusks (pair)', value: '15 gp', description: 'Large enough to craft into daggers or decorations' },
         { name: 'Giant eagle feather', value: '10 gp', description: 'Sought by druids and arrow-crafters' },
         { name: 'Venomous snake fangs', value: '20 gp', description: 'Can be sold to alchemists or poisoners' },
@@ -2887,55 +2879,90 @@ function generateCombatLoot() {
     };
     
     // Add creature-specific drops
-    const themes = lootTables.creatureThemes[creatureType] || [];
-    themes.forEach(theme => {
-        if (Math.random() < 0.4) {
-            loot.specialDrops.push(generateThemeItem(theme, creatureType));
-        }
-    });
+	const themes = lootTables.creatureThemes[creatureType] || [];
+	if (themes.length > 0) {
+	    const numRolls = Math.floor(Math.sqrt(numCreatures));
+	    const alreadyDropped = new Set();
+	    
+	    for (let i = 0; i < numRolls; i++) {
+	        if (Math.random() < 0.25) {
+	            // Pick a random item from the table that hasn't been dropped yet
+	            const available = themes.filter((_, idx) => !alreadyDropped.has(idx));
+	            if (available.length > 0) {
+	                const idx = Math.floor(Math.random() * available.length);
+	                const originalIdx = themes.indexOf(available[idx]);
+	                alreadyDropped.add(originalIdx);
+	                loot.specialDrops.push(available[idx]);
+	            }
+	        }
+	    }
+	}
     
 	// Add equipment from humanoids
 	if (creatureType === 'humanoid') {
-	    const numCreatures = parseInt(document.getElementById('num-creatures').value);
-	    
-	    // Calculate variety: square root of enemies + 1, minimum 1
 	    const weaponVariety = Math.max(1, Math.floor(Math.sqrt(numCreatures)) + 1);
 	    const armorVariety = Math.max(1, Math.floor(Math.sqrt(numCreatures)) + 1);
-	    
-	    // Get all available weapons and armor
-	    const allWeapons = officialItemDatabase.filter(item => item.type === 'Weapon' && item.rarity === 'Mundane');
-	    const allArmor = officialItemDatabase.filter(item => item.type === 'Armor' && item.rarity === 'Mundane');
-	    
-	    // Pick random weapon types (limited variety)
-	    const weaponTypes = [];
-	    for (let i = 0; i < Math.min(weaponVariety, allWeapons.length); i++) {
-	        const randomWeapon = allWeapons[Math.floor(Math.random() * allWeapons.length)];
-	        if (!weaponTypes.find(w => w.name === randomWeapon.name)) {
-	            weaponTypes.push(randomWeapon);
+	
+	    // Filter and validate items - handle both array and string type fields
+	    const allWeapons = officialItemDatabase.filter(item => {
+	        if (!item || !item.name) return false;
+	        const tags = Array.isArray(item.type) ? item.type : [item.type];
+	        return tags.some(t => t === 'Weapon' || t === 'Sword' || t === 'Axe' || 
+	                              t === 'Hammer/Mace' || t === 'Polearm' || t === 'Dagger') 
+	               && item.rarity === 'Mundane';
+	    });
+	
+	    const allArmor = officialItemDatabase.filter(item => {
+	        if (!item || !item.name) return false;
+	        const tags = Array.isArray(item.type) ? item.type : [item.type];
+	        return tags.some(t => t === 'Armor') && item.rarity === 'Mundane';
+	    });
+	
+	    // Bail out if no weapons or armor found
+	    if (allWeapons.length === 0 && allArmor.length === 0) {
+	        console.warn('No mundane weapons or armor found in database');
+	    }
+	
+	    // Pick weapon variety pool
+	    const weaponPool = [];
+	    const weaponCandidates = [...allWeapons].sort(() => Math.random() - 0.5);
+	    for (const weapon of weaponCandidates) {
+	        if (weaponPool.length >= weaponVariety) break;
+	        if (weapon && weapon.name && !weaponPool.find(w => w.name === weapon.name)) {
+	            weaponPool.push(weapon);
 	        }
 	    }
-	    
-	    // Pick random armor types (limited variety)
-	    const armorTypes = [];
-	    for (let i = 0; i < Math.min(armorVariety, allArmor.length); i++) {
-	        const randomArmor = allArmor[Math.floor(Math.random() * allArmor.length)];
-	        if (!armorTypes.find(a => a.name === randomArmor.name)) {
-	            armorTypes.push(randomArmor);
+	
+	    // Pick armor variety pool
+	    const armorPool = [];
+	    const armorCandidates = [...allArmor].sort(() => Math.random() - 0.5);
+	    for (const armor of armorCandidates) {
+	        if (armorPool.length >= armorVariety) break;
+	        if (armor && armor.name && !armorPool.find(a => a.name === armor.name)) {
+	            armorPool.push(armor);
 	        }
 	    }
-	    
-	    // Distribute weapons among enemies (60% of enemies have weapons)
-	    const numWeapons = Math.floor(numCreatures * 0.6);
-	    for (let i = 0; i < numWeapons; i++) {
-	        const weapon = weaponTypes[Math.floor(Math.random() * weaponTypes.length)];
-	        loot.items.push({...weapon});
+	
+	    // Distribute weapons - 60% of creatures drop a weapon
+	    if (weaponPool.length > 0) {
+	        const numWeapons = Math.floor(numCreatures * 0.6);
+	        for (let i = 0; i < numWeapons; i++) {
+	            const weapon = weaponPool[Math.floor(Math.random() * weaponPool.length)];
+	            if (weapon && weapon.name) {
+	                loot.items.push({...weapon});
+	            }
+	        }
 	    }
-	    
-	    // Distribute armor among enemies (40% of enemies have armor worth taking)
-	    const numArmor = Math.floor(numCreatures * 0.4);
-	    for (let i = 0; i < numArmor; i++) {
-	        const armor = armorTypes[Math.floor(Math.random() * armorTypes.length)];
-	        loot.items.push({...armor});
+	
+	    // Distribute armor - 40% of creatures drop armor
+	    if (armorPool.length > 0) {
+	        const numArmor = Math.floor(numCreatures * 0.4);
+	        for (let i = 0; i < numArmor; i++) {
+	            const armor = armorPool[Math.floor(Math.random() * armorPool.length)];
+	            if (armor && armor.name) {
+	                loot.items.push({...armor});
+	            }
+	        }
 	    }
 	}
     
