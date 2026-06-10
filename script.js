@@ -2945,11 +2945,13 @@ function generateCombatLoot() {
     // Calculate encounter difficulty and loot multiplier
     const { difficulty, totalXP, thresholds } = getEncounterDifficulty(partyLevel, encounterCR, numCreatures);
     const lootMultiplier = getLootMultiplierFromDifficulty(difficulty);
-
+	
+    // Scale loot with creature count - sqrt so it doesn't grow too fast
+    const creatureScale = Math.sqrt(numCreatures);
     console.log(`Encounter difficulty: ${difficulty} (${totalXP} XP), loot multiplier: ${lootMultiplier}`);
 
     const loot = {
-        currency: generateCurrency(crTier, numCreatures, 0.3 * lootMultiplier),
+        currency: generateCurrency(crTier, numCreatures, 0.3 * lootMultiplier * creatureScale),
         items: [],
         magicItems: [],
         specialDrops: [],
@@ -3045,11 +3047,12 @@ function generateCombatLoot() {
 	    }
 	}
     
-    // Add magic items if enabled
+    // Add magic items if enabled - scale with creatures and difficulty
     if (includeMagic) {
-        loot.magicItems.push(...generateMagicItems(crTier, 0.5, includeHomebrew));
+        const magicScale = (0.5 * lootMultiplier * creatureScale);
+        loot.magicItems.push(...generateMagicItems(crTier, magicScale, includeHomebrew));
     }
-    
+
     // Boss loot
     if (includeBoss) {
         loot.magicItems.push(...generateBossLoot(encounterCR, includeHomebrew));
@@ -3136,7 +3139,7 @@ function generateArtObjects(crTier, sizeMultiplier) {
 function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false) {
     const items = [];
     const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
-    const numItems = Math.floor((Math.random() * 2 + crIndex) * sizeMultiplier);
+    const numItems = Math.max(0, Math.round((crIndex + 1) * sizeMultiplier));
     
     const rarities = [
         ['Common', 'Uncommon'],
@@ -3157,9 +3160,11 @@ function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false) {
         allowedRarities.includes(item.rarity) && item.rarity !== 'Mundane'
     );
     
-    for (let i = 0; i < numItems && availableItems.length > 0; i++) {
-        const randomItem = availableItems[Math.floor(Math.random() * availableItems.length)];
-        items.push(randomItem);
+    // Shuffle pool to avoid always picking the same items
+    const shuffled = availableItems.sort(() => Math.random() - 0.5);
+    
+    for (let i = 0; i < numItems && i < shuffled.length; i++) {
+        items.push(shuffled[i]);
     }
     
     return items;
