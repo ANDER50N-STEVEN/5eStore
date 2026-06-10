@@ -3139,7 +3139,7 @@ function generateArtObjects(crTier, sizeMultiplier) {
 function generateMagicItems(crTier, sizeMultiplier, includeHomebrew = false) {
     const items = [];
     const crIndex = ['0-4', '5-10', '11-16', '17+'].indexOf(crTier);
-    const numItems = Math.max(0, Math.round((crIndex + 1) * sizeMultiplier));
+    const numItems = Math.max(0, Math.round((crIndex + 1) * (sizeMultiplier/2)));
     
     const rarities = [
         ['Common', 'Uncommon'],
