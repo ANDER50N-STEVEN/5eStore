@@ -891,6 +891,65 @@ td .descriptor-btn {
     }
 }
 
+.creature-row {
+    display: grid;
+    grid-template-columns: 80px 120px 1fr 40px;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 15px;
+    background: rgba(139, 111, 71, 0.1);
+    border: 1px solid #4a2c1a;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.creature-row label {
+    color: #d4af37;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.creature-row input,
+.creature-row select {
+    width: 100%;
+    padding: 6px 8px;
+    background: #1a0f08;
+    border: 1px solid #8b6f47;
+    border-radius: 4px;
+    color: #f4e4c1;
+    font-family: inherit;
+    font-size: 0.9em;
+}
+
+.creature-row-remove {
+    background: rgba(180, 50, 50, 0.3);
+    border: 1px solid #8b3a3a;
+    color: #e88;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 1.1em;
+    align-self: end;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.creature-row-remove:hover {
+    background: rgba(180, 50, 50, 0.6);
+}
+
+.encounter-difficulty-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+
 
 /* ===== CUSTOM LIMITS COLLAPSIBLE SECTION ===== */
 
