@@ -3630,13 +3630,6 @@ function displayLoot(loot, title) {
 	    deadly: '#e74c3c'
 	};
 	
-	const difficultyColors = {
-	    easy:   '#2ecc71',
-	    medium: '#f39c12',
-	    hard:   '#e67e22',
-	    deadly: '#e74c3c'
-	};
-	
 	const difficultyLabel = loot.difficulty
 	    ? `<span style="color: ${difficultyColors[loot.difficulty]}; font-weight: bold; text-transform: capitalize;">${loot.difficulty} Encounter</span>`
 	    : '';
