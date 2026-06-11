@@ -3083,16 +3083,18 @@ function getEncounterDifficulty(partyLevel, partySize, roster) {
 	    const { difficulty, adjustedXP, rawXP, partyThresholds } = getEncounterDifficulty(partyLevel, partySize, roster);
 	    const lootMultiplier = getLootMultiplierFromDifficulty(difficulty);
 	    const creatureScale = Math.sqrt(totalCreatures);
-	
-	    const loot = {
-	        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale),
-	        items: [],
-	        magicItems: [],
-	        specialDrops: [],
-	        difficulty: difficulty,
-	        adjustedXP: adjustedXP,
-	        partyThresholds: partyThresholds
-	    };
+			
+		const loot = {
+		        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale),
+		        items: [],
+		        magicItems: [],
+		        specialDrops: [],
+		        difficulty: difficulty,
+		        adjustedXP: adjustedXP,
+		        rawXP: rawXP,
+		        partySize: partySize,
+		        partyThresholds: partyThresholds
+		    };
 	
 	    // Process each creature row independently
 	    roster.forEach(row => {
@@ -3404,13 +3406,38 @@ function displayLoot(loot, title) {
 	    deadly: '#e74c3c'
 	};
 	
-	const difficultyLabel = loot.difficulty 
-	    ? `<span style="color: ${difficultyColors[loot.difficulty]}; font-weight: bold; text-transform: capitalize;">
-	           ${loot.difficulty} Encounter
-	       </span> &bull; ` 
+	const difficultyColors = {
+	    easy:   '#2ecc71',
+	    medium: '#f39c12',
+	    hard:   '#e67e22',
+	    deadly: '#e74c3c'
+	};
+	
+	const difficultyLabel = loot.difficulty
+	    ? `<span style="color: ${difficultyColors[loot.difficulty]}; font-weight: bold; text-transform: capitalize;">${loot.difficulty} Encounter</span>`
 	    : '';
 	
-	html += `<div class="loot-total">${difficultyLabel}Estimated Total Value: ${Math.round(totalValue)} gp</div>`;
+	// XP per player is raw XP (before multiplier) divided by party size
+	const xpPerPlayer = loot.partySize && loot.rawXP
+	    ? Math.round(loot.rawXP / loot.partySize)
+	    : null;
+	
+	const xpLabel = xpPerPlayer
+	    ? `<span style="color: #c4b591;"><strong style="color: #d4af37;">XP:</strong> ${xpPerPlayer.toLocaleString()} per player (${loot.rawXP.toLocaleString()} total)</span>`
+	    : '';
+	
+	html += `
+	    <div class="loot-total" style="display: flex; flex-direction: column; gap: 6px;">
+	        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+	            ${difficultyLabel}
+	            <span style="color: #8b6f47;">|</span>
+	            ${xpLabel}
+	        </div>
+	        <div>
+	            <span style="color: #c4b591;"><strong style="color: #d4af37;">Est. Value:</strong> ${Math.round(totalValue).toLocaleString()} gp</span>
+	        </div>
+	    </div>
+	`;
 	html += `</div>`;
     
     // Currency
