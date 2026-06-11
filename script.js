@@ -2941,140 +2941,255 @@ creatureThemes: {
     ]
 }
 };
+let creatureRowCount = 0;
 
-function generateCombatLoot() {
-    const partyLevel = parseInt(document.getElementById('party-level').value);
-    const encounterCR = parseFloat(document.getElementById('encounter-cr').value);
-    const numCreatures = parseInt(document.getElementById('num-creatures').value);
-    const creatureType = document.getElementById('creature-type').value;
-    const includeBoss = document.getElementById('boss-loot').checked;
-    const includeMagic = document.getElementById('combat-include-magic').checked;
-    const includeHomebrew = document.getElementById('combat-include-homebrew').checked;
+function addCreatureRow() {
+    creatureRowCount++;
+    const roster = document.getElementById('creature-roster');
+    const rowId = `creature-row-${creatureRowCount}`;
 
-    // Determine CR tier
-    let crTier = '0-4';
-    if (encounterCR >= 17) crTier = '17+';
-    else if (encounterCR >= 11) crTier = '11-16';
-    else if (encounterCR >= 5) crTier = '5-10';
+    const row = document.createElement('div');
+    row.className = 'creature-row';
+    row.id = rowId;
 
-    // Calculate encounter difficulty and loot multiplier
-    const { difficulty, totalXP, thresholds } = getEncounterDifficulty(partyLevel, encounterCR, numCreatures);
-    const lootMultiplier = getLootMultiplierFromDifficulty(difficulty);
-	
-    // Scale loot with creature count - sqrt so it doesn't grow too fast
-    const creatureScale = Math.sqrt(numCreatures);
-    console.log(`Encounter difficulty: ${difficulty} (${totalXP} XP), loot multiplier: ${lootMultiplier}`);
+    row.innerHTML = `
+        <div>
+            <label>Count</label>
+            <input type="number" min="1" max="100" value="1" class="creature-count">
+        </div>
+        <div>
+            <label>CR</label>
+            <input type="number" min="0" max="30" value="1" step="0.25" class="creature-cr">
+        </div>
+        <div>
+            <label>Creature Type</label>
+            <select class="creature-type-select">
+                <option value="humanoid">Humanoid</option>
+                <option value="beast">Beast</option>
+                <option value="dragon">Dragon</option>
+                <option value="undead">Undead</option>
+                <option value="fiend">Fiend</option>
+                <option value="celestial">Celestial</option>
+                <option value="fey">Fey</option>
+                <option value="elemental">Elemental</option>
+                <option value="aberration">Aberration</option>
+                <option value="monstrosity">Monstrosity</option>
+                <option value="giant">Giant</option>
+                <option value="construct">Construct</option>
+            </select>
+        </div>
+        <button class="creature-row-remove" onclick="removeCreatureRow('${rowId}')" title="Remove">✕</button>
+    `;
 
-    const loot = {
-        currency: generateCurrency(crTier, numCreatures, 0.3 * lootMultiplier * creatureScale),
-        items: [],
-        magicItems: [],
-        specialDrops: [],
-        difficulty: difficulty,
-        totalXP: totalXP
-    };
-    
-    // Add creature-specific drops
-	const themes = lootTables.creatureThemes[creatureType] || [];
-	if (themes.length > 0) {
-	    const numRolls = Math.floor(Math.sqrt(numCreatures));
-	    const alreadyDropped = new Set();
-	    
-	    for (let i = 0; i < numRolls; i++) {
-	        if (Math.random() < 0.25) {
-	            // Pick a random item from the table that hasn't been dropped yet
-	            const available = themes.filter((_, idx) => !alreadyDropped.has(idx));
-	            if (available.length > 0) {
-	                const idx = Math.floor(Math.random() * available.length);
-	                const originalIdx = themes.indexOf(available[idx]);
-	                alreadyDropped.add(originalIdx);
-	                loot.specialDrops.push(available[idx]);
-	            }
-	        }
-	    }
-	}
-    
-	// Add equipment from humanoids
-	if (creatureType === 'humanoid') {
-	    const weaponVariety = Math.max(1, Math.floor(Math.sqrt(numCreatures)) + 1);
-	    const armorVariety = Math.max(1, Math.floor(Math.sqrt(numCreatures)) + 1);
-	
-	    // Filter and validate items - handle both array and string type fields
-	    const allWeapons = officialItemDatabase.filter(item => {
-	        if (!item || !item.name) return false;
-	        const tags = Array.isArray(item.type) ? item.type : [item.type];
-	        return tags.some(t => t === 'Weapon' || t === 'Sword' || t === 'Axe' || 
-	                              t === 'Hammer/Mace' || t === 'Polearm' || t === 'Dagger') 
-	               && item.rarity === 'Mundane';
-	    });
-	
-	    const allArmor = officialItemDatabase.filter(item => {
-	        if (!item || !item.name) return false;
-	        const tags = Array.isArray(item.type) ? item.type : [item.type];
-	        return tags.some(t => t === 'Armor') && item.rarity === 'Mundane';
-	    });
-	
-	    // Bail out if no weapons or armor found
-	    if (allWeapons.length === 0 && allArmor.length === 0) {
-	        console.warn('No mundane weapons or armor found in database');
-	    }
-	
-	    // Pick weapon variety pool
-	    const weaponPool = [];
-	    const weaponCandidates = [...allWeapons].sort(() => Math.random() - 0.5);
-	    for (const weapon of weaponCandidates) {
-	        if (weaponPool.length >= weaponVariety) break;
-	        if (weapon && weapon.name && !weaponPool.find(w => w.name === weapon.name)) {
-	            weaponPool.push(weapon);
-	        }
-	    }
-	
-	    // Pick armor variety pool
-	    const armorPool = [];
-	    const armorCandidates = [...allArmor].sort(() => Math.random() - 0.5);
-	    for (const armor of armorCandidates) {
-	        if (armorPool.length >= armorVariety) break;
-	        if (armor && armor.name && !armorPool.find(a => a.name === armor.name)) {
-	            armorPool.push(armor);
-	        }
-	    }
-	
-	    // Distribute weapons - 25% of creatures drop a weapon
-	    if (weaponPool.length > 0) {
-	        const numWeapons = Math.floor(numCreatures * 0.25);
-	        for (let i = 0; i < numWeapons; i++) {
-	            const weapon = weaponPool[Math.floor(Math.random() * weaponPool.length)];
-	            if (weapon && weapon.name) {
-	                loot.items.push({...weapon});
-	            }
-	        }
-	    }
-	
-	    // Distribute armor - 25% of creatures drop armor
-	    if (armorPool.length > 0) {
-	        const numArmor = Math.floor(numCreatures * 0.25);
-	        for (let i = 0; i < numArmor; i++) {
-	            const armor = armorPool[Math.floor(Math.random() * armorPool.length)];
-	            if (armor && armor.name) {
-	                loot.items.push({...armor});
-	            }
-	        }
-	    }
-	}
-    
-    // Add magic items if enabled - scale with creatures and difficulty
-if (includeMagic) {
-        const magicScale = (0.5 * lootMultiplier * creatureScale) / 2;
-        loot.magicItems.push(...generateMagicItems(crTier, magicScale, includeHomebrew, creatureType));
-    }
-
-    // Boss loot
-    if (includeBoss) {
-        loot.magicItems.push(...generateBossLoot(encounterCR, includeHomebrew));
-    }
-    
-    displayLoot(loot, 'Combat Loot');
+    roster.appendChild(row);
 }
+
+function removeCreatureRow(rowId) {
+    const row = document.getElementById(rowId);
+    if (row) {
+        // Don't remove if it's the last row
+        const allRows = document.querySelectorAll('.creature-row');
+        if (allRows.length === 1) {
+            showSaveNotification('You need at least one creature type!');
+            return;
+        }
+        row.remove();
+    }
+}
+
+function getCreatureRoster() {
+    const rows = document.querySelectorAll('.creature-row');
+    const roster = [];
+
+    rows.forEach(row => {
+        const count = parseInt(row.querySelector('.creature-count').value) || 1;
+        const cr = parseFloat(row.querySelector('.creature-cr').value) || 0;
+        const type = row.querySelector('.creature-type-select').value;
+        roster.push({ count, cr, type });
+    });
+
+    return roster;
+}
+
+function getEncounterDifficulty(partyLevel, partySize, roster) {
+    const level = Math.min(Math.max(partyLevel, 1), 20);
+    const thresholds = encounterXPThresholds[level];
+
+    // Total party thresholds scale with party size
+    const partyThresholds = {
+        easy:   thresholds.easy   * partySize,
+        medium: thresholds.medium * partySize,
+        hard:   thresholds.hard   * partySize,
+        deadly: thresholds.deadly * partySize
+    };
+
+    // Sum raw XP across all creature rows
+    let rawXP = 0;
+    let totalCreatures = 0;
+
+    roster.forEach(row => {
+        const crXP = crXPValues[row.cr] || crXPValues[Math.floor(row.cr)] || 10;
+        rawXP += crXP * row.count;
+        totalCreatures += row.count;
+    });
+
+    // Apply DMG creature count multiplier
+    let countMultiplier = 1;
+    if (totalCreatures === 2) countMultiplier = 1.5;
+    else if (totalCreatures <= 6) countMultiplier = 2;
+    else if (totalCreatures <= 10) countMultiplier = 2.5;
+    else if (totalCreatures <= 14) countMultiplier = 3;
+    else countMultiplier = 4;
+
+    const adjustedXP = rawXP * countMultiplier;
+
+    let difficulty = 'easy';
+    if (adjustedXP >= partyThresholds.deadly) difficulty = 'deadly';
+    else if (adjustedXP >= partyThresholds.hard) difficulty = 'hard';
+    else if (adjustedXP >= partyThresholds.medium) difficulty = 'medium';
+
+    return {
+        difficulty,
+        adjustedXP,
+        rawXP,
+        totalCreatures,
+        partyThresholds
+    };
+}
+
+	function generateCombatLoot() {
+	    const partyLevel = parseInt(document.getElementById('party-level').value);
+	    const partySize = parseInt(document.getElementById('party-size').value);
+	    const includeBoss = document.getElementById('boss-loot').checked;
+	    const includeMagic = document.getElementById('combat-include-magic').checked;
+	    const includeHomebrew = document.getElementById('combat-include-homebrew').checked;
+	
+	    const roster = getCreatureRoster();
+	    if (roster.length === 0) {
+	        alert('Please add at least one creature type.');
+	        return;
+	    }
+	
+	    const totalCreatures = roster.reduce((sum, r) => sum + r.count, 0);
+	
+	    // Get highest CR in roster for tier calculation
+	    const highestCR = Math.max(...roster.map(r => r.cr));
+	    let crTier = '0-4';
+	    if (highestCR >= 17) crTier = '17+';
+	    else if (highestCR >= 11) crTier = '11-16';
+	    else if (highestCR >= 5) crTier = '5-10';
+	
+	    // Difficulty and scaling
+	    const { difficulty, adjustedXP, rawXP, partyThresholds } = getEncounterDifficulty(partyLevel, partySize, roster);
+	    const lootMultiplier = getLootMultiplierFromDifficulty(difficulty);
+	    const creatureScale = Math.sqrt(totalCreatures);
+	
+	    const loot = {
+	        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale),
+	        items: [],
+	        magicItems: [],
+	        specialDrops: [],
+	        difficulty: difficulty,
+	        adjustedXP: adjustedXP,
+	        partyThresholds: partyThresholds
+	    };
+	
+	    // Process each creature row independently
+	    roster.forEach(row => {
+	        const rowScale = Math.sqrt(row.count);
+	        const rowWeight = row.count / totalCreatures;
+	
+	        // Special drops per creature type
+	        const themes = lootTables.creatureThemes[row.type] || [];
+	        if (themes.length > 0) {
+	            const numRolls = Math.floor(Math.sqrt(row.count));
+	            const alreadyDropped = new Set();
+	
+	            for (let i = 0; i < numRolls; i++) {
+	                if (Math.random() < 0.25) {
+	                    const available = themes.filter((_, idx) => !alreadyDropped.has(idx));
+	                    if (available.length > 0) {
+	                        const idx = Math.floor(Math.random() * available.length);
+	                        const originalIdx = themes.indexOf(available[idx]);
+	                        alreadyDropped.add(originalIdx);
+	                        loot.specialDrops.push({
+	                            ...available[idx],
+	                            sourceType: row.type
+	                        });
+	                    }
+	                }
+	            }
+	        }
+	
+	        // Humanoid equipment per row
+	        if (row.type === 'humanoid') {
+	            const weaponVariety = Math.max(1, Math.floor(Math.sqrt(row.count)) + 1);
+	            const armorVariety = Math.max(1, Math.floor(Math.sqrt(row.count)) + 1);
+	
+	            const allWeapons = officialItemDatabase.filter(item => {
+	                if (!item || !item.name) return false;
+	                const tags = Array.isArray(item.type) ? item.type : [item.type];
+	                return tags.some(t => ['Weapon', 'Sword', 'Axe', 'Hammer/Mace', 
+	                                       'Polearm', 'Dagger'].includes(t))
+	                       && item.rarity === 'Mundane';
+	            });
+	
+	            const allArmor = officialItemDatabase.filter(item => {
+	                if (!item || !item.name) return false;
+	                const tags = Array.isArray(item.type) ? item.type : [item.type];
+	                return tags.some(t => t === 'Armor') && item.rarity === 'Mundane';
+	            });
+	
+	            const weaponPool = [...allWeapons]
+	                .sort(() => Math.random() - 0.5)
+	                .slice(0, weaponVariety)
+	                .filter(w => w && w.name);
+	
+	            const armorPool = [...allArmor]
+	                .sort(() => Math.random() - 0.5)
+	                .slice(0, armorVariety)
+	                .filter(a => a && a.name);
+	
+	            if (weaponPool.length > 0) {
+	                const numWeapons = Math.floor(row.count * 0.6);
+	                for (let i = 0; i < numWeapons; i++) {
+	                    const weapon = weaponPool[Math.floor(Math.random() * weaponPool.length)];
+	                    if (weapon && weapon.name) loot.items.push({...weapon});
+	                }
+	            }
+	
+	            if (armorPool.length > 0) {
+	                const numArmor = Math.floor(row.count * 0.4);
+	                for (let i = 0; i < numArmor; i++) {
+	                    const armor = armorPool[Math.floor(Math.random() * armorPool.length)];
+	                    if (armor && armor.name) loot.items.push({...armor});
+	                }
+	            }
+	        }
+	
+	        // Magic items per creature type, weighted by proportion
+	        if (includeMagic) {
+	            const magicScale = ((0.5 * lootMultiplier * rowScale) / 2) * rowWeight;
+	            const rowCRTier = row.cr >= 17 ? '17+' 
+	                            : row.cr >= 11 ? '11-16' 
+	                            : row.cr >= 5  ? '5-10' 
+	                            : '0-4';
+	            loot.magicItems.push(...generateMagicItems(rowCRTier, magicScale, includeHomebrew, row.type));
+	        }
+	
+	        // Boss loot from highest CR row
+	        if (includeBoss && row.cr === highestCR) {
+	            loot.magicItems.push(...generateBossLoot(row.cr, includeHomebrew));
+	        }
+	    });
+	
+	    displayLoot(loot, 'Combat Loot');
+	}
+	
+	// Initialize with one row on page load
+	window.addEventListener('DOMContentLoaded', function() {
+	    addCreatureRow();
+	});
 
 function generateTreasureHoard() {
     const crTier = document.getElementById('hoard-cr-tier').value;
