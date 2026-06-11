@@ -261,10 +261,11 @@
 
 	<!-- Loot Generator Tab -->
 <div id="loot-tab" class="tab-content">
-    <div class="loot-subtabs">
-        <button class="loot-subtab active" onclick="switchLootTab('combat')">Combat Loot</button>
-        <button class="loot-subtab" onclick="switchLootTab('hoard')">Treasure Hoard</button>
-    </div>
+<div class="loot-subtabs">
+    <button class="loot-subtab active" onclick="switchLootTab('combat')">Combat Loot</button>
+    <button class="loot-subtab" onclick="switchLootTab('hoard')">Treasure Hoard</button>
+    <button class="loot-subtab" onclick="switchLootTab('creaturetypes')">Creature Types</button>
+</div>
 
 <!-- Combat Loot Section -->
 <div id="combat-loot" class="loot-section active">
@@ -358,6 +359,17 @@
             </div>
         </div>
     </div>
+
+	<!-- Creature Types Section -->
+		<div id="creaturetypes-loot" class="loot-section">
+		    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+		        <h2 style="color: #d4af37; margin: 0;">🐉 Creature Types</h2>
+		        <button onclick="openCreatureTypeEditor(null)">+ New Creature Type</button>
+		    </div>
+		    <div id="creature-types-list">
+		        <!-- Populated by JS -->
+		    </div>
+		</div>
 
     <!-- Loot Display Area -->
     <div id="loot-content" class="empty-state">
