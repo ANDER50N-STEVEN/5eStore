@@ -3728,7 +3728,7 @@ function displayLoot(loot, title) {
             html += '<div class="loot-item-name">' + displayName + '</div>';
             html += '<div style="display: flex; align-items: center; gap: 8px;">';
             html += '<span class="loot-item-value">' + value + '</span>';
-            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + gemId + '\')" title="Remove">🗑️ Delete</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + gemId + '\')" title="Remove">🗑️</button>';
             html += '</div>';
             html += '</div>';
             html += '</div>';
@@ -3761,7 +3761,7 @@ function displayLoot(loot, title) {
             html += '<div class="loot-item-name">' + displayName + '</div>';
             html += '<div style="display: flex; align-items: center; gap: 8px;">';
             html += '<span class="loot-item-value">' + value + '</span>';
-            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + artId + '\')" title="Remove">🗑️ Delete</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + artId + '\')" title="Remove">🗑️</button>';
             html += '</div>';
             html += '</div>';
             html += '</div>';
@@ -3804,7 +3804,7 @@ function displayLoot(loot, title) {
             html += '<div style="display: flex; align-items: center; gap: 8px;">';
             html += '<span class="' + rarityClass + '">' + item.rarity + '</span>';
             html += '<button class="item-action-btn print-btn" onclick="printItem(\'' + magicItemId + '\', \'' + safeName + '\', \'' + item.rarity + '\')" title="Print item card">🖨️ Print</button>';
-            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + magicItemId + '\')" title="Remove item">🗑️ Delete</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + magicItemId + '\')" title="Remove item">🗑️</button>';
             html += '</div>';
             html += '</div>';
             html += '<div class="loot-item-description">' + (item.description || '') + '</div>';
@@ -3847,7 +3847,7 @@ function displayLoot(loot, title) {
             html += '<div style="display: flex; align-items: center; gap: 8px;">';
             html += '<span class="loot-item-value">' + item.cost + ' gp</span>';
             html += '<button class="item-action-btn print-btn" onclick="printItem(\'' + regularItemId + '\', \'' + safeName + '\', \'' + item.rarity + '\')" title="Print item card">🖨️ Print</button>';
-            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + regularItemId + '\')" title="Remove item">🗑️ Delete</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + regularItemId + '\')" title="Remove item">🗑️</button>';
             html += '</div>';
             html += '</div>';
             html += '<div class="loot-item-description">' + (item.description || '') + '</div>';
@@ -3887,7 +3887,7 @@ function displayLoot(loot, title) {
                 html += '<div class="loot-item-name">' + displayName + '</div>';
                 html += '<div style="display: flex; align-items: center; gap: 8px;">';
                 html += '<span class="loot-item-value">' + item.value + '</span>';
-                html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + specialItemId + '\')" title="Remove item">🗑️ Delete</button>';
+                html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + specialItemId + '\')" title="Remove item">🗑️</button>';
                 html += '</div>';
                 html += '</div>';
                 html += '<div class="loot-item-description">' + item.description + '</div>';
@@ -3896,7 +3896,7 @@ function displayLoot(loot, title) {
                 html += '<div class="loot-item" id="' + specialItemId + '">';
                 html += '<div class="loot-item-header">';
                 html += '<div class="loot-item-name">' + displayName + '</div>';
-                html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + specialItemId + '\')" title="Remove item">🗑️ Delete</button>';
+                html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + specialItemId + '\')" title="Remove item">🗑️</button>';
                 html += '</div>';
                 html += '</div>';
             }
@@ -3925,7 +3925,7 @@ function displayLoot(loot, title) {
             html += '<div class="loot-item" id="' + themeId + '">';
             html += '<div class="loot-item-header">';
             html += '<div class="loot-item-name">' + displayName + '</div>';
-            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + themeId + '\')" title="Remove item">🗑️ Delete</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + themeId + '\')" title="Remove item">🗑️</button>';
             html += '</div>';
             html += '</div>';
         });
