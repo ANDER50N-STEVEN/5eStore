@@ -3649,41 +3649,40 @@ function displayLoot(loot, title) {
         }
     }
     
-	const difficultyColors = {
-	    easy:   '#2ecc71',
-	    medium: '#f39c12',
-	    hard:   '#e67e22',
-	    deadly: '#e74c3c'
-	};
-	
-	const difficultyLabel = loot.difficulty
-	    ? `<span style="color: ${difficultyColors[loot.difficulty]}; font-weight: bold; text-transform: capitalize;">${loot.difficulty} Encounter</span>`
-	    : '';
-	
-	// XP per player is raw XP (before multiplier) divided by party size
-	const xpPerPlayer = loot.partySize && loot.rawXP
-	    ? Math.round(loot.rawXP / loot.partySize)
-	    : null;
-	
-	const xpLabel = xpPerPlayer
-	    ? `<span style="color: #c4b591;"><strong style="color: #d4af37;">XP:</strong> ${xpPerPlayer.toLocaleString()} per player (${loot.rawXP.toLocaleString()} total)</span>`
-	    : '';
-	
-	html += `
-	    <div class="loot-total" style="display: flex; flex-direction: column; gap: 6px;">
-	        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-	            ${difficultyLabel}
-	            <span style="color: #8b6f47;">|</span>
-	            ${xpLabel}
-	        </div>
-	        <div>
-	            <span style="color: #c4b591;"><strong style="color: #d4af37;">Est. Value:</strong> ${Math.round(totalValue).toLocaleString()} gp</span>
-	        </div>
-	    </div>
-	`;
-	html += `</div>`;
+    const difficultyColors = {
+        easy:   '#2ecc71',
+        medium: '#f39c12',
+        hard:   '#e67e22',
+        deadly: '#e74c3c'
+    };
     
-// Currency
+    const difficultyLabel = loot.difficulty
+        ? `<span style="color: ${difficultyColors[loot.difficulty]}; font-weight: bold; text-transform: capitalize;">${loot.difficulty} Encounter</span>`
+        : '';
+    
+    const xpPerPlayer = loot.partySize && loot.rawXP
+        ? Math.round(loot.rawXP / loot.partySize)
+        : null;
+    
+    const xpLabel = xpPerPlayer
+        ? `<span style="color: #c4b591;"><strong style="color: #d4af37;">XP:</strong> ${xpPerPlayer.toLocaleString()} per player (${loot.rawXP.toLocaleString()} total)</span>`
+        : '';
+    
+    html += `
+        <div class="loot-total" style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                ${difficultyLabel}
+                ${loot.difficulty ? '<span style="color: #8b6f47;">|</span>' : ''}
+                ${xpLabel}
+            </div>
+            <div>
+                <span style="color: #c4b591;"><strong style="color: #d4af37;">Est. Value:</strong> ${Math.round(totalValue).toLocaleString()} gp</span>
+            </div>
+        </div>
+    `;
+    html += `</div>`;
+
+    // Currency
     if (loot.currency && Object.keys(loot.currency).length > 0) {
         html += '<div class="loot-category" id="cat-currency">';
         html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-currency\')">';
@@ -3704,251 +3703,236 @@ function displayLoot(loot, title) {
 
         html += '</div></div>';
     }
-    
+
     // Gems
     if (loot.gems && loot.gems.length > 0) {
-        html += `
-            <div class="loot-category" id="cat-gems">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-gems')">
-                    <h3>💎 Gems (${loot.gems.length})</h3>
-                    <span class="collapse-icon">▼</span>
-                </div>
-                <div class="loot-items">
-        `;
-        
-        // Consolidate gems
+        html += '<div class="loot-category" id="cat-gems">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-gems\')">';
+        html += '<h3>💎 Gems (' + loot.gems.length + ')</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
         const gemCounts = {};
         loot.gems.forEach(gem => {
-            const key = `${gem.name}|${gem.value}`;
+            const key = gem.name + '|' + gem.value;
             gemCounts[key] = (gemCounts[key] || 0) + 1;
         });
-        
+
         Object.entries(gemCounts).forEach(([key, count]) => {
             const [name, value] = key.split('|');
-            const displayName = count > 1 ? `${name} (×${count})` : name;
-            html += `
-                <div class="loot-item">
-                    <div class="loot-item-name">${displayName}</div>
-                    <div class="loot-item-value">${value}</div>
-                </div>
-            `;
+            const displayName = count > 1 ? name + ' (×' + count + ')' : name;
+            const gemId = 'loot-gem-' + name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '') + '-' + Math.floor(Math.random() * 99999);
+            html += '<div class="loot-item" id="' + gemId + '">';
+            html += '<div class="loot-item-header">';
+            html += '<div class="loot-item-name">' + displayName + '</div>';
+            html += '<div style="display: flex; align-items: center; gap: 8px;">';
+            html += '<span class="loot-item-value">' + value + '</span>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + gemId + '\')" title="Remove">🗑️ Delete</button>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
         });
-        
-        html += `</div></div>`;
+
+        html += '</div></div>';
     }
-    
+
     // Art Objects
     if (loot.artObjects && loot.artObjects.length > 0) {
-        html += `
-            <div class="loot-category" id="cat-art">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-art')">
-                    <h3>🎨 Art Objects (${loot.artObjects.length})</h3>
-                    <span class="collapse-icon">▼</span>
-                </div>
-                <div class="loot-items">
-        `;
-        
-        // Consolidate art objects
+        html += '<div class="loot-category" id="cat-art">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-art\')">';
+        html += '<h3>🎨 Art Objects (' + loot.artObjects.length + ')</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
         const artCounts = {};
         loot.artObjects.forEach(obj => {
-            const key = `${obj.name}|${obj.value}`;
+            const key = obj.name + '|' + obj.value;
             artCounts[key] = (artCounts[key] || 0) + 1;
         });
-        
+
         Object.entries(artCounts).forEach(([key, count]) => {
             const [name, value] = key.split('|');
-            const displayName = count > 1 ? `${name} (×${count})` : name;
-            html += `
-                <div class="loot-item">
-                    <div class="loot-item-name">${displayName}</div>
-                    <div class="loot-item-value">${value}</div>
-                </div>
-            `;
+            const displayName = count > 1 ? name + ' (×' + count + ')' : name;
+            const artId = 'loot-art-' + name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '') + '-' + Math.floor(Math.random() * 99999);
+            html += '<div class="loot-item" id="' + artId + '">';
+            html += '<div class="loot-item-header">';
+            html += '<div class="loot-item-name">' + displayName + '</div>';
+            html += '<div style="display: flex; align-items: center; gap: 8px;">';
+            html += '<span class="loot-item-value">' + value + '</span>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + artId + '\')" title="Remove">🗑️ Delete</button>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
         });
-        
-        html += `</div></div>`;
-    }
-    
-   // Magic Items
-if (loot.magicItems && loot.magicItems.length > 0) {
-    html += `
-        <div class="loot-category" id="cat-magic">
-            <div class="loot-category-header" onclick="toggleLootCategory('cat-magic')">
-                <h3>✨ Magic Items (${loot.magicItems.length})</h3>
-                <span class="collapse-icon">▼</span>
-            </div>
-            <div class="loot-items">
-    `;
-    
-    // Consolidate magic items
-    const magicCounts = {};
-    loot.magicItems.forEach(item => {
-        const key = item.name;
-        if (!magicCounts[key]) {
-            magicCounts[key] = { count: 0, item: item };
-        }
-        magicCounts[key].count++;
-    });
-    
-		Object.entries(magicCounts).forEach(([name, data]) => {
-		    const { count, item } = data;
-		    const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
-		    const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
-		    const bossTag = item.isBossLoot ? ' ⭐' : '';
-		    
-		    // ADD THESE LINES:
-		    const descriptor = getRandomDescriptor(item);
-		    const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
-		    
-			const magicItemId = `loot-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
-			html += `
-			    <div class="loot-item" id="${magicItemId}">
-			        <div class="loot-item-header">
-			            <div class="loot-item-name">${displayName}${bossTag}</div>
-			            <div style="display: flex; align-items: center; gap: 8px;">
-			                <span class="${rarityClass}">${item.rarity}</span>
-			                <button class="item-action-btn print-btn" onclick="printItem('${magicItemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
-			                <button class="item-action-btn sold-btn" onclick="deleteLootItem('${magicItemId}')" title="Remove item">🗑️ Delete</button>
-			            </div>
-			        </div>
-			        <div class="loot-item-description">${item.description || ''}</div>
-			        ${descriptorHTML}
-			    </div>
-			`;
-    
-    html += `</div></div>`;
-}
 
-	
-// Regular Items
-if (loot.items && loot.items.length > 0) {
-    html += `
-        <div class="loot-category" id="cat-items">
-            <div class="loot-category-header" onclick="toggleLootCategory('cat-items')">
-                <h3>⚔️ Equipment & Items (${loot.items.length})</h3>
-                <span class="collapse-icon">▼</span>
-            </div>
-            <div class="loot-items">
-    `;
-    
-    // Consolidate items
-    const itemCounts = {};
-    loot.items.forEach(item => {
-        const key = item.name;
-        if (!itemCounts[key]) {
-            itemCounts[key] = { count: 0, item: item };
-        }
-        itemCounts[key].count++;
-    });
-    
-Object.entries(itemCounts).forEach(([name, data]) => {
-    const { count, item } = data;
-    const displayName = count > 1 ? `${item.name} (×${count})` : item.name;
-    
-    // ADD THESE LINES:
-    const descriptor = getRandomDescriptor(item);
-    const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
-    
-		const regularItemId = `loot-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
-		html += `
-		    <div class="loot-item" id="${regularItemId}">
-		        <div class="loot-item-header">
-		            <div class="loot-item-name">${displayName}</div>
-		            <div style="display: flex; align-items: center; gap: 8px;">
-		                <span class="loot-item-value">${item.cost} gp</span>
-		                <button class="item-action-btn print-btn" onclick="printItem('${regularItemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
-		                <button class="item-action-btn sold-btn" onclick="deleteLootItem('${regularItemId}')" title="Remove item">🗑️ Delete</button>
-		            </div>
-		        </div>
-		        <div class="loot-item-description">${item.description || ''}</div>
-		        ${descriptorHTML}
-		    </div>
-		`;
-});
-    
-    html += `</div></div>`;
-}
-    
-// Special Drops
-if (loot.specialDrops && loot.specialDrops.length > 0) {
-    html += `
-        <div class="loot-category" id="cat-special">
-            <div class="loot-category-header" onclick="toggleLootCategory('cat-special')">
-                <h3>🎁 Special Drops (${loot.specialDrops.length})</h3>
-                <span class="collapse-icon">▼</span>
-            </div>
-            <div class="loot-items">
-    `;
-    
-    // Consolidate special drops
-    const specialCounts = {};
-    loot.specialDrops.forEach(item => {
-        const key = typeof item === 'string' ? item : item.name;
-        if (!specialCounts[key]) {
-            specialCounts[key] = { count: 0, item: item };
-        }
-        specialCounts[key].count++;
-    });
-    
-    Object.entries(specialCounts).forEach(([key, data]) => {
-        const { count, item } = data;
-        const displayName = count > 1 ? `${key} (×${count})` : key;
-        
-        if (typeof item === 'object') {
-           const specialItemId = `loot-item-${key.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
-				html += `
-				    <div class="loot-item" id="${specialItemId}">
-				        <div class="loot-item-header">
-				            <div class="loot-item-name">${displayName}</div>
-				            <div style="display: flex; align-items: center; gap: 8px;">
-				                <span class="loot-item-value">${item.value}</span>
-				                <button class="item-action-btn sold-btn" onclick="deleteLootItem('${specialItemId}')" title="Remove item">🗑️ Delete</button>
-				            </div>
-				        </div>
-				        <div class="loot-item-description">${item.description}</div>
-				    </div>
-				`;
-        } else {
-            html += `
-                <div class="loot-item">
-                    <div class="loot-item-name">${displayName}</div>
-                </div>
-            `;
-        }
-    });
-    
-    html += `</div></div>`;
-}
-    
+        html += '</div></div>';
+    }
+
+    // Magic Items
+    if (loot.magicItems && loot.magicItems.length > 0) {
+        html += '<div class="loot-category" id="cat-magic">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-magic\')">';
+        html += '<h3>✨ Magic Items (' + loot.magicItems.length + ')</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
+        const magicCounts = {};
+        loot.magicItems.forEach(item => {
+            const key = item.name;
+            if (!magicCounts[key]) {
+                magicCounts[key] = { count: 0, item: item };
+            }
+            magicCounts[key].count++;
+        });
+
+        Object.entries(magicCounts).forEach(([name, data]) => {
+            const { count, item } = data;
+            const rarityClass = 'rarity-' + item.rarity.toLowerCase().replace(' ', '-');
+            const displayName = count > 1 ? item.name + ' (×' + count + ')' : item.name;
+            const bossTag = item.isBossLoot ? ' ⭐' : '';
+            const descriptor = getRandomDescriptor(item);
+            const descriptorHTML = descriptor ? '<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">' + descriptor + '</div>' : '';
+            const safeName = item.name.replace(/'/g, "\\'");
+            const magicItemId = 'loot-magic-' + item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '') + '-' + Math.floor(Math.random() * 99999);
+
+            html += '<div class="loot-item" id="' + magicItemId + '">';
+            html += '<div class="loot-item-header">';
+            html += '<div class="loot-item-name">' + displayName + bossTag + '</div>';
+            html += '<div style="display: flex; align-items: center; gap: 8px;">';
+            html += '<span class="' + rarityClass + '">' + item.rarity + '</span>';
+            html += '<button class="item-action-btn print-btn" onclick="printItem(\'' + magicItemId + '\', \'' + safeName + '\', \'' + item.rarity + '\')" title="Print item card">🖨️ Print</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + magicItemId + '\')" title="Remove item">🗑️ Delete</button>';
+            html += '</div>';
+            html += '</div>';
+            html += '<div class="loot-item-description">' + (item.description || '') + '</div>';
+            html += descriptorHTML;
+            html += '</div>';
+        });
+
+        html += '</div></div>';
+    }
+
+    // Regular Items
+    if (loot.items && loot.items.length > 0) {
+        html += '<div class="loot-category" id="cat-items">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-items\')">';
+        html += '<h3>⚔️ Equipment & Items (' + loot.items.length + ')</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
+        const itemCounts = {};
+        loot.items.forEach(item => {
+            const key = item.name;
+            if (!itemCounts[key]) {
+                itemCounts[key] = { count: 0, item: item };
+            }
+            itemCounts[key].count++;
+        });
+
+        Object.entries(itemCounts).forEach(([name, data]) => {
+            const { count, item } = data;
+            const displayName = count > 1 ? item.name + ' (×' + count + ')' : item.name;
+            const descriptor = getRandomDescriptor(item);
+            const descriptorHTML = descriptor ? '<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">' + descriptor + '</div>' : '';
+            const safeName = item.name.replace(/'/g, "\\'");
+            const regularItemId = 'loot-item-' + item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '') + '-' + Math.floor(Math.random() * 99999);
+
+            html += '<div class="loot-item" id="' + regularItemId + '">';
+            html += '<div class="loot-item-header">';
+            html += '<div class="loot-item-name">' + displayName + '</div>';
+            html += '<div style="display: flex; align-items: center; gap: 8px;">';
+            html += '<span class="loot-item-value">' + item.cost + ' gp</span>';
+            html += '<button class="item-action-btn print-btn" onclick="printItem(\'' + regularItemId + '\', \'' + safeName + '\', \'' + item.rarity + '\')" title="Print item card">🖨️ Print</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + regularItemId + '\')" title="Remove item">🗑️ Delete</button>';
+            html += '</div>';
+            html += '</div>';
+            html += '<div class="loot-item-description">' + (item.description || '') + '</div>';
+            html += descriptorHTML;
+            html += '</div>';
+        });
+
+        html += '</div></div>';
+    }
+
+    // Special Drops
+    if (loot.specialDrops && loot.specialDrops.length > 0) {
+        html += '<div class="loot-category" id="cat-special">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-special\')">';
+        html += '<h3>🎁 Special Drops (' + loot.specialDrops.length + ')</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
+        const specialCounts = {};
+        loot.specialDrops.forEach(item => {
+            const key = typeof item === 'string' ? item : item.name;
+            if (!specialCounts[key]) {
+                specialCounts[key] = { count: 0, item: item };
+            }
+            specialCounts[key].count++;
+        });
+
+        Object.entries(specialCounts).forEach(([key, data]) => {
+            const { count, item } = data;
+            const displayName = count > 1 ? key + ' (×' + count + ')' : key;
+            const specialItemId = 'loot-special-' + key.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '') + '-' + Math.floor(Math.random() * 99999);
+
+            if (typeof item === 'object') {
+                html += '<div class="loot-item" id="' + specialItemId + '">';
+                html += '<div class="loot-item-header">';
+                html += '<div class="loot-item-name">' + displayName + '</div>';
+                html += '<div style="display: flex; align-items: center; gap: 8px;">';
+                html += '<span class="loot-item-value">' + item.value + '</span>';
+                html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + specialItemId + '\')" title="Remove item">🗑️ Delete</button>';
+                html += '</div>';
+                html += '</div>';
+                html += '<div class="loot-item-description">' + item.description + '</div>';
+                html += '</div>';
+            } else {
+                html += '<div class="loot-item" id="' + specialItemId + '">';
+                html += '<div class="loot-item-header">';
+                html += '<div class="loot-item-name">' + displayName + '</div>';
+                html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + specialItemId + '\')" title="Remove item">🗑️ Delete</button>';
+                html += '</div>';
+                html += '</div>';
+            }
+        });
+
+        html += '</div></div>';
+    }
+
     // Theme Items
     if (loot.themeItems && loot.themeItems.length > 0) {
-        html += `
-            <div class="loot-category" id="cat-theme">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-theme')">
-                    <h3>🏺 Themed Treasures (${loot.themeItems.length})</h3>
-                    <span class="collapse-icon">▼</span>
-                </div>
-                <div class="loot-items">
-        `;
-        
-        // Consolidate themed items
+        html += '<div class="loot-category" id="cat-theme">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-theme\')">';
+        html += '<h3>🏺 Themed Treasures (' + loot.themeItems.length + ')</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
         const themeCounts = {};
         loot.themeItems.forEach(item => {
             themeCounts[item] = (themeCounts[item] || 0) + 1;
         });
-        
+
         Object.entries(themeCounts).forEach(([item, count]) => {
-            const displayName = count > 1 ? `${item} (×${count})` : item;
-            html += `
-                <div class="loot-item">
-                    <div class="loot-item-name">${displayName}</div>
-                </div>
-            `;
+            const displayName = count > 1 ? item + ' (×' + count + ')' : item;
+            const themeId = 'loot-theme-' + item.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '') + '-' + Math.floor(Math.random() * 99999);
+            html += '<div class="loot-item" id="' + themeId + '">';
+            html += '<div class="loot-item-header">';
+            html += '<div class="loot-item-name">' + displayName + '</div>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + themeId + '\')" title="Remove item">🗑️ Delete</button>';
+            html += '</div>';
+            html += '</div>';
         });
-        
-        html += `</div></div>`;
+
+        html += '</div></div>';
     }
-    
+
     document.getElementById('loot-content').innerHTML = html;
 }
 
