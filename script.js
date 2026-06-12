@@ -1959,7 +1959,7 @@ function selectInventory(settlementSize, storeType) {
 	    for (const item of shuffledCommon) {
 	        if (commonGuaranteeCount >= maxCommonGuarantees) break;
 	
-	        if (Math.random() < 0.5) {
+	        if (Math.random() < 0.05) {
 	            const quantity = Math.floor(Math.random() * 3) + 1;
 	
 	            for (let q = 0; q < quantity; q++) {
