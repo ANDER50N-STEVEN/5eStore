@@ -1945,8 +1945,8 @@ function selectInventory(settlementSize, storeType) {
         }
     }
 
-	 // Common item guarantee - 10% chance per eligible item, up to half the inventory size
-	    const maxCommonGuarantees = Math.floor(inventory.length / 2);
+	 // Common item guarantee - 5% chance per eligible item, up to a quarter the inventory size
+	    const maxCommonGuarantees = Math.floor(inventory.length / 4);
 	    let commonGuaranteeCount = 0;
 	
 	    const availableCommonItems = availableItems.filter(item => {
@@ -1959,7 +1959,7 @@ function selectInventory(settlementSize, storeType) {
 	    for (const item of shuffledCommon) {
 	        if (commonGuaranteeCount >= maxCommonGuarantees) break;
 	
-	        if (Math.random() < 0.10) {
+	        if (Math.random() < 0.5) {
 	            const quantity = Math.floor(Math.random() * 3) + 1;
 	
 	            for (let q = 0; q < quantity; q++) {
