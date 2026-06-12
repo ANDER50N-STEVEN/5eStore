@@ -3695,11 +3695,15 @@ function displayLoot(loot, title) {
         `;
         
         for (const [type, amount] of Object.entries(loot.currency)) {
-            html += `
-                <div class="loot-item">
-                    <div class="loot-item-name">${amount} ${type.toUpperCase()}</div>
-                </div>
-            `;
+            const currencyId = `loot-item-${type}-${Math.floor(Math.random() * 99999)}`;
+			html += `
+				<div class="loot-item" id="${currencyId}">
+					<div class="loot-item-header">
+						<div class="loot-item-name">${amount} ${type.toUpperCase()}</div>
+						<button class="item-action-btn sold-btn" onclick="deleteLootItem('${currencyId}')" title="Remove">🗑️ Delete</button>
+					</div>
+				</div>
+			`;
         }
         
         html += `</div></div>`;
@@ -3800,19 +3804,21 @@ if (loot.magicItems && loot.magicItems.length > 0) {
 		    const descriptor = getRandomDescriptor(item);
 		    const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
 		    
-		    html += `
-		        <div class="loot-item">
-		            <div class="loot-item-header">
-		                <div class="loot-item-name">${displayName}${bossTag}</div>
-		                <div class="loot-item-value">
-		                    <span class="${rarityClass}">${item.rarity}</span>
-		                </div>
-		            </div>
-		            <div class="loot-item-description">${item.description || ''}</div>
-		            ${descriptorHTML}  <!-- ADD THIS LINE -->
-		        </div>
-		    `;
-		});
+			const magicItemId = `loot-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
+			html += `
+			    <div class="loot-item" id="${magicItemId}">
+			        <div class="loot-item-header">
+			            <div class="loot-item-name">${displayName}${bossTag}</div>
+			            <div style="display: flex; align-items: center; gap: 8px;">
+			                <span class="${rarityClass}">${item.rarity}</span>
+			                <button class="item-action-btn print-btn" onclick="printItem('${magicItemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
+			                <button class="item-action-btn sold-btn" onclick="deleteLootItem('${magicItemId}')" title="Remove item">🗑️ Delete</button>
+			            </div>
+			        </div>
+			        <div class="loot-item-description">${item.description || ''}</div>
+			        ${descriptorHTML}
+			    </div>
+			`;
     
     html += `</div></div>`;
 }
@@ -3847,16 +3853,21 @@ Object.entries(itemCounts).forEach(([name, data]) => {
     const descriptor = getRandomDescriptor(item);
     const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
     
-    html += `
-        <div class="loot-item">
-            <div class="loot-item-header">
-                <div class="loot-item-name">${displayName}</div>
-                <div class="loot-item-value">${item.cost} gp</div>
-            </div>
-            <div class="loot-item-description">${item.description || ''}</div>
-            ${descriptorHTML}  <!-- ADD THIS LINE -->
-        </div>
-    `;
+		const regularItemId = `loot-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
+		html += `
+		    <div class="loot-item" id="${regularItemId}">
+		        <div class="loot-item-header">
+		            <div class="loot-item-name">${displayName}</div>
+		            <div style="display: flex; align-items: center; gap: 8px;">
+		                <span class="loot-item-value">${item.cost} gp</span>
+		                <button class="item-action-btn print-btn" onclick="printItem('${regularItemId}', '${item.name.replace(/'/g, "\\'")}', '${item.rarity}')" title="Print item card">🖨️ Print</button>
+		                <button class="item-action-btn sold-btn" onclick="deleteLootItem('${regularItemId}')" title="Remove item">🗑️ Delete</button>
+		            </div>
+		        </div>
+		        <div class="loot-item-description">${item.description || ''}</div>
+		        ${descriptorHTML}
+		    </div>
+		`;
 });
     
     html += `</div></div>`;
@@ -3888,15 +3899,19 @@ if (loot.specialDrops && loot.specialDrops.length > 0) {
         const displayName = count > 1 ? `${key} (×${count})` : key;
         
         if (typeof item === 'object') {
-            html += `
-                <div class="loot-item">
-                    <div class="loot-item-header">
-                        <div class="loot-item-name">${displayName}</div>
-                        <div class="loot-item-value">${item.value}</div>
-                    </div>
-                    <div class="loot-item-description">${item.description}</div>
-                </div>
-            `;
+           const specialItemId = `loot-item-${key.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
+				html += `
+				    <div class="loot-item" id="${specialItemId}">
+				        <div class="loot-item-header">
+				            <div class="loot-item-name">${displayName}</div>
+				            <div style="display: flex; align-items: center; gap: 8px;">
+				                <span class="loot-item-value">${item.value}</span>
+				                <button class="item-action-btn sold-btn" onclick="deleteLootItem('${specialItemId}')" title="Remove item">🗑️ Delete</button>
+				            </div>
+				        </div>
+				        <div class="loot-item-description">${item.description}</div>
+				    </div>
+				`;
         } else {
             html += `
                 <div class="loot-item">
@@ -3946,6 +3961,15 @@ function toggleLootCategory(categoryId) {
     category.classList.toggle('collapsed');
 }
 
+function deleteLootItem(itemId) {
+    const el = document.getElementById(itemId);
+    if (!el) return;
+    el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    el.style.opacity = '0';
+    el.style.transform = 'translateX(-20px)';
+    setTimeout(() => el.remove(), 300);
+}
+	
 
 // Track which saved store is currently loaded
 let currentLoadedStoreIndex = null;
