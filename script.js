@@ -19,14 +19,14 @@ const creatureTypeMagicItemTags = {
     humanoid:    null, // null = no restriction, any item allowed
     dragon:      null,
     beast:       ['Jewelry', 'Gem'],
-    undead:      ['Necromancy', 'Abjuration', 'Divine', 'Religious', 'Jewelry', 'Scroll', 'Wand/Staff/Rod'],
+    undead:      ['Necromancy', 'Abjuration', 'Divine', 'Religious', 'Jewelry', 'Scroll', 'Wand/Staff/Rod', 'Misc'],
     fiend:       ['Evil', 'Summoning', 'Necromancy', 'Enchantment', 'Wand/Staff/Rod', 'Jewelry'],
     celestial:   ['Divine', 'Religious', 'Healing', 'Abjuration', 'Conjuration', 'Jewelry'],
-    fey:         ['Enchantment', 'Nature', 'Jewelry', 'Gem', 'Instrument', 'Scroll'],
+    fey:         ['Enchantment', 'Nature', 'Jewelry', 'Gem', 'Instrument', 'Scroll', 'Misc'],
     elemental:   ['Transmutation', 'Arcane', 'Evocation'],
-    aberration:  ['Divination', 'Transmutation', 'Arcane', 'Wand/Staff/Rod', 'Book'],
+    aberration:  ['Divination', 'Transmutation', 'Arcane', 'Wand/Staff/Rod', 'Book', 'Misc'],
     monstrosity: ['Weapon', 'Armor', 'Jewelry', 'Gem'],
-    giant:       ['Weapon', 'Armor', 'Gem', 'Jewelry'],
+    giant:       ['Weapon', 'Armor', 'Gem', 'Jewelry', 'Misc'],
     construct:   ['Arcane', 'Transmutation', 'Wand/Staff/Rod', 'Book']
 };
 
