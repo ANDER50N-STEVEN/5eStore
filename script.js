@@ -3683,30 +3683,26 @@ function displayLoot(loot, title) {
 	`;
 	html += `</div>`;
     
-    // Currency
+// Currency
     if (loot.currency && Object.keys(loot.currency).length > 0) {
-        html += `
-            <div class="loot-category" id="cat-currency">
-                <div class="loot-category-header" onclick="toggleLootCategory('cat-currency')">
-                    <h3>💰 Currency</h3>
-                    <span class="collapse-icon">▼</span>
-                </div>
-                <div class="loot-items">
-        `;
-        
+        html += '<div class="loot-category" id="cat-currency">';
+        html += '<div class="loot-category-header" onclick="toggleLootCategory(\'cat-currency\')">';
+        html += '<h3>💰 Currency</h3>';
+        html += '<span class="collapse-icon">▼</span>';
+        html += '</div>';
+        html += '<div class="loot-items">';
+
         for (const [type, amount] of Object.entries(loot.currency)) {
-            const currencyId = `loot-item-${type}-${Math.floor(Math.random() * 99999)}`;
-			html += `
-				<div class="loot-item" id="${currencyId}">
-					<div class="loot-item-header">
-						<div class="loot-item-name">${amount} ${type.toUpperCase()}</div>
-						<button class="item-action-btn sold-btn" onclick="deleteLootItem('${currencyId}')" title="Remove">🗑️ Delete</button>
-					</div>
-				</div>
-			`;
+            const currencyId = 'loot-currency-' + type + '-' + Math.floor(Math.random() * 99999);
+            html += '<div class="loot-item" id="' + currencyId + '">';
+            html += '<div class="loot-item-header">';
+            html += '<div class="loot-item-name">' + amount + ' ' + type.toUpperCase() + '</div>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + currencyId + '\')" title="Remove">🗑️ Delete</button>';
+            html += '</div>';
+            html += '</div>';
         }
-        
-        html += `</div></div>`;
+
+        html += '</div></div>';
     }
     
     // Gems
