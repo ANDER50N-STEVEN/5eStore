@@ -1944,7 +1944,33 @@ function selectInventory(settlementSize, storeType) {
             inventory.push({...guaranteedHealing, isGuaranteed: true});
         }
     }
-    
+
+	 // Common item guarantee - 10% chance per eligible item, up to half the inventory size
+	    const maxCommonGuarantees = Math.floor(inventory.length / 2);
+	    let commonGuaranteeCount = 0;
+	
+	    const availableCommonItems = availableItems.filter(item => {
+	        const tags = Array.isArray(item.type) ? item.type : [item.type];
+	        return tags.includes('Common');
+	    });
+	
+	    const shuffledCommon = [...availableCommonItems].sort(() => Math.random() - 0.5);
+	
+	    for (const item of shuffledCommon) {
+	        if (commonGuaranteeCount >= maxCommonGuarantees) break;
+	
+	        if (Math.random() < 0.10) {
+	            const quantity = Math.floor(Math.random() * 3) + 1;
+	
+	            for (let q = 0; q < quantity; q++) {
+	                if (commonGuaranteeCount >= maxCommonGuarantees) break;
+	                inventory.push({...item, isGuaranteed: true});
+	                commonGuaranteeCount++;
+	            }
+	        }
+	    }
+
+	
     // 5% chance for lucky find (one item of next rarity tier)
     if (luckyFindItems.length > 0 && Math.random() < 0.05) {
         const luckyItem = luckyFindItems[Math.floor(Math.random() * luckyFindItems.length)];
