@@ -8416,7 +8416,7 @@
     {
         "name": "Backpack",
         "cost": 2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.",
         "fullDescription": "",
@@ -8429,7 +8429,7 @@
     {
         "name": "Ball Bearings",
         "cost": 1,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition.",
         "fullDescription": "",
@@ -8442,7 +8442,7 @@
     {
         "name": "Barrel",
         "cost": 2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods.",
         "fullDescription": "",
@@ -8455,7 +8455,7 @@
     {
         "name": "Basket",
         "cost": 0.4,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Basket holds up to 40 pounds within 2 cubic feet.",
         "fullDescription": "",
@@ -8468,7 +8468,7 @@
     {
         "name": "Bedroll",
         "cost": 1,
-        "type": ["Misc"],
+        "type": ["Misc", "Common", "Travel"],
         "rarity": "Mundane",
         "description": "A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold.",
         "fullDescription": "",
@@ -8481,7 +8481,7 @@
     {
         "name": "Bell",
         "cost": 1,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.",
         "fullDescription": "",
@@ -8494,7 +8494,7 @@
     {
         "name": "Blanket",
         "cost": 0.5,
-        "type": ["Misc"],
+        "type": ["Misc", "Common", "Travel"],
         "rarity": "Mundane",
         "description": "While wrapped in a blanket, you have Advantage on saving throws against extreme cold.",
         "fullDescription": "",
@@ -8507,7 +8507,7 @@
     {
         "name": "Block and Tackle",
         "cost": 1,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Block and Tackle allows you to hoist up to four times the weight you can normally lift.",
         "fullDescription": "",
@@ -8533,7 +8533,7 @@
     {
         "name": "Book",
         "cost": 25,
-        "type": ["Book"],
+        "type": ["Book", "Common"],
         "rarity": "Mundane",
         "description": "A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.",
         "fullDescription": "",
@@ -8546,7 +8546,7 @@
     {
         "name": "Bottle, Glass",
         "cost": 2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common", "Food"],
         "rarity": "Mundane",
         "description": "A Glass Bottle holds up to 1½ pints.",
         "fullDescription": "",
@@ -8559,7 +8559,7 @@
     {
         "name": "Bucket",
         "cost": 0.05,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Bucket holds up to half a cubic foot of contents.",
         "fullDescription": "",
@@ -8585,7 +8585,7 @@
     {
         "name": "Caltrops",
         "cost": 1,
-        "type": ["Ammunition", "Ranged", "Consumable"],
+        "type": ["Ammunition", "Ranged", "Consumable", "Common"],
         "rarity": "Mundane",
         "description": "As a Utilize action, you can spread Caltrops to cover a 5-foot-square area. A creature entering the area must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn.",
         "fullDescription": "",
@@ -8598,7 +8598,7 @@
     {
         "name": "Candle",
         "cost": 0.01,
-        "type": ["Misc", "Consumable"],
+        "type": ["Misc", "Consumable", "Common"],
         "rarity": "Mundane",
         "description": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
         "fullDescription": "",
@@ -8611,7 +8611,7 @@
     {
         "name": "Chain",
         "cost": 5,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "As a Utilize action, you can wrap a Chain around a restrained creature with a successful DC 13 Strength (Athletics) check. Escaping or breaking the chain requires significant effort.",
         "fullDescription": "",
@@ -8624,7 +8624,7 @@
     {
         "name": "Climber's Kit",
         "cost": 25,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Climber's Kit includes boot tips, gloves, pitons, and a harness. You can anchor yourself to prevent falling more than 25 feet.",
         "fullDescription": "",
@@ -8637,7 +8637,7 @@
     {
         "name": "Clothes, Fine",
         "cost": 15,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Common"],
         "rarity": "Mundane",
         "description": "Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some locations admit only those wearing them.",
         "fullDescription": "",
@@ -8650,7 +8650,7 @@
     {
         "name": "Clothes, Traveler's",
         "cost": 2,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Common"],
         "rarity": "Mundane",
         "description": "Traveler's Clothes are resilient garments designed for travel in various environments.",
         "fullDescription": "",
@@ -8676,7 +8676,7 @@
     {
         "name": "Crowbar",
         "cost": 2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Using a Crowbar gives you Advantage on Strength checks where leverage can be applied.",
         "fullDescription": "",
@@ -8715,7 +8715,7 @@
     {
         "name": "Grappling Hook",
         "cost": 5,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "You can throw the Grappling Hook to catch onto ledges or railings within 50 feet, allowing you to climb if attached to rope.",
         "fullDescription": "",
@@ -8780,7 +8780,7 @@
     {
         "name": "Lock",
         "cost": 10,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A Lock comes with a key. Without it, the lock can be picked with thieves' tools.",
         "fullDescription": "",
@@ -8793,7 +8793,7 @@
     {
         "name": "Manacles",
         "cost": 2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Manacles restrain Small or Medium creatures and include a key. Escaping requires significant effort.",
         "fullDescription": "",
@@ -8806,7 +8806,7 @@
     {
         "name": "Net",
         "cost": 1,
-        "type": ["Weapon"],
+        "type": ["Weapon", "Common"],
         "rarity": "Mundane",
         "description": "When thrown, a Net restrains a Medium or smaller creature until it escapes or the net is destroyed.",
         "fullDescription": "",
@@ -8819,7 +8819,7 @@
     {
         "name": "Torch",
         "cost": 0.01,
-        "type": ["Misc", "Consumable", "Travel"],
+        "type": ["Misc", "Consumable", "Travel", "Common"],
         "rarity": "Mundane",
         "description": "A Torch burns for 1 hour, shedding Bright Light in a 20-foot radius. It can be used as a simple melee weapon.",
         "fullDescription": "",
@@ -8832,7 +8832,7 @@
     {
         "name": "Waterskin",
         "cost": 0.2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common", "Travel"],
         "rarity": "Mundane",
         "description": "A Waterskin holds up to 4 pints of liquid.",
         "fullDescription": "",
@@ -8910,7 +8910,7 @@
     {
         "name": "Dungeoneer's Pack",
         "cost": 12,
-        "type": ["Travel", "Misc"],
+        "type": ["Travel", "Misc", "Common"],
         "rarity": "Mundane",
         "description": "Adventuring essentials for dungeon exploration, including tools, food, torches, and rope.",
         "fullDescription": "",
@@ -8936,7 +8936,7 @@
     {
         "name": "Explorer's Pack",
         "cost": 10,
-        "type": ["Travel", "Misc"],
+        "type": ["Travel", "Misc", "Common"],
         "rarity": "Mundane",
         "description": "Basic travel gear with rations, torches, rope, and survival essentials.",
         "fullDescription": "",
@@ -8949,7 +8949,7 @@
     {
         "name": "Flask",
         "cost": 0.02,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Common"],
         "rarity": "Mundane",
         "description": "Holds up to 1 pint of liquid.",
         "fullDescription": "",
@@ -8976,7 +8976,7 @@
     {
         "name": "Ink",
         "cost": 10,
-        "type": ["Book"],
+        "type": ["Book", "Common"],
         "rarity": "Mundane",
         "description": "Ink bottle sufficient for roughly 500 pages of writing.",
         "fullDescription": "",
@@ -8989,7 +8989,7 @@
     {
         "name": "Ink Pen",
         "cost": 0.02,
-        "type": ["Book"],
+        "type": ["Book", "Common"],
         "rarity": "Mundane",
         "description": "Used with ink for writing or drawing.",
         "fullDescription": "",
@@ -9002,7 +9002,7 @@
     {
         "name": "Jug",
         "cost": 0.02,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Holds up to 1 gallon of liquid.",
         "fullDescription": "",
@@ -9015,7 +9015,7 @@
     {
         "name": "Ladder",
         "cost": 0.1,
-        "type": ["Consumable"],
+        "type": ["Consumable", "Common"],
         "rarity": "Mundane",
         "description": "A 10-foot ladder for climbing.",
         "fullDescription": "",
@@ -9028,7 +9028,7 @@
     {
         "name": "Lamp",
         "cost": 0.5,
-        "type": [ "Misc", "Travel"],
+        "type": [ "Misc", "Travel", "Common"],
         "rarity": "Mundane",
         "description": "Oil-powered lamp providing bright and dim light.",
         "fullDescription": "",
@@ -9093,7 +9093,7 @@
     {
         "name": "Mirror",
         "cost": 5,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Handheld steel mirror useful for signaling or scouting.",
         "fullDescription": "",
@@ -9106,7 +9106,7 @@
     {
         "name": "Oil Flask",
         "cost": 0.1,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Common"],
         "rarity": "Mundane",
         "description": "Used as fuel or weaponized to burn creatures or areas.",
         "fullDescription": "",
@@ -9119,7 +9119,7 @@
     {
         "name": "Paper",
         "cost": 0.2,
-        "type": ["Book"],
+        "type": ["Book", "Common"],
         "rarity": "Mundane",
         "description": "Single sheet suitable for about 250 handwritten words.",
         "fullDescription": "",
@@ -9132,7 +9132,7 @@
     {
         "name": "Parchment",
         "cost": 0.1,
-        "type": ["Book"],
+        "type": ["Book", "Common"],
         "rarity": "Mundane",
         "description": "Durable writing material holding about 250 words.",
         "fullDescription": "",
@@ -9171,7 +9171,7 @@
     {
         "name": "Pole",
         "cost": 0.05,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "A 10-foot pole useful for vaulting or probing hazards.",
         "fullDescription": "",
@@ -9184,7 +9184,7 @@
     {
         "name": "Iron Pot",
         "cost": 2,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Holds up to 1 gallon; commonly used for cooking.",
         "fullDescription": "",
@@ -9197,7 +9197,7 @@
     {
         "name": "Pouch",
         "cost": 0.5,
-        "type": ["Misc", "Travel"],
+        "type": ["Misc", "Travel", "Common"],
         "rarity": "Mundane",
         "description": "Small pouch holding up to 6 pounds of items.",
         "fullDescription": "",
@@ -9249,7 +9249,7 @@
     {
         "name": "Rations",
         "cost": 0.5,
-        "type": ["Misc", "Consumable", "Travel", "Food"],
+        "type": ["Misc", "Consumable", "Travel", "Food", "Common"],
         "rarity": "Mundane",
         "description": "Travel food sufficient for one day.",
         "fullDescription": "",
@@ -9262,7 +9262,7 @@
     {
         "name": "Robe",
         "cost": 1,
-        "type": ["Apparel"],
+        "type": ["Apparel", "Common"],
         "rarity": "Mundane",
         "description": "Ceremonial or professional garment.",
         "fullDescription": "",
@@ -9275,7 +9275,7 @@
     {
         "name": "Rope",
         "cost": 1,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Strong rope useful for climbing, binding, or securing objects.",
         "fullDescription": "",
@@ -9288,7 +9288,7 @@
     {
         "name": "Sack",
         "cost": 0.01,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Simple sack holding up to 30 pounds of items.",
         "fullDescription": "",
@@ -9314,7 +9314,7 @@
     {
         "name": "Shovel",
         "cost": 2,
-        "type": [ "Misc"],
+        "type": [ "Misc", "Common"],
         "rarity": "Mundane",
         "description": "Used to dig holes in soil over extended time.",
         "fullDescription": "",
@@ -9327,7 +9327,7 @@
     {
         "name": "Signal Whistle",
         "cost": 0.05,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Produces a loud signal audible up to 600 feet.",
         "fullDescription": "",
@@ -9340,7 +9340,7 @@
     {
         "name": "Iron Spikes",
         "cost": 1,
-        "type": ["Misc"],
+        "type": ["Misc", "Common"],
         "rarity": "Mundane",
         "description": "Ten metal spikes used to jam doors or anchor ropes.",
         "fullDescription": "",
@@ -9366,7 +9366,7 @@
     {
         "name": "String",
         "cost": 0.1,
-        "type": ["Misc", "Apparel"],
+        "type": ["Misc", "Apparel", "Common"],
         "rarity": "Mundane",
         "description": "10 feet of string for tying or fastening small items.",
         "fullDescription": "",
@@ -9379,7 +9379,7 @@
     {
         "name": "Tent",
         "cost": 2,
-        "type": ["Travel", "Misc"],
+        "type": ["Travel", "Misc", "Common"],
         "rarity": "Mundane",
         "description": "Shelter that sleeps up to two creatures.",
         "fullDescription": "",
@@ -9392,7 +9392,7 @@
     {
         "name": "Tinderbox",
         "cost": 0.5,
-        "type": ["Misc", "Travel"],
+        "type": ["Misc", "Travel", "Common"],
         "rarity": "Mundane",
         "description": "Used to easily start fires.",
         "fullDescription": "",
@@ -9405,7 +9405,7 @@
     {
         "name": "Vial",
         "cost": 1,
-        "type": ["Potion", "Consumable"],
+        "type": ["Potion", "Consumable", "Common"],
         "rarity": "Mundane",
         "description": "Small container holding up to 4 ounces of liquid.",
         "fullDescription": "",
@@ -9413,6 +9413,188 @@
             "glass vial with cork",
             "small bottle with stopper",
             "container for liquids"
+        ]
+    },
+    {
+        "name": "Soap",
+        "cost": 0.02,
+        "type": ["Misc", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Bar of soap used for washing and cleaning.",
+        "fullDescription": "",
+        "descriptors": [
+            "simple bar of soap",
+            "scented cleaning bar",
+            "wrapped block of soap"
+        ]
+    },
+    {
+        "name": "Hammer",
+        "cost": 1,
+        "type": ["Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Tool used for driving nails and light construction.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden-handled hammer",
+            "iron-headed hammer",
+            "well-used carpenter's hammer"
+        ]
+    },
+    {
+        "name": "Pick",
+        "cost": 2,
+        "type": ["Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Mining tool designed for breaking stone and hard earth.",
+        "fullDescription": "",
+        "descriptors": [
+            "iron mining pick",
+            "heavy pickaxe",
+            "stone-breaking tool"
+        ]
+    },
+    {
+        "name": "Hatchet",
+        "cost": 1,
+        "type": ["Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Small axe suitable for chopping wood and camp tasks.",
+        "fullDescription": "",
+        "descriptors": [
+            "wood-cutting hatchet",
+            "small hand axe",
+            "belt-hung chopping tool"
+        ]
+    },
+    {
+        "name": "Compass",
+        "cost": 10,
+        "type": ["Travel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Navigation tool that indicates direction.",
+        "fullDescription": "",
+        "descriptors": [
+            "brass compass",
+            "magnetic navigation device",
+            "engraved directional compass"
+        ]
+    },
+    {
+        "name": "Salt",
+        "cost": 0.05,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Common seasoning and preservative sold by the pouch.",
+        "fullDescription": "",
+        "descriptors": [
+            "small sack of salt",
+            "coarse white crystals",
+            "preserving mineral"
+        ]
+    },
+    {
+        "name": "Flour",
+        "cost": 0.02,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Ground grain used in baking and cooking.",
+        "fullDescription": "",
+        "descriptors": [
+            "sack of flour",
+            "finely milled grain",
+            "white baking powder"
+        ]
+    },
+    {
+        "name": "Grain",
+        "cost": 0.01,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Unprocessed grain used for food or feed.",
+        "fullDescription": "",
+        "descriptors": [
+            "bag of grain",
+            "raw harvested kernels",
+            "bundle of dried grain"
+        ]
+    },
+    {
+        "name": "Dried Meat",
+        "cost": 0.5,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Preserved meat suitable for long journeys.",
+        "fullDescription": "",
+        "descriptors": [
+            "strips of jerky",
+            "salt-cured meat",
+            "travel-ready preserved meat"
+        ]
+    },
+    {
+        "name": "Dried Fruit",
+        "cost": 0.3,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Preserved fruit with a long shelf life.",
+        "fullDescription": "",
+        "descriptors": [
+            "bag of dried berries",
+            "sun-dried fruit slices",
+            "sweet preserved fruit"
+        ]
+    },
+    {
+        "name": "Wine",
+        "cost": 2,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Bottle of fermented grape beverage.",
+        "fullDescription": "",
+        "descriptors": [
+            "glass bottle of wine",
+            "dark red vintage",
+            "corked wine bottle"
+        ]
+    },
+    {
+        "name": "Ale",
+        "cost": 0.5,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Popular fermented grain beverage.",
+        "fullDescription": "",
+        "descriptors": [
+            "tankard of ale",
+            "brown bottle of ale",
+            "frothy grain beverage"
+        ]
+    },
+    {
+        "name": "Animal Feed",
+        "cost": 0.05,
+        "type": ["Animal", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Feed suitable for livestock and mounts.",
+        "fullDescription": "",
+        "descriptors": [
+            "sack of feed",
+            "bag of oats and grain",
+            "animal fodder"
+        ]
+    },
+    {
+        "name": "Chalk",
+        "cost": 0.01,
+        "type": ["Misc", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Soft mineral stick used for marking surfaces.",
+        "fullDescription": "",
+        "descriptors": [
+            "white chalk stick",
+            "marking chalk",
+            "bundle of chalk pieces"
         ]
     },
     {
