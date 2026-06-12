@@ -3696,7 +3696,7 @@ function displayLoot(loot, title) {
             html += '<div class="loot-item" id="' + currencyId + '">';
             html += '<div class="loot-item-header">';
             html += '<div class="loot-item-name">' + amount + ' ' + type.toUpperCase() + '</div>';
-            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + currencyId + '\')" title="Remove">🗑️ Delete</button>';
+            html += '<button class="item-action-btn sold-btn" onclick="deleteLootItem(\'' + currencyId + '\')" title="Remove">🗑️</button>';
             html += '</div>';
             html += '</div>';
         }
