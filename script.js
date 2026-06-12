@@ -4093,7 +4093,9 @@ function printItem(itemId, itemName, itemRarity) {
     const el = document.getElementById(itemId);
     if (!el) return;
 
-    const description = el.querySelector('.item-description')?.textContent?.trim() || '';
+    const description = el.querySelector('.item-description')?.textContent?.trim() 
+                     || el.querySelector('.loot-item-description')?.textContent?.trim() 
+                     || '';
     const descriptor = el.querySelector('.item-descriptor')?.textContent?.trim() || '';
 const fullDescription = el.querySelector('.item-full-description')?.textContent?.trim() || '';
 console.log('Full Description:', fullDescription);
