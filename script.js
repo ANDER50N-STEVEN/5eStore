@@ -736,6 +736,12 @@ function getRandomDescriptor(item) {
 }
 
 function generateShopkeeper(storeType, settlementSize, wealthLevel = 'common') {
+
+	    // Reset mundane visibility on new generation
+    mundaneVisible = true;
+    const btn = document.getElementById('toggle-mundane-btn');
+    if (btn) btn.textContent = '🪨 Hide Mundane';
+	
     // Pick random race
     const race = shopkeeperData.races[Math.floor(Math.random() * shopkeeperData.races.length)];
     
@@ -4164,4 +4170,27 @@ console.log('Full Description:', fullDescription);
         </html>
     `);
     printWindow.document.close();
+}
+
+let mundaneVisible = true;
+
+function toggleMundaneItems() {
+    mundaneVisible = !mundaneVisible;
+
+    // Find all mundane subcategory sections
+    const mundaneSubcategories = document.querySelectorAll('[id$="-mundane"]');
+
+    mundaneSubcategories.forEach(section => {
+        if (mundaneVisible) {
+            section.style.display = '';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+
+    // Update button text
+    const btn = document.getElementById('toggle-mundane-btn');
+    if (btn) {
+        btn.textContent = mundaneVisible ? '🪨 Hide Mundane' : '🪨 Show Mundane';
+    }
 }
