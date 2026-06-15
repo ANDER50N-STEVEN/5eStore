@@ -18231,9 +18231,1101 @@
     "description": "Used in the following spells: Tongues",
     "fullDescription": "",
     "descriptors": []
-  }
-]   
-
+  },
+    {
+        "name": "Wooden Spoon",
+        "cost": 0.01,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Simple wooden utensil used for eating and cooking.",
+        "fullDescription": "",
+        "descriptors": [
+            "carved wooden spoon",
+            "smooth cooking utensil",
+            "well-used eating spoon"
+        ]
+    },
+    {
+        "name": "Ladle",
+        "cost": 0.05,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Deep spoon used for serving soups and stews.",
+        "fullDescription": "",
+        "descriptors": [
+            "long-handled ladle",
+            "wooden serving spoon",
+            "deep-bowled utensil"
+        ]
+    },
+    {
+        "name": "Bowl",
+        "cost": 0.02,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Simple bowl used for meals and food preparation.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden eating bowl",
+            "clay serving bowl",
+            "plain household bowl"
+        ]
+    },
+    {
+        "name": "Plate",
+        "cost": 0.02,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Flat dish used for serving food.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden plate",
+            "simple dining plate",
+            "round serving dish"
+        ]
+    },
+    {
+        "name": "Mug",
+        "cost": 0.05,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Cup with a handle used for drinking.",
+        "fullDescription": "",
+        "descriptors": [
+            "ceramic mug",
+            "wooden drinking cup",
+            "handled beverage mug"
+        ]
+    },
+    {
+        "name": "Tankard",
+        "cost": 0.1,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Large mug commonly used for ale and beer.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden tankard",
+            "metal-banded mug",
+            "large drinking vessel"
+        ]
+    },
+    {
+        "name": "Wash Basin",
+        "cost": 0.5,
+        "type": ["Household", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Basin used for washing hands and clothing.",
+        "fullDescription": "",
+        "descriptors": [
+            "ceramic wash basin",
+            "wide cleaning bowl",
+            "water-filled basin"
+        ]
+    },
+    {
+        "name": "Towel",
+        "cost": 0.1,
+        "type": ["Household", "Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Cloth used for drying and cleaning.",
+        "fullDescription": "",
+        "descriptors": [
+            "folded linen towel",
+            "soft drying cloth",
+            "well-used towel"
+        ]
+    },
+    {
+        "name": "Broom",
+        "cost": 0.2,
+        "type": ["Household", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Used for sweeping dirt and debris.",
+        "fullDescription": "",
+        "descriptors": [
+            "straw broom",
+            "wooden-handled sweeper",
+            "household cleaning broom"
+        ]
+    },
+    {
+        "name": "Mop",
+        "cost": 0.3,
+        "type": ["Household", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Tool used for cleaning floors with water.",
+        "fullDescription": "",
+        "descriptors": [
+            "cloth mop",
+            "floor-cleaning tool",
+            "wet cleaning mop"
+        ]
+    },
+    {
+        "name": "Candle Holder",
+        "cost": 0.1,
+        "type": ["Household", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Holder designed to safely support a candle.",
+        "fullDescription": "",
+        "descriptors": [
+            "brass candle holder",
+            "iron candle stand",
+            "wax-stained holder"
+        ]
+    },
+    {
+        "name": "Iron Pot",
+        "cost": 1,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Durable pot used for cooking meals over a fire.",
+        "fullDescription": "",
+        "descriptors": [
+            "black iron pot",
+            "heavy cooking vessel",
+            "fire-blackened pot"
+        ]
+    },
+    {
+        "name": "Frying Pan",
+        "cost": 0.8,
+        "type": ["Household", "Food", "Common"],
+        "rarity": "Mundane",
+        "description": "Flat pan used for frying and cooking food.",
+        "fullDescription": "",
+        "descriptors": [
+            "cast iron pan",
+            "well-seasoned skillet",
+            "cooking pan"
+        ]
+    },
+    {
+        "name": "Mortar and Pestle",
+        "cost": 0.5,
+        "type": ["Misc", "Alchemy", "Household", "Common"],
+        "rarity": "Mundane",
+        "description": "Used for grinding herbs, spices, and powders.",
+        "fullDescription": "",
+        "descriptors": [
+            "stone mortar and pestle",
+            "herb grinding set",
+            "kitchen grinding tool"
+        ]
+    },
+    {
+        "name": "Needle",
+        "cost": 0.01,
+        "type": ["Apparel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Small metal tool used for sewing.",
+        "fullDescription": "",
+        "descriptors": [
+            "steel sewing needle",
+            "fine metal needle",
+            "threading needle"
+        ]
+    },
+    {
+        "name": "Thread",
+        "cost": 0.02,
+        "type": ["Apparel", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Spool of thread used for sewing and repairs.",
+        "fullDescription": "",
+        "descriptors": [
+            "spool of thread",
+            "roll of sewing thread",
+            "fine stitching thread"
+        ]
+    },
+    {
+        "name": "Buttons",
+        "cost": 0.03,
+        "type": ["Apparel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Small fasteners used on clothing.",
+        "fullDescription": "",
+        "descriptors": [
+            "bag of buttons",
+            "wooden clothing fasteners",
+            "assorted garment buttons"
+        ]
+    },
+    {
+        "name": "Patches",
+        "cost": 0.05,
+        "type": ["Apparel", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Cloth pieces used for repairing garments.",
+        "fullDescription": "",
+        "descriptors": [
+            "fabric repair patches",
+            "cloth scraps for mending",
+            "sewing patches"
+        ]
+    },
+    {
+        "name": "Cloth Scraps",
+        "cost": 0.02,
+        "type": ["Apparel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Assorted pieces of leftover fabric.",
+        "fullDescription": "",
+        "descriptors": [
+            "pile of fabric scraps",
+            "assorted cloth pieces",
+            "leftover sewing material"
+        ]
+    },
+    {
+        "name": "Leather Gloves",
+        "cost": 0.5,
+        "type": ["Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Protective gloves made from leather.",
+        "fullDescription": "",
+        "descriptors": [
+            "work gloves",
+            "soft leather gloves",
+            "worn riding gloves"
+        ]
+    },
+    {
+        "name": "Work Apron",
+        "cost": 0.3,
+        "type": ["Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Protective apron worn during labor.",
+        "fullDescription": "",
+        "descriptors": [
+            "canvas work apron",
+            "stained leather apron",
+            "craftsman's apron"
+        ]
+    },
+    {
+        "name": "Hat",
+        "cost": 0.2,
+        "type": ["Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Simple headwear for protection and style.",
+        "fullDescription": "",
+        "descriptors": [
+            "broad-brimmed hat",
+            "cloth cap",
+            "traveler's hat"
+        ]
+    },
+    {
+        "name": "Scarf",
+        "cost": 0.1,
+        "type": ["Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Long cloth worn around the neck.",
+        "fullDescription": "",
+        "descriptors": [
+            "wool scarf",
+            "striped neck wrap",
+            "warm cloth scarf"
+        ]
+    },
+    {
+        "name": "Belt",
+        "cost": 0.2,
+        "type": ["Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Leather strap worn around the waist.",
+        "fullDescription": "",
+        "descriptors": [
+            "simple leather belt",
+            "belt with brass buckle",
+            "well-worn waist belt"
+        ]
+    },
+    {
+        "name": "Shoelaces",
+        "cost": 0.01,
+        "type": ["Apparel", "Common"],
+        "rarity": "Mundane",
+        "description": "Cord used to fasten footwear.",
+        "fullDescription": "",
+        "descriptors": [
+            "leather boot laces",
+            "woven shoe cord",
+            "replacement laces"
+        ]
+    },
+	
+    {
+        "name": "Cloak Pin",
+        "cost": 0.1,
+        "type": ["Apparel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Decorative pin used to fasten a cloak.",
+        "fullDescription": "",
+        "descriptors": [
+            "simple brass pin",
+            "cloak fastening brooch",
+            "engraved cloak clasp"
+        ]
+    },
+    {
+        "name": "Wax Tablets",
+        "cost": 0.2,
+        "type": [ "Book", "Common"],
+        "rarity": "Mundane",
+        "description": "Reusable writing surface made of wax.",
+        "fullDescription": "",
+        "descriptors": [
+            "wood-framed wax tablet",
+            "reusable writing board",
+            "stylus-marked tablet"
+        ]
+    },
+    {
+        "name": "Sealing Wax",
+        "cost": 0.05,
+        "type": ["Book", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Wax used to seal letters and documents.",
+        "fullDescription": "",
+        "descriptors": [
+            "red sealing wax",
+            "wax sealing stick",
+            "document sealing wax"
+        ]
+    },
+    {
+        "name": "Ledger Book",
+        "cost": 0.5,
+        "type": ["Book", "Common"],
+        "rarity": "Mundane",
+        "description": "Bound book used for keeping records and accounts.",
+        "fullDescription": "",
+        "descriptors": [
+            "merchant's ledger",
+            "bound record book",
+            "accounting journal"
+        ]
+    },
+    {
+        "name": "Colored Ink",
+        "cost": 0.25,
+        "type": ["Book", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Ink used for decorative or specialized writing.",
+        "fullDescription": "",
+        "descriptors": [
+            "blue ink bottle",
+            "colored writing ink",
+            "artist's ink vial"
+        ]
+    },
+    {
+        "name": "Charcoal Sticks",
+        "cost": 0.02,
+        "type": ["Book", "Misc", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Charcoal pieces used for sketching and marking.",
+        "fullDescription": "",
+        "descriptors": [
+            "drawing charcoal",
+            "black marking sticks",
+            "artist's charcoal bundle"
+        ]
+    },
+    {
+        "name": "Honey",
+        "cost": 0.15,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Sweet natural syrup produced by bees.",
+        "fullDescription": "",
+        "descriptors": [
+            "jar of honey",
+            "golden sweet syrup",
+            "fresh honeycomb honey"
+        ]
+    },
+    {
+        "name": "Jam",
+        "cost": 0.1,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Preserved fruit spread.",
+        "fullDescription": "",
+        "descriptors": [
+            "berry jam jar",
+            "sweet fruit preserve",
+            "sealed jar of jam"
+        ]
+    },
+    {
+        "name": "Cheese",
+        "cost": 0.1,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Aged dairy product used as food.",
+        "fullDescription": "",
+        "descriptors": [
+            "wheel of cheese",
+            "aged cheese wedge",
+            "wrapped dairy cheese"
+        ]
+    },
+    {
+        "name": "Butter",
+        "cost": 0.08,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Dairy spread used in cooking and baking.",
+        "fullDescription": "",
+        "descriptors": [
+            "wrapped butter block",
+            "fresh churned butter",
+            "yellow dairy butter"
+        ]
+    },
+    {
+        "name": "Sausage",
+        "cost": 0.1,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Seasoned meat stuffed into a casing.",
+        "fullDescription": "",
+        "descriptors": [
+            "smoked sausage link",
+            "cured meat sausage",
+            "hanging sausage"
+        ]
+    },
+    {
+        "name": "Smoked Fish",
+        "cost": 0.15,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Fish preserved through smoking.",
+        "fullDescription": "",
+        "descriptors": [
+            "smoked trout",
+            "preserved fish fillet",
+            "salted smoked fish"
+        ]
+    },
+    {
+        "name": "Pickled Vegetables",
+        "cost": 0.1,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Vegetables preserved in vinegar.",
+        "fullDescription": "",
+        "descriptors": [
+            "jar of pickles",
+            "pickled vegetables",
+            "vinegar-preserved vegetables"
+        ]
+    },
+    {
+        "name": "Nuts",
+        "cost": 0.05,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Edible nuts commonly eaten as snacks.",
+        "fullDescription": "",
+        "descriptors": [
+            "bag of nuts",
+            "mixed tree nuts",
+            "roasted nut assortment"
+        ]
+    },
+    {
+        "name": "Oats",
+        "cost": 0.03,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Common grain used for food and feed.",
+        "fullDescription": "",
+        "descriptors": [
+            "sack of oats",
+            "rolled oat grains",
+            "animal feed oats"
+        ]
+    },
+    {
+        "name": "Rice",
+        "cost": 0.05,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Staple grain used in many meals.",
+        "fullDescription": "",
+        "descriptors": [
+            "bag of rice",
+            "uncooked rice grains",
+            "white rice sack"
+        ]
+    },
+    {
+        "name": "Beans",
+        "cost": 0.04,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Dried legumes used as a food staple.",
+        "fullDescription": "",
+        "descriptors": [
+            "sack of beans",
+            "dried legumes",
+            "mixed cooking beans"
+        ]
+    },
+    {
+        "name": "Herbs",
+        "cost": 0.1,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Dried culinary herbs used for seasoning.",
+        "fullDescription": "",
+        "descriptors": [
+            "bundle of herbs",
+            "dried seasoning herbs",
+            "fragrant herb pouch"
+        ]
+    },
+    {
+        "name": "Spices",
+        "cost": 0.25,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Flavorful seasonings from various plants.",
+        "fullDescription": "",
+        "descriptors": [
+            "spice pouch",
+            "ground cooking spices",
+            "aromatic seasoning mix"
+        ]
+    },
+    {
+        "name": "Tea",
+        "cost": 0.2,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Dried leaves used to brew a hot drink.",
+        "fullDescription": "",
+        "descriptors": [
+            "tea leaf pouch",
+            "dried tea blend",
+            "aromatic tea leaves"
+        ]
+    },
+    {
+        "name": "Coffee",
+        "cost": 0.3,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Roasted beans used to brew a stimulating drink.",
+        "fullDescription": "",
+        "descriptors": [
+            "roasted coffee beans",
+            "coffee grounds pouch",
+            "dark roasted beans"
+        ]
+    },
+    {
+        "name": "Vinegar",
+        "cost": 0.05,
+        "type": ["Food", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Acidic liquid used in cooking and preservation.",
+        "fullDescription": "",
+        "descriptors": [
+            "vinegar bottle",
+            "cooking vinegar",
+            "preserving liquid"
+        ]
+    },
+    {
+        "name": "Horseshoe",
+        "cost": 0.1,
+        "type": ["Animal", "Travel", "Common"],
+        "rarity": "Mundane",
+        "description": "Metal shoe fitted to a horse's hoof.",
+        "fullDescription": "",
+        "descriptors": [
+            "iron horseshoe",
+            "hoof protection shoe",
+            "forged horse shoe"
+        ]
+    },
+    {
+        "name": "Saddle Blanket",
+        "cost": 0.5,
+        "type": ["Animal", "Travel", "Common"],
+        "rarity": "Mundane",
+        "description": "Padded blanket placed beneath a saddle.",
+        "fullDescription": "",
+        "descriptors": [
+            "wool saddle blanket",
+            "padded riding blanket",
+            "horse saddle liner"
+        ]
+    },
+    {
+        "name": "Feed Bucket",
+        "cost": 0.2,
+        "type": ["Animal", "Travel", "Common"],
+        "rarity": "Mundane",
+        "description": "Bucket used for feeding animals.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden feed bucket",
+            "animal feeding pail",
+            "grain bucket"
+        ]
+    },
+    {
+        "name": "Brush",
+        "cost": 0.1,
+        "type": ["Tool", "Animal", "Common"],
+        "rarity": "Mundane",
+        "description": "Brush used for grooming animals or cleaning surfaces.",
+        "fullDescription": "",
+        "descriptors": [
+            "horse grooming brush",
+            "stiff-bristled brush",
+            "wooden-backed brush"
+        ]
+    },
+    {
+        "name": "Harness",
+        "cost": 2,
+        "type": ["Animal", "Travel", "Common"],
+        "rarity": "Mundane",
+        "description": "Leather straps used to attach an animal to a cart or load.",
+        "fullDescription": "",
+        "descriptors": [
+            "leather harness",
+            "draft animal harness",
+            "buckled work harness"
+        ]
+    },
+    {
+        "name": "Yoke",
+        "cost": 1,
+        "type": ["Animal", "Travel", "Common"],
+        "rarity": "Mundane",
+        "description": "Wooden beam used to pair animals for pulling loads.",
+        "fullDescription": "",
+        "descriptors": [
+            "oxen yoke",
+            "carved wooden yoke",
+            "draft animal collar"
+        ]
+    },
+    {
+        "name": "Seed Packets",
+        "cost": 0.05,
+        "type": ["Farming", "Consumable", "Common", "Misc"],
+        "rarity": "Mundane",
+        "description": "Packets containing seeds for planting crops.",
+        "fullDescription": "",
+        "descriptors": [
+            "vegetable seeds",
+            "paper seed packet",
+            "crop starter seeds"
+        ]
+    },
+    {
+        "name": "Gardening Hoe",
+        "cost": 1,
+        "type": ["Misc", "Farming", "Common"],
+        "rarity": "Mundane",
+        "description": "Tool used for cultivating soil and removing weeds.",
+        "fullDescription": "",
+        "descriptors": [
+            "wood-handled hoe",
+            "soil cultivation tool",
+            "farmer's hoe"
+        ]
+    },
+    {
+        "name": "Rake",
+        "cost": 0.8,
+        "type": ["Misc", "Farming", "Common"],
+        "rarity": "Mundane",
+        "description": "Tool used for gathering leaves and leveling soil.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden rake",
+            "leaf gathering tool",
+            "wide-tined rake"
+        ]
+    },
+    {
+        "name": "Sickle",
+        "cost": 1,
+        "type": ["Misc", "Farming", "Common"],
+        "rarity": "Mundane",
+        "description": "Curved blade used for harvesting crops.",
+        "fullDescription": "",
+        "descriptors": [
+            "harvesting sickle",
+            "curved farm blade",
+            "grain cutting tool"
+        ]
+    },
+    {
+        "name": "Shears",
+        "cost": 1,
+        "type": ["Misc", "Farming", "Common"],
+        "rarity": "Mundane",
+        "description": "Large scissors used for trimming wool and plants.",
+        "fullDescription": "",
+        "descriptors": [
+            "wool shears",
+            "heavy trimming shears",
+            "spring-loaded cutters"
+        ]
+    },
+    {
+        "name": "Fishing Net",
+        "cost": 1,
+        "type": ["Animal", "Travel", "Common", "Fish"],
+        "rarity": "Mundane",
+        "description": "Net used for catching fish.",
+        "fullDescription": "",
+        "descriptors": [
+            "knotted fishing net",
+            "weighted fish net",
+            "woven catch net"
+        ]
+    },
+    {
+        "name": "Fish Hooks",
+        "cost": 0.05,
+        "type": ["Animal", "Consumable", "Common", "Fish"],
+        "rarity": "Mundane",
+        "description": "Metal hooks used for fishing.",
+        "fullDescription": "",
+        "descriptors": [
+            "barbed fish hooks",
+            "small tackle hooks",
+            "bundle of hooks"
+        ]
+    },
+    {
+        "name": "Bait Box",
+        "cost": 0.1,
+        "type": ["Animal", "Travel", "Common", "Fish"],
+        "rarity": "Mundane",
+        "description": "Container used for storing fishing bait.",
+        "fullDescription": "",
+        "descriptors": [
+            "wooden bait box",
+            "bait storage container",
+            "lidded tackle box"
+        ]
+    },
+    {
+        "name": "Skinning Knife",
+        "cost": 0.5,
+        "type": ["Animal", "Common"],
+        "rarity": "Mundane",
+        "description": "Small sharp knife used for processing game.",
+        "fullDescription": "",
+        "descriptors": [
+            "curved skinning knife",
+            "hunting blade",
+            "bone-handled knife"
+        ]
+    },
+    {
+        "name": "Animal Snares",
+        "cost": 0.5,
+        "type": ["Animal", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Simple traps used for catching small animals.",
+        "fullDescription": "",
+        "descriptors": [
+            "wire snare",
+            "animal trap loop",
+            "bundle of snares"
+        ]
+    },
+    {
+        "name": "Waterproof Tarp",
+        "cost": 1,
+        "type": ["Travel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Water-resistant covering used for shelter and protection.",
+        "fullDescription": "",
+        "descriptors": [
+            "oiled canvas tarp",
+            "waterproof sheet",
+            "folded travel tarp"
+        ]
+    },
+    {
+        "name": "Walking Stick",
+        "cost": 0.2,
+        "type": ["Travel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Sturdy stick used for support during travel.",
+        "fullDescription": "",
+        "descriptors": [
+            "carved walking stick",
+            "traveler's staff",
+            "smooth hiking stick"
+        ]
+    },
+    {
+        "name": "Mosquito Net",
+        "cost": 0.5,
+        "type": ["Travel", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Fine mesh net used to keep insects away while sleeping.",
+        "fullDescription": "",
+        "descriptors": [
+            "hanging mosquito net",
+            "fine mesh canopy",
+            "travel insect net"
+        ]
+    },
+    {
+        "name": "Copper Ingots",
+        "cost": 5,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Refined copper bars used for crafting and trade.",
+        "fullDescription": "",
+        "descriptors": [
+            "stacked copper bars",
+            "refined copper ingots",
+            "reddish metal blocks"
+        ]
+    },
+    {
+        "name": "Iron Ingots",
+        "cost": 10,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Refined iron bars ready for forging.",
+        "fullDescription": "",
+        "descriptors": [
+            "heavy iron ingots",
+            "forge-ready metal bars",
+            "dark metal blocks"
+        ]
+    },
+    {
+        "name": "Beeswax",
+        "cost": 0.2,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Natural wax used for candles and sealing.",
+        "fullDescription": "",
+        "descriptors": [
+            "yellow beeswax block",
+            "wax crafting material",
+            "honey-scented wax"
+        ]
+    },
+    {
+        "name": "Wool",
+        "cost": 0.5,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Raw wool suitable for spinning and weaving.",
+        "fullDescription": "",
+        "descriptors": [
+            "bundle of wool",
+            "freshly shorn fleece",
+            "soft wool fibers"
+        ]
+    },
+    {
+        "name": "Raw Cotton",
+        "cost": 0.4,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Unprocessed cotton used in textile production.",
+        "fullDescription": "",
+        "descriptors": [
+            "cotton fibers",
+            "raw cotton bundle",
+            "soft white cotton"
+        ]
+    },
+    {
+        "name": "Dyed Cloth",
+        "cost": 1,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Colored fabric suitable for tailoring and trade.",
+        "fullDescription": "",
+        "descriptors": [
+            "bright dyed fabric",
+            "colored cloth bolt",
+            "woven textile"
+        ]
+    },
+    {
+        "name": "Lumber",
+        "cost": 2,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Cut timber used in construction and crafting.",
+        "fullDescription": "",
+        "descriptors": [
+            "stack of boards",
+            "cut timber planks",
+            "construction lumber"
+        ]
+    },
+    {
+        "name": "Coal",
+        "cost": 0.5,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Fuel used for heating and metalworking.",
+        "fullDescription": "",
+        "descriptors": [
+            "sack of coal",
+            "black fuel stones",
+            "forge coal"
+        ]
+    },
+    {
+        "name": "Charcoal",
+        "cost": 0.2,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Lightweight fuel commonly used in smithing and cooking.",
+        "fullDescription": "",
+        "descriptors": [
+            "charcoal bundle",
+            "blackened fuel pieces",
+            "light forge fuel"
+        ]
+    },
+    {
+        "name": "Pottery",
+        "cost": 0.5,
+        "type": ["Trade Good", "Household", "Common"],
+        "rarity": "Mundane",
+        "description": "Simple ceramic goods used for storage, cooking, and decoration.",
+        "fullDescription": "",
+        "descriptors": [
+            "stack of clay pottery",
+            "glazed ceramic ware",
+            "handcrafted earthen vessels"
+        ]
+    },
+    {
+        "name": "Glass Beads",
+        "cost": 0.2,
+        "type": ["Trade Good", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Decorative glass beads used for jewelry and crafts.",
+        "fullDescription": "",
+        "descriptors": [
+            "colorful glass beads",
+            "string of decorative beads",
+            "small polished bead assortment"
+        ]
+    },
+    {
+        "name": "Marbles",
+        "cost": 0.05,
+        "type": ["Toy", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "Small glass or stone spheres used in games and recreation.",
+        "fullDescription": "",
+        "descriptors": [
+            "bag of marbles",
+            "colored glass marbles",
+            "smooth stone game pieces"
+        ]
+    },
+    {
+        "name": "Dice Set",
+        "cost": 0.1,
+        "type": ["Toy", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "A collection of dice used for games, gambling, and divination.",
+        "fullDescription": "",
+        "descriptors": [
+            "bone dice set",
+            "carved gaming dice",
+            "small pouch of dice"
+        ]
+    },
+    {
+        "name": "Deck of Cards",
+        "cost": 0.2,
+        "type": ["Toy", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "A deck of illustrated cards used for games and fortune telling.",
+        "fullDescription": "",
+        "descriptors": [
+            "worn playing cards",
+            "illustrated card deck",
+            "stack of gaming cards"
+        ]
+    },
+    {
+        "name": "Lockbox",
+        "cost": 5,
+        "type": ["Container", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "A sturdy box fitted with a lock for securing valuables.",
+        "fullDescription": "",
+        "descriptors": [
+            "locked wooden box",
+            "iron-banded lockbox",
+            "small secure strongbox"
+        ]
+    },
+    {
+        "name": "Notebook",
+        "cost": 0.5,
+        "type": ["Book", "Misc", "Common"],
+        "rarity": "Mundane",
+        "description": "A bound collection of blank pages for notes and sketches.",
+        "fullDescription": "",
+        "descriptors": [
+            "leather-bound notebook",
+            "blank journal",
+            "small writing book"
+        ]
+    },
+    {
+        "name": "Twine",
+        "cost": 0.05,
+        "type": ["Misc", "Travel", "Consumable", "Common"],
+        "rarity": "Mundane",
+        "description": "Thin cord used for tying, bundling, and light repairs.",
+        "fullDescription": "",
+        "descriptors": [
+            "ball of twine",
+            "spool of cord",
+            "bundle of thin string"
+        ]
+    },
+    {
+        "name": "Dust Masks",
+        "cost": 0.1,
+        "type": ["Apparel", "Tool", "Common"],
+        "rarity": "Mundane",
+        "description": "Simple cloth masks worn to reduce inhalation of dust and debris.",
+        "fullDescription": "",
+        "descriptors": [
+            "cloth dust mask",
+            "face covering with ties",
+            "worker's breathing mask"
+        ]
+    }
+]
 
 
 
