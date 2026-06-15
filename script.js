@@ -1797,23 +1797,25 @@ function applyItemFilters() {
 			];
 			return healingPotionNames.includes(item.name);
 }
-		function getItemQuantity(item) {
-    // Define consumable item types and their quantity ranges
+function getItemQuantity(item) {
     const consumables = {
-        'Potion': { min: 1, max: 4 },           // 1-6 potions
-		'Misc': { min:1, max: 4},
-		'Common': { min:1, max: 4},
-        'Ammunition': { min: 1, max: 3 },       // 1-3 bundles of ammunition
-        'Scroll': { min: 1, max: 4 }       // 1-4 scrolls (if you want scrolls to have multiples)
+        'Potion': { min: 1, max: 4 },
+        //'Misc': { min: 1, max: 4 },
+        'Common': { min: 1, max: 4 },
+        'Ammunition': { min: 1, max: 3 },
+        'Scroll': { min: 1, max: 4 }
     };
-    
-    // Check if item is consumable
-    if (consumables[item.type]) {
-        const range = consumables[item.type];
-        return Math.floor(Math.random() * (range.max - range.min + 1)) + range.min;
+
+    // Handle both array and string type
+    const tags = Array.isArray(item.type) ? item.type : [item.type];
+
+    for (const tag of tags) {
+        if (consumables[tag]) {
+            const range = consumables[tag];
+            return Math.floor(Math.random() * (range.max - range.min + 1)) + range.min;
+        }
     }
-    
-    // Non-consumable items always have quantity 1
+
     return 1;
 }
 
@@ -1945,30 +1947,41 @@ function selectInventory(settlementSize, storeType) {
         }
     }
 
-	 // Common item guarantee - 10% chance per eligible item, up to a quarter the inventory size
-	    const maxCommonGuarantees = Math.floor(inventory.length / 4);
-	    let commonGuaranteeCount = 0;
-	
-	    const availableCommonItems = availableItems.filter(item => {
-	        const tags = Array.isArray(item.type) ? item.type : [item.type];
-	        return tags.includes('Common');
-	    });
-	
-	    const shuffledCommon = [...availableCommonItems].sort(() => Math.random() - 0.5);
-	
-	    for (const item of shuffledCommon) {
-	        if (commonGuaranteeCount >= maxCommonGuarantees) break;
-	
-	        if (Math.random() < 0.1) {
-	            const quantity = Math.floor(Math.random() * 3) + 1;
-	
-	            for (let q = 0; q < quantity; q++) {
-	                if (commonGuaranteeCount >= maxCommonGuarantees) break;
-	                inventory.push({...item, isGuaranteed: true});
-	                commonGuaranteeCount++;
-	            }
-	        }
-	    }
+	// Common item guarantee - 10% chance per eligible item, up to a quarter the inventory size
+    const maxCommonGuarantees = Math.floor(inventory.length / 4);
+    let commonGuaranteeCount = 0;
+
+    const availableCommonItems = availableItems.filter(item => {
+        const tags = Array.isArray(item.type) ? item.type : [item.type];
+        return tags.includes('Common');
+    });
+
+    const shuffledCommon = [...availableCommonItems].sort(() => Math.random() - 0.5);
+
+    for (const item of shuffledCommon) {
+        if (commonGuaranteeCount >= maxCommonGuarantees) break;
+
+        if (Math.random() < 0.1) {
+            // Check if already in inventory
+            const existingIdx = inventory.findIndex(i => i.name === item.name);
+
+            if (existingIdx !== -1) {
+                // Item already exists, just bump its quantity
+                inventory[existingIdx].guaranteedQuantity = (inventory[existingIdx].guaranteedQuantity || 1) + 1;
+                commonGuaranteeCount++;
+            } else {
+                // Roll quantity 1-3
+                const quantity = Math.floor(Math.random() * 3) + 1;
+                const guaranteedItem = {
+                    ...item,
+                    isGuaranteed: true,
+                    guaranteedQuantity: Math.min(quantity, maxCommonGuarantees - commonGuaranteeCount)
+                };
+                inventory.push(guaranteedItem);
+                commonGuaranteeCount += guaranteedItem.guaranteedQuantity;
+            }
+        }
+    }
 
 	
     // 5% chance for lucky find (one item of next rarity tier)
@@ -2027,7 +2040,8 @@ function groupByType(inventory) {
         }
 		
 function generateItemHTML(item, maxModifier) {
-    const quantity = getItemQuantity(item);
+    // Use guaranteed quantity if set, otherwise roll normally
+    const quantity = item.guaranteedQuantity || getItemQuantity(item);
     const { price, modifier } = applyPriceModifier(item.cost, maxModifier);
     const formattedPrice = formatPrice(price);
     const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
@@ -2039,12 +2053,8 @@ function generateItemHTML(item, maxModifier) {
     
     const descriptor = getRandomDescriptor(item);
     const descriptorHTML = descriptor ? `<div class="item-descriptor" style="font-style: italic; color: #a89968; margin-top: 5px; font-size: 0.9em;">${descriptor}</div>` : '';
-
-	    // Include fullDescription as hidden div for print popup
     const fullDescriptionHTML = item.fullDescription ? `<div class="item-full-description">${item.fullDescription}</div>` : '';
-
     
-    // Unique ID for each item div so we can target it for deletion
     const itemId = `shop-item-${item.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}-${Math.floor(Math.random() * 99999)}`;
     
     return `
@@ -2063,7 +2073,7 @@ function generateItemHTML(item, maxModifier) {
             </div>
             <div class="item-description">${item.description || 'No description available.'}</div>
             ${descriptorHTML}
-			${fullDescriptionHTML}
+            ${fullDescriptionHTML}
         </div>
     `;
 }
