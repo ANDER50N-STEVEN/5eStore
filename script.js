@@ -736,11 +736,6 @@ function getRandomDescriptor(item) {
 }
 
 function generateShopkeeper(storeType, settlementSize, wealthLevel = 'common') {
-
-	    // Reset mundane visibility on new generation
-    mundaneVisible = true;
-    const btn = document.getElementById('toggle-mundane-btn');
-    if (btn) btn.textContent = '🪨 Hide Mundane';
 	
     // Pick random race
     const race = shopkeeperData.races[Math.floor(Math.random() * shopkeeperData.races.length)];
@@ -2088,6 +2083,11 @@ function generateShop() {
     const storeType = document.getElementById('store-type').value;
     const settlementSize = document.getElementById('settlement-size').value;
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
+
+	    // Reset mundane collapsed state on new generation
+    mundaneCollapsed = false;
+    const btn = document.getElementById('toggle-mundane-btn');
+    if (btn) btn.textContent = '🪨 Hide Mundane';
 
     // Apply store type default limits if custom limits not enabled
     const useCustom = document.getElementById('use-custom-limits').checked;
@@ -4172,25 +4172,25 @@ console.log('Full Description:', fullDescription);
     printWindow.document.close();
 }
 
-let mundaneVisible = true;
+let mundaneCollapsed = true;
 
 function toggleMundaneItems() {
-    mundaneVisible = !mundaneVisible;
+    mundaneCollapsed = !mundaneCollapsed;
 
     // Find all mundane subcategory sections
     const mundaneSubcategories = document.querySelectorAll('[id$="-mundane"]');
 
     mundaneSubcategories.forEach(section => {
-        if (mundaneVisible) {
-            section.style.display = '';
+        if (mundaneCollapsed) {
+            section.classList.add('collapsed');
         } else {
-            section.style.display = 'none';
+            section.classList.remove('collapsed');
         }
     });
 
     // Update button text
     const btn = document.getElementById('toggle-mundane-btn');
     if (btn) {
-        btn.textContent = mundaneVisible ? '🪨 Hide Mundane' : '🪨 Show Mundane';
+        btn.textContent = mundaneCollapsed  ? '🪨 Hide Mundane' : '🪨 Show Mundane';
     }
 }
