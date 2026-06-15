@@ -473,7 +473,31 @@ function getLootMultiplierFromDifficulty(difficulty) {
     }
 }
 
+function getGoldModifier(radioName) {
+    const selected = document.querySelector(`input[name="${radioName}"]:checked`);
+    const value = selected ? selected.value : 'medium';
 
+    switch (value) {
+        case 'low':    return 2;   // 2x current
+        case 'medium': return 5;   // 3x low = 6x current
+        case 'high':   return 10;  // 6x low = 12x current
+        default:       return 6;
+    }
+}
+
+const goldModifier = getGoldModifier('loot-gold-modifier');
+
+    const loot = {
+        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale * goldModifier),
+        items: [],
+        magicItems: [],
+        specialDrops: [],
+        difficulty: difficulty,
+        adjustedXP: adjustedXP,
+        rawXP: rawXP,
+        partySize: partySize,
+        partyThresholds: partyThresholds
+    };
 
 let customStoreTypes = {};  // loaded from localStorage
 
@@ -3463,13 +3487,25 @@ function generateTreasureHoard() {
     const crTier = document.getElementById('hoard-cr-tier').value;
     const hoardSize = document.getElementById('hoard-size').value;
     const theme = document.getElementById('hoard-theme').value;
-    
+    const goldModifier = getGoldModifier('hoard-gold-modifier');
+
     const sizeMultiplier = {
         'small': 0.5,
         'medium': 1,
         'large': 2,
         'legendary': 4
     };
+
+    const loot = {
+        currency: generateCurrency(crTier, 1, sizeMultiplier[hoardSize] * goldModifier),
+        gems: generateGems(crTier, sizeMultiplier[hoardSize]),
+        artObjects: generateArtObjects(crTier, sizeMultiplier[hoardSize]),
+        magicItems: generateMagicItems(crTier, sizeMultiplier[hoardSize]),
+        themeItems: generateThemedTreasure(theme, sizeMultiplier[hoardSize])
+    };
+
+    displayLoot(loot, `${theme.charAt(0).toUpperCase() + theme.slice(1)} Treasure Hoard`);
+}
     
     const loot = {
         currency: generateCurrency(crTier, 1, sizeMultiplier[hoardSize]),
