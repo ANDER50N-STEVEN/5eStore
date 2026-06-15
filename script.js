@@ -485,19 +485,7 @@ function getGoldModifier(radioName) {
     }
 }
 
-const goldModifier = getGoldModifier('loot-gold-modifier');
 
-    const loot = {
-        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale * goldModifier),
-        items: [],
-        magicItems: [],
-        specialDrops: [],
-        difficulty: difficulty,
-        adjustedXP: adjustedXP,
-        rawXP: rawXP,
-        partySize: partySize,
-        partyThresholds: partyThresholds
-    };
 
 let customStoreTypes = {};  // loaded from localStorage
 
@@ -3374,17 +3362,19 @@ function getEncounterDifficulty(partyLevel, partySize, roster) {
 	    const lootMultiplier = getLootMultiplierFromDifficulty(difficulty);
 	    const creatureScale = Math.sqrt(totalCreatures);
 			
-		const loot = {
-		        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale),
-		        items: [],
-		        magicItems: [],
-		        specialDrops: [],
-		        difficulty: difficulty,
-		        adjustedXP: adjustedXP,
-		        rawXP: rawXP,
-		        partySize: partySize,
-		        partyThresholds: partyThresholds
-		    };
+const goldModifier = getGoldModifier('loot-gold-modifier');
+
+    const loot = {
+        currency: generateCurrency(crTier, totalCreatures, 0.3 * lootMultiplier * creatureScale * goldModifier),
+        items: [],
+        magicItems: [],
+        specialDrops: [],
+        difficulty: difficulty,
+        adjustedXP: adjustedXP,
+        rawXP: rawXP,
+        partySize: partySize,
+        partyThresholds: partyThresholds
+    };
 	
 	    // Process each creature row independently
 	    roster.forEach(row => {
