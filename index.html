@@ -77,16 +77,18 @@
 				</div>
 
 			</div>
-			
 
 			<!-- ADVANCED OPTIONS TOGGLE -->
-			<div class="control-group" style="grid-column: span 2;">
+			<div class="control-group" style="grid-column: span 2; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
 			    <label style="display: flex; align-items: center; cursor: pointer;">
 			        <input type="checkbox" id="use-custom-limits" onchange="toggleCustomLimits()" style="width: auto; margin-right: 8px;">
 			        <span style="text-transform: none; letter-spacing: normal;">⚙️ Use Custom Item Limits (Advanced)</span>
 			    </label>
+			    <button id="toggle-mundane-btn" onclick="toggleMundaneItems()" style="padding: 6px 14px; font-size: 0.85em; background: linear-gradient(135deg, #3a2010 0%, #2c1810 100%);">
+			        🪨 Hide Mundane
+			    </button>
 			</div>
-			
+
 			<!-- HIDDEN CUSTOM LIMITS SECTION -->
 			<div id="custom-limits-container" class="custom-limits-container" style="display: none;">
 
