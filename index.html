@@ -282,22 +282,37 @@
         </div>
 
         <div class="control-group" style="grid-column: span 2;">
-            <label>Options</label>
-            <div style="display: flex; gap: 20px; margin-top: 4px; flex-wrap: wrap;">
-                <label style="display: flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
-                    <input type="checkbox" id="combat-include-magic" checked style="width: auto;">
-                    Include Magic Items
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
-                    <input type="checkbox" id="combat-include-homebrew" style="width: auto;">
-                    Include Homebrew
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
-                    <input type="checkbox" id="boss-loot" style="width: auto;">
-                    Include Boss Loot
-                </label>
-            </div>
-        </div>
+		    <label>Options</label>
+		    <div style="display: flex; gap: 20px; margin-top: 4px; flex-wrap: wrap;">
+		        <label style="display: flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+		            <input type="checkbox" id="combat-include-magic" checked style="width: auto;">
+		            Include Magic Items
+		        </label>
+		        <label style="display: flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+		            <input type="checkbox" id="combat-include-homebrew" style="width: auto;">
+		            Include Homebrew
+		        </label>
+		        <label style="display: flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+		            <input type="checkbox" id="boss-loot" style="width: auto;">
+		            Include Boss Loot
+		        </label>
+		    </div>
+		    <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px; flex-wrap: wrap;">
+		        <span style="color: #d4af37; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;">💰 Gold:</span>
+		        <label style="display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+		            <input type="radio" name="loot-gold-modifier" id="gold-low" value="low" style="width: auto;">
+		            Low
+		        </label>
+		        <label style="display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+		            <input type="radio" name="loot-gold-modifier" id="gold-medium" value="medium" checked style="width: auto;">
+		            Medium
+		        </label>
+		        <label style="display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+		            <input type="radio" name="loot-gold-modifier" id="gold-high" value="high" style="width: auto;">
+		            High
+		        </label>
+		    </div>
+		</div>
     </div>
 
     <!-- Creature Roster -->
@@ -354,7 +369,23 @@
                     <option value="ancient">Ancient Ruin</option>
                 </select>
             </div>
-
+			<div class="control-group" style="grid-column: span 2;">
+			    <label>💰 Gold Amount</label>
+			    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+			        <label style="display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+			            <input type="radio" name="hoard-gold-modifier" id="hoard-gold-low" value="low" style="width: auto;">
+			            Low
+			        </label>
+			        <label style="display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+			            <input type="radio" name="hoard-gold-modifier" id="hoard-gold-medium" value="medium" checked style="width: auto;">
+			            Medium
+			        </label>
+			        <label style="display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: normal; font-size: 0.95em; cursor: pointer;">
+			            <input type="radio" name="hoard-gold-modifier" id="hoard-gold-high" value="high" style="width: auto;">
+			            High
+			        </label>
+			    </div>
+			</div>
             <div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
                 <button onclick="generateTreasureHoard()">Generate Treasure Hoard</button>
             </div>
