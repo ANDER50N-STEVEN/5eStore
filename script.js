@@ -3506,17 +3506,6 @@ function generateTreasureHoard() {
 
     displayLoot(loot, `${theme.charAt(0).toUpperCase() + theme.slice(1)} Treasure Hoard`);
 }
-    
-    const loot = {
-        currency: generateCurrency(crTier, 1, sizeMultiplier[hoardSize]),
-        gems: generateGems(crTier, sizeMultiplier[hoardSize]),
-        artObjects: generateArtObjects(crTier, sizeMultiplier[hoardSize]),
-        magicItems: generateMagicItems(crTier, sizeMultiplier[hoardSize]),
-        themeItems: generateThemedTreasure(theme, sizeMultiplier[hoardSize])
-    };
-    
-    displayLoot(loot, `${theme.charAt(0).toUpperCase() + theme.slice(1)} Treasure Hoard`);
-}
 
 function generateCurrency(crTier, multiplier = 1, sizeMultiplier = 1) {
     const ranges = lootTables.currency[crTier];
