@@ -3498,18 +3498,64 @@ function generateTreasureHoard() {
 }
 
 function generateCurrency(crTier, multiplier = 1, sizeMultiplier = 1) {
-    const ranges = lootTables.currency[crTier];
+    // Convert tier back to a numeric CR for linear scaling
+    const crValue = crTier === '17+' ? 20
+                  : crTier === '11-16' ? 13
+                  : crTier === '5-10' ? 7
+                  : 2;
+
+    // Linear interpolation based on CR
+    // At CR 0:  ~2-5 gp worth total
+    // At CR 10: ~50-150 gp worth total  
+    // At CR 20: ~500-2000 gp worth total
+    // At CR 30: ~2000-8000 gp worth total
+
+    const t = Math.min(crValue / 30, 1); // normalized 0-1
+
+    // Gold scales exponentially feels more natural than linear
+    const minGP = Math.floor(2 * Math.pow(100, t));      // 2 at CR0, 200 at CR30
+    const maxGP = Math.floor(5 * Math.pow(400, t));      // 5 at CR0, 2000 at CR30
+
     const currency = {};
-   // console.log('Range00:', range[0].value);
-    for (const [type, range] of Object.entries(ranges)) {
-        if (range[1] > 0) {
-//			        console.log('Range0:', range[0].value);
-	//		console.log('Range1:', range[1].value);
-            const amount = Math.floor((Math.random() * (range[1] - range[0]) + range[0]) * multiplier * sizeMultiplier);
-            if (amount > 0) currency[type] = amount;
+    const goldAmount = Math.floor((Math.random() * (maxGP - minGP) + minGP) * multiplier * sizeMultiplier);
+
+    if (goldAmount > 0) {
+        // At low CR break into smaller denominations
+        if (crValue <= 2) {
+            // Mostly copper and silver with a little gold
+            const cp = Math.floor(goldAmount * 0.3 * 100);
+            const sp = Math.floor(goldAmount * 0.4 * 10);
+            const gp = Math.floor(goldAmount * 0.3);
+            if (cp > 0) currency.cp = cp;
+            if (sp > 0) currency.sp = sp;
+            if (gp > 0) currency.gp = gp;
+        } else if (crValue <= 5) {
+            // Mix of silver and gold, no copper
+            const sp = Math.floor(goldAmount * 0.3 * 10);
+            const gp = Math.floor(goldAmount * 0.7);
+            if (sp > 0) currency.sp = sp;
+            if (gp > 0) currency.gp = gp;
+        } else if (crValue <= 10) {
+            // Mostly gold with some platinum
+            const gp = Math.floor(goldAmount * 0.85);
+            const pp = Math.floor(goldAmount * 0.015);
+            if (gp > 0) currency.gp = gp;
+            if (pp > 0) currency.pp = pp;
+        } else if (crValue <= 16) {
+            // Gold and platinum
+            const gp = Math.floor(goldAmount * 0.7);
+            const pp = Math.floor(goldAmount * 0.03);
+            if (gp > 0) currency.gp = gp;
+            if (pp > 0) currency.pp = pp;
+        } else {
+            // Mostly platinum
+            const gp = Math.floor(goldAmount * 0.5);
+            const pp = Math.floor(goldAmount * 0.05);
+            if (gp > 0) currency.gp = gp;
+            if (pp > 0) currency.pp = pp;
         }
     }
-    
+
     return currency;
 }
 
