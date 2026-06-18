@@ -4158,7 +4158,49 @@ function restockSavedStore(storeIndex) {
 
 function soldItem(itemId) {
     const el = document.getElementById(itemId);
-    if (el) {
+    if (!el) return;
+
+    const nameEl = el.querySelector('.item-name');
+    if (!nameEl) return;
+
+    // Clone to safely read text without child element interference
+    const nameClone = nameEl.cloneNode(true);
+    const badge = nameClone.querySelector('.homebrew-badge');
+    if (badge) badge.remove();
+
+    let fullText = nameClone.textContent.trim();
+
+    // Check for existing quantity marker
+    const quantityMatch = fullText.match(/\(×(\d+)\)/);
+    let currentQuantity = quantityMatch ? parseInt(quantityMatch[1]) : 1;
+
+    // Strip quantity and other markers from name
+    let itemName = fullText
+        .replace(/\s*\(×\d+\)\s*/g, '')
+        .replace(/\s*⭐\s*/g, '')
+        .trim();
+
+    if (currentQuantity > 1) {
+        // Reduce quantity by 1
+        const newQuantity = currentQuantity - 1;
+        const newQuantityText = newQuantity > 1 ? ` (×${newQuantity})` : '';
+
+        // Update the name display
+        nameEl.childNodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE) {
+                node.textContent = itemName + newQuantityText;
+            }
+        });
+
+        // Flash the element to give feedback
+        el.style.transition = 'background 0.2s ease';
+        el.style.background = 'rgba(46, 204, 113, 0.15)';
+        setTimeout(() => {
+            el.style.background = '';
+        }, 300);
+
+    } else {
+        // Quantity is 1, remove the element entirely
         el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         el.style.opacity = '0';
         el.style.transform = 'translateX(-20px)';
