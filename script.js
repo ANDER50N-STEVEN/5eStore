@@ -2841,6 +2841,8 @@ function reapplyPriceModifier() {
         showSaveNotification('Switch to the Shop Generator tab first!');
         return;
     }
+	
+	const itemEls = shopContent.querySelectorAll('.item');
 
     if (itemEls.length === 0) {
         showSaveNotification('Generate a shop first!');
