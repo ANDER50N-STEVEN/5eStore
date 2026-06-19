@@ -2826,6 +2826,55 @@ function switchLootTab(tabName) {
     }
 }
 
+
+function reapplyPriceModifier() {
+    const shopContent = document.getElementById('shop-content');
+    if (!shopContent || shopContent.classList.contains('empty-state')) {
+        showSaveNotification('Generate a shop first!');
+        return;
+    }
+
+    const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
+
+    // Find all items currently displayed
+    const itemEls = shopContent.querySelectorAll('.item');
+    if (itemEls.length === 0) {
+        showSaveNotification('No items found in current shop.');
+        return;
+    }
+
+    itemEls.forEach(itemEl => {
+        const nameEl = itemEl.querySelector('.item-name');
+        const priceEl = itemEl.querySelector('.item-price');
+        const modifierEl = itemEl.querySelector('.price-modifier-display');
+
+        if (!nameEl || !priceEl) return;
+
+        // Get clean item name
+        const nameClone = nameEl.cloneNode(true);
+        const badge = nameClone.querySelector('.homebrew-badge');
+        if (badge) badge.remove();
+        let itemName = nameClone.textContent.trim()
+            .replace(/\s*\(×\d+\)\s*/g, '')
+            .replace(/\s*⭐\s*/g, '')
+            .trim();
+
+        // Find item in database to get base cost
+        const dbItem = itemDatabase.find(i => i.name === itemName);
+        if (!dbItem) return;
+
+        // Generate new price
+        const { price, modifier } = applyPriceModifier(dbItem.cost, maxModifier);
+        const formattedPrice = formatPrice(price);
+
+        // Update the displayed price and modifier
+        priceEl.textContent = formattedPrice;
+        if (modifierEl) modifierEl.textContent = '(' + modifier + '%)';
+    });
+
+    showSaveNotification('Prices updated!');
+}
+
 // Loot data tables
 const lootTables = {
     currency: {
