@@ -2851,9 +2851,6 @@ function reapplyPriceModifier() {
 
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
 
-    const itemEls = shopContent.querySelectorAll('.item');
-    console.log('Found items:', itemEls.length);
-
     if (itemEls.length === 0) {
         showSaveNotification('No items found in current shop.');
         return;
