@@ -2095,6 +2095,7 @@ function generateShop() {
     const storeType = document.getElementById('store-type').value;
     const settlementSize = document.getElementById('settlement-size').value;
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
+	const minModifier = parseFloat(document.getElementById('price-modifier').value) - 5;
 
 	    // Reset mundane collapsed state on new generation
     mundaneCollapsed = false;
@@ -2145,7 +2146,7 @@ const storeName = allTypes[storeType]?.name || storeType;
 						<p style="margin-bottom: 8px; font-style: italic; color: #c4b591;">${shopkeeper.name} ${shopkeeper.description}.</p>
 						<p style="color: #a89968; font-size: 0.9em;"><em>Quirk:</em> ${shopkeeper.quirk}</p>
 					</div>
-					<p style="margin-top: 15px;"><strong>Total Items:</strong> ${inventory.length} | <strong>Price Variance:</strong> 100% - ${maxModifier}% </p>
+					<p style="margin-top: 15px;"><strong>Total Items:</strong> ${inventory.length} | <strong>Price Variance:</strong> ${minModifier}% - ${maxModifier}% </p>
 				</div>
 				<div class="inventory">
 			`;
