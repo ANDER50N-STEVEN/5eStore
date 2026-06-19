@@ -2841,9 +2841,6 @@ function reapplyPriceModifier() {
         return;
     }
 
-    const itemEls = shopContent.querySelectorAll('.item');
-    console.log('Found items:', itemEls.length);
-
     if (itemEls.length === 0) {
         showSaveNotification('Generate a shop first!');
         return;
@@ -2877,8 +2874,6 @@ function reapplyPriceModifier() {
             .replace(/\s*⭐\s*/g, '')
             .trim();
 
-        console.log('Looking for item:', itemName);
-
         // Search all databases
         const dbItem = itemDatabase.find(i => i.name === itemName)
                     || officialItemDatabase.find(i => i.name === itemName)
@@ -2889,13 +2884,9 @@ function reapplyPriceModifier() {
             return;
         }
 
-        console.log('Found item:', dbItem.name, 'cost:', dbItem.cost);
-
         // Generate new price
         const { price, modifier } = applyPriceModifier(dbItem.cost, maxModifier);
         const formattedPrice = formatPrice(price);
-
-        console.log('New price:', formattedPrice, 'modifier:', modifier);
 
         // Update displayed price and modifier
         priceEl.textContent = formattedPrice;
