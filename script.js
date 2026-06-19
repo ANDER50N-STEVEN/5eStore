@@ -2829,50 +2829,76 @@ function switchLootTab(tabName) {
 
 function reapplyPriceModifier() {
     const shopContent = document.getElementById('shop-content');
-    if (!shopContent || shopContent.classList.contains('empty-state')) {
+    if (!shopContent) {
+        showSaveNotification('Generate a shop first!');
+        return;
+    }
+
+    const inventoryDiv = shopContent.querySelector('.inventory');
+    if (!inventoryDiv) {
         showSaveNotification('Generate a shop first!');
         return;
     }
 
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
 
-    // Find all items currently displayed
     const itemEls = shopContent.querySelectorAll('.item');
+    console.log('Found items:', itemEls.length);
+
     if (itemEls.length === 0) {
         showSaveNotification('No items found in current shop.');
         return;
     }
+
+    let updatedCount = 0;
 
     itemEls.forEach(itemEl => {
         const nameEl = itemEl.querySelector('.item-name');
         const priceEl = itemEl.querySelector('.item-price');
         const modifierEl = itemEl.querySelector('.price-modifier-display');
 
-        if (!nameEl || !priceEl) return;
+        if (!nameEl || !priceEl) {
+            console.log('Missing name or price element');
+            return;
+        }
 
         // Get clean item name
         const nameClone = nameEl.cloneNode(true);
-        const badge = nameClone.querySelector('.homebrew-badge');
-        if (badge) badge.remove();
+        // Remove all child elements
+        Array.from(nameClone.children).forEach(child => child.remove());
         let itemName = nameClone.textContent.trim()
             .replace(/\s*\(×\d+\)\s*/g, '')
             .replace(/\s*⭐\s*/g, '')
             .trim();
 
-        // Find item in database to get base cost
-        const dbItem = itemDatabase.find(i => i.name === itemName);
-        if (!dbItem) return;
+        console.log('Looking for item:', itemName);
+
+        // Search all databases
+        const dbItem = itemDatabase.find(i => i.name === itemName)
+                    || officialItemDatabase.find(i => i.name === itemName)
+                    || homebrewItemDatabase.find(i => i.name === itemName);
+
+        if (!dbItem) {
+            console.log('Item not found in database:', itemName);
+            return;
+        }
+
+        console.log('Found item:', dbItem.name, 'cost:', dbItem.cost);
 
         // Generate new price
         const { price, modifier } = applyPriceModifier(dbItem.cost, maxModifier);
         const formattedPrice = formatPrice(price);
 
-        // Update the displayed price and modifier
+        console.log('New price:', formattedPrice, 'modifier:', modifier);
+
+        // Update displayed price and modifier
         priceEl.textContent = formattedPrice;
         if (modifierEl) modifierEl.textContent = '(' + modifier + '%)';
+
+        updatedCount++;
     });
 
-    showSaveNotification('Prices updated!');
+    showSaveNotification('Updated ' + updatedCount + ' item prices!');
 }
 
 // Loot data tables
