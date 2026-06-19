@@ -2834,8 +2834,17 @@ function reapplyPriceModifier() {
         return;
     }
 
-    const inventoryDiv = shopContent.querySelector('.inventory');
-    if (!inventoryDiv) {
+    // Check if we're on the generator tab and shop content is visible
+    const generatorTab = document.getElementById('generator-tab');
+    if (!generatorTab.classList.contains('active')) {
+        showSaveNotification('Switch to the Shop Generator tab first!');
+        return;
+    }
+
+    const itemEls = shopContent.querySelectorAll('.item');
+    console.log('Found items:', itemEls.length);
+
+    if (itemEls.length === 0) {
         showSaveNotification('Generate a shop first!');
         return;
     }
