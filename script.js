@@ -2009,7 +2009,7 @@ function selectInventory(settlementSize, storeType) {
 
 
         function applyPriceModifier(baseCost, maxModifier) {
-            const minModifier = 95;
+            const minModifier = maxModifier - 5;
             const randomModifier = Math.random() * (maxModifier - minModifier) + minModifier;
             const modifiedPrice = (baseCost * randomModifier) / 100;
             return {
