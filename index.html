@@ -62,8 +62,11 @@
 				</div>
 
 				<div class="control-group">
-					<label for="price-modifier">Max Price Modifier +- 5%</label>
-					<input type="number" id="price-modifier" min="100" max="200" value="100" step="5">
+				    <label for="price-modifier">Max Price Modifier +- 5%</label>
+				    <div style="display: flex; gap: 8px; align-items: center;">
+				        <input type="number" id="price-modifier" min="100" max="200" value="100" step="5">
+				        <button onclick="reapplyPriceModifier()" style="padding: 6px 12px; font-size: 0.85em; white-space: nowrap;">🔄 Apply</button>
+				    </div>
 				</div>
 
 				<div class="control-group" style="grid-column: span 2; justify-content: flex-end;">
