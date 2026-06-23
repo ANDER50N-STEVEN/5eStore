@@ -13,7 +13,7 @@
     "descriptors": [],
     "name": "Aberration Hunter's Amulet",
     "rarity": "Uncommon",
-    "type": ["Jewelry"]
+    "type": ["Jewelry", "Dark"]
   },
   {
     "cost": 407,
@@ -24,15 +24,15 @@
     "type": ["Jewelry"]
   },
   {
-    "cost": 4450,
-    "description": "While wearing these gloves, creatures you summon have resistance to all damage except psychic. At the start of each of your summoned creature's turns, it must succeed on a DC 16 Wisdom saving throw or use its action to make one melee attack against a random creature within reach. If no creature is within reach, the summoned creature does nothing on that turn. This item requires attunement.",
+    "cost": 13975,
+    "description": "While wearing these gloves, creatures you summon have resistance to all damage except psychic. Curse: At the start of each of your summoned creature's turns, it must succeed on a DC 16 Wisdom saving throw or use its action to make one melee attack against a random creature within reach. If no creature is within reach, the summoned creature does nothing on that turn. This item requires attunement.",
     "descriptors": [],
     "name": "Abyss Beckoners",
     "rarity": "Very Rare",
-    "type": ["Gloves", "Apparel"]
+    "type": ["Gloves", "Apparel", "Summoning", "Curse"]
   },
   {
-    "cost": 1310,
+    "cost": 1891,
     "description": "While wearing these boots, you gain a +1 bonus to Dexterity (Acrobatics) checks and have advantage on Dexterity saving throws.",
     "descriptors": [],
     "name": "Acrobat Shoes",
@@ -41,14 +41,14 @@
   },
   {
     "cost": 4030,
-    "description": "This ring When you drop to 0 hit points while wearing this ring, you can use your reaction to expend the charge. If you do, you instead drop to half your hit point maximum (rounded down). On your next turn, you must use your action to make one melee weapon attack against the nearest creature. If no creature is within reach, you must move toward the nearest creature. This item requires attunement.",
+    "description": "While wearing this ring, when you are reduced to 0 hit points but not killed outright, you can use your reaction to expend any number of your remaining Hit Dice. You regain a number of hit points equal to the total rolled on those Hit Dice. Curse: After using this property, you are cursed until the end of your next turn. During that time, you must use your movement to move toward the nearest creature and use your action to make one melee weapon attack against that creature. If no creature is within your reach, you instead use your action to move toward the nearest creature. This item requires attunement.",
     "descriptors": [],
     "name": "After Death Do Us Part",
     "rarity": "Rare",
-    "type": ["Ring", "Jewelry"]
+    "type": ["Ring", "Jewelry", "Curse"]
   },
   {
-    "cost": 1467,
+    "cost": 4160,
     "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. When you hit a creature that hasn't taken a turn in combat yet with this weapon, the target takes an extra 1d6 necrotic damage. You gain a +1 bonus to initiative rolls and have advantage on Wisdom (Perception) checks while you have this weapon on your person. This item requires attunement.",
     "descriptors": [],
     "name": "Ambusher (Shortsword)",
@@ -73,7 +73,7 @@
   },
   {
     "cost": 465,
-    "description": "This amulet While wearing it, you can use an action to cast misty step. Once you use this property, you can\\'t use it again until the next dawn.",
+    "description": "While wearing this amulet, you can use an action to cast misty step. Once you use this property, you can\\'t use it again until the next dawn.",
     "descriptors": [],
     "name": "Amulet of Misty Step",
     "rarity": "Uncommon",
@@ -85,18 +85,18 @@
     "descriptors": [],
     "name": "Amulet of Restoration",
     "rarity": "Rare",
-    "type": ["Jewelry"]
+    "type": ["Jewelry", "Healing"]
   },
   {
     "cost": 465,
-    "description": "This amulet While wearing it, you can use an action to cast lesser restoration. Once you use this property, you can\\'t use it again until the next dawn.",
+    "description": "While wearing this amulet, you can use an action to cast lesser restoration. Once you use this property, you can\\'t use it again until the next dawn.",
     "descriptors": [],
     "name": "Amulet of Silvanus",
     "rarity": "Uncommon",
-    "type": ["Jewelry"]
+    "type": ["Jewelry", "Healing", "Divine"]
   },
   {
-    "cost": 2650,
+    "cost": 17485,
     "description": "While wearing this amulet, your spell save DC increases by 2. Additionally, you gain one additional use of your Channel Divinity feature. Once you use this additional Channel Divinity, you can't do so again until you finish a long rest. This item requires attunement.",
     "descriptors": [],
     "name": "Amulet of the Devout",
@@ -104,7 +104,7 @@
     "type": ["Jewelry"]
   },
   {
-    "cost": 3515,
+    "cost": 4160,
     "description": "While wearing this amulet, you have advantage on Wisdom saving throws. The amulet has 3 charges and regains 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast shield. This item requires attunement.",
     "descriptors": [],
     "name": "Amulet of the Harpers",
@@ -129,7 +129,7 @@
   },
   {
     "cost": 11980,
-    "description": "While wearing this hood, you have darkvision out to a range of 10 feet. If you already have darkvision, its range increases by 10 feet. You gain a +2 bonus to initiative rolls. The cowl has 3 charges and regains 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast see invisibility. This item requires attunement.",
+    "description": "While wearing this hood, you have darkvision out to a range of 30 feet. If you already have darkvision, its range increases by 30 feet. You gain a +2 bonus to initiative rolls. The cowl has 3 charges and regains 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast see invisibility. This item requires attunement.",
     "descriptors": [],
     "name": "Assassin of Bhaal Cowl",
     "rarity": "Very Rare",
@@ -145,15 +145,15 @@
   },
   {
     "cost": 728,
-    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. When you hit a prone creature with this magic dagger, the target takes an extra 1d4 necrotic damage.",
+    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. When you hit a prone creature with this magic dagger, the target takes an extra 2d4 necrotic damage.",
     "descriptors": [],
     "name": "Assassin's Touch (Dagger)",
     "rarity": "Uncommon",
     "type": ["Weapon", "Dagger"]
   },
   {
-    "cost": 39050,
-    "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this sword, you add double your Strength modifier to the damage roll. You have advantage on attack rolls against Large, Huge, or Gargantuan creatures. The sword As a bonus action, you can gain the effect of the enlarge/reduce spell (enlarge only) for 1 minute. Once you use this property, you can\\'t use it again until the next dawn. This effect doesn't require concentration. This item requires attunement.",
+    "cost": 90932,
+    "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 slashing damage. You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this sword, you add double your Strength modifier to the damage roll. You have advantage on attack rolls against Large, Huge, or Gargantuan creatures. As a bonus action, you can gain the effect of the enlarge/reduce spell (enlarge only) for 1 minute. Once you use this property, you can\\'t use it again until the next dawn. This effect doesn't require concentration. This item requires attunement.",
     "descriptors": [],
     "name": "Balduran's Giantslayer (Greatsword)",
     "rarity": "Legendary",
@@ -165,34 +165,34 @@
     "descriptors": [],
     "name": "Band of the Mystic Scoundrel",
     "rarity": "Rare",
-    "type": ["Ring", "Jewelry"]
+    "type": ["Ring", "Jewelry", "Arcane"]
   },
   {
     "cost": 420,
-    "description": "This amulet While wearing it, you can use an action to cast animal friendship (save DC 12). Once you use this property, you can\\'t use it again until the next dawn.",
+    "description": "While wearing this amulet, you can use an action to cast animal friendship (save DC 12). Once you use this property, you can\\'t use it again until the next dawn.",
     "descriptors": [],
     "name": "Beastmaster's Chain",
     "rarity": "Uncommon",
     "type": ["Jewelry"]
   },
   {
-    "cost": 3275,
-    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. While wielding this weapon, you can make one additional melee weapon attack as a bonus action on each of your turns. This item requires attunement.",
+    "cost": 3750,
+    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 slashing damage. While wielding this weapon, you can make one additional melee weapon attack as a bonus action on each of your turns and deal an additional 1d6 damage on that attack. This item requires attunement.",
     "descriptors": [],
     "name": "Belm (Scimitar)",
     "rarity": "Very Rare",
     "type": ["Weapon", "Sword"]
   },
   {
-    "cost": 1375,
-    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The quarterstaff you can use a bonus action to cast enlarge/reduce (enlarge only, targeting yourself). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
+    "cost": 3751,
+    "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. You can use a bonus action to cast enlarge/reduce (enlarge only, targeting yourself). Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
     "descriptors": [],
     "name": "Bigboy's Chew Toy (Quarterstaff)",
     "rarity": "Rare",
     "type": ["Weapon", "Staff/Club"]
   },
   {
-    "cost": 7915,
+    "cost": 4915,
     "description": "While wearing this crown, your Charisma score increases by 2, to a maximum of 22. This item requires attunement.",
     "descriptors": [],
     "name": "Birthright",
@@ -200,24 +200,24 @@
     "type": ["Headwear", "Jewelry"]
   },
   {
-    "cost": 1235,
-    "description": "While wearing these gauntlets, you gain a +1 bonus to Strength saving throws and a +1 bonus to attack rolls with melee weapons. The gauntlets you can use an action to cast inflict wounds. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
+    "cost": 2350,
+    "description": "While wearing these gauntlets, you gain a +1 bonus to Strength saving throws and a +1 bonus to attack rolls with melee weapons. As an action you may cast Inflict Wounds. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
     "descriptors": [],
     "name": "Blackguard's Gauntlets",
     "rarity": "Rare",
     "type": ["Gauntlet", "Armor"]
   },
   {
-    "cost": 635,
-    "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. The boots you can use an action to cast longstrider. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
+    "cost": 1635,
+    "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. As an action you may cast Longstrider. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
     "descriptors": [],
     "name": "Blackguard's Greaves",
     "rarity": "Rare",
     "type": ["Boots", "Armor"]
   },
   {
-    "cost": 1840,
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this sword while using Divine Smite or a similar smiting feature, the target must succeed on a DC 14 Constitution saving throw or be stunned until the end of your next turn. This item requires attunement.",
+    "cost": 6750,
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this sword while using Divine Smite or a Smite spell, the target must succeed on a DC 14 Constitution saving throw or be stunned until the end of your next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Blackguard's Sword (Longsword)",
     "rarity": "Rare",
@@ -240,7 +240,7 @@
     "type": ["Weapon", "Bow"]
   },
   {
-    "cost": 1390,
+    "cost": 3390,
     "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 slashing damage. This weapon only functions if you are an Eldritch Knight who has bonded with it using your Weapon Bond feature, or if it is your pact weapon as a warlock. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit with this weapon, you deal additional damage equal to your proficiency bonus. This item requires attunement.",
     "descriptors": [],
     "name": "Blood-Bound Blade (Longsword)",
@@ -248,8 +248,8 @@
     "type": ["Weapon", "Sword"]
   },
   {
-    "cost": 917,
-    "description": "Martial melee weapon with heavy and two-handed properties, dealing 1d12 slashing damage. While you have half your hit points or fewer, this weapon deals an extra 1d4 slashing damage on a hit. This item requires attunement.",
+    "cost": 2133,
+    "description": "Martial melee weapon with heavy and two-handed properties, dealing 1d12 slashing damage. While you have half your hit points or fewer, this weapon deals an extra 1d4 slashing damage on a hit.",
     "descriptors": [],
     "name": "Blooded Greataxe (Greataxe)",
     "rarity": "Rare",
@@ -257,7 +257,7 @@
   },
   {
     "cost": 41752,
-    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. The number you need to roll a critical hit with this weapon is reduced by 1 (this effect stacks with similar effects). When you hit a creature with this weapon, that creature becomes vulnerable to piercing damage until the start of your next turn. While dual wielding weapons (with this weapon as one of them), when a creature misses you with a melee attack, you can use your reaction to make one melee weapon attack with this dagger against that creature with advantage. You gain a +1 bonus to AC while wielding this dagger. This item requires attunement.",
+    "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. The number you need to roll a critical hit with this weapon is reduced by 1 (this effect stacks with similar effects). When you hit a creature with this weapon, that creature becomes vulnerable to piercing damage until the start of your next turn. While dual wielding weapons (with this weapon as one of them), when a creature misses you with a melee attack, you can use your reaction to make one melee weapon attack with this dagger against that creature. You gain a +1 bonus to AC while wielding this dagger. This item requires attunement.",
     "descriptors": [],
     "name": "Bloodthirst (Dagger)",
     "rarity": "Legendary",
@@ -265,14 +265,14 @@
   },
   {
     "cost": 8545,
-    "description": "While wearing these boots and not wearing armor or wielding a shield, you gain a +1 bonus to AC and saving throws. Your jump distance increases by 5 feet. Brutal Leap. As a bonus action, you can leap at least 10 feet toward a creature. When you land, the target must succeed on a DC 16 Strength saving throw or be knocked prone. This item requires attunement.",
+    "description": "While wearing these boots and not wearing armor or wielding a shield, you gain a +1 bonus to AC and saving throws. Your jump distance increases by 5 feet. Brutal Leap. As a bonus action, you can leap up to 15 feet toward a creature(this does not require or consume movement). When you land, the target must succeed on a DC 16 Strength saving throw or be knocked prone. This item requires attunement.",
     "descriptors": [],
     "name": "Bonespike Boots",
     "rarity": "Very Rare",
     "type": ["Boots", "Apparel"]
   },
   {
-    "cost": 2691,
+    "cost": 6912,
     "description": "While wearing this garment, all damage you take is reduced by 2 (minimum of 1 damage). When you enter a rage while wearing this garment, you gain 2d8 temporary hit points. When a creature hits you with a melee attack while you're raging, the attacker takes 3 piercing damage. This item requires attunement.",
     "descriptors": [],
     "name": "Bonespike Garb",
@@ -281,7 +281,7 @@
   },
   {
     "cost": 2650,
-    "description": "While wearing these gloves, your attacks ignore resistance to slashing, piercing, and bludgeoning damage. This item requires attunement.",
+    "description": "While wearing these gloves, your attacks ignore resistance to slashing, piercing, and bludgeoning damage.",
     "descriptors": [],
     "name": "Bonespike Gloves",
     "rarity": "Very Rare",
@@ -289,7 +289,7 @@
   },
   {
     "cost": 9040,
-    "description": "While wearing this helm, you gain a +2 bonus to Charisma (Intimidation) checks. When you enter a rage, each creature of your choice within 10 feet of you must succeed on a DC 16 Wisdom saving throw or take 2d4 psychic damage. Creatures that succeed on the saving throw take half damage. The helmet has 3 charges and regains 1d3 expended charges daily at dawn. When you hit a creature with a weapon attack, you can expend 1 charge to force the target to make a DC 16 Wisdom saving throw. On a failed save, the target is frightened of you until the end of your next turn. If you expend a charge in this way, you add 1d8 to the attack's damage roll. This item requires attunement.",
+    "description": "While wearing this helm, you gain a +2 bonus to Charisma (Intimidation) checks. When you enter a rage, each creature of your choice within 10 feet of you must succeed on a DC 16 Wisdom saving throw or take 2d4 psychic damage. Creatures that succeed on the saving throw take half damage. The helmet has 3 charges and regains 1d3 expended charges daily at dawn. When you hit a creature with a weapon attack, you can expend 1 charge to force the target to make a DC 16 Wisdom saving throw. On a failed save, the target is frightened of you until the end of your next turn. If you expend a charge in this way, add 1d8 to the attack's damage roll. This item requires attunement.",
     "descriptors": [],
     "name": "Bonespike Helmet",
     "rarity": "Very Rare",
@@ -305,7 +305,7 @@
   },
   {
     "cost": 350,
-    "description": "These boots have 3 charges and regain 1d3 expended charges daily at dawn. While wearing them, you can use an action to expend 1 charge to cast feign death. This item requires attunement.",
+    "description": "These boots have 3 charges and regain 1d3 expended charges daily at dawn. While wearing them, you can use an action to expend 1 charge to cast feign death.",
     "descriptors": [],
     "name": "Boots of Apparent Death",
     "rarity": "Rare",
@@ -313,7 +313,7 @@
   },
   {
     "cost": 350,
-    "description": "While wearing these boots, you can use a bonus action to regain one expended use of your Bardic Inspiration. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
+    "description": "While wearing these boots, you can use a bonus action to regain one expended use of your Bardic Inspiration. Once you use this property, you can\\'t use it again until the next dawn.",
     "descriptors": [],
     "name": "Boots of Brilliance",
     "rarity": "Rare",
@@ -321,7 +321,7 @@
   },
   {
     "cost": 2870,
-    "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. Whenever you deal acid, cold, fire, lightning, or thunder damage with a spell or cantrip, your walking speed increases by 5 feet until the end of your next turn.",
+    "description": "While wearing these boots, you gain a +1 bonus to Strength (Athletics) checks. Whenever you deal acid, cold, fire, lightning, or thunder damage with a spell, your walking speed increases by 5 feet until the end of your next turn.",
     "descriptors": [],
     "name": "Boots of Elemental Momentum",
     "rarity": "Uncommon",
@@ -345,7 +345,7 @@
   },
   {
     "cost": 9482,
-    "description": "While wearing these boots, you gain a +1 bonus to Dexterity saving throws. The boots have 3 charges and regain 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast fly. While flying, if you make a melee weapon attack, you deal an extra 1d4 psychic damage on your next hit before you land. This item requires attunement.",
+    "description": "While wearing these boots, you gain a +1 bonus to Dexterity saving throws. The boots have 3 charges and regain 1d3 expended charges daily at dawn. You can use an action to expend 1 charge to cast fly. While flying, your melee weapon attacks you deal an extra 1d4 psychic damage. This item requires attunement.",
     "descriptors": [],
     "name": "Boots of Psionic Movement",
     "rarity": "Very Rare",
@@ -353,19 +353,19 @@
   },
   {
     "cost": 350,
-    "description": "While wearing these boots, your unarmed strikes deal additional bludgeoning damage equal to your Wisdom modifier (minimum of 1). This item requires attunement.",
+    "description": "While wearing these boots, your unarmed strikes deal additional bludgeoning damage equal to your Wisdom modifier (minimum of 1).",
     "descriptors": [],
     "name": "Boots of Uninhibited Kushigo",
     "rarity": "Rare",
     "type": ["Boots", "Apparel"]
   },
   {
-    "cost": 375,
-    "description": "These boots have 3 charges and regain 1d3 expended charges daily at dawn. While wearing these boots, you can use a bonus action to expend 1 charge to teleport up to 30 feet to an unoccupied space you can see. Your clothing and armor are left behind when you teleport in this way. This item requires attunement.",
+    "cost": 1375,
+    "description": "These boots have 3 charges and regain 1d3 expended charges daily at dawn. While wearing these boots, you can use a bonus action to expend 1 charge to teleport up to 30 feet to an unoccupied space you can see. Curse: Your clothing and armor are left behind when you teleport in this way. This item requires attunement.",
     "descriptors": [],
     "name": "Boots of Very Fast Blinking",
     "rarity": "Uncommon",
-    "type": ["Boots", "Apparel"]
+    "type": ["Boots", "Apparel", "Curse"]
   },
   {
     "cost": 870,
@@ -376,7 +376,7 @@
     "type": ["Weapon","Bow"]
   },
   {
-    "cost": 1602,
+    "cost": 3602,
     "description": "Simple ranged weapon with ammunition (range 80/320) and two-handed properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Against frightened creatures, you gain an additional 1d4 bonus to attack and damage rolls. When you hit a creature with this weapon, it must succeed on a DC 14 Wisdom saving throw or become frightened of you until the end of your next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Bow of the Banshee (Shortbow)",
@@ -401,7 +401,7 @@
   },
   {
     "cost": 755,
-    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 piercing damage. This magic pike is well-crafted but has no additional magical properties beyond being a magic weapon for purposes of overcoming resistance. This item requires attunement.",
+    "description": "Martial melee weapon with heavy, reach, and two-handed properties, dealing 1d10 piercing damage. This magic pike is well-crafted but has no additional magical properties beyond being a magic weapon for purposes of overcoming resistance.",
     "descriptors": [],
     "name": "Breaching Pikestaff (Pike)",
     "rarity": "Rare",
@@ -417,7 +417,7 @@
   },
   {
     "cost": 375,
-    "description": "While wearing this circlet, when you are within 5 feet of a hostile creature, your spell save DC increases by 1. This item requires attunement.",
+    "description": "While wearing this circlet, when you are within 5 feet of a hostile creature, your spell save DC increases by 1.",
     "descriptors": [],
     "name": "Browbeaten Circlet",
     "rarity": "Uncommon",
@@ -425,14 +425,14 @@
   },
   {
     "cost": 4540,
-    "description": "While wearing this ring, you can use an action to target one creature you can see within 60 feet. Once you use this property, you can\\'t use it again until the next dawn. The target must succeed on a DC 16 Constitution saving throw or be paralyzed until the end of your next turn. This item requires attunement.",
+    "description": "While wearing this ring, you can use an action to target one creature you can see within 60 feet. The target must succeed on a DC 16 Constitution saving throw or be paralyzed until the end of your next turn.  Once you use this property, you can\\'t use it again until the next dawn.  This item requires attunement.",
     "descriptors": [],
     "name": "Burnished Ring",
     "rarity": "Very Rare",
     "type": ["Ring", "Jewelry"]
   },
   {
-    "cost": 4557,
+    "cost": 5574,
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The quarterstaff has 3 charges and regains 1d3 expended charges daily at dawn. You can use a bonus action to expend 1 charge. The next time you hit with a melee weapon attack during this turn, your attack deals an extra 2d6 thunder damage, and the target must succeed on a DC 14 Strength saving throw or be pushed 10 feet away from you. This item requires attunement.",
     "descriptors": [],
     "name": "Cacophony (Quarterstaff)",
@@ -445,10 +445,10 @@
     "descriptors": [],
     "name": "Callous Glow Ring",
     "rarity": "Uncommon",
-    "type": ["Ring", "Jewelry"]
+    "type": ["Ring", "Jewelry", "Divine"]
   },
   {
-    "cost": 391,
+    "cost": 1391,
     "description": "While wearing this cap, when you grant a Bardic Inspiration die to a creature, that creature also regains 1d6 hit points. This item requires attunement.",
     "descriptors": [],
     "name": "Cap of Curing",
@@ -456,7 +456,7 @@
     "type": ["Headwear", "Apparel"]
   },
   {
-    "cost": 875,
+    "cost": 1875,
     "description": "While wearing this cap, if you start your turn with half your hit points or fewer, you gain a +1 bonus to attack rolls until the start of your next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Cap of Wrath",
@@ -480,7 +480,7 @@
     "type": ["Jewelry"]
   },
   {
-    "cost": 1537,
+    "cost": 3537,
     "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. This weapon only functions if you are an Eldritch Knight who has bonded with it using your Weapon Bond feature, or if it is your pact weapon as a warlock. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit with this weapon, you deal an extra 1d6 lightning damage. This item requires attunement.",
     "descriptors": [],
     "name": "Charge-Bound Warhammer (Warhammer)",
@@ -504,8 +504,8 @@
     "type": ["Gloves", "Apparel"]
   },
   {
-    "cost": 2937,
-    "description": "While wearing this circlet, when you deal fire damage with a spell of 1st level or higher (not a cantrip), you gain an additional bonus action on that turn. This item requires attunement.",
+    "cost": 9372,
+    "description": "While wearing this circlet, when you deal fire damage with a spell of 1st level or higher, you gain an additional bonus action on that turn. This item requires attunement.",
     "descriptors": [],
     "name": "Circlet of Fire",
     "rarity": "Rare",
@@ -520,15 +520,15 @@
     "type": ["Headwear", "Apparel"]
   },
   {
-    "cost": 547,
-    "description": "While wearing this circlet, when an enemy fails a Charisma, Intelligence, or Wisdom saving throw against one of your spells or cantrips, you regain 1d4 hit points. This item requires attunement.",
+    "cost": 1547,
+    "description": "While wearing this circlet, when an enemy fails a Charisma, Intelligence, or Wisdom saving throw against one of your spells or cantrips, you regain 1d4 hit points.",
     "descriptors": [],
     "name": "Circlet of Mental Anguish",
     "rarity": "Rare",
     "type": ["Headwear", "Apparel"]
   },
   {
-    "cost": 575,
+    "cost": 1575,
     "description": "While wearing this circlet, you gain a +1 bonus to Intelligence, Wisdom, and Charisma saving throws. When you succeed on a Charisma, Intelligence, or Wisdom saving throw against a spell or effect created by a creature you can see, that creature takes 1d4 psychic damage. This item requires attunement.",
     "descriptors": [],
     "name": "Circlet of Psionic Revenge",
@@ -536,7 +536,7 @@
     "type": ["Headwear", "Apparel"]
   },
   {
-    "cost": 375,
+    "cost": 3750,
     "description": "While wearing this cloak, when you take the Disengage action, you create a 10-foot-radius sphere of fog centered on you that lasts until the start of your next turn. The sphere spreads around corners, and its area is heavily obscured.",
     "descriptors": [],
     "name": "Cloak of Cunning Brume",
@@ -544,15 +544,15 @@
     "type": ["Apparel"]
   },
   {
-    "cost": 427,
+    "cost": 4270,
     "description": "While wearing this cloak, you can cast absorb elements at will, without expending a spell slot. This item requires attunement.",
     "descriptors": [],
     "name": "Cloak of Elemental Absorption",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "type": ["Apparel"]
   },
   {
-    "cost": 1205,
+    "cost": 12050,
     "description": "While wearing this garment, you are immune to being frightened and can't be affected by other emotion-altering conditions (such as charm person or fear). You have advantage on Charisma (Intimidation) and Wisdom (Insight) checks. This item requires attunement.",
     "descriptors": [],
     "name": "Cloth of Authority",
@@ -560,12 +560,12 @@
     "type": ["Apparel"]
   },
   {
-    "cost": 1420,
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you score a critical hit with this weapon, both you and the target must succeed on a DC 14 Wisdom saving throw or fall prone and become incapacitated with laughter for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This item requires attunement.",
+    "cost": 2420,
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Curse: When you score a critical hit with this weapon, both you and the target must succeed on a DC 14 Wisdom saving throw or fall prone and become incapacitated with laughter for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This item requires attunement.",
     "descriptors": [],
     "name": "Clown Hammer (Warhammer)",
     "rarity": "Rare",
-    "type": ["Weapon", "Hammer/Mace"]
+    "type": ["Weapon", "Hammer/Mace", "Curse"]
   },
   {
     "cost": 2595,
