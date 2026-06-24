@@ -537,7 +537,7 @@
   },
   {
     "cost": 3750,
-    "description": "While wearing this cloak, when you take the Disengage action, you create a 10-foot-radius sphere of fog centered on you that lasts until the start of your next turn. The sphere spreads around corners, and its area is heavily obscured.",
+    "description": "This item has 3 charges and recovers 1d3 at dawn.  While wearing this cloak, when you take the Disengage action, you can expend one charge and create a 10-foot-radius sphere of fog centered on you that lasts until the start of your next turn. The sphere spreads around corners, and its area is heavily obscured.",
     "descriptors": [],
     "name": "Cloak of Cunning Brume",
     "rarity": "Uncommon",
@@ -561,7 +561,7 @@
   },
   {
     "cost": 2420,
-    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Curse: When you score a critical hit with this weapon, both you and the target must succeed on a DC 14 Wisdom saving throw or fall prone and become incapacitated with laughter for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This item requires attunement.",
+    "description": "Martial melee weapon with versatile (1d10) property, dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Curse: When you score a critical hit with this weapon, both you and the target must succeed on a DC 14 Wisdom saving throw or fall prone and become incapacitated with laughter for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "descriptors": [],
     "name": "Clown Hammer (Warhammer)",
     "rarity": "Rare",
@@ -569,14 +569,14 @@
   },
   {
     "cost": 2595,
-    "description": "Simple melee weapon dealing 1d4 bludgeoning damage. Your Strength score is 19 while you wield this magic club. It has no effect if your Strength is already 19 or higher. This item requires attunement.",
+    "description": "Simple melee weapon dealing 1d4 bludgeoning damage. Your Strength score is 19 while this magic club is in your hands. It has no effect if your Strength is already 19 or higher. This item requires attunement.",
     "descriptors": [],
     "name": "Club of Hill Giant Strength (Club)",
     "rarity": "Uncommon",
     "type": ["Weapon", "Staff/Club"]
   },
   {
-    "cost": 1377,
+    "cost": 3771,
     "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While dual wielding weapons (with this weapon as one of them), when a creature misses you with a melee attack, it must succeed on a DC 14 Constitution saving throw or have its movement speed reduced by half until the end of its next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Cold Snap (Dagger)",
@@ -584,24 +584,24 @@
     "type": ["Weapon", "Dagger"]
   },
   {
-    "cost": 2180,
+    "cost": 8021,
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to unarmed strike attack and damage rolls. While you are not wearing armor, you gain a +2 bonus to saving throws. This item requires attunement.",
     "descriptors": [],
     "name": "Corellon's Grace (Quarterstaff)",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "type": ["Weapon", "Staff/Club"]
   },
   {
-    "cost": 350,
-    "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 bludgeoning damage. Grand Slam. Once on each of your turns when you attack with this weapon, you can choose to slam the weapon into the ground instead of making a normal attack. Each creature within 10 feet of you must make a DC 14 Constitution saving throw, taking thunder damage equal to your proficiency bonus on a failed save, or half as much damage on a successful one. Creatures that fail the save are also pushed 5 feet away from you. This item requires attunement.",
+    "cost": 2509,
+    "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 bludgeoning damage. Grand Slam. Once on each of your turns when you attack with this weapon, you can choose to slam the weapon into the ground instead of making a normal attack. Each other creature within 10 feet of you must make a DC 14 Constitution saving throw, taking thunder damage equal to your proficiency bonus on a failed save, or half as much damage on a successful one. Creatures that fail the save are also pushed 5 feet away from you. This item requires attunement.",
     "descriptors": [],
     "name": "Corpsegrinder (Maul)",
     "rarity": "Rare",
     "type": ["Weapon", "Hammer/Mace"]
   },
   {
-    "cost": 760,
-    "description": "Martial melee weapon dealing 1d8 bludgeoning damage. Once per turn when you hit a creature with this weapon, you can deal extra acid damage equal to your proficiency bonus. If you do, the target's AC is reduced by 2 until the end of your next turn. This item requires attunement.",
+    "cost": 7600,
+    "description": "Martial melee weapon dealing 1d8 bludgeoning damage. This item has 3 charges and recovers 1d3 charges daily at dawn.  Once per turn when you hit a creature with this weapon, you can expend one charge and deal extra acid damage equal to your proficiency bonus. If you do, the target's AC is reduced by 2 until the end of your next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Corrosive Flail (Flail)",
     "rarity": "Rare",
@@ -616,31 +616,31 @@
     "type": ["Ring", "Jewelry"]
   },
   {
-    "cost": 5800,
-    "description": "While wearing this amulet, your long jump and high jump distances increase by 5 feet. While you are under the effects of Wild Shape or a polymorph spell, you are under the constant effect of feather fall. The amulet you can use an action to cast polymorph on yourself, transforming into a dire raven (use giant eagle statistics but the creature is size Medium and has flying speed 60 feet). Once you use this property, you can\\'t use it again until the next dawn. This transformation lasts for 1 hour. This item requires attunement.",
+    "cost": 15800,
+    "description": "While wearing this amulet, your long jump and high jump distances increase by 5 feet. While you are under the effects of Wild Shape or a polymorph spell, you are under the constant effect of feather fall. You can use an action to cast polymorph on yourself, transforming into a dire raven (use giant eagle statistics but the creature is size Medium and has flying speed 60 feet). Once you use this property, you can\\'t use it again until the next dawn. This transformation lasts for 1 hour. This item requires attunement.",
     "descriptors": [],
     "name": "Corvid Token",
     "rarity": "Very Rare",
     "type": ["Jewelry"]
   },
   {
-    "cost": 1398,
-    "description": "While wearing this hood, you gain a +1 bonus to Dexterity saving throws. While you are hidden or invisible, the number you need to roll for a critical hit with weapon attacks is reduced by 1 (this effect stacks with similar effects). This item requires attunement.",
+    "cost": 13980,
+    "description": "While wearing this hood, you gain a +1 bonus to Dexterity saving throws. While you are hidden or invisible, the number you need to roll for a critical hit with weapon attacks is reduced by 1 (this effect stacks with similar effects).",
     "descriptors": [],
     "name": "Covert Cowl",
-    "rarity": "Uncommon",
+    "rarity": "Very Rare",
     "type": ["Headwear", "Apparel"]
   },
   {
     "cost": 1022,
-    "description": "While wearing these gloves, you gain a +1 bonus to Strength saving throws. When you score a critical hit with a weapon attack, the target takes an extra 1d6 force damage. This item requires attunement.",
+    "description": "While wearing these gloves, you gain a +1 bonus to Strength saving throws. When you score a critical hit with a weapon attack, the target takes an extra 1d6 force damage.",
     "descriptors": [],
     "name": "Craterflesh Gloves",
     "rarity": "Rare",
     "type": ["Gloves", "Apparel"]
   },
   {
-    "cost": 1810,
+    "cost": 2810,
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you deal acid, fire, lightning, radiant, or necrotic damage with this weapon or a spell, you gain resistance to that damage type until the start of your next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Creation's Echo (Quarterstaff)",
@@ -649,18 +649,18 @@
   },
   {
     "cost": 36247,
-    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. Main Hand. When wielding this weapon in your main hand, you deal an extra 1d4 piercing damage to creatures that have half their hit points or fewer. When you make an attack with advantage using this weapon, you deal an extra 7 piercing damage. Off-Hand. When wielding this weapon in your off hand, you can add your ability modifier to the damage of attacks made with this weapon. This item requires attunement.",
+    "description": "Martial melee weapon with finesse and light properties, dealing 1d6 piercing damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon and you deal an extra 1d4 piercing damage to creatures that have half their hit points or fewer. Main Hand. When wielding this weapon in your main hand, when you make an attack with advantage using this weapon, you deal an extra 7 piercing damage. Off-Hand. When duel weilding this weapon in your off hand, you can add your ability modifier to the damage of attacks made with this weapon. This item requires attunement.",
     "descriptors": [],
     "name": "Crimson Mischief (Shortsword)",
     "rarity": "Legendary",
     "type": ["Weapon", "Sword"]
   },
   {
-    "cost": 1073,
+    "cost": 4073,
     "description": "Martial ranged weapon with ammunition (range 100/400), heavy, loading, and two-handed properties, dealing 1d10 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Your ranged attacks with this weapon deal an extra 1d4 force damage.",
     "descriptors": [],
     "name": "Crossbow of Arcane Force (Heavy Crossbow)",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "type": ["Weapon","Crossbow"]
   },
   {
@@ -672,7 +672,7 @@
     "type": ["Ring", "Jewelry"]
   },
   {
-    "cost": 3700,
+    "cost": 13700,
     "description": "While wearing this ring, you can use an action to cast create undead. Once you use this property, you can\\'t use it again until the next dawn.",
     "descriptors": [],
     "name": "Crypt Lord Ring",
@@ -680,23 +680,23 @@
     "type": ["Ring", "Jewelry"]
   },
   {
-    "cost": 710,
-    "description": "While wearing these gloves, you gain a +1 bonus to spell attack rolls. You can make ranged spell attacks against hostile creatures within 5 feet of you without disadvantage. Additionally, when a hostile creature is within 5 feet of you, you can choose to make your ranged spell attacks as melee spell attacks. This item requires attunement.",
+    "cost": 3710,
+    "description": "While wearing these gloves, you gain a +1 bonus to spell attack rolls. You can make ranged spell attacks against hostile creatures within 5 feet of you without disadvantage. This item requires attunement.",
     "descriptors": [],
     "name": "Daredevil Gloves",
     "rarity": "Rare",
     "type": ["Gloves", "Apparel"]
   },
   {
-    "cost": 875,
-    "description": "While wearing these gloves, you gain a +1 bonus to Dexterity (Sleight of Hand) checks and a +1 bonus to attack rolls when throwing weapons or objects. When you hit a creature with a thrown weapon while wearing these gloves, the target must succeed on a DC 14 Dexterity saving throw or swap positions with you. This item requires attunement.",
+    "cost": 8750,
+    "description": "This item has 3 charges and regains 1d3 daily at dawn.  While wearing these gloves, you gain a +1 bonus to Dexterity (Sleight of Hand) checks and a +1 bonus to attack rolls when throwing weapons or objects. When you hit a creature with a thrown weapon while wearing these gloves, you may expend a charge and the target must succeed on a DC 14 Dexterity saving throw or swap positions with you. This item requires attunement.",
     "descriptors": [],
     "name": "Dark Displacement Gloves",
     "rarity": "Rare",
     "type": ["Gloves", "Apparel"]
   },
   {
-    "cost": 1750,
+    "cost": 17501,
     "description": "Simple ranged weapon with ammunition (range 80/320) and two-handed properties, dealing 1d6 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While carrying this bow, you have resistance to fire and cold damage. The bow you can use a bonus action to cast haste on yourself. Once you use this property, you can\\'t use it again until the next dawn. This item requires attunement.",
     "descriptors": [],
     "name": "Darkfire Shortbow (Shortbow)",
@@ -704,7 +704,7 @@
     "type": ["Weapon","Bow"]
   },
   {
-    "cost": 1385,
+    "cost": 3851,
     "description": "Martial melee weapon dealing 1d8 bludgeoning damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While wielding this weapon, all bludgeoning, piercing, and slashing damage you take is reduced by 1 (minimum of 1 damage). This item requires attunement.",
     "descriptors": [],
     "name": "Defender Flail (Flail)",
@@ -712,15 +712,15 @@
     "type": ["Weapon", "Hammer/Mace"]
   },
   {
-    "cost": 547,
-    "description": "While wearing this cloak, when you poison a creature, you regain 1d4 hit points. This item requires attunement.",
+    "cost": 5470,
+    "description": "While wearing this cloak, when you deal poison damage to a creature, you regain 1d4 hit points. This item requires attunement.",
     "descriptors": [],
     "name": "Derivation Cloak",
     "rarity": "Rare",
-    "type": ["Apparel"]
+    "type": ["Apparel", "Poison"]
   },
   {
-    "cost": 975,
+    "cost": 2975,
     "description": "Simple melee weapon with versatile (1d8) property, dealing 1d6 bludgeoning damage. While wielding this staff, you gain a +1 bonus to spell save DC and spell attack rolls. This item requires attunement.",
     "descriptors": [],
     "name": "Despair of Athkatla (Quarterstaff)",
@@ -728,23 +728,23 @@
     "type": ["Weapon", "Staff/Club"]
   },
   {
-    "cost": 37005,
-    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon. The mace You can use an action to create a 10-foot-radius aura of healing incense centered on you. Once you use this property, you can\\'t use it again until the next dawn. The aura lasts for 1 minute. When a creature starts its turn in the aura or enters it for the first time on a turn, that creature regains 1d6 hit points. This item requires attunement.",
+    "cost": 57005,
+    "description": "Simple melee weapon dealing 1d6 bludgeoning damage. You gain a +2 bonus to attack and damage rolls made with this magic weapon.  You can use an action to create a 10-foot-radius aura of healing incense centered on you. Once you use this property, you can\\'t use it again until the next dawn. The aura lasts for 1 minute. When an ally starts its turn in the aura or enters it for the first time on a turn, that creature regains 1d6 hit points. This item requires attunement.",
     "descriptors": [],
     "name": "Devotee's Mace (Mace)",
     "rarity": "Legendary",
     "type": ["Weapon", "Hammer/Mace"]
   },
   {
-    "cost": 350,
-    "description": "While wearing this diadem, when you inflict a condition on a creature with a spell or weapon attack, your spell save DC increases by 1 for the next 2 rounds. This item requires attunement.",
+    "cost": 4350,
+    "description": "While wearing this diadem, when you deal Acid, Cold, Fire, Lightning, or Thunder damage on a creature with a spell or weapon attack, your spell save DC increases by 1 until the end of your next turn.",
     "descriptors": [],
     "name": "Diadem of Arcane Synergy",
     "rarity": "Rare",
     "type": ["Headwear", "Apparel"]
   },
   {
-    "cost": 3010,
+    "cost": 6010,
     "description": "While wearing these boots, you are immune to being grappled or restrained by webs, vines, or similar effects, and you can't be knocked prone by slippery surfaces such as ice or grease. The boots have 3 charges and regain 1d3 expended charges daily at dawn. You can use a bonus action to expend 1 charge to cast misty step. This item requires attunement.",
     "descriptors": [],
     "name": "Disintegrating Night Walkers",
@@ -760,7 +760,7 @@
     "type": ["Ring", "Jewelry"]
   },
   {
-    "cost": 1447,
+    "cost": 4471,
     "description": "Simple melee weapon with finesse and thrown (range 20/60) properties, dealing 1d4 piercing damage. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you score a critical hit with this weapon, the target takes an extra 7 necrotic damage. This item requires attunement.",
     "descriptors": [],
     "name": "Dolor Amarus (Dagger)",
@@ -768,16 +768,16 @@
     "type": ["Weapon", "Dagger"]
   },
   {
-    "cost": 1098,
+    "cost": 3098,
     "description": "Martial melee weapon with heavy and two-handed properties, dealing 2d6 bludgeoning damage. When you hit a creature with this magic weapon, it can't regain hit points until the start of your next turn. Undead creatures hit by this weapon also have disadvantage on attack rolls until the start of your next turn. This item requires attunement.",
     "descriptors": [],
     "name": "Doom Hammer (Maul)",
-    "rarity": "Uncommon",
+    "rarity": "Rare",
     "type": ["Weapon", "Hammer/Mace"]
   },
   {
-    "cost": 708,
-    "description": "Simple melee weapon with light and thrown (range 20/60) properties, dealing 1d6 slashing damage. When you hit a creature that is on fire with this magic handaxe, the target takes an extra 1d4 slashing damage.",
+    "cost": 788,
+    "description": "Simple melee weapon with light and thrown (range 20/60) properties, dealing 1d6 slashing damage. When you hit a creature that has taken Acid, Cold, Fire, Lightning, or Poison damage this round, the target takes an extra 1d4 of that damage type.",
     "descriptors": [],
     "name": "Dragon's Grasp (Handaxe)",
     "rarity": "Uncommon",
