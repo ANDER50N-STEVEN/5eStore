@@ -7,7 +7,9 @@
         "rarity": "Very Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Divine",
+            "Abjuration"
         ]
     },
     {
@@ -18,7 +20,7 @@
         "rarity": "Uncommon",
         "type": [
             "Jewelry",
-            "Dark"
+            "Abjuration"
         ]
     },
     {
@@ -28,7 +30,9 @@
         "name": "Absolute Confidence Amulet",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Enchantment",
+            "Bard"
         ]
     },
     {
@@ -41,7 +45,10 @@
             "Gloves",
             "Apparel",
             "Summoning",
-            "Curse"
+            "Curse",
+            "Evil",
+            "Conjuration",
+            "Abjuration"
         ]
     },
     {
@@ -64,7 +71,8 @@
         "type": [
             "Ring",
             "Jewelry",
-            "Curse"
+            "Curse",
+            "Healing"
         ]
     },
     {
@@ -75,7 +83,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Necromancy",
+            "Stealth"
         ]
     },
     {
@@ -85,7 +95,9 @@
         "name": "Amulet of Bhaal",
         "rarity": "Legendary",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Evil",
+            "Divine"
         ]
     },
     {
@@ -95,7 +107,8 @@
         "name": "Amulet of Greater Health",
         "rarity": "Legendary",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Transmutation"
         ]
     },
     {
@@ -105,7 +118,9 @@
         "name": "Amulet of Misty Step",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Conjuration",
+            "Travel"
         ]
     },
     {
@@ -128,7 +143,9 @@
         "type": [
             "Jewelry",
             "Healing",
-            "Divine"
+            "Divine",
+            "Abjuration",
+            "Nature"
         ]
     },
     {
@@ -138,7 +155,10 @@
         "name": "Amulet of the Devout",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Divine",
+            "Cleric",
+            "Arcane"
         ]
     },
     {
@@ -148,7 +168,8 @@
         "name": "Amulet of the Harpers",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Abjuration"
         ]
     },
     {
@@ -158,7 +179,8 @@
         "name": "Amulet of the Unworthy",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Abjuration"
         ]
     },
     {
@@ -168,7 +190,8 @@
         "name": "Armor of Uninhibited Kushigo",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Unarmed"
         ]
     },
     {
@@ -179,7 +202,10 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Evil",
+            "Divination"
         ]
     },
     {
@@ -190,7 +216,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Stealth"
         ]
     },
     {
@@ -201,7 +228,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Stealth",
+            "Necromancy"
         ]
     },
     {
@@ -212,7 +241,9 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Transmutation",
+            "Martial"
         ]
     },
     {
@@ -224,7 +255,9 @@
         "type": [
             "Ring",
             "Jewelry",
-            "Arcane"
+            "Arcane",
+            "Enchantment",
+            "Illusion"
         ]
     },
     {
@@ -234,7 +267,9 @@
         "name": "Beastmaster's Chain",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Enchantment",
+            "Animal"
         ]
     },
     {
@@ -245,7 +280,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -256,7 +292,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Transmutation"
         ]
     },
     {
@@ -267,7 +304,9 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Jewelry"
+            "Jewelry",
+            "Apparel",
+            "Transmutation"
         ]
     },
     {
@@ -278,7 +317,10 @@
         "rarity": "Rare",
         "type": [
             "Gauntlet",
-            "Armor"
+            "Armor",
+            "Evil",
+            "Necromancy",
+            "Martial"
         ]
     },
     {
@@ -289,7 +331,11 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Armor"
+            "Armor",
+            "Apparel",
+            "Evil",
+            "Travel",
+            "Martial"
         ]
     },
     {
@@ -300,7 +346,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Evil",
+            "Divine",
+            "Martial"
         ]
     },
     {
@@ -310,7 +359,9 @@
         "name": "Blazer of Benevolence",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Bard"
         ]
     },
     {
@@ -321,7 +372,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged"
         ]
     },
     {
@@ -332,7 +384,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Arcane",
+            "Martial"
         ]
     },
     {
@@ -343,7 +397,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Martial"
         ]
     },
     {
@@ -354,7 +409,8 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Martial"
         ]
     },
     {
@@ -365,7 +421,9 @@
         "rarity": "Very Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel",
+            "Martial"
         ]
     },
     {
@@ -375,7 +433,8 @@
         "name": "Bonespike Garb",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -386,7 +445,9 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Martial"
         ]
     },
     {
@@ -397,7 +458,9 @@
         "rarity": "Very Rare",
         "type": [
             "Helmet",
-            "Armor"
+            "Armor",
+            "Enchantment",
+            "Martial"
         ]
     },
     {
@@ -408,7 +471,8 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Healing"
         ]
     },
     {
@@ -419,7 +483,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Necromancy"
         ]
     },
     {
@@ -430,7 +495,9 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Bard"
         ]
     },
     {
@@ -441,7 +508,10 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel",
+            "Elemental",
+            "Martial"
         ]
     },
     {
@@ -452,7 +522,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -463,7 +534,8 @@
         "rarity": "Very Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -474,7 +546,9 @@
         "rarity": "Very Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Travel"
         ]
     },
     {
@@ -485,7 +559,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Unarmed"
         ]
     },
     {
@@ -497,7 +572,9 @@
         "type": [
             "Boots",
             "Apparel",
-            "Curse"
+            "Curse",
+            "Conjuration",
+            "Travel"
         ]
     },
     {
@@ -508,7 +585,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Divination"
         ]
     },
     {
@@ -519,7 +598,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Enchantment"
         ]
     },
     {
@@ -530,7 +611,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Martial"
         ]
     },
     {
@@ -541,7 +623,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -562,7 +645,9 @@
         "name": "Broodmother's Revenge",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Poison",
+            "Alchemy"
         ]
     },
     {
@@ -573,7 +658,8 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -584,7 +670,8 @@
         "rarity": "Very Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Enchantment"
         ]
     },
     {
@@ -595,7 +682,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Elemental",
+            "Bard"
         ]
     },
     {
@@ -618,7 +707,10 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Enchantment",
+            "Bard"
         ]
     },
     {
@@ -629,7 +721,8 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -640,7 +733,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Elemental"
         ]
     },
     {
@@ -650,7 +744,8 @@
         "name": "Champion's Chain",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Enchantment"
         ]
     },
     {
@@ -661,7 +756,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Arcane",
+            "Elemental",
+            "Martial"
         ]
     },
     {
@@ -671,7 +769,8 @@
         "name": "Cindermoth Cloak",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Elemental"
         ]
     },
     {
@@ -682,7 +781,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Abjuration"
         ]
     },
     {
@@ -693,7 +793,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -704,7 +806,11 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Evocation",
+            "Divination",
+            "Martial"
         ]
     },
     {
@@ -715,7 +821,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Arcane"
         ]
     },
     {
@@ -726,7 +834,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Abjuration"
         ]
     },
     {
@@ -736,7 +846,9 @@
         "name": "Cloak of Cunning Brume",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Conjuration"
         ]
     },
     {
@@ -746,7 +858,10 @@
         "name": "Cloak of Elemental Absorption",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -756,7 +871,10 @@
         "name": "Cloth of Authority",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Abjuration",
+            "Divination"
         ]
     },
     {
@@ -768,7 +886,8 @@
         "type": [
             "Weapon",
             "Hammer/Mace",
-            "Curse"
+            "Curse",
+            "Enchantment"
         ]
     },
     {
@@ -779,7 +898,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Transmutation"
         ]
     },
     {
@@ -790,7 +910,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Martial"
         ]
     },
     {
@@ -801,7 +922,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Divine",
+            "Abjuration",
+            "Unarmed"
         ]
     },
     {
@@ -812,7 +936,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Elemental",
+            "Martial"
         ]
     },
     {
@@ -823,7 +949,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Elemental"
         ]
     },
     {
@@ -834,7 +961,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Divine"
         ]
     },
     {
@@ -844,7 +972,12 @@
         "name": "Corvid Token",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Transmutation",
+            "Summoning",
+            "Animal",
+            "Travel",
+            "Nature"
         ]
     },
     {
@@ -855,7 +988,9 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Illusion"
         ]
     },
     {
@@ -866,7 +1001,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -877,7 +1013,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Divine",
+            "Necromancy",
+            "Abjuration"
         ]
     },
     {
@@ -888,7 +1027,8 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -899,7 +1039,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Arcane",
+            "Evocation"
         ]
     },
     {
@@ -910,7 +1053,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Travel"
         ]
     },
     {
@@ -921,7 +1065,10 @@
         "rarity": "Very Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Evil",
+            "Necromancy",
+            "Summoning"
         ]
     },
     {
@@ -932,7 +1079,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -943,7 +1091,11 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Illusion",
+            "Conjuration",
+            "Martial"
         ]
     },
     {
@@ -954,7 +1106,11 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Transmutation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -965,7 +1121,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Abjuration",
+            "Martial"
         ]
     },
     {
@@ -976,7 +1134,9 @@
         "rarity": "Rare",
         "type": [
             "Apparel",
-            "Poison"
+            "Poison",
+            "Healing",
+            "Alchemy"
         ]
     },
     {
@@ -987,7 +1147,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -998,7 +1160,9 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Healing",
+            "Divine"
         ]
     },
     {
@@ -1009,7 +1173,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -1020,7 +1186,12 @@
         "rarity": "Very Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Conjuration",
+            "Abjuration",
+            "Travel",
+            "Elemental",
+            "Nature"
         ]
     },
     {
@@ -1031,7 +1202,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Conjuration"
         ]
     },
     {
@@ -1042,7 +1214,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Necromancy"
         ]
     },
     {
@@ -1053,7 +1226,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Necromancy"
         ]
     },
     {
@@ -1064,7 +1238,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Elemental"
         ]
     },
     {
@@ -1075,7 +1250,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Polearm",
+            "Elemental"
         ]
     },
     {
@@ -1086,7 +1262,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Stealth",
+            "Necromancy"
         ]
     },
     {
@@ -1096,7 +1274,9 @@
         "name": "Drunken Cloth",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Poison",
+            "Alchemy"
         ]
     },
     {
@@ -1107,7 +1287,10 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Necromancy",
+            "Enchantment",
+            "Martial"
         ]
     },
     {
@@ -1118,7 +1301,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial",
+            "Enchantment"
         ]
     },
     {
@@ -1128,7 +1313,9 @@
         "name": "Enraging Heart Garb",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Martial"
         ]
     },
     {
@@ -1138,7 +1325,8 @@
         "name": "Envoy's Amulet",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Enchantment"
         ]
     },
     {
@@ -1160,7 +1348,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Elemental"
         ]
     },
     {
@@ -1171,7 +1360,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Abjuration"
         ]
     },
     {
@@ -1182,7 +1372,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Travel",
+            "Nature"
         ]
     },
     {
@@ -1193,7 +1385,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Elemental",
+            "Nature"
         ]
     },
     {
@@ -1204,7 +1398,9 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Evocation"
         ]
     },
     {
@@ -1215,7 +1411,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Enchantment"
         ]
     },
     {
@@ -1226,7 +1423,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Healing"
         ]
     },
     {
@@ -1237,7 +1435,10 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth",
+            "Divine",
+            "Illusion"
         ]
     },
     {
@@ -1247,7 +1448,9 @@
         "name": "Fey Semblance Amulet",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Nature",
+            "Abjuration"
         ]
     },
     {
@@ -1257,7 +1460,8 @@
         "name": "Fireheart",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Elemental"
         ]
     },
     {
@@ -1268,7 +1472,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Elemental"
         ]
     },
     {
@@ -1279,7 +1485,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Enchantment"
         ]
     },
     {
@@ -1290,7 +1497,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Arcane"
         ]
     },
     {
@@ -1301,7 +1510,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Elemental"
         ]
     },
     {
@@ -1312,7 +1522,12 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Evil",
+            "Necromancy",
+            "Elemental",
+            "Unarmed",
+            "Martial"
         ]
     },
     {
@@ -1323,7 +1538,10 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Evil",
+            "Abjuration"
         ]
     },
     {
@@ -1334,7 +1552,8 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -1344,7 +1563,8 @@
         "name": "Fleshmelter Cloak",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Elemental"
         ]
     },
     {
@@ -1355,7 +1575,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -1366,7 +1587,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Martial"
         ]
     },
     {
@@ -1376,7 +1598,9 @@
         "name": "Frost Prince",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Evocation",
+            "Elemental"
         ]
     },
     {
@@ -1387,7 +1611,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Animal"
         ]
     },
     {
@@ -1397,7 +1623,9 @@
         "name": "Garb of the Land and Sky",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Unarmed"
         ]
     },
     {
@@ -1408,7 +1636,12 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Evil",
+            "Enchantment",
+            "Arcane",
+            "Unarmed"
         ]
     },
     {
@@ -1419,7 +1652,10 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Transmutation",
+            "Martial"
         ]
     },
     {
@@ -1430,7 +1666,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Martial"
         ]
     },
     {
@@ -1441,7 +1679,9 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Martial"
         ]
     },
     {
@@ -1452,7 +1692,8 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -1463,7 +1704,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged"
         ]
     },
     {
@@ -1474,7 +1716,8 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -1485,7 +1728,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Martial"
         ]
     },
     {
@@ -1496,7 +1740,8 @@
         "rarity": "Uncommon",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -1507,7 +1752,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Ranged",
+            "Martial"
         ]
     },
     {
@@ -1518,7 +1765,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Enchantment"
         ]
     },
     {
@@ -1529,7 +1778,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Arcane",
+            "Martial"
         ]
     },
     {
@@ -1540,7 +1792,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Elemental"
         ]
     },
     {
@@ -1551,7 +1805,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Evocation",
+            "Elemental",
+            "Unarmed"
         ]
     },
     {
@@ -1562,7 +1819,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Unarmed"
         ]
     },
     {
@@ -1573,7 +1831,9 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Martial"
         ]
     },
     {
@@ -1584,7 +1844,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Evocation",
+            "Nature"
         ]
     },
     {
@@ -1595,7 +1857,11 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Cleric",
+            "Enchantment",
+            "Martial"
         ]
     },
     {
@@ -1606,7 +1872,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Evil"
         ]
     },
     {
@@ -1617,7 +1885,10 @@
         "rarity": "Legendary",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Transmutation",
+            "Unarmed"
         ]
     },
     {
@@ -1628,7 +1899,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -1639,7 +1912,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -1650,7 +1924,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -1661,7 +1936,8 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -1672,7 +1948,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Unarmed"
         ]
     },
     {
@@ -1683,7 +1960,8 @@
         "rarity": "Uncommon",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -1694,7 +1972,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Evocation",
+            "Elemental"
         ]
     },
     {
@@ -1705,7 +1985,9 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Transmutation"
         ]
     },
     {
@@ -1716,7 +1998,11 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Abjuration",
+            "Divination",
+            "Elemental"
         ]
     },
     {
@@ -1727,7 +2013,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Evocation"
         ]
     },
     {
@@ -1738,7 +2025,9 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Divination",
+            "Martial"
         ]
     },
     {
@@ -1749,7 +2038,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Elemental"
         ]
     },
     {
@@ -1760,7 +2050,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Divination",
+            "Divine"
         ]
     },
     {
@@ -1770,7 +2062,8 @@
         "name": "Hammergrim Mist Amulet",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Conjuration"
         ]
     },
     {
@@ -1781,7 +2074,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Transmutation"
         ]
     },
     {
@@ -1792,7 +2086,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Bard"
         ]
     },
     {
@@ -1803,7 +2098,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Transmutation",
+            "Curse"
         ]
     },
     {
@@ -1814,7 +2111,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Enchantment"
         ]
     },
     {
@@ -1825,7 +2124,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Divine",
+            "Evocation"
         ]
     },
     {
@@ -1836,7 +2137,10 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Transmutation",
+            "Travel"
         ]
     },
     {
@@ -1847,7 +2151,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -1858,7 +2164,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -1869,7 +2177,8 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -1880,7 +2189,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Unarmed"
         ]
     },
     {
@@ -1891,7 +2202,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Elemental"
         ]
     },
     {
@@ -1902,7 +2214,11 @@
         "rarity": "Very Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Evil",
+            "Conjuration",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -1913,7 +2229,14 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Evil",
+            "Necromancy",
+            "Evocation",
+            "Arcane",
+            "Elemental",
+            "Unarmed",
+            "Martial"
         ]
     },
     {
@@ -1924,7 +2247,13 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Dark",
+            "Evil",
+            "Transmutation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -1935,7 +2264,10 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Evil",
+            "Elemental"
         ]
     },
     {
@@ -1946,7 +2278,9 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Evil",
+            "Elemental"
         ]
     },
     {
@@ -1957,7 +2291,12 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Stealth",
+            "Evil",
+            "Evocation",
+            "Elemental"
         ]
     },
     {
@@ -1968,7 +2307,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Divination"
         ]
     },
     {
@@ -1979,7 +2320,11 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Healing",
+            "Abjuration",
+            "Martial"
         ]
     },
     {
@@ -1990,7 +2335,10 @@
         "rarity": "Legendary",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Healing",
+            "Abjuration"
         ]
     },
     {
@@ -2001,7 +2349,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Arcane"
         ]
     },
     {
@@ -2012,7 +2362,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Abjuration"
         ]
     },
     {
@@ -2023,7 +2375,9 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Martial"
         ]
     },
     {
@@ -2034,7 +2388,10 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Divine",
+            "Martial"
         ]
     },
     {
@@ -2045,7 +2402,10 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Poison",
+            "Alchemy"
         ]
     },
     {
@@ -2056,7 +2416,9 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -2067,7 +2429,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Necromancy"
         ]
     },
     {
@@ -2078,7 +2441,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Divine"
         ]
     },
     {
@@ -2089,7 +2454,8 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -2100,7 +2466,11 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Necromancy",
+            "Curse",
+            "Martial"
         ]
     },
     {
@@ -2111,7 +2481,11 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Bracer",
+            "Conjuration",
+            "Transmutation",
+            "Martial"
         ]
     },
     {
@@ -2133,7 +2507,10 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Divination",
+            "Animal"
         ]
     },
     {
@@ -2143,7 +2520,9 @@
         "name": "Icebite Robe",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -2154,7 +2533,10 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Poison",
+            "Alchemy",
+            "Elemental"
         ]
     },
     {
@@ -2165,7 +2547,12 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Evocation",
+            "Abjuration",
+            "Arcane",
+            "Elemental",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -2176,7 +2563,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Poison",
+            "Evil",
+            "Alchemy"
         ]
     },
     {
@@ -2187,7 +2577,11 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Evil",
+            "Conjuration",
+            "Arcane",
+            "Summoning"
         ]
     },
     {
@@ -2197,7 +2591,11 @@
         "name": "Infernal Robe",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Evil",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -2208,7 +2606,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Polearm",
+            "Poison",
+            "Evil",
+            "Alchemy"
         ]
     },
     {
@@ -2219,7 +2620,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Martial"
         ]
     },
     {
@@ -2230,7 +2632,8 @@
         "rarity": "Uncommon",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -2241,7 +2644,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Nature"
         ]
     },
     {
@@ -2263,7 +2667,8 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Enchantment"
         ]
     },
     {
@@ -2274,7 +2679,11 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Poison",
+            "Abjuration",
+            "Alchemy"
         ]
     },
     {
@@ -2285,7 +2694,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -2296,7 +2706,9 @@
         "rarity": "Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -2307,7 +2719,10 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Stealth",
+            "Dark",
+            "Necromancy"
         ]
     },
     {
@@ -2318,7 +2733,9 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Enchantment",
+            "Animal"
         ]
     },
     {
@@ -2329,7 +2746,9 @@
         "rarity": "Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Evil",
+            "Arcane"
         ]
     },
     {
@@ -2340,7 +2759,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Evil"
         ]
     },
     {
@@ -2351,7 +2771,8 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Nature"
         ]
     },
     {
@@ -2361,7 +2782,9 @@
         "name": "Khalid's Gift",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Healing",
+            "Transmutation"
         ]
     },
     {
@@ -2372,7 +2795,8 @@
         "rarity": "Very Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth"
         ]
     },
     {
@@ -2383,7 +2807,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Stealth"
         ]
     },
     {
@@ -2394,7 +2819,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Transmutation"
         ]
     },
     {
@@ -2404,7 +2831,8 @@
         "name": "Komira's Locket",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Evocation"
         ]
     },
     {
@@ -2415,7 +2843,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Elemental"
         ]
     },
     {
@@ -2426,7 +2855,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Evocation"
         ]
     },
     {
@@ -2437,7 +2867,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Dark"
         ]
     },
     {
@@ -2448,7 +2880,9 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Martial"
         ]
     },
     {
@@ -2459,7 +2893,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Elemental"
         ]
     },
     {
@@ -2470,7 +2905,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Elemental"
         ]
     },
     {
@@ -2481,7 +2917,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -2492,7 +2929,11 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Evil",
+            "Divine",
+            "Necromancy",
+            "Abjuration"
         ]
     },
     {
@@ -2503,7 +2944,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Martial"
         ]
     },
     {
@@ -2514,7 +2957,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Arcane"
         ]
     },
     {
@@ -2524,7 +2968,8 @@
         "name": "Mantle of the Holy Warrior",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Divine"
         ]
     },
     {
@@ -2535,7 +2980,9 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -2546,7 +2993,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Ranged"
         ]
     },
     {
@@ -2557,7 +3006,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -2568,7 +3018,9 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Divination",
+            "Martial"
         ]
     },
     {
@@ -2579,7 +3031,10 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Evocation",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -2590,7 +3045,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Evil"
         ]
     },
     {
@@ -2601,7 +3057,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Polearm",
+            "Martial"
         ]
     },
     {
@@ -2611,7 +3068,11 @@
         "name": "Moon Devotion Robe",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Evocation",
+            "Abjuration",
+            "Nature"
         ]
     },
     {
@@ -2621,7 +3082,9 @@
         "name": "Moondrop Pendant",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Stealth",
+            "Nature"
         ]
     },
     {
@@ -2632,7 +3095,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Polearm",
+            "Nature"
         ]
     },
     {
@@ -2643,7 +3107,9 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Evocation",
+            "Elemental"
         ]
     },
     {
@@ -2654,7 +3120,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Stealth"
         ]
     },
     {
@@ -2665,7 +3132,10 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Evil",
+            "Divine",
+            "Necromancy"
         ]
     },
     {
@@ -2676,7 +3146,11 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Transmutation",
+            "Arcane",
+            "Travel"
         ]
     },
     {
@@ -2687,7 +3161,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -2698,7 +3174,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged",
+            "Evocation"
         ]
     },
     {
@@ -2708,7 +3186,9 @@
         "name": "Necklace of Elemental Augmentation",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -2719,7 +3199,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Transmutation"
         ]
     },
     {
@@ -2729,7 +3211,9 @@
         "name": "Nymph Cloak",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Nature"
         ]
     },
     {
@@ -2740,7 +3224,9 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -2750,7 +3236,9 @@
         "name": "Obsidian Laced Robe",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -2761,7 +3249,8 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Abjuration"
         ]
     },
     {
@@ -2772,7 +3261,8 @@
         "rarity": "Very Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Enchantment"
         ]
     },
     {
@@ -2783,7 +3273,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Conjuration",
+            "Abjuration",
+            "Nature"
         ]
     },
     {
@@ -2794,7 +3287,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Divine"
         ]
     },
     {
@@ -2805,7 +3299,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Elemental",
+            "Bard"
         ]
     },
     {
@@ -2816,7 +3312,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Poison",
+            "Alchemy"
         ]
     },
     {
@@ -2826,7 +3324,9 @@
         "name": "Poisoner's Robe",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Poison",
+            "Alchemy"
         ]
     },
     {
@@ -2836,7 +3336,8 @@
         "name": "Potent Robe",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -2846,7 +3347,9 @@
         "name": "Psychic Spark",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Evocation",
+            "Arcane"
         ]
     },
     {
@@ -2857,7 +3360,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Poison",
+            "Alchemy",
+            "Elemental"
         ]
     },
     {
@@ -2868,7 +3374,9 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -2879,7 +3387,8 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -2890,7 +3399,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Conjuration",
+            "Nature"
         ]
     },
     {
@@ -2901,7 +3412,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Animal"
         ]
     },
     {
@@ -2912,7 +3424,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Conjuration",
+            "Summoning",
+            "Animal"
         ]
     },
     {
@@ -2923,7 +3438,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Martial"
         ]
     },
     {
@@ -2934,7 +3450,8 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -2966,7 +3483,9 @@
         "name": "Reverse Rain Cloak",
         "rarity": "Uncommon",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -2977,7 +3496,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Bard"
         ]
     },
     {
@@ -2988,7 +3508,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Evocation",
+            "Elemental"
         ]
     },
     {
@@ -2999,7 +3521,8 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Arcane"
         ]
     },
     {
@@ -3010,7 +3533,8 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Conjuration"
         ]
     },
     {
@@ -3021,7 +3545,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Illusion"
         ]
     },
     {
@@ -3032,7 +3557,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -3043,7 +3570,12 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Evil",
+            "Necromancy",
+            "Enchantment",
+            "Arcane",
+            "Summoning"
         ]
     },
     {
@@ -3054,7 +3586,9 @@
         "rarity": "Very Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Arcane",
+            "Nature"
         ]
     },
     {
@@ -3065,7 +3599,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Martial"
         ]
     },
     {
@@ -3076,7 +3611,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Enchantment"
         ]
     },
     {
@@ -3087,7 +3623,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Enchantment",
+            "Arcane"
         ]
     },
     {
@@ -3098,7 +3636,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Healing"
         ]
     },
     {
@@ -3109,7 +3648,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Healing"
         ]
     },
     {
@@ -3120,7 +3660,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Elemental"
         ]
     },
     {
@@ -3131,7 +3672,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -3142,7 +3685,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Elemental"
         ]
     },
     {
@@ -3153,7 +3697,8 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Divination"
         ]
     },
     {
@@ -3164,7 +3709,8 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Dark"
         ]
     },
     {
@@ -3175,7 +3721,8 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Martial"
         ]
     },
     {
@@ -3186,7 +3733,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Curse",
+            "Evil"
         ]
     },
     {
@@ -3197,7 +3746,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Evil"
         ]
     },
     {
@@ -3208,7 +3758,10 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Dark",
+            "Evil",
+            "Divine"
         ]
     },
     {
@@ -3218,7 +3771,8 @@
         "name": "Robe of Exquisite Focus",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -3228,7 +3782,9 @@
         "name": "Robe of Supreme Defences",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Arcane"
         ]
     },
     {
@@ -3238,7 +3794,9 @@
         "name": "Robe of the Weave",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Arcane"
         ]
     },
     {
@@ -3249,7 +3807,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -3260,7 +3819,8 @@
         "rarity": "Uncommon",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -3271,7 +3831,11 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Evil",
+            "Abjuration",
+            "Martial"
         ]
     },
     {
@@ -3282,7 +3846,8 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Unarmed"
         ]
     },
     {
@@ -3304,7 +3869,10 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Divine",
+            "Evocation",
+            "Nature"
         ]
     },
     {
@@ -3314,7 +3882,11 @@
         "name": "Sentient Amulet (Very Rare)",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Evocation",
+            "Curse",
+            "Elemental",
+            "Unarmed"
         ]
     },
     {
@@ -3325,7 +3897,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Evocation",
+            "Unarmed"
         ]
     },
     {
@@ -3336,7 +3911,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Unarmed",
+            "Evil"
         ]
     },
     {
@@ -3347,7 +3925,10 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Conjuration",
+            "Transmutation",
+            "Summoning"
         ]
     },
     {
@@ -3357,7 +3938,9 @@
         "name": "Shade-Slayer Cloak",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -3368,7 +3951,10 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth",
+            "Dark",
+            "Conjuration"
         ]
     },
     {
@@ -3379,7 +3965,12 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Dark",
+            "Evil",
+            "Necromancy",
+            "Conjuration",
+            "Summoning"
         ]
     },
     {
@@ -3390,7 +3981,10 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Dark",
+            "Illusion"
         ]
     },
     {
@@ -3401,7 +3995,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -3412,7 +4008,10 @@
         "rarity": "Very Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -3423,7 +4022,11 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Illusion",
+            "Transmutation",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -3434,7 +4037,12 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Stealth",
+            "Dark",
+            "Evil",
+            "Divine",
+            "Abjuration"
         ]
     },
     {
@@ -3444,7 +4052,11 @@
         "name": "Shar's Temptation",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Dark",
+            "Evil",
+            "Divine",
+            "Enchantment"
         ]
     },
     {
@@ -3455,7 +4067,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Healing",
+            "Curse"
         ]
     },
     {
@@ -3465,7 +4079,9 @@
         "name": "Shelter of Athkatla",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Illusion",
+            "Abjuration"
         ]
     },
     {
@@ -3476,7 +4092,8 @@
         "rarity": "Very Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -3487,7 +4104,8 @@
         "rarity": "Very Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Divine"
         ]
     },
     {
@@ -3498,7 +4116,9 @@
         "rarity": "Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -3509,7 +4129,8 @@
         "rarity": "Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -3520,7 +4141,9 @@
         "rarity": "Very Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Evil",
+            "Dark"
         ]
     },
     {
@@ -3531,7 +4154,9 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth",
+            "Illusion"
         ]
     },
     {
@@ -3553,7 +4178,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -3563,7 +4189,8 @@
         "name": "Silver Pendant",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Divination"
         ]
     },
     {
@@ -3574,7 +4201,8 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Arcane"
         ]
     },
     {
@@ -3585,7 +4213,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Elemental"
         ]
     },
     {
@@ -3618,7 +4247,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Stealth"
         ]
     },
     {
@@ -3629,7 +4259,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Evocation",
+            "Elemental",
+            "Unarmed"
         ]
     },
     {
@@ -3640,7 +4273,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -3651,7 +4286,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Polearm",
+            "Martial"
         ]
     },
     {
@@ -3673,7 +4309,9 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Conjuration",
+            "Travel"
         ]
     },
     {
@@ -3684,7 +4322,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Travel"
         ]
     },
     {
@@ -3694,7 +4333,8 @@
         "name": "Spell Savant Amulet",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Arcane"
         ]
     },
     {
@@ -3704,7 +4344,8 @@
         "name": "Spellcrux Amulet",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Arcane"
         ]
     },
     {
@@ -3715,7 +4356,8 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -3726,7 +4368,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Arcane"
         ]
     },
     {
@@ -3737,7 +4380,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Arcane"
         ]
     },
     {
@@ -3748,7 +4393,9 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Animal"
         ]
     },
     {
@@ -3758,7 +4405,9 @@
         "name": "Spineshudder Amulet",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -3769,7 +4418,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -3780,7 +4430,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Travel"
         ]
     },
     {
@@ -3791,7 +4442,10 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Evocation",
+            "Arcane",
+            "Elemental"
         ]
     },
     {
@@ -3802,7 +4456,11 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Divine",
+            "Enchantment",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -3813,7 +4471,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Necromancy"
         ]
     },
     {
@@ -3824,7 +4483,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Poison",
+            "Necromancy"
         ]
     },
     {
@@ -3835,7 +4496,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Abjuration",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -3846,7 +4510,10 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Arcane",
+            "Elemental",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -3857,7 +4524,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -3868,7 +4537,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Martial"
         ]
     },
     {
@@ -3879,7 +4549,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth"
         ]
     },
     {
@@ -3901,7 +4572,9 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Helmet",
+            "Abjuration"
         ]
     },
     {
@@ -3912,7 +4585,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Enchantment"
         ]
     },
     {
@@ -3923,7 +4597,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Arcane"
         ]
     },
     {
@@ -3933,7 +4608,8 @@
         "name": "Strange Tendril Amulet",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Conjuration"
         ]
     },
     {
@@ -3944,7 +4620,8 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Transmutation"
         ]
     },
     {
@@ -3954,7 +4631,8 @@
         "name": "Surgeon's Subjugation Amulet",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Evil"
         ]
     },
     {
@@ -3965,7 +4643,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Enchantment"
         ]
     },
     {
@@ -3976,7 +4655,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Enchantment"
         ]
     },
     {
@@ -3987,7 +4667,7 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Enchantment"
         ]
     },
     {
@@ -3998,7 +4678,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Martial"
         ]
     },
     {
@@ -4009,7 +4690,8 @@
         "rarity": "Very Rare",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Martial"
         ]
     },
     {
@@ -4020,7 +4702,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel"
         ]
     },
     {
@@ -4031,7 +4714,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Healing"
         ]
     },
     {
@@ -4042,7 +4726,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -4053,7 +4739,9 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Abjuration",
+            "Divine"
         ]
     },
     {
@@ -4064,7 +4752,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Bard"
         ]
     },
     {
@@ -4086,7 +4775,8 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -4097,7 +4787,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Nature"
         ]
     },
     {
@@ -4107,7 +4798,8 @@
         "name": "Tarnished Charm",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Healing"
         ]
     },
     {
@@ -4117,7 +4809,9 @@
         "name": "The Amulet of Lost Voices",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Necromancy",
+            "Divination"
         ]
     },
     {
@@ -4128,7 +4822,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Enchantment",
+            "Arcane"
         ]
     },
     {
@@ -4139,7 +4835,10 @@
         "rarity": "Legendary",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Healing",
+            "Divine",
+            "Evocation"
         ]
     },
     {
@@ -4150,7 +4849,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Polearm",
+            "Martial"
         ]
     },
     {
@@ -4161,7 +4861,9 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Martial"
         ]
     },
     {
@@ -4171,7 +4873,9 @@
         "name": "The Deathstalker Mantle",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Illusion"
         ]
     },
     {
@@ -4181,7 +4885,9 @@
         "name": "The Ever-Seeing Eye",
         "rarity": "Uncommon",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Divine",
+            "Abjuration"
         ]
     },
     {
@@ -4191,7 +4897,9 @@
         "name": "The Graceful Cloth (Araj)",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Unarmed"
         ]
     },
     {
@@ -4201,7 +4909,9 @@
         "name": "The Graceful Cloth (Esther)",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Travel"
         ]
     },
     {
@@ -4212,7 +4922,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged",
+            "Elemental"
         ]
     },
     {
@@ -4223,7 +4935,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Crossbow"
+            "Crossbow",
+            "Ranged"
         ]
     },
     {
@@ -4233,7 +4946,10 @@
         "name": "The Mighty Cloth",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Transmutation",
+            "Abjuration",
+            "Martial"
         ]
     },
     {
@@ -4244,7 +4960,8 @@
         "rarity": "Rare",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Enchantment"
         ]
     },
     {
@@ -4255,7 +4972,8 @@
         "rarity": "Uncommon",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Elemental"
         ]
     },
     {
@@ -4266,7 +4984,11 @@
         "rarity": "Very Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Healing",
+            "Abjuration",
+            "Martial"
         ]
     },
     {
@@ -4277,7 +4999,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Divine"
         ]
     },
     {
@@ -4288,7 +5011,9 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Dark",
+            "Arcane"
         ]
     },
     {
@@ -4310,7 +5035,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Unarmed",
+            "Elemental"
         ]
     },
     {
@@ -4321,7 +5048,9 @@
         "rarity": "Uncommon",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -4332,7 +5061,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Elemental"
         ]
     },
     {
@@ -4342,7 +5072,10 @@
         "name": "The Spectator Eyes",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Necromancy",
+            "Enchantment",
+            "Arcane"
         ]
     },
     {
@@ -4353,7 +5086,9 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Travel",
+            "Martial"
         ]
     },
     {
@@ -4364,7 +5099,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -4375,7 +5112,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Divine"
         ]
     },
     {
@@ -4386,7 +5124,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Divination"
         ]
     },
     {
@@ -4397,7 +5136,10 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Healing",
+            "Divine",
+            "Enchantment"
         ]
     },
     {
@@ -4408,7 +5150,8 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Elemental"
         ]
     },
     {
@@ -4419,7 +5162,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Elemental"
         ]
     },
     {
@@ -4430,7 +5174,10 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Poison",
+            "Alchemy",
+            "Nature"
         ]
     },
     {
@@ -4441,7 +5188,10 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Evocation",
+            "Elemental",
+            "Unarmed"
         ]
     },
     {
@@ -4452,7 +5202,8 @@
         "rarity": "Rare",
         "type": [
             "Ring",
-            "Jewelry"
+            "Jewelry",
+            "Healing"
         ]
     },
     {
@@ -4463,7 +5214,8 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Bow"
+            "Bow",
+            "Ranged"
         ]
     },
     {
@@ -4474,7 +5226,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Divine"
         ]
     },
     {
@@ -4485,7 +5238,8 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Nature"
         ]
     },
     {
@@ -4507,7 +5261,8 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Enchantment"
         ]
     },
     {
@@ -4517,7 +5272,8 @@
         "name": "Uncovered Mysteries",
         "rarity": "Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Divination"
         ]
     },
     {
@@ -4527,7 +5283,8 @@
         "name": "Unflinching Protector Amulet",
         "rarity": "Very Rare",
         "type": [
-            "Jewelry"
+            "Jewelry",
+            "Abjuration"
         ]
     },
     {
@@ -4538,7 +5295,9 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Arcane"
         ]
     },
     {
@@ -4549,7 +5308,9 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Stealth",
+            "Illusion"
         ]
     },
     {
@@ -4560,7 +5321,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Gauntlet",
+            "Martial"
         ]
     },
     {
@@ -4571,7 +5334,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -4582,7 +5346,9 @@
         "rarity": "Uncommon",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -4592,7 +5358,9 @@
         "name": "Veil of the Morning",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Divine",
+            "Abjuration"
         ]
     },
     {
@@ -4603,7 +5371,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Martial"
         ]
     },
     {
@@ -4613,7 +5382,9 @@
         "name": "Vest of Soul Rejuvenation",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Healing",
+            "Unarmed"
         ]
     },
     {
@@ -4624,7 +5395,9 @@
         "rarity": "Legendary",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Abjuration",
+            "Arcane"
         ]
     },
     {
@@ -4635,7 +5408,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Polearm"
+            "Polearm",
+            "Evil"
         ]
     },
     {
@@ -4646,7 +5420,8 @@
         "rarity": "Rare",
         "type": [
             "Boots",
-            "Apparel"
+            "Apparel",
+            "Martial"
         ]
     },
     {
@@ -4656,7 +5431,9 @@
         "name": "Vivacious Cloak",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Arcane",
+            "Abjuration"
         ]
     },
     {
@@ -4667,7 +5444,9 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Sword",
+            "Enchantment",
+            "Elemental"
         ]
     },
     {
@@ -4678,7 +5457,8 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Healing"
         ]
     },
     {
@@ -4689,7 +5469,8 @@
         "rarity": "Uncommon",
         "type": [
             "Headwear",
-            "Apparel"
+            "Apparel",
+            "Transmutation"
         ]
     },
     {
@@ -4699,7 +5480,9 @@
         "name": "Wavemother's Cloak",
         "rarity": "Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Abjuration",
+            "Divine"
         ]
     },
     {
@@ -4709,7 +5492,10 @@
         "name": "Wavemother's Robe",
         "rarity": "Very Rare",
         "type": [
-            "Apparel"
+            "Apparel",
+            "Conjuration",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -4720,7 +5506,7 @@
         "rarity": "Rare",
         "type": [
             "Weapon",
-            "Sword"
+            "Nature"
         ]
     },
     {
@@ -4731,7 +5517,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Stealth",
+            "Martial"
         ]
     },
     {
@@ -4742,7 +5530,8 @@
         "rarity": "Uncommon",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Elemental"
         ]
     },
     {
@@ -4753,7 +5542,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Axe"
+            "Axe",
+            "Abjuration"
         ]
     },
     {
@@ -4764,7 +5554,11 @@
         "rarity": "Very Rare",
         "type": [
             "Weapon",
-            "Staff/Club"
+            "Staff/Club",
+            "Healing",
+            "Necromancy",
+            "Arcane",
+            "Spellcasting Focus"
         ]
     },
     {
@@ -4775,7 +5569,9 @@
         "rarity": "Rare",
         "type": [
             "Gloves",
-            "Apparel"
+            "Apparel",
+            "Enchantment",
+            "Bard"
         ]
     },
     {
@@ -4786,7 +5582,8 @@
         "rarity": "Uncommon",
         "type": [
             "Shield",
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -4797,7 +5594,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Dagger"
+            "Dagger",
+            "Animal"
         ]
     },
     {
@@ -4808,7 +5606,8 @@
         "rarity": "Uncommon",
         "type": [
             "Weapon",
-            "Hammer/Mace"
+            "Hammer/Mace",
+            "Divination"
         ]
     },
     {
@@ -4818,7 +5617,8 @@
         "name": "Armor of Agility (Hide Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -4828,7 +5628,8 @@
         "name": "Armor of Agility (Chain Shirt)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -4838,7 +5639,8 @@
         "name": "Armor of Agility (Scale Mail)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -4848,7 +5650,8 @@
         "name": "Armor of Agility (Breastplate)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -4858,7 +5661,8 @@
         "name": "Armor of Agility (Half Plate)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -4868,7 +5672,9 @@
         "name": "Armor of Devotion (Ring Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Cleric"
         ]
     },
     {
@@ -4878,7 +5684,9 @@
         "name": "Armor of Devotion (Chain Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Cleric"
         ]
     },
     {
@@ -4888,7 +5696,9 @@
         "name": "Armor of Devotion (Splint Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Cleric"
         ]
     },
     {
@@ -4898,7 +5708,9 @@
         "name": "Armor of Devotion (Plate Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Cleric"
         ]
     },
     {
@@ -4908,7 +5720,10 @@
         "name": "Armor of Landfall (Padded Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Transmutation",
+            "Arcane",
+            "Nature"
         ]
     },
     {
@@ -4918,7 +5733,10 @@
         "name": "Armor of Landfall (Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Transmutation",
+            "Arcane",
+            "Nature"
         ]
     },
     {
@@ -4928,7 +5746,10 @@
         "name": "Armor of Landfall (Studded Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Transmutation",
+            "Arcane",
+            "Nature"
         ]
     },
     {
@@ -4938,7 +5759,11 @@
         "name": "Armor of Moonbasking (Padded Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Transmutation",
+            "Abjuration",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -4948,7 +5773,11 @@
         "name": "Armor of Moonbasking (Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Transmutation",
+            "Abjuration",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -4958,7 +5787,11 @@
         "name": "Armor of Moonbasking (Studded Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Transmutation",
+            "Abjuration",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -4968,7 +5801,8 @@
         "name": "Armor of Persistence (Ring Mail)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -4978,7 +5812,8 @@
         "name": "Armor of Persistence (Chain Mail)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -4988,7 +5823,8 @@
         "name": "Armor of Persistence (Splint Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -4998,7 +5834,8 @@
         "name": "Armor of Persistence (Plate Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Abjuration"
         ]
     },
     {
@@ -5008,7 +5845,8 @@
         "name": "Barkskin Armor (Hide Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -5018,7 +5856,9 @@
         "name": "Bhaalist Armor (Padded Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Divine"
         ]
     },
     {
@@ -5028,7 +5868,9 @@
         "name": "Bhaalist Armor (Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Divine"
         ]
     },
     {
@@ -5038,7 +5880,9 @@
         "name": "Bhaalist Armor (Studded Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Divine"
         ]
     },
     {
@@ -5048,7 +5892,8 @@
         "name": "Blackguard's Plate (Plate Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil"
         ]
     },
     {
@@ -5058,7 +5903,9 @@
         "name": "Drow Studded Leather Armor (Studded Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5068,7 +5915,8 @@
         "name": "Dwarven Splintmail (Splint Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Martial"
         ]
     },
     {
@@ -5078,7 +5926,9 @@
         "name": "Elegant Studded Leather (Studded Leather Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Abjuration"
         ]
     },
     {
@@ -5088,7 +5938,10 @@
         "name": "Emblazoned Plate of the Marshal (Plate Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5098,7 +5951,10 @@
         "name": "Flame Enamelled Armor (Hide Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5108,7 +5964,10 @@
         "name": "Flame Enamelled Armor (Chain Shirt)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5118,7 +5977,10 @@
         "name": "Flame Enamelled Armor (Scale Mail)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5128,7 +5990,10 @@
         "name": "Flame Enamelled Armor (Breastplate)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5138,7 +6003,10 @@
         "name": "Flame Enamelled Armor (Half Plate)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evocation",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5148,7 +6016,9 @@
         "name": "Flawed Helldusk Armor (Ring Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Elemental"
         ]
     },
     {
@@ -5158,7 +6028,9 @@
         "name": "Flawed Helldusk Armor (Chain Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Elemental"
         ]
     },
     {
@@ -5168,7 +6040,9 @@
         "name": "Flawed Helldusk Armor (Splint Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Elemental"
         ]
     },
     {
@@ -5178,7 +6052,9 @@
         "name": "Flawed Helldusk Armor (Plate Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Elemental"
         ]
     },
     {
@@ -5188,7 +6064,8 @@
         "name": "Hedge Wanderer Armor (Hide Armor)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -5198,7 +6075,8 @@
         "name": "Hedge Wanderer Armor (Chain Shirt)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -5208,7 +6086,8 @@
         "name": "Hedge Wanderer Armor (Scale Mail)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -5218,7 +6097,8 @@
         "name": "Hedge Wanderer Armor (Breastplate)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -5228,7 +6108,8 @@
         "name": "Hedge Wanderer Armor (Half Plate)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Nature"
         ]
     },
     {
@@ -5238,7 +6119,11 @@
         "name": "Helldusk Armor (Ring Mail)",
         "rarity": "Legendary",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Abjuration",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -5248,7 +6133,11 @@
         "name": "Helldusk Armor (Chain Mail)",
         "rarity": "Legendary",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Abjuration",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -5258,7 +6147,11 @@
         "name": "Helldusk Armor (Splint Armor)",
         "rarity": "Legendary",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Abjuration",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -5268,7 +6161,11 @@
         "name": "Helldusk Armor (Plate Armor)",
         "rarity": "Legendary",
         "type": [
-            "Armor"
+            "Armor",
+            "Evil",
+            "Abjuration",
+            "Travel",
+            "Elemental"
         ]
     },
     {
@@ -5278,7 +6175,8 @@
         "name": "Luminous Armor (Hide Armor)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine"
         ]
     },
     {
@@ -5288,7 +6186,8 @@
         "name": "Luminous Armor (Chain Shirt)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine"
         ]
     },
     {
@@ -5298,7 +6197,8 @@
         "name": "Luminous Armor (Scale Mail)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine"
         ]
     },
     {
@@ -5308,7 +6208,8 @@
         "name": "Luminous Armor (Breastplate)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine"
         ]
     },
     {
@@ -5318,7 +6219,8 @@
         "name": "Luminous Armor (Half Plate)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine"
         ]
     },
     {
@@ -5328,7 +6230,9 @@
         "name": "Penumbral Armor (Padded Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5338,7 +6242,9 @@
         "name": "Penumbral Armor (Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5348,7 +6254,9 @@
         "name": "Penumbral Armor (Studded Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5358,7 +6266,9 @@
         "name": "Protective Plate (Plate Armor)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Necromancy",
+            "Abjuration"
         ]
     },
     {
@@ -5368,7 +6278,9 @@
         "name": "Psionic Ward Armor (Hide Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Healing",
+            "Abjuration"
         ]
     },
     {
@@ -5378,7 +6290,9 @@
         "name": "Psionic Ward Armor (Chain Shirt)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Healing",
+            "Abjuration"
         ]
     },
     {
@@ -5388,7 +6302,9 @@
         "name": "Psionic Ward Armor (Scale Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Healing",
+            "Abjuration"
         ]
     },
     {
@@ -5398,7 +6314,9 @@
         "name": "Psionic Ward Armor (Breastplate)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Healing",
+            "Abjuration"
         ]
     },
     {
@@ -5408,7 +6326,9 @@
         "name": "Psionic Ward Armor (Half Plate)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Healing",
+            "Abjuration"
         ]
     },
     {
@@ -5418,7 +6338,9 @@
         "name": "Reaper's Embrace (Ring Mail)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Necromancy",
+            "Enchantment"
         ]
     },
     {
@@ -5428,7 +6350,9 @@
         "name": "Reaper's Embrace (Chain Mail)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Necromancy",
+            "Enchantment"
         ]
     },
     {
@@ -5438,7 +6362,9 @@
         "name": "Reaper's Embrace (Splint Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Necromancy",
+            "Enchantment"
         ]
     },
     {
@@ -5448,7 +6374,9 @@
         "name": "Reaper's Embrace (Plate Armor)",
         "rarity": "Very Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Necromancy",
+            "Enchantment"
         ]
     },
     {
@@ -5478,7 +6406,8 @@
         "name": "Scarlet Leather Armor (Leather Armor)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     },
     {
@@ -5488,7 +6417,9 @@
         "name": "Shadeclinger Armor (Padded Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5498,7 +6429,9 @@
         "name": "Shadeclinger Armor (Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5508,7 +6441,9 @@
         "name": "Shadeclinger Armor (Studded Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Dark"
         ]
     },
     {
@@ -5528,7 +6463,9 @@
         "name": "Slippery Chain Shirt",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Healing",
+            "Stealth"
         ]
     },
     {
@@ -5538,7 +6475,9 @@
         "name": "Spidersilk Armor (Padded Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Animal"
         ]
     },
     {
@@ -5548,7 +6487,9 @@
         "name": "Spidersilk Armor (Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Animal"
         ]
     },
     {
@@ -5558,7 +6499,9 @@
         "name": "Spidersilk Armor (Studded Leather Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Animal"
         ]
     },
     {
@@ -5568,7 +6511,8 @@
         "name": "The Jolty Vest (Hide Armor)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Elemental"
         ]
     },
     {
@@ -5578,7 +6522,8 @@
         "name": "The Jolty Vest (Chain Shirt)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Elemental"
         ]
     },
     {
@@ -5588,7 +6533,8 @@
         "name": "The Jolty Vest (Scale Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Elemental"
         ]
     },
     {
@@ -5598,7 +6544,8 @@
         "name": "The Jolty Vest (Breastplate)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Elemental"
         ]
     },
     {
@@ -5608,7 +6555,8 @@
         "name": "The Jolty Vest (Half Plate)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Elemental"
         ]
     },
     {
@@ -5618,7 +6566,10 @@
         "name": "The Oakfather's Embrace (Hide Armor)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -5628,7 +6579,10 @@
         "name": "The Oakfather's Embrace (Chain Shirt)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -5638,7 +6592,10 @@
         "name": "The Oakfather's Embrace (Scale Mail)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -5648,7 +6605,10 @@
         "name": "The Oakfather's Embrace (Breastplate)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -5658,7 +6618,10 @@
         "name": "The Oakfather's Embrace (Half Plate)",
         "rarity": "Uncommon",
         "type": [
-            "Armor"
+            "Armor",
+            "Divine",
+            "Animal",
+            "Nature"
         ]
     },
     {
@@ -5668,7 +6631,10 @@
         "name": "Unwanted Masterwork Scalemail (Scale Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth",
+            "Abjuration",
+            "Elemental"
         ]
     },
     {
@@ -5677,7 +6643,8 @@
         "name": "Yuan-Ti Scale Mail (Scale Mail)",
         "rarity": "Rare",
         "type": [
-            "Armor"
+            "Armor",
+            "Stealth"
         ]
     }
 ]
