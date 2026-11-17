@@ -131,6 +131,10 @@ function loadItemEditsFromLocalStorage() {
 }
 
 function saveIndividualItemEdit(index, isHomebrew = false) {
+    if (isHomebrew && homebrewItemDatabase[index]?.isCustom) {
+        saveCustomHomebrewItems();
+        return;
+    }
     const savedEdits = JSON.parse(
         localStorage.getItem('dnd-item-edits') || '{"officialItems": {}, "homebrewItems": {}}'
     );
@@ -328,8 +332,9 @@ function populateHomebrewList(filteredItems = null) {
             aVal = a.cost;
             bVal = b.cost;
         } else if (homebrewSortColumn === 'type') {
-            aVal = (a.tags && a.tags[0]) ? a.tags[0].toLowerCase() : (a.type || '').toLowerCase();
-            bVal = (b.tags && b.tags[0]) ? b.tags[0].toLowerCase() : (b.type || '').toLowerCase();
+            const firstTag = it => String((Array.isArray(it.type) ? it.type[0] : it.type) || '').toLowerCase();
+            aVal = firstTag(a);
+            bVal = firstTag(b);
         } else {
             aVal = (a[homebrewSortColumn] || '').toString().toLowerCase();
             bVal = (b[homebrewSortColumn] || '').toString().toLowerCase();
@@ -353,7 +358,7 @@ function populateHomebrewList(filteredItems = null) {
         const rarityClass = `rarity-${item.rarity.toLowerCase().replace(' ', '-')}`;
         const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
 
-        if (!item.tags && item.type) item.tags = [item.type];
+        if (!item.tags && item.type) item.tags = Array.isArray(item.type) ? item.type : [item.type];
         const tags = item.tags || [];
         const tagsHTML = tags.map(tag => `<span class="item-tag">${tag}</span>`).join('');
 
@@ -363,7 +368,7 @@ function populateHomebrewList(filteredItems = null) {
                     onchange="toggleItemExclusion(${originalIndex}, true); populateHomebrewList();"
                     title="Include in shop generation">
             </td>
-            <td>${item.name}</td>
+            <td>${item.name}${item.isCustom ? ' <span class="store-type-badge custom">Custom</span>' : ''}</td>
             <td>${item.cost}</td>
             <td>
                 <div class="item-tags">
@@ -374,6 +379,7 @@ function populateHomebrewList(filteredItems = null) {
             <td style="max-width: 400px;">${item.description || 'No description'}</td>
             <td>
                 <button class="edit-btn" onclick="editHomebrewItem(${originalIndex})">Edit</button>
+                ${item.isCustom ? `<button class="delete-btn" style="padding: 6px 12px; font-size: 0.9em;" onclick="deleteCustomHomebrewItem(${originalIndex})">Delete</button>` : ''}
                 <button class="descriptor-btn"
                     onclick="toggleDescriptorEdit(${originalIndex}, true)"
                     title="Edit flavor text (${descriptorCount})">
@@ -413,6 +419,11 @@ function resetHomebrewFilters() {
 // ===== HOMEBREW ITEM EDITING =====
 
 function editHomebrewItem(index) {
+    // Items you created get the full editor (tags, descriptions, flavor text)
+    if (homebrewItemDatabase[index]?.isCustom) {
+        openHomebrewCreator(index);
+        return;
+    }
     const isExcluded = isItemExcluded(index, true);
 
     if (currentlyEditingHomebrewIndex !== null && currentlyEditingHomebrewIndex !== index) {
@@ -430,7 +441,7 @@ function editHomebrewItem(index) {
 
     const descriptorCount = (item.descriptors && item.descriptors.length) || 0;
 
-    if (!item.tags && item.type) item.tags = [item.type];
+    if (!item.tags && item.type) item.tags = Array.isArray(item.type) ? item.type : [item.type];
 
     row.innerHTML =
         '<td><input type="checkbox" ' + (isExcluded ? '' : 'checked') +

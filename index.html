@@ -90,6 +90,9 @@
 			    <button id="toggle-mundane-btn" onclick="toggleMundaneItems()" style="padding: 6px 14px; font-size: 0.85em; background: linear-gradient(135deg, #3a2010 0%, #2c1810 100%);">
 			        🪨 Hide Mundane
 			    </button>
+			    <button onclick="openAddItemToStore()" style="padding: 6px 14px; font-size: 0.85em; background: linear-gradient(135deg, #2c6b4f 0%, #1a4a37 100%);">
+			        ➕ Add Item to Store
+			    </button>
 			</div>
 
 			<!-- HIDDEN CUSTOM LIMITS SECTION -->
@@ -225,6 +228,8 @@
             </select>
             <button onclick="applyHomebrewFilters()">Filter</button>
             <button onclick="resetHomebrewFilters()">Reset</button>
+            <button onclick="openHomebrewCreator()" style="background: linear-gradient(135deg, #2c6b4f 0%, #1a4a37 100%);">+ New Homebrew Item</button>
+            <button onclick="exportHomebrewJSON()" title="Download homebrewItems.json including your new items">⬇ Export JSON</button>
         </div>
 
         <div style="overflow-x: auto;">
@@ -418,9 +423,11 @@
 	<script src="creatureTypes.js"></script>
 	<script src="items.js"></script>
 	<script src="descriptors.js"></script>
+	<script src="homebrewCreator.js"></script>
 	<script src="shop.js"></script>
 	<script src="savedStores.js"></script>
 	<script src="loot.js"></script>
+	<script src="manualAdd.js"></script>
 	<script src="main.js"></script>
 	<footer class="site-footer">
     	<p>Shop Generator &bull; Last Updated: {{BUILD_TIMESTAMP}}</p>

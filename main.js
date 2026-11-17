@@ -8,6 +8,8 @@ window.addEventListener('DOMContentLoaded', async function() {
 
     // ===== LOAD SAVED EDITS AND SETTINGS =====
     loadItemEditsFromLocalStorage();
+    loadCustomHomebrewItems();
+    updateItemDatabase();
     loadCustomStoreTypes();
     loadCustomCreatureTypes();
 
@@ -30,6 +32,18 @@ window.addEventListener('DOMContentLoaded', async function() {
             console.error('Error loading custom tags:', e);
         }
     }
+
+    // ===== ADD EVERY TAG IN USE TO THE TAG LISTS =====
+    // So tags added to items (e.g. Elemental, Martial) can be picked in the store / creature type editors
+    [...officialItemDatabase, ...homebrewItemDatabase].forEach(item => {
+        (Array.isArray(item.type) ? item.type : [item.type]).forEach(tag => {
+            if (tag && !allKnownTags.includes(tag)) allKnownTags.push(tag);
+            if (tag && !commonTags.includes(tag)) commonTags.push(tag);
+        });
+    });
+    commonTags.forEach(tag => { if (!allKnownTags.includes(tag)) allKnownTags.push(tag); });
+    allKnownTags.sort();
+    commonTags.sort();
 
     // ===== SETTLEMENT SIZE LISTENER =====
     const citySelect = document.getElementById('settlement-size');

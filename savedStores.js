@@ -39,7 +39,9 @@ function saveCurrentStore() {
         itemName = itemName.replace(/\s*⭐\s*/g, '');
         itemName = itemName.replace(/\s*🔮 Homebrew\s*/g, '');
 
-        const originalItem = itemDatabase.find(item => item.name === itemName);
+        const originalItem = itemDatabase.find(item => item.name === itemName)
+                          || officialItemDatabase.find(item => item.name === itemName)
+                          || homebrewItemDatabase.find(item => item.name === itemName);
 
         if (originalItem) {
             inventory.push({

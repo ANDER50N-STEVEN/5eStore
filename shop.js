@@ -315,6 +315,9 @@ function generateShop() {
     const maxModifier = parseFloat(document.getElementById('price-modifier').value) + 5;
     const minModifier = parseFloat(document.getElementById('price-modifier').value) - 5;
 
+    // A freshly generated shop is not a saved store (used by "Add Item to Store")
+    currentLoadedStoreIndex = null;
+
     // Reset mundane collapsed state on new generation
     mundaneCollapsed = false;
     const btn = document.getElementById('toggle-mundane-btn');
