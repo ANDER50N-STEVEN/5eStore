@@ -1128,7 +1128,7 @@
     },
     {
         "cost": 1500,
-        "description": "While wearing this cloak, when you deal poison damage to a creature, you regain 1d4 hit points. This item requires attunement.",
+        "description": "While wearing this cloak, once per turn, when you deal poison damage to a creature, you may regain 1d4 hit points. This item requires attunement.",
         "descriptors": [],
         "name": "Derivation Cloak",
         "rarity": "Rare",
@@ -1879,7 +1879,7 @@
     },
     {
         "cost": 45000,
-        "description": "While wearing these gloves, your Constitution score increases by 2, to a maximum of 20, and your unarmed strikes deal an extra 1d10 force damage. Once per turn when you hit with an unarmed strike, you can choose one of the following benefits: regain 10 hit points, or forgo the healing to gain advantage on attack rolls and saving throws until the end of your next turn. This item requires attunement.",
+        "description": "While wearing these gloves, your Constitution score increases by 2, to a maximum of 20, and your unarmed strikes deal an extra 1d10 force damage. Once per turn when you hit with an unarmed strike, you can choose one of the following benefits: regain hit points equal to the extra force damage dealt by these gloves, or forgo the healing to gain advantage on your next attack roll or saving throw until the end of your next turn. This item requires attunement.",
         "descriptors": [],
         "name": "Gloves of Soul Catching",
         "rarity": "Legendary",
@@ -6170,7 +6170,7 @@
     },
     {
         "cost": 3010,
-        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement.",
+        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 5 feet of you becomes vulnerable to radiant damage until the end of your next turn(unless they are resistant or immune to radiant damage). This item requires attunement.",
         "descriptors": [],
         "name": "Luminous Armor (Hide Armor)",
         "rarity": "Uncommon",
@@ -6181,7 +6181,7 @@
     },
     {
         "cost": 3050,
-        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement.",
+        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 5 feet of you becomes vulnerable to radiant damage until the end of your next turn(unless they are resistant or immune to radiant damage). This item requires attunement.",
         "descriptors": [],
         "name": "Luminous Armor (Chain Shirt)",
         "rarity": "Uncommon",
@@ -6192,7 +6192,7 @@
     },
     {
         "cost": 3050,
-        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement.",
+        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 5 feet of you becomes vulnerable to radiant damage until the end of your next turn(unless they are resistant or immune to radiant damage). This item requires attunement.",
         "descriptors": [],
         "name": "Luminous Armor (Scale Mail)",
         "rarity": "Uncommon",
@@ -6203,7 +6203,7 @@
     },
     {
         "cost": 3400,
-        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement.",
+        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 5 feet of you becomes vulnerable to radiant damage until the end of your next turn(unless they are resistant or immune to radiant damage). This item requires attunement.",
         "descriptors": [],
         "name": "Luminous Armor (Breastplate)",
         "rarity": "Uncommon",
@@ -6214,7 +6214,7 @@
     },
     {
         "cost": 3750,
-        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 10 feet of that creature becomes vulnerable to radiant damage until the end of your next turn. This item requires attunement.",
+        "description": "While wearing this armor, when you deal radiant damage to a creature, each hostile creature within 5 feet of you becomes vulnerable to radiant damage until the end of your next turn(unless they are resistant or immune to radiant damage). This item requires attunement.",
         "descriptors": [],
         "name": "Luminous Armor (Half Plate)",
         "rarity": "Uncommon",
